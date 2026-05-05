@@ -2,13 +2,17 @@
 name: sampling_bias_remote_sensing
 description: Systematic bias in satellite time series arising from non-uniform observation frequency over time, causing spurious trends in annual composites like NDVImax
 type: reference
+tags:
+  - remote-sensing
+  - methodology
+  - time-series
 ---
 
 # Sampling Bias in Remote Sensing Time Series
 
 **Summary**: Sampling bias in remote sensing arises when the number of usable observations changes systematically over a multi-year record, causing spurious trends in annual composited products even when the underlying environmental signal is stable.
 
-**Sources**: bayle_2024_landsat_greening_inflated.pdf
+**Sources**: [[bayle_2024_landsat_greening_inflated]]
 
 **Last updated**: 2026-05-05
 
@@ -16,7 +20,7 @@ type: reference
 
 ## The Mechanism
 
-Annual compositing — e.g., computing NDVImax as the maximum observed NDVI within a growing season — assumes that sampling frequency is sufficient to capture the true signal each year. When observations are sparse, the estimated annual metric systematically underestimates the true value. If sampling density increases over time (as with Landsat), the underestimation decreases in more recent years, creating a positive artifact trend even when the underlying variable is unchanged (source: bayle_2024_landsat_greening_inflated.pdf).
+Annual compositing — e.g., computing NDVImax as the maximum observed NDVI within a growing season — assumes that sampling frequency is sufficient to capture the true signal each year. When observations are sparse, the estimated annual metric systematically underestimates the true value. If sampling density increases over time (as with Landsat), the underestimation decreases in more recent years, creating a positive artifact trend even when the underlying variable is unchanged (source: [[bayle_2024_landsat_greening_inflated]]).
 
 This mechanism produces **"false trends"** (αβF): statistically significant NDVI trends that are entirely artefactual.
 
@@ -29,7 +33,7 @@ The bias is strongest when:
 - **Observation density is low**: cloud cover, Landsat revisit limits, geographic remoteness
 - **The phenological curve is sharply peaked**: the maximum is easy to miss with sparse sampling
 
-In the European Alps, late-snowmelt pixels above 2400 m a.s.l. are most affected — up to 50% of observed greening trends in these zones are artefactual (source: bayle_2024_landsat_greening_inflated.pdf).
+In the European Alps, late-snowmelt pixels above 2400 m a.s.l. are most affected — up to 50% of observed greening trends in these zones are artefactual (source: [[bayle_2024_landsat_greening_inflated]]).
 
 ## Key Drivers (Quantified)
 

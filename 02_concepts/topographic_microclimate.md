@@ -2,13 +2,16 @@
 name: topographic_microclimate
 description: Topographic regulation of local climate through solar radiation, aspect, slope, and elevation — buffering or amplifying regional climate signals for vegetation
 type: reference
+tags:
+  - forest-ecology
+  - remote-sensing
 ---
 
 # Topographic Microclimate
 
 **Summary**: Topographic microclimate describes how local terrain features (slope, aspect, elevation, curvature) modify temperature, radiation, and moisture at scales of meters to kilometres, creating locally heterogeneous conditions that regulate how plants experience regional climate.
 
-**Sources**: bricca_2026_topo_diversity.pdf, bayle_2024_landsat_greening_inflated.pdf, jin_2023_drivers_differentiation_evergreen.pdf
+**Sources**: [[bricca_2026_topo_diversity]], [[bayle_2024_landsat_greening_inflated]], [[jin_2023_drivers_differentiation_evergreen]]
 
 **Last updated**: 2026-05-05
 
@@ -39,13 +42,13 @@ Topography modifies the local climate plants actually experience through several
 Topography can buffer or amplify the effects of regional climate change on local vegetation:
 - **Buffering**: refugia in cool, moist valley positions can shelter cold-adapted species from warming; north-facing aspects maintain cooler conditions even as regional temperatures rise
 - **Amplification**: south-facing slopes and exposed ridges experience stronger warming effects relative to the regional mean
-- In Bricca et al. (2026), DNI was the dominant local regulator of the temperature-diversity relationship for the tree guild — where solar radiation is high, temperature effects on diversity are steeper (source: bricca_2026_topo_diversity.pdf)
+- In Bricca et al. (2026), DNI was the dominant local regulator of the temperature-diversity relationship for the tree guild — where solar radiation is high, temperature effects on diversity are steeper (source: [[bricca_2026_topo_diversity]])
 
 ## Soil Moisture as a Topographic Proxy
 
 Soil water capacity (SWC) integrates topographic position and soil texture:
 - Strongly controlled by terrain position (concave = wetter; convex = drier)
-- More important for shrub guilds (closer to ground) than tree guilds (regulated more by canopy and regional climate) (source: bricca_2026_topo_diversity.pdf)
+- More important for shrub guilds (closer to ground) than tree guilds (regulated more by canopy and regional climate) (source: [[bricca_2026_topo_diversity]])
 - Can be modelled from soil texture data (SoilGrids 2.0) and digital elevation models
 
 ## Canopy Microclimate Buffering (Forest Vertical Structure)
@@ -53,9 +56,9 @@ Soil water capacity (SWC) integrates topographic position and soil texture:
 Forest canopy acts as an additional microclimate filter, analogous to topographic buffering:
 - **Light attenuation**: dense canopy reduces photosynthetically active radiation (PAR) in understory by 50–99%, creating a dim, stable microclimate
 - **Temperature moderation**: canopy absorbs and re-radiates energy, dampening diurnal and seasonal temperature extremes in the understory
-- **Consequence for leaf habit**: understory shrubs experience more stable, low-resource conditions → evergreen leaf habit is advantageous for understory shrubs even at latitudes/climates where deciduous habit dominates in the canopy (source: jin_2023_drivers_differentiation_evergreen.pdf)
+- **Consequence for leaf habit**: understory shrubs experience more stable, low-resource conditions → evergreen leaf habit is advantageous for understory shrubs even at latitudes/climates where deciduous habit dominates in the canopy (source: [[jin_2023_drivers_differentiation_evergreen]])
 - **Latitudinal gradient of buffering**: at higher latitudes, forest vertical structure simplifies and the canopy interior is less foliated → canopy buffering weakens → canopy and understory climates converge → trees and shrubs show more similar leaf habit responses to temperature
-- Bricca et al. (2026) show analogous strata differentiation: tree guild is regulated more by solar radiation (canopy-level climate), shrub guild more by soil moisture (understory-level); consistent with strata-specific microclimate (source: bricca_2026_topo_diversity.pdf)
+- Bricca et al. (2026) show analogous strata differentiation: tree guild is regulated more by solar radiation (canopy-level climate), shrub guild more by soil moisture (understory-level); consistent with strata-specific microclimate (source: [[bricca_2026_topo_diversity]])
 
 ## Relevance for Remote Sensing
 

@@ -13,10 +13,10 @@ tags:
   - CNN
   - ensemble-modelling
   - uncertainty-assessment
-  - airborne-remote-sensing
   - LiDAR
   - Canada
   - boreal-forest
+  - remote-sensing
 keywords:
   - VGG16
   - ResNet50-v2

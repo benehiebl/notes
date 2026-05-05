@@ -2,13 +2,16 @@
 name: plant_functional_traits
 description: Plant functional traits — the major axes of plant form and function, the TRY database, and their use in biodiversity and remote sensing research
 type: reference
+tags:
+  - forest-ecology
+  - biodiversity
 ---
 
 # Plant Functional Traits
 
 **Summary**: Plant functional traits are measurable characteristics of individual plants that affect performance — growth, survival, reproduction — and capture the major axes of plant life strategies, from leaf economics to root economics to reproductive strategies.
 
-**Sources**: bricca_2026_topo_diversity.pdf, jin_2023_drivers_differentiation_evergreen.pdf
+**Sources**: [[bricca_2026_topo_diversity]], [[jin_2023_drivers_differentiation_evergreen]]
 
 **Last updated**: 2026-05-05
 
@@ -33,13 +36,13 @@ Categorical traits commonly used alongside these:
 **Leaf habit economics:**
 - Evergreen: low SLA, high leaf dry matter content, long leaf lifespan → conservative resource strategy; advantageous in stable, low-light understory environments
 - Deciduous: high SLA, faster return on leaf investment; shed leaves to avoid freeze damage and reduce winter respiration costs
-- Leaf habit is strongly phylogenetically conserved (Pagel's λ ≈ 0.84 in subtropical angiosperm communities; source: jin_2023_drivers_differentiation_evergreen.pdf)
+- Leaf habit is strongly phylogenetically conserved (Pagel's λ ≈ 0.84 in subtropical angiosperm communities; source: [[jin_2023_drivers_differentiation_evergreen]])
 - Community-level leaf habit composition shifts latitudinally: evergreen dominates at low latitudes and warm climates; deciduous dominates at high latitudes with cold, seasonal climates
 
 ## The TRY Database
 
 - Global plant trait database aggregating millions of trait measurements across thousands of species
-- Used in Bricca et al. (2026) for tree and shrub species in Italian forests (source: bricca_2026_topo_diversity.pdf)
+- Used in Bricca et al. (2026) for tree and shrub species in Italian forests (source: [[bricca_2026_topo_diversity]])
 - Coverage is uneven — rare species and below-ground traits (e.g., specific root length) often have gaps
 - **GRoOT database** (Global Root Traits) complements TRY for root economic traits
 

@@ -1,8 +1,17 @@
+---
+name: neural_network_training
+description: Neural network training via backpropagation — optimisation, input normalisation, activations, weight initialisation, learning rates, regularisation, and modern optimizers
+type: reference
+tags:
+  - deep-learning
+  - machine-learning
+---
+
 # Neural Network Training
 
 **Summary**: Neural network training via backpropagation requires careful choices at every stage — input preprocessing, activation functions, weight initialisation, learning rate, and optimizer — to avoid slow convergence, saturation, and overfitting; the underlying principle is that gradient descent converges fastest when the loss surface is locally spherical.
 
-**Sources**: lecun_1998_efficient_backprop.pdf, hiebl_2025_pretraining.pdf
+**Sources**: [[lecun_1998_efficient_backprop]], [[hiebl_2025_pretraining]]
 
 **Last updated**: 2026-05-05
 
@@ -15,7 +24,7 @@ Backpropagation is the standard algorithm for computing gradients in multilayer 
 - Backward pass: propagate error gradients from output to input using the chain rule (Jacobian at each layer)
 - Weight update: W(t) = W(t−1) − η ∂E/∂W
 
-The gradient at any layer depends on the product of Jacobians of all downstream layers — making the loss surface highly non-convex in deep networks (source: lecun_1998_efficient_backprop.pdf)
+The gradient at any layer depends on the product of Jacobians of all downstream layers — making the loss surface highly non-convex in deep networks (source: [[lecun_1998_efficient_backprop]])
 
 ## Stochastic vs Batch Learning
 
@@ -27,7 +36,7 @@ The gradient at any layer depends on the product of Jacobians of all downstream 
 
 - SGD noise can escape shallow local minima → often finds better solutions than batch gradient descent
 - Mini-batch is the standard in modern deep learning (PyTorch DataLoader default)
-- (source: lecun_1998_efficient_backprop.pdf)
+- (source: [[lecun_1998_efficient_backprop]])
 
 ## Input Normalisation
 
@@ -36,7 +45,7 @@ For fastest gradient descent convergence, inputs should be:
 2. **Unit variance**: divide by standard deviation (or percentile range); equalises learning speed across features
 3. **Decorrelated**: PCA/whitening removes linear correlations between input features; reduces condition number of the Hessian
 
-**In remote sensing practice**: Sentinel-2 time series are typically normalised per band using 2nd–95th percentile values before model training (source: hiebl_2025_pretraining.pdf); this directly implements the zero-mean / equal-variance recommendation
+**In remote sensing practice**: Sentinel-2 time series are typically normalised per band using 2nd–95th percentile values before model training (source: [[hiebl_2025_pretraining]]); this directly implements the zero-mean / equal-variance recommendation
 
 ## Activation Functions
 

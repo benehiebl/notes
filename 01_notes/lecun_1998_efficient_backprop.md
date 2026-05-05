@@ -8,12 +8,12 @@ authors:
 year: 1998
 source: lecun_1998_efficient_backprop
 tags:
-  - deep-learning
   - neural-networks
   - optimization
   - backpropagation
   - gradient-descent
   - training-tricks
+  - deep-learning
 keywords:
   - stochastic-gradient-descent
   - batch-learning

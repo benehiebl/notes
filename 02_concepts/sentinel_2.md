@@ -2,13 +2,17 @@
 name: sentinel_2
 description: Sentinel-2 satellite program — bands, temporal resolution, use in vegetation and tree species mapping, comparison with Landsat
 type: reference
+tags:
+  - remote-sensing
+  - sentinel-2
+  - machine-learning
 ---
 
 # Sentinel-2
 
 **Summary**: Sentinel-2 is a twin-satellite ESA mission providing multispectral imagery at 10–20 m resolution with ~5-day revisit time, enabling high-resolution vegetation monitoring at spatial and temporal scales not achievable with Landsat alone.
 
-**Sources**: grabska_2024_tree_species_map.pdf, chabalala_2023_dl_s2_mediterranean_fruit_trees.pdf, deluca_2022_s1_s2_lulc_mapping.pdf, koch_2025_intraspecies_variation_s2.pdf, liu_2023_spectral_spatial_resolution_effect.pdf, miettinen_2025_forest_maps_europe.pdf
+**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[deluca_2022_s1_s2_lulc_mapping]], [[koch_2025_intraspecies_variation_s2]], [[liu_2023_spectral_spatial_resolution_effect]], [[miettinen_2025_forest_maps_europe]], [[fischer_2025_glocal_canopy_atlas]]
 
 **Last updated**: 2026-05-05
 
@@ -50,7 +54,7 @@ A key strategy for managing cloud cover and capturing phenological signals in Se
 - Compute summary statistics (mean, median, percentiles) over a short seasonal window (15–30 days) using multi-annual observations
 - STMs from multiple seasons (early spring, late spring, summer, autumn) capture species-specific phenological dynamics
 - Multi-annual aggregation reduces inter-annual variability and cloud contamination
-- Used in national-scale tree species mapping in Poland (source: grabska_2024_tree_species_map.pdf) and other large-area vegetation studies
+- Used in national-scale tree species mapping in Poland (source: [[grabska_2024_tree_species_map]]) and other large-area vegetation studies
 
 ## Use in Tree Species Mapping
 
@@ -58,7 +62,7 @@ Sentinel-2 is the primary sensor for fine-resolution tree species mapping:
 - 10 m resolution resolves individual forest stands
 - Red-edge bands distinguish between broadleaved and coniferous species and within those groups
 - Multi-temporal approach (seasonal STMs or dense time series) captures phenological differences among species
-- Key discriminating periods: autumn (leaf senescence) and early spring (green-up) — both show strong inter-species variation (source: grabska_2024_tree_species_map.pdf)
+- Key discriminating periods: autumn (leaf senescence) and early spring (green-up) — both show strong inter-species variation (source: [[grabska_2024_tree_species_map]])
 
 ## Sentinel-2 for Forest Structure Mapping (AGB, Volume, Composition)
 
@@ -66,12 +70,12 @@ Pan-European application combining Sentinel-2 with NFI data (Miettinen et al. 20
 - 7 S2 bands (B2, B3, B4, B5, B8, B11, B12) as primary spectral features in kNN feature space alongside Copernicus FTY and TCD layers
 - 10m resolution AGB, timber volume, and deciduous-coniferous proportion maps for 40 European countries (reference year 2020)
 - RMSE 53–73% relative for AGB; nearly unbiased at continental scale; systematic regression-to-mean at pixel level
-- S2 spectral bands capture canopy structure and composition signals that correlate with biomass density — combined with NFI plot calibration (source: miettinen_2025_forest_maps_europe.pdf)
+- S2 spectral bands capture canopy structure and composition signals that correlate with biomass density — combined with NFI plot calibration (source: [[miettinen_2025_forest_maps_europe]])
 
 ## Sentinel-2 for Tree Species Diversity Mapping
 
 Direct sensor comparison in the Black Forest, Germany (130 one-ha plots, October senescence imagery):
-- **Sentinel-2 at 10m** outperforms all other sensors for Shannon-Wiener TSD prediction: R²=0.477, RMSE=0.274 (source: liu_2023_spectral_spatial_resolution_effect.pdf)
+- **Sentinel-2 at 10m** outperforms all other sensors for Shannon-Wiener TSD prediction: R²=0.477, RMSE=0.274 (source: [[liu_2023_spectral_spatial_resolution_effect]])
 - RapidEye (10m): R²=0.346; PlanetScope (15m): R²=0.337; Landsat-8 (30m): R²=0.316
 - **10m is the optimal spatial resolution**: sub-10m resolution introduces intra-crown spectral noise (sunlit vs shaded foliage, understory) that inflates spectral heterogeneity without reflecting inter-species diversity; 10–15m matches stand-level spectral variation
 - Sentinel-2's advantage comes from both its three red-edge bands AND its broader NIR / narrower visible bands — even the 4-band Sentinel-2 subset outperforms PlanetScope and Landsat-8 4-band datasets at most resolutions
@@ -89,11 +93,19 @@ Direct sensor comparison in the Black Forest, Germany (130 one-ha plots, October
 | Archive depth | 2015– | 1972– |
 | Cloud sensitivity | Same | Same |
 
+## Sentinel-2-Derived Canopy Height and Structure
+
+Satellite canopy height models derived from Sentinel-2 (combined with GEDI or alone) show significant limitations at native resolution when validated against airborne laser scanning (ALS) reference data (source: [[fischer_2025_glocal_canopy_atlas]]):
+- Lang et al. 2023 (Sentinel-2 + GEDI, 10m): R² = 0.28–0.38 vs ALS at native resolution; predicts maximum height better than mean height; relative RMSE 95–189%
+- At 250m aggregation, performance improves substantially (R² = 0.56, RMSE = 170%) — coarser resolution averages out sub-pixel variability
+- ALS remains the gold standard for canopy height and structure mapping; satellite CHMs are most useful for large-area relative patterns, not absolute height values (source: [[fischer_2025_glocal_canopy_atlas]])
+- These limitations are directly relevant when using Sentinel-2-derived structural features as auxiliary predictors in NFI-based forest attribute mapping
+
 ## Observation Density Effects
 
 Like Landsat, the number of cloud-free Sentinel-2 observations varies spatially:
 - Non-overlapping orbit areas have fewer observations per season than overlapping areas
-- In Poland, overlapping orbit areas achieved 90.1% classification OA vs 86.7% for non-overlapping areas (source: grabska_2024_tree_species_map.pdf)
+- In Poland, overlapping orbit areas achieved 90.1% classification OA vs 86.7% for non-overlapping areas (source: [[grabska_2024_tree_species_map]])
 - Parallels the [[sampling_bias_remote_sensing]] issue identified for Landsat in alpine environments
 
 ## Related pages

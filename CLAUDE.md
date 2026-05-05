@@ -23,6 +23,7 @@ These research papers are focused around developing deep learning models based o
 02_concepts/            -- markdown pages maintained by Claude containing key concepts related to deep learning, machine learning, remote sensing and forest ecology
 03_papers/              -- markdown pages maintained by human and Claude (modify only on direct request)
 templates/              -- markdown pages maintained by human for obsidian templates
+graphify-out/           -- /graphify output. only changed when /graphify is called
 index.md    -- table of contents for the entire wiki
 log.md      -- append-only record of all operations
 ```

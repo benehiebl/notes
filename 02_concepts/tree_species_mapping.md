@@ -2,13 +2,18 @@
 name: tree_species_mapping
 description: Methods, challenges, and best practices for mapping forest tree species from satellite remote sensing data at regional to national scales
 type: reference
+tags:
+  - remote-sensing
+  - forest-ecology
+  - machine-learning
+  - deep-learning
 ---
 
 # Tree Species Mapping
 
 **Summary**: Tree species mapping from satellite data involves classifying forest pixels into species or genus classes using spectral, temporal, and environmental predictors, enabling wall-to-wall coverage beyond what field inventory plot networks provide.
 
-**Sources**: grabska_2024_tree_species_map.pdf, chabalala_2023_dl_s2_mediterranean_fruit_trees.pdf, koch_2025_intraspecies_variation_s2.pdf
+**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[koch_2025_intraspecies_variation_s2]]
 
 **Last updated**: 2026-05-05
 
@@ -18,7 +23,7 @@ type: reference
 
 - Forest inventory (NFI) provides species composition at plot level but not spatially continuous
 - Wall-to-wall species maps enable: biodiversity modelling, biomass estimation by species, disturbance monitoring, invasive species tracking, carbon accounting
-- Fine-scale species maps at national scale are now achievable with Sentinel-2 (source: grabska_2024_tree_species_map.pdf)
+- Fine-scale species maps at national scale are now achievable with Sentinel-2 (source: [[grabska_2024_tree_species_map]])
 
 ## Key Predictor Types
 
@@ -30,7 +35,7 @@ type: reference
 | **Climatic** | Temperature, precipitation (WorldClim, TerraClimate) | Explains biogeographic species limits |
 | **Edaphic** | Soil type, moisture | Secondary discriminator |
 
-In national-scale mapping for Poland, the most important variables were maximum temperature (autumn), elevation, and autumn/summer spectral bands — climate and topography dominated over soil (source: grabska_2024_tree_species_map.pdf).
+In national-scale mapping for Poland, the most important variables were maximum temperature (autumn), elevation, and autumn/summer spectral bands — climate and topography dominated over soil (source: [[grabska_2024_tree_species_map]]).
 
 ## Reference Data Strategies
 
@@ -44,7 +49,7 @@ In national-scale mapping for Poland, the most important variables were maximum 
 Tree species distributions are inherently imbalanced (e.g., pine covers ~59% of Polish forests). Two common strategies:
 - **Proportional sampling**: sample size proportional to species area; maximises OA but rare species perform poorly
 - **Disproportional sampling**: oversample rare species, undersample dominant species; improves minority class F1 at the cost of overall OA
-- Poland study: proportional OA = 89.6%, disproportional OA = 84% — but disproportional better represents rare species (source: grabska_2024_tree_species_map.pdf)
+- Poland study: proportional OA = 89.6%, disproportional OA = 84% — but disproportional better represents rare species (source: [[grabska_2024_tree_species_map]])
 
 ## Classifiers
 
@@ -83,11 +88,22 @@ An alternative to classification: predict species diversity indices directly fro
 - Based on the **Spectral Variability Hypothesis (SVH)**: spectral variance of an image area is positively related to species diversity
 - Requires no labelled training data for individual species → scales to data-poor regions
 - Rare species contribute proportionally to spectral heterogeneity — avoids the underestimation problem of classification methods
-- Best metrics: Rao's Q and GLCM texture (source: liu_2023_spectral_spatial_resolution_effect.pdf); see [[spectral_diversity_biodiversity]]
+- Best metrics: Rao's Q and GLCM texture (source: [[liu_2023_spectral_spatial_resolution_effect]]); see [[spectral_diversity_biodiversity]]
 - Optimal spatial resolution: 10–15m; sub-10m imagery introduces intra-crown noise that reduces inter-species separability
-- Sentinel-2 at 10m with all spectral bands (esp. NIR + red-edge) achieves best accuracy (R²=0.477, RMSE=0.274 in Black Forest; source: liu_2023_spectral_spatial_resolution_effect.pdf)
+- Sentinel-2 at 10m with all spectral bands (esp. NIR + red-edge) achieves best accuracy (R²=0.477, RMSE=0.274 in Black Forest; source: [[liu_2023_spectral_spatial_resolution_effect]])
 
-**Sources**: grabska_2024_tree_species_map.pdf, chabalala_2023_dl_s2_mediterranean_fruit_trees.pdf, koch_2025_intraspecies_variation_s2.pdf, liu_2023_spectral_spatial_resolution_effect.pdf
+## Deep Learning CNN Approach (Sub-meter Airborne)
+
+CNN super-ensemble from aerial orthophotos + lidar CHM (Sylvain et al. 2024; Quebec boreal/mixed forest, 10,000 km²):
+- **Input**: 30cm RGBI aerial photos + lidar canopy height model (CHM) stacked as 5th channel; 0.9m output resolution
+- **Architecture ensemble**: VGG16, ResNet50-v2, DenseNet-121 × 3 training datasets = 9 models → modal vote = super-ensemble prediction
+- **Uncertainty**: inter-model agreement % per pixel — validated as reliable performance indicator against 1,311 NFI plots; higher agreement → higher F1-score
+- **CHM benefit**: +5pp accuracy across all classes; reduces variance between architectures; most useful for ground/low vegetation and broadleaf species separation
+- **Super-ensemble F1=0.90** (12 classes including 9 tree species + 4 land cover); individual architectures 0.84–0.86 (source: [[sylvain_2024_tree_species_uncertainty]])
+- Black spruce and white birch most accurately predicted (precision > 0.90); red maple, larch, white spruce weakest (precision 0.19–0.42)
+- Broadleaf mixed stands have lower agreement (more heterogeneous) than pure coniferous stands
+
+**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[koch_2025_intraspecies_variation_s2]], [[liu_2023_spectral_spatial_resolution_effect]], [[sylvain_2024_tree_species_uncertainty]]
 
 ## Related pages
 

@@ -18,6 +18,7 @@ tags:
   - forest-definition
   - cartography
   - remote-sensing-ground-truth
+  - forest-ecology
 keywords:
   - CFI2020
   - Carta-Forestale-Italia

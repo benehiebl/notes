@@ -2,13 +2,17 @@
 name: national_forest_inventory
 description: National Forest Inventories — purpose, sampling design principles, variables measured, and role as ground truth for remote sensing and forest policy
 type: reference
+tags:
+  - forest-ecology
+  - remote-sensing
+  - methodology
 ---
 
 # National Forest Inventory (NFI)
 
 **Summary**: National Forest Inventories (NFIs) are systematic, large-scale sample surveys that provide authoritative statistics on the extent, structure, composition, and functions of a country's forests, serving as the primary ground truth for forest remote sensing and international reporting.
 
-**Sources**: gasparini_2022_nfi_italy.pdf, mattioli_2025_carta_forestale.pdf, miettinen_2025_forest_maps_europe.pdf
+**Sources**: [[gasparini_2022_nfi_italy]], [[mattioli_2025_carta_forestale]], [[miettinen_2025_forest_maps_europe]], [[amico_2025_nfi_italy]], [[bell_2024_hindcasting_forest_structure]]
 
 **Last updated**: 2026-05-05
 
@@ -24,16 +28,16 @@ NFIs serve multiple simultaneous objectives:
 
 ## Sampling Design Principles
 
-Modern NFIs (including Italy's INFC) use a **multi-phase systematic sampling** design:
+Modern NFIs (including Italy's INFC) use a **multi-phase systematic sampling** design (source: [[gasparini_2022_nfi_italy]]):
 
 - **Systematic grid**: points placed on a regular grid (e.g., 1 km × 1 km in INFC) over national territory
 - **Phase 1**: photo/image interpretation — classify all grid points by land use/land cover; identify forest vs non-forest
 - **Phase 2**: subset of forest points further classified (forest type, canopy cover, etc.)
 - **Phase 3**: subset visited on the ground; plots measured in detail
 
-This multi-phase approach is efficient: expensive field measurements are concentrated on confirmed forest points.
+This multi-phase approach is efficient: expensive field measurements are concentrated on confirmed forest points. The new Italian NFI (IFNI) adopts **tessellation stratified sampling** as a more spatially balanced probabilistic design, enabling annual rolling-panel estimates rather than periodic inventories (source: [[amico_2025_nfi_italy]]).
 
-Plot designs use **concentric circular plots** of different radii for different tree size classes (e.g., large trees on a 13 m radius plot, small trees/understory on a 4 m radius plot).
+Plot designs use **concentric circular plots** of different radii for different tree size classes (e.g., large trees on a 13 m radius plot, small trees/understory on a 4 m radius plot; source: [[gasparini_2022_nfi_italy]]).
 
 ## Key Variables Measured
 
@@ -59,11 +63,11 @@ Three surveys completed:
 | INFC2005 | 2005 | Three-phase design; FAO forest definition; carbon pools |
 | INFC2015 | 2015 | Same methodology as INFC2005; +520,000 ha forest area |
 
-INFC2015 headline results: 10,980,000 ha of forest (~37% of Italian territory); ongoing expansion into abandoned mountain/hilly agricultural land (source: gasparini_2022_nfi_italy.pdf).
+INFC2015 headline results: 10,980,000 ha of forest (~37% of Italian territory); ongoing expansion into abandoned mountain/hilly agricultural land (source: [[gasparini_2022_nfi_italy]]).
 
 ## Forest Map of Italy (CFI2020) — Cartographic Counterpart to INFC
 
-CFI2020 (Carta Forestale d'Italia 2020) is Italy's first national forest map at 1:10,000 scale — a **cartographic product** (wall-to-wall vector polygons), distinct from the statistical INFC sampling survey (source: mattioli_2025_carta_forestale.pdf):
+CFI2020 (Carta Forestale d'Italia 2020) is Italy's first national forest map at 1:10,000 scale — a **cartographic product** (wall-to-wall vector polygons), distinct from the statistical INFC sampling survey (source: [[mattioli_2025_carta_forestale]]):
 
 | | INFC (NFI) | CFI2020 |
 |-|-----------|---------|
@@ -99,14 +103,25 @@ NFIs provide the ground truth that remote sensing products need to be calibrated
 - **Forest type mapping**: NFI species composition data used to train/validate remote sensing classifiers
 - **Change detection**: NFI temporal comparisons validate satellite-derived forest loss/gain estimates
 
-Key limitation: NFI plots are typically not publicly georeferenced — spatial linkage to satellite data requires statistical modelling rather than direct plot matching.
+Key limitation: NFI plots are typically not publicly georeferenced — spatial linkage to satellite data requires statistical modelling rather than direct plot matching (source: [[gasparini_2022_nfi_italy]]).
 
 **Model-assisted estimation and wall-to-wall mapping (NFI + RS):**
-- kNN imputation: predict forest attributes (AGB, volume, species composition) for every RS pixel by finding k nearest NFI plots in spectral feature space; uncertainty = std of k neighbors per pixel
-- Pan-European example: Miettinen et al. (2025) combined 14 national NFIs (~151,000 plots) with Sentinel-2 to produce 10m AGB, volume, and deciduous-coniferous proportion maps for 40 European countries (source: miettinen_2025_forest_maps_europe.pdf)
-- Key design insight: including plot geographic coordinates in the kNN feature space substantially reduces RMSE by ensuring local ecological calibration
-- Critical limitation: kNN regression-to-mean bias — systematically overestimates low values, underestimates high values; maps unsuitable for direct pixel-counting area statistics; intended as auxiliary data for model-assisted estimation where biases can be corrected
-- NFI plot density is the key quality driver: Italy (0.05 plots/km² forest) performs worse than Germany (0.36 plots/km²); areas with no national NFI plots have potentially high and erratic biases
+- kNN imputation: predict forest attributes (AGB, volume, species composition) for every RS pixel by finding k nearest NFI plots in spectral feature space; uncertainty = std of k neighbors per pixel (source: [[miettinen_2025_forest_maps_europe]])
+- Pan-European example: Miettinen et al. (2025) combined 14 national NFIs (~151,000 plots) with Sentinel-2 to produce 10m AGB, volume, and deciduous-coniferous proportion maps for 40 European countries (source: [[miettinen_2025_forest_maps_europe]])
+- Key design insight: including plot geographic coordinates in the kNN feature space substantially reduces RMSE by ensuring local ecological calibration (source: [[miettinen_2025_forest_maps_europe]])
+- Critical limitation: kNN regression-to-mean bias — systematically overestimates low values, underestimates high values; maps unsuitable for direct pixel-counting area statistics (source: [[miettinen_2025_forest_maps_europe]])
+- NFI plot density is the key quality driver: Italy (0.05 plots/km² forest) performs worse than Germany (0.36 plots/km²); areas with no national NFI plots have potentially high and erratic biases (source: [[miettinen_2025_forest_maps_europe]])
+
+**Temporal transferability of NFI+RS models:**
+- Gradient Nearest Neighbor (GNN) imputation is robust for temporal transferability: hindcast and updated models perform comparably to full models at the plot and pixel level, with small but spatially structured differences at landscape scale (source: [[bell_2024_hindcasting_forest_structure]])
+- Stationarity of the spectral-forest relationship over time is the key assumption: Landsat sensor drift, shifting phenology, and canopy lichen changes can alter spectral signals independently of forest structure (source: [[bell_2024_hindcasting_forest_structure]])
+- This temporal robustness makes long-term continuous map records feasible from a temporally limited field inventory, enabling both retrospective (hindcast) and forward (updated) analyses (source: [[bell_2024_hindcasting_forest_structure]])
+
+**Next-generation NFIs — enhanced annual monitoring:**
+- Traditional periodic NFIs (10–15 year cycles) are insufficient to capture rapid climate-driven disturbance dynamics (source: [[amico_2025_nfi_italy]])
+- The new Italian NFI (IFNI) transitions to annual estimates via rolling panel design, integrating Sentinel-2, LiDAR (IRIDE constellation), and ICP Forests monitoring; plot coordinates released for scientific use (source: [[amico_2025_nfi_italy]])
+- Enhanced NFI explicitly targets large disturbance events (windstorm, wildfire, bark beetle, drought mortality) through annual change detection (source: [[amico_2025_nfi_italy]])
+- Participatory co-design with stakeholders prior to field data collection is a key innovation — ensuring inventory outputs directly match policy and management information needs (source: [[amico_2025_nfi_italy]])
 
 ## International Reporting Standards
 

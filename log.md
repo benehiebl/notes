@@ -228,3 +228,72 @@ Append-only record of all wiki operations.
 **Updated**: `02_concepts/landsat.md` — added STMs for land cover mapping section (seasonal medians, annual variance statistics, multi-year pooling, LUCAS-based map results, CORINE comparison); added pflugmacher_2019 to sources
 
 **Updated**: `index.md` — added pflugmacher_2019 note
+
+---
+
+## 2026-05-05 (17)
+
+**Ingested**: `sylvain_2024_tree_species_uncertainty.pdf`
+
+**Created**: `01_notes/sylvain_2024_tree_species_uncertainty.md` — summary of Sylvain et al. 2024 (JAG); 9-model CNN super-ensemble for 0.9m boreal tree species mapping in Quebec; F1=0.90; CHM adds +5pp; inter-model agreement as validated spatially explicit uncertainty map
+
+**Updated**:
+- `02_concepts/tree_species_mapping.md` — added CNN/deep learning approach section (super-ensemble, CHM integration, agreement uncertainty); added sylvain_2024 to sources
+- `02_concepts/transfer_learning_remote_sensing.md` — added CNN ensemble agreement uncertainty section; comparison with hiebl_2025 deep ensemble; added sylvain_2024 to sources
+
+**Updated**: `index.md` — added sylvain_2024 note
+
+---
+
+## 2026-05-05 (18) — Concept page cleanup
+
+**Task**: Replace PDF references with wiki backlinks and add tags to all concept pages.
+
+**Updated all 18 concept pages in `02_concepts/`**:
+- Replaced all `filename.pdf` references with `[[filename]]` wiki backlinks (both in Sources lines and inline body citations)
+- Added YAML `tags:` fields to every concept page; pages without frontmatter received full frontmatter blocks
+
+**Tag assignments:**
+- `landsat.md`: remote-sensing, landsat, time-series, land-cover
+- `ndvi.md`: remote-sensing, vegetation-index
+- `phenology.md`: remote-sensing, forest-ecology, vegetation
+- `sampling_bias_remote_sensing.md`: remote-sensing, methodology, time-series
+- `vegetation_greenness_trends.md`: remote-sensing, forest-ecology, vegetation
+- `functional_diversity.md`: forest-ecology, biodiversity, remote-sensing
+- `plant_functional_traits.md`: forest-ecology, biodiversity
+- `topographic_microclimate.md`: forest-ecology, remote-sensing
+- `national_forest_inventory.md`: forest-ecology, remote-sensing, methodology
+- `sentinel_2.md`: remote-sensing, sentinel-2, machine-learning
+- `tree_species_mapping.md`: remote-sensing, forest-ecology, machine-learning, deep-learning
+- `forest_disturbances.md`: forest-ecology, remote-sensing
+- `species_distribution_models.md`: forest-ecology, machine-learning, remote-sensing
+- `transfer_learning_remote_sensing.md`: deep-learning, machine-learning, remote-sensing
+- `leaf_habit_latitudinal_gradient.md`: forest-ecology, biodiversity
+- `neural_network_training.md`: deep-learning, machine-learning
+- `spectral_diversity_biodiversity.md`: remote-sensing, forest-ecology, biodiversity
+- `vegetation_community_change.md`: forest-ecology, biodiversity, remote-sensing
+
+---
+
+## 2026-05-05 (19) — Source completeness and un-integrated notes
+
+**Task**: (1) Add sources to every paragraph/section in concept pages; (2) integrate 7 pre-existing but un-referenced notes into concept pages.
+
+**Un-integrated notes now integrated:**
+- `amico_2025_nfi_italy` → `national_forest_inventory.md` (tessellation sampling, annual rolling-panel IFNI, RS integration, participatory design)
+- `bell_2024_hindcasting_forest_structure` → `national_forest_inventory.md` + `landsat.md` (GNN temporal transferability, hindcasting/updating Landsat forest maps)
+- `brown_2025_alphaearth` → `transfer_learning_remote_sensing.md` (geospatial foundation models, AEF, multi-modal pretraining, few-shot mapping)
+- `chen_2020_contrastive_framework` → `transfer_learning_remote_sensing.md` (SimCLR contrastive learning, NT-Xent loss, augmentation policy)
+- `fady_2025_native_trees_mediterranean` → `species_distribution_models.md` (Mediterranean tree diversity baseline, 496 spp, endemism hotspots, data gaps)
+- `fischer_2025_glocal_canopy_atlas` → `sentinel_2.md` (satellite CHM validation against ALS, R²<0.38 at native resolution, Lang et al.)
+- `francioni_2026_canopy_closure` → `forest_disturbances.md` + `vegetation_community_change.md` + `functional_diversity.md` (25yr understory diversity decline, canopy closure drivers, ICP Forests)
+
+**Sourcing fixes across all concept pages:**
+- `forest_disturbances.md`: added [[grünig_2026_climate_change_disturbances_forest]] to all unsourced bullets; added [[albrich_2019_climate_change_mountain_forests]] to disturbance interactions and management responses; added [[francioni_2026_canopy_closure]] to vegetation feedbacks
+- `national_forest_inventory.md`: added per-bullet sources for kNN section; added temporal transferability section (bell_2024); added enhanced NFI section (amico_2025)
+- `transfer_learning_remote_sensing.md`: added SimCLR section (chen_2020); added geospatial foundation models section (brown_2025)
+- `vegetation_community_change.md`: added per-paragraph sources; added 25yr understory decline section (francioni_2026)
+- `species_distribution_models.md`: added paragraph-level sources to predictor section; added Mediterranean tree diversity section (fady_2025)
+- `sentinel_2.md`: added satellite CHM validation section (fischer_2025)
+- `landsat.md`: added temporal transferability section (bell_2024); added sources to Key Limitations section
+- `functional_diversity.md`: added francioni_2026 as long-term monitoring application

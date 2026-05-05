@@ -2,13 +2,17 @@
 name: phenology
 description: Vegetation phenology — seasonal timing of plant life-cycle events, remote sensing methods for extraction, and relevance to alpine and boreal ecosystems
 type: reference
+tags:
+  - remote-sensing
+  - forest-ecology
+  - vegetation
 ---
 
 # Phenology
 
 **Summary**: Vegetation phenology describes the seasonal timing of plant life-cycle events (green-up, peak greenness, senescence, dormancy), which can be tracked remotely using time series of vegetation indices or surface reflectance.
 
-**Sources**: bayle_2024_landsat_greening_inflated.pdf, grabska_2024_tree_species_map.pdf, he_2015_remote_sensing_sdm.pdf
+**Sources**: [[bayle_2024_landsat_greening_inflated]], [[grabska_2024_tree_species_map]], [[he_2015_remote_sensing_sdm]]
 
 **Last updated**: 2026-05-05
 
@@ -36,12 +40,12 @@ A seven-parameter double-logistic function is the most widely used approach for 
 - Fits a smooth asymmetric curve encoding onset, offset, peak value, and transition rates
 - Used in combination with preprocessing: BISE algorithm (noise reduction) + Savitzky-Golay filter (smoothing) → daily interpolated NDVI → double-logistic fit
 - Enables phenological parameter extraction independent of observation timing
-- Used in Bayle et al. (2024) to model true MODIS phenology and isolate the Landsat sampling bias (source: bayle_2024_landsat_greening_inflated.pdf)
+- Used in Bayle et al. (2024) to model true MODIS phenology and isolate the Landsat sampling bias (source: [[bayle_2024_landsat_greening_inflated]])
 
 ## Partitioning Around Medoids (PAM) Clustering
 
 - Used to group pixels into discrete phenological clusters based on their NDVI seasonal profiles
-- In Bayle et al. (2024), K = 3 clusters were identified for non-forested Alpine pixels: early, intermediate, and late snowmelt sites (source: bayle_2024_landsat_greening_inflated.pdf)
+- In Bayle et al. (2024), K = 3 clusters were identified for non-forested Alpine pixels: early, intermediate, and late snowmelt sites (source: [[bayle_2024_landsat_greening_inflated]])
 - Each cluster has a different GSL and therefore different susceptibility to observational sampling bias
 
 ## Phenology in Alpine Ecosystems
@@ -53,7 +57,7 @@ A seven-parameter double-logistic function is the most widely used approach for 
 
 ## Mediterranean Phenology: The Inverted Cycle
 
-Evergreen Mediterranean forest species exhibit a phenological cycle fundamentally different from temperate deciduous forests (source: herraiz_2025_phen_shifts_mediterranean.pdf):
+Evergreen Mediterranean forest species exhibit a phenological cycle fundamentally different from temperate deciduous forests (source: [[herraiz_2025_phen_shifts_mediterranean]]):
 - **NDVI peak**: winter (December–February) — mild temperatures and adequate soil moisture
 - **NDVI trough**: summer (June–August) — heat and drought suppress photosynthesis
 - **SOS**: autumn (DOY ~250–290 for pines); **EOS**: spring (DOY ~50–110)
@@ -64,10 +68,10 @@ Evergreen Mediterranean forest species exhibit a phenological cycle fundamentall
 ## Phenology as SDM Predictor
 
 Vegetation phenological metrics are valuable predictor variables in [[species_distribution_models]]:
-- Growing season length as a proxy for the length of summer — shown to be a key predictor for moose body weight and habitat quality (source: he_2015_remote_sensing_sdm.pdf)
+- Growing season length as a proxy for the length of summer — shown to be a key predictor for moose body weight and habitat quality (source: [[he_2015_remote_sensing_sdm]])
 - Multi-year MODIS phenology metrics reduce predictor collinearity and improve model transferability
 - Early green-up / late senescence timing used to detect invasive annual grasses and discriminate native from non-native species
-- Phenology timing from Sentinel-2 STMs is the primary discriminator between tree species in temperate forests — early spring and autumn windows are most informative (source: grabska_2024_tree_species_map.pdf)
+- Phenology timing from Sentinel-2 STMs is the primary discriminator between tree species in temperate forests — early spring and autumn windows are most informative (source: [[grabska_2024_tree_species_map]])
 
 ## Related pages
 

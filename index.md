@@ -56,4 +56,5 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[01_notes/miettinen_2025_forest_maps_europe]] | Miettinen et al. 2025 — Pan-European 10m AGB, volume, and deciduous-conifer maps from Sentinel-2 + 14 national NFIs; kNN; nearly unbiased at European level but regression-to-mean bias |
 | [[01_notes/noce_2023_altitude_shift_tree_italy]] | Noce et al. 2023 — MaxEnt SDMs for 20 Italian forest tree species; silver fir most vulnerable; larch and Turkey oak gain; tree line shifts upward; Northern Apennines most impacted |
 | [[01_notes/pflugmacher_2019_lulc_landsat]] | Pflugmacher et al. 2019 — Pan-European LULC from Landsat STMs + LUCAS; OA=75.1%; auxiliary features +4.7pp; CORINE overestimates cropland by 63%; 3yr pooling eliminates cloud gaps |
+| [[01_notes/sylvain_2024_tree_species_uncertainty]] | Sylvain et al. 2024 — CNN super-ensemble (9 models) for 0.9m boreal tree species mapping; F1=0.90; CHM +5pp; inter-model agreement = validated uncertainty map |
 | [[01_notes/koch_2025_intraspecies_variation_s2]] | Koch et al. 2025 — Intraspecies spectral variation with Sentinel-2 |

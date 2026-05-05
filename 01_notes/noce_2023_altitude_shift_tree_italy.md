@@ -16,6 +16,7 @@ tags:
   - mountain-forests
   - Apennines
   - Alps
+  - forest-ecology
 keywords:
   - habitat-suitability
   - RCP-4.5

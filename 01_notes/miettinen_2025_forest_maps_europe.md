@@ -22,6 +22,7 @@ tags:
   - kNN
   - Europe
   - model-assisted-estimation
+  - forest-ecology
 keywords:
   - above-ground-biomass
   - AGB

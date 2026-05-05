@@ -2,13 +2,17 @@
 name: vegetation_greenness_trends
 description: Multi-decadal greening and browning trends from satellite vegetation indices — methods, drivers, caveats, and ecological interpretation
 type: reference
+tags:
+  - remote-sensing
+  - forest-ecology
+  - vegetation
 ---
 
 # Vegetation Greenness Trends
 
 **Summary**: Vegetation greening (or browning) refers to long-term directional changes in satellite-derived vegetation indices, used as proxies for changes in plant productivity, biomass, and ecosystem functioning in response to climate and land use.
 
-**Sources**: bayle_2024_landsat_greening_inflated.pdf, herraiz_2025_phen_shifts_mediterranean.pdf, midolo_2026_denser_vegetation.pdf
+**Sources**: [[bayle_2024_landsat_greening_inflated]], [[herraiz_2025_phen_shifts_mediterranean]], [[midolo_2026_denser_vegetation]]
 
 **Last updated**: 2026-05-05
 
@@ -30,7 +34,7 @@ type: reference
 ## Eutrophication and Vegetation Densification as Greening Drivers
 
 A major non-climatic driver of satellite-observed greening: nitrogen enrichment drives vegetation densification independently of temperature:
-- Continent-wide nitrogen CM_EIV increase of +0.25 (1960–2020) across all European habitat types — the dominant driver of 60-year plant community change (source: midolo_2026_denser_vegetation.pdf)
+- Continent-wide nitrogen CM_EIV increase of +0.25 (1960–2020) across all European habitat types — the dominant driver of 60-year plant community change (source: [[midolo_2026_denser_vegetation]])
 - Higher nitrogen → higher plant productivity → higher LAI → more biomass → positive NDVI trend
 - Accompanied by CM_EIV light decline (-0.12) reflecting canopy closure and increasing shade-tolerant species dominance
 - Management cessation (grazing, coppicing, mowing abandonment) amplifies both effects: biomass accumulates, canopy closes
@@ -45,14 +49,14 @@ A major non-climatic driver of satellite-observed greening: nitrogen enrichment 
 
 ## Caveats and Artefacts
 
-- **Sampling bias**: Increasing Landsat observation density over time inflates NDVImax trends in cold, seasonally snow-covered ecosystems — in the European Alps, up to 50% of observed greening above 2400 m is artefactual (source: bayle_2024_landsat_greening_inflated.pdf) — see [[sampling_bias_remote_sensing]]
+- **Sampling bias**: Increasing Landsat observation density over time inflates NDVImax trends in cold, seasonally snow-covered ecosystems — in the European Alps, up to 50% of observed greening above 2400 m is artefactual (source: [[bayle_2024_landsat_greening_inflated]]) — see [[sampling_bias_remote_sensing]]
 - **Sensor transitions**: Cross-sensor differences between Landsat generations (TM → ETM+ → OLI) require radiometric normalisation
 - **Spatial heterogeneity**: Greening can reflect land cover change rather than productivity change; fine-scale patterns missed by coarse sensors
 - **Temporal non-linearity**: Overall greening trends can mask alternating phases of greening, stability, and browning at shorter timescales
 
 ## Species-Level Greening Variation
 
-Long-term Landsat NDVI time series (28 years) in Mediterranean forests reveal species-specific greening patterns (source: herraiz_2025_phen_shifts_mediterranean.pdf):
+Long-term Landsat NDVI time series (28 years) in Mediterranean forests reveal species-specific greening patterns (source: [[herraiz_2025_phen_shifts_mediterranean]]):
 - 9 of 10 dominant Mediterranean species show significant positive NDVI trends; *Eucalyptus camaldulensis* stable
 - Two trajectory types: (1) positive throughout 1994–2021 (*Q. ilex*, *P. halepensis*, *P. nigra*); (2) stable until ~2005 then increasing (*O. europaea*, *Q. suber*, *P. pinaster*)
 - NDVI magnitude metrics (PEAK, TROUGH) increase over time; but phenological timing (SOS, EOS, LOS) shows no significant temporal shift
@@ -61,7 +65,7 @@ Long-term Landsat NDVI time series (28 years) in Mediterranean forests reveal sp
 ## Ecological Interpretation Caveats
 
 - Greening does not automatically imply increased carbon uptake — ecosystem carbon balance depends on respiration, disturbance, and phenological shifts
-- Greening at high elevations may signal thermophilisation (upward migration of warm-adapted species), but this interpretation is confounded by observational bias (source: bayle_2024_landsat_greening_inflated.pdf)
+- Greening at high elevations may signal thermophilisation (upward migration of warm-adapted species), but this interpretation is confounded by observational bias (source: [[bayle_2024_landsat_greening_inflated]])
 - Arctic browning events (reversals of greening) have been documented despite global greening trends
 
 ## Related pages

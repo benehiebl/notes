@@ -15,6 +15,8 @@ tags:
   - LUCAS
   - Europe
   - LULC
+  - remote-sensing
+  - machine-learning
 keywords:
   - land-cover-classification
   - CORINE

@@ -18,6 +18,7 @@ tags:
   - random-forest
   - Germany
   - Black-Forest
+  - remote-sensing
 keywords:
   - Shannon-Wiener-diversity
   - Rao's-Q

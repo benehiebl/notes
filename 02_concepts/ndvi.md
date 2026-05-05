@@ -2,13 +2,16 @@
 name: ndvi
 description: NDVI definition, computation, derived annual metrics, known limitations including saturation and sampling bias
 type: reference
+tags:
+  - remote-sensing
+  - vegetation-index
 ---
 
 # NDVI
 
 **Summary**: The Normalised Difference Vegetation Index (NDVI) is the most widely used spectral index for quantifying vegetation greenness from red and near-infrared reflectance, serving as a proxy for photosynthetic activity, vegetation density, and plant biomass.
 
-**Sources**: bayle_2024_landsat_greening_inflated.pdf, chastain_2007_eve_landsat_understory.pdf, he_2015_remote_sensing_sdm.pdf
+**Sources**: [[bayle_2024_landsat_greening_inflated]], [[chastain_2007_eve_landsat_understory]], [[he_2015_remote_sensing_sdm]]
 
 **Last updated**: 2026-05-05
 
@@ -32,7 +35,7 @@ Values range from −1 to +1; healthy dense vegetation typically yields 0.4–0.
 
 ## Limitations and Biases
 
-- **Sampling bias in NDVImax**: In seasonally snow-covered environments, NDVImax underestimates true peak greenness when observations are sparse; as observation frequency increases over time, estimates increase even without real vegetation change → spurious greening trends (source: bayle_2024_landsat_greening_inflated.pdf) — see [[sampling_bias_remote_sensing]]
+- **Sampling bias in NDVImax**: In seasonally snow-covered environments, NDVImax underestimates true peak greenness when observations are sparse; as observation frequency increases over time, estimates increase even without real vegetation change → spurious greening trends (source: [[bayle_2024_landsat_greening_inflated]]) — see [[sampling_bias_remote_sensing]]
 - **Saturation**: Insensitive to productivity variation in dense vegetation
 - **Cross-sensor differences**: Landsat TM vs ETM+ vs OLI vs Sentinel-2 require careful radiometric normalisation
 - **Atmospheric and geometric confounders**: Solar angle, aerosols, snow/cloud contamination
@@ -46,9 +49,9 @@ Values range from −1 to +1; healthy dense vegetation typically yields 0.4–0.
 ## Use in Species Distribution Models
 
 NDVI is among the most widely used biotic predictor variables in SDMs:
-- Proxy for vegetation productivity, food availability, and habitat quality (source: he_2015_remote_sensing_sdm.pdf)
+- Proxy for vegetation productivity, food availability, and habitat quality (source: [[he_2015_remote_sensing_sdm]])
 - Multi-year NDVI and projected future NDVI used to forecast species range dynamics under climate change
-- **Circularity risk**: if the SDM response variable (species occurrence) was itself mapped from RS imagery, using RS-derived NDVI as a predictor creates a circular model — results should be interpreted with caution (source: he_2015_remote_sensing_sdm.pdf)
+- **Circularity risk**: if the SDM response variable (species occurrence) was itself mapped from RS imagery, using RS-derived NDVI as a predictor creates a circular model — results should be interpreted with caution (source: [[he_2015_remote_sensing_sdm]])
 - LAI3g and fPAR3g are improved alternatives to NDVI with better post-processing algorithms for SDM applications
 
 ## Related pages

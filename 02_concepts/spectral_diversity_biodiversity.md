@@ -1,8 +1,18 @@
+---
+name: spectral_diversity_biodiversity
+description: Spectral Variability Hypothesis (SVH) — predicting species diversity from spectral heterogeneity metrics; optimal spatial resolution; Rao's Q and GLCM texture
+type: reference
+tags:
+  - remote-sensing
+  - forest-ecology
+  - biodiversity
+---
+
 # Spectral Diversity and Biodiversity
 
 **Summary**: The Spectral Variability Hypothesis (SVH) posits that the spectral heterogeneity of a satellite image is positively related to plant species diversity, enabling direct biodiversity estimation from remote sensing without species classification.
 
-**Sources**: liu_2023_spectral_spatial_resolution_effect.pdf, bricca_2026_topo_diversity.pdf
+**Sources**: [[liu_2023_spectral_spatial_resolution_effect]], [[bricca_2026_topo_diversity]]
 
 **Last updated**: 2026-05-05
 
@@ -13,7 +23,7 @@
 The SVH (Palmer et al. 2002) states that spectral heterogeneity of an area — the variation in reflectance across pixels — is positively related to plant species diversity:
 - More diverse plant communities produce more diverse spectral signals (different leaf chemistries, canopy structures, phenological dynamics)
 - Spectral heterogeneity can therefore serve as a proxy for species diversity without requiring explicit species classification
-- Confirmed for multiple ecosystems and sensors, including temperate montane forests (source: liu_2023_spectral_spatial_resolution_effect.pdf)
+- Confirmed for multiple ecosystems and sensors, including temperate montane forests (source: [[liu_2023_spectral_spatial_resolution_effect]])
 
 **Caution**: the relationship is imperfect — background effects (bare soil, understory litter, rock) can inflate spectral heterogeneity without reflecting canopy diversity; Rao's Q accounts for this better than CV by weighting pairwise distances.
 
@@ -40,7 +50,7 @@ Seven common metrics for quantifying spectral heterogeneity in a pixel neighbour
 | **Spectral angle mapper (SAM)** | Mean angle between pixel spectra | Consistently worst; assigns equal weight to all bands including uninformative ones |
 | **Spectral species diversity (SSD)** | Clustering-based; counts spectral types | Moderate; requires classification decision (cluster number) |
 
-**Best metrics**: Rao's Q and GLCM texture — use both to avoid underestimating sensor capability (source: liu_2023_spectral_spatial_resolution_effect.pdf).
+**Best metrics**: Rao's Q and GLCM texture — use both to avoid underestimating sensor capability (source: [[liu_2023_spectral_spatial_resolution_effect]]).
 
 ## Rao's Q as a Remote Sensing Biodiversity Metric
 
@@ -70,7 +80,7 @@ From sensor comparisons in Liu et al. (2023):
 - **Red**: consistently low importance for TSD prediction
 - **Blue, Green**: lowest importance
 
-The advantage of Sentinel-2 over other sensors is dual: (1) three additional red-edge bands capturing inter-species biochemical variation; (2) broader NIR band and narrower visible bands providing more specific spectral sensitivity (source: liu_2023_spectral_spatial_resolution_effect.pdf).
+The advantage of Sentinel-2 over other sensors is dual: (1) three additional red-edge bands capturing inter-species biochemical variation; (2) broader NIR band and narrower visible bands providing more specific spectral sensitivity (source: [[liu_2023_spectral_spatial_resolution_effect]]).
 
 ## Phenological Timing
 
