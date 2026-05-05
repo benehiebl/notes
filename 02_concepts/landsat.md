@@ -8,7 +8,7 @@ type: reference
 
 **Summary**: The Landsat program is a multi-decade series of Earth observation satellites operated by NASA and USGS, providing the longest continuous global land surface record in remote sensing history at 30 m spatial resolution.
 
-**Sources**: bayle_2024_landsat_greening_inflated.pdf, chastain_2007_eve_landsat_understory.pdf
+**Sources**: bayle_2024_landsat_greening_inflated.pdf, chastain_2007_eve_landsat_understory.pdf, pflugmacher_2019_lulc_landsat.pdf
 
 **Last updated**: 2026-05-05
 
@@ -39,6 +39,20 @@ type: reference
 - **Tasseled Cap**: Brightness, Greenness, Wetness indices
 - **Annual composites**: Medoid or median composites for land cover mapping
 - **LULC time series**: Long-term land use and land cover change products (e.g., Pflugmacher et al.)
+
+## Spectral-Temporal Metrics (STMs) for Land Cover Mapping
+
+STMs are per-pixel statistical summaries of all cloud-free observations within a time window — the operational approach for large-area Landsat-based land cover classification:
+- **Seasonal medians**: median per spectral band/index for spring (Mar–May), summer (Jun–Aug), fall (Sep–Nov), and growing season (May–Sep) → captures phenological dynamics distinguishing land cover types
+- **Annual statistics**: min, max, mean, std, 5th–95th percentile per band/index → captures within-year variability (useful for differentiating crops from grasslands)
+- **Multi-year pooling**: pooling 3 years of observations rather than 1 reduces spring/fall cloud gaps from ~7% to <0.2%; improves accuracy especially for temporally dynamic classes (source: pflugmacher_2019_lulc_landsat.pdf)
+- **Auxiliary features**: geographic coordinates (latitude, longitude) and WorldClim bioclimatic variables contribute +4.7pp OA — larger than any single spectral feature group — by providing biogeographic context for geographically restricted classes (perennial cropland, shrubland, artificial)
+
+**LUCAS-based pan-European LULC map (Pflugmacher et al. 2019):**
+- 12 land cover classes, 30m resolution, 2015 reference year; OA=75.1% (Random Forest + 178 features)
+- Area proportions correlate with LUCAS at r=0.98 vs r=0.84 for CORINE
+- CORINE overestimates seasonal cropland by 63%, underestimates grassland by 37% — STM-based approach substantially more accurate at area estimation
+- Mixed forest (PA=50%) and Mediterranean grassland/shrubland remain the most challenging classes
 
 ## Key Limitations for Time Series Analysis
 

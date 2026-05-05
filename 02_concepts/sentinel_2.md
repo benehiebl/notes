@@ -8,7 +8,7 @@ type: reference
 
 **Summary**: Sentinel-2 is a twin-satellite ESA mission providing multispectral imagery at 10–20 m resolution with ~5-day revisit time, enabling high-resolution vegetation monitoring at spatial and temporal scales not achievable with Landsat alone.
 
-**Sources**: grabska_2024_tree_species_map.pdf, chabalala_2023_dl_s2_mediterranean_fruit_trees.pdf, deluca_2022_s1_s2_lulc_mapping.pdf, koch_2025_intraspecies_variation_s2.pdf, liu_2023_spectral_spatial_resolution_effect.pdf
+**Sources**: grabska_2024_tree_species_map.pdf, chabalala_2023_dl_s2_mediterranean_fruit_trees.pdf, deluca_2022_s1_s2_lulc_mapping.pdf, koch_2025_intraspecies_variation_s2.pdf, liu_2023_spectral_spatial_resolution_effect.pdf, miettinen_2025_forest_maps_europe.pdf
 
 **Last updated**: 2026-05-05
 
@@ -59,6 +59,14 @@ Sentinel-2 is the primary sensor for fine-resolution tree species mapping:
 - Red-edge bands distinguish between broadleaved and coniferous species and within those groups
 - Multi-temporal approach (seasonal STMs or dense time series) captures phenological differences among species
 - Key discriminating periods: autumn (leaf senescence) and early spring (green-up) — both show strong inter-species variation (source: grabska_2024_tree_species_map.pdf)
+
+## Sentinel-2 for Forest Structure Mapping (AGB, Volume, Composition)
+
+Pan-European application combining Sentinel-2 with NFI data (Miettinen et al. 2025):
+- 7 S2 bands (B2, B3, B4, B5, B8, B11, B12) as primary spectral features in kNN feature space alongside Copernicus FTY and TCD layers
+- 10m resolution AGB, timber volume, and deciduous-coniferous proportion maps for 40 European countries (reference year 2020)
+- RMSE 53–73% relative for AGB; nearly unbiased at continental scale; systematic regression-to-mean at pixel level
+- S2 spectral bands capture canopy structure and composition signals that correlate with biomass density — combined with NFI plot calibration (source: miettinen_2025_forest_maps_europe.pdf)
 
 ## Sentinel-2 for Tree Species Diversity Mapping
 

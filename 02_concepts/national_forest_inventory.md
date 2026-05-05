@@ -8,7 +8,7 @@ type: reference
 
 **Summary**: National Forest Inventories (NFIs) are systematic, large-scale sample surveys that provide authoritative statistics on the extent, structure, composition, and functions of a country's forests, serving as the primary ground truth for forest remote sensing and international reporting.
 
-**Sources**: gasparini_2022_nfi_italy.pdf
+**Sources**: gasparini_2022_nfi_italy.pdf, mattioli_2025_carta_forestale.pdf, miettinen_2025_forest_maps_europe.pdf
 
 **Last updated**: 2026-05-05
 
@@ -61,6 +61,36 @@ Three surveys completed:
 
 INFC2015 headline results: 10,980,000 ha of forest (~37% of Italian territory); ongoing expansion into abandoned mountain/hilly agricultural land (source: gasparini_2022_nfi_italy.pdf).
 
+## Forest Map of Italy (CFI2020) — Cartographic Counterpart to INFC
+
+CFI2020 (Carta Forestale d'Italia 2020) is Italy's first national forest map at 1:10,000 scale — a **cartographic product** (wall-to-wall vector polygons), distinct from the statistical INFC sampling survey (source: mattioli_2025_carta_forestale.pdf):
+
+| | INFC (NFI) | CFI2020 |
+|-|-----------|---------|
+| **Type** | Statistical sampling survey | Cartographic wall-to-wall map |
+| **Output** | Area estimates + confidence intervals + forest attributes | Vector polygon map (forest/non-forest + type) |
+| **Spatial coverage** | Sample plots only (not spatially continuous) | Full national territory |
+| **Minimum mapping unit** | N/A (plot-based) | 2,000–5,000 m² depending on definition |
+| **Scale** | Not applicable | 1:10,000 |
+
+**CFI2020 key facts:**
+- ~850,000 polygons; mean size 12.50 ha; OA ≥ 90%
+- Three simultaneous forest definitions: TUFF normative (art. 3; 2000 m²/20%/20m), FAO/statistical (art. 15; 5000 m²/10%/20m), and regional definitions
+- Italian forest area 2020 (FAO definition): **10,126,903 ha** (+11.47% vs INFC2015's 9,085,186 ha)
+- Largest forested regions: Toscana (1.19 Mha), Piemonte (0.98 Mha)
+- Available via SINFor portal; update to reference year 2024 planned
+- Nomenclature links local categories to INFC, European Forest Types (EFT), and Del Favero classification
+
+**Forest definition comparison (Italy):**
+
+| Definition | Min area | Min cover | Used by |
+|-----------|---------|---------|--------|
+| TUFF art. 3 (normative) | 2,000 m² | 20% | Legal/environmental protection |
+| FAO / TUFF art. 15 | 5,000 m² | 10% | INFC, FAO-FRA, CFI2020 statistical |
+| Regional laws | Variable | Variable | Regional planning |
+
+The +11.47% difference between CFI2020 and INFC2015 reflects both real forest expansion (land abandonment especially in southern Italy) and methodological differences (photo-interpretation vs statistical sampling).
+
 ## NFI and Remote Sensing
 
 NFIs provide the ground truth that remote sensing products need to be calibrated and validated against:
@@ -70,6 +100,13 @@ NFIs provide the ground truth that remote sensing products need to be calibrated
 - **Change detection**: NFI temporal comparisons validate satellite-derived forest loss/gain estimates
 
 Key limitation: NFI plots are typically not publicly georeferenced — spatial linkage to satellite data requires statistical modelling rather than direct plot matching.
+
+**Model-assisted estimation and wall-to-wall mapping (NFI + RS):**
+- kNN imputation: predict forest attributes (AGB, volume, species composition) for every RS pixel by finding k nearest NFI plots in spectral feature space; uncertainty = std of k neighbors per pixel
+- Pan-European example: Miettinen et al. (2025) combined 14 national NFIs (~151,000 plots) with Sentinel-2 to produce 10m AGB, volume, and deciduous-coniferous proportion maps for 40 European countries (source: miettinen_2025_forest_maps_europe.pdf)
+- Key design insight: including plot geographic coordinates in the kNN feature space substantially reduces RMSE by ensuring local ecological calibration
+- Critical limitation: kNN regression-to-mean bias — systematically overestimates low values, underestimates high values; maps unsuitable for direct pixel-counting area statistics; intended as auxiliary data for model-assisted estimation where biases can be corrected
+- NFI plot density is the key quality driver: Italy (0.05 plots/km² forest) performs worse than Germany (0.36 plots/km²); areas with no national NFI plots have potentially high and erratic biases
 
 ## International Reporting Standards
 

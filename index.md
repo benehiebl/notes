@@ -23,6 +23,7 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[leaf_habit_latitudinal_gradient]] | Evergreen–deciduous latitudinal shift in forests; canopy buffering drives tree–shrub differentiation in leaf habit response to climate |
 | [[neural_network_training]] | Backpropagation, SGD, input normalisation, weight initialisation, learning rates, activations — foundational training principles |
 | [[spectral_diversity_biodiversity]] | Spectral Variability Hypothesis (SVH): predicting species diversity from spectral heterogeneity metrics (Rao's Q, GLCM texture); optimal resolution |
+| [[vegetation_community_change]] | Long-term European plant community change: EIV bioindication, nitrogen eutrophication, vegetation densification, thermophilisation; links to RS greening |
 
 ## Notes Pages (`01_notes/`)
 
@@ -50,4 +51,9 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[01_notes/jin_2023_drivers_differentiation_evergreen]] | Jin & Qian 2023 — Canopy trees shift leaf habit (evergreen→deciduous) faster than understory shrubs along latitudinal temperature gradient in eastern Asian subtropics |
 | [[01_notes/lecun_1998_efficient_backprop]] | LeCun et al. 1998 — Efficient BackProp: foundational training tricks for neural networks — SGD, normalisation, initialisation, learning rates, Hessian theory |
 | [[01_notes/liu_2023_spectral_spatial_resolution_effect]] | Liu et al. 2023 — Sentinel-2 at 10m best for TSD mapping; 10–15m optimal resolution; Rao's Q and texture best spectral heterogeneity metrics; SVH confirmed |
+| [[01_notes/mattioli_2025_carta_forestale]] | Mattioli et al. 2025 — CFI2020: Italy's first 1:10,000 national forest map; >10 Mha (FAO def.); three simultaneous forest definitions; +11.47% vs INFC2015 |
+| [[01_notes/midolo_2026_denser_vegetation]] | Midolo et al. 2026 — 60yr European plant community change: nitrogen enrichment dominant (+0.25 EIV), vegetation densification (light -0.12); thermophilisation weak except alpine |
+| [[01_notes/miettinen_2025_forest_maps_europe]] | Miettinen et al. 2025 — Pan-European 10m AGB, volume, and deciduous-conifer maps from Sentinel-2 + 14 national NFIs; kNN; nearly unbiased at European level but regression-to-mean bias |
+| [[01_notes/noce_2023_altitude_shift_tree_italy]] | Noce et al. 2023 — MaxEnt SDMs for 20 Italian forest tree species; silver fir most vulnerable; larch and Turkey oak gain; tree line shifts upward; Northern Apennines most impacted |
+| [[01_notes/pflugmacher_2019_lulc_landsat]] | Pflugmacher et al. 2019 — Pan-European LULC from Landsat STMs + LUCAS; OA=75.1%; auxiliary features +4.7pp; CORINE overestimates cropland by 63%; 3yr pooling eliminates cloud gaps |
 | [[01_notes/koch_2025_intraspecies_variation_s2]] | Koch et al. 2025 — Intraspecies spectral variation with Sentinel-2 |

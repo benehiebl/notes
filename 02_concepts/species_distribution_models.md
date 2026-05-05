@@ -8,7 +8,7 @@ type: reference
 
 **Summary**: Species distribution models statistically relate species occurrence records to environmental predictor variables to estimate the spatial distribution of suitable habitat — a fundamental tool for biogeography, conservation planning, and forecasting range shifts under climate change.
 
-**Sources**: he_2015_remote_sensing_sdm.pdf
+**Sources**: he_2015_remote_sensing_sdm.pdf, noce_2023_altitude_shift_tree_italy.pdf
 
 **Last updated**: 2026-05-05
 
@@ -72,6 +72,20 @@ Proposed framework (He et al. 2015) for integrating RS more deeply:
 4. **Multi-level response variables**: presence/absence → fitness metrics → trait diversity → community assemblages
 5. **Hierarchical spatial framework**: multiple scales simultaneously; spatially explicit uncertainty quantification
 6. **Explicitly process-oriented component**: dispersal kernels, demographic rates — not purely correlative
+
+## MaxEnt for Altitudinal Range Shift Projections
+
+Italian mountain forest case study (Noce et al. 2023) demonstrates operational MaxEnt SDM workflow for forest management:
+- **Occurrence data**: NFI systematic grid (INFC 2005) provides systematic, unbiased presence records across national territory — stronger spatial design than opportunistic herbarium data (source: noce_2023_altitude_shift_tree_italy.pdf)
+- **High-resolution climate**: VHR-REA_IT (2.2 km, ERA5 downscaled via COSMO-CLM) outperforms standard WorldClim for mountain topographic heterogeneity
+- **Altitudinal band analysis**: zonal statistics in 150m elevation bands directly translates to spatial management prescriptions (which altitudes to prioritise for each species)
+- **Key results**: Silver fir most vulnerable (loss across all 5 Italian mountain sections); European larch gains in Alps (+33 to +40%); Turkey oak gains in Apennines; tree line expected to shift upward; Northern Apennines most impacted
+- **RCP scenario bracketing**: using both RCP 4.5 and 8.5 provides upper/lower uncertainty bounds; some species show divergent projections between scenarios
+
+**Limitations specific to NFI-based SDMs:**
+- Occurrence data from older NFI cycle (INFC 2005) creates temporal mismatch with modern climate baseline
+- NFI grid coordinates systematically offset (SW corner of 1km cell) — introduces positional uncertainty
+- NFI presence-only data: no confirmed absences → MaxEnt required (cannot use presence-absence methods)
 
 ## Key Limitations and Caveats
 

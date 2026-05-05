@@ -159,3 +159,72 @@ Append-only record of all wiki operations.
 - `02_concepts/tree_species_mapping.md` — added SVH-based spectral diversity approach section; added liu_2023 to sources
 
 **Updated**: `index.md` — added spectral_diversity_biodiversity concept and liu_2023 note
+
+---
+
+## 2026-05-05 (12)
+
+**Ingested**: `mattioli_2025_carta_forestale.pdf`
+
+**Note**: Short paper in Italian (6 pages) with English abstract. Presents CFI2020, Italy's first national forest map at 1:10,000 scale.
+
+**Created**: `01_notes/mattioli_2025_carta_forestale.md` — summary of Mattioli et al. 2025 (Forest@); CFI2020 cartographic forest map; three simultaneous forest definitions; >10 Mha Italian forest area; distinction from INFC statistical survey
+
+**Updated**: `02_concepts/national_forest_inventory.md` — added CFI2020 section (cartographic vs statistical NFI distinction; three forest definitions; headline area; comparison table with INFC2015; SINFor portal)
+
+**Updated**: `index.md` — added mattioli_2025 note
+
+---
+
+## 2026-05-05 (13)
+
+**Ingested**: `midolo_2026_denser_vegetation.pdf`
+
+**Created**:
+- `01_notes/midolo_2026_denser_vegetation.md` — summary of Midolo et al. 2026 (Science Advances); 60yr European vegetation community change; nitrogen dominant driver (+0.25 CM_EIV); light decline (-0.12); thermophilisation weak except alpine; 644,524 plots, random forest spatiotemporal interpolation
+- `02_concepts/vegetation_community_change.md` — EIV bioindication system, nitrogen eutrophication, vegetation densification, habitat-specific moisture changes, acid rain recovery, thermophilisation pattern; RS links to NDVI greening
+
+**Updated**: `02_concepts/vegetation_greenness_trends.md` — added eutrophication/densification section (nitrogen-driven greening as major non-climatic RS signal; management cessation); added midolo_2026 to sources
+
+**Updated**: `index.md` — added vegetation_community_change concept and midolo_2026 note
+
+---
+
+## 2026-05-05 (14)
+
+**Ingested**: `miettinen_2025_forest_maps_europe.pdf`
+
+**Note**: Data in Brief paper describing a publicly available dataset (Zenodo: doi.org/10.5281/zenodo.13143235). Part of EU PathFinder project.
+
+**Created**: `01_notes/miettinen_2025_forest_maps_europe.md` — summary of Miettinen et al. 2025 (Data in Brief); pan-European 10m AGB/volume/DCP maps; kNN with 14-country NFI + Sentinel-2; regression-to-mean bias pattern; NFI plot density as quality driver
+
+**Updated**:
+- `02_concepts/national_forest_inventory.md` — added model-assisted estimation/wall-to-wall mapping section (kNN, regression-to-mean, plot density effect, PathFinder framework); added miettinen_2025 to sources
+- `02_concepts/sentinel_2.md` — added forest structure mapping section (AGB, volume, DCP from S2+NFI kNN); added miettinen_2025 to sources
+
+**Updated**: `index.md` — added miettinen_2025 note
+
+---
+
+## 2026-05-05 (15)
+
+**Ingested**: `noce_2023_altitude_shift_tree_italy.pdf`
+
+**Created**: `01_notes/noce_2023_altitude_shift_tree_italy.md` — summary of Noce et al. 2023 (Front. For. Glob. Change); MaxEnt SDMs for 20 Italian tree species; VHR-REA_IT 2.2km climate; 5 mountain sections; silver fir = most vulnerable; larch + turkey oak = winners; tree line upward shift; Northern Apennines most impacted
+
+**Updated**:
+- `02_concepts/species_distribution_models.md` — added MaxEnt altitudinal shift section (NFI-based occurrence data, high-res climate, altitudinal band analysis, Italian results); added noce_2023 to sources
+
+**Updated**: `index.md` — added noce_2023 note
+
+---
+
+## 2026-05-05 (16)
+
+**Ingested**: `pflugmacher_2019_lulc_landsat.pdf`
+
+**Created**: `01_notes/pflugmacher_2019_lulc_landsat.md` — summary of Pflugmacher et al. 2019 (RSE); pan-European LULC mapping with Landsat STMs + LUCAS; OA=75.1%; auxiliary environmental features most impactful (+4.7pp); 3yr multi-year pooling eliminates cloud gaps; CORINE comparison
+
+**Updated**: `02_concepts/landsat.md` — added STMs for land cover mapping section (seasonal medians, annual variance statistics, multi-year pooling, LUCAS-based map results, CORINE comparison); added pflugmacher_2019 to sources
+
+**Updated**: `index.md` — added pflugmacher_2019 note

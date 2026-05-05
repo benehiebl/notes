@@ -8,7 +8,7 @@ type: reference
 
 **Summary**: Vegetation greening (or browning) refers to long-term directional changes in satellite-derived vegetation indices, used as proxies for changes in plant productivity, biomass, and ecosystem functioning in response to climate and land use.
 
-**Sources**: bayle_2024_landsat_greening_inflated.pdf, herraiz_2025_phen_shifts_mediterranean.pdf
+**Sources**: bayle_2024_landsat_greening_inflated.pdf, herraiz_2025_phen_shifts_mediterranean.pdf, midolo_2026_denser_vegetation.pdf
 
 **Last updated**: 2026-05-05
 
@@ -26,6 +26,15 @@ type: reference
 - **Trend estimation**: Theil-Sen slope estimator preferred for robustness to outliers; Mann-Kendall test for significance
 - **Integrated NDVI (iNDVI)**: seasonal sum; alternative metric less sensitive to single-observation timing but requires gap-filled data
 - **Growing season mean NDVI**: averages over the phenologically defined season
+
+## Eutrophication and Vegetation Densification as Greening Drivers
+
+A major non-climatic driver of satellite-observed greening: nitrogen enrichment drives vegetation densification independently of temperature:
+- Continent-wide nitrogen CM_EIV increase of +0.25 (1960–2020) across all European habitat types — the dominant driver of 60-year plant community change (source: midolo_2026_denser_vegetation.pdf)
+- Higher nitrogen → higher plant productivity → higher LAI → more biomass → positive NDVI trend
+- Accompanied by CM_EIV light decline (-0.12) reflecting canopy closure and increasing shade-tolerant species dominance
+- Management cessation (grazing, coppicing, mowing abandonment) amplifies both effects: biomass accumulates, canopy closes
+- **Implication for RS**: NDVI greening reflects a combination of (1) temperature-driven growing season lengthening, (2) nitrogen-driven biomass increase, (3) CO₂ fertilization, and (4) observational bias (see [[sampling_bias_remote_sensing]]); disentangling these requires community-composition data alongside satellite signals
 
 ## Known Ecological Drivers of Greening
 
@@ -61,3 +70,4 @@ Long-term Landsat NDVI time series (28 years) in Mediterranean forests reveal sp
 - [[landsat]]
 - [[phenology]]
 - [[sampling_bias_remote_sensing]]
+- [[vegetation_community_change]]
