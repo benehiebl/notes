@@ -53,8 +53,13 @@ In Bricca et al. (2026), multi-FD was computed from 5 quantitative traits (plant
 - Direct mapping of functional diversity from satellite data is an active research area (e.g., using hyperspectral data or multispectral proxies like [[ndvi]])
 - Spectrally detectable traits (e.g., leaf chlorophyll, SLA, water content) allow partial FD estimation from EO data
 - Linking ground-measured FD to spectral variation is relevant for upscaling plot-level assessments to landscape scale
+- **Spectral Rao's Q** uses the same mathematical structure as functional Rao's QE but with pixel spectral distances instead of species trait distances → bridges spectral heterogeneity and functional diversity as related biodiversity facets — see [[spectral_diversity_biodiversity]]
+- Confirmed in montane forests: NIR-based Rao's Q and texture metrics are the best spectral predictors of Shannon-Wiener tree species diversity (source: liu_2023_spectral_spatial_resolution_effect.pdf)
+
+**Sources**: bricca_2026_topo_diversity.pdf, liu_2023_spectral_spatial_resolution_effect.pdf
 
 ## Related pages
 
 - [[plant_functional_traits]]
 - [[ndvi]]
+- [[spectral_diversity_biodiversity]]

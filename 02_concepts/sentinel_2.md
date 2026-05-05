@@ -8,7 +8,7 @@ type: reference
 
 **Summary**: Sentinel-2 is a twin-satellite ESA mission providing multispectral imagery at 10–20 m resolution with ~5-day revisit time, enabling high-resolution vegetation monitoring at spatial and temporal scales not achievable with Landsat alone.
 
-**Sources**: grabska_2024_tree_species_map.pdf, chabalala_2023_dl_s2_mediterranean_fruit_trees.pdf, deluca_2022_s1_s2_lulc_mapping.pdf, koch_2025_intraspecies_variation_s2.pdf
+**Sources**: grabska_2024_tree_species_map.pdf, chabalala_2023_dl_s2_mediterranean_fruit_trees.pdf, deluca_2022_s1_s2_lulc_mapping.pdf, koch_2025_intraspecies_variation_s2.pdf, liu_2023_spectral_spatial_resolution_effect.pdf
 
 **Last updated**: 2026-05-05
 
@@ -60,6 +60,16 @@ Sentinel-2 is the primary sensor for fine-resolution tree species mapping:
 - Multi-temporal approach (seasonal STMs or dense time series) captures phenological differences among species
 - Key discriminating periods: autumn (leaf senescence) and early spring (green-up) — both show strong inter-species variation (source: grabska_2024_tree_species_map.pdf)
 
+## Sentinel-2 for Tree Species Diversity Mapping
+
+Direct sensor comparison in the Black Forest, Germany (130 one-ha plots, October senescence imagery):
+- **Sentinel-2 at 10m** outperforms all other sensors for Shannon-Wiener TSD prediction: R²=0.477, RMSE=0.274 (source: liu_2023_spectral_spatial_resolution_effect.pdf)
+- RapidEye (10m): R²=0.346; PlanetScope (15m): R²=0.337; Landsat-8 (30m): R²=0.316
+- **10m is the optimal spatial resolution**: sub-10m resolution introduces intra-crown spectral noise (sunlit vs shaded foliage, understory) that inflates spectral heterogeneity without reflecting inter-species diversity; 10–15m matches stand-level spectral variation
+- Sentinel-2's advantage comes from both its three red-edge bands AND its broader NIR / narrower visible bands — even the 4-band Sentinel-2 subset outperforms PlanetScope and Landsat-8 4-band datasets at most resolutions
+- Most important bands for TSD: NIR >> Red-edge > SWIR > Red, Green, Blue
+- Best spectral heterogeneity metrics: Rao's Q and texture (GLCM) — see [[spectral_diversity_biodiversity]]
+
 ## Comparison with Landsat
 
 | Feature | Sentinel-2 | Landsat 8/9 |
@@ -85,3 +95,4 @@ Like Landsat, the number of cloud-free Sentinel-2 observations varies spatially:
 - [[phenology]]
 - [[tree_species_mapping]]
 - [[sampling_bias_remote_sensing]]
+- [[spectral_diversity_biodiversity]]

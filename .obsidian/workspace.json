@@ -13,15 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_notes/albrich_2019_climate_change_mountain_forests.md",
-                "mode": "preview",
-                "source": true
+                "file": "CLAUDE.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "albrich_2019_climate_change_mountain_forests"
+              "title": "CLAUDE"
             }
           }
-        ]
+        ],
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -156,17 +157,27 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_notes/albrich_2019_climate_change_mountain_forests.md",
+                "file": "CLAUDE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of albrich_2019_climate_change_mountain_forests"
+              "title": "Outline of CLAUDE"
+            }
+          },
+          {
+            "id": "aa7e19bf1e999fe9",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -188,41 +199,41 @@
   },
   "active": "6657c7196586ab5a",
   "lastOpenFiles": [
+    "log.md.tmp.116105.1777969506518",
+    "index.md.tmp.116105.1777969494402",
+    "index.md.tmp.116105.1777969481100",
+    "02_concepts/tree_species_mapping.md.tmp.116105.1777969474172",
+    "02_concepts/functional_diversity.md.tmp.116105.1777969460072",
+    "02_concepts/sentinel_2.md.tmp.116105.1777969447269",
+    "02_concepts/sentinel_2.md.tmp.116105.1777969440203",
+    "02_concepts/sentinel_2.md.tmp.116105.1777969427912",
+    "02_concepts/spectral_diversity_biodiversity.md",
+    "02_concepts/spectral_diversity_biodiversity.md.tmp.116105.1777969415596",
+    "01_notes/liu_2023_spectral_spatial_resolution_effect.md",
+    "01_notes/liu_2023_spectral_spatial_resolution_effect.md.tmp.116105.1777969375790",
+    "02_concepts/transfer_learning_remote_sensing.md",
+    "CLAUDE.md",
+    "02_concepts/forest_disturbances.md",
+    "log.md.tmp.116105.1777968696635",
+    "02_concepts/neural_network_training.md",
+    "02_concepts/leaf_habit_latitudinal_gradient.md",
+    "02_concepts/functional_diversity.md",
+    "01_notes/lecun_1998_efficient_backprop.md",
+    "02_concepts/sampling_bias_remote_sensing.md",
+    "01_notes/jin_2023_drivers_differentiation_evergreen.md",
+    "01_notes/hiebl_2025_pretraining.md",
+    "01_notes/albrich_2019_climate_change_mountain_forests.md",
     "index.md",
     "02_concepts/phenology.md",
-    "01_notes/hiebl_2025_pretraining.md",
-    "01_notes/hiebl_2025_pretraining.md.tmp.116105.1777934942894",
-    "log.md.tmp.116105.1777934796855",
-    "index.md.tmp.116105.1777934782674",
-    "02_concepts/vegetation_greenness_trends.md.tmp.116105.1777934770602",
-    "02_concepts/vegetation_greenness_trends.md.tmp.116105.1777934753603",
-    "02_concepts/phenology.md.tmp.116105.1777934751461",
     "01_notes/herraiz_2025_phen_shifts_mediterranean.md",
-    "01_notes/herraiz_2025_phen_shifts_mediterranean.md.tmp.116105.1777934733616",
     "02_concepts/landsat.md",
-    "log.md.tmp.116105.1777934455521",
-    "index.md.tmp.116105.1777934441627",
-    "index.md.tmp.116105.1777934438050",
     "02_concepts/species_distribution_models.md",
     "01_notes/he_2015_remote_sensing_sdm.md",
-    "02_concepts/forest_disturbances.md",
     "01_notes/grünig_2026_climate_change_disturbances_forest.md",
     "02_concepts/tree_species_mapping.md",
     "02_concepts/sentinel_2.md",
-    "02_concepts/functional_diversity.md",
     "01_notes/grabska_2024_tree_species_map.md",
     "01_notes/chastain_2007_eve_landsat_understory.md",
-    "01_notes/koch_2025_intraspecies_variation_s2.md",
-    "02_concepts/national_forest_inventory.md",
-    "01_notes/gasparini_2022_nfi_italy.md",
-    "01_notes/francioni_2026_canopy_closure.md",
-    "01_notes/fischer_2025_glocal_canopy_atlas.md",
-    "01_notes/fady_2025_native_trees_mediterranean.md",
-    "01_notes/deluca_2022_s1_s2_lulc_mapping.md",
-    "01_notes/chen_2020_contrastive_framework.md",
-    "01_notes/chabalala_2023_dl_s2_mediterranean_fruit_trees.md",
-    "01_notes/brown_2025_alphaearth.md",
-    "01_notes/bell_2024_hindcasting_forest_structure.md",
-    "01_notes/amico_2025_nfi_italy.md"
+    "01_notes/koch_2025_intraspecies_variation_s2.md"
   ]
 }

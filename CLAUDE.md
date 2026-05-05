@@ -61,6 +61,7 @@ Every concept page should follow this structure:
 
 
 **Sources**: List of files (from 01_notes/) this page draws information from (use backlinks [[name]]).
+                For example: [[hiebl_2025_pretraining]], [[safonova_2021_small_data]]
 
 
 **Last updated**: Date of most recent update.
@@ -70,6 +71,10 @@ Every concept page should follow this structure:
 
 
 Main content goes here. Use clear headings and short paragraphs which should be backed by citations via backlinks [[link]].
+For example:
+    ## Contextual Pretraining
+    - Using pretrained Deep Learning Foundation models is a common approach in small data problems [[safonova_2021_small_data]]
+    - conceptual in this context means, that ... [[hiebl_2025_pretraining]]
 
 
 Link to related concepts using [[wiki-links]] throughout the text. And link to related notes using [[wiki-links]] throughout the text.

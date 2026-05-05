@@ -100,3 +100,62 @@ Append-only record of all wiki operations.
 - `02_concepts/vegetation_greenness_trends.md` — added species-level greening variation section from Mediterranean Landsat study; added herraiz_2025 to sources
 
 **Updated**: `index.md` — added herraiz_2025 note
+
+---
+
+## 2026-05-05 (8)
+
+**Ingested**: `hiebl_2025_pretraining.pdf`
+
+**Created**:
+- `01_notes/hiebl_2025_pretraining.md` — summary of Hiebl et al. 2025 (JAG); user's own paper on pretraining for EVE cover mapping
+- `02_concepts/transfer_learning_remote_sensing.md` — pretraining strategies, MVP self-supervised learning, epistemic/aleatoric uncertainty, spatial autocorrelation in CV
+
+**Updated**: `index.md` — added transfer_learning_remote_sensing concept and hiebl_2025 note
+
+---
+
+## 2026-05-04 (9)
+
+**Ingested**: `jin_2023_drivers_differentiation_evergreen.pdf`
+
+**Created**:
+- `01_notes/jin_2023_drivers_differentiation_evergreen.md` — summary of Jin & Qian 2023 (Plant Diversity); canopy trees shift leaf habit faster than understory shrubs along latitudinal temperature gradient; canopy buffering mechanism
+- `02_concepts/leaf_habit_latitudinal_gradient.md` — evergreen–deciduous latitudinal gradient; canopy vs. understory differentiation; species range as climatic niche proxy; climate change implications
+
+**Updated**:
+- `02_concepts/plant_functional_traits.md` — added leaf habit economics section (evergreen vs. deciduous resource strategy, phylogenetic conservatism); added jin_2023 to sources
+- `02_concepts/topographic_microclimate.md` — added canopy microclimate buffering section (biotic analog of topographic buffering; strata-specific effective climate); added jin_2023 to sources
+
+**Updated**: `index.md` — added leaf_habit_latitudinal_gradient concept and jin_2023 note
+
+---
+
+## 2026-05-05 (10)
+
+**Ingested**: `lecun_1998_efficient_backprop.pdf`
+
+**Note**: Chapter from "Neural Networks: Tricks of the Trade" (Springer, 1998), not a journal article. Foundational reference for neural network training methodology.
+
+**Created**:
+- `01_notes/lecun_1998_efficient_backprop.md` — summary of LeCun et al. 1998 practical backprop tricks (SGD, normalisation, sigmoid, initialisation, learning rates, Hessian theory)
+- `02_concepts/neural_network_training.md` — backprop algorithm, stochastic vs batch learning, input normalisation, activations, weight initialisation, Hessian/learning rate theory, modern optimizers, regularisation
+
+**Updated**: `index.md` — added neural_network_training concept and lecun_1998 note
+
+---
+
+## 2026-05-05 (11)
+
+**Ingested**: `liu_2023_spectral_spatial_resolution_effect.pdf`
+
+**Created**:
+- `01_notes/liu_2023_spectral_spatial_resolution_effect.md` — summary of Liu et al. 2023 (RSEC); Sentinel-2 at 10m best for tree species diversity mapping; optimal spatial resolution 10–15m; Rao's Q and GLCM texture best metrics; SVH confirmed
+- `02_concepts/spectral_diversity_biodiversity.md` — Spectral Variability Hypothesis, spectral heterogeneity metrics (Rao's Q, GLCM, CV, CHA, CHV, SAM, SSD), optimal spatial resolution, best spectral bands, phenological timing
+
+**Updated**:
+- `02_concepts/sentinel_2.md` — added TSD mapping section: 10m optimal resolution, red-edge + NIR advantage, sensor comparison results; added liu_2023 to sources
+- `02_concepts/functional_diversity.md` — added spectral Rao's Q link to functional Rao's QE; added RS-diversity monitoring context; added liu_2023 to sources
+- `02_concepts/tree_species_mapping.md` — added SVH-based spectral diversity approach section; added liu_2023 to sources
+
+**Updated**: `index.md` — added spectral_diversity_biodiversity concept and liu_2023 note

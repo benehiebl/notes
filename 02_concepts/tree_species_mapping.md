@@ -77,6 +77,18 @@ Typical OA for national-scale Sentinel-2 species mapping: 80–90%
 - At **national scale**: multi-annual STMs necessary to achieve adequate observations across the whole area; GEE essential for computational feasibility
 - Subdividing into smaller regions may improve accuracy at national scale
 
+## Spectral Diversity Approach (SVH-Based)
+
+An alternative to classification: predict species diversity indices directly from spectral heterogeneity without classifying individual species:
+- Based on the **Spectral Variability Hypothesis (SVH)**: spectral variance of an image area is positively related to species diversity
+- Requires no labelled training data for individual species → scales to data-poor regions
+- Rare species contribute proportionally to spectral heterogeneity — avoids the underestimation problem of classification methods
+- Best metrics: Rao's Q and GLCM texture (source: liu_2023_spectral_spatial_resolution_effect.pdf); see [[spectral_diversity_biodiversity]]
+- Optimal spatial resolution: 10–15m; sub-10m imagery introduces intra-crown noise that reduces inter-species separability
+- Sentinel-2 at 10m with all spectral bands (esp. NIR + red-edge) achieves best accuracy (R²=0.477, RMSE=0.274 in Black Forest; source: liu_2023_spectral_spatial_resolution_effect.pdf)
+
+**Sources**: grabska_2024_tree_species_map.pdf, chabalala_2023_dl_s2_mediterranean_fruit_trees.pdf, koch_2025_intraspecies_variation_s2.pdf, liu_2023_spectral_spatial_resolution_effect.pdf
+
 ## Related pages
 
 - [[sentinel_2]]
@@ -84,3 +96,4 @@ Typical OA for national-scale Sentinel-2 species mapping: 80–90%
 - [[national_forest_inventory]]
 - [[functional_diversity]]
 - [[plant_functional_traits]]
+- [[spectral_diversity_biodiversity]]

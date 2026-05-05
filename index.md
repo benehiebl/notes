@@ -19,6 +19,10 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[tree_species_mapping]] | Methods, classifiers, class imbalance, accuracy assessment for species mapping from satellite data |
 | [[forest_disturbances]] | Wildfire, bark beetles, windthrow — climate sensitivity, interactions, vegetation feedbacks, remote sensing |
 | [[species_distribution_models]] | SDMs — response/predictor variables, RS integration, NG-SDM framework, circularity caveats |
+| [[transfer_learning_remote_sensing]] | Pretraining strategies, self-supervised MVP, epistemic/aleatoric uncertainty, spatial autocorrelation in CV |
+| [[leaf_habit_latitudinal_gradient]] | Evergreen–deciduous latitudinal shift in forests; canopy buffering drives tree–shrub differentiation in leaf habit response to climate |
+| [[neural_network_training]] | Backpropagation, SGD, input normalisation, weight initialisation, learning rates, activations — foundational training principles |
+| [[spectral_diversity_biodiversity]] | Spectral Variability Hypothesis (SVH): predicting species diversity from spectral heterogeneity metrics (Rao's Q, GLCM texture); optimal resolution |
 
 ## Notes Pages (`01_notes/`)
 
@@ -42,4 +46,8 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[01_notes/grünig_2026_climate_change_disturbances_forest]] | Grünig et al. 2026 — Climate change doubles forest disturbances in Europe; SVD deep learning framework |
 | [[01_notes/he_2015_remote_sensing_sdm]] | He et al. 2015 — Remote sensing for next-generation SDMs; RS response and predictor variables; NG-SDM vision |
 | [[01_notes/herraiz_2025_phen_shifts_mediterranean]] | Herraiz et al. 2025 — 28-yr Landsat phenology of 10 Mediterranean species; aridity shifts SOS/LOS; general greening |
+| [[01_notes/hiebl_2025_pretraining]] | Hiebl et al. 2025 — Pretraining + deep ensemble uncertainty for EVE cover mapping from Sentinel-2 time series |
+| [[01_notes/jin_2023_drivers_differentiation_evergreen]] | Jin & Qian 2023 — Canopy trees shift leaf habit (evergreen→deciduous) faster than understory shrubs along latitudinal temperature gradient in eastern Asian subtropics |
+| [[01_notes/lecun_1998_efficient_backprop]] | LeCun et al. 1998 — Efficient BackProp: foundational training tricks for neural networks — SGD, normalisation, initialisation, learning rates, Hessian theory |
+| [[01_notes/liu_2023_spectral_spatial_resolution_effect]] | Liu et al. 2023 — Sentinel-2 at 10m best for TSD mapping; 10–15m optimal resolution; Rao's Q and texture best spectral heterogeneity metrics; SVH confirmed |
 | [[01_notes/koch_2025_intraspecies_variation_s2]] | Koch et al. 2025 — Intraspecies spectral variation with Sentinel-2 |

@@ -8,7 +8,7 @@ type: reference
 
 **Summary**: Topographic microclimate describes how local terrain features (slope, aspect, elevation, curvature) modify temperature, radiation, and moisture at scales of meters to kilometres, creating locally heterogeneous conditions that regulate how plants experience regional climate.
 
-**Sources**: bricca_2026_topo_diversity.pdf, bayle_2024_landsat_greening_inflated.pdf
+**Sources**: bricca_2026_topo_diversity.pdf, bayle_2024_landsat_greening_inflated.pdf, jin_2023_drivers_differentiation_evergreen.pdf
 
 **Last updated**: 2026-05-05
 
@@ -48,6 +48,15 @@ Soil water capacity (SWC) integrates topographic position and soil texture:
 - More important for shrub guilds (closer to ground) than tree guilds (regulated more by canopy and regional climate) (source: bricca_2026_topo_diversity.pdf)
 - Can be modelled from soil texture data (SoilGrids 2.0) and digital elevation models
 
+## Canopy Microclimate Buffering (Forest Vertical Structure)
+
+Forest canopy acts as an additional microclimate filter, analogous to topographic buffering:
+- **Light attenuation**: dense canopy reduces photosynthetically active radiation (PAR) in understory by 50–99%, creating a dim, stable microclimate
+- **Temperature moderation**: canopy absorbs and re-radiates energy, dampening diurnal and seasonal temperature extremes in the understory
+- **Consequence for leaf habit**: understory shrubs experience more stable, low-resource conditions → evergreen leaf habit is advantageous for understory shrubs even at latitudes/climates where deciduous habit dominates in the canopy (source: jin_2023_drivers_differentiation_evergreen.pdf)
+- **Latitudinal gradient of buffering**: at higher latitudes, forest vertical structure simplifies and the canopy interior is less foliated → canopy buffering weakens → canopy and understory climates converge → trees and shrubs show more similar leaf habit responses to temperature
+- Bricca et al. (2026) show analogous strata differentiation: tree guild is regulated more by solar radiation (canopy-level climate), shrub guild more by soil moisture (understory-level); consistent with strata-specific microclimate (source: bricca_2026_topo_diversity.pdf)
+
 ## Relevance for Remote Sensing
 
 - Topographic normalization is required before computing vegetation indices on sloped terrain (e.g., Chastain & Townsend 2007 use cosine-i correction for Landsat)
@@ -59,3 +68,4 @@ Soil water capacity (SWC) integrates topographic position and soil texture:
 - [[phenology]]
 - [[sampling_bias_remote_sensing]]
 - [[functional_diversity]]
+- [[leaf_habit_latitudinal_gradient]]
