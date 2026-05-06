@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Transfer learning addresses the small data problem in remote sensing vegetation mapping by pretraining deep learning models on larger, related datasets before fine-tuning on scarce target observations, substantially improving generalisation to new regions.
 
-**Sources**: [[hiebl_2025_pretraining]], [[chen_2020_contrastive_framework]], [[brown_2025_alphaearth]], [[sylvain_2024_tree_species_uncertainty]]
+**Sources**: [[hiebl_2025_pretraining]], [[chen_2020_contrastive_framework]], [[brown_2025_alphaearth]], [[sylvain_2024_tree_species_uncertainty]], [[safonova_2023_small_data]], [[reichstein_2019_deep_learning_earth_sciences]], [[kattenborn_2021_review_cnn_vegetation_monitoring]], [[wen_2023_transformers_time_series]], [[vaswani_2023_attention_is_all]], [[yuan_2025_sits_augmentation]], [[sze_2017_efficient_dnn_processing]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-06
 
 ---
 
@@ -121,6 +121,57 @@ A new paradigm beyond task-specific transfer learning: train a single large mode
 - **Key advantage over task-specific transfer learning**: frozen embeddings require no backbone retraining for new tasks — a single feature space serves vegetation mapping, land cover classification, disturbance detection, and biophysical retrieval simultaneously (source: [[brown_2025_alphaearth]])
 - **Limitation**: training covers only ~1.1% of Earth's land surface; annual temporal resolution of released embeddings too coarse for phenology/sub-annual change; model weights not open-sourced (source: [[brown_2025_alphaearth]])
 
+## Deep Learning Techniques for Small Data (RS-Specific Overview)
+
+Ten techniques for addressing limited labelled data in RS deep learning (source: [[safonova_2023_small_data]]):
+- **Transfer learning** (fine-tune from pretrained model) — most accessible first approach; see sections above
+- **Self-supervised learning (SSL)** — learn from unlabelled data via MVP or contrastive learning
+- **Semi-supervised** — combine small labelled + large unlabelled; pseudo-labelling strategies
+- **Few-shot learning** — meta-learning for generalization from very few examples per class
+- **Active learning** — iteratively select most informative samples for annotation
+- **Ensemble learning** — multiple models for robustness and uncertainty quantification
+- **Spatial k-fold CV** — critical for honest accuracy in spatially autocorrelated RS data (source: [[safonova_2023_small_data]])
+- **Data augmentation** — label-preserving transformations to expand effective training set; see [[yuan_2025_sits_augmentation]] for SITS-specific techniques
+
+## Hybrid Physics-Informed Deep Learning
+
+Deep learning in geosciences must go beyond pattern matching to respect physical process constraints (source: [[reichstein_2019_deep_learning_earth_sciences]]):
+- Purely data-driven DL fails at extrapolation beyond training distribution
+- Hybrid models couple physical process models with DL: physics provides structure/constraints; DL fills gaps and corrects systematic errors
+- Key challenge: uncertainty quantification — DL models are overconfident; calibrated uncertainty is needed for Earth science use
+- Applications: carbon flux estimation, seasonal forecasting, land surface modelling
+
+## Transformer Architecture and Attention for Time Series
+
+The Transformer (Vaswani et al. 2017; source: [[vaswani_2023_attention_is_all]]) replaces recurrence with self-attention, enabling:
+- Full parallelisation during training (vs. sequential LSTM computation)
+- O(1) path length between any two sequence positions → effective long-range dependency modelling
+- Multi-head attention captures multi-scale temporal patterns (seasonal, phenological, event-scale)
+
+For SITS applications, adaptations address irregular sampling and missing data (source: [[wen_2023_transformers_time_series]]):
+- Timestamp-based positional encoding replaces fixed sinusoidal encoding for irregular series
+- Patch-based tokenisation (PatchTST) reduces quadratic attention cost for long series
+- Pre-trained Transformers on large SITS archives substantially improve few-shot classification
+
+**Key architectural components** (source: [[vaswani_2023_attention_is_all]]):
+- Scaled dot-product attention: `Attention(Q,K,V) = softmax(QKᵀ/√d_k)V`
+- Multi-head attention: H parallel heads → richer multi-scale representation
+- Positional encoding: injects sequence order into the attention mechanism
+
+## CNN Efficiency and Vegetation Remote Sensing
+
+CNN architectures (review: source: [[kattenborn_2021_review_cnn_vegetation_monitoring]]) are particularly suited for vegetation RS because:
+- Local receptive fields capture vegetation canopy spatial patterns at the right scale
+- Translation invariance handles variation in canopy position within images
+- Multi-scale convolution captures patterns from leaf to stand level
+- VHR data (sub-meter UAV/aerial) gains the most from CNN spatial feature exploitation
+- Spectral-temporal 1D CNNs (e.g., InceptionTime) are effective for pixel-wise SITS classification
+
+DNN computational efficiency (source: [[sze_2017_efficient_dnn_processing]]):
+- Energy and memory bandwidth dominate computation cost, not raw FLOP count
+- Compression: pruning > weight sharing > quantisation > knowledge distillation in impact order
+- Efficient architectures (MobileNet, SqueezeNet) enable deployment in resource-constrained contexts
+
 ## Related pages
 
 - [[sentinel_2]]
@@ -128,3 +179,5 @@ A new paradigm beyond task-specific transfer learning: train a single large mode
 - [[functional_diversity]]
 - [[national_forest_inventory]]
 - [[phenology]]
+- [[vaswani_2023_attention_is_all]]
+- [[wen_2023_transformers_time_series]]

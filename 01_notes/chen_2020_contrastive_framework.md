@@ -74,16 +74,10 @@ Key results:
 
 SimCLR demonstrates that self-supervised contrastive representation learning can match supervised pre-training on ImageNet using a strikingly simple framework. The key insight is that the quality of the contrastive task — determined by augmentation composition — and the preservation of information in the encoder (via a nonlinear projection head) matter far more than architectural specialisation or explicit negative mining. The paper catalysed a wave of follow-on work (MoCo v2, BYOL, DINO) and established contrastive learning as a practical alternative to supervised pre-training for visual representation.
 
-## Related Work & Obsidian Links
+## Related pages
 
-- [[MoCo Momentum Contrast Self-Supervised Learning]]
-- [[BYOL Bootstrap Your Own Latent]]
-- [[NT-Xent Contrastive Loss]]
-- [[ResNet Deep Residual Learning]]
-- [[Self-Supervised Learning Visual Representations]]
-
-- **Source:** [[00_literature_md/chen_2020_contrastive_framework/chen_2020_contrastive_framework]]
-
-**Cross-paper links (same vault):**
-- [[01_notes/chabalala_2023_dl_s2_mediterranean_fruit_trees]] — SimCLR's self-supervised pretraining strategy is directly relevant to remote sensing contexts like Chabalala et al., where labelled training data for DNN classifiers is scarce; contrastive pretraining on unlabelled satellite imagery could bootstrap fruit tree classifiers
-- [[01_notes/bell_2024_hindcasting_forest_structure]] — both papers address the challenge of learning robust representations from limited or temporally inconsistent data; SimCLR's temporal augmentation perspective maps onto Bell et al.'s hindcasting of Landsat features across time
+- [[transfer_learning_remote_sensing]]
+- [[neural_network_training]]
+- [[hiebl_2025_pretraining]]
+- [[chabalala_2023_dl_s2_mediterranean_fruit_trees]]
+- [[bell_2024_hindcasting_forest_structure]]

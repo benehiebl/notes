@@ -99,19 +99,15 @@ The primary objective is to demonstrate that satellite remote sensing — specif
 
 Koch et al. (2025) present the first country-scale demonstration that Sentinel-2 vegetation index time series can detect and decompose intraspecific variation in forest tree species. By linking NFI pure-species plots to rigorously processed S2 time series and applying a spatial–temporal variation decomposition framework, they show that evergreen species are primarily differentiated by where individuals grow (spatial phenotypic differences), while deciduous species are dominated by when things happen (seasonality). EVI and NDMI emerge as the most informative indices for capturing structural and water-related intraspecific differences. The approach is scalable, transferable, and directly applicable to forest management and assisted migration planning, though currently limited by strict data quality requirements, pixel-scale signal mixing, and restriction to pure-species stands. It represents a promising bridge between satellite Earth observation and forest ecology, with clear potential for expansion to multi-year, pan-European intraspecific monitoring.
 
-## Related Work & Obsidian Links
+## Related pages
 
-- [[Intraspecific Variation Forest Trees]]
-- [[Sentinel-2 Time Series Forest Monitoring]]
-- [[Phenotypic Plasticity Local Adaptation]]
-- [[Swiss National Forest Inventory]]
-- [[01_notes/koch_2025_intraspecies_variation_s2]]
-
-- **Source:** [[00_literature_md/koch_2025_intraspecies_variation_s2/koch_2025_intraspecies_variation_s2]]
-
-**Cross-paper links (same vault):**
-- [[01_notes/albrich_2019_climate_change_mountain_forests]] — both papers address forest tree responses to climate change; Albrich et al. quantify community-level vulnerability, Koch et al. resolve within-species adaptive capacity via remote sensing
-- [[01_notes/amico_2025_nfi_italy]] — NFI methodology counterpart; both studies use national forest inventories as ground-truth reference; Koch et al. demonstrate the potential of integrating NFI species data with satellite time series for ecological monitoring
-- [[01_notes/bell_2024_hindcasting_forest_structure]] — complementary remote sensing perspective: Bell et al. reconstruct historical forest structure, Koch et al. track current phenotypic variation; together they span the temporal dimension of satellite-based forest monitoring
-- [[01_notes/fischer_2025_glocal_canopy_atlas]] — both use satellite remote sensing for forest characterisation at broad scales; Fischer et al. map canopy structure globally, Koch et al. resolve within-species variation for seven Swiss species
-- [[01_notes/chabalala_2023_dl_s2_mediterranean_fruit_trees]] — methodological sibling using Sentinel-2 for species-level discrimination; Chabalala et al. use deep learning for species mapping, Koch et al. focus on within-species variation rather than between-species classification
+- [[sentinel_2]]
+- [[tree_species_mapping]]
+- [[national_forest_inventory]]
+- [[plant_functional_traits]]
+- [[spectral_diversity_biodiversity]]
+- [[albrich_2019_climate_change_mountain_forests]]
+- [[amico_2025_nfi_italy]]
+- [[bell_2024_hindcasting_forest_structure]]
+- [[fischer_2025_glocal_canopy_atlas]]
+- [[chabalala_2023_dl_s2_mediterranean_fruit_trees]]

@@ -129,7 +129,15 @@ Gasparini et al. (2022) present the complete methods and results of Italy's thir
 
 - [[national_forest_inventory]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/amico_2025_nfi_italy]] — Amico et al. 2025 builds directly on INFC data; INFC2015 provides the methodological and statistical foundation referenced there
-- [[01_notes/bricca_2026_topo_diversity]] — Bricca et al. used the Italian Forest Database (IFD), which draws on the same NFI infrastructure; INFC2015 provides the national-scale forest context for that study
-- [[01_notes/francioni_2026_canopy_closure]] — Canopy closure estimation in Italian forests is validated against NFI-derived forest attributes
+- [[amico_2025_nfi_italy]] — Amico et al. 2025 builds directly on INFC data; INFC2015 provides the methodological and statistical foundation referenced there
+- [[bricca_2026_topo_diversity]] — Bricca et al. used the Italian Forest Database (IFD), which draws on the same NFI infrastructure; INFC2015 provides the national-scale forest context for that study
+- [[francioni_2026_canopy_closure]] — Canopy closure estimation in Italian forests is validated against NFI-derived forest attributes
+
+## Related pages
+
+- [[national_forest_inventory]]
+- [[tree_species_mapping]]
+- [[mattioli_2025_carta_forestale]]
+- [[amico_2025_nfi_italy]]
+- [[bricca_2026_topo_diversity]]
+- [[francioni_2026_canopy_closure]]

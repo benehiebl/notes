@@ -178,9 +178,25 @@ Hiebl et al. (2025) demonstrate that supervised contextual pretraining on a larg
 - [[phenology]]
 - [[national_forest_inventory]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/bricca_2026_topo_diversity]] — Bricca et al. use the Italian Forest Database (IFD/VDB) for functional diversity analyses; Hiebl et al. use the same database (VDB) for pretraining — same ground truth infrastructure applied to different ecological questions
-- [[01_notes/grabska_2024_tree_species_map]] — both address species-level forest classification from Sentinel-2 time series; Grabska et al. use Random Forest with seasonal STMs at national scale; Hiebl et al. use probabilistic 1D CNN with pretraining at regional scale with small data
-- [[01_notes/chabalala_2023_dl_s2_mediterranean_fruit_trees]] — both apply DL to Sentinel-2 time series for vegetation species mapping; complementary approaches (Chabalala: classification; Hiebl et al.: continuous cover regression with uncertainty)
-- [[01_notes/herraiz_2025_phen_shifts_mediterranean]] — the phenological dynamics of evergreen Mediterranean species described by Herraiz et al. explain *why* leaf-off and senescence windows are most important in the saliency maps found here
-- [[01_notes/gasparini_2022_nfi_italy]] — Italian NFI (INFC) provides the forest area and species composition context within which EVE mapping is situated; the VDB used for pretraining draws on the same Italian forest plot infrastructure
+- [[bricca_2026_topo_diversity]] — Bricca et al. use the Italian Forest Database (IFD/VDB) for functional diversity analyses; Hiebl et al. use the same database (VDB) for pretraining — same ground truth infrastructure applied to different ecological questions
+- [[grabska_2024_tree_species_map]] — both address species-level forest classification from Sentinel-2 time series; Grabska et al. use Random Forest with seasonal STMs at national scale; Hiebl et al. use probabilistic 1D CNN with pretraining at regional scale with small data
+- [[chabalala_2023_dl_s2_mediterranean_fruit_trees]] — both apply DL to Sentinel-2 time series for vegetation species mapping; complementary approaches (Chabalala: classification; Hiebl et al.: continuous cover regression with uncertainty)
+- [[herraiz_2025_phen_shifts_mediterranean]] — the phenological dynamics of evergreen Mediterranean species described by Herraiz et al. explain *why* leaf-off and senescence windows are most important in the saliency maps found here
+- [[gasparini_2022_nfi_italy]] — Italian NFI (INFC) provides the forest area and species composition context within which EVE mapping is situated; the VDB used for pretraining draws on the same Italian forest plot infrastructure
+
+## Related pages
+
+- [[transfer_learning_remote_sensing]]
+- [[sentinel_2]]
+- [[neural_network_training]]
+- [[tree_species_mapping]]
+- [[transformers_time_series]]
+- [[hiebl_2026_alphaearth]]
+- [[traceve_pretraining]]
+- [[phenology]]
+- [[national_forest_inventory]]
+- [[bricca_2026_topo_diversity]]
+- [[grabska_2024_tree_species_map]]
+- [[chabalala_2023_dl_s2_mediterranean_fruit_trees]]
+- [[herraiz_2025_phen_shifts_mediterranean]]
+- [[gasparini_2022_nfi_italy]]

@@ -157,7 +157,17 @@ Pflugmacher et al. (2019) demonstrate that the combination of Landsat spectral-t
 - [[sentinel_2]]
 - [[phenology]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/grabska_2024_tree_species_map]] — Grabska et al. apply the same STM paradigm to Sentinel-2 for tree species mapping at national scale in Poland; the seasonal composite approach and RF classifier are directly analogous; Sentinel-2 replaces Landsat with higher resolution and more spectral bands
-- [[01_notes/bayle_2024_landsat_greening_inflated]] — Pflugmacher et al. show that 3-year pooling reduces cloud gaps from 6.7% to <0.2% in spring; Bayle et al. show that the non-uniform increase in cloud-free observations over the Landsat archive creates false greening trends — both papers illuminate the same observation density problem from different angles
-- [[01_notes/hiebl_2025_pretraining]] — Hiebl et al. use Copernicus FTY forest mask (derived from similar STM-based Landsat/S2 classification) as a forest extent layer; this paper is the conceptual predecessor of that product at the continental scale
+- [[grabska_2024_tree_species_map]] — Grabska et al. apply the same STM paradigm to Sentinel-2 for tree species mapping at national scale in Poland; the seasonal composite approach and RF classifier are directly analogous; Sentinel-2 replaces Landsat with higher resolution and more spectral bands
+- [[bayle_2024_landsat_greening_inflated]] — Pflugmacher et al. show that 3-year pooling reduces cloud gaps from 6.7% to <0.2% in spring; Bayle et al. show that the non-uniform increase in cloud-free observations over the Landsat archive creates false greening trends — both papers illuminate the same observation density problem from different angles
+- [[hiebl_2025_pretraining]] — Hiebl et al. use Copernicus FTY forest mask (derived from similar STM-based Landsat/S2 classification) as a forest extent layer; this paper is the conceptual predecessor of that product at the continental scale
+
+## Related pages
+
+- [[landsat]]
+- [[sentinel_2]]
+- [[sampling_bias_remote_sensing]]
+- [[tree_species_mapping]]
+- [[phenology]]
+- [[grabska_2024_tree_species_map]]
+- [[bayle_2024_landsat_greening_inflated]]
+- [[hiebl_2025_pretraining]]

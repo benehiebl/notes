@@ -138,7 +138,18 @@ He et al. (2015) articulate the case for integrating remote sensing deeply into 
 - [[sentinel_2]]
 - [[plant_functional_traits]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/bricca_2026_topo_diversity]] — Bricca et al. use exactly the RS-derived predictor variables (temperature, solar radiation, soil moisture) advocated by He et al. for SDM-style analyses of forest diversity
-- [[01_notes/grabska_2024_tree_species_map]] — Grabska et al. implement the RS-based plant species detection vision of He et al. at national scale using Sentinel-2 (which was just launching when He et al. was written)
-- [[01_notes/bayle_2024_landsat_greening_inflated]] — He et al. recommend NDVI time series as SDM predictor; Bayle et al. demonstrate a key limitation of such time series (sampling bias), directly relevant to SDM reliability
+- [[bricca_2026_topo_diversity]] — Bricca et al. use exactly the RS-derived predictor variables (temperature, solar radiation, soil moisture) advocated by He et al. for SDM-style analyses of forest diversity
+- [[grabska_2024_tree_species_map]] — Grabska et al. implement the RS-based plant species detection vision of He et al. at national scale using Sentinel-2 (which was just launching when He et al. was written)
+- [[bayle_2024_landsat_greening_inflated]] — He et al. recommend NDVI time series as SDM predictor; Bayle et al. demonstrate a key limitation of such time series (sampling bias), directly relevant to SDM reliability
+
+## Related pages
+
+- [[species_distribution_models]]
+- [[sentinel_2]]
+- [[ndvi]]
+- [[phenology]]
+- [[landsat]]
+- [[plant_functional_traits]]
+- [[bricca_2026_topo_diversity]]
+- [[grabska_2024_tree_species_map]]
+- [[bayle_2024_landsat_greening_inflated]]

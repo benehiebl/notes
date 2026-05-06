@@ -179,8 +179,19 @@ Liu et al. (2023) demonstrate that Sentinel-2 at 10m resolution, using all spect
 - [[functional_diversity]]
 - [[ndvi]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/grabska_2024_tree_species_map]] — complementary approach: Grabska et al. use classification-based (RF + seasonal STMs) approach to map individual species at national scale; Liu et al. use the SVH approach (no species classification needed); together they cover both major paradigms for tree diversity RS
-- [[01_notes/bricca_2026_topo_diversity]] — both study TSD/FD in temperate forest; Bricca et al. use field-measured trait data; Liu et al. use spectral heterogeneity as a proxy; the spectral-functional diversity link is the bridge between these approaches
-- [[01_notes/hiebl_2025_pretraining]] — both evaluate Sentinel-2 for forest vegetation mapping; Hiebl et al. use 1D time series regression; Liu et al. use single-date spatial heterogeneity; together they show two complementary Sentinel-2 strategies
-- [[01_notes/koch_2025_intraspecies_variation_s2]] — Koch et al. document intraspecific spectral variation in Sentinel-2, which is the source of noise at very high spatial resolution identified by Liu et al. as inflating intra-species variance and reducing TSD prediction accuracy
+- [[grabska_2024_tree_species_map]] — complementary approach: Grabska et al. use classification-based (RF + seasonal STMs) approach to map individual species at national scale; Liu et al. use the SVH approach (no species classification needed); together they cover both major paradigms for tree diversity RS
+- [[bricca_2026_topo_diversity]] — both study TSD/FD in temperate forest; Bricca et al. use field-measured trait data; Liu et al. use spectral heterogeneity as a proxy; the spectral-functional diversity link is the bridge between these approaches
+- [[hiebl_2025_pretraining]] — both evaluate Sentinel-2 for forest vegetation mapping; Hiebl et al. use 1D time series regression; Liu et al. use single-date spatial heterogeneity; together they show two complementary Sentinel-2 strategies
+- [[koch_2025_intraspecies_variation_s2]] — Koch et al. document intraspecific spectral variation in Sentinel-2, which is the source of noise at very high spatial resolution identified by Liu et al. as inflating intra-species variance and reducing TSD prediction accuracy
+
+## Related pages
+
+- [[spectral_diversity_biodiversity]]
+- [[sentinel_2]]
+- [[functional_diversity]]
+- [[tree_species_mapping]]
+- [[ndvi]]
+- [[grabska_2024_tree_species_map]]
+- [[bricca_2026_topo_diversity]]
+- [[hiebl_2025_pretraining]]
+- [[koch_2025_intraspecies_variation_s2]]

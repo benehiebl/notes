@@ -297,3 +297,110 @@ Append-only record of all wiki operations.
 - `sentinel_2.md`: added satellite CHM validation section (fischer_2025)
 - `landsat.md`: added temporal transferability section (bell_2024); added sources to Key Limitations section
 - `functional_diversity.md`: added francioni_2026 as long-term monitoring application
+---
+
+## 2026-05-06
+
+**Batch ingest**: 28 research papers from `00_literature/` — batch converted with `markitdown`, then summarized.
+
+**Created (01_notes/)**:
+- `adagbasa_2022_deep_learning_s2.md` — MLP + Sentinel-2 grass species discrimination; F1=92%
+- `alessi_2023_sampling_approaches.md` — Probabilistic vs preferential sampling for Italian forest diversity
+- `astola_2019_s2_l8_comparison.md` — Sentinel-2 outperforms Landsat 8 for boreal forest variables; red-edge B05 best predictor
+- `atzberger_2020_monitoring_forests_eu.md` — EU report on RS monitoring of forests; 6 themes reviewed
+- `bolyn_2022_tree_species_mapping.md` — UNet++ CNN for tree species proportions in Wallonia; OA_maj=0.73
+- `hemmerling_2021_forest_mapping_s2.md` — Dense Sentinel-2 TS maps 17 species in Brandenburg; spectral TS dominates
+- `kang_2021_lai_landsat.md` — Data-driven 30 m LAI from Landsat via MODIS; RMSE=0.8, r²=0.88 CONUS
+- `kattenborn_2021_review_cnn_vegetation_monitoring.md` — Review of CNNs in vegetation RS; CNNs outperform shallow ML
+- `li_2022_cloud_detection.md` — Systematic review of cloud/shadow detection; deep learning + temporal features emerging best
+- `liu_2023_mapping_tree_species_diversity.md` — SVH-based TSD mapping with S1+S2+topography; R²=0.628 best
+- `nguyen_2022_forest_mapping_explainable.md` — Explainable CNN for forest mapping at Swiss Alps treeline
+- `pu_2021_tree_species_mapping_review.md` — 40-year review of tree species mapping; "multiple method" trend
+- `reichstein_2019_deep_learning_earth_sciences.md` — DL + process understanding for Earth system science; hybrid models
+- `safonova_2023_small_data.md` — 10 DL techniques for small data in RS; decision flowchart
+- `schloegl_2026_reproducibility.md` — Reproducibility in geoscientific data analysis; FAIR, version control
+- `sze_2017_efficient_dnn_processing.md` — Tutorial on efficient DNN processing; energy/bandwidth bottlenecks
+- `thom_2026_disturbance_suitability.md` — Suitability of 53 species for post-disturbance regeneration in Central Europe
+- `tong_2023_forest_densification_china.md` — 30-year Landsat shows forest tripling in southern China
+- `torres_2021_forest_health_remote_sensing.md` — PRISMA review RS for forest health; early warning is key gap
+- `turubanove_2023_canopy_landsat.md` — Annual 30 m canopy height Europe 2001–2021; decline after 2016
+- `vaswani_2023_attention_is_all.md` — Original Transformer paper (Attention is All You Need)
+- `vihervaara_2017_ebv_remote_sensing.md` — EBVs and RS for national biodiversity monitoring (Finland)
+- `wang_2022_tree_species_mapping.md` — S2 vs L8 for plantation species mapping; temporal saturation ~2 images
+- `wegler_2025_tree_species_germany.md` — National 10 m tree species map Germany; S2+S1+DEM; F1=0.89
+- `wegler_2026_canopy_cover_loss.md` — Species-specific canopy loss Germany 2018–2024; spruce 51.3% of loss
+- `wen_2023_transformers_time_series.md` — Survey of Transformers for time series; forecasting, anomaly detection, classification
+- `xu_2022_cloud_native_algorithms.md` — Cloud-native containerisation for user-defined DL on RS Data Cubes
+- `yuan_2025_sits_augmentation.md` — 11 SITS augmentation techniques; interpolation resampling best for cross-year
+
+**Created (02_concepts/)**:
+- `transformers_time_series.md` — Transformer architecture for time series; SITS adaptations; TST, InceptionTime, pre-training
+- `ebv_biodiversity_monitoring.md` — Essential Biodiversity Variables framework; RS contributions to 4 EBV classes
+
+**Updated (02_concepts/)**:
+- `transfer_learning_remote_sensing.md` — Added 7 new sources; new sections on small data techniques (safonova), hybrid DL (reichstein), Transformer architecture (vaswani, wen), CNN efficiency (kattenborn, sze)
+- `tree_species_mapping.md` — Added 13 new sources; new sections on national-scale mapping, soft classification, sensor comparison, dense TS approach, explainable DL
+- `forest_disturbances.md` — Added 5 new sources; new sections on RS forest health review (torres), canopy height change Europe (turubanova), species-specific loss Germany (wegler_2026), post-disturbance regeneration (thom), forest expansion China (tong)
+
+**Updated**: `index.md` — added 28 notes + 2 concept pages
+
+---
+
+## 2026-05-06 (2)
+
+**Ingested**: Code repositories in `00_literature/`
+
+**Created (01_notes/)**:
+- `traceve_pretraining.md` — TRACEVE pretraining codebase; InceptionTimeEnsemble + BetaNLL + MVP pretraining on Sentinel-2 SITS; codebase for hiebl_2025_pretraining
+- `ae_training.md` — TRACEVE + AlphaEarth fusion repo; MLPAlpha, TST, CrossAttentionAlpha architectures; codebase for Hiebl et al. 2026 (ISPRS Annals)
+- `ls_mapping.md` — TSTpad on multi-annual Landsat time series for forest type + multi-target EVE/Dec/NL cover regression for Italy
+
+**Updated**: `index.md` — added 3 repository notes
+
+---
+
+## 2026-05-06 (3)
+
+**Revised**: Repository notes using proper /summarize-codebase skill template
+
+**Updated (01_notes/)**:
+- `traceve_pretraining.md` — rewritten with full codebase template; added BetaNLLLoss forward pass detail, MVP callback mechanics, bootstrap training per-head optimizer detail
+- `ae_training.md` — rewritten; added CrossAttentionAlpha forward pass (query=AE embd, KV=S2 time steps), skip-connection design rationale, TST time_encoding implementation detail
+- `ls_mapping.md` — rewritten; added TSTpad architecture detail (timestamp encoding, padding mask, multi-target head), Optuna HPO mechanics, progressive fine-tuning hierarchy table
+
+---
+
+## 2026-05-06 (4)
+
+**Ingested**: `hiebl_2026_alphaearth.pdf`
+
+**Created**:
+- `01_notes/hiebl_2026_alphaearth.md` — Hiebl et al. 2026 (ISPRS Annals); Cross-Attention fusion of AEF + Sentinel-2/CHELSA for Italian forest type and EVE cover mapping; TST_AEF,S2 outperforms stand-alone models; AEF matches S2 accuracy 10–24× faster with no preprocessing
+
+**Updated**: `index.md`
+
+---
+
+## 2026-05-06 (5)
+
+**Lint and fix pass** — resolved all 7 issues identified in lint report:
+
+1. ✅ **Stale 00_literature_md links** — removed from 12 early notes (albrich_2019, amico_2025, bell_2024, brown_2025, chabalala_2023, chastain_2007, chen_2020, deluca_2022, fady_2025, fischer_2025, francioni_2026, koch_2025)
+2. ✅ **Title-case broken links** — removed from same 12 notes; replaced with proper lowercase wikilinks
+3. ✅ **Missing Related pages sections** — added to all 29 notes that were missing it (12 old notes reformatted + 17 batch notes normalised); capitalisation `## Related Pages` → `## Related pages` normalised across all 32 remaining notes
+4. ✅ **safonova year** — confirmed already correct (safonova_2023)
+5. ✅ **Missing concept pages** — created `02_concepts/lai_estimation.md` and `02_concepts/cloud_detection.md`; added to index.md
+6. ✅ **hiebl_2025 missing 2026 link** — added `[[hiebl_2026_alphaearth]]` to hiebl_2025_pretraining Related pages
+7. ✅ **liu_2023_mapping not in spectral_diversity sources** — added to spectral_diversity_biodiversity.md Sources line
+
+**Final state:** 0 broken links, 0 orphan pages, 0 missing Related pages, 22 concept pages, 60 notes, all indexed.
+
+---
+
+## 2026-05-06 (6)
+
+**YAML frontmatter** — added headers to all notes missing them per /summarize-paper skill spec.
+
+- Added YAML frontmatter (`title`, `authors`, `year`, `source`, `tags`, `status: read`) to 32 notes that were missing it
+- Fixed 2 pre-existing headers that lacked a required tag (`midolo_2026`, `miettinen_2025`)
+- All 61 notes now have valid frontmatter with at least one of: `deep-learning`, `machine-learning`, `remote-sensing`, `forest-ecology`

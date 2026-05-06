@@ -64,17 +64,13 @@ Two study areas were chosen for their contrasting environments: the Ridge and Va
 
 Chastain and Townsend (2007) demonstrate that Landsat ETM+ leaf-off imagery, combined with topographic moisture and exposure indices, can map evergreen understory shrub communities across large Appalachian forest landscapes with acceptable accuracy (>80%). The study establishes proof of concept for an automated, regionally scalable method and provides baseline area estimates for *R. maximum* and *K. latifolia* dominance in two physiographic provinces. Key lessons — the primacy of spectral mid-IR bands, the value of topographic moisture indices, and the limitations imposed by canopy closure and land-use history — remain directly relevant to contemporary understory mapping efforts using higher-resolution imagery.
 
-## Related Work & Obsidian Links
+## Related pages
 
-- [[Landsat Topographic Normalization Remote Sensing]]
-- [[Tasseled Cap Transformation Landsat]]
-- [[Decision Tree Classification Land Cover]]
-- [[01_notes/chabalala_2023_dl_s2_mediterranean_fruit_trees]]
-- [[01_notes/bell_2024_hindcasting_forest_structure]]
-
-- **Source:** [[00_literature_md/chastain_2007_eve_landsat_understory/chastain_2007_eve_landsat_understory]]
-
-**Cross-paper links (same vault):**
-- [[01_notes/chabalala_2023_dl_s2_mediterranean_fruit_trees]] — both papers use multitemporal multispectral imagery with topographic/phenological ancillary data to classify vegetation communities beneath or within complex canopy structures; different sensors (Landsat vs Sentinel-2) and classifiers (ML/DT vs DNN)
-- [[01_notes/bell_2024_hindcasting_forest_structure]] — both work with Landsat in forested landscapes; Bell et al. use nearest-neighbor imputation for forest structure, Chastain & Townsend use supervised classification for understory composition; complementary Landsat-based approaches
-- [[01_notes/amico_2025_nfi_italy]] — evergreen understory mapping as a component of comprehensive forest inventory; both papers highlight the importance of sub-canopy vegetation characterisation for forest ecosystem assessment
+- [[landsat]]
+- [[leaf_habit_latitudinal_gradient]]
+- [[topographic_microclimate]]
+- [[ndvi]]
+- [[hiebl_2025_pretraining]]
+- [[chabalala_2023_dl_s2_mediterranean_fruit_trees]]
+- [[bell_2024_hindcasting_forest_structure]]
+- [[amico_2025_nfi_italy]]

@@ -109,19 +109,16 @@ The core objective is to build a single, task-agnostic geospatial representation
 
 Brown et al. (2025) introduce AlphaEarth Foundations, a geospatial foundation model that for the first time provides a universally dominant feature representation across diverse Earth observation mapping tasks. By jointly training on 10 heterogeneous data sources — from optical satellites and SAR to LiDAR, climate reanalysis, and geotagged natural-language text — and modeling time as a continuous variable, AEF produces compact 10 m embedding fields that outperform all prior designed and learned featurization approaches in realistic sparse-label scenarios. The release of global, annual embedding layers (2017–2024) on Google Earth Engine represents a major reduction in the barrier to entry for operationalising EO-based mapping workflows. Key limitations include geographic biases in training sampling, the lack of open-source model weights, and the coarse annual temporal resolution of released embedding fields. Nonetheless, AEF marks a paradigm shift in geospatial AI: from application-specific pipelines to a universal feature space for planetary-scale mapping.
 
-## Related Work & Obsidian Links
+## Related pages
 
-- [[Geospatial Foundation Models]]
-- [[Sentinel-2 Multi-Source Remote Sensing]]
-- [[Few-Shot Learning Remote Sensing]]
-- [[Google Earth Engine]]
-- [[01_notes/brown_2025_alphaearth]]
-
-- **Source:** [[00_literature_md/brown_2025_alphaearth/brown_2025_alphaearth]]
-
-**Cross-paper links (same vault):**
-- [[01_notes/deluca_2022_s1_s2_lulc_mapping]] — both use Sentinel-1 and Sentinel-2 for land cover mapping; DeLuca et al. demonstrate a task-specific fusion pipeline, while AEF provides a universal feature space that subsumes such task-specific approaches
-- [[01_notes/koch_2025_intraspecies_variation_s2]] — both exploit Sentinel-2 time series for ecological characterisation; Koch et al. use hand-crafted vegetation indices, whereas AEF learns a general embedding — AEF could potentially accelerate intraspecific variation studies by replacing designed indices with richer learned features
-- [[01_notes/fischer_2025_glocal_canopy_atlas]] — both target global forest mapping from satellite data; Fischer et al. produce a specific canopy structure product, while AEF provides a foundation from which many forest products (canopy height, species mapping, disturbance detection) could be derived with minimal labels
-- [[01_notes/bell_2024_hindcasting_forest_structure]] — Bell et al. reconstruct historical forest structure from Landsat; AEF's Landsat and GEDI joint training could enhance such historical inference tasks by providing richer temporal embeddings
-- [[01_notes/chabalala_2023_dl_s2_mediterranean_fruit_trees]] — both address deep learning for species-level remote sensing classification; Chabalala et al. build a bespoke CNN, while AEF demonstrates that a pre-trained embedding with linear probing can match or exceed task-specific models even with very few labels
+- [[transfer_learning_remote_sensing]]
+- [[sentinel_2]]
+- [[landsat]]
+- [[hiebl_2025_pretraining]]
+- [[hiebl_2026_alphaearth]]
+- [[ae_training]]
+- [[deluca_2022_s1_s2_lulc_mapping]]
+- [[koch_2025_intraspecies_variation_s2]]
+- [[fischer_2025_glocal_canopy_atlas]]
+- [[bell_2024_hindcasting_forest_structure]]
+- [[chabalala_2023_dl_s2_mediterranean_fruit_trees]]

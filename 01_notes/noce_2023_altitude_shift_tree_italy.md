@@ -159,9 +159,21 @@ Noce et al. (2023) demonstrate that Italian mountain forests face divergent but 
 - [[national_forest_inventory]]
 - [[topographic_microclimate]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/gasparini_2022_nfi_italy]] — INFC 2005 is the occurrence data source for all 20 species in this study; Gasparini et al. 2022 describes the INFC 2015 methodology which supersedes it
-- [[01_notes/hiebl_2025_pretraining]] — both work in Italian National Parks and mountain forests; Hiebl et al. map EVE (*Quercus ilex*, etc.) cover; Noce et al. project that Holm oak (*Q. ilex*) suitability declines in the Alps but the Turkey oak (thermophilous broadleaved) gains — relevant for interpreting EVE expansion dynamics
-- [[01_notes/bricca_2026_topo_diversity]] — Bricca et al. show temperature drives functional diversity in Italian forests; Noce et al. show temperature-driven altitudinal range shifts; together they demonstrate that both diversity and composition of Italian mountain forests are climate-sensitive
-- [[01_notes/grünig_2026_climate_change_disturbances_forest]] — both address climate change impacts on European forests; Grünig et al. focus on disturbance regimes; Noce et al. on habitat suitability — the two are coupled (disturbance opens habitat for range-expanding species)
-- [[01_notes/jin_2023_drivers_differentiation_evergreen]] — Jin & Qian document the latitudinal EV/deciduous gradient; Noce et al. project that thermophilous species (Turkey oak, which is deciduous) will expand while cold-adapted species (Silver fir, beech) contract — an altitudinal analog of that latitudinal process
+- [[gasparini_2022_nfi_italy]] — INFC 2005 is the occurrence data source for all 20 species in this study; Gasparini et al. 2022 describes the INFC 2015 methodology which supersedes it
+- [[hiebl_2025_pretraining]] — both work in Italian National Parks and mountain forests; Hiebl et al. map EVE (*Quercus ilex*, etc.) cover; Noce et al. project that Holm oak (*Q. ilex*) suitability declines in the Alps but the Turkey oak (thermophilous broadleaved) gains — relevant for interpreting EVE expansion dynamics
+- [[bricca_2026_topo_diversity]] — Bricca et al. show temperature drives functional diversity in Italian forests; Noce et al. show temperature-driven altitudinal range shifts; together they demonstrate that both diversity and composition of Italian mountain forests are climate-sensitive
+- [[grünig_2026_climate_change_disturbances_forest]] — both address climate change impacts on European forests; Grünig et al. focus on disturbance regimes; Noce et al. on habitat suitability — the two are coupled (disturbance opens habitat for range-expanding species)
+- [[jin_2023_drivers_differentiation_evergreen]] — Jin & Qian document the latitudinal EV/deciduous gradient; Noce et al. project that thermophilous species (Turkey oak, which is deciduous) will expand while cold-adapted species (Silver fir, beech) contract — an altitudinal analog of that latitudinal process
+
+## Related pages
+
+- [[species_distribution_models]]
+- [[leaf_habit_latitudinal_gradient]]
+- [[topographic_microclimate]]
+- [[forest_disturbances]]
+- [[national_forest_inventory]]
+- [[gasparini_2022_nfi_italy]]
+- [[hiebl_2025_pretraining]]
+- [[bricca_2026_topo_diversity]]
+- [[grünig_2026_climate_change_disturbances_forest]]
+- [[jin_2023_drivers_differentiation_evergreen]]

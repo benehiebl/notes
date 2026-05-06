@@ -77,19 +77,15 @@ Three aspects distinguish the GCA from existing resources. First, the scale: 3,4
 
 Fischer et al. (2025) deliver the most comprehensive harmonised ALS database ever assembled for global forest 3D structure research. Its three case studies provide compelling demonstrations of the GCA's value: exposing the substantial deficiencies of current satellite canopy height models at landscape scale, resolving a long-standing debate about power law scaling in canopy gap distributions by showing it breaks down across spatial scales, and establishing a robust framework for monitoring forest canopy turnover from multi-temporal ALS. The GCA positions ALS-derived 3D structure maps as a global ecological commons, with particular importance for calibrating next-generation satellite products and ecosystem models.
 
-## Related Work & Obsidian Links
+## Related pages
 
-- [[GEDI Spaceborne Lidar Forest Structure]]
-- [[Canopy Height Model Global Products]]
-- [[Forest Gap Dynamics Power Law]]
-- [[NEON National Ecological Observatory Network]]
-- [[iLand Forest Landscape Model]]
-
-- **Source:** [[00_literature_md/fischer_2025_glocal_canopy_atlas/fischer_2025_glocal_canopy_atlas]]
-
-**Cross-paper links (same vault):**
-- [[bell_2024_hindcasting_forest_structure]] — both papers address long-term forest structure monitoring from remote sensing; Bell et al. use Landsat + FIA for temporal mapping, Fischer et al. use ALS for 3D structure; the GCA's validation of global CHMs directly underpins the kind of Landsat-based forest attribute mapping Bell et al. perform
-- [[amico_2025_nfi_italy]] — the enhanced NFI concept (D'Amico et al.) is directly enabled by ALS-based wall-to-wall mapping; Fischer et al. provide the global ALS infrastructure that makes enhanced NFIs technically feasible at continental scale
-- [[albrich_2019_climate_change_mountain_forests]] — both papers share co-author Rupert Seidl; Albrich et al.'s iLand simulations of forest structure transitions are exactly the kind of model that GCA-derived 3D structure data can calibrate and validate
-- [[francioni_2026_canopy_closure]] — both papers address forest canopy dynamics over time; Francioni et al. monitor understory diversity change driven by canopy closure on the ground, while Fischer et al. monitor canopy gap dynamics from above using ALS; the two approaches are methodologically complementary for characterising forest structural change
-- [[deluca_2022_s1_s2_lulc_mapping]] — De Luca et al. use Sentinel-1 InSAR coherence as a proxy for canopy height, a relationship that GCA-derived CHMs can directly calibrate and validate at landscape scale
+- [[sentinel_2]]
+- [[landsat]]
+- [[national_forest_inventory]]
+- [[forest_disturbances]]
+- [[turubanove_2023_canopy_landsat]]
+- [[bell_2024_hindcasting_forest_structure]]
+- [[amico_2025_nfi_italy]]
+- [[albrich_2019_climate_change_mountain_forests]]
+- [[francioni_2026_canopy_closure]]
+- [[deluca_2022_s1_s2_lulc_mapping]]

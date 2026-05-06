@@ -133,7 +133,16 @@ Grünig et al. (2026) provide the most spatially explicit and mechanistically co
 - [[landsat]]
 - [[vegetation_greenness_trends]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/albrich_2019_climate_change_mountain_forests]] — Albrich et al. use iLand process model for Alpine forest dynamics; Grünig et al. use SVD (trained partly on iLand-like simulations) for continental-scale disturbance projections; complementary scales and approaches
-- [[01_notes/bayle_2024_landsat_greening_inflated]] — Grünig et al. use Landsat-derived disturbance time series for calibration; the observation density bias described by Bayle et al. is a potential source of calibration uncertainty in the disturbance rates used here
-- [[01_notes/bricca_2026_topo_diversity]] — both papers address climate change impacts on European forests; Bricca et al. focus on biodiversity changes via temperature-diversity relationships, Grünig et al. focus on disturbance regime changes; disturbance is a key mechanism through which diversity changes occur
+- [[albrich_2019_climate_change_mountain_forests]] — Albrich et al. use iLand process model for Alpine forest dynamics; Grünig et al. use SVD (trained partly on iLand-like simulations) for continental-scale disturbance projections; complementary scales and approaches
+- [[bayle_2024_landsat_greening_inflated]] — Grünig et al. use Landsat-derived disturbance time series for calibration; the observation density bias described by Bayle et al. is a potential source of calibration uncertainty in the disturbance rates used here
+- [[bricca_2026_topo_diversity]] — both papers address climate change impacts on European forests; Bricca et al. focus on biodiversity changes via temperature-diversity relationships, Grünig et al. focus on disturbance regime changes; disturbance is a key mechanism through which diversity changes occur
+
+## Related pages
+
+- [[forest_disturbances]]
+- [[vegetation_greenness_trends]]
+- [[landsat]]
+- [[topographic_microclimate]]
+- [[albrich_2019_climate_change_mountain_forests]]
+- [[bayle_2024_landsat_greening_inflated]]
+- [[bricca_2026_topo_diversity]]

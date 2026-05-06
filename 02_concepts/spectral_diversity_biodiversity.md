@@ -12,9 +12,9 @@ tags:
 
 **Summary**: The Spectral Variability Hypothesis (SVH) posits that the spectral heterogeneity of a satellite image is positively related to plant species diversity, enabling direct biodiversity estimation from remote sensing without species classification.
 
-**Sources**: [[liu_2023_spectral_spatial_resolution_effect]], [[bricca_2026_topo_diversity]]
+**Sources**: [[liu_2023_spectral_spatial_resolution_effect]], [[bricca_2026_topo_diversity]], [[liu_2023_mapping_tree_species_diversity]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-06
 
 ---
 

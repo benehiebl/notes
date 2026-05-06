@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Forest disturbances are discrete, punctuated events that cause mortality of trees, alter forest structure, and reset successional trajectories — they are among the most climate-sensitive processes in forest ecosystems and are expected to intensify under climate change.
 
-**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]]
+**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]], [[thom_2026_disturbance_suitability]], [[wegler_2026_canopy_cover_loss]], [[torres_2021_forest_health_remote_sensing]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-06
 
 ---
 
@@ -84,9 +84,53 @@ Forest landscape simulations (source: [[albrich_2019_climate_change_mountain_for
 - Business-as-usual even-aged management is a major risk amplifier
 - Climate-adaptive management requires shifting target species composition toward more drought- and disturbance-tolerant species (source: [[albrich_2019_climate_change_mountain_forests]])
 
+## Remote Sensing of Forest Health (RS Review 2015–2020)
+
+Systematic PRISMA review of 107 forest health RS papers (source: [[torres_2021_forest_health_remote_sensing]]):
+- Satellite multispectral sensors (Landsat) dominate; North America + Europe most studied
+- Most papers assess specific stressor impact **after** visible damage — early warning remains a major gap
+- Spectral indices (NDVI, red-edge VIs) and time series change detection are the dominant methods
+- Machine learning adoption growing but still minority approach
+
+## Tree Canopy Height Change in Europe 2001–2021
+
+Annual 30 m tree canopy height maps from Landsat + lidar calibration (source: [[turubanove_2023_canopy_landsat]]):
+- European tree canopy extent +1% 2001–2021 overall, but **declining after 2016**
+- Tall canopy forests (≥15 m) decreased 3% across the continent
+- Fennoscandia: -3.5% net canopy extent; largest losses from harvest intensification
+- RMSE ≤ 4 m for height predictions; canopy extent accuracy ≥ 94%
+
+## Species-Specific Disturbance Dynamics (Germany 2018–2024)
+
+First national species-specific canopy cover loss assessment (source: [[wegler_2026_canopy_cover_loss]]):
+- Total FCCL = 8,763 km² (2018–2024)
+- **Spruce:** 4,497 km² (51.3% of total); 18.6% of initial spruce area — peak in 2020–2021
+- **Pine:** 1,893 km² (21.6%); 7.4% relative loss
+- **Deciduous (beech, oak):** <300 km² each; ~1% relative loss — substantially more resilient
+- Spatial hotspots: Harz Mountains, Thuringian Forest, Bohemian Forest
+
+## Post-Disturbance Regeneration: Species Suitability
+
+Functional trait-based ranking of 53 species for large disturbed area regeneration in Central Europe (source: [[thom_2026_disturbance_suitability]]):
+- ~50% of assessed species are "suitable" or "highly suitable"
+- Primary suitability criteria: drought tolerance + late frost tolerance
+- Southern-range natives (oaks, *Castanea sativa*, *Pinus nigra*) score well on drought tolerance
+- Waterlogging tolerance is the most restrictive site filter
+- Key implication: diversifying beyond Norway spruce is both feasible and necessary
+
+## Forest Expansion and Densification via Long-Term Landsat
+
+30-year Landsat time series reveals forest history at 30 m in southern China (source: [[tong_2023_forest_densification_china]]):
+- Forest area tripled: 249,414 km² (1986) → 978,954 km² (2018)
+- Reforestation policies ~2000 drove a forest area surge ~2010 (10-year maturation lag)
+- Old forests were fragmented on mountain tops; expansion moved 729,540 km² downhill
+- Demonstrates long-term Landsat archives can reconstruct plantation history at landscape scale
+
 ## Related pages
 
 - [[vegetation_greenness_trends]]
 - [[landsat]]
 - [[topographic_microclimate]]
 - [[plant_functional_traits]]
+- [[tree_species_mapping]]
+- [[wegler_2025_tree_species_germany]]

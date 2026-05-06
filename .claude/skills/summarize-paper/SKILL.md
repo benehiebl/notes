@@ -10,6 +10,24 @@ REVIEW INSTRUCTION:
 
 **Summary of Academic Paper's Technical Approach**
 
+---
+title: <title of the paper >
+authors:
+  - <author 1>
+  - <author 2>
+
+year: <publication year>
+tags:
+  - <main topic (deep-learning, machine-learning, remote-sensing, forest-ecology)>
+  - <secondary topic>
+  - ...
+keywords:
+  - <keyword 1>
+  - <keyword 2>
+  - ...
+status: <unread, read, in-progress, etc.>
+---
+
 1. **Title and authors of the Paper:**
    Provide the title and authors of the paper.
 
@@ -42,8 +60,11 @@ OUTPUT INSTRUCTIONS:
 1. Only use the headers provided in the instructions above.
 2. Format your output in clear, human-readable Markdown.
 3. Save the Markdown to 01_notes/ with a filename that reflects the paper's filename (e.g., `01_notes/author_year_short_title.md`).
+4. tags have to contain at least one of the following: deep-learning, machine-learning, remote-sensing, forest-ecology
 
 PAPER TEXT INPUT:
+
+- use /markitdown skill to convert the provided paper text to Markdown format before processing it for summarization, if possible.
 
 ## Attribution
 

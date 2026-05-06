@@ -67,17 +67,13 @@ Key results:
 
 Bell et al. (2024) demonstrate that Landsat-based GNN imputation is a robust approach for both hindcasting and updating forest structure maps outside the reference epoch in the western Cascades. The practical implication is that long-term continuous map records can be generated with confidence from a temporally limited field inventory dataset, enabling retrospective and forward-looking analysis of forest structure change. Spatial clustering of extrapolation errors at landscape scales highlights the importance of examining forest maps at the appropriate scale for each management application.
 
-## Related Work & Obsidian Links
+## Related pages
 
-- [[Gradient Nearest Neighbor Imputation]]
-- [[USDA Forest Inventory and Analysis FIA]]
-- [[LandTrendr Landsat Time Series]]
-- [[01_notes/amico_2025_nfi_italy]]
-- [[Forest Structure Mapping Remote Sensing]]
-
-- **Source:** [[00_literature_md/bell_2024_hindcasting_forest_structure/bell_2024_hindcasting_forest_structure]]
-
-**Cross-paper links (same vault):**
-- [[01_notes/amico_2025_nfi_italy]] — both papers directly address the challenge of integrating field inventory data with remote sensing for continuous forest monitoring; Bell et al. demonstrate the temporal robustness that makes the enhanced NFI concept viable
-- [[01_notes/albrich_2019_climate_change_mountain_forests]] — the forest structure transitions simulated by Albrich et al. (large tree loss, compositional shifts) are exactly what Bell et al.'s mapping framework would need to detect over time
-- [[01_notes/chabalala_2023_dl_s2_mediterranean_fruit_trees]] — complementary approach: Bell uses nearest-neighbor imputation while Chabalala uses DNN; both tackle temporal consistency and classification accuracy in vegetation remote sensing
+- [[landsat]]
+- [[national_forest_inventory]]
+- [[vegetation_greenness_trends]]
+- [[transfer_learning_remote_sensing]]
+- [[turubanove_2023_canopy_landsat]]
+- [[amico_2025_nfi_italy]]
+- [[albrich_2019_climate_change_mountain_forests]]
+- [[chabalala_2023_dl_s2_mediterranean_fruit_trees]]

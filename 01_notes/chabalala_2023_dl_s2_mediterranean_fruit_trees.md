@@ -60,16 +60,12 @@ The study area is the Levubu sub-tropical farming region (~10,000 ha) in the Nor
 
 This paper presents a targeted remote-sensing approach to fruit tree mapping in complex smallholder landscapes, combining optimal seasonal image selection with phenological feature extraction and deep learning. Its key contribution is demonstrating that temporal and spectral dimensionality reduction — achieved through phenological metrics from a carefully chosen acquisition window — enables a DNN to outperform conventional classifiers in heterogeneous agricultural environments. The methodology offers a replicable framework for crop mapping in cloud-prone, data-scarce tropical and sub-tropical regions.
 
-## Related Work & Obsidian Links
+## Related pages
 
-- [[Random Forest for Crop Type Mapping]]
-- [[Sentinel-2 Time Series Analysis]]
-- [[Phenological Metrics in Remote Sensing]]
-- [[Deep Neural Networks for Land Cover Classification]]
-- [[Smallholder Agriculture Remote Sensing]]
-
-- **Source:** [[00_literature_md/chabalala_2023_dl_s2_mediterranean_fruit_trees/chabalala_2023_dl_s2_mediterranean_fruit_trees]]
-
-**Cross-paper links (same vault):**
-- [[01_notes/amico_2025_nfi_italy]] — both papers use Sentinel-2 for forest/vegetation monitoring; NFI paper discusses wall-to-wall remote sensing mapping
-- [[01_notes/bell_2024_hindcasting_forest_structure]] — related use of remote sensing for vegetation attribute mapping, temporal consistency of models
+- [[sentinel_2]]
+- [[phenology]]
+- [[tree_species_mapping]]
+- [[neural_network_training]]
+- [[transfer_learning_remote_sensing]]
+- [[amico_2025_nfi_italy]]
+- [[bell_2024_hindcasting_forest_structure]]

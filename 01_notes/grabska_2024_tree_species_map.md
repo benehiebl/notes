@@ -133,8 +133,19 @@ Grabska-Szwagrzyk et al. (2024) demonstrate that short-period seasonal Spectral-
 - [[phenology]]
 - [[sampling_bias_remote_sensing]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/koch_2025_intraspecies_variation_s2]] — both use Sentinel-2 for species-level forest discrimination; Koch et al. focus on intraspecific spectral variation which is a key source of confusion in Grabska et al.'s classification
-- [[01_notes/chabalala_2023_dl_s2_mediterranean_fruit_trees]] — both perform species-level classification with Sentinel-2 time series; different classifiers (RF vs DNN) and ecosystem contexts
-- [[01_notes/deluca_2022_s1_s2_lulc_mapping]] — both use Sentinel time series with GEE for vegetation classification; DeLuca et al. add Sentinel-1 SAR for LULC distinction
-- [[01_notes/bayle_2024_landsat_greening_inflated]] — Grabska et al. also show that observation frequency (overlapping vs non-overlapping orbits) affects accuracy, paralleling Bayle et al.'s sampling bias argument for Landsat
+- [[koch_2025_intraspecies_variation_s2]] — both use Sentinel-2 for species-level forest discrimination; Koch et al. focus on intraspecific spectral variation which is a key source of confusion in Grabska et al.'s classification
+- [[chabalala_2023_dl_s2_mediterranean_fruit_trees]] — both perform species-level classification with Sentinel-2 time series; different classifiers (RF vs DNN) and ecosystem contexts
+- [[deluca_2022_s1_s2_lulc_mapping]] — both use Sentinel time series with GEE for vegetation classification; DeLuca et al. add Sentinel-1 SAR for LULC distinction
+- [[bayle_2024_landsat_greening_inflated]] — Grabska et al. also show that observation frequency (overlapping vs non-overlapping orbits) affects accuracy, paralleling Bayle et al.'s sampling bias argument for Landsat
+
+## Related pages
+
+- [[sentinel_2]]
+- [[tree_species_mapping]]
+- [[national_forest_inventory]]
+- [[phenology]]
+- [[sampling_bias_remote_sensing]]
+- [[koch_2025_intraspecies_variation_s2]]
+- [[chabalala_2023_dl_s2_mediterranean_fruit_trees]]
+- [[deluca_2022_s1_s2_lulc_mapping]]
+- [[bayle_2024_landsat_greening_inflated]]

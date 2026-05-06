@@ -175,7 +175,16 @@ Sylvain et al. (2024) demonstrate that a super-ensemble of 9 CNNs trained on RGB
 - [[neural_network_training]]
 - [[national_forest_inventory]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/hiebl_2025_pretraining]] — both use deep ensemble uncertainty: Hiebl et al. use 15-head deep ensemble with epistemic/aleatoric separation on 1D Sentinel-2 time series; Sylvain et al. use 9-model super-ensemble agreement on 2D aerial image patches — complementary uncertainty approaches for different data modalities and spatial scales
-- [[01_notes/grabska_2024_tree_species_map]] — both address tree species mapping from RS but at opposite ends of the scale/resolution spectrum: Grabska et al. use free 10m Sentinel-2 at national scale with RF; Sylvain et al. use 30cm airborne data at regional scale with CNN — operational trade-offs between coverage and detail
-- [[01_notes/liu_2023_spectral_spatial_resolution_effect]] — Liu et al. show that too-fine spatial resolution (< 10m) degrades tree diversity mapping via spectral heterogeneity; Sylvain et al. show that sub-meter resolution (0.9m) is viable and beneficial for tree species identity mapping when combined with structural data (CHM) — the information content of very high resolution becomes usable when structural separation is added
+- [[hiebl_2025_pretraining]] — both use deep ensemble uncertainty: Hiebl et al. use 15-head deep ensemble with epistemic/aleatoric separation on 1D Sentinel-2 time series; Sylvain et al. use 9-model super-ensemble agreement on 2D aerial image patches — complementary uncertainty approaches for different data modalities and spatial scales
+- [[grabska_2024_tree_species_map]] — both address tree species mapping from RS but at opposite ends of the scale/resolution spectrum: Grabska et al. use free 10m Sentinel-2 at national scale with RF; Sylvain et al. use 30cm airborne data at regional scale with CNN — operational trade-offs between coverage and detail
+- [[liu_2023_spectral_spatial_resolution_effect]] — Liu et al. show that too-fine spatial resolution (< 10m) degrades tree diversity mapping via spectral heterogeneity; Sylvain et al. show that sub-meter resolution (0.9m) is viable and beneficial for tree species identity mapping when combined with structural data (CHM) — the information content of very high resolution becomes usable when structural separation is added
+
+## Related pages
+
+- [[tree_species_mapping]]
+- [[transfer_learning_remote_sensing]]
+- [[national_forest_inventory]]
+- [[neural_network_training]]
+- [[hiebl_2025_pretraining]]
+- [[grabska_2024_tree_species_map]]
+- [[liu_2023_spectral_spatial_resolution_effect]]

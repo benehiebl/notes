@@ -67,17 +67,13 @@ Key results:
 
 Albrich et al. (2019) demonstrate that even moderate warming — at or slightly above current Paris Agreement targets — can push Eastern Alpine mountain forests across a critical, largely irreversible threshold. The shift from conifer-dominated old-growth forest to a shorter, broadleaf-dominated system represents a fundamental reorganisation of ecosystem structure and function. Topographic complexity buffers but cannot prevent these transitions under high warming. The demonstration of millennial-scale irreversibility makes this one of the most consequential findings for long-term forest management and conservation planning in European mountain regions.
 
-## Related Work & Obsidian Links
+## Related pages
 
-- [[iLand Forest Landscape Model]]
-- [[Tipping Points in Forest Ecosystems]]
-- [[Norway Spruce Climate Vulnerability]]
-- [[Alternative Stable States Ecology]]
-- [[01_notes/albrich_2019_climate_change_mountain_forests]]
-
-- **Source:** [[00_literature_md/albrich_2019_climate_change_mountain_forests/albrich_2019_climate_change_mountain_forests]]
-
-**Cross-paper links (same vault):**
-- [[01_notes/amico_2025_nfi_italy]] — climate-driven disturbance and rapid forest change are the rationale behind modernising NFIs; Albrich et al. quantify what those changes look like mechanistically
-- [[01_notes/fady_2025_native_trees_mediterranean]] — both papers address climate change impacts on European forest trees; habitat heterogeneity as buffer parallels the topographic complexity argument in Albrich et al.
-- [[01_notes/bell_2024_hindcasting_forest_structure]] — long-term monitoring of forest structure change via remote sensing is needed precisely because of the kind of compositional transitions Albrich et al. describe
+- [[forest_disturbances]]
+- [[topographic_microclimate]]
+- [[species_distribution_models]]
+- [[vegetation_greenness_trends]]
+- [[grünig_2026_climate_change_disturbances_forest]]
+- [[amico_2025_nfi_italy]]
+- [[fady_2025_native_trees_mediterranean]]
+- [[bell_2024_hindcasting_forest_structure]]

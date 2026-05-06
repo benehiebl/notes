@@ -123,7 +123,17 @@ Jin & Qian (2023) demonstrate that the latitudinal shift from evergreen to decid
 - [[phenology]]
 - [[functional_diversity]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/bricca_2026_topo_diversity]] — Bricca et al. (2026) demonstrate analogous canopy effects: tree guild is regulated more by solar radiation (canopy-level climate), shrub guild more by soil moisture (understory-level) in Italian forests — complementary evidence that canopy and understory experience different effective climates
-- [[01_notes/herraiz_2025_phen_shifts_mediterranean]] — the Mediterranean inverted phenological cycle (evergreen species maintaining greenness through winter) is precisely the leaf habit strategy Jin & Qian show is advantageous at lower latitudes / warmer climates
-- [[01_notes/hiebl_2025_pretraining]] — EVE (evergreen broad-leaved) species expansion documented at the Mediterranean-temperate transition in Italy; Jin & Qian provide the macroecological mechanism explaining why warming favours EVE species northward expansion
+- [[bricca_2026_topo_diversity]] — Bricca et al. (2026) demonstrate analogous canopy effects: tree guild is regulated more by solar radiation (canopy-level climate), shrub guild more by soil moisture (understory-level) in Italian forests — complementary evidence that canopy and understory experience different effective climates
+- [[herraiz_2025_phen_shifts_mediterranean]] — the Mediterranean inverted phenological cycle (evergreen species maintaining greenness through winter) is precisely the leaf habit strategy Jin & Qian show is advantageous at lower latitudes / warmer climates
+- [[hiebl_2025_pretraining]] — EVE (evergreen broad-leaved) species expansion documented at the Mediterranean-temperate transition in Italy; Jin & Qian provide the macroecological mechanism explaining why warming favours EVE species northward expansion
+
+## Related pages
+
+- [[leaf_habit_latitudinal_gradient]]
+- [[topographic_microclimate]]
+- [[phenology]]
+- [[plant_functional_traits]]
+- [[functional_diversity]]
+- [[bricca_2026_topo_diversity]]
+- [[herraiz_2025_phen_shifts_mediterranean]]
+- [[hiebl_2025_pretraining]]

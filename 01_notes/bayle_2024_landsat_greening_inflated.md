@@ -97,6 +97,15 @@ Bayle et al. (2024) demonstrate that the increasing temporal sampling density of
 - [[sampling_bias_remote_sensing]]
 - [[vegetation_greenness_trends]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/chastain_2007_eve_landsat_understory]] — also uses Landsat in seasonally variable environments; complements Bayle et al. by showing how leaf-off phenology can be exploited constructively, while Bayle et al. warn against naive maximum compositing
-- [[01_notes/bell_2024_hindcasting_forest_structure]] — uses Landsat time series for long-term forest monitoring; the sampling bias described here is relevant to any Landsat annual composite analysis
+- [[chastain_2007_eve_landsat_understory]] — also uses Landsat in seasonally variable environments; complements Bayle et al. by showing how leaf-off phenology can be exploited constructively, while Bayle et al. warn against naive maximum compositing
+- [[bell_2024_hindcasting_forest_structure]] — uses Landsat time series for long-term forest monitoring; the sampling bias described here is relevant to any Landsat annual composite analysis
+
+## Related pages
+
+- [[landsat]]
+- [[ndvi]]
+- [[sampling_bias_remote_sensing]]
+- [[vegetation_greenness_trends]]
+- [[phenology]]
+- [[chastain_2007_eve_landsat_understory]]
+- [[bell_2024_hindcasting_forest_structure]]

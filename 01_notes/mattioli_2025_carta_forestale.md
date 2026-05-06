@@ -151,7 +151,16 @@ Mattioli et al. (2025) present CFI2020 as Italy's first operational national for
 - [[tree_species_mapping]]
 - [[forest_disturbances]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/gasparini_2022_nfi_italy]] — INFC2015 is the statistical counterpart to CFI2020; both characterise Italian forests but with different methods; CFI2020's headline area (+11.47% vs INFC2015) explicitly references the Gasparini et al. 2022 book as the comparison baseline
-- [[01_notes/hiebl_2025_pretraining]] — EVE cover mapping in Italian National Parks uses Copernicus FTY forest mask; CFI2020 is a higher-resolution Italian alternative for forest masking that could improve future RS studies
-- [[01_notes/amico_2025_nfi_italy]] — D'Amico et al. on the Italian NFI system (SINFor); CFI2020 is one of the products delivered within the SINFor framework described there
+- [[gasparini_2022_nfi_italy]] — INFC2015 is the statistical counterpart to CFI2020; both characterise Italian forests but with different methods; CFI2020's headline area (+11.47% vs INFC2015) explicitly references the Gasparini et al. 2022 book as the comparison baseline
+- [[hiebl_2025_pretraining]] — EVE cover mapping in Italian National Parks uses Copernicus FTY forest mask; CFI2020 is a higher-resolution Italian alternative for forest masking that could improve future RS studies
+- [[amico_2025_nfi_italy]] — D'Amico et al. on the Italian NFI system (SINFor); CFI2020 is one of the products delivered within the SINFor framework described there
+
+## Related pages
+
+- [[national_forest_inventory]]
+- [[sentinel_2]]
+- [[gasparini_2022_nfi_italy]]
+- [[amico_2025_nfi_italy]]
+- [[tree_species_mapping]]
+- [[forest_disturbances]]
+- [[hiebl_2025_pretraining]]

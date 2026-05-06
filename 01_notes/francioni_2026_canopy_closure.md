@@ -81,19 +81,15 @@ Ellenberg indicator analysis (Table S4) confirms: light values decreased (canopy
 
 Francioni et al. (2026) provide compelling evidence that European forests undergoing canopy closure following management abandonment are losing understory plant diversity, with climatic extremes compounding this effect in temperate zones. The mechanistic interpretation — progressive light-filtering eliminating shade-intolerant species, with thermophilization and xerophilization reshaping community composition — is supported by multiple independent lines of evidence (richness trends, beta diversity decomposition, Ellenberg values). Mediterranean forests, adapted to recurrent drought and characterised by stable canopy cover, are comparatively resilient. The study underscores the irreplaceable value of long-term permanent monitoring infrastructure (ICP Forests) for biodiversity science and provides a methodological template for disentangling transient from directional community change.
 
-## Related Work & Obsidian Links
+## Related pages
 
-- [[ICP Forests Level II Monitoring]]
-- [[Beta Diversity Partitioning Baselga]]
-- [[Forest Understory Plant Diversity Europe]]
+- [[forest_disturbances]]
+- [[vegetation_community_change]]
+- [[functional_diversity]]
+- [[topographic_microclimate]]
+- [[midolo_2026_denser_vegetation]]
 - [[albrich_2019_climate_change_mountain_forests]]
 - [[fady_2025_native_trees_mediterranean]]
-
-- **Source:** [[00_literature_md/francioni_2026_canopy_closure/francioni_2026_canopy_closure]]
-
-**Cross-paper links (same vault):**
-- [[albrich_2019_climate_change_mountain_forests]] — both papers address climate-driven reorganisation of forest ecosystems; Albrich et al. simulate large-scale compositional tipping points in Alpine forests at millennial scale, while Francioni et al. document the ground-level biodiversity consequences already unfolding over 25 years; the canopy closure dynamic Francioni et al. identify is directly related to the structural transitions Albrich et al. model
-- [[fady_2025_native_trees_mediterranean]] — Francioni et al.'s finding of stable Mediterranean understory diversity mirrors Fady et al.'s argument that Mediterranean tree communities show resilience; both papers highlight the Mediterranean biome as comparatively resistant to compositional disruption, though Fady et al. warn this could change
-- [[amico_2025_nfi_italy]] — Francioni et al. use ICP Forests Level II plots, which the new Italian NFI (D'Amico et al.) explicitly proposes to partially integrate; biodiversity monitoring of the understory (Francioni et al.) is among the "dedicated surveys" D'Amico et al. highlight as key NFI innovations
-- [[fischer_2025_glocal_canopy_atlas]] — Francioni et al. document understory diversity loss driven by canopy closure measured in the field; Fischer et al. provide the ALS-derived 3D canopy structure maps that could quantify this closure remotely and at landscape scale; the two approaches are deeply complementary for understanding canopy-understory coupling
-- [[chastain_2007_eve_landsat_understory]] — both papers study the relationship between canopy structure and understory vegetation composition; Chastain & Townsend use remote sensing to map understory communities, Francioni et al. use permanent plots to track their temporal change; together they address the full spatial-temporal monitoring challenge for forest understory ecosystems
+- [[amico_2025_nfi_italy]]
+- [[fischer_2025_glocal_canopy_atlas]]
+- [[chastain_2007_eve_landsat_understory]]

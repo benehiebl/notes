@@ -14,6 +14,8 @@ authors:
 year: 2025
 source: miettinen_2025_forest_maps_europe
 tags:
+  - machine-learning
+  - remote-sensing
   - forest-structure-mapping
   - biomass
   - timber-volume
@@ -150,8 +152,20 @@ Miettinen et al. (2025) present the first pan-European 10m forest structure maps
 - [[tree_species_mapping]]
 - [[transfer_learning_remote_sensing]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/gasparini_2022_nfi_italy]] — Italian NFI (INFC) provides the Italian field plots (2,813 plots, 2018-2019) used in this pan-European mapping; map accuracy in Italy partly reflects INFC plot density (0.05 plots/km²)
-- [[01_notes/mattioli_2025_carta_forestale]] — CFI2020 provides the forest mask and type information for Italy; Copernicus FTY (used here) and CFI2020 serve similar masking purposes; CFI2020 is at higher thematic detail
-- [[01_notes/hiebl_2025_pretraining]] — both use Copernicus FTY as forest mask; Miettinen et al. provide the continental AGB and DCP context within which EVE cover mapping in Italian National Parks is situated
-- [[01_notes/grabska_2024_tree_species_map]] — both use Sentinel-2 + NFI data for national/continental forest mapping; Grabska et al. map species identity (classification); Miettinen et al. map structure attributes (regression); complementary products
+- [[gasparini_2022_nfi_italy]] — Italian NFI (INFC) provides the Italian field plots (2,813 plots, 2018-2019) used in this pan-European mapping; map accuracy in Italy partly reflects INFC plot density (0.05 plots/km²)
+- [[mattioli_2025_carta_forestale]] — CFI2020 provides the forest mask and type information for Italy; Copernicus FTY (used here) and CFI2020 serve similar masking purposes; CFI2020 is at higher thematic detail
+- [[hiebl_2025_pretraining]] — both use Copernicus FTY as forest mask; Miettinen et al. provide the continental AGB and DCP context within which EVE cover mapping in Italian National Parks is situated
+- [[grabska_2024_tree_species_map]] — both use Sentinel-2 + NFI data for national/continental forest mapping; Grabska et al. map species identity (classification); Miettinen et al. map structure attributes (regression); complementary products
+
+## Related pages
+
+- [[national_forest_inventory]]
+- [[sentinel_2]]
+- [[landsat]]
+- [[tree_species_mapping]]
+- [[sampling_bias_remote_sensing]]
+- [[transfer_learning_remote_sensing]]
+- [[gasparini_2022_nfi_italy]]
+- [[mattioli_2025_carta_forestale]]
+- [[hiebl_2025_pretraining]]
+- [[grabska_2024_tree_species_map]]

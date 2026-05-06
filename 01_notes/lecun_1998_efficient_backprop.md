@@ -168,6 +168,12 @@ LeCun et al. (1998) provide the theoretical foundations and practical prescripti
 - [[neural_network_training]]
 - [[transfer_learning_remote_sensing]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/hiebl_2025_pretraining]] — applies InceptionTime CNN with stochastic training and Gaussian NLL loss; the weight initialisation, input normalisation (2nd–95th percentile per band), and probabilistic output design all trace directly to principles described here
-- [[01_notes/vaswani_2023_attention_is_all]] — Transformer architecture uses the same backprop foundations; LeCun's analysis of learning rate and Hessian conditioning informs the learning rate warmup strategies standard in Transformer training
+- [[hiebl_2025_pretraining]] — applies InceptionTime CNN with stochastic training and Gaussian NLL loss; the weight initialisation, input normalisation (2nd–95th percentile per band), and probabilistic output design all trace directly to principles described here
+- [[vaswani_2023_attention_is_all]] — Transformer architecture uses the same backprop foundations; LeCun's analysis of learning rate and Hessian conditioning informs the learning rate warmup strategies standard in Transformer training
+
+## Related pages
+
+- [[neural_network_training]]
+- [[transfer_learning_remote_sensing]]
+- [[vaswani_2023_attention_is_all]]
+- [[hiebl_2025_pretraining]]

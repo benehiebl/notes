@@ -34,7 +34,7 @@ log.md      -- append-only record of all operations
 
 When the user adds a new source to `00_literature/` and asks you to ingest it:
 
-use the /summarize-paper skill to:
+use the /summarize-paper (for pdf) or the /summarize-codebase (for repository) skill to:
 1. Read the full source document
 2. Discuss key takeaways with the user before writing anything
 3. Create a summary page in `01_notes/` named after the source filename
@@ -50,7 +50,7 @@ A single source may touch several wiki pages. That is normal.
 ## Page format
 
 
-Every summary page should follow the structure proposed in summarize-paper.
+Every summary page should follow the structure proposed in /summarize-paper (or summarize-codebase) skill.
 
 Every concept page should follow this structure:
 
@@ -140,3 +140,4 @@ When the user asks you to lint or audit the wiki:
 - Keep page names lowercase with undescores (e.g. `machine_learning.md`)
 - Write in clear, plain language
 - When uncertain about how to categorize something, ask the user
+- only use /graphify skill if directly called by human

@@ -65,17 +65,14 @@ As an opinion paper, the study does not present original experimental results bu
 
 The new Italian National Forest Inventory represents a significant modernisation of national forest monitoring, driven by the recognition that climate change has fundamentally altered the temporal dynamics of forest ecosystems. By combining annual field remeasurement with remote sensing integration, stakeholder co-design, and biodiversity-targeted surveys, IFNI offers a blueprint for next-generation NFIs that can support both science and policy in a period of rapid forest change. The innovations discussed are directly relevant to the broader European and global effort to modernise forest inventory systems.
 
-## Related Work & Obsidian Links
+## Related pages
 
-- [[Enhanced Forest Inventory]]
-- [[Sentinel-2 Forest Disturbance Mapping]]
-- [[ICP Forests Monitoring Programme]]
-- [[Wall-to-Wall Forest Biomass Mapping Italy]]
-- [[Tessellation Stratified Sampling for NFI]]
-
-- **Source:** [[00_literature_md/amico_2025_nfi_italy/amico_2025_nfi_italy]]
-
-**Cross-paper links (same vault):**
-- [[01_notes/bell_2024_hindcasting_forest_structure]] — closely related: both address long-term forest attribute mapping combining inventory data with remote sensing; NFI updating is central to Bell et al.
-- [[01_notes/albrich_2019_climate_change_mountain_forests]] — climate change disturbance is the key driver for modernising NFIs; Albrich et al. quantify the kind of rapid forest change that annual NFIs need to detect
-- [[01_notes/chabalala_2023_dl_s2_mediterranean_fruit_trees]] — Sentinel-2 methodology applied to vegetation mapping; complementary remote sensing approach
+- [[national_forest_inventory]]
+- [[sentinel_2]]
+- [[landsat]]
+- [[gasparini_2022_nfi_italy]]
+- [[mattioli_2025_carta_forestale]]
+- [[miettinen_2025_forest_maps_europe]]
+- [[bell_2024_hindcasting_forest_structure]]
+- [[albrich_2019_climate_change_mountain_forests]]
+- [[chabalala_2023_dl_s2_mediterranean_fruit_trees]]

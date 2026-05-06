@@ -138,8 +138,21 @@ Herraiz et al. (2025) demonstrate that Mediterranean evergreen forest species ex
 - [[sampling_bias_remote_sensing]]
 - [[national_forest_inventory]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/bayle_2024_landsat_greening_inflated]] — Bayle et al. warn that increasing Landsat observation density over time inflates NDVImax greening trends; the greening trends found here should be interpreted with this caveat in mind, though monthly maximum compositing partially mitigates the bias
-- [[01_notes/bricca_2026_topo_diversity]] — both papers study Mediterranean forest ecology in Italy/Spain; Bricca et al. show diversity losses under projected warming, while Herraiz et al. document current greening resilience — a tension worth noting
-- [[01_notes/fady_2025_native_trees_mediterranean]] — both address Mediterranean tree species responses to climate; Fady et al. focus on conservation genetics while Herraiz et al. focus on RS-based phenological monitoring
-- [[01_notes/grabska_2024_tree_species_map]] — both use Landsat/Sentinel-2 time series for species-level forest monitoring; Grabska et al. exploit phenological timing differences for classification — Herraiz et al. quantify what those timing differences actually are for Mediterranean species
+- [[bayle_2024_landsat_greening_inflated]] — Bayle et al. warn that increasing Landsat observation density over time inflates NDVImax greening trends; the greening trends found here should be interpreted with this caveat in mind, though monthly maximum compositing partially mitigates the bias
+- [[bricca_2026_topo_diversity]] — both papers study Mediterranean forest ecology in Italy/Spain; Bricca et al. show diversity losses under projected warming, while Herraiz et al. document current greening resilience — a tension worth noting
+- [[fady_2025_native_trees_mediterranean]] — both address Mediterranean tree species responses to climate; Fady et al. focus on conservation genetics while Herraiz et al. focus on RS-based phenological monitoring
+- [[grabska_2024_tree_species_map]] — both use Landsat/Sentinel-2 time series for species-level forest monitoring; Grabska et al. exploit phenological timing differences for classification — Herraiz et al. quantify what those timing differences actually are for Mediterranean species
+
+## Related pages
+
+- [[landsat]]
+- [[phenology]]
+- [[ndvi]]
+- [[vegetation_greenness_trends]]
+- [[leaf_habit_latitudinal_gradient]]
+- [[sampling_bias_remote_sensing]]
+- [[national_forest_inventory]]
+- [[bayle_2024_landsat_greening_inflated]]
+- [[bricca_2026_topo_diversity]]
+- [[fady_2025_native_trees_mediterranean]]
+- [[grabska_2024_tree_species_map]]

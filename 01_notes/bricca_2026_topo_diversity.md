@@ -125,7 +125,16 @@ Bricca et al. (2026) show that temperature is a primary driver of forest diversi
 - [[plant_functional_traits]]
 - [[topographic_microclimate]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/albrich_2019_climate_change_mountain_forests]] — both address climate-driven changes in European mountain forest composition; Albrich et al. use process-based simulation while Bricca et al. use observational plot data; complementary mechanistic and statistical perspectives
-- [[01_notes/fady_2025_native_trees_mediterranean]] — both address climate threats to Mediterranean forest trees; Fady et al. focus on species-level conservation while Bricca et al. address community-level diversity patterns
-- [[01_notes/koch_2025_intraspecies_variation_s2]] — Koch et al. address intraspecific spectral variation, paralleling the ITV limitation acknowledged in Bricca et al.
+- [[albrich_2019_climate_change_mountain_forests]] — both address climate-driven changes in European mountain forest composition; Albrich et al. use process-based simulation while Bricca et al. use observational plot data; complementary mechanistic and statistical perspectives
+- [[fady_2025_native_trees_mediterranean]] — both address climate threats to Mediterranean forest trees; Fady et al. focus on species-level conservation while Bricca et al. address community-level diversity patterns
+- [[koch_2025_intraspecies_variation_s2]] — Koch et al. address intraspecific spectral variation, paralleling the ITV limitation acknowledged in Bricca et al.
+
+## Related pages
+
+- [[topographic_microclimate]]
+- [[functional_diversity]]
+- [[plant_functional_traits]]
+- [[spectral_diversity_biodiversity]]
+- [[albrich_2019_climate_change_mountain_forests]]
+- [[fady_2025_native_trees_mediterranean]]
+- [[koch_2025_intraspecies_variation_s2]]

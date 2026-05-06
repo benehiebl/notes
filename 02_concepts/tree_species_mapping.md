@@ -13,9 +13,9 @@ tags:
 
 **Summary**: Tree species mapping from satellite data involves classifying forest pixels into species or genus classes using spectral, temporal, and environmental predictors, enabling wall-to-wall coverage beyond what field inventory plot networks provide.
 
-**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[koch_2025_intraspecies_variation_s2]]
+**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[koch_2025_intraspecies_variation_s2]], [[hemmerling_2021_forest_mapping_s2]], [[bolyn_2022_tree_species_mapping]], [[astola_2019_s2_l8_comparison]], [[pu_2021_tree_species_mapping_review]], [[wang_2022_tree_species_mapping]], [[wegler_2025_tree_species_germany]], [[wegler_2026_canopy_cover_loss]], [[adagbasa_2022_deep_learning_s2]], [[liu_2023_mapping_tree_species_diversity]], [[nguyen_2022_forest_mapping_explainable]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-06
 
 ---
 
@@ -104,6 +104,45 @@ CNN super-ensemble from aerial orthophotos + lidar CHM (Sylvain et al. 2024; Que
 - Broadleaf mixed stands have lower agreement (more heterogeneous) than pure coniferous stands
 
 **Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[koch_2025_intraspecies_variation_s2]], [[liu_2023_spectral_spatial_resolution_effect]], [[sylvain_2024_tree_species_uncertainty]]
+
+## National-Scale Approaches
+
+Recent studies have achieved national-scale tree species mapping using Sentinel-2 time series:
+
+- **Germany (Wegler et al. 2025):** 10 dominant species groups, 10 m, F1=0.89 using S2+S1+DEM; reference collected from city registers + Google Earth Pro — no restricted NFI needed (source: [[wegler_2025_tree_species_germany]])
+- **Poland (Grabska 2024):** 5 species, 10 m, OA=89.6% using seasonal STMs + RF; first national product for Poland (source: [[grabska_2024_tree_species_map]])
+- **Germany (Wegler et al. 2026):** Species-specific canopy cover loss 2018–2024; spruce dominated losses (51.3% of total); shows monitoring value of combining species map with disturbance product (source: [[wegler_2026_canopy_cover_loss]])
+
+## Soft Classification for Mixed Forest Stands
+
+When pixels contain multiple species (mixed stands), hard classification fails. Approaches:
+- **Proportion mapping (UNet++):** Predict per-pixel basal area proportions summing to 1; OA_maj=0.73, R²=0.50 in Wallonia using Sentinel-2 (source: [[bolyn_2022_tree_species_mapping]])
+- Training data can include mixed stands (not just pure stands) when reference is a forest parcel polygon database with species proportions
+
+## Sensor Comparison: Sentinel-2 vs Landsat 8
+
+For forest variable prediction in boreal Finland (source: [[astola_2019_s2_l8_comparison]]):
+- Sentinel-2 outperforms Landsat 8 across all variables (stem volume, diameter, height, basal area)
+- Best single predictor: red-edge band B05_RE1
+- S2 advantage persists even when downsampled to 30 m — spectral richness (red-edge, SWIR) matters beyond spatial resolution
+
+For plantation forests in northern China (source: [[wang_2022_tree_species_mapping]]):
+- S2 outperforms L8 by 0.4–3.4% OA; NDTI and Tasseled Cap are most important features
+- Temporal saturation: ~2 key phenological images captures most temporal signal; S2+L8 fusion adds minimal gain over S2 alone
+
+## Dense Time Series Approach
+
+Dense Sentinel-2 time series (5-day, gap-filled via radial basis filters) for mapping 17 species in Brandenburg, Germany (source: [[hemmerling_2021_forest_mapping_s2]]):
+- Spectral time series is the **primary** explanatory source — adding environmental data or texture metrics provides minimal additional improvement
+- Main species accuracy: 98.9% to 66.8%; minor species (<0.5% area) most affected by errors
+- Key finding: maximising temporal coverage/density is the most impactful lever
+
+## Explainable Deep Learning for Forest Mapping
+
+Rule-informed CNNs that explicitly encode forest definition criteria (tree height + canopy density thresholds) match black-box CNN accuracy while providing interpretable decisions (source: [[nguyen_2022_forest_mapping_explainable]]):
+- Predicts intermediate variables (tree height, canopy density) explicitly
+- Correction pathway reveals annotator label inconsistencies
+- Particularly valuable at alpine treeline where definition-sensitive boundaries are complex
 
 ## Related pages
 

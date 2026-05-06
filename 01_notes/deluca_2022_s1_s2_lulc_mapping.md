@@ -78,19 +78,15 @@ Three contributions distinguish this study: (1) the systematic integration of SA
 
 De Luca et al. (2022) demonstrate that integrating Sentinel-1 SAR time-series, InSAR coherence, and Sentinel-2 optical time-series with biophysical variables in an open Random Forest workflow achieves >90% F-score for LULC classification in a heterogeneous Mediterranean forest landscape. The key finding is that while InSAR coherence provides valuable structural information (particularly for separating forest from non-forest), the optical time-series — especially autumn/winter SWIR and red-edge indices — drives most of the classification accuracy. The work establishes a replicable open methodology applicable to wildfire monitoring, forest inventory, and habitat mapping across the Mediterranean.
 
-## Related Work & Obsidian Links
+## Related pages
 
-- [[SAR Optical Data Fusion Land Cover]]
-- [[InSAR Coherence Forest Mapping]]
-- [[Random Forest Land Cover Classification]]
-- [[Google Earth Engine Remote Sensing Workflow]]
-- [[BIOMASS P-band SAR Mission]]
-
-- **Source:** [[00_literature_md/deluca_2022_s1_s2_lulc_mapping/deluca_2022_s1_s2_lulc_mapping]]
-
-**Cross-paper links (same vault):**
-- [[chabalala_2023_dl_s2_mediterranean_fruit_trees]] — both papers rely on Sentinel-2 time-series with vegetation indices and ML classifiers for vegetation mapping; De Luca et al. add SAR fusion while Chabalala et al. use phenological metrics with DNN; complementary strategies for improving classification in spectrally heterogeneous landscapes
-- [[amico_2025_nfi_italy]] — De Luca et al.'s forest cover map is exactly the type of wall-to-wall remote sensing product that the enhanced Italian NFI uses as a complement to field inventory data; both papers are directly relevant to forest monitoring infrastructure
-- [[bell_2024_hindcasting_forest_structure]] — both papers address temporal consistency in forest remote sensing products; Bell et al. work with Landsat and FIA plot data while De Luca et al. use Sentinel SAR+optical fusion; both evaluate the contribution of individual feature layers to classification quality
-- [[fady_2025_native_trees_mediterranean]] — De Luca et al.'s mapping of Mediterranean forest types (Eucalyptus, Pinus, autochthonous broadleaf) in southern Portugal directly supports the conservation and distribution monitoring of native trees documented by Fady et al.
-- [[albrich_2019_climate_change_mountain_forests]] — the wildfire monitoring context of De Luca et al. connects directly to the disturbance dynamics and compositional transitions studied by Albrich et al.; pre-fire vegetation maps are essential for quantifying post-fire ecosystem state changes
+- [[sentinel_2]]
+- [[landsat]]
+- [[tree_species_mapping]]
+- [[sampling_bias_remote_sensing]]
+- [[pflugmacher_2019_lulc_landsat]]
+- [[chabalala_2023_dl_s2_mediterranean_fruit_trees]]
+- [[amico_2025_nfi_italy]]
+- [[bell_2024_hindcasting_forest_structure]]
+- [[fady_2025_native_trees_mediterranean]]
+- [[albrich_2019_climate_change_mountain_forests]]

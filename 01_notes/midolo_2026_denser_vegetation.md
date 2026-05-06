@@ -16,6 +16,7 @@ authors:
 year: 2026
 source: midolo_2026_denser_vegetation
 tags:
+  - remote-sensing
   - plant-community-change
   - eutrophication
   - vegetation-densification
@@ -143,7 +144,7 @@ Data source: EIVE (Ecological Indicator Values for Europe, version 1.0) — cons
 ## Environmental and RS Implications
 
 - **NDVI greening signal partly explained**: nitrogen-driven vegetation densification → higher LAI → higher NDVI; this is a distinct driver from temperature-driven growing season lengthening; both contribute to satellite-observed greening trends — see [[vegetation_greenness_trends]]
-- **Canopy cover increase**: light decline reflects increasing shade-tolerant species dominance and canopy closure → directly relevant to canopy cover change mapping from RS (e.g., [[01_notes/wegler_2026_canopy_cover_loss]])
+- **Canopy cover increase**: light decline reflects increasing shade-tolerant species dominance and canopy closure → directly relevant to canopy cover change mapping from RS (e.g., [[wegler_2026_canopy_cover_loss]])
 - **SDM predictors**: nitrogen and moisture EIV trends mean that historical climate-distribution relationships used in SDMs may be confounded by these non-climatic drivers
 - **Management context**: eutrophication and management cessation are as important as warming for driving vegetation change — restoration and management interventions can counteract these trends; nature conservation must account for both
 
@@ -159,9 +160,22 @@ Midolo et al. (2026) demonstrate that nitrogen enrichment and associated vegetat
 - [[functional_diversity]]
 - [[phenology]]
 
-**Cross-paper links (same vault):**
-- [[01_notes/bayle_2024_landsat_greening_inflated]] — Bayle et al. show sampling bias inflating Landsat greening; Midolo et al. show eutrophication/densification as a real driver; together they reveal that observed satellite greening has multiple confounded causes
-- [[01_notes/herraiz_2025_phen_shifts_mediterranean]] — Mediterranean species show positive NDVI trends; Midolo et al. provide the community-level mechanism: nitrogen enrichment drives generalist species with higher biomass into these systems
-- [[01_notes/bricca_2026_topo_diversity]] — both study vegetation community change in European forests; Bricca et al. focus on functional diversity response to temperature; Midolo et al. show temperature is the weakest driver at the community scale — eutrophication dominates
-- [[01_notes/grünig_2026_climate_change_disturbances_forest]] — disturbances (windthrow, bark beetles) open the canopy → increased light → temporary reversal of the light-decline trend documented by Midolo et al.; the two studies together describe opposing forces on canopy closure
-- [[01_notes/hiebl_2025_pretraining]] — shares co-author Gianmaria Bonari; nitrogen-driven shifts in EVE cover documented here are the macroecological context for EVE expansion monitored by Hiebl et al.
+- [[bayle_2024_landsat_greening_inflated]] — Bayle et al. show sampling bias inflating Landsat greening; Midolo et al. show eutrophication/densification as a real driver; together they reveal that observed satellite greening has multiple confounded causes
+- [[herraiz_2025_phen_shifts_mediterranean]] — Mediterranean species show positive NDVI trends; Midolo et al. provide the community-level mechanism: nitrogen enrichment drives generalist species with higher biomass into these systems
+- [[bricca_2026_topo_diversity]] — both study vegetation community change in European forests; Bricca et al. focus on functional diversity response to temperature; Midolo et al. show temperature is the weakest driver at the community scale — eutrophication dominates
+- [[grünig_2026_climate_change_disturbances_forest]] — disturbances (windthrow, bark beetles) open the canopy → increased light → temporary reversal of the light-decline trend documented by Midolo et al.; the two studies together describe opposing forces on canopy closure
+- [[hiebl_2025_pretraining]] — shares co-author Gianmaria Bonari; nitrogen-driven shifts in EVE cover documented here are the macroecological context for EVE expansion monitored by Hiebl et al.
+
+## Related pages
+
+- [[vegetation_community_change]]
+- [[vegetation_greenness_trends]]
+- [[forest_disturbances]]
+- [[phenology]]
+- [[plant_functional_traits]]
+- [[functional_diversity]]
+- [[bayle_2024_landsat_greening_inflated]]
+- [[herraiz_2025_phen_shifts_mediterranean]]
+- [[bricca_2026_topo_diversity]]
+- [[grünig_2026_climate_change_disturbances_forest]]
+- [[hiebl_2025_pretraining]]

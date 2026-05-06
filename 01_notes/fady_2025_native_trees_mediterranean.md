@@ -70,17 +70,12 @@ The inventory covers 39 botanical territories. Key quantitative findings:
 
 Fady et al. (2025) deliver the most comprehensive inventory of Mediterranean native trees to date, revealing a region that is simultaneously species-rich, highly endemic, and poorly characterised for conservation purposes. The positive correlation of tree richness with habitat heterogeneity underscores the importance of topographically and ecologically complex landscapes for maintaining tree diversity under future climate change. The study's most urgent message is quantitative: large fractions of Mediterranean tree species lack even basic extinction risk and genetic diversity assessments — a gap that must be addressed as climate change accelerates range shifts and local extinctions across the basin.
 
-## Related Work & Obsidian Links
+## Related pages
 
-- [[Mediterranean Biodiversity Hotspot]]
-- [[IUCN Red List of Trees]]
-- [[01_notes/fady_2025_native_trees_mediterranean]]
-- [[01_notes/albrich_2019_climate_change_mountain_forests]]
-- [[Genetic Diversity Conservation Forest Trees]]
-
-- **Source:** [[00_literature_md/fady_2025_native_trees_mediterranean/fady_2025_native_trees_mediterranean]]
-
-**Cross-paper links (same vault):**
-- [[01_notes/albrich_2019_climate_change_mountain_forests]] — both papers deal with the vulnerability of European forest tree communities to climate change; Fady et al. document what biodiversity is at risk, Albrich et al. show how rapidly it can be lost
-- [[01_notes/amico_2025_nfi_italy]] — biodiversity monitoring (including tree species diversity) is an explicit innovation of the new Italian NFI; Fady et al. provide the taxonomic baseline that inventories like IFNI need
-- [[01_notes/chabalala_2023_dl_s2_mediterranean_fruit_trees]] — methodological counterpart: both deal with Mediterranean tree mapping, though at different scales (landscape classification vs. regional diversity inventory)
+- [[species_distribution_models]]
+- [[plant_functional_traits]]
+- [[leaf_habit_latitudinal_gradient]]
+- [[noce_2023_altitude_shift_tree_italy]]
+- [[albrich_2019_climate_change_mountain_forests]]
+- [[amico_2025_nfi_italy]]
+- [[chabalala_2023_dl_s2_mediterranean_fruit_trees]]
