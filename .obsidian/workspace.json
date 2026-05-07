@@ -11,10 +11,14 @@
             "id": "117cbd15692b4fdf",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "log.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "log"
             }
           }
         ],
@@ -192,10 +196,20 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "117cbd15692b4fdf",
+  "active": "0fb24665b6286157",
   "lastOpenFiles": [
-    "02_concepts/transformers_time_series.md.tmp.11738.1778095383269",
-    "02_concepts/ebv_biodiversity_monitoring.md.tmp.11738.1778095381342",
+    "01_notes/sattstools.md",
+    "01_notes/sattstools.md.tmp.11738.1778147784133",
+    "00_literature/sattstools/test_nb/test_nb.ipynb",
+    "00_literature/sattstools/test_nb",
+    "00_literature/sattstools/setup.py",
+    "00_literature/sattstools/sattstools/__pycache__/smooth.cpython-312.pyc",
+    "00_literature/sattstools/sattstools/__pycache__/sarutils.cpython-311.pyc",
+    "00_literature/sattstools/sattstools/__pycache__/rsutils.cpython-39.pyc",
+    "00_literature/sattstools/sattstools/__pycache__/rsutils.cpython-312.pyc",
+    "00_literature/sattstools/sattstools/__pycache__/rsutils.cpython-311.pyc",
+    "00_literature/sattstools/sattstools/__pycache__/outlier.cpython-39.pyc",
+    "00_literature/sattstools/README.md",
     "02_concepts/cloud_detection.md",
     "02_concepts/ebv_biodiversity_monitoring.md",
     "02_concepts/forest_disturbances.md",
@@ -218,17 +232,7 @@
     "02_concepts/vegetation_community_change.md",
     "02_concepts/tree_species_mapping.md",
     "02_concepts/transformers_time_series.md",
-    "02_concepts/cloud_detection.md.tmp.11738.1778094359865",
-    "02_concepts/spectral_diversity_biodiversity.md.tmp.11738.1778094316170",
     "CLAUDE.md",
-    "01_notes/ae_training.md.tmp.11738.1778074778623",
-    "01_notes/hiebl_2026_alphaearth.md",
-    "01_notes/hiebl_2026_alphaearth.md.tmp.11738.1778074757628",
-    "00_literature/hiebl_2026_alphaearth.pdf",
-    "01_notes/ls_mapping.md.tmp.11738.1778074253875",
-    "01_notes/ae_training.md.tmp.11738.1778074211862",
-    "01_notes/traceve_pretraining.md.tmp.11738.1778074167066",
-    "03_papers/03_tree_species_cover_landsat.md",
-    "01_notes/ls_mapping.md.tmp.11738.1778072591442"
+    "01_notes/hiebl_2026_alphaearth.md"
   ]
 }

@@ -93,3 +93,4 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[01_notes/hiebl_2026_alphaearth]] | Hiebl et al. 2026 — AEF + Sentinel-2 Cross-Attention fusion for Italian forest mapping; TST_AEF,S2 best (RMSE=0.161, Acc=0.757); AEF matches S2 accuracy 10-24× faster |
 | [[lai_estimation]] | Leaf Area Index (LAI): definition, MODIS/Landsat data fusion, saturation problem, biome-specific retrieval |
 | [[cloud_detection]] | Cloud and cloud shadow detection: feature types, algorithm taxonomy, impact on time series preprocessing |
+| [[01_notes/sattstools]] | sattstools repo — shared preprocessing library for all TRACEVE experiments; cloud masking, outlier detection, Whittaker smoothing, TSRobustStandardize, modality-specific data augmentation |

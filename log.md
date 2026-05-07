@@ -404,3 +404,14 @@ Append-only record of all wiki operations.
 - Added YAML frontmatter (`title`, `authors`, `year`, `source`, `tags`, `status: read`) to 32 notes that were missing it
 - Fixed 2 pre-existing headers that lacked a required tag (`midolo_2026`, `miettinen_2025`)
 - All 61 notes now have valid frontmatter with at least one of: `deep-learning`, `machine-learning`, `remote-sensing`, `forest-ecology`
+
+---
+
+## 2026-05-07
+
+**Ingested**: `00_literature/sattstools/` (new git submodule)
+
+**Created**:
+- `01_notes/sattstools.md` — sattstools preprocessing library; rsutils (cloud masking S2/Landsat), outlier.py (IQR/z-score/IsoForest), smooth.py (Whittaker+FFT+RBF), TSpreprocess.py (TSRobustStandardize, modality-specific augmentation for optical/climate/AEF); shared backbone for traceve_pretraining, ae_training, ls_mapping
+
+**Updated**: `index.md`

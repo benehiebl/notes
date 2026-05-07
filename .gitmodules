@@ -7,3 +7,6 @@
 [submodule "00_literature/traceve_pretraining"]
 	path = 00_literature/traceve_pretraining
 	url = https://mTs39wtFgNSkHCaqny6s@git.uibk.ac.at/c7161037/traceve_pretraining.git
+[submodule "00_literature/sattstools"]
+	path = 00_literature/sattstools
+	url = https://git.uibk.ac.at/c7161037/sattstools.git
