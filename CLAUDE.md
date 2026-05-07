@@ -12,6 +12,7 @@ This wiki is a structured, interlinked knowledge base for research paper knowled
 Claude maintains the wiki. The human curates sources, asks questions, and guides the analysis.
 The wiki focuses on remote sensing, machine learning, deep learning and forest ecology. The wiki is ultimately used to provide citable knowledge for writing research papers.
 These research papers are focused around developing deep learning models based on earth observation time series data to predict and map forest ecological variables, such as tree species cover or forest type.
+The ultimate goal of this knowledge collection is to write research papers on forest ecology, deep learning and remote sensing. These papers are outlined in 03_papers/ where key concepts, citable notes, results from model tests/predictions and mapping analysis are combined into a structured research information flow.
 
 
 ## Folder structure
