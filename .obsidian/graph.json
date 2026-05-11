@@ -48,6 +48,13 @@
         "a": 1,
         "rgb": 14068060
       }
+    },
+    {
+      "query": "path:03_papers  ",
+      "color": {
+        "a": 1,
+        "rgb": 197379
+      }
     }
   ],
   "collapse-display": true,
@@ -61,5 +68,5 @@
   "linkStrength": 0.653238932291667,
   "linkDistance": 51,
   "scale": 0.2962962962962961,
-  "close": false
+  "close": true
 }

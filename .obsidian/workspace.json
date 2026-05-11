@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_papers/03_tree_species_cover_landsat.md",
+                "file": "graphify-out/GRAPH_REPORT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03_tree_species_cover_landsat"
+              "title": "GRAPH_REPORT"
             }
           }
         ],
@@ -198,19 +198,20 @@
   },
   "active": "117cbd15692b4fdf",
   "lastOpenFiles": [
-    "03_papers/03_tree_species_cover_landsat.md.tmp.11738.1778160326039",
-    "03_papers/03_tree_species_cover_landsat.md.tmp.11738.1778159691501",
+    "templates/paper_template.md",
+    "templates",
+    "graphify-out/cache/semantic/653155f203016bf1809442ae8964e873399b2ed6b364fc0e7657dfdf2956c69a.json",
+    "graphify-out/cache/semantic/2a0939db82ead4a624bd9c1f5a3746570bd4706b1cb98ba10630a641489e69aa.json",
+    "graphify-out/cache/semantic/03437e7ab1d4c8ee11d3f39c6ade87a2ae335eb5e271fe1b467190d65f54d591.json",
+    "graphify-out/cache/semantic/0c3e99c4dc0a35a6c27036d98678f68523d78af5d9518b6af66a1888104ed2cb.json",
+    "graphify-out/cache/semantic/49de175e1f3140741e41e3719b8cf101a1f58e25f1cba22a5b1cd7777368b405.json",
+    "graphify-out/cache/semantic/c77ee39fcf66a9615f810dd93eafd38ac7f1b5b8b505c21efe6c98bf76bb052b.json",
+    "graphify-out/cache/semantic/57fd5af7b7b202421d7a7a0efdb3e2d5ca562675f0846247ef989a0cbf88fdcd.json",
+    "graphify-out/cache/semantic/f7a4909c669d72b0322ff99dc45591ec04268145d2d1a3f644becdb7b9cb9114.json",
+    "graphify-out/cache/semantic/cc5546cc2e6fc653fef2446ea08cce070acdddd17c72e4ca79dd5bbae7036472.json",
+    "03_papers/03_tree_species_cover_landsat.md",
     "log.md",
     "01_notes/sattstools.md",
-    "01_notes/sattstools.md.tmp.11738.1778147784133",
-    "00_literature/sattstools/test_nb/test_nb.ipynb",
-    "00_literature/sattstools/test_nb",
-    "00_literature/sattstools/setup.py",
-    "00_literature/sattstools/sattstools/__pycache__/smooth.cpython-312.pyc",
-    "00_literature/sattstools/sattstools/__pycache__/sarutils.cpython-311.pyc",
-    "00_literature/sattstools/sattstools/__pycache__/rsutils.cpython-39.pyc",
-    "00_literature/sattstools/sattstools/__pycache__/rsutils.cpython-312.pyc",
-    "00_literature/sattstools/sattstools/__pycache__/rsutils.cpython-311.pyc",
     "00_literature/sattstools/README.md",
     "02_concepts/cloud_detection.md",
     "02_concepts/ebv_biodiversity_monitoring.md",
@@ -232,7 +233,6 @@
     "02_concepts/transfer_learning_remote_sensing.md",
     "02_concepts/vegetation_greenness_trends.md",
     "02_concepts/vegetation_community_change.md",
-    "02_concepts/tree_species_mapping.md",
-    "02_concepts/transformers_time_series.md"
+    "02_concepts/tree_species_mapping.md"
   ]
 }
