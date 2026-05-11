@@ -42,12 +42,28 @@
 4. Is climate changing faster than forest structure?
 5. Is it a gradual shift or is there a climatic tipping point?
 
+##### Methodological approach justification
+- contrastive learning approach: 
+	- sensor and observation density drift over time [[bayle_2024_landsat_greening_inflated]]
+	- contrastive learning over pure and random forest stands to mitigate drift [[chen_2020_contrastive_framework]], 
+	- assumption: ecological and therefore spectral stability over time enables contrastive learning
+- finetuning after contextual pre training: [[hiebl_2025_pretraining]], [[safonova_2023_small_data]]
+	- pseudo labeling via Alpha earth embeddings for functional cover mapping [[brown_2025_alphaearth]], [[hiebl_2026_alphaearth]]
+	- final finetuning on plot observation data: historical and recent
+- pooling/aggregating 3 years:
+	- mitigating inter annual spectral variabilities for stability [[lacks source]]
+	- densify observations per year to increase observation counts [[bayle_2024_landsat_greening_inflated]]
+	- target year-2: taking two previous historical time series for stability (no future leakage)
 # Methods
 ### Data
 ##### CFI forest inventory data
 ##### VDBI forest plots
 ##### VPO plot observations
 ##### Artificial leaf type cover data
+- As spatial explicit data of leaf type cover is not available an **artificial cover dataset** was created based on the VPO and VDBI leaf type cover
+- A standard **Random Forest** model was trained on the training split of the plot observation data and mapped to Italy using Alpha Earth embeddings as input features [[brown_2025_alphaearth]] [[alessi_unknown]] [[hiebl_2026_alphaearth]]
+- To decrease label noise due to regression errors we used the CFI data and decision rules to clean the dataset; e.g. points that fall within pinus dominated forests have at least 60% coniferous cover and less than 30% broad-leaved evergreen cover
+
 ##### Landsat time series
 ##### additional data sources
 Additional data sources used for masking non-forested areas:
@@ -58,7 +74,8 @@ Additional data sources used for masking non-forested areas:
 ### Modelling workflow
 ##### Time Series Transformer
 
-- The backbone model is **TSTpad** ([[ls_mapping]]), an encoder-only Time Series Transformer with support for irregular, gappy multi-annual satellite time series; architecture: `d_model=256, n_layers=4, n_attheads=4, embd_dim=128, d_ff=512` with attention pooling before the prediction head
+- The backbone model is **TSTpad** ([[ls_mapping]]), an encoder-only Time Series Transformer with support for irregular, gappy multi-annual satellite time series
+- For stability and epistemic uncertainty estimation an ensemble of 6 models with differing architecture choices of TSTpad is combined; Additionally random subsets of training and validation data is used to further diversify model outputs [[hiebl_2025_pretraining]] [[sylvain_2024_tree_species_uncertainty]]
 - For each target year, **three consecutive years of Landsat observations are concatenated** (year−2, year−1, year) to densify the sparse annual time series — this 3-year aggregation window substantially increases the number of cloud-free observations available per pixel ([[ls_mapping]])
 - After concatenation, observations are chronologically sorted and **padded to a fixed length of 100 time steps** (via `compact_sort_pad`); timestamp values are scaled to day-of-year units for the positional encoding ([[ls_mapping]])
 - Input features per time step: **14 Landsat spectral variables** — six surface reflectance bands (blue, green, red, NIR, SWIR1, SWIR2) and eight derived indices (NDVI, NIRv, NDMI, EVI, WDRVI, NBR, NDWI, GNDVI); indices computed via [[sattstools]]
@@ -99,6 +116,7 @@ The training follows a **three-stage progressive workflow** implemented in [[ls_
 - Model applied pixel-wise within the forest mask → annual maps of dominant tree species class probabilities and continuous EVE/DEC/CON cover fractions for all forested pixels in Italy ([[ls_mapping]])
 - Outputs per year: mean prediction across 7 seeds + inter-seed standard deviation as uncertainty estimate; high uncertainty flags areas where the model is unreliable across the historical record ([[hiebl_2025_pretraining]])
 
+### Justification of methodological approach
 ### Validation scheme
 - VDBI split: several years of data back to 1995
 - VPO split: recent data collected in the field

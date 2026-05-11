@@ -111,9 +111,12 @@ When the user asks a question:
 
 1. Read `index.md` first to find relevant pages
 2. Read those pages and synthesize an answer
-3. Cite specific wiki pages in your response
-4. If the answer is not in the wiki, say so clearly
-5. If the answer is valuable, offer to save it as a new wiki page
+3. Cite specific pages from 01_notes/ first in your response (only cite 02_concepts/ for me to read)
+4. Citations (backlinks) should point back to the original source in 01-notes/ so it is scientifically reasonable
+5. If the answer is not in the wiki, say so clearly
+6. Be exceptionally critical and only use information contained in the wiki
+7. Point out gaps that might improve knowledge
+8. If the answer is valuable, offer to save it as a new wiki page
 
 
 Good answers should be filed back into the wiki so they compound over time.
@@ -141,4 +144,5 @@ When the user asks you to lint or audit the wiki:
 - Keep page names lowercase with undescores (e.g. `machine_learning.md`)
 - Write in clear, plain language
 - When uncertain about how to categorize something, ask the user
+- be exceptionally critical on sources, inputs of the user and your own plans
 - only use /graphify skill if directly called by human
