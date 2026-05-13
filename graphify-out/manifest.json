@@ -1,4 +1,248 @@
 {
+  "/home/c7161037/Desktop/repos/notes/01_notes/fady_2025_native_trees_mediterranean.md": {
+    "mtime": 1778094744.8584654,
+    "hash": "02b9952109f02ff717d426e89e24bbd6"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/albrich_2019_climate_change_mountain_forests.md": {
+    "mtime": 1778094744.8660028,
+    "hash": "af2afea9279e8dc65ce4a0cea0077314"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/yuan_2025_sits_augmentation.md": {
+    "mtime": 1778095063.2531981,
+    "hash": "679ad41736b64e0d250dc55988deadc2"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/miettinen_2025_forest_maps_europe.md": {
+    "mtime": 1778095137.735865,
+    "hash": "e2da21f8d99be371ef68d9af05ad2898"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/torres_2021_forest_health_remote_sensing.md": {
+    "mtime": 1778095063.243082,
+    "hash": "59632d3bf3e4b714a7c04fa4ca3e2ff1"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/sattstools.md": {
+    "mtime": 1778147784.1420157,
+    "hash": "53304a1ac74ab8f734c39bdc3717f91e"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/astola_2019_s2_l8_comparison.md": {
+    "mtime": 1778095063.2221484,
+    "hash": "a6e791e4bad435bf1cda5e6dff2109df"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/grabska_2024_tree_species_map.md": {
+    "mtime": 1778094744.8963141,
+    "hash": "61a95a0d7a48d3c1aee5aa66e86a7310"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/alessi_2023_sampling_approaches.md": {
+    "mtime": 1778095063.2219393,
+    "hash": "2fad4d1032aee1da9aadff05a7e9ce58"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/herraiz_2025_phen_shifts_mediterranean.md": {
+    "mtime": 1778094744.9063592,
+    "hash": "373d84413d1807933235075805e3dc3d"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/safonova_2023_small_data.md": {
+    "mtime": 1778095063.233572,
+    "hash": "14abfad19face75107d47f7e69a41116"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/reichstein_2019_deep_learning_earth_sciences.md": {
+    "mtime": 1778095063.2333336,
+    "hash": "b74a6ae621eb2fbfaa3590a699aa38c0"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/pflugmacher_2019_lulc_landsat.md": {
+    "mtime": 1778094744.920435,
+    "hash": "40552a384b0cba9f790ccb1e95a674f2"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/midolo_2026_denser_vegetation.md": {
+    "mtime": 1778095137.7354214,
+    "hash": "a6c0a94044744d0b4789654567699d78"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/fischer_2025_glocal_canopy_atlas.md": {
+    "mtime": 1778094744.9368167,
+    "hash": "0559414c54cf27a59ec46d2d32884703"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/atzberger_2020_monitoring_forests_eu.md": {
+    "mtime": 1778095063.222366,
+    "hash": "99def0a5c67de1c32400f5d0b25f65ae"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/wen_2023_transformers_time_series.md": {
+    "mtime": 1778095063.244722,
+    "hash": "6c2677e69c4d91aee4b7b311d45e139b"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/ae_training.md": {
+    "mtime": 1778095063.2216957,
+    "hash": "d02ba198ea147f95e4c7c5b11045e2cc"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/pu_2021_tree_species_mapping_review.md": {
+    "mtime": 1778095063.2331173,
+    "hash": "60b090feda8c4b895099096a2f99974a"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/nguyen_2022_forest_mapping_explainable.md": {
+    "mtime": 1778095063.232691,
+    "hash": "7e11738d3b83e73b5f4c80267317b7d8"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/turubanove_2023_canopy_landsat.md": {
+    "mtime": 1778095063.2435155,
+    "hash": "cb4e621deb5b05fdec80b4df4caa4736"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/jin_2023_drivers_differentiation_evergreen.md": {
+    "mtime": 1778094744.9883258,
+    "hash": "55b026dd1051789d8b4bba398a5fc1c1"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/bayle_2024_landsat_greening_inflated.md": {
+    "mtime": 1778094744.997105,
+    "hash": "379c0ca8f541452e3df6118a15d96369"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/bell_2024_hindcasting_forest_structure.md": {
+    "mtime": 1778094745.0042782,
+    "hash": "4e06f7f7dc246801c4b4ed79316c80c5"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/francioni_2026_canopy_closure.md": {
+    "mtime": 1778094745.0102072,
+    "hash": "88ba4d76f40094b6fcb735aa7fc24d1d"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/tong_2023_forest_densification_china.md": {
+    "mtime": 1778095063.242885,
+    "hash": "890c005e44d3038883552ca89bca67be"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/xu_2022_cloud_native_algorithms.md": {
+    "mtime": 1778095063.252924,
+    "hash": "51e3e59c9aa96fa8fbc850979b96c19e"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/vihervaara_2017_ebv_remote_sensing.md": {
+    "mtime": 1778095063.2439156,
+    "hash": "f1083765c215c2ac2547469e967757d5"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/ls_mapping.md": {
+    "mtime": 1778095063.2270093,
+    "hash": "1a87a19534a151065c87234d433dfbdb"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/lecun_1998_efficient_backprop.md": {
+    "mtime": 1778094745.0461016,
+    "hash": "ab01fd07803c10942584b8fffc4dd0d2"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/mattioli_2025_carta_forestale.md": {
+    "mtime": 1778094745.0527146,
+    "hash": "709d7e08b180427ccb7bc155271757e6"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/hiebl_2026_alphaearth.md": {
+    "mtime": 1778095063.2242525,
+    "hash": "9a30cb8155f1e207e07a8b2703c9fa3f"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/wegler_2026_canopy_cover_loss.md": {
+    "mtime": 1778095063.244523,
+    "hash": "ee7b71f40d0d041934a608949146c855"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/bolyn_2022_tree_species_mapping.md": {
+    "mtime": 1778095063.2225678,
+    "hash": "4eb1ec06c08dc356f868a0b0bddac095"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/wang_2022_tree_species_mapping.md": {
+    "mtime": 1778095063.2441359,
+    "hash": "b8932575918cd19a67da71b753f34a90"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/deluca_2022_s1_s2_lulc_mapping.md": {
+    "mtime": 1778094745.0761876,
+    "hash": "8b68da0911673b01883f3e932d435efd"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/chabalala_2023_dl_s2_mediterranean_fruit_trees.md": {
+    "mtime": 1778094745.0861905,
+    "hash": "e3f378ded87b5ab48a9eea65bd0dca39"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/kang_2021_lai_landsat.md": {
+    "mtime": 1778095063.2249146,
+    "hash": "b7f9f0551f0794a1502546bfe8230352"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/noce_2023_altitude_shift_tree_italy.md": {
+    "mtime": 1778094745.0944297,
+    "hash": "d3b9804df62571d694d0e56335e41fb7"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/chen_2020_contrastive_framework.md": {
+    "mtime": 1778094745.0971935,
+    "hash": "7fc202966840611abca7c353c689ed52"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/gr\u00fcnig_2026_climate_change_disturbances_forest.md": {
+    "mtime": 1778094745.1034575,
+    "hash": "e7e8c01a32d122e7d9ff2879d3ab9a65"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/he_2015_remote_sensing_sdm.md": {
+    "mtime": 1778094745.1102128,
+    "hash": "b91acaa55a5ef3afc98618156d7ccf0c"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/koch_2025_intraspecies_variation_s2.md": {
+    "mtime": 1778094745.1143577,
+    "hash": "ff45be970ce1cc70f888278ccf7dae34"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/gasparini_2022_nfi_italy.md": {
+    "mtime": 1778094745.1181657,
+    "hash": "a5c6efaa907b7b84107153695fdbe7f3"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/li_2022_cloud_detection.md": {
+    "mtime": 1778095063.2259161,
+    "hash": "c746fbf99d897cdf09afb9f084d62622"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/vaswani_2023_attention_is_all.md": {
+    "mtime": 1778095063.2437103,
+    "hash": "ee3ada78dc5fd251f0ac858fee934f9e"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/adagbasa_2022_deep_learning_s2.md": {
+    "mtime": 1778095063.220162,
+    "hash": "eec36e288626cf8f03e235992e8aa245"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/schloegl_2026_reproducibility.md": {
+    "mtime": 1778095063.2420871,
+    "hash": "3470f49cf7a218caa08107f31df21cba"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/liu_2023_spectral_spatial_resolution_effect.md": {
+    "mtime": 1778094745.1719677,
+    "hash": "810879cb75cb79784e5094072f968020"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/sze_2017_efficient_dnn_processing.md": {
+    "mtime": 1778095063.2424374,
+    "hash": "ee9baad18033dc85e1c91c58665e9cc5"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/liu_2023_mapping_tree_species_diversity.md": {
+    "mtime": 1778095063.226394,
+    "hash": "aeeea386816aa1cfb3b3f3a84a357d02"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/kattenborn_2021_review_cnn_vegetation_monitoring.md": {
+    "mtime": 1778095063.225405,
+    "hash": "94e641be9a112b10e080c34ee8ee3685"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/traceve_pretraining.md": {
+    "mtime": 1778095063.2433176,
+    "hash": "ae2a5bf7a56a5bda2aa622377c9afcb6"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/hemmerling_2021_forest_mapping_s2.md": {
+    "mtime": 1778095063.222783,
+    "hash": "5840db8a14c2d21f7dfdc2a11fff238b"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/bricca_2026_topo_diversity.md": {
+    "mtime": 1778094745.2195096,
+    "hash": "fd314d70f1857d9f613015f25c9493db"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/amico_2025_nfi_italy.md": {
+    "mtime": 1778094745.2248995,
+    "hash": "57bc240b71368f7c34eed81211e106c2"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/wegler_2025_tree_species_germany.md": {
+    "mtime": 1778095063.2443285,
+    "hash": "0af856e7fecf2b0fb256700f93b39309"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/chastain_2007_eve_landsat_understory.md": {
+    "mtime": 1778094745.2320085,
+    "hash": "53f0f0affc0d8c751732aef245cb9508"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/thom_2026_disturbance_suitability.md": {
+    "mtime": 1778095063.2426672,
+    "hash": "2ba8b3b78221fdc40fd1606b2ecc8f7a"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/brown_2025_alphaearth.md": {
+    "mtime": 1778094745.2401314,
+    "hash": "5e51135ca8e67c6c92668f0767a5d7be"
+  },
+  "/home/c7161037/Desktop/repos/notes/02_concepts/cloud_detection.md": {
+    "mtime": 1778094359.8654187,
+    "hash": "c9527b53733b87f0cf33de0a7891ad0d"
+  },
   "/home/c7161037/Desktop/repos/notes/02_concepts/vegetation_greenness_trends.md": {
     "mtime": 1777987171.0922234,
     "hash": "4a0aba5c30d9ccfd15160205f9d81935"
@@ -8,8 +252,8 @@
     "hash": "54883cfe118c3252ea8de1781a9923db"
   },
   "/home/c7161037/Desktop/repos/notes/02_concepts/tree_species_mapping.md": {
-    "mtime": 1777987256.7186806,
-    "hash": "36ac00cb4c888d2a4898d9d6682ac903"
+    "mtime": 1778072309.833012,
+    "hash": "fa5bdd1b8af7951aa2115c3f209d5ecb"
   },
   "/home/c7161037/Desktop/repos/notes/02_concepts/species_distribution_models.md": {
     "mtime": 1777988917.6806374,
@@ -18,6 +262,10 @@
   "/home/c7161037/Desktop/repos/notes/02_concepts/vegetation_community_change.md": {
     "mtime": 1777988863.4908397,
     "hash": "1b4c920017cbaf2bbbd413558f887ffe"
+  },
+  "/home/c7161037/Desktop/repos/notes/02_concepts/lai_estimation.md": {
+    "mtime": 1778094338.87978,
+    "hash": "1889d9946f077c8239fde15d76a04dee"
   },
   "/home/c7161037/Desktop/repos/notes/02_concepts/ndvi.md": {
     "mtime": 1777987171.0899663,
@@ -32,24 +280,32 @@
     "hash": "44084290386e725de46846385ba8813e"
   },
   "/home/c7161037/Desktop/repos/notes/02_concepts/forest_disturbances.md": {
-    "mtime": 1777988605.0808034,
-    "hash": "871d511c83622a52d13c1e5e05132d0a"
+    "mtime": 1778072340.55261,
+    "hash": "e4f743903b5e1c1933a8a206c7d7e750"
   },
   "/home/c7161037/Desktop/repos/notes/02_concepts/leaf_habit_latitudinal_gradient.md": {
     "mtime": 1777987171.0978117,
     "hash": "b37e0af9f6b32f01bb3a4de05360fce0"
   },
   "/home/c7161037/Desktop/repos/notes/02_concepts/transfer_learning_remote_sensing.md": {
-    "mtime": 1777988796.3570902,
-    "hash": "c97b8a701ec1370b2ddb0ff90e4f2fab"
+    "mtime": 1778072271.015685,
+    "hash": "c3ef3dbb8b227af5cfe5894f942427cd"
+  },
+  "/home/c7161037/Desktop/repos/notes/02_concepts/ebv_biodiversity_monitoring.md": {
+    "mtime": 1778095381.3454988,
+    "hash": "b31c40bb45b9e23f3aeda5532d5e77d9"
   },
   "/home/c7161037/Desktop/repos/notes/02_concepts/phenology.md": {
     "mtime": 1777987171.0911565,
     "hash": "4f70c9158d4a5cbd6796ccb3f8d5c20e"
   },
+  "/home/c7161037/Desktop/repos/notes/02_concepts/transformers_time_series.md": {
+    "mtime": 1778095651.9525094,
+    "hash": "5786d83c885965c9dd1eee0033cb3ea2"
+  },
   "/home/c7161037/Desktop/repos/notes/02_concepts/spectral_diversity_biodiversity.md": {
-    "mtime": 1777987208.9298408,
-    "hash": "d277fae3cf997b9cd93517dca7ae8e8b"
+    "mtime": 1778094316.1709256,
+    "hash": "6d523125a0eb69be9efa580a9c5b60fa"
   },
   "/home/c7161037/Desktop/repos/notes/02_concepts/functional_diversity.md": {
     "mtime": 1777989103.106855,
@@ -70,5 +326,13 @@
   "/home/c7161037/Desktop/repos/notes/02_concepts/neural_network_training.md": {
     "mtime": 1777987197.734878,
     "hash": "6be96e915a576d3379a5eed364a44a0c"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/sylvain_2024_tree_species_uncertainty.md": {
+    "mtime": 1778094745.1443734,
+    "hash": "1ebf4b299f5ebc0f9bc500896b1ee202"
+  },
+  "/home/c7161037/Desktop/repos/notes/01_notes/hiebl_2025_pretraining.md": {
+    "mtime": 1778094745.2081501,
+    "hash": "6a293e324a3b75d095e80d5f533a3e77"
   }
 }
