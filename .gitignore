@@ -1,2 +1,5 @@
 00_literature/*
 !00_literature/sattstools
+!00_literature/ae_training
+!00_literature/traceve_pretraining
+!00_literature/ls_mapping

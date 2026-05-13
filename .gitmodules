@@ -1,12 +1,12 @@
 [submodule "00_literature/ls_mapping"]
 	path = 00_literature/ls_mapping
-	url = https://c7161037:XCLXOsx4WZz5OOemcO_4PG86MQp1Ojl5Ngk.01.0z186v717@git.uibk.ac.at/c7161037/ls_mapping.git
+	url = https://git.uibk.ac.at/c7161037/ls_mapping.git
 [submodule "00_literature/ae_training"]
 	path = 00_literature/ae_training
-	url = https://c7161037:kjj6hE2Bi199xSkUgZzrUW86MQp1OjloOAk.01.0z00c129k@git.uibk.ac.at/c7161037/ae_training
+	url = https://git.uibk.ac.at/c7161037/ae_training.git
 [submodule "00_literature/traceve_pretraining"]
 	path = 00_literature/traceve_pretraining
-	url = https://mTs39wtFgNSkHCaqny6s@git.uibk.ac.at/c7161037/traceve_pretraining.git
+	url = https://git.uibk.ac.at/c7161037/traceve_pretraining.git
 [submodule "00_literature/sattstools"]
 	path = 00_literature/sattstools
-	url = https://git.uibk.ac.at/c7161037/sattstools.git
+	url = https://git.uibk.ac.at/rslab/sattstools.git
