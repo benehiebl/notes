@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Forest disturbances are discrete, punctuated events that cause mortality of trees, alter forest structure, and reset successional trajectories — they are among the most climate-sensitive processes in forest ecosystems and are expected to intensify under climate change.
 
-**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]], [[thom_2026_disturbance_suitability]], [[wegler_2026_canopy_cover_loss]], [[torres_2021_forest_health_remote_sensing]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]]
+**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]], [[thom_2026_disturbance_suitability]], [[wegler_2026_canopy_cover_loss]], [[torres_2021_forest_health_remote_sensing]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]], [[schuldt_2020_drought_forest]], [[zhao_2022_forest_harvesting]], [[grantham_2020_anthropogenic_modification]]
 
-**Last updated**: 2026-05-06
+**Last updated**: 2026-05-14
 
 ---
 
@@ -126,6 +126,32 @@ Functional trait-based ranking of 53 species for large disturbed area regenerati
 - Old forests were fragmented on mountain tops; expansion moved 729,540 km² downhill
 - Demonstrates long-term Landsat archives can reconstruct plantation history at landscape scale
 
+## Hotter Droughts and Mortality
+
+A specific subclass of disturbance-relevant climate event is the **hotter drought** — drought at temperatures elevated above historical norms — which has its own dedicated concept page covering 2018 Central European drought, xylem hydraulic failure mechanisms, and 20th-century redistribution of climatic drivers:
+
+- 2018 DACH drought MGT +3.3°C vs 1961–1990 baseline, +1.2°C vs 2003 (source: [[schuldt_2020_drought_forest]])
+- Twice the area of deciduous forest in lowest NDVI quantiles vs 2003 (source: [[schuldt_2020_drought_forest]])
+- Drought legacy: many beech failed to flush in 2019 (source: [[schuldt_2020_drought_forest]])
+- 20th-century redistribution: T-limited area shrank by 10.8% (source: [[babst_2019_redistribution]])
+- See [[drought_mortality]] for full treatment.
+
+## Monthly Forest Harvesting Detection
+
+Operational monthly forest harvesting maps with Sentinel-1 SAR + U-Net (source: [[zhao_2022_forest_harvesting]]):
+- Mean F1 0.74–0.78, IoU 0.59–0.65 — landscape-pattern learning captures harvest shape and context
+- California vs Rondônia: model trained in one site fine-tunes with sparse local samples
+- Cloud-independent — operational in tropical / cloudy regions
+- Distinguishes salvage logging (post-fire) vs slash-and-burn (dry season + fire) vs routine timber harvest
+
+## Forest Integrity Index
+
+Continuous global forest integrity index based on observed + inferred human pressures + connectivity loss (source: [[grantham_2020_anthropogenic_modification]]):
+- Only **40.5%** of remaining forest has high landscape-level integrity
+- Only **27%** of high-integrity forest is in protected areas
+- Only **56%** of protected forest is high-integrity
+- Concentrations: Canada, Russia, Amazon, Central Africa, New Guinea
+
 ## Related pages
 
 - [[vegetation_greenness_trends]]
@@ -134,3 +160,4 @@ Functional trait-based ranking of 53 species for large disturbed area regenerati
 - [[plant_functional_traits]]
 - [[tree_species_mapping]]
 - [[wegler_2025_tree_species_germany]]
+- [[drought_mortality]]

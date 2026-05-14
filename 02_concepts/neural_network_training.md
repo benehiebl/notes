@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Neural network training via backpropagation requires careful choices at every stage — input preprocessing, activation functions, weight initialisation, learning rate, and optimizer — to avoid slow convergence, saturation, and overfitting; the underlying principle is that gradient descent converges fastest when the loss surface is locally spherical.
 
-**Sources**: [[lecun_1998_efficient_backprop]], [[hiebl_2025_pretraining]]
+**Sources**: [[lecun_1998_efficient_backprop]], [[hiebl_2025_pretraining]], [[zangh_2017_generalization]], [[lakshminarayan_2017_uncertainty]], [[seitzer_2022_uncertainty]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-14
 
 ---
 
@@ -112,8 +112,34 @@ All principles apply directly to deep learning models for remote sensing (e.g., 
 - Spatial autocorrelation in train/test splits introduces effectively correlated inputs → inflates validation performance (analogous to correlated input problem described by LeCun et al.) — see [[transfer_learning_remote_sensing]]
 - Small datasets: high variance problem → addressed by pretraining (transfer learning), regularisation, and spatial cross-validation
 
+## Generalisation in Over-Parameterised Networks
+
+Classical complexity bounds (VC dim, Rademacher complexity, uniform stability) cannot explain why over-parameterised deep nets generalise (source: [[zangh_2017_generalization]]):
+- Deep nets fit completely random labels with zero training error
+- Even random pixels (Gaussian noise) are memorised
+- Explicit regularisation (weight decay, dropout, augmentation) **neither necessary nor sufficient** for generalisation
+- Implicit regularisation from SGD path likely matters more
+
+**Practical implication**: validation strategy and label quality matter more than relying on architecture for overfitting prevention. See [[spatial_proxies_random_forest]] for spatial CV pitfalls and [[area_of_applicability]] for predictor-space-based extrapolation diagnostics.
+
+## Uncertainty in Training
+
+Deep ensembles + proper scoring rules give well-calibrated uncertainty (source: [[lakshminarayan_2017_uncertainty]]):
+- Train M networks independently with NLL/cross-entropy
+- Ensemble for predictive mean + uncertainty
+
+For heteroscedastic regression, naive NLL leads to subpar mean fits — use **β-NLL** instead (source: [[seitzer_2022_uncertainty]]):
+- β = 1 recovers MSE mean fit while preserving uncertainty estimation
+- One-line code change with large empirical improvement
+
+See [[deep_ensemble_uncertainty]] for full treatment.
+
 ## Related pages
 
 - [[transfer_learning_remote_sensing]]
 - [[sentinel_2]]
 - [[tree_species_mapping]]
+- [[deep_ensemble_uncertainty]]
+- [[spatial_proxies_random_forest]]
+- [[area_of_applicability]]
+- [[transformers_time_series]]

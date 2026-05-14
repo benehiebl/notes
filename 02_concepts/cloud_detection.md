@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Cloud and cloud shadow (CCS) detection is an essential preprocessing step for optical satellite imagery; with global cloud fraction averaging 66%, unmasked clouds introduce systematic errors in all downstream products (land cover, LAI, phenology, time series analysis).
 
-**Sources**: [[li_2022_cloud_detection]]
+**Sources**: [[li_2022_cloud_detection]], [[qin_2026_forest_cover]], [[zhao_2022_forest_harvesting]], [[kollert_2021_tree_species]], [[blickensdörfer_2024_tree_species]]
 
-**Last updated**: 2026-05-06
+**Last updated**: 2026-05-14
 
 ---
 
@@ -63,10 +63,34 @@ Detection algorithms use features from one or more of these sources (source: [[l
 - High cloud frequency reduces effective observation density, especially in tropical and oceanic climates
 - The CrossAttentionAlpha model in [[hiebl_2026_alphaearth]] is specifically designed to rely more on stable AEF embeddings when S2 cloud observation density is low
 
+## Cloud-Prone Regions and Gap Filling
+
+In persistently cloudy regions (subtropical / tropical monsoon zones, mountainous areas), cloud-free observations are scarce. Mitigation strategies (source: [[qin_2026_forest_cover]]):
+- **Multi-sensor fusion** (Landsat + Sentinel-2 + MODIS) via DL reconstruction → seamless imagery and NDVI time series
+- **Annual / multi-year compositing**: trade temporal resolution for completeness
+- **STAARCH / HLS / Whittaker smoother**: classical gap-filling methods
+- **DL-based reconstruction** outperforms classical methods for large gaps (>50%) but propagates reconstruction errors into downstream classifiers
+
+For southern China (annual probability of valid Landsat-8 observation often 0–10%), DL reconstruction + RF classification produced annual 30 m forest cover maps with OA 0.904 (source: [[qin_2026_forest_cover]]).
+
+## Cloud-Independent Alternatives
+
+Where optical sensors fail, **Sentinel-1 SAR** ([[sentinel_1_sar]]) provides cloud-independent imagery:
+- Monthly S-1 composites + U-Net deep learning give mean F1 0.74–0.78 for monthly forest harvesting detection in California and Rondônia (source: [[zhao_2022_forest_harvesting]])
+- S-1 backscatter complements optical phenology for tree species mapping in cloudy regions (source: [[blickensdörfer_2024_tree_species]])
+
+## Mountain Forest Strategies
+
+In Alpine regions where cloud-free single dates are rare across multi-orbit study areas (source: [[kollert_2021_tree_species]]):
+- Three-monthly composites + Land Surface Phenology metrics outperform multitemporal classification (~85% vs 84.4% OA)
+- Composites are more robust than relying on a small number of cloud-free single scenes
+- Patch-stratified CV essential to prevent autocorrelation-inflated accuracy estimates (cf. [[spatial_proxies_random_forest]])
+
 ## Related pages
 
 - [[landsat]]
 - [[sentinel_2]]
+- [[sentinel_1_sar]]
 - [[phenology]]
 - [[sampling_bias_remote_sensing]]
 - [[vegetation_greenness_trends]]

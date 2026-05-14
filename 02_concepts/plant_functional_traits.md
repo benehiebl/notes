@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Plant functional traits are measurable characteristics of individual plants that affect performance — growth, survival, reproduction — and capture the major axes of plant life strategies, from leaf economics to root economics to reproductive strategies.
 
-**Sources**: [[bricca_2026_topo_diversity]], [[jin_2023_drivers_differentiation_evergreen]]
+**Sources**: [[bricca_2026_topo_diversity]], [[jin_2023_drivers_differentiation_evergreen]], [[dyderski_2025_species_shift]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-14
 
 ---
 

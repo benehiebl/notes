@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Species distribution models statistically relate species occurrence records to environmental predictor variables to estimate the spatial distribution of suitable habitat — a fundamental tool for biogeography, conservation planning, and forecasting range shifts under climate change.
 
-**Sources**: [[he_2015_remote_sensing_sdm]], [[noce_2023_altitude_shift_tree_italy]], [[fady_2025_native_trees_mediterranean]]
+**Sources**: [[he_2015_remote_sensing_sdm]], [[noce_2023_altitude_shift_tree_italy]], [[fady_2025_native_trees_mediterranean]], [[dyderski_2025_species_shift]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-14
 
 ---
 
@@ -117,6 +117,15 @@ Italian mountain forest case study (Noce et al. 2023) demonstrates operational M
 | Thermal | MODIS, Landsat-8 | LST as ecophysiological predictor |
 | Passive microwave | SMAP | Soil moisture predictor |
 
+## Trait-Based Generalisation of SDM Projections
+
+Combining MaxEnt SDMs for 20 European tree species under CMIP6/SSP scenarios with functional trait analysis enables prediction of range contraction from species traits (source: [[dyderski_2025_species_shift]]):
+- Boreal conifers (*Abies alba*, *Larix decidua*, *Picea abies*, *Pinus sylvestris*) most threatened — major contractions by 2041–2060
+- Alternative broadleaved species (*Sorbus torminalis*, *Tilia platyphyllos*, *Acer pseudoplatanus*, *Prunus avium*, *Carpinus betulus*) non-threatened or expanding
+- Range contraction decreases with higher SLA, larger leaf area, higher leaf N, larger seed mass, higher wood density
+- Range contraction increases with tree height
+- Counterintuitively, "fast" traits associate with climate robustness here — competitive broadleaves outperform tall slow boreal conifers
+
 ## Related pages
 
 - [[ndvi]]
@@ -126,3 +135,5 @@ Italian mountain forest case study (Noce et al. 2023) demonstrates operational M
 - [[plant_functional_traits]]
 - [[topographic_microclimate]]
 - [[tree_species_mapping]]
+- [[drought_mortality]]
+- [[evergreen_broadleaved_expansion]]

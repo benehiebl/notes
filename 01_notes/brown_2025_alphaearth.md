@@ -122,3 +122,7 @@ Brown et al. (2025) introduce AlphaEarth Foundations, a geospatial foundation mo
 - [[fischer_2025_glocal_canopy_atlas]]
 - [[bell_2024_hindcasting_forest_structure]]
 - [[chabalala_2023_dl_s2_mediterranean_fruit_trees]]
+- [[wang_2026_foundation]]
+- [[lang_2024_canopy_height]]
+- [[tseng_2024_presto]]
+- [[geospatial_foundation_models]]

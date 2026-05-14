@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Transfer learning addresses the small data problem in remote sensing vegetation mapping by pretraining deep learning models on larger, related datasets before fine-tuning on scarce target observations, substantially improving generalisation to new regions.
 
-**Sources**: [[hiebl_2025_pretraining]], [[chen_2020_contrastive_framework]], [[brown_2025_alphaearth]], [[sylvain_2024_tree_species_uncertainty]], [[safonova_2023_small_data]], [[reichstein_2019_deep_learning_earth_sciences]], [[kattenborn_2021_review_cnn_vegetation_monitoring]], [[wen_2023_transformers_time_series]], [[vaswani_2023_attention_is_all]], [[yuan_2025_sits_augmentation]], [[sze_2017_efficient_dnn_processing]]
+**Sources**: [[hiebl_2025_pretraining]], [[chen_2020_contrastive_framework]], [[brown_2025_alphaearth]], [[sylvain_2024_tree_species_uncertainty]], [[safonova_2023_small_data]], [[reichstein_2019_deep_learning_earth_sciences]], [[kattenborn_2021_review_cnn_vegetation_monitoring]], [[wen_2023_transformers_time_series]], [[vaswani_2023_attention_is_all]], [[yuan_2025_sits_augmentation]], [[sze_2017_efficient_dnn_processing]], [[mila_2024_spatial_proxies]], [[bernico_2019_domain_similarity]], [[yuan_2022_sitsformer]], [[yuan_2023_pretraining]], [[zerveas_2020_framework_transformer]], [[tseng_2024_presto]], [[wang_2026_foundation]], [[klehr_2025_synthetic_data]], [[lakshminarayan_2017_uncertainty]], [[seitzer_2022_uncertainty]]
 
-**Last updated**: 2026-05-06
+**Last updated**: 2026-05-14
 
 ---
 
@@ -30,8 +30,10 @@ Deep learning (DL) models for vegetation RS analysis require substantial labeled
 
 Key principle: pretraining task similarity to the target task determines how much benefit transfer provides.
 
-- **High similarity** (same modality, similar target variable): largest performance gain; pretrained features transfer directly
-- **Lower similarity** (same modality, different task): useful but partial transfer; some features re-learned during fine-tuning
+- **High similarity** (same modality, similar target variable): largest performance gain; pretrained features transfer directly; **feature extraction ≈ fine-tuning** at small data sizes (source: [[bernico_2019_domain_similarity]])
+- **Lower similarity** (same modality, different task): useful but partial transfer; **fine-tuning > feature extraction** consistently (source: [[bernico_2019_domain_similarity]])
+- **High dissimilarity**: fine-tuning required; more target data needed; at some threshold, training from scratch may be preferable (source: [[bernico_2019_domain_similarity]])
+- **Empirical scaling law**: accuracy improves **log-linearly with target data size** in every similarity regime (source: [[bernico_2019_domain_similarity]])
 - Applied in Hiebl et al. (2025): pretraining on Italian Forest Vegetation Database (VDB, 16,908 plots) for EVE cover regression (mVDB_cover) or forest type classification (mVDB_ftype), both outperforming direct training; mVDB_cover (task-similar) outperforms mVDB_ftype (source: [[hiebl_2025_pretraining]])
 
 **Why it works:**
@@ -90,6 +92,9 @@ A critical methodological issue in vegetation RS:
 - **Cluster-based spatial split** (k-means clustering by coordinates) ensures test plots are spatially separated from training plots
 - In Hiebl et al. (2025): spatially-split model (mVPO2024_r) showed higher RMSE on validation — more honest estimate of generalisation (source: [[hiebl_2025_pretraining]])
 - Leave-one-park-out CV provides the most rigorous generalisation test
+- **Random k-fold CV systematically mis-ranks models** with clustered samples or when assessing spatial-model transfer — it preferentially favours models that overfit spatial position (source: [[mila_2024_spatial_proxies]])
+- **kNNDM CV** (Linnenbrink et al. 2023) matches the geographical distance distribution between train and test folds to that between training and prediction locations — correctly ranks models in both interpolation and extrapolation; available in R package `CAST` (source: [[mila_2024_spatial_proxies]])
+- See [[spatial_proxies_random_forest]] for the broader pitfalls of adding spatial proxies as ML predictors, and [[area_of_applicability]] for predictor-space-based extrapolation diagnostics
 
 ## Error Sources in Vegetation Mapping
 
@@ -120,6 +125,29 @@ A new paradigm beyond task-specific transfer learning: train a single large mode
 - **Performance**: reduces error by ~23.9% vs next-best approach across 15 mapping evaluations (land cover, crop type, tree genera, biophysical variables); outperforms all designed featurizations (CCDC, MOSAIKS, composites) AND all prior learned models (SatCLIP, Prithvi, Clay); works best in few-shot regimes (1–10 labels per class) (source: [[brown_2025_alphaearth]])
 - **Key advantage over task-specific transfer learning**: frozen embeddings require no backbone retraining for new tasks — a single feature space serves vegetation mapping, land cover classification, disturbance detection, and biophysical retrieval simultaneously (source: [[brown_2025_alphaearth]])
 - **Limitation**: training covers only ~1.1% of Earth's land surface; annual temporal resolution of released embeddings too coarse for phenology/sub-annual change; model weights not open-sourced (source: [[brown_2025_alphaearth]])
+- **Lightweight alternative — PRESTO**: pre-trained pixel-time-series Transformer with up to 1000× fewer parameters than ViT-based foundation models, ingests S1+S2+ERA5+NDVI+Dynamic World+DEM+location; competitive on global RS tasks (source: [[tseng_2024_presto]])
+- **Operational use case**: AEF + S1/S2 + GEDI fusion → annual 10 m CHM with substantial gain over single-source models (source: [[wang_2026_foundation]])
+
+## SITS-Specific Pretraining (Transformer Lineage)
+
+A parallel line of work has developed **Transformer-based self-supervised pretraining specifically for SITS** — see [[transformer_sits]] for full treatment. Key references:
+- **TST** (Zerveas et al. 2020): first MTS Transformer + masked-value prediction; outperforms supervised SOTA without extra data (source: [[zerveas_2020_framework_transformer]])
+- **SITS-BERT** (Yuan & Lin 2022): pixel-based, sinusoidal DOY positional encoding, denoising proxy task; +1.91–6.69% accuracy gains (source: [[yuan_2023_pretraining]])
+- **SITS-Former** (Yuan et al. 2022): patch-based extension with 3D-CNN embedding; +2.64–3.30% accuracy (source: [[yuan_2022_sitsformer]])
+
+## Synthetic Data Augmentation
+
+A complementary "transfer learning" idea when pure-pixel reference data are scarce: **synthetic linear mixing of pure-pixel endmembers** generates large training sets for fractional regression (source: [[klehr_2025_synthetic_data]]):
+- 30 pure pixels per class can suffice
+- ANN regression on synthetic library + ensemble for uncertainty
+- Particularly valuable for rare species where NFI sampling is sparse
+
+## Uncertainty in Transfer Learning Pipelines
+
+The wiki's transfer-learning workflow integrates **deep ensemble uncertainty** with **β-NLL** training — see [[deep_ensemble_uncertainty]] for full treatment:
+- Proper scoring rule training (source: [[lakshminarayan_2017_uncertainty]])
+- β-NLL fixes heteroscedastic NLL pitfall (source: [[seitzer_2022_uncertainty]])
+- M=15 shared-backbone heads in [[hiebl_2025_pretraining]]
 
 ## Deep Learning Techniques for Small Data (RS-Specific Overview)
 

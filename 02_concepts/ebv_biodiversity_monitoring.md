@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Essential Biodiversity Variables (EBVs) are a standardised framework for harmonising global biodiversity monitoring — remote sensing contributes substantially to 4+ EBV classes, particularly ecosystem structure, phenology, and community composition.
 
-**Sources**: [[vihervaara_2017_ebv_remote_sensing]], [[spectral_diversity_biodiversity]], [[liu_2023_mapping_tree_species_diversity]]
+**Sources**: [[vihervaara_2017_ebv_remote_sensing]], [[spectral_diversity_biodiversity]], [[liu_2023_mapping_tree_species_diversity]], [[skidmore_2021_biodiversity]], [[grantham_2020_anthropogenic_modification]]
 
-**Last updated**: 2026-05-06
+**Last updated**: 2026-05-14
 
 ---
 
@@ -75,6 +75,30 @@ EBVs connect to:
 - **LULUCF carbon accounting:** Forest area + biomass monitoring
 - **Copernicus Land Monitoring Service:** Provides operational RS products contributing to EBV monitoring
 
+## Prioritisation of Satellite-Observable EBVs
+
+Expert-review prioritisation (source: [[skidmore_2021_biodiversity]]) ranks EBV classes by relevance × feasibility × accuracy × maturity for satellite monitoring:
+
+- **Highest priority (operational now)**:
+  - **Ecosystem structure**: live cover fraction, canopy height (cf. [[lang_2024_canopy_height]])
+  - **Ecosystem function**: NPP, fAPAR, ET
+- **Medium priority (achievable but needs work)**:
+  - Species populations (tropical tree species feasible at coarse resolution)
+  - Community composition (spectral diversity of forests)
+- **Low priority (requires future sensors)**:
+  - Species traits (morphology, leaf chemistry — needs hyperspectral)
+- **Not satellite-amenable**:
+  - Genetic composition
+
+## Forest Integrity as a Continuous EBV Proxy
+
+Beyond binary intact / not-intact distinctions, a continuous **Forest Landscape Integrity Index** (FLII) integrates observed pressures, inferred pressures, and connectivity loss into a 0–10 score (source: [[grantham_2020_anthropogenic_modification]]):
+
+- Only **40.5%** of remaining forest has high integrity
+- Only **27%** of high-integrity forest in protected areas
+- Concentrations in Canada, Russia, Amazon, Central Africa, New Guinea
+- Adaptable to national / sub-national scales
+
 ## Related pages
 
 - [[spectral_diversity_biodiversity]]
@@ -83,3 +107,5 @@ EBVs connect to:
 - [[phenology]]
 - [[tree_species_mapping]]
 - [[sentinel_2]]
+- [[forest_disturbances]]
+- [[species_distribution_models]]

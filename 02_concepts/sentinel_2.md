@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Sentinel-2 is a twin-satellite ESA mission providing multispectral imagery at 10–20 m resolution with ~5-day revisit time, enabling high-resolution vegetation monitoring at spatial and temporal scales not achievable with Landsat alone.
 
-**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[deluca_2022_s1_s2_lulc_mapping]], [[koch_2025_intraspecies_variation_s2]], [[liu_2023_spectral_spatial_resolution_effect]], [[miettinen_2025_forest_maps_europe]], [[fischer_2025_glocal_canopy_atlas]]
+**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[deluca_2022_s1_s2_lulc_mapping]], [[koch_2025_intraspecies_variation_s2]], [[liu_2023_spectral_spatial_resolution_effect]], [[miettinen_2025_forest_maps_europe]], [[fischer_2025_glocal_canopy_atlas]], [[blickensdörfer_2024_tree_species]], [[kollert_2021_tree_species]], [[klehr_2025_synthetic_data]], [[qin_2026_forest_cover]], [[yuan_2022_sitsformer]], [[yuan_2023_pretraining]], [[tseng_2024_presto]], [[yan_2025_population]], [[lang_2024_canopy_height]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-14
 
 ---
 
@@ -108,6 +108,18 @@ Like Landsat, the number of cloud-free Sentinel-2 observations varies spatially:
 - In Poland, overlapping orbit areas achieved 90.1% classification OA vs 86.7% for non-overlapping areas (source: [[grabska_2024_tree_species_map]])
 - Parallels the [[sampling_bias_remote_sensing]] issue identified for Landsat in alpine environments
 
+## Companion Sensors and Foundation Models
+
+- **Sentinel-1 SAR** ([[sentinel_1_sar]]) — cloud-independent companion; often combined for forest mapping ([[blickensdörfer_2024_tree_species]], [[deluca_2022_s1_s2_lulc_mapping]])
+- **Foundation models** ([[geospatial_foundation_models]]) — AlphaEarth (source: [[brown_2025_alphaearth]]) and PRESTO (source: [[tseng_2024_presto]]) ingest S-2 as primary input and produce embeddings reusable across mapping tasks; [[hiebl_2026_alphaearth]] fuses AEF + S-2 via Transformer cross-attention
+
+## SITS Pretraining and Time-Series Approaches
+
+- **SITS-BERT** (source: [[yuan_2023_pretraining]]): pixel-based BERT-style SSL pretraining on S-2
+- **SITS-Former** (source: [[yuan_2022_sitsformer]]): patch-based extension with 3D-CNN embeddings
+- **TST/PRESTO**: lightweight multivariate Transformer with masked-value pretraining ([[transformer_sits]])
+- **LSP + composites**: in mountain regions with limited cloud-free dates, three-monthly composites + Land Surface Phenology metrics outperform multitemporal classification (source: [[kollert_2021_tree_species]])
+
 ## Related pages
 
 - [[landsat]]
@@ -116,3 +128,7 @@ Like Landsat, the number of cloud-free Sentinel-2 observations varies spatially:
 - [[tree_species_mapping]]
 - [[sampling_bias_remote_sensing]]
 - [[spectral_diversity_biodiversity]]
+- [[sentinel_1_sar]]
+- [[transformer_sits]]
+- [[geospatial_foundation_models]]
+- [[transfer_learning_remote_sensing]]

@@ -13,9 +13,9 @@ tags:
 
 **Summary**: Tree species mapping from satellite data involves classifying forest pixels into species or genus classes using spectral, temporal, and environmental predictors, enabling wall-to-wall coverage beyond what field inventory plot networks provide.
 
-**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[koch_2025_intraspecies_variation_s2]], [[hemmerling_2021_forest_mapping_s2]], [[bolyn_2022_tree_species_mapping]], [[astola_2019_s2_l8_comparison]], [[pu_2021_tree_species_mapping_review]], [[wang_2022_tree_species_mapping]], [[wegler_2025_tree_species_germany]], [[wegler_2026_canopy_cover_loss]], [[adagbasa_2022_deep_learning_s2]], [[liu_2023_mapping_tree_species_diversity]], [[nguyen_2022_forest_mapping_explainable]]
+**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[koch_2025_intraspecies_variation_s2]], [[hemmerling_2021_forest_mapping_s2]], [[bolyn_2022_tree_species_mapping]], [[astola_2019_s2_l8_comparison]], [[pu_2021_tree_species_mapping_review]], [[wang_2022_tree_species_mapping]], [[wegler_2025_tree_species_germany]], [[wegler_2026_canopy_cover_loss]], [[adagbasa_2022_deep_learning_s2]], [[liu_2023_mapping_tree_species_diversity]], [[nguyen_2022_forest_mapping_explainable]], [[blickensdörfer_2024_tree_species]], [[kollert_2021_tree_species]], [[klehr_2025_synthetic_data]], [[yang_2020_modis_evergreen]], [[wang_2026_foundation]]
 
-**Last updated**: 2026-05-06
+**Last updated**: 2026-05-14
 
 ---
 
@@ -144,6 +144,41 @@ Rule-informed CNNs that explicitly encode forest definition criteria (tree heigh
 - Correction pathway reveals annotator label inconsistencies
 - Particularly valuable at alpine treeline where definition-sensitive boundaries are complex
 
+## Mixed Forest and Rare Species Challenges
+
+National-scale species mapping is honest only when **mixed-stand validation** is performed (source: [[blickensdörfer_2024_tree_species]]):
+- Pure-stand F1 scores typically overestimate real map accuracy by 4–14 percentage points
+- Pseudo-labelling extends NFI training to mixed plots while preserving label confidence
+- Variable-radius NFI plots need careful pixel-plot linking via species count proportions
+
+**Synthetically mixed training data + ANN regression** turns the mixing problem on its head (source: [[klehr_2025_synthetic_data]]):
+- Linear-mixing of pure-pixel endmembers generates a synthetic spectral library with controlled mixture fractions as labels
+- Allows 9 species + "other species" with as few as **30 pure pixels per class**
+- ANN regression outputs continuous per-pixel species fractions (MAE 2.76–16.05%, R² up to 0.92)
+- Particularly powerful for **rare species** that NFI databases under-represent
+
+## Mountain Forests and Cloud Cover
+
+In Alpine terrain where cloud-free single dates are rare (source: [[kollert_2021_tree_species]]):
+- Three-monthly Sentinel-2 composites + LSP metrics give 85% OA — better than 3-cloud-free-scene baseline (84.4%)
+- Single-year of S2 imagery sufficient when composited well
+- Patch-stratified CV essential to avoid spatial autocorrelation between train and test pixels (cf. [[spatial_proxies_random_forest]])
+
+## Fractional Evergreen Cover
+
+For fractional evergreen-vs-deciduous cover, classical NDVI time-series statistics deliver interpretable sub-pixel maps:
+- **FEVC model**: dimidiate pixel model on intra-annual NDVI minimum (when only evergreen + soil remain)
+- **CV filter**: discriminates evergreen (flat NDVI curve, low CV) from deciduous and crops
+- OA > 90%, RMSE ~10% in subtropical China (source: [[yang_2020_modis_evergreen]])
+
+## Foundation Models for Forest Mapping
+
+AlphaEarth Foundation embeddings (source: [[brown_2025_alphaearth]]) and their integration with VHR change detection enable annual 3D forest change estimates (source: [[wang_2026_foundation]]):
+- AlphaEarth + S1/S2 + GEDI → 10 m annual canopy height
+- VHR Siamese change detection → annual loss masks
+- Combination → forest carbon stock loss
+- Hiebl et al. 2026 ([[hiebl_2026_alphaearth]]) uses TST_AEF,S2 cross-attention fusion of AEF + S2 for Italian forest type and EVE cover — 10–24× faster than S2-only with matching accuracy
+
 ## Related pages
 
 - [[sentinel_2]]
@@ -152,3 +187,7 @@ Rule-informed CNNs that explicitly encode forest definition criteria (tree heigh
 - [[functional_diversity]]
 - [[plant_functional_traits]]
 - [[spectral_diversity_biodiversity]]
+- [[evergreen_broadleaved_expansion]]
+- [[transformer_sits]]
+- [[transfer_learning_remote_sensing]]
+- [[deep_ensemble_uncertainty]]

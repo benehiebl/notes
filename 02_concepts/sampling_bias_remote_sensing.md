@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Sampling bias in remote sensing arises when the number of usable observations changes systematically over a multi-year record, causing spurious trends in annual composited products even when the underlying environmental signal is stable.
 
-**Sources**: [[bayle_2024_landsat_greening_inflated]]
+**Sources**: [[bayle_2024_landsat_greening_inflated]], [[mila_2024_spatial_proxies]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-13
 
 ---
 
@@ -56,9 +56,19 @@ Short GSL combined with low ΣOBS_GS produces the largest false trends.
 2. **Temporal reconstruction / phenological correction**: Fit a phenological model to the observed NDVI time series and extract NDVImax from the fitted curve rather than the raw observations — decouples NDVImax from observation density
 3. **Data fusion**: Combine Landsat with higher-frequency sensors (MODIS, Sentinel-2) to fill temporal gaps before compositing
 
+## A Related but Distinct Bias: Clustered Sampling for ML Mapping
+
+The bias above concerns *temporal* sampling density and false trends. A different but related issue is *spatial* sample clustering when fitting ML models for spatial prediction:
+
+- Clustered training samples cause spatial overfitting; ML models can use proxy variables (coordinates, distance fields) to memorise sample locations rather than learn the response, producing implausible interpolation artefacts (source: [[mila_2024_spatial_proxies]]).
+- Random k-fold cross-validation hides this — kNNDM CV or probability test samples expose it (source: [[mila_2024_spatial_proxies]]).
+- See [[spatial_proxies_random_forest]] and [[area_of_applicability]] for diagnostics and prevention.
+
 ## Related pages
 
 - [[landsat]]
 - [[ndvi]]
 - [[phenology]]
 - [[vegetation_greenness_trends]]
+- [[spatial_proxies_random_forest]]
+- [[area_of_applicability]]

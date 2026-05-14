@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Vegetation phenology describes the seasonal timing of plant life-cycle events (green-up, peak greenness, senescence, dormancy), which can be tracked remotely using time series of vegetation indices or surface reflectance.
 
-**Sources**: [[bayle_2024_landsat_greening_inflated]], [[grabska_2024_tree_species_map]], [[he_2015_remote_sensing_sdm]]
+**Sources**: [[bayle_2024_landsat_greening_inflated]], [[grabska_2024_tree_species_map]], [[he_2015_remote_sensing_sdm]], [[yel_2026_deciduous_forests]], [[schuldt_2020_drought_forest]], [[kempf_2023_greening]], [[yang_2020_modis_evergreen]], [[kollert_2021_tree_species]], [[herraiz_2025_phen_shifts_mediterranean]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-14
 
 ---
 
@@ -64,6 +64,31 @@ Evergreen Mediterranean forest species exhibit a phenological cycle fundamentall
 - Growing season length (LOS) varies by species: 160–210 days; *Pinus nigra* and *P. sylvestris* shortest (~160 days); *Castanea sativa* (deciduous) longest (~210 days)
 - Aridity delays SOS and EOS for most *Pinus* and *Quercus* species, and shortens LOS for *P. halepensis* and *P. pinaster*
 - Timing metrics (SOS, EOS) have NOT shifted temporally over 28 years despite general greening — increasing photosynthetic capacity without changing phenological clock
+
+## Evergreen Phenology and the FEVC Signal
+
+For evergreen vs deciduous mapping, the **intra-annual NDVI minimum** is the most diagnostic phenological feature (source: [[yang_2020_modis_evergreen]]):
+- Deciduous and crops drop to bare-soil NDVI in dormancy / fallow
+- Evergreens retain photosynthetic activity year-round → high NDVI even at intra-annual minimum
+- The **Coefficient of Variation** of an annual NDVI time series distinguishes evergreen (flat → low CV) from deciduous (large amplitude → high CV) and from continuous crops (multi-cycle)
+- Combined with linear-mixing models (FEVC) this yields sub-pixel fractional evergreen cover at MODIS resolution (source: [[yang_2020_modis_evergreen]])
+
+## Phenology under Climate Stress
+
+Climate change is shifting phenological timing in temperate forests (source: [[yel_2026_deciduous_forests]]):
+- SOS advancing ~1.5 days/decade in temperate regions
+- Plant Phenology Index (PPI) in boreal forests: ~0.28 days/year advance
+- EOS region-dependent (delays in wetter regions, no change in arid)
+- Photoperiod controls dominate above 10 °C MAT; thermal forcing below
+- fPAR products lag ground observations by 18–55 days during drought / hurricane events
+
+The 2018 Central European drought triggered widespread **premature leaf senescence** in *Fagus sylvatica* (from late July) and **failed flushing in 2019** — phenological signals of drought legacy that propagate into satellite NDVI quantile ranks (source: [[schuldt_2020_drought_forest]]).
+
+Pan-European NDVI trends 2001–2021 reveal **winter + early spring contributions** dominate greening signals in Northern Europe, consistent with longer GSL driven by warming (source: [[kempf_2023_greening]]).
+
+## LSP for Mountain Tree Species Mapping
+
+In Alpine terrain where cloud-free imagery is scarce, **Land Surface Phenology** metrics from a single year of Sentinel-2 + three-monthly composites give 85% OA — better than three-cloud-free-scene multitemporal classification (source: [[kollert_2021_tree_species]]). Larch's deciduous-conifer phenology is particularly diagnostic — strong contrast with evergreen spruce/fir.
 
 ## Phenology as SDM Predictor
 

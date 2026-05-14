@@ -415,3 +415,122 @@ Append-only record of all wiki operations.
 - `01_notes/sattstools.md` — sattstools preprocessing library; rsutils (cloud masking S2/Landsat), outlier.py (IQR/z-score/IsoForest), smooth.py (Whittaker+FFT+RBF), TSpreprocess.py (TSRobustStandardize, modality-specific augmentation for optical/climate/AEF); shared backbone for traceve_pretraining, ae_training, ls_mapping
 
 **Updated**: `index.md`
+
+---
+
+## 2026-05-13
+
+**Ingested**: `mila_2024_spatial_proxies.pdf`, `pebesma_2025_spatial_data.pdf`
+
+**Created**:
+- `01_notes/mila_2024_spatial_proxies.md` — Milà et al. 2024 (GMD); simulation + Spain case studies on when coordinates/EDF/RFsp help random forests; kNNDM CV vs random CV; RF–GLS benchmark
+- `01_notes/pebesma_2025_spatial_data.md` — Pebesma et al. 2025 (arXiv); SDSL workshop synthesis comparing R/Python/Julia spatial ecosystems; variable support, spherical geometry, data cubes, cross-language tooling
+- `02_concepts/spatial_proxies_random_forest.md` — decision rules for adding spatial proxies to RF predictors; AOA-based diagnostics; RF–GLS alternative
+- `02_concepts/area_of_applicability.md` — Meyer & Pebesma's predictor-space distance metric; flags feature extrapolation per pixel
+- `02_concepts/support_intensive_extensive.md` — variable support (point vs block) and intensive/extensive properties; split/merge policies; software status across sf, GeoPandas, Julia
+
+**Updated**:
+- `02_concepts/transfer_learning_remote_sensing.md` — Spatial Autocorrelation in Validation section extended with random CV mis-ranking + kNNDM CV; added Mila 2024 to Sources
+- `02_concepts/sampling_bias_remote_sensing.md` — added cross-link to spatial-clustered-sampling overfitting via Mila 2024
+- `index.md` — added 2 new notes and 3 new concepts
+
+---
+
+## 2026-05-14
+
+**Ingested batch of 30 sources** across forest ecology, RS forest mapping, DL methodology, uncertainty, and biodiversity.
+
+**Created (30 notes in `01_notes/`)**:
+
+*Forest ecology (8)*
+- `berger_2006_distribution_eve.md` — Insubrian EVE distribution along precipitation × bedrock gradients
+- `chelli_2017_climate.md` — Italy climate-vegetation review across four climatic zones
+- `conedera_2018_drivers_evergreen.md` — Lago Maggiore EVE drivers; propagule pressure > climate
+- `yel_2026_deciduous_forests.md` — RS review of climate-change impacts on deciduous forests
+- `schuldt_2020_drought_forest.md` — 2018 Central European drought first assessment
+- `dyderski_2025_species_shift.md` — SDMs for 20 European tree species under CMIP6 SSPs
+- `kempf_2023_greening.md` — Pan-European NDVI greening + climate anomalies
+- `babst_2019_redistribution.md` — 20th-century redistribution of climatic drivers of tree growth
+
+*RS mapping (8)*
+- `blickensdörfer_2024_tree_species.md` — National German tree species map with S1/S2 + NFI
+- `kollert_2021_tree_species.md` — Sentinel-2 LSP + composites for Tyrol tree species
+- `hamedianfar_2022_deep_learning.md` — Critical review of DL for forest inventory
+- `lang_2024_canopy_height.md` — Global 10 m canopy height from GEDI + S2
+- `qin_2026_forest_cover.md` — Annual 30 m forest cover in cloud-prone southern China
+- `zhao_2022_forest_harvesting.md` — Monthly forest harvesting with Sentinel-1 + U-Net
+- `yang_2020_modis_evergreen.md` — FEVC-CV fractional evergreen cover from MODIS NDVI
+- `yan_2025_population.md` — Transformer + CNN hybrid for population estimation
+
+*DL methodology (10)*
+- `bernico_2019_domain_similarity.md` — Log-linear scaling of transfer learning with data × similarity
+- `klehr_2025_synthetic_data.md` — Synthetic mixed training data for tree species fractions
+- `sylvain_2021_ensemble.md` — Bias correction + ensemble for predictive mapping uncertainty
+- `tseng_2024_presto.md` — PRESTO lightweight pretrained RS transformer
+- `yuan_2022_sitsformer.md` — SITS-Former patch-based Transformer with SSL pretraining
+- `yuan_2023_pretraining.md` — SITS-BERT: first BERT-style SSL pretraining for SITS
+- `zerveas_2020_framework_transformer.md` — TST Transformer for multivariate time series
+- `zangh_2017_generalization.md` — Random label memorisation challenges classical learning theory
+- `tan_2021_tser.md` — TSER benchmark for time series extrinsic regression
+- `wang_2026_foundation.md` — AlphaEarth + GEDI + VHR for annual forest carbon stock loss
+
+*Uncertainty + biodiversity (4)*
+- `lakshminarayan_2017_uncertainty.md` — Deep ensembles for predictive uncertainty
+- `seitzer_2022_uncertainty.md` — β-NLL fix for heteroscedastic NLL pitfall
+- `skidmore_2021_biodiversity.md` — Priority list of satellite-observable EBVs
+- `grantham_2020_anthropogenic_modification.md` — Forest Landscape Integrity Index globally
+
+**Created (4 new concept pages in `02_concepts/`)**:
+- `evergreen_broadleaved_expansion.md` — Drivers and RS of EVE spread; climate × propagule × land-use hierarchy
+- `deep_ensemble_uncertainty.md` — Recipe, β-NLL fix, epistemic + aleatoric components, wiki applications
+- `transformer_sits.md` — Pretrained Transformer architectures for SITS — TST/SITS-BERT/SITS-Former/PRESTO lineage
+- `drought_mortality.md` — Hotter droughts, hydraulic failure, 20th-c. climate-driver redistribution
+
+**Updated (concept pages)**:
+- `forest_disturbances.md` — added drought_mortality, monthly harvest detection, forest integrity sections; new sources
+- `tree_species_mapping.md` — added mixed-stand validation, synthetic data, mountain forests, foundation model sections
+- `transfer_learning_remote_sensing.md` — added Bernico scaling law, SITS Transformer lineage, synthetic data, uncertainty integration
+- `transformers_time_series.md` — added cross-link to transformer_sits concept; new sources
+- `ebv_biodiversity_monitoring.md` — added Skidmore prioritisation + Grantham FLII sections
+- `vegetation_greenness_trends.md` — added Kempf pan-European anomalies, Babst 20th-c. redistribution, Yel RS methods
+- `species_distribution_models.md` — added Dyderski trait-based generalisation section
+- `neural_network_training.md` — added Zhang generalisation, deep ensemble uncertainty references
+
+**Updated**: `index.md` — added 30 notes + 4 new concepts
+
+---
+
+## 2026-05-14 (lint pass)
+
+**Lint findings** (all 7 categories audited):
+1. ✅ Format compliance — all 94 notes + 29 concepts have valid frontmatter, required tags, Related pages, and (for concepts) Summary/Sources/Last updated
+2. ✅ Broken wiki-links — 0
+3. ✅ Orphan files — 0 truly orphan; 3 weakly linked (alessi_2023, sattstools, yan_2025) only via index.md
+4. 🔧 Missing concept pages — created 2: `sentinel_1_sar` and `geospatial_foundation_models`
+5. 🔧 Stale concept pages — updated 7 with new sources and integrative sections: `sentinel_2`, `phenology`, `ndvi`, `national_forest_inventory`, `cloud_detection`, `landsat`, `lai_estimation`, `plant_functional_traits`
+6. 🔧 Missing cross-links — added in `brown_2025_alphaearth`, `fischer_2025_glocal_canopy_atlas`, `hiebl_2025_pretraining`, `hiebl_2026_alphaearth`, `wegler_2026_canopy_cover_loss`, `mila_2024_spatial_proxies`, `lang_2024_canopy_height` (linking to new methodological ancestors and companion foundation-model papers)
+
+**Created**:
+- `02_concepts/sentinel_1_sar.md` — Sentinel-1 C-band SAR; complementary to optical S-2 for cloud-prone regions and structure-sensitive forest mapping
+- `02_concepts/geospatial_foundation_models.md` — AlphaEarth + PRESTO paradigm; comparison; use patterns for forest mapping
+
+**Updated** (concept pages with new sources + sections):
+- `sentinel_2.md` — added Companion Sensors, Foundation Models, SITS Pretraining sections; +9 new sources
+- `phenology.md` — added Evergreen FEVC, Climate Stress, LSP Mountain Mapping sections; +6 new sources
+- `ndvi.md` — added alternatives table, time-series statistics, drought-anomaly sections; +4 new sources
+- `national_forest_inventory.md` — added NFI–pixel linking and synthetic mixing sections; +3 new sources
+- `cloud_detection.md` — added cloud-prone regions, SAR alternatives, mountain forest strategies; +4 new sources
+- `landsat.md` — +5 new sources
+- `lai_estimation.md` — +1 new source (yel_2026)
+- `plant_functional_traits.md` — +1 new source (dyderski_2025)
+
+**Updated** (cross-links between notes):
+- `brown_2025_alphaearth.md` ↔ `wang_2026_foundation`, `lang_2024_canopy_height`, `tseng_2024_presto`
+- `fischer_2025_glocal_canopy_atlas.md` ↔ `lang_2024_canopy_height`, `wang_2026_foundation`
+- `hiebl_2025_pretraining.md` → methodological ancestors (zerveas_2020, yuan_2022/2023, lakshminarayan_2017, seitzer_2022) + new concepts
+- `hiebl_2026_alphaearth.md` → wang_2026, tseng_2024, lang_2024, zerveas_2020 + new concepts
+- `wegler_2026_canopy_cover_loss.md` → schuldt_2020 (causal drought driver), drought_mortality concept, blickensdörfer_2024, zhao_2022, turubanove_2023
+- `mila_2024_spatial_proxies.md` → kollert_2021, blickensdörfer_2024 (both apply spatial validation), zangh_2017
+- `lang_2024_canopy_height.md` → fischer_2025, wang_2026, sentinel_1_sar, geospatial_foundation_models
+
+**Updated**: `index.md` — added 2 new concepts

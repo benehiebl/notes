@@ -59,7 +59,13 @@ Germany's 2018–2024 forest crisis was overwhelmingly a spruce crisis: 51% of c
 
 ## Related pages
 - [[forest_disturbances]]
+- [[drought_mortality]]
 - [[sentinel_2]]
 - [[landsat]]
 - [[tree_species_mapping]]
 - [[wegler_2025_tree_species_germany]]
+- [[schuldt_2020_drought_forest]]
+- [[blickensdörfer_2024_tree_species]]
+- [[zhao_2022_forest_harvesting]]
+- [[grünig_2026_climate_change_disturbances_forest]]
+- [[turubanove_2023_canopy_landsat]]

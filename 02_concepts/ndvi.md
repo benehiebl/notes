@@ -11,9 +11,9 @@ tags:
 
 **Summary**: The Normalised Difference Vegetation Index (NDVI) is the most widely used spectral index for quantifying vegetation greenness from red and near-infrared reflectance, serving as a proxy for photosynthetic activity, vegetation density, and plant biomass.
 
-**Sources**: [[bayle_2024_landsat_greening_inflated]], [[chastain_2007_eve_landsat_understory]], [[he_2015_remote_sensing_sdm]]
+**Sources**: [[bayle_2024_landsat_greening_inflated]], [[chastain_2007_eve_landsat_understory]], [[he_2015_remote_sensing_sdm]], [[yel_2026_deciduous_forests]], [[yang_2020_modis_evergreen]], [[kempf_2023_greening]], [[schuldt_2020_drought_forest]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-14
 
 ---
 
@@ -43,8 +43,30 @@ Values range from −1 to +1; healthy dense vegetation typically yields 0.4–0.
 ## Common Alternatives
 
 - **EVI** (Enhanced Vegetation Index): corrects for soil background and atmospheric effects; less prone to saturation
-- **kNDVI**: Kernel NDVI; more robust at high vegetation density
+- **kNDVI**: Kernel NDVI; more robust at high vegetation density (source: [[yel_2026_deciduous_forests]])
 - **SAVI** (Soil-Adjusted Vegetation Index): reduces soil background influence; useful in sparse vegetation
+- **NDWI / NDMI**: canopy liquid water content — better drought tracking than NDVI (source: [[yel_2026_deciduous_forests]], [[schuldt_2020_drought_forest]])
+- **PRI**: photosynthetic efficiency / xanthophyll cycle — captures rapid physiological change (source: [[yel_2026_deciduous_forests]])
+- **SIF** (Solar-Induced Fluorescence): true photosynthetic activity — catches greenness-vs-GPP decoupling under stress (source: [[yel_2026_deciduous_forests]])
+
+See [[yel_2026_deciduous_forests]] for a full inventory of indices with use cases and caveats.
+
+## NDVI Time-Series Statistics for Mapping
+
+Two derived statistics from a year of NDVI carry strong signal:
+- **Intra-annual NDVI minimum (NDVI_annmin)**: diagnostic for evergreen presence — at the minimum, only evergreen + soil remain photosynthetic (source: [[yang_2020_modis_evergreen]])
+- **Coefficient of variation (CV)** of the annual NDVI series: low for evergreen (flat curve), high for deciduous (large amplitude); discriminates evergreen from continuous crops (source: [[yang_2020_modis_evergreen]])
+
+Combined as **FEVC-CV** with a dimidiate pixel model, these yield sub-pixel fractional evergreen cover with OA > 90% from MODIS (source: [[yang_2020_modis_evergreen]]).
+
+## NDVI Anomaly Analysis for Drought Detection
+
+Stacking long-term NDVI series and ranking each year against the empirical distribution exposes drought severity (source: [[schuldt_2020_drought_forest]]):
+- 2018 Central European drought: area of deciduous forest in lowest NDVI quantiles ~2× that of 2003
+- Quantile-based ranking is robust to systematic biases in absolute NDVI
+- See [[drought_mortality]] and [[vegetation_greenness_trends]] for full treatment
+
+Pan-European pairing of MODIS NDVI 2001–2021 with GLDAS climate variables reveals **trends in mean** can coexist with **growing anomaly intensity**, both of which signal vegetation vulnerability (source: [[kempf_2023_greening]]).
 
 ## Use in Species Distribution Models
 

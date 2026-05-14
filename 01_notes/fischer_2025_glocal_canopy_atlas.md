@@ -89,3 +89,6 @@ Fischer et al. (2025) deliver the most comprehensive harmonised ALS database eve
 - [[albrich_2019_climate_change_mountain_forests]]
 - [[francioni_2026_canopy_closure]]
 - [[deluca_2022_s1_s2_lulc_mapping]]
+- [[lang_2024_canopy_height]]
+- [[wang_2026_foundation]]
+- [[geospatial_foundation_models]]

@@ -13,9 +13,9 @@ tags:
 
 **Summary**: The Landsat program is a multi-decade series of Earth observation satellites operated by NASA and USGS, providing the longest continuous global land surface record in remote sensing history at 30 m spatial resolution.
 
-**Sources**: [[bayle_2024_landsat_greening_inflated]], [[chastain_2007_eve_landsat_understory]], [[pflugmacher_2019_lulc_landsat]], [[bell_2024_hindcasting_forest_structure]]
+**Sources**: [[bayle_2024_landsat_greening_inflated]], [[chastain_2007_eve_landsat_understory]], [[pflugmacher_2019_lulc_landsat]], [[bell_2024_hindcasting_forest_structure]], [[kempf_2023_greening]], [[yel_2026_deciduous_forests]], [[qin_2026_forest_cover]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-14
 
 ---
 

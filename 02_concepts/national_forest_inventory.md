@@ -12,9 +12,9 @@ tags:
 
 **Summary**: National Forest Inventories (NFIs) are systematic, large-scale sample surveys that provide authoritative statistics on the extent, structure, composition, and functions of a country's forests, serving as the primary ground truth for forest remote sensing and international reporting.
 
-**Sources**: [[gasparini_2022_nfi_italy]], [[mattioli_2025_carta_forestale]], [[miettinen_2025_forest_maps_europe]], [[amico_2025_nfi_italy]], [[bell_2024_hindcasting_forest_structure]]
+**Sources**: [[gasparini_2022_nfi_italy]], [[mattioli_2025_carta_forestale]], [[miettinen_2025_forest_maps_europe]], [[amico_2025_nfi_italy]], [[bell_2024_hindcasting_forest_structure]], [[blickensdörfer_2024_tree_species]], [[klehr_2025_synthetic_data]], [[qin_2026_forest_cover]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-14
 
 ---
 
@@ -132,8 +132,30 @@ NFI data contribute to:
 - **CBD** (Convention on Biological Diversity): biodiversity indicators
 - **SDGs**: Goal 15 (Life on Land)
 
+## Linking NFI Plots to Satellite Pixels for ML Mapping
+
+Two practical challenges arise when using NFI plot data as training reference for ML-based species/forest type mapping (source: [[blickensdörfer_2024_tree_species]]):
+
+1. **Variable-radius plots**: NFI plots have radii that vary by species class — exact area is plot-dependent. Pixel–plot linking requires careful matching of pixel proportions against the plot species count distribution.
+2. **Mixed-species plots**: most real forest plots contain multiple species. Restricting training to "pure" plots biases the model toward homogeneous stands and over-estimates pixel-level accuracy by 4–14 percentage points (source: [[blickensdörfer_2024_tree_species]]).
+
+**Pseudo-labelling** (source: [[blickensdörfer_2024_tree_species]]) extends NFI training data:
+- Use a model trained on pure plots to predict on mixed plots
+- Retain pseudo-labels that match plot species occurrence in the neighbourhood as additional training samples
+- Mixed-stand validation must be performed separately to report honest accuracy
+
+**Synthetic linear mixing** (source: [[klehr_2025_synthetic_data]]) is a complementary approach when pure-pixel reference data are scarce:
+- Linearly mix pure-pixel endmembers to generate synthetic spectral library with known mixture fractions
+- ANN regression on synthetic data → continuous per-pixel species fractions
+- Allows 9 species + "other" class with as few as **30 pure pixels per class** — viable for rare species missing from standard NFI databases
+
+In cloud-prone regions, NFI provincial totals can validate large-area mapping products against direct pixel-level reference data (source: [[qin_2026_forest_cover]]): annual 30 m forest cover in southern China aligns with provincial NFI (R² 0.86), while finer-resolution products outperform 500 m alternatives.
+
 ## Related pages
 
 - [[functional_diversity]]
 - [[plant_functional_traits]]
 - [[landsat]]
+- [[tree_species_mapping]]
+- [[sentinel_2]]
+- [[sentinel_1_sar]]

@@ -26,6 +26,15 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[vegetation_community_change]] | Long-term European plant community change: EIV bioindication, nitrogen eutrophication, vegetation densification, thermophilisation; links to RS greening |
 | [[transformers_time_series]] | Transformer architecture for time series: self-attention, SITS adaptations, pre-training, TST/InceptionTime for forest mapping |
 | [[ebv_biodiversity_monitoring]] | Essential Biodiversity Variables (EBVs): standardised monitoring framework; RS contributions to ecosystem structure, phenology, community composition |
+| [[spatial_proxies_random_forest]] | When coordinates/EDF/RFsp help random forests; decision rules; kNNDM CV vs random CV; RF–GLS as alternative |
+| [[area_of_applicability]] | Predictor-space distance metric flagging per-pixel feature extrapolation; AOA in R package CAST |
+| [[support_intensive_extensive]] | Variable support (point vs block) and intensive/extensive properties; split/merge policies for spatial aggregation |
+| [[evergreen_broadleaved_expansion]] | Drivers (climate + propagule + land-use), distribution, and RS detection of evergreen broad-leaved species spread into deciduous European forests |
+| [[deep_ensemble_uncertainty]] | Deep ensembles + proper scoring rules + β-NLL for epistemic + aleatoric uncertainty in NN regression |
+| [[transformer_sits]] | Pretrained Transformer architectures for SITS — TST, SITS-BERT, SITS-Former, PRESTO; masked-value prediction; pixel vs patch |
+| [[drought_mortality]] | Hotter droughts, xylem hydraulic failure, 20th-century redistribution of climatic drivers, drought-legacy effects |
+| [[sentinel_1_sar]] | Sentinel-1 C-band SAR; dual polarisation VV/VH; cloud-independent companion to Sentinel-2 for forest mapping and disturbance detection |
+| [[geospatial_foundation_models]] | AlphaEarth, PRESTO, Prithvi paradigm; pretrained Earth-observation embeddings for downstream mapping tasks with minimal labels |
 
 ## Notes Pages (`01_notes/`)
 
@@ -94,3 +103,35 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[lai_estimation]] | Leaf Area Index (LAI): definition, MODIS/Landsat data fusion, saturation problem, biome-specific retrieval |
 | [[cloud_detection]] | Cloud and cloud shadow detection: feature types, algorithm taxonomy, impact on time series preprocessing |
 | [[01_notes/sattstools]] | sattstools repo — shared preprocessing library for all TRACEVE experiments; cloud masking, outlier detection, Whittaker smoothing, TSRobustStandardize, modality-specific data augmentation |
+| [[01_notes/mila_2024_spatial_proxies]] | Milà et al. 2024 — RFs with spatial proxies (coords/EDF/RFsp): help only for interpolation + residual autocorrelation + regular/random samples; never for transfer; kNNDM CV recommended; RF–GLS benchmark |
+| [[01_notes/pebesma_2025_spatial_data]] | Pebesma et al. 2025 — SDSL workshop synthesis on R/Python/Julia spatial ecosystems; variable support, spherical geometry, data cubes, GeoParquet/GeoArrow, cross-language infrastructure |
+| [[01_notes/berger_2006_distribution_eve]] | Berger & Walther 2006 — Insubrian EVE distribution along precipitation × bedrock gradients; W siliceous-humid vs E calcareous-dry partitioning |
+| [[01_notes/chelli_2017_climate]] | Chelli et al. 2017 — Climate-vegetation response review across Italy's four climatic zones; drought overrides warming benefits beyond Mediterranean |
+| [[01_notes/conedera_2018_drivers_evergreen]] | Conedera et al. 2018 — Propagule pressure (distance to garden) > climate for EVE invasion in Lago Maggiore; tobit regression on 200 plots |
+| [[01_notes/yel_2026_deciduous_forests]] | Yel et al. 2026 — RS systematic review of climate-change impacts on deciduous forests; 70 papers; index inventory + analytical taxonomy |
+| [[01_notes/schuldt_2020_drought_forest]] | Schuldt et al. 2020 — 2018 Central European drought first assessment; MGT +3.3°C vs baseline; widespread mortality; legacy effects |
+| [[01_notes/dyderski_2025_species_shift]] | Dyderski et al. 2025 — SDMs for 20 European tree species under CMIP6 SSPs; boreal conifers most threatened by 2041–2060; trait-based generalisation |
+| [[01_notes/kempf_2023_greening]] | Kempf 2023 — MODIS NDVI 2001–21 + GLDAS 1948–21 pan-European greening trends; regional polarisation; intensifying anomalies |
+| [[01_notes/babst_2019_redistribution]] | Babst et al. 2019 — 20th-century redistribution from energy- to water-limited tree growth; T-limited area shrank by 10.8% from 2710 tree-ring sites |
+| [[01_notes/blickensdörfer_2024_tree_species]] | Blickensdörfer et al. 2024 — National German tree species map with S1/S2 + NFI + mixed-stand pseudo-labelling; mixed-stand accuracy drops 4–14 pp |
+| [[01_notes/kollert_2021_tree_species]] | Kollert et al. 2021 — Sentinel-2 LSP + three-monthly composites for tree species mapping in Tyrol; composites + LSP > 3 cloud-free scenes |
+| [[01_notes/hamedianfar_2022_deep_learning]] | Hamedianfar et al. 2022 — Critical review of DL for forest inventory and planning; data, architecture, generalisation challenges |
+| [[01_notes/lang_2024_canopy_height]] | Lang et al. 2024 — Global 10 m canopy height model fusing GEDI + S2 via CNN ensemble; aRMSE 7.3 m; only 5% of land has trees > 30 m |
+| [[01_notes/qin_2026_forest_cover]] | Qin et al. 2026 — DL reconstruction + RF for annual 30 m forest cover in cloud-prone southern China 2000–20; OA 0.904 |
+| [[01_notes/zhao_2022_forest_harvesting]] | Zhao et al. 2022 — Monthly forest harvesting mapping with Sentinel-1 SAR + U-Net; California + Rondônia; transferable model |
+| [[01_notes/yang_2020_modis_evergreen]] | Yang et al. 2020 — FEVC-CV fractional evergreen cover from MODIS NDVI minimum + coefficient of variation; OA > 90%, RMSE ≈ 10% |
+| [[01_notes/yan_2025_population]] | Yan et al. 2025 — Transformer + CNN hybrid for high-precision population estimation; SHAP-interpreted comparison with RF/ResNet |
+| [[01_notes/bernico_2019_domain_similarity]] | Bernico et al. 2019 — Empirical scaling law: log-linear accuracy in data volume × source-target similarity for transfer learning |
+| [[01_notes/klehr_2025_synthetic_data]] | Klehr et al. 2025 — Synthetic mixed training data + ANN regression for tree species fractions; 30 pure pixels per class suffice |
+| [[01_notes/sylvain_2021_ensemble]] | Sylvain et al. 2021 — Bias correction + triple-resampling ensemble for predictive mapping uncertainty; conditional bias −25–50% |
+| [[01_notes/tseng_2024_presto]] | Tseng et al. 2024 — PRESTO lightweight pretrained Transformer for RS pixel-time-series; 1000× smaller than ViT foundation models |
+| [[01_notes/yuan_2022_sitsformer]] | Yuan et al. 2022 — SITS-Former patch-based Transformer with 3D-CNN embedding + SSL pretraining; +2.64–3.30% OA on crop classification |
+| [[01_notes/yuan_2023_pretraining]] | Yuan & Lin 2022 — SITS-BERT: first BERT-style SSL pretraining for SITS; pixel-based, sinusoidal DOY encoding; +1.91–6.69% accuracy |
+| [[01_notes/zerveas_2020_framework_transformer]] | Zerveas et al. 2020 — TST Transformer encoder for MTS representation learning; first unsupervised method to beat supervised SOTA |
+| [[01_notes/zangh_2017_generalization]] | Zhang et al. 2017 — Deep nets fit random labels; classical complexity bounds cannot explain DL generalisation; reframed the field |
+| [[01_notes/tan_2021_tser]] | Tan et al. 2021 — TSER benchmark: time series extrinsic regression; Rocket best overall; significant headroom for new methods |
+| [[01_notes/wang_2026_foundation]] | Wang et al. 2026 — AlphaEarth + S1/S2 + GEDI for 10 m annual CHM + VHR Siamese change detection → annual forest carbon stock loss |
+| [[01_notes/lakshminarayan_2017_uncertainty]] | Lakshminarayanan et al. 2017 — Deep ensembles: M independent networks + proper scoring rule; matches/exceeds Bayesian NNs; scales to ImageNet |
+| [[01_notes/seitzer_2022_uncertainty]] | Seitzer et al. 2022 — β-NLL fixes the heteroscedastic NLL pitfall; one-line code change with large empirical improvement |
+| [[01_notes/skidmore_2021_biodiversity]] | Skidmore et al. 2021 — Priority list of satellite-observable EBVs; ecosystem structure + function highest priority; genetic composition not feasible |
+| [[01_notes/grantham_2020_anthropogenic_modification]] | Grantham et al. 2020 — Forest Landscape Integrity Index; only 40.5% of remaining forest has high integrity; 27% of which is protected |

@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Vegetation greening (or browning) refers to long-term directional changes in satellite-derived vegetation indices, used as proxies for changes in plant productivity, biomass, and ecosystem functioning in response to climate and land use.
 
-**Sources**: [[bayle_2024_landsat_greening_inflated]], [[herraiz_2025_phen_shifts_mediterranean]], [[midolo_2026_denser_vegetation]]
+**Sources**: [[bayle_2024_landsat_greening_inflated]], [[herraiz_2025_phen_shifts_mediterranean]], [[midolo_2026_denser_vegetation]], [[kempf_2023_greening]], [[yel_2026_deciduous_forests]], [[babst_2019_redistribution]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-14
 
 ---
 
@@ -67,6 +67,27 @@ Long-term Landsat NDVI time series (28 years) in Mediterranean forests reveal sp
 - Greening does not automatically imply increased carbon uptake — ecosystem carbon balance depends on respiration, disturbance, and phenological shifts
 - Greening at high elevations may signal thermophilisation (upward migration of warm-adapted species), but this interpretation is confounded by observational bias (source: [[bayle_2024_landsat_greening_inflated]])
 - Arctic browning events (reversals of greening) have been documented despite global greening trends
+
+## Pan-European Greenness vs Climate Anomalies
+
+MODIS NDVI + GLDAS reanalysis pairing reveals **regional polarisation** (N positive, S mixed-negative) of greening trends, with both **mean trends and anomaly intensity** rising over the past two decades (source: [[kempf_2023_greening]]):
+- Long-term smooth trends mask intensifying anomalies
+- Anomaly intensity is the better indicator of vegetation vulnerability to climate extremes
+- Winter + spring NDVI rises strongly in northern latitudes → earlier/longer growing seasons
+
+## 20th-Century Climate-Driver Redistribution
+
+Global tree-growth response to climate has shifted from energy- to water-limited over the 20th century (source: [[babst_2019_redistribution]]):
+- T-limited area shrank by 10.8% (1930–1960 → 1960–1990)
+- VPD-limited area grew by the same amount
+- Implication: future greening will be increasingly water-constrained even in historically cold regions
+
+## RS Methods Inventory for Greening Detection
+
+Systematic review of RS methods for deciduous forests under climate change (source: [[yel_2026_deciduous_forests]]):
+- NDVI/EVI/LAI dominate; multi-sensor fusion (MODIS + Landsat + Sentinel-2 + PhenoCam) standard
+- Greenness can decouple from true photosynthesis under stress → SIF needed
+- Persistent gaps: biological interpretation of spectral indices, fine-scale resilience metrics
 
 ## Related pages
 

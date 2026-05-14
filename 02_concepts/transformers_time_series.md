@@ -12,9 +12,11 @@ tags:
 
 **Summary**: The Transformer architecture — based entirely on self-attention mechanisms — has become the dominant approach for sequence modelling, with growing applications to satellite image time series (SITS) classification and forecasting in remote sensing.
 
-**Sources**: [[vaswani_2023_attention_is_all]], [[wen_2023_transformers_time_series]], [[hiebl_2025_pretraining]], [[hiebl_2026_alphaearth]], [[yuan_2025_sits_augmentation]]
+**Sources**: [[vaswani_2023_attention_is_all]], [[wen_2023_transformers_time_series]], [[hiebl_2025_pretraining]], [[hiebl_2026_alphaearth]], [[yuan_2025_sits_augmentation]], [[zerveas_2020_framework_transformer]], [[yuan_2022_sitsformer]], [[yuan_2023_pretraining]], [[tseng_2024_presto]], [[tan_2021_tser]]
 
-**Last updated**: 2026-05-06
+**Last updated**: 2026-05-14
+
+**Note**: For SITS-specific pretrained Transformer lineage (TST, SITS-BERT, SITS-Former, PRESTO), see the dedicated concept page [[transformer_sits]].
 
 ---
 
@@ -96,8 +98,10 @@ From empirical studies on SITS classification (source: [[wen_2023_transformers_t
 
 ## Related pages
 
+- [[transformer_sits]]
 - [[neural_network_training]]
 - [[transfer_learning_remote_sensing]]
+- [[deep_ensemble_uncertainty]]
 - [[hiebl_2025_pretraining]]
 - [[hiebl_2026_alphaearth]]
 - [[phenology]]

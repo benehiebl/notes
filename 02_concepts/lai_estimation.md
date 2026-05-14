@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Leaf Area Index (LAI) is a key vegetation structural variable quantifying canopy density; it is estimated from satellite reflectance via empirical, radiative transfer, or data-fusion methods, with a fundamental trade-off between spatial resolution and global coverage.
 
-**Sources**: [[kang_2021_lai_landsat]]
+**Sources**: [[kang_2021_lai_landsat]], [[yel_2026_deciduous_forests]]
 
-**Last updated**: 2026-05-06
+**Last updated**: 2026-05-14
 
 ---
 
