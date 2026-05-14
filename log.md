@@ -534,3 +534,19 @@ Append-only record of all wiki operations.
 - `lang_2024_canopy_height.md` → fischer_2025, wang_2026, sentinel_1_sar, geospatial_foundation_models
 
 **Updated**: `index.md` — added 2 new concepts
+
+---
+
+## 2026-05-14 (SeCo ingest)
+
+**Ingested**: `manas_2021_seasonal_contrast.pdf`
+
+**Triggered by**: knowledge gap identified in `03_papers/03_tree_species_cover_landsat.md` line 49 — no wiki source for the assumption that ecological/spectral stability over time enables temporal contrastive learning.
+
+**Created**:
+- `01_notes/manas_2021_seasonal_contrast.md` — SeCo; temporal positive pairs (same location, different seasons); multi-head architecture Z₀/Z₁/Z₂; beats ImageNet on BigEarthNet, EuroSAT, OSCD; canonical source for temporal stability assumption; includes scope caveat (3-month vs multi-year windows)
+
+**Updated**:
+- `02_concepts/transfer_learning_remote_sensing.md` — added "Temporal contrastive learning — SeCo" subsection with key inductive-bias quote, multi-year scope caveat, and forest-ecology corroboration
+- `02_concepts/geospatial_foundation_models.md` — added SeCo as methodological precursor section; added to Sources
+- `index.md` — added manas_2021 entry

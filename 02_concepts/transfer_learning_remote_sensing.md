@@ -12,7 +12,7 @@ tags:
 
 **Summary**: Transfer learning addresses the small data problem in remote sensing vegetation mapping by pretraining deep learning models on larger, related datasets before fine-tuning on scarce target observations, substantially improving generalisation to new regions.
 
-**Sources**: [[hiebl_2025_pretraining]], [[chen_2020_contrastive_framework]], [[brown_2025_alphaearth]], [[sylvain_2024_tree_species_uncertainty]], [[safonova_2023_small_data]], [[reichstein_2019_deep_learning_earth_sciences]], [[kattenborn_2021_review_cnn_vegetation_monitoring]], [[wen_2023_transformers_time_series]], [[vaswani_2023_attention_is_all]], [[yuan_2025_sits_augmentation]], [[sze_2017_efficient_dnn_processing]], [[mila_2024_spatial_proxies]], [[bernico_2019_domain_similarity]], [[yuan_2022_sitsformer]], [[yuan_2023_pretraining]], [[zerveas_2020_framework_transformer]], [[tseng_2024_presto]], [[wang_2026_foundation]], [[klehr_2025_synthetic_data]], [[lakshminarayan_2017_uncertainty]], [[seitzer_2022_uncertainty]]
+**Sources**: [[hiebl_2025_pretraining]], [[chen_2020_contrastive_framework]], [[brown_2025_alphaearth]], [[sylvain_2024_tree_species_uncertainty]], [[safonova_2023_small_data]], [[reichstein_2019_deep_learning_earth_sciences]], [[kattenborn_2021_review_cnn_vegetation_monitoring]], [[wen_2023_transformers_time_series]], [[vaswani_2023_attention_is_all]], [[yuan_2025_sits_augmentation]], [[sze_2017_efficient_dnn_processing]], [[mila_2024_spatial_proxies]], [[bernico_2019_domain_similarity]], [[yuan_2022_sitsformer]], [[yuan_2023_pretraining]], [[zerveas_2020_framework_transformer]], [[tseng_2024_presto]], [[wang_2026_foundation]], [[klehr_2025_synthetic_data]], [[lakshminarayan_2017_uncertainty]], [[seitzer_2022_uncertainty]], [[manas_2021_seasonal_contrast]]
 
 **Last updated**: 2026-05-14
 
@@ -56,6 +56,14 @@ MVP vs contrastive learning: MVP leverages temporal continuity and phenological 
 - Augmentation composition is the most important design choice: random crop + colour distortion outperforms any single augmentation; colour distortion prevents shortcut learning from colour histograms (source: [[chen_2020_contrastive_framework]])
 - Achieves 76.5% top-1 ImageNet accuracy (linear evaluation), matching supervised ResNet-50 (source: [[chen_2020_contrastive_framework]])
 - RS application: contrastive pretraining on unlabelled satellite imagery could bootstrap classifiers for species-rich ecosystems where labelled data is scarce; however, RS-specific augmentation policies may be needed as natural-image augmentations do not transfer directly
+
+**Temporal contrastive learning — Seasonal Contrast (SeCo):**
+- SeCo replaces synthetic augmentation pairs with **temporal positive pairs**: images of the same geographic location at different timestamps (~3 months apart) as positive pairs (source: [[manas_2021_seasonal_contrast]])
+- The key inductive bias (stated explicitly): *"encouraging the representation to be invariant to seasonal changes is a strong inductive bias"* for land-cover classification — ecological stability over time makes temporal pairs semantically similar (source: [[manas_2021_seasonal_contrast]])
+- Multi-head design produces **three embedding sub-spaces**: Z₀ invariant to all transforms; Z₁ invariant to seasonal only; Z₂ invariant to artificial only — representations encode both time-varying and invariant information
+- **Outperforms ImageNet pre-training** on BigEarthNet (+4–6% mAP), EuroSAT (+6.7% accuracy) — in-domain RS pre-training beats natural-image domain transfer; also beats MoCo-v2 + temporal positive pairs (TP) without multi-head design by ~4 pp
+- **Critical for forest mapping**: this is the canonical source for the assumption that the same forest plot observed in two different year windows constitutes a valid contrastive positive pair (temporal ecological stability assumption)
+- **Scope of assumption**: SeCo validates 3-month (seasonal) stability; multi-year stability (1–2 year windows used in forest mapping workflows) is an extension supported by forest ecology literature (forests change on decadal, not annual, timescales — [[herraiz_2025_phen_shifts_mediterranean]]; [[grabska_2024_tree_species_map]]) but not directly tested in SeCo
 
 ## Epistemic vs Aleatoric Uncertainty
 

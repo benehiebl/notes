@@ -12,11 +12,20 @@ tags:
 
 **Summary**: Geospatial foundation models are large neural networks pretrained on massive multi-modal Earth observation archives to produce **universal representations** of pixels or patches that transfer to downstream mapping tasks with minimal labels. AlphaEarth (480M parameters, ~3B observations) and PRESTO (lightweight pixel-time-series Transformer) represent two ends of the size-vs-spatial-context tradeoff. Both substantially reduce the data and compute requirements of new forest mapping projects.
 
-**Sources**: [[brown_2025_alphaearth]], [[tseng_2024_presto]], [[hiebl_2026_alphaearth]], [[wang_2026_foundation]], [[lang_2024_canopy_height]]
+**Sources**: [[brown_2025_alphaearth]], [[tseng_2024_presto]], [[hiebl_2026_alphaearth]], [[wang_2026_foundation]], [[lang_2024_canopy_height]], [[manas_2021_seasonal_contrast]]
 
 **Last updated**: 2026-05-14
 
 ---
+
+## Methodological Precursor: Seasonal Contrast (SeCo)
+
+Before foundation models, **SeCo** (Mañas et al. 2021) established the key ideas that larger RS foundation models later scaled up (source: [[manas_2021_seasonal_contrast]]):
+- **Temporal positive pairs**: same geographic location at different timestamps (~3 months apart) = valid contrastive positive pair — grounded in the inductive bias that *"land cover does not change with the seasons"*
+- **In-domain RS pre-training beats ImageNet**: SeCo outperforms ImageNet pre-training on BigEarthNet (+4–6% mAP), EuroSAT (+6.7%) — confirmed the value of domain-specific SSL
+- **Multi-head design** separates time-invariant and time-variant representations — precursor to modern multi-stream foundation architectures
+
+SeCo is the canonical source for the assumption that **ecological stability over time enables temporal contrastive pre-training** — a principle inherited by PRESTO (temporal multi-sensor masking) and implicitly by AlphaEarth (multi-temporal training data at each location).
 
 ## The Paradigm
 

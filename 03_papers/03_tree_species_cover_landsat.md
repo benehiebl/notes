@@ -46,12 +46,13 @@
 - contrastive learning approach: 
 	- sensor and observation density drift over time [[bayle_2024_landsat_greening_inflated]]
 	- contrastive learning over pure and random forest stands to mitigate drift [[chen_2020_contrastive_framework]], 
-	- assumption: ecological and therefore spectral stability over time enables contrastive learning
+	- assumption: ecological and therefore spectral stability over time enables contrastive learning [[manas_2021_seasonal_contrast]], also: "slow changing systems [[herraiz_2025_phen_shifts_mediterranean]]"
 - finetuning after contextual pre training: [[hiebl_2025_pretraining]], [[safonova_2023_small_data]]
 	- pseudo labeling via Alpha earth embeddings for functional cover mapping [[brown_2025_alphaearth]], [[hiebl_2026_alphaearth]]
 	- final finetuning on plot observation data: historical and recent
 - pooling/aggregating 3 years:
-	- mitigating inter annual spectral variabilities for stability [[lacks source]]
+	- mitigating inter annual spectral variabilities for stability [[grabska_2024_tree_species_map]] [[pflugmacher_2019_lulc_landsat]]
+	- downside: inter-annual changes are leveled [[pflugmacher_2019_lulc_landsat]]
 	- densify observations per year to increase observation counts [[bayle_2024_landsat_greening_inflated]]
 	- target year-2: taking two previous historical time series for stability (no future leakage)
 # Methods

@@ -135,3 +135,4 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[01_notes/seitzer_2022_uncertainty]] | Seitzer et al. 2022 — β-NLL fixes the heteroscedastic NLL pitfall; one-line code change with large empirical improvement |
 | [[01_notes/skidmore_2021_biodiversity]] | Skidmore et al. 2021 — Priority list of satellite-observable EBVs; ecosystem structure + function highest priority; genetic composition not feasible |
 | [[01_notes/grantham_2020_anthropogenic_modification]] | Grantham et al. 2020 — Forest Landscape Integrity Index; only 40.5% of remaining forest has high integrity; 27% of which is protected |
+| [[01_notes/manas_2021_seasonal_contrast]] | Mañas et al. 2021 — SeCo: temporal positive pairs (same location, different seasons) for contrastive RS pre-training; canonical source for ecological stability assumption enabling temporal contrastive learning |
