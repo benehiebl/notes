@@ -4,6 +4,12 @@ Append-only record of all wiki operations.
 
 ---
 
+## 2026-05-15
+
+**Refactored**: `adagbasa_2022_deep_learning_s2.md` — added inline SVG/HTML diagrams for the multi-source data pipeline, stratified K-fold scheme, and classifier F1 score comparison bar chart.
+
+---
+
 ## 2026-05-05
 
 **Ingested**: `bayle_2024_landsat_greening_inflated.pdf`

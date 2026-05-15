@@ -58,7 +58,8 @@ status: <unread, read, in-progress, etc.>
 OUTPUT INSTRUCTIONS:
 
 1. Only use the headers provided in the instructions above.
-2. Format your output in clear, human-readable Markdown.
+2. Format your output in clear, human-readable Markdown injected by html.
+3. Use html for rendering important diagrams or figures if necessary, but keep the overall structure in Markdown.
 3. Save the Markdown to 01_notes/ with a filename that reflects the paper's filename (e.g., `01_notes/author_year_short_title.md`).
 4. tags have to contain at least one of the following: deep-learning, machine-learning, remote-sensing, forest-ecology
 
