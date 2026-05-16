@@ -12,7 +12,7 @@ tags:
 
 **Summary**: Transfer learning addresses the small data problem in remote sensing vegetation mapping by pretraining deep learning models on larger, related datasets before fine-tuning on scarce target observations, substantially improving generalisation to new regions.
 
-**Sources**: [[hiebl_2025_pretraining]], [[chen_2020_contrastive_framework]], [[brown_2025_alphaearth]], [[sylvain_2024_tree_species_uncertainty]], [[safonova_2023_small_data]], [[reichstein_2019_deep_learning_earth_sciences]], [[kattenborn_2021_review_cnn_vegetation_monitoring]], [[wen_2023_transformers_time_series]], [[vaswani_2023_attention_is_all]], [[yuan_2025_sits_augmentation]], [[sze_2017_efficient_dnn_processing]], [[mila_2024_spatial_proxies]], [[bernico_2019_domain_similarity]], [[yuan_2022_sitsformer]], [[yuan_2023_pretraining]], [[zerveas_2020_framework_transformer]], [[tseng_2024_presto]], [[wang_2026_foundation]], [[klehr_2025_synthetic_data]], [[lakshminarayan_2017_uncertainty]], [[seitzer_2022_uncertainty]], [[manas_2021_seasonal_contrast]]
+**Sources**: [[hiebl_2025_pretraining]], [[chen_2020_contrastive_framework]], [[brown_2025_alphaearth]], [[sylvain_2024_tree_species_uncertainty]], [[safonova_2023_small_data]], [[reichstein_2019_deep_learning_earth_sciences]], [[kattenborn_2021_review_cnn_vegetation_monitoring]], [[wen_2023_transformers_time_series]], [[vaswani_2023_attention_is_all]], [[yuan_2025_sits_augmentation]], [[sze_2017_efficient_dnn_processing]], [[mila_2024_spatial_proxies]], [[bernico_2019_domain_similarity]], [[yuan_2022_sitsformer]], [[yuan_2023_pretraining]], [[zerveas_2020_framework_transformer]], [[tseng_2024_presto]], [[wang_2026_foundation]], [[klehr_2025_synthetic_data]], [[lakshminarayan_2017_uncertainty]], [[seitzer_2022_uncertainty]], [[manas_2021_seasonal_contrast]], [[tan_2025_deep_tree_species]]
 
 **Last updated**: 2026-05-14
 
@@ -142,6 +142,19 @@ A parallel line of work has developed **Transformer-based self-supervised pretra
 - **TST** (Zerveas et al. 2020): first MTS Transformer + masked-value prediction; outperforms supervised SOTA without extra data (source: [[zerveas_2020_framework_transformer]])
 - **SITS-BERT** (Yuan & Lin 2022): pixel-based, sinusoidal DOY positional encoding, denoising proxy task; +1.91–6.69% accuracy gains (source: [[yuan_2023_pretraining]])
 - **SITS-Former** (Yuan et al. 2022): patch-based extension with 3D-CNN embedding; +2.64–3.30% accuracy (source: [[yuan_2022_sitsformer]])
+
+## Pseudo-labeling for Mixed-Stand Extension
+
+A semi-supervised strategy that extends DL training beyond pure stands to mixed-species plots (source: [[tan_2025_deep_tree_species]]):
+
+1. Train a binary/multi-class DL model on labeled **pure-stand** samples
+2. Apply model to **unlabeled mixed-stand** pixels
+3. Assign pseudo-labels to pixels where model confidence exceeds a threshold (e.g. 0.9)
+4. Retrain final model on pure + pseudo-labeled combined
+
+**Key findings** from Tan et al. (2025): pseudo-labeling for evergreen-deciduous mixed units improved generalisation to mixed-stand areas; threshold at 0.9 confidence prevents label noise propagation; using only pairs with large phenological contrast (evergreen vs deciduous) ensures reliable pseudo-label quality. Pretraining (SSL) + pseudo-labeling gave OA 0.847, macro-F1 0.836 vs OA 0.764 / macro-F1 0.737 without pretraining (source: [[tan_2025_deep_tree_species]]).
+
+This pattern directly supports the **artificial label generation approach**: train a simple model (RF or DL) on existing plot observations to generate spatially explicit labels, then train a deeper time-series model on those labels. Published precedents for the principle include [[kang_2021_lai_landsat]] (MODIS as RF labels → 30m LAI) and the noisy-label family (see [[transfer_learning_remote_sensing]] — SinoLC-1, cross-resolution mapping).
 
 ## Synthetic Data Augmentation
 

@@ -556,3 +556,20 @@ Append-only record of all wiki operations.
 - `02_concepts/transfer_learning_remote_sensing.md` — added "Temporal contrastive learning — SeCo" subsection with key inductive-bias quote, multi-year scope caveat, and forest-ecology corroboration
 - `02_concepts/geospatial_foundation_models.md` — added SeCo as methodological precursor section; added to Sources
 - `index.md` — added manas_2021 entry
+
+---
+
+## 2026-05-16
+
+**Ingested**: `alessi_2019_refugia.pdf`, `fang_2016_eve_mosaics.pdf`, `tan_2025_deep_tree_species.pdf`
+
+**Created**:
+- `01_notes/alessi_2019_refugia.md` — Alessi et al. 2019 (JVS); 17,087 Italian vegetation plots; 11 native laurophylls identified; 9/11 occupy <50% potential range → non-equilibrium; central Apennines as Quaternary refugia; high EVE expansion potential throughout Apennines + southern Alps
+- `01_notes/fang_2016_eve_mosaics.md` — Fang et al. 2016 (JVS); 20-ha stem-mapped EBLF, 94,605 trees; habitat heterogeneity explains EVE-deciduous mosaic; soil P (>0.27 g/kg) is dominant driver at all scales; hierarchical edaphic-topographic control
+- `01_notes/tan_2025_deep_tree_species.md` — Tan et al. 2025 (Front. For.); Transformer + SSL pretraining + pseudo-labeling for S1/S2 SITS tree species (OA 0.847, macro-F1 0.836); pseudo-labels from pure-stand binary DL model for mixed stands (confidence >0.9); red-edge most discriminative; leaf-off periods most diagnostic
+
+**Updated**:
+- `02_concepts/evergreen_broadleaved_expansion.md` — added "Native Laurophylls in Italy: non-equilibrium + expansion potential" (Alessi 2019) and "Within-Stand EVE Mosaic Drivers" (Fang 2016) sections; added both to Sources
+- `02_concepts/transfer_learning_remote_sensing.md` — added "Pseudo-labeling for Mixed-Stand Extension" section (Tan 2025); added to Sources
+- `02_concepts/tree_species_mapping.md` — expanded Mixed Forest section with DL pseudo-labeling paragraph (Tan 2025); added to Sources
+- `index.md` — added 3 new notes

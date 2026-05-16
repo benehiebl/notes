@@ -61,8 +61,9 @@
 ##### VDBI forest plots
 ##### VPO plot observations
 ##### Artificial leaf type cover data
-- As spatial explicit data of leaf type cover is not available an **artificial cover dataset** was created based on the VPO and VDBI leaf type cover
-- A standard **Random Forest** model was trained on the training split of the plot observation data and mapped to Italy using Alpha Earth embeddings as input features [[brown_2025_alphaearth]] [[alessi_unknown]] [[hiebl_2026_alphaearth]]
+- As spatial explicit data of leaf type cover is not available an **artificial cover dataset** was created based on the VPO and VDBI leaf type cover [[tan_2025_deep_tree_species]] [[kang_2021_lai_landsat]]
+- Both papers establish the practice of **generating artificial training labels from an indirect source** when no spatially explicit per-pixel target data exist: Kang et al. (2021) use coarser **MODIS LAI products as proxy training targets** to build a 30 m Landsat LAI model — no direct Landsat-resolution LAI measurements exist, so a model-derived product fills the gap; Tan et al. (2025) **generate pseudo-labels for unlabeled mixed-stand pixels using a classifier** trained only on pure-stand inventory samples
+- A standard **Random Forest** model was trained on the training split of the plot observation data and mapped to Italy using Alpha Earth embeddings as input features [[brown_2025_alphaearth]] [[alessi_2019_refugia]] [[hiebl_2026_alphaearth]]
 - To decrease label noise due to regression errors we used the CFI data and decision rules to clean the dataset; e.g. points that fall within pinus dominated forests have at least 60% coniferous cover and less than 30% broad-leaved evergreen cover
 
 ##### Landsat time series
