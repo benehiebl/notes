@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_papers/03_tree_species_cover_landsat.md",
+                "file": "02_concepts/transformers_time_series.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03_tree_species_cover_landsat"
+              "title": "transformers_time_series"
             }
           }
         ],
@@ -185,19 +185,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
+      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "117cbd15692b4fdf",
   "lastOpenFiles": [
+    "02_concepts/neural_network_training.md",
+    "02_concepts/lai_estimation.md",
+    "01_notes/hiebl_2025_pretraining.md",
+    "01_notes/bricca_2026_topo_diversity.md",
+    "01_notes/adagbasa_2022_deep_learning_s2.md",
+    "03_papers/03_tree_species_cover_landsat.md",
     "log.md.tmp.1120611.d15457a4bd62",
     "index.md.tmp.1120611.ed22a9d3e15a",
     "02_concepts/geospatial_foundation_models.md.tmp.1120611.82e1e42906d4",
@@ -216,23 +222,17 @@
     "templates/paper_template.md",
     "templates",
     "graphify-out/cache/semantic/653155f203016bf1809442ae8964e873399b2ed6b364fc0e7657dfdf2956c69a.json",
-    "graphify-out/cache/semantic/2a0939db82ead4a624bd9c1f5a3746570bd4706b1cb98ba10630a641489e69aa.json",
-    "03_papers/03_tree_species_cover_landsat.md",
     "01_notes/sattstools.md",
     "00_literature/sattstools/README.md",
     "02_concepts/cloud_detection.md",
     "02_concepts/ebv_biodiversity_monitoring.md",
     "02_concepts/forest_disturbances.md",
     "02_concepts/functional_diversity.md",
-    "02_concepts/lai_estimation.md",
     "02_concepts/landsat.md",
     "02_concepts/leaf_habit_latitudinal_gradient.md",
     "02_concepts/national_forest_inventory.md",
-    "02_concepts/neural_network_training.md",
     "02_concepts/ndvi.md",
     "02_concepts/phenology.md",
-    "02_concepts/plant_functional_traits.md",
-    "02_concepts/sampling_bias_remote_sensing.md",
-    "02_concepts/sentinel_2.md"
+    "02_concepts/plant_functional_traits.md"
   ]
 }
