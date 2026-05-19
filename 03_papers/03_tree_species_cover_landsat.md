@@ -57,6 +57,7 @@
 - recently deep learning tools are outperforming conventional ML in mapping vegetation properties
 - phenology and seasonal spectral dynamics/metrics key to accurate mapping
 - DL and Transformer architectures allow for a direct integration of irregular multi-band time series data as features in the models  
+- Availability of high quality plot observation data is scarce [[safonova_2023_small_data]]
 ##### Deep Learning training approaches that work in this context
 ##### Research questions
 1. Is there a winter greening trend observable in mixed deciduous/evergreen broad-leaved forests?
