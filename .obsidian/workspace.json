@@ -185,8 +185,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
-      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -198,6 +196,8 @@
   },
   "active": "f2033d839a0ccfeb",
   "lastOpenFiles": [
+    "01_notes/alessi_2019_refugia.md",
+    "03_papers/03_tree_species_cover_landsat.md",
     "03_papers/04_augment_sparse_rs_time_series.md",
     "log.md.tmp.1120611.c1c09847387c",
     "index.md.tmp.1120611.21e6014064bb",
@@ -211,10 +211,8 @@
     "01_notes/tan_2025_deep_tree_species.md.tmp.1120611.764ab29436ee",
     "01_notes/fang_2016_eve_mosaics.md",
     "01_notes/fang_2016_eve_mosaics.md.tmp.1120611.7f411c3cb638",
-    "01_notes/alessi_2019_refugia.md",
     "templates/paper_template.md",
     "01_notes/manas_2021_seasonal_contrast.md",
-    "03_papers/03_tree_species_cover_landsat.md",
     "02_concepts/transformers_time_series.md",
     "02_concepts/neural_network_training.md",
     "02_concepts/lai_estimation.md",

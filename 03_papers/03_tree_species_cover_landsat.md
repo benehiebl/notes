@@ -32,8 +32,31 @@
 
 # Introduction
 ##### Changes in (sub-)mediterranean forests
+
+- Italian National Forest Inventory (INFI) indicates that forests are expanding due to land abandonment and reforestation[[gasparini_2022_nfi_italy]] [[mattioli_2025_carta_forestale]]
+- altitudinal suitability ranges for tree species are changing with thermophilous species expanding upward [[noce_2023_altitude_shift_tree_italy]]
+- Although warming generally enhances plant growth, droughts are major limiting factor and adaptability id provenance dependent [[chelli_2017_climate]]
+- Two phenomena regarding evergreen broad-leaved species:
+	- laurophyllisation: laurophylls, such as Laurus nobilis, are in a non-equilibrium with their potential range, with high expansion potential due to climate change, dispersal limitations and landuse abandonment [[alessi_2019_refugia]] [[conedera_2018_drivers_evergreen]]
+	- Evergeen Sclerophylls: drought responses of native sclerophyllous tree species differs [[chelli_2017_climate]]. Sclerophyllous EVE expansion is also a function of competitive dynamics, as they are more drought resistant [[berger_2006_distribution_eve]]. Studies show that Quercus ilex is greening in its core range [[herraiz_2025_phen_shifts_mediterranean]], but limited at its northern and altitudinal boundary by temperature [[noce_2023_altitude_shift_tree_italy]]
+- with increasing wildfires in mediterranean forest areas changes in forest compositions can be excpected [[chelli_2017_climate]]
+- limited monitoring of native laurophylls and sclerophylls in the mediterranean region [[fady_2025_native_trees_mediterranean]]
 ##### Landsat for forest mapping: advantages and challenges
+- with 39 years longest archive of consistent earth observation available for vegetation monitoring
+- continuous record allows for change detection, historical reconstruction and hindcasting of environmental variables [[bell_2024_hindcasting_forest_structure]] [[turubanove_2023_canopy_landsat]]
+- Used to discriminate forest types and other forest parameters asucha s canopy heigth [[pflugmacher_2019_lulc_landsat]] [[turubanove_2023_canopy_landsat]]
+- slow succession of forest vegetation necessitates monitoring changes over decades [[tong_2023_forest_densification_china]] [[midolo_2026_denser_vegetation]] 
+- on the other hand much of current european forest age structure emerged within the monitoring window [[turubanove_2023_canopy_landsat]]
+- Medium spectral, spatial and temporal resolution (6 bands, 30m, 8-16 days), which is adequate for capturing annual phenology at stand level, is crucial for tree species level mapping [[kollert_2021_tree_species]] [[hemmerling_2021_forest_mapping_s2]] [[wang_2022_tree_species_mapping]]
+- Challenges:
+	- Number of usable cloud-free observations has increased over the decades, leading to systematic overestimation of maxNDVI in recent years [[bayle_2024_landsat_greening_inflated]]
+	- scan line correction failure
+	- spectral variability due to platform and sensor changes
+- These challenges necessitate special methods for 
 ##### Dominant tree species and leaf type cover mapping using Deep Learning (and Landsat?)
+- recently deep learning tools are outperforming conventional ML in mapping vegetation properties
+- phenology and seasonal spectral dynamics/metrics key to accurate mapping
+- DL and Transformer architectures allow for a direct integration of irregular multi-band time series data as features in the models  
 ##### Deep Learning training approaches that work in this context
 ##### Research questions
 1. Is there a winter greening trend observable in mixed deciduous/evergreen broad-leaved forests?
@@ -169,6 +192,8 @@ The training follows a **three-stage progressive workflow** implemented in [[ls_
 # Results
 
 # Discussion
+#### Limitations
+- Temperature thermophilisation only detectable in alpine habitats but not in forests even over a 60 year window. Forests change too slowly and colonizer species are too dispersal limited to show a clear signal on shorter timescales [[midolo_2026_denser_vegetation]]
 
 # Conclusion
 
