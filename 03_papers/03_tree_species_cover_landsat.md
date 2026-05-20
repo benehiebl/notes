@@ -54,10 +54,16 @@
 	- spectral variability due to platform and sensor changes
 - These challenges necessitate special methods for 
 ##### Dominant tree species and leaf type cover mapping using Deep Learning (and Landsat?)
+- multitemporal approaches consistently outperform single-date/mosaic approaches as leaf-off and senescence season complement each other as most informative time periods [[kollert_2021_tree_species]] [[tan_2025_deep_tree_species]], with sufficient temporal coverage dense time series outperform explanatory environmental features [[hemmerling_2021_forest_mapping_s2]]  
 - recently deep learning tools are outperforming conventional ML in mapping vegetation properties
-- phenology and seasonal spectral dynamics/metrics key to accurate mapping
-- DL and Transformer architectures allow for a direct integration of irregular multi-band time series data as features in the models  
+- DL and Transformer architectures allow for a direct integration of irregular multi-band time series data as features in the models, with significant improvement potential from pretraining [[tan_2025_deep_tree_species]] [[hiebl_2025_pretraining]]
+- mixed forest stands remain major challenge [[blickensdörfer_2024_tree_species]] with pseudo-labeling [[tan_2025_deep_tree_species]] and contextual pretraining [[hiebl_2025_pretraining]] being potential assets to overcome challenges 
 - Availability of high quality plot observation data is scarce [[safonova_2023_small_data]]
+- Transformer architecture naturally handle irregular time series without the need for interpolation which is essential for long Landsat archives with varying observation density across decades and sensors [[zerveas_2020_framework_transformer]] [[yuan_2022_sitsformer]]
+- [[yuan_2023_pretraining]] showed self-supervised pretraining on SITS lerns robust spectral temporal features for downstream tasks
+- to tackle cross year spectral and phenological variability, contrastive can produce year-invariant features suited for long term change detection [[manas_2021_seasonal_contrast]] [[chen_2020_contrastive_framework]]
+- Deep ensemble of independent networks provide calibrated epistemic uncertainty estimates identifying OOD inputs with unreliable model predictions, which improves interpretability of mapping results in scarcely sampled areas [[hiebl_2025_pretraining]] [[sylvain_2024_tree_species_uncertainty]]
+- foundation model embeddings provide multi-modal generalizable representations of environmental characteristics,which can be utilized in pretraining workflows to improve model knowledge [[brown_2025_alphaearth]] [[hiebl_2026_alphaearth]] 
 ##### Deep Learning training approaches that work in this context
 ##### Research questions
 1. Is there a winter greening trend observable in mixed deciduous/evergreen broad-leaved forests?
