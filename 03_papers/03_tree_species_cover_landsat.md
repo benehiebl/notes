@@ -71,6 +71,12 @@
 3. Which climatic or anthropogenic drivers influence this shift?
 4. Is climate changing faster than forest structure?
 5. Is it a gradual shift or is there a climatic tipping point?
+6. Are there different patterns observable between sclerophylls and laurophylls
+
+Hypothesis:
+1. If temperate forest winters get milder -> laurophylls can spread if propagule pressure [[berger_2006_distribution_eve]] [[alessi_2019_refugia]] [[chelli_2017_climate]] [[conedera_2018_drivers_evergreen]]
+2. if submediterranean summers get hotter/dryer -> DEC species under pressure [[chelli_2017_climate]] [[schuldt_2020_drought_forest]] -> sclerophylls occupy space when boundary conditions are met (calcarous substrate, core range) [[herraiz_2025_phen_shifts_mediterranean]]
+
 
 ##### Methodological approach justification
 - contrastive learning approach: 
@@ -195,12 +201,14 @@ The training follows a **three-stage progressive workflow** implemented in [[ls_
 - Compare **temporal smoothness** of annual EVE cover time series between models trained with the contrastive objective (cont → fine) and a baseline trained without it (pure → fine) — the contrastive pretraining hypothesis predicts that year-to-year variability is lower for the contrastive model while long-term trends are preserved ([[ls_mapping]])
 - Evaluate whether **inter-seed uncertainty is lower** across time for the contrastive model, indicating more stable learned representations ([[hiebl_2025_pretraining]])
 - Assess **early archive performance** (1985–1999, L5 only): does the sensor platform embedding successfully reduce the discontinuity in predicted cover between the pre- and post-Landsat 7/8 periods?
+- take recent time series, predict values under full density -> reduce density (to mimic earlier Landsat observation coverage) and predict again. Do this with Contrastive TST and with scratch TST
 
 # Results
 
 # Discussion
 #### Limitations
 - Temperature thermophilisation only detectable in alpine habitats but not in forests even over a 60 year window. Forests change too slowly and colonizer species are too dispersal limited to show a clear signal on shorter timescales [[midolo_2026_denser_vegetation]]
+- major limitation is overestimation of EVE in earlier years with low observation density [[bayle_2024_landsat_greening_inflated]]. phenological signal is likely to "flatten" due to missing peaks in growing and leaf-off season, which  
 
 # Conclusion
 
