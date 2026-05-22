@@ -13,11 +13,9 @@ tags:
 
 **Summary**: Tree species mapping from satellite data involves classifying forest pixels into species or genus classes using spectral, temporal, and environmental predictors, enabling wall-to-wall coverage beyond what field inventory plot networks provide.
 
-**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[koch_2025_intraspecies_variation_s2]], [[hemmerling_2021_forest_mapping_s2]], [[bolyn_2022_tree_species_mapping]], [[astola_2019_s2_l8_comparison]], [[pu_2021_tree_species_mapping_review]], [[wang_2022_tree_species_mapping]], [[wegler_2025_tree_species_germany]], [[wegler_2026_canopy_cover_loss]], [[adagbasa_2022_deep_learning_s2]], [[liu_2023_mapping_tree_species_diversity]], [[nguyen_2022_forest_mapping_explainable]], [[blickensdörfer_2024_tree_species]], [[kollert_2021_tree_species]], [[klehr_2025_synthetic_data]], [[yang_2020_modis_evergreen]], [[wang_2026_foundation]], [[tan_2025_deep_tree_species]]
+**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[koch_2025_intraspecies_variation_s2]], [[hemmerling_2021_forest_mapping_s2]], [[bolyn_2022_tree_species_mapping]], [[astola_2019_s2_l8_comparison]], [[pu_2021_tree_species_mapping_review]], [[wang_2022_tree_species_mapping]], [[wegler_2025_tree_species_germany]], [[wegler_2026_canopy_cover_loss]], [[adagbasa_2022_deep_learning_s2]], [[liu_2023_mapping_tree_species_diversity]], [[nguyen_2022_forest_mapping_explainable]], [[blickensdörfer_2024_tree_species]], [[kollert_2021_tree_species]], [[klehr_2025_synthetic_data]], [[yang_2020_modis_evergreen]], [[wang_2026_foundation]], [[tan_2025_deep_tree_species]], [[ball_2026_foundation_models]]
 
-**Last updated**: 2026-05-16
-
-**Last updated**: 2026-05-14
+**Last updated**: 2026-05-22
 
 ---
 

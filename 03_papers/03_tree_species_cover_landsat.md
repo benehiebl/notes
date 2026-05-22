@@ -57,13 +57,14 @@
 - multitemporal approaches consistently outperform single-date/mosaic approaches as leaf-off and senescence season complement each other as most informative time periods [[kollert_2021_tree_species]] [[tan_2025_deep_tree_species]], with sufficient temporal coverage dense time series outperform explanatory environmental features [[hemmerling_2021_forest_mapping_s2]]  
 - recently deep learning tools are outperforming conventional ML in mapping vegetation properties
 - DL and Transformer architectures allow for a direct integration of irregular multi-band time series data as features in the models, with significant improvement potential from pretraining [[tan_2025_deep_tree_species]] [[hiebl_2025_pretraining]]
-- mixed forest stands remain major challenge [[blickensdörfer_2024_tree_species]] with pseudo-labeling [[tan_2025_deep_tree_species]] and contextual pretraining [[hiebl_2025_pretraining]] being potential assets to overcome challenges 
+- mixed forest stands remain major challenge [[blickensdörfer_2024_tree_species]] with pseudo-labeling [[tan_2025_deep_tree_species]] and contextual pretraining [[hiebl_2025_pretraining]] being potential assets to overcome challenges; using inventory species proportions as soft regression targets (rather than hard dominant-species labels) improves performance for mixed stands without requiring purity filtering [[ball_2026_foundation_models]]
 - Availability of high quality plot observation data is scarce [[safonova_2023_small_data]]
 - Transformer architecture naturally handle irregular time series without the need for interpolation which is essential for long Landsat archives with varying observation density across decades and sensors [[zerveas_2020_framework_transformer]] [[yuan_2022_sitsformer]]
 - [[yuan_2023_pretraining]] showed self-supervised pretraining on SITS lerns robust spectral temporal features for downstream tasks
 - to tackle cross year spectral and phenological variability, contrastive can produce year-invariant features suited for long term change detection [[manas_2021_seasonal_contrast]] [[chen_2020_contrastive_framework]]
 - Deep ensemble of independent networks provide calibrated epistemic uncertainty estimates identifying OOD inputs with unreliable model predictions, which improves interpretability of mapping results in scarcely sampled areas [[hiebl_2025_pretraining]] [[sylvain_2024_tree_species_uncertainty]]
-- foundation model embeddings provide multi-modal generalizable representations of environmental characteristics,which can be utilized in pretraining workflows to improve model knowledge [[brown_2025_alphaearth]] [[hiebl_2026_alphaearth]] 
+- foundation model embeddings provide multi-modal generalizable representations of environmental characteristics,which can be utilized in pretraining workflows to improve model knowledge [[brown_2025_alphaearth]] [[hiebl_2026_alphaearth]] [[feng_2026_tessera]]
+- GFM embeddings (AlphaEarth, Tessera) consistently outperform conventional Sentinel-1/2 composites for tree species mapping, reaching near-asymptotic accuracy with 5% of training data; soft labels from inventory species proportions outperform hard per-pixel labels, particularly for minority species [[ball_2026_foundation_models]]
 ##### Deep Learning training approaches that work in this context
 ##### Research questions
 1. Is there a winter greening trend observable in mixed deciduous/evergreen broad-leaved forests?
@@ -84,7 +85,7 @@ Hypothesis:
 	- contrastive learning over pure and random forest stands to mitigate drift [[chen_2020_contrastive_framework]], 
 	- assumption: ecological and therefore spectral stability over time enables contrastive learning [[manas_2021_seasonal_contrast]], also: "slow changing systems [[herraiz_2025_phen_shifts_mediterranean]]"
 - finetuning after contextual pre training: [[hiebl_2025_pretraining]], [[safonova_2023_small_data]]
-	- pseudo labeling via Alpha earth embeddings for functional cover mapping [[brown_2025_alphaearth]], [[hiebl_2026_alphaearth]]
+	- pseudo labeling via Alpha earth embeddings for functional cover mapping [[brown_2025_alphaearth]], [[hiebl_2026_alphaearth]]; Tessera provides a fully open-source alternative with comparable label efficiency [[feng_2026_tessera]]
 	- final finetuning on plot observation data: historical and recent
 - pooling/aggregating 3 years:
 	- mitigating inter annual spectral variabilities for stability [[grabska_2024_tree_species_map]] [[pflugmacher_2019_lulc_landsat]]
@@ -99,7 +100,7 @@ Hypothesis:
 ##### Artificial leaf type cover data
 - As spatial explicit data of leaf type cover is not available an **artificial cover dataset** was created based on the VPO and VDBI leaf type cover [[tan_2025_deep_tree_species]] [[kang_2021_lai_landsat]]
 - Both papers establish the practice of **generating artificial training labels from an indirect source** when no spatially explicit per-pixel target data exist: Kang et al. (2021) use coarser **MODIS LAI products as proxy training targets** to build a 30 m Landsat LAI model — no direct Landsat-resolution LAI measurements exist, so a model-derived product fills the gap; Tan et al. (2025) **generate pseudo-labels for unlabeled mixed-stand pixels using a classifier** trained only on pure-stand inventory samples
-- A standard **Random Forest** model was trained on the training split of the plot observation data and mapped to Italy using Alpha Earth embeddings as input features [[brown_2025_alphaearth]] [[alessi_2019_refugia]] [[hiebl_2026_alphaearth]]
+- A standard **Random Forest** model was trained on the training split of the plot observation data and mapped to Italy using Alpha Earth embeddings as input features [[brown_2025_alphaearth]] [[alessi_2019_refugia]] [[hiebl_2026_alphaearth]]; Tessera embeddings are a fully open alternative that could be used here without proprietary access barriers [[feng_2026_tessera]] [[ball_2026_foundation_models]]
 - To decrease label noise due to regression errors we used the CFI data and decision rules to clean the dataset; e.g. points that fall within pinus dominated forests have at least 60% coniferous cover and less than 30% broad-leaved evergreen cover
 
 ##### Landsat time series
@@ -181,7 +182,7 @@ The training follows a **three-stage progressive workflow** implemented in [[ls_
 - Delineate the **EVE–DEC transition zone** as pixels where long-term mean EVE cover falls in the 20–70% range and quantify how the area and location of this zone has shifted over 40 years
 - Within the transition zone, identify **pixels that have crossed a cover threshold** (e.g., EVE > 50%) since 1985 to estimate the rate of functional type conversion; compare this rate between decades to test whether change has accelerated ([[midolo_2026_denser_vegetation]])
 - Test whether transition zone shifts are **gradual or punctuated**: changepoint detection (BFAST or CUSUM) on per-pixel EVE cover time series to identify abrupt transitions vs. smooth linear trends ([[tong_2023_forest_densification_china]])
-- Relate the spatial pattern of transition zone change to **forest disturbance history** (bark beetle, windthrow, fire): disturbance-induced canopy opening may accelerate thermophilisation by creating regeneration niches for EVE species ([[grünig_2026_climate_change_disturbances_forest]])
+- Relate the spatial pattern of transition zone change to **forest disturbance history** (bark beetle, windthrow, fire): disturbance-induced canopy opening may accelerate thermophilisation by creating regeneration niches for EVE species ([[grünig_2026_climate_change_disturbances_forest]]); EFDA provides annual 30 m Landsat-based disturbance maps for Italy 1985–2023 with agent attribution (wind/bark beetle, fire, harvest) that could directly serve as a covariate layer ([[soto_2025_disturbance]])
 
 ##### 4. Climate driver attribution
 
@@ -209,6 +210,7 @@ The training follows a **three-stage progressive workflow** implemented in [[ls_
 #### Limitations
 - Temperature thermophilisation only detectable in alpine habitats but not in forests even over a 60 year window. Forests change too slowly and colonizer species are too dispersal limited to show a clear signal on shorter timescales [[midolo_2026_denser_vegetation]]
 - major limitation is overestimation of EVE in earlier years with low observation density [[bayle_2024_landsat_greening_inflated]]. phenological signal is likely to "flatten" due to missing peaks in growing and leaf-off season, which  
+- disturbance effects, such as fires or bark beetle outbreaks, affect cover trends in unpredictable ways; EFDA shows 22% of Italian forest area disturbed 1985–2023 with harvest (79%) and wind/bark beetle (12%) as dominant agents — these disturbance pulses will appear as abrupt cover shifts that are not climate-driven [[soto_2025_disturbance]] [[grünig_2026_climate_change_disturbances_forest]]
 
 # Conclusion
 
