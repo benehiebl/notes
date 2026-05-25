@@ -1,13 +1,13 @@
 
 # Title:
 
-> [!Motivation]
+> [!abstract] Motivation
 
-> [!What research questions will be answered?]
+> [!question] What research questions will be answered?
 
-> [!What will be done?]
+> [!info] What will be done?
 
-> [!What are the expected results?]
+> [!success] What are the expected results?
 
 
 ## Introduction
