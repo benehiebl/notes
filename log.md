@@ -4,6 +4,24 @@ Append-only record of all wiki operations.
 
 ---
 
+## 2026-05-22
+
+**Ingested** `feng_2026_tessera.pdf` → `01_notes/feng_2026_tessera.md`
+- Feng et al. 2026 (arXiv): TESSERA — pixel-wise multi-modal (S1+S2) foundation model; Barlow Twins + temporal sampling invariance + global shuffling + mix-based regulation; 45.7M params; open weights + global 10m int8 embeddings; SOTA on TreeSatAI-TS (F1=79.23), Austrian Crop segmentation (mIoU=53.12), Borneo CHM (RMSE=13.1m), Biomassters (RMSE=27.43 t/ha)
+- Updated `02_concepts/geospatial_foundation_models.md` — added TESSERA section and expanded comparison table
+
+**Ingested** `ball_2026_foundation_models.pdf` → `01_notes/ball_2026_foundation_models.md`
+- Ball et al. 2026 (bioRxiv): GFM embeddings (AlphaEarth + Tessera) for 18-class tree species mapping in Trentino; WF1=0.83 vs 0.80 baseline; 5% training data near-asymptotic; soft labels from species proportions outperform hard labels; temporal transfer drops 9–15%
+- Updated `02_concepts/geospatial_foundation_models.md` — added "Tree Species Mapping with GFMs" section
+- Updated `02_concepts/tree_species_mapping.md` — added [[ball_2026_foundation_models]] to sources
+
+**Ingested** `soto_2025_disturbance.pdf` → `01_notes/soto_2025_disturbance.md`
+- Viana-Soto & Senf 2025 (ESSD): European Forest Disturbance Atlas (EFDA); annual Landsat-based disturbance detection for 35 European countries 1985–2023; F1=0.89; 439,000 km² total disturbed area; harvest 79.2%; first product with multiple events per pixel
+- Updated `02_concepts/forest_disturbances.md` — added "European Forest Disturbance Atlas (EFDA)" section
+
+**Ingested** `li_2023_land_cover_map.pdf` → `01_notes/li_2023_land_cover_map.md`
+- Li et al. 2023 (ESSD): SinoLC-1 — first 1 m national land-cover map of China; weakly + self-supervised L2HNet; OA=73.6%; no manual annotation; note is peripheral to European forest focus but methodology (L2H resolution mismatch resolution) is relevant
+
 ## 2026-05-15
 
 **Refactored**: `adagbasa_2022_deep_learning_s2.md` — added inline SVG/HTML diagrams for the multi-source data pipeline, stratified K-fold scheme, and classifier F1 score comparison bar chart.
@@ -556,3 +574,20 @@ Append-only record of all wiki operations.
 - `02_concepts/transfer_learning_remote_sensing.md` — added "Temporal contrastive learning — SeCo" subsection with key inductive-bias quote, multi-year scope caveat, and forest-ecology corroboration
 - `02_concepts/geospatial_foundation_models.md` — added SeCo as methodological precursor section; added to Sources
 - `index.md` — added manas_2021 entry
+
+---
+
+## 2026-05-16
+
+**Ingested**: `alessi_2019_refugia.pdf`, `fang_2016_eve_mosaics.pdf`, `tan_2025_deep_tree_species.pdf`
+
+**Created**:
+- `01_notes/alessi_2019_refugia.md` — Alessi et al. 2019 (JVS); 17,087 Italian vegetation plots; 11 native laurophylls identified; 9/11 occupy <50% potential range → non-equilibrium; central Apennines as Quaternary refugia; high EVE expansion potential throughout Apennines + southern Alps
+- `01_notes/fang_2016_eve_mosaics.md` — Fang et al. 2016 (JVS); 20-ha stem-mapped EBLF, 94,605 trees; habitat heterogeneity explains EVE-deciduous mosaic; soil P (>0.27 g/kg) is dominant driver at all scales; hierarchical edaphic-topographic control
+- `01_notes/tan_2025_deep_tree_species.md` — Tan et al. 2025 (Front. For.); Transformer + SSL pretraining + pseudo-labeling for S1/S2 SITS tree species (OA 0.847, macro-F1 0.836); pseudo-labels from pure-stand binary DL model for mixed stands (confidence >0.9); red-edge most discriminative; leaf-off periods most diagnostic
+
+**Updated**:
+- `02_concepts/evergreen_broadleaved_expansion.md` — added "Native Laurophylls in Italy: non-equilibrium + expansion potential" (Alessi 2019) and "Within-Stand EVE Mosaic Drivers" (Fang 2016) sections; added both to Sources
+- `02_concepts/transfer_learning_remote_sensing.md` — added "Pseudo-labeling for Mixed-Stand Extension" section (Tan 2025); added to Sources
+- `02_concepts/tree_species_mapping.md` — expanded Mixed Forest section with DL pseudo-labeling paragraph (Tan 2025); added to Sources
+- `index.md` — added 3 new notes

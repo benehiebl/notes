@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Forest disturbances are discrete, punctuated events that cause mortality of trees, alter forest structure, and reset successional trajectories — they are among the most climate-sensitive processes in forest ecosystems and are expected to intensify under climate change.
 
-**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]], [[thom_2026_disturbance_suitability]], [[wegler_2026_canopy_cover_loss]], [[torres_2021_forest_health_remote_sensing]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]], [[schuldt_2020_drought_forest]], [[zhao_2022_forest_harvesting]], [[grantham_2020_anthropogenic_modification]]
+**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]], [[thom_2026_disturbance_suitability]], [[wegler_2026_canopy_cover_loss]], [[torres_2021_forest_health_remote_sensing]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]], [[schuldt_2020_drought_forest]], [[zhao_2022_forest_harvesting]], [[grantham_2020_anthropogenic_modification]], [[soto_2025_disturbance]]
 
-**Last updated**: 2026-05-14
+**Last updated**: 2026-05-22
 
 ---
 
@@ -65,6 +65,18 @@ Forest disturbances are detectable at continental scale from Landsat time series
 - Disturbance rate = % of forest area disturbed per year; disturbance rotation = reciprocal of disturbance rate
 - Used as calibration targets for process-based and AI disturbance models (source: [[grünig_2026_climate_change_disturbances_forest]])
 - Remote sensing captures high-severity (stand-replacing) disturbances well; low-severity disturbances are often below detection thresholds
+
+### European Forest Disturbance Atlas (EFDA)
+
+The most comprehensive Landsat-based disturbance product for continental Europe (source: [[soto_2025_disturbance]]):
+- **Coverage:** 35 European countries, 1985–2023, 30 m resolution, annually updatable
+- **Method:** Random Forest classifier on spectral change features (NDVI, NBR, tasseled-cap components, Disturbance Index) between target year (t₀) and prior year (t₋₁); SMOTE balancing; best-available-pixel Landsat composites from FORCE pipeline
+- **Key advantage over prior products:** captures **multiple disturbance events per pixel** — predecessor (Senf & Seidl 2021) was limited to the single greatest-change event
+- **Agent attribution:** patch-level RF classifying wind/bark beetle, fire, and harvest; wind and bark beetle merged (disturbance complex, sparse pre-2017 bark beetle reference data)
+- **Accuracy:** F1 = 0.89 overall (disturbed class: commission 17.3%, omission 22.5%); errors decrease after 2000 (commission drops to 10.6%)
+- **Disturbance totals:** 439,000 km² disturbed (22% of EU forest); harvest dominant (79.2%), wind/bark beetle (12%), fire (8.8%)
+- 28% of disturbed pixels experienced multiple events; especially southern Europe (reburns) and short-rotation plantations
+- **Open access:** Zenodo https://doi.org/10.5281/zenodo.13333034
 
 ## Demographic and Carbon Consequences
 

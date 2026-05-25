@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Geospatial foundation models are large neural networks pretrained on massive multi-modal Earth observation archives to produce **universal representations** of pixels or patches that transfer to downstream mapping tasks with minimal labels. AlphaEarth (480M parameters, ~3B observations) and PRESTO (lightweight pixel-time-series Transformer) represent two ends of the size-vs-spatial-context tradeoff. Both substantially reduce the data and compute requirements of new forest mapping projects.
 
-**Sources**: [[brown_2025_alphaearth]], [[tseng_2024_presto]], [[hiebl_2026_alphaearth]], [[wang_2026_foundation]], [[lang_2024_canopy_height]], [[manas_2021_seasonal_contrast]]
+**Sources**: [[brown_2025_alphaearth]], [[tseng_2024_presto]], [[hiebl_2026_alphaearth]], [[wang_2026_foundation]], [[lang_2024_canopy_height]], [[manas_2021_seasonal_contrast]], [[ball_2026_foundation_models]], [[feng_2026_tessera]]
 
-**Last updated**: 2026-05-14
+**Last updated**: 2026-05-22
 
 ---
 
@@ -56,17 +56,31 @@ Lightweight counterpoint to AlphaEarth (source: [[tseng_2024_presto]]):
 - Robust to missing data and variable input shapes
 - Open-source code + weights
 
+## TESSERA (Feng et al. 2026)
+
+Pixel-wise multi-modal (S1+S2) foundation model with temporal sampling invariance (source: [[feng_2026_tessera]]):
+- **45.7M parameters** — 10× smaller than AlphaEarth, comparable to PRESTO
+- Pretrained on ~800M d-pixels (3,012 global MGRS tiles, 2017–2024) via **Barlow Twins** — enforces embedding invariance to which cloud-free observations are selected from a time series
+- Two key regularizers: **global shuffling** (breaks spatial autocorrelation; most important, −9.2 F1 when removed) + **mix-based regulation** (invariance under extreme sparsity, −11.1 F1 when removed)
+- Output: 128-dim pixel embeddings, compressed to **int8** via Quantization-Aware Training (4× storage reduction, negligible quality loss)
+- **FAIR by design:** global annual 10 m int8 embeddings + open weights + GeoTessera Python library → https://github.com/ucam-eo/tessera
+- Cloud-robust: stable until <20 valid S2 observations/year
+- Best-in-class on: TreeSatAI-TS tree species (F1=79.23 full / 60.58 at 1%), Austrian Crop segmentation (mIoU=53.12), Borneo CHM regression (RMSE=13.1 m), Biomassters AGB (RMSE=27.43 t/ha)
+- **Limitation vs AlphaEarth:** pixel-wise (no spatial context) → marginally weaker on full-label segmentation (PASTIS-R); annual cadence; sub-annual tasks need raw time series re-encoding
+
 ## Comparison
 
-| Property | AlphaEarth (large) | PRESTO (lightweight) |
-|---|---|---|
-| Parameters | ~480 M | < 10 M |
-| Pretraining scale | 3 B observations | 21.5 M pixel-series |
-| Spatial context | Multi-scale, spatially aware | None (per-pixel) |
-| Output | 64-dim embedding | Variable-shape embedding |
-| Frozen-feature use | Designed for | Possible but emphasises fine-tuning |
-| Open weights | No | Yes |
-| Best when | Spatial texture + frozen embeddings | Temporal + multi-sensor + compute-constrained |
+| Property | AlphaEarth (large) | TESSERA | PRESTO (lightweight) |
+|---|---|---|---|
+| Parameters | ~480 M | 45.7 M | < 10 M |
+| Pretraining scale | 3 B observations | ~800 M d-pixels | 21.5 M pixel-series |
+| Spatial context | Multi-scale, spatially aware | None (per-pixel) | None (per-pixel) |
+| Multi-modal (S1+S2) | Yes | Yes | Yes |
+| Output dim | 64 | 128 (int8) | Variable |
+| Frozen-feature use | Designed for | Designed for | Possible |
+| Open weights | No | Yes | Yes |
+| Open global embeddings | No | Yes | No |
+| Best when | Spatial texture + frozen; patch-level tasks | Temporal phenology + cloud robustness + compute-constrained | Temporal + multi-sensor + compute-constrained |
 
 ## Operational Use Cases
 
@@ -84,6 +98,21 @@ Lightweight counterpoint to AlphaEarth (source: [[tseng_2024_presto]]):
 **Global canopy height** — Lang et al. 2024 (source: [[lang_2024_canopy_height]]):
 - Not AEF but a related sparse-supervision deep ensemble fusing GEDI + S-2 at scale
 - aRMSE 7.3 m globally; precursor to foundation-model-enabled CHM
+
+## Tree Species Mapping with GFMs (Ball et al. 2026)
+
+The most rigorous evaluation of GFMs for species-level mapping to date (source: [[ball_2026_foundation_models]]):
+- **Task:** 18-class tree species classification in Trentino (northern Italy), using parcel-level forest inventories; Tessera vs AlphaEarth vs Sentinel-1+2 composites
+- **Result:** GFM embeddings (WF1 = 0.83) consistently outperform conventional composites (WF1 = 0.80)
+- **Label efficiency:** Near-asymptotic accuracy at **5% of training parcels** — strongest practical benefit for regions with sparse inventories
+- **Classifier requirement:** Linear classifiers **fail** on GFM embeddings (underperform an MLP on composites); shallow MLP is sufficient and saturates; deeper networks add nothing
+- **Terrain covariates:** Adding elevation/slope/aspect provides **no benefit** — abiotic gradients are implicitly encoded in phenological signals (Tessera) or auxiliary training objectives (AlphaEarth)
+- **Soft labels:** Using species proportions from inventory as supervision targets outperforms hard per-pixel labels (Tessera macro F1: 0.551→0.586) — especially beneficial for minority species; conceptually resolves the resolution mismatch between 10 m pixels (spectral mixtures) and single-species hard labels
+- **Temporal transfer:** Performance drops 9% (Tessera) and 15% (AlphaEarth) when training on 2018 embeddings and predicting on 2021 data — **rare species suffer disproportionate losses**
+- **Model comparison:** Tessera (pixel-level Barlow Twins) excels at minority-species discrimination and parcel compositional fidelity; AlphaEarth (patch-level, multi-modal auxiliary targets) achieves marginally higher weighted F1 but over-smooths fine-grained within-parcel variation
+- **Ecological coherence:** Errors follow taxonomic/functional axes (Abies↔Picea; pine cluster; broadleaf groups) — embeddings encode a hierarchical ecological signal, not arbitrary noise
+
+**Key implication:** GFMs shift the bottleneck in species mapping from *feature engineering* to *reference data availability, quality, and temporal alignment*.
 
 ## How to Use Foundation Embeddings
 

@@ -13,9 +13,9 @@ tags:
 
 **Summary**: Tree species mapping from satellite data involves classifying forest pixels into species or genus classes using spectral, temporal, and environmental predictors, enabling wall-to-wall coverage beyond what field inventory plot networks provide.
 
-**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[koch_2025_intraspecies_variation_s2]], [[hemmerling_2021_forest_mapping_s2]], [[bolyn_2022_tree_species_mapping]], [[astola_2019_s2_l8_comparison]], [[pu_2021_tree_species_mapping_review]], [[wang_2022_tree_species_mapping]], [[wegler_2025_tree_species_germany]], [[wegler_2026_canopy_cover_loss]], [[adagbasa_2022_deep_learning_s2]], [[liu_2023_mapping_tree_species_diversity]], [[nguyen_2022_forest_mapping_explainable]], [[blickensdörfer_2024_tree_species]], [[kollert_2021_tree_species]], [[klehr_2025_synthetic_data]], [[yang_2020_modis_evergreen]], [[wang_2026_foundation]]
+**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[koch_2025_intraspecies_variation_s2]], [[hemmerling_2021_forest_mapping_s2]], [[bolyn_2022_tree_species_mapping]], [[astola_2019_s2_l8_comparison]], [[pu_2021_tree_species_mapping_review]], [[wang_2022_tree_species_mapping]], [[wegler_2025_tree_species_germany]], [[wegler_2026_canopy_cover_loss]], [[adagbasa_2022_deep_learning_s2]], [[liu_2023_mapping_tree_species_diversity]], [[nguyen_2022_forest_mapping_explainable]], [[blickensdörfer_2024_tree_species]], [[kollert_2021_tree_species]], [[klehr_2025_synthetic_data]], [[yang_2020_modis_evergreen]], [[wang_2026_foundation]], [[tan_2025_deep_tree_species]], [[ball_2026_foundation_models]]
 
-**Last updated**: 2026-05-14
+**Last updated**: 2026-05-22
 
 ---
 
@@ -150,6 +150,13 @@ National-scale species mapping is honest only when **mixed-stand validation** is
 - Pure-stand F1 scores typically overestimate real map accuracy by 4–14 percentage points
 - Pseudo-labelling extends NFI training to mixed plots while preserving label confidence
 - Variable-radius NFI plots need careful pixel-plot linking via species count proportions
+
+**DL pseudo-labeling for mixed stands** — train binary/multi-class DL on pure stands, score unlabeled mixed plots, accept labels above confidence threshold (e.g. 0.9) (source: [[tan_2025_deep_tree_species]]):
+- Focuses on species pairs with large phenological contrast (evergreen vs deciduous) for reliable scores
+- Pretraining (SSL via masked reconstruction on unlabeled forest pixels) + pseudo-labeling: OA 0.847, macro-F1 0.836 vs OA 0.764 without pretraining
+- **Red-edge indices** (NDre1-2, NDVIre1-3) most discriminative; **January–April and October–December** (leaf-off) most diagnostic periods
+- Time series length matters: accuracy grows from OA 0.496 (6–7 months) to OA 0.847 (24 months); second year adds meaningful gain before plateauing
+- Validates the temporal contrastive learning assumption ([[manas_2021_seasonal_contrast]]): multi-year SITS improves species representations
 
 **Synthetically mixed training data + ANN regression** turns the mixing problem on its head (source: [[klehr_2025_synthetic_data]]):
 - Linear-mixing of pure-pixel endmembers generates a synthetic spectral library with controlled mixture fractions as labels
