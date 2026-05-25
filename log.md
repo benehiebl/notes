@@ -4,6 +4,17 @@ Append-only record of all wiki operations.
 
 ---
 
+## 2026-05-25
+
+**Revised** `04_projects/project_ideas.md`
+- Reformulated both project ideas ("Forests under pressure", "Dying trees in Tyrolean forests") with precise scientific language
+- Grounded motivation in specific mechanisms (hotter droughts, VPD, xylem hydraulic failure, *Ips typographus* dynamics) backed by wiki sources
+- Added quantitative context from [[wegler_2026_canopy_cover_loss]], [[soto_2025_disturbance]], [[babst_2019_redistribution]], [[drought_mortality]], [[forest_disturbances]]
+- Sharpened research gaps to distinguish what is truly missing vs. what existing products (EFDA, Sentinel-2) already address
+- Reformulated research questions to be testable and species-specific
+
+---
+
 ## 2026-05-22
 
 **Ingested** `feng_2026_tessera.pdf` → `01_notes/feng_2026_tessera.md`
