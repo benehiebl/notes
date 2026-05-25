@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_concepts/transformers_time_series.md",
+                "file": "03_papers/03_tree_species_cover_landsat.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "transformers_time_series"
+              "title": "03_tree_species_cover_landsat"
             }
           }
         ],
@@ -198,6 +198,7 @@
   },
   "active": "117cbd15692b4fdf",
   "lastOpenFiles": [
+    "02_concepts/transformers_time_series.md",
     "02_concepts/neural_network_training.md",
     "02_concepts/lai_estimation.md",
     "01_notes/hiebl_2025_pretraining.md",
@@ -232,7 +233,6 @@
     "02_concepts/leaf_habit_latitudinal_gradient.md",
     "02_concepts/national_forest_inventory.md",
     "02_concepts/ndvi.md",
-    "02_concepts/phenology.md",
-    "02_concepts/plant_functional_traits.md"
+    "02_concepts/phenology.md"
   ]
 }
