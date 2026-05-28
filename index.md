@@ -36,6 +36,13 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[sentinel_1_sar]] | Sentinel-1 C-band SAR; dual polarisation VV/VH; cloud-independent companion to Sentinel-2 for forest mapping and disturbance detection |
 | [[geospatial_foundation_models]] | AlphaEarth, PRESTO, Prithvi paradigm; pretrained Earth-observation embeddings for downstream mapping tasks with minimal labels |
 
+## Paper Pages (`03_papers/`)
+
+| Page | Description |
+|------|-------------|
+| [[03_papers/03_tree_species_cover_landsat]] | Mapping 40 years of dominant tree species and leaf type cover for Italy — ecological change detection paper (EVE expansion, climate drivers, latitudinal/altitudinal shifts) |
+| [[03_papers/03_landsat_data_publication]] | Data publication: 40-year annual 30 m Landsat forest type and leaf type cover time series for Italy — methodology, validation, and dataset description |
+
 ## Notes Pages (`01_notes/`)
 
 | Page | Paper |

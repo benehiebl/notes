@@ -4,6 +4,16 @@ Append-only record of all wiki operations.
 
 ---
 
+## 2026-05-28
+
+**Created** `03_papers/03_landsat_data_publication.md`
+- Split off from `03_papers/03_tree_species_cover_landsat.md` — new file is a standalone data publication focusing on the methodology and dataset
+- Covers: Landsat time series assembly, TSTpad model, three-stage contrastive training workflow, mapping scheme, validation scheme, technical validation (temporal consistency, sensor consistency, observation density effects), data records, and limitations specific to dataset quality
+- Ecological analysis sections (EVE expansion trends, latitudinal/altitudinal gradients, climate driver attribution, winter greening) remain in `03_tree_species_cover_landsat.md`
+- Updated `index.md` with new `03_papers/` section listing both paper files
+
+---
+
 ## 2026-05-25
 
 **Revised** `04_projects/project_ideas.md`

@@ -1,4 +1,6 @@
-
+##### Potential Journals:
+1. first choice
+2. second choice
 # Title:
 
 > [!abstract] Motivation
