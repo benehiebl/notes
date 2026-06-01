@@ -43,6 +43,7 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 |------|-------------|
 | [[03_papers/03_tree_species_cover_landsat]] | Mapping 40 years of dominant tree species and leaf type cover for Italy — ecological change detection paper (EVE expansion, climate drivers, latitudinal/altitudinal shifts) |
 | [[03_papers/03_landsat_data_publication]] | Data publication: 40-year annual 30 m Landsat forest type and leaf type cover time series for Italy — methodology, validation, and dataset description |
+| [[03_papers/06_spatial_autocorrelation]] | GEDI canopy height + alpine S2 tile — predictor SA range controls CV inflation; variogram → kNNDM buffer distance framework for spectral/topo/climate combinations |
 
 ## Notes Pages (`01_notes/`)
 

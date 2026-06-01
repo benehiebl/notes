@@ -4,6 +4,24 @@ Append-only record of all wiki operations.
 
 ---
 
+## 2026-06-01
+
+**Revised** `03_papers/06_spatial_autocorrelation.md`
+- Replaced NFI-based Italian design with a fully public, general-purpose design: GEDI canopy height as Y, single alpine S2 tile (32TNT, Tyrol) as study area
+- Predictor sets unchanged (S / S+T / S+C / S+T+C) but now use SRTM, CHELSA, S2 seasonal composites — no restricted data
+- Added tile-extent limitation note: climate SA range may approach or exceed 140 km tile diagonal; optional multi-tile extension (32TNS, 32TPT) recommended for reliable climate variogram estimation
+- Study framed as general methodological contribution, replicable in any S2 tile with GEDI coverage
+
+**Created** `03_papers/06_spatial_autocorrelation.md`
+- New paper study: "How predictor choice shapes spatial autocorrelation and CV bias in satellite-based vegetation cover models"
+- Three-part design: (1) variogram analysis of SA ranges per predictor group; (2) CV inflation experiment (random vs kNNDM for S / S+T / S+C / S+T+C); (3) residual variogram to separate genuine ecological signal from spatial memorisation
+- Key output: empirically grounded rule for kNNDM separation distance as a function of max predictor SA range
+- Study area: Italy (TRACEVE/NFI plots + S2/Landsat predictors)
+
+**Updated** `index.md` — added paper entry
+
+---
+
 ## 2026-05-31 (4)
 
 **Ingested** 4 new sources from `00_literature/` (all contrastive SSL for RS cluster)
