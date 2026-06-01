@@ -35,6 +35,7 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[drought_mortality]] | Hotter droughts, xylem hydraulic failure, 20th-century redistribution of climatic drivers, drought-legacy effects |
 | [[sentinel_1_sar]] | Sentinel-1 C-band SAR; dual polarisation VV/VH; cloud-independent companion to Sentinel-2 for forest mapping and disturbance detection |
 | [[geospatial_foundation_models]] | AlphaEarth, PRESTO, Prithvi paradigm; pretrained Earth-observation embeddings for downstream mapping tasks with minimal labels |
+| [[european_ground_truth_databases]] | EU-Forest, sPlotOpen, ICP Forest, NFIs — pan-European tree occurrence and vegetation plot databases for SDMs and RS calibration |
 
 ## Paper Pages (`03_papers/`)
 
@@ -149,4 +150,13 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[01_notes/feng_2026_tessera]] | Feng et al. 2026 — TESSERA: pixel-wise S1/S2 foundation model with Barlow Twins + temporal sampling invariance; 45.7M params; open weights + global 10m int8 embeddings; SOTA on tree species, crop segmentation, CHM regression |
 | [[01_notes/ball_2026_foundation_models]] | Ball et al. 2026 — GFMs (AlphaEarth + Tessera) vs S1/S2 composites for 18-class tree species mapping in Trentino; WF1=0.83; near-asymptotic at 5% training data; soft labels outperform hard labels |
 | [[01_notes/soto_2025_disturbance]] | Viana-Soto & Senf 2025 — European Forest Disturbance Atlas (EFDA): annual Landsat-based disturbance maps for 35 countries 1985–2023; F1=0.89; 439,000 km² disturbed; harvest dominates (79%) |
+| [[01_notes/calvia_2022_pines]] | Calvia et al. 2022 — Diachronic aerial photo analysis of native Sardinian pine formations (Pinus halepensis, P. pinaster, P. pinea); +235/+1043/+27% expansion 1954–2019 |
+| [[01_notes/mauri_2017_EU_tree_data]] | Mauri et al. 2017 — EU-Forest dataset: 249,410 plots, 242 tree species, 1 km INSPIRE grid, 21 NFIs; open-access pan-European tree occurrence database |
+| [[01_notes/sabatini_2021_splot]] | Sabatini et al. 2021 — sPlotOpen: 95,104 open-access vegetation plots, 42,677 taxa, TRY trait integration; environmentally balanced global plant community dataset |
+| [[01_notes/wessely_2023_tree_species_bottleneck]] | Wessely et al. 2024 — Tree species bottleneck for European forest management; −33–49% continuously suitable species under climate change; 3.18 timber/3.53 carbon/2.56 biodiversity sp/km² |
+| [[01_notes/kang_2025_contrastive_vs_mae]] | Kang et al. 2026 — CL teachers outperform MAE teachers in SSKD despite MAE superiority in SSL; attention collapse diagnosed; I-SSKD (CL + MAE attention matching) achieves SOTA |
+| [[01_notes/scheibenreif_2022_contrastive]] | Scheibenreif et al. 2022 — D-SimCLR: S1/S2 co-location as augmentation-free contrastive positives; 10% labels beats supervised 100%; linear probe on par with fully supervised |
+| [[01_notes/stival_2025_contrastive_msi]] | Stival et al. 2025 — SACo+: spectral band group semantics + LBP texture + temporal as contrastive anchors for MSRSI; 94.72% EuroSAT (ResNet-18), +4.7pp over SeCo |
+| [[01_notes/stival_2026_pixel_contrastive]] | Stival et al. 2026 — PIMC: recurrence plots of pixel VI time series as contrastive modality with RSI; 2D beats 1D for forecasting; pixel-wise SSL for SITS (preprint) |
+| [[01_notes/li_2026_contrastive]] | Li et al. 2026 — HSSCL: hierarchical multi-level contrastive + GNN geometric consistency for SAR-optical matching; F1 85.8% claimed (+20% vs prior); treat with caution |
 | [[01_notes/li_2023_land_cover_map]] | Li et al. 2023 — SinoLC-1: first 1 m national land-cover map of China via weakly+self-supervised L2HNet; OA=73.6%; no manual annotation; resolution mismatch resolved via L2H loss |

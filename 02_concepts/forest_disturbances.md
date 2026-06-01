@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Forest disturbances are discrete, punctuated events that cause mortality of trees, alter forest structure, and reset successional trajectories — they are among the most climate-sensitive processes in forest ecosystems and are expected to intensify under climate change.
 
-**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]], [[thom_2026_disturbance_suitability]], [[wegler_2026_canopy_cover_loss]], [[torres_2021_forest_health_remote_sensing]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]], [[schuldt_2020_drought_forest]], [[zhao_2022_forest_harvesting]], [[grantham_2020_anthropogenic_modification]], [[soto_2025_disturbance]]
+**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]], [[thom_2026_disturbance_suitability]], [[wegler_2026_canopy_cover_loss]], [[torres_2021_forest_health_remote_sensing]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]], [[schuldt_2020_drought_forest]], [[zhao_2022_forest_harvesting]], [[grantham_2020_anthropogenic_modification]], [[soto_2025_disturbance]], [[wessely_2023_tree_species_bottleneck]]
 
-**Last updated**: 2026-05-22
+**Last updated**: 2026-05-31
 
 ---
 
@@ -96,6 +96,19 @@ Forest landscape simulations (source: [[albrich_2019_climate_change_mountain_for
 - Business-as-usual even-aged management is a major risk amplifier
 - Climate-adaptive management requires shifting target species composition toward more drought- and disturbance-tolerant species (source: [[albrich_2019_climate_change_mountain_forests]])
 
+### Tree Species Bottleneck: A Compounding Management Constraint
+
+Climate change does not only increase disturbance rates — it simultaneously shrinks the pool of tree species available to replace lost stands. This creates a compounding crisis (source: [[wessely_2023_tree_species_bottleneck]]):
+
+- For any species planted today, it must remain climatically suitable throughout its entire rotation period (~100 years), not just at current or end-of-century conditions
+- On average, only 9.4 species per km² in Europe remain continuously suitable under intermediate climate change (RCP 4.5) — a reduction of **38%** from the current pool
+- Only 3.18/3.53/2.56 of these continuously suitable species have high potential for timber/carbon/biodiversity respectively
+- **The mixed-forest strategy is itself curtailed**: in many parts of Europe, fewer than 4–5 continuously suitable species are available, making true species mixing infeasible
+- Regions most constrained for post-disturbance replanting: Northern Europe (−52% species pool), SW Europe (strong drying), and low-elevation temperate/hemiboreal zones
+- Mountain ranges are relatively buffered (−33%), making them important seed sources and refugia for climate-adapted tree genetic material
+
+Practical implication: forest managers face simultaneously more disturbance AND fewer viable replacement species — the "forest of the future" must be designed today with this narrowing option space in mind. See also [[thom_2026_disturbance_suitability]] for species suitability ranking and [[dyderski_2025_species_shift]] for SDM-based range shift projections.
+
 ## Remote Sensing of Forest Health (RS Review 2015–2020)
 
 Systematic PRISMA review of 107 forest health RS papers (source: [[torres_2021_forest_health_remote_sensing]]):
@@ -173,3 +186,5 @@ Continuous global forest integrity index based on observed + inferred human pres
 - [[tree_species_mapping]]
 - [[wegler_2025_tree_species_germany]]
 - [[drought_mortality]]
+- [[species_distribution_models]]
+- [[wessely_2023_tree_species_bottleneck]]

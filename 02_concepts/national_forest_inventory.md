@@ -12,9 +12,9 @@ tags:
 
 **Summary**: National Forest Inventories (NFIs) are systematic, large-scale sample surveys that provide authoritative statistics on the extent, structure, composition, and functions of a country's forests, serving as the primary ground truth for forest remote sensing and international reporting.
 
-**Sources**: [[gasparini_2022_nfi_italy]], [[mattioli_2025_carta_forestale]], [[miettinen_2025_forest_maps_europe]], [[amico_2025_nfi_italy]], [[bell_2024_hindcasting_forest_structure]], [[blickensdörfer_2024_tree_species]], [[klehr_2025_synthetic_data]], [[qin_2026_forest_cover]]
+**Sources**: [[gasparini_2022_nfi_italy]], [[mattioli_2025_carta_forestale]], [[miettinen_2025_forest_maps_europe]], [[amico_2025_nfi_italy]], [[bell_2024_hindcasting_forest_structure]], [[blickensdörfer_2024_tree_species]], [[klehr_2025_synthetic_data]], [[qin_2026_forest_cover]], [[mauri_2017_EU_tree_data]], [[sabatini_2021_splot]]
 
-**Last updated**: 2026-05-14
+**Last updated**: 2026-05-31
 
 ---
 
@@ -151,6 +151,20 @@ Two practical challenges arise when using NFI plot data as training reference fo
 
 In cloud-prone regions, NFI provincial totals can validate large-area mapping products against direct pixel-level reference data (source: [[qin_2026_forest_cover]]): annual 30 m forest cover in southern China aligns with provincial NFI (R² 0.86), while finer-resolution products outperform 500 m alternatives.
 
+## Pan-European Harmonised Products from NFI Data
+
+Two open-access continental databases derive from or complement European NFIs:
+
+**EU-Forest** (Mauri et al. 2017; source: [[mauri_2017_EU_tree_data]]): 249,410 plots, 242 tree species, 1 km × 1 km INSPIRE grid harmonised from 21 national NFIs + Forest Focus + Biosoil.
+- De facto standard input for continental-scale tree SDMs and RS forest product validation
+- Critical caveats: presence-only (no confirmed absences); does not separate natural from planted occurrences; strong national density imbalance (Spain 74k plots vs Bulgaria 220); static snapshot with heterogeneous survey years
+
+**sPlotOpen** (Sabatini et al. 2021; source: [[sabatini_2021_splot]]): 95,104 vegetation plots, 42,677 vascular plant taxa, 18 community-weighted functional trait means from TRY; 114 countries.
+- Designed for global macroecology and RS ground truth; differs from EU-Forest by recording all plant species (not only trees) with true absences, and linking to functional traits
+- Complementary to NFI data: broader taxonomic scope but heterogeneous protocols and plot sizes (0.01–40,000 m²)
+
+See [[european_ground_truth_databases]] for a full comparison table and RS-specific caveats for both databases.
+
 ## Related pages
 
 - [[functional_diversity]]
@@ -159,3 +173,5 @@ In cloud-prone regions, NFI provincial totals can validate large-area mapping pr
 - [[tree_species_mapping]]
 - [[sentinel_2]]
 - [[sentinel_1_sar]]
+- [[european_ground_truth_databases]]
+- [[species_distribution_models]]

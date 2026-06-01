@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Functional diversity quantifies the range, divergence, and dissimilarity of plant functional traits within a community, capturing how ecosystems function beyond simple species counts.
 
-**Sources**: [[bricca_2026_topo_diversity]], [[liu_2023_spectral_spatial_resolution_effect]], [[francioni_2026_canopy_closure]]
+**Sources**: [[bricca_2026_topo_diversity]], [[liu_2023_spectral_spatial_resolution_effect]], [[francioni_2026_canopy_closure]], [[sabatini_2021_splot]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-05-31
 
 ---
 
@@ -54,6 +54,16 @@ In Bricca et al. (2026), multi-FD was computed from 5 quantitative traits (plant
 
 Long-term forest monitoring shows that canopy closure following management abandonment reduces understory species richness — a direct link between structural functional diversity (canopy openness) and taxonomic diversity. In 31 Italian ICP Forests Level II plots over 25 years, boreal and nemoral beech/oak forests showed significant species richness declines driven primarily by increasing tree cover (source: [[francioni_2026_canopy_closure]]).
 
+## Global Ground Truth: sPlotOpen
+
+The largest open-access global source of community-level functional diversity data is sPlotOpen (source: [[sabatini_2021_splot]]):
+- 95,104 vegetation plots with species composition (presence+abundance) across 114 countries; 1888–2015
+- Linked to TRY Plant Trait Database → community-weighted means (CWM) and variances for 18 functional traits per plot (leaf area, SLA, plant height, leaf N, leaf P, wood density, seed mass, and others)
+- CWMs directly represent plot-level functional composition, enabling global analysis of functional diversity without trait measurement from scratch
+- Environmentally balanced via global climate+soil PCA stratification — designed to reduce temperate-zone sampling bias
+
+Key limitation for functional diversity mapping: sPlotOpen provides CWMs, not within-community trait dispersion (Rao's QE). Computing QE from sPlotOpen requires the full species × trait matrix, which is only partially available due to trait database gaps (~40–60% of species covered for most traits).
+
 ## Relationship to Remote Sensing
 
 - Direct mapping of functional diversity from satellite data is an active research area (e.g., using hyperspectral data or multispectral proxies like [[ndvi]])
@@ -69,3 +79,5 @@ Long-term forest monitoring shows that canopy closure following management aband
 - [[plant_functional_traits]]
 - [[ndvi]]
 - [[spectral_diversity_biodiversity]]
+- [[sabatini_2021_splot]]
+- [[european_ground_truth_databases]]

@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Species distribution models statistically relate species occurrence records to environmental predictor variables to estimate the spatial distribution of suitable habitat — a fundamental tool for biogeography, conservation planning, and forecasting range shifts under climate change.
 
-**Sources**: [[he_2015_remote_sensing_sdm]], [[noce_2023_altitude_shift_tree_italy]], [[fady_2025_native_trees_mediterranean]], [[dyderski_2025_species_shift]]
+**Sources**: [[he_2015_remote_sensing_sdm]], [[noce_2023_altitude_shift_tree_italy]], [[fady_2025_native_trees_mediterranean]], [[dyderski_2025_species_shift]], [[wessely_2023_tree_species_bottleneck]], [[mauri_2017_EU_tree_data]]
 
-**Last updated**: 2026-05-14
+**Last updated**: 2026-05-31
 
 ---
 
@@ -99,6 +99,33 @@ Italian mountain forest case study (Noce et al. 2023) demonstrates operational M
 - NFI grid coordinates systematically offset (SW corner of 1km cell) — introduces positional uncertainty
 - NFI presence-only data: no confirmed absences → MaxEnt required (cannot use presence-absence methods)
 
+## Key Ground Truth Datasets for European Tree SDMs
+
+Two pan-European plot databases are standard inputs for European tree SDMs (source: [[mauri_2017_EU_tree_data]], [[sabatini_2021_splot]]):
+
+- **EU-Forest** (Mauri et al. 2017): ~249,410 plots, 242 species, 1 km INSPIRE grid, 21 NFIs; presence-only but systematically sampled; de facto standard for European tree SDMs; used by Wessely et al. 2024 and Miettinen et al. 2025
+- **sPlotOpen** (Sabatini et al. 2021): 95,104 vegetation plots, 42,677 taxa, 114 countries; presence+absence with TRY trait integration; designed for macroecology; environmentally balanced via PCA stratification
+- **ICP Forest**: Long-term European forest monitoring network; 18,367 plots, 38 countries, 1987–2017; used alongside EU-Forest in Wessely et al.
+
+Critical caveat: EU-Forest and ICP Forest do not separate natural from planted occurrences, which can inflate apparent climatic tolerance — SDMs trained on planted occurrences may overestimate species' climate optima.
+
+## Tree Species Bottleneck under Climate Change
+
+A key concept introduced by Wessely et al. (2024): forest management decisions on which species to plant require **continuous suitability throughout the rotation period** (~100 years), not just suitability at a single point in time (source: [[wessely_2023_tree_species_bottleneck]]).
+
+**The bottleneck mechanism**:
+- Species suitable *today* may become unsuitable mid-century (→ mortality risk)
+- Species suitable in *2090* may be outside their niche today (→ cannot be planted now)
+- The "continuously suitable" pool = intersection over all decades 2020–2100 = substantially smaller than either endpoint
+
+**Pan-European results** (69 species, 1 km grid, RCP 4.5):
+- Average 9.4 sp/km² continuously suitable vs 15.2 currently (−38%)
+- Northern Europe most affected (−52%); central-eastern Europe least (−31%)
+- Mountain ranges buffer loss better than lowlands (−33% vs −40%)
+- Only 3.18/3.53/2.56 high-potential species per km² for timber/carbon/biodiversity remain viable for planting today
+
+**Management implication**: The mixed-species strategy recommended to increase forest resilience is itself curtailed — in many European regions, 4–5 suitable species are insufficient for meaningful mixing. Adaptation should include shorter rotation periods and canopy openings to introduce newly suitable species as climate shifts.
+
 ## Key Limitations and Caveats
 
 - **Circularity risk**: if response variable is derived from RS (e.g., species map from RS classification) AND predictors are also RS-derived metrics, the model is circular — avoid or explicitly test independence
@@ -137,3 +164,6 @@ Combining MaxEnt SDMs for 20 European tree species under CMIP6/SSP scenarios wit
 - [[tree_species_mapping]]
 - [[drought_mortality]]
 - [[evergreen_broadleaved_expansion]]
+- [[european_ground_truth_databases]]
+- [[wessely_2023_tree_species_bottleneck]]
+- [[mauri_2017_EU_tree_data]]

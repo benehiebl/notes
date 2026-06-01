@@ -4,6 +4,100 @@ Append-only record of all wiki operations.
 
 ---
 
+## 2026-05-31 (4)
+
+**Ingested** 4 new sources from `00_literature/` (all contrastive SSL for RS cluster)
+
+**Created** `01_notes/scheibenreif_2022_contrastive.md`
+- Scheibenreif et al. (ISPRS Annals 2022): D-SimCLR + MMA — augmentation-free contrastive SSL via S1/S2 co-location as natural positive pairs; 10% labels beats supervised 100%; linear probe on par with fully supervised; cross-dataset transfer to EuroSAT
+
+**Created** `01_notes/stival_2025_contrastive_msi.md`
+- Stival et al. (ISPRS J. PRS 2025): SACo+ — semantic band groups (vegetation/urban/water) + LBP texture + temporal positives for MSRSI SSL; 94.72% EuroSAT (ResNet-18) vs SeCo 90.05%; +4.67pp via semantic module; validated on classification, change detection, segmentation
+
+**Created** `01_notes/stival_2026_pixel_contrastive.md`
+- Stival et al. (arXiv preprint Jan 2026): PIMC — recurrence plots (2D) of pixel NDVI/EVI/SAVI time series as one contrastive modality vs RSI patches; 2D consistently beats 1D for forecasting; pixel-level SSL directly relevant to per-pixel forest cover regression. Caution: unreviewed preprint, no comparison to TST/PRESTO/SITS-BERT
+
+**Created** `01_notes/li_2026_contrastive.md`
+- Li et al. (Sci. Reports 2026): HSSCL — hierarchical multi-level contrastive + GNN geometric consistency for SAR-optical image matching; claimed +20% gains across all metrics are not credible without ablation/error bars; task (image registration) is tangential to forest classification focus
+
+**Updated** `02_concepts/transfer_learning_remote_sensing.md`
+- Added "Contrastive SSL Variants for Multispectral RS" section covering D-SimCLR (cross-modal), SACo+ (semantic band groups), PIMC (recurrence plot pixel-wise)
+- Added comparison table of contrastive paradigms (SimCLR, SeCo, D-SimCLR, SACo+, PIMC, I-SSKD) by positive pair source, augmentation need, task scale, key strength
+- Updated sources list
+
+**Updated** `index.md` — added 4 note entries
+
+---
+
+## 2026-05-31 (3)
+
+**Updated** `02_concepts/national_forest_inventory.md`
+- Added section on EU-Forest (mauri_2017) and sPlotOpen (sabatini_2021) as pan-European harmonised products derived from / complementary to NFIs
+- Cross-references [[european_ground_truth_databases]]
+
+**Updated** `02_concepts/functional_diversity.md`
+- Added section on sPlotOpen as global source of community-weighted trait means (18 traits, 95k plots); notes gap between CWMs and Rao's QE computation
+
+**Updated** `02_concepts/forest_disturbances.md`
+- Added "Tree Species Bottleneck" subsection in Management Responses: climate change shrinks replacement species pool by −38% (RCP 4.5), curtailing mixed-forest strategy; cites [[wessely_2023_tree_species_bottleneck]]
+
+**Updated** `02_concepts/transfer_learning_remote_sensing.md`
+- Added "Knowledge Distillation for Compact Model Deployment" section: CL teacher > MAE teacher in SSKD despite MAE SSL superiority; I-SSKD combines CL features + MAE attention matching; RS deployment implications re: SeCo vs MAE-style pretraining; cites [[kang_2025_contrastive_vs_mae]]
+
+---
+
+## 2026-05-31 (2)
+
+**Ingested** `kang_2025_contrastive_vs_mae.pdf`
+
+**Created** `01_notes/kang_2025_contrastive_vs_mae.md`
+- Kang, Bae, Zhang (IEEE Access 2026): SSKD comparison of CL (MoCo-V3, DINO) vs MAE/SimMIM teachers for ViT-Tiny/Small distillation
+- Key finding: CL teachers outperform MAE teachers in SSKD despite MAE being stronger standalone SSL — CL representations are semantically denser
+- Weakness diagnosed: attention collapse in CL-distilled students (low NMI, low inter-head KL)
+- I-SSKD fix: L_SSKD (CL features) + λ·L_attn (MAE attention scores); λ=0.1; SOTA on ImageNet, ADE20K, COCO
+- RS relevance: CL-style pretraining (SeCo-type) may be preferable as teacher for lightweight SITS model distillation
+
+**Updated** `index.md` — added 1 note entry
+
+---
+
+## 2026-05-31
+
+**Ingested** 4 new sources from `00_literature/`
+
+**Created** `01_notes/calvia_2022_pines.md`
+- Calvia et al. 2022 (Rendiconti Lincei): Diachronic aerial photo analysis of native Sardinian pine formations 1954–2019
+- P. halepensis +235%, P. pinaster +1043%, P. pinea +27%; land abandonment driver; 90% of formations in protected areas
+- Methodological note: manual interpretation only, no accuracy assessment, absolute areas remain small
+
+**Created** `01_notes/mauri_2017_EU_tree_data.md`
+- Mauri et al. 2017 (Scientific Data): EU-Forest dataset — 249,410 plots, 242 tree species, 1 km INSPIRE grid, 21 NFIs
+- Key inputs: NFIs (96%) + Forest Focus + Biosoil; open-access figshare CC4.0
+- Critical for wiki: standard ground truth for European tree SDMs; used in wessely_2023 and miettinen_2025
+
+**Created** `01_notes/sabatini_2021_splot.md`
+- Sabatini et al. 2021 (GEB): sPlotOpen — 95,104 open-access global vegetation plots, 42,677 taxa, 18 TRY trait CWMs
+- Environmentally balanced via global climatic/soil PCA; three replicate subsets; 114 countries
+- Relevant as RS ground truth for functional diversity; presence+absence unlike EU-Forest
+
+**Created** `01_notes/wessely_2023_tree_species_bottleneck.md`
+- Wessely et al. 2024 (Nature E&E): SDMs for 69 European tree species; bottleneck concept = continuous suitability over 2020–2100
+- Average -38% species pool under RCP 4.5; Northern Europe most affected (-52%); mountain ranges buffered
+- Only 3.18/3.53/2.56 high-potential sp/km² for timber/carbon/biodiversity remain plantable today
+
+**Created** `02_concepts/european_ground_truth_databases.md`
+- New concept covering EU-Forest, sPlotOpen, ICP Forest, and NFIs as pan-European reference datasets
+- Includes comparison table and caveats for RS applications (planted vs natural, 1 km aggregation, temporal mismatch)
+
+**Updated** `02_concepts/species_distribution_models.md`
+- Added section on key ground truth databases (EU-Forest, sPlotOpen, ICP Forest)
+- Added section on tree species bottleneck concept (Wessely et al. 2024): temporal continuity requirement; -33–49% species pool under RCP 2.6–8.5
+
+**Updated** `index.md`
+- Added 4 new note entries and 1 new concept entry
+
+---
+
 ## 2026-05-28
 
 **Created** `03_papers/03_landsat_data_publication.md`

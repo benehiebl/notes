@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Transfer learning addresses the small data problem in remote sensing vegetation mapping by pretraining deep learning models on larger, related datasets before fine-tuning on scarce target observations, substantially improving generalisation to new regions.
 
-**Sources**: [[hiebl_2025_pretraining]], [[chen_2020_contrastive_framework]], [[brown_2025_alphaearth]], [[sylvain_2024_tree_species_uncertainty]], [[safonova_2023_small_data]], [[reichstein_2019_deep_learning_earth_sciences]], [[kattenborn_2021_review_cnn_vegetation_monitoring]], [[wen_2023_transformers_time_series]], [[vaswani_2023_attention_is_all]], [[yuan_2025_sits_augmentation]], [[sze_2017_efficient_dnn_processing]], [[mila_2024_spatial_proxies]], [[bernico_2019_domain_similarity]], [[yuan_2022_sitsformer]], [[yuan_2023_pretraining]], [[zerveas_2020_framework_transformer]], [[tseng_2024_presto]], [[wang_2026_foundation]], [[klehr_2025_synthetic_data]], [[lakshminarayan_2017_uncertainty]], [[seitzer_2022_uncertainty]], [[manas_2021_seasonal_contrast]], [[tan_2025_deep_tree_species]]
+**Sources**: [[hiebl_2025_pretraining]], [[chen_2020_contrastive_framework]], [[brown_2025_alphaearth]], [[sylvain_2024_tree_species_uncertainty]], [[safonova_2023_small_data]], [[reichstein_2019_deep_learning_earth_sciences]], [[kattenborn_2021_review_cnn_vegetation_monitoring]], [[wen_2023_transformers_time_series]], [[vaswani_2023_attention_is_all]], [[yuan_2025_sits_augmentation]], [[sze_2017_efficient_dnn_processing]], [[mila_2024_spatial_proxies]], [[bernico_2019_domain_similarity]], [[yuan_2022_sitsformer]], [[yuan_2023_pretraining]], [[zerveas_2020_framework_transformer]], [[tseng_2024_presto]], [[wang_2026_foundation]], [[klehr_2025_synthetic_data]], [[lakshminarayan_2017_uncertainty]], [[seitzer_2022_uncertainty]], [[manas_2021_seasonal_contrast]], [[tan_2025_deep_tree_species]], [[kang_2025_contrastive_vs_mae]], [[scheibenreif_2022_contrastive]], [[stival_2025_contrastive_msi]], [[stival_2026_pixel_contrastive]]
 
-**Last updated**: 2026-05-14
+**Last updated**: 2026-05-31
 
 ---
 
@@ -64,6 +64,46 @@ MVP vs contrastive learning: MVP leverages temporal continuity and phenological 
 - **Outperforms ImageNet pre-training** on BigEarthNet (+4–6% mAP), EuroSAT (+6.7% accuracy) — in-domain RS pre-training beats natural-image domain transfer; also beats MoCo-v2 + temporal positive pairs (TP) without multi-head design by ~4 pp
 - **Critical for forest mapping**: this is the canonical source for the assumption that the same forest plot observed in two different year windows constitutes a valid contrastive positive pair (temporal ecological stability assumption)
 - **Scope of assumption**: SeCo validates 3-month (seasonal) stability; multi-year stability (1–2 year windows used in forest mapping workflows) is an extension supported by forest ecology literature (forests change on decadal, not annual, timescales — [[herraiz_2025_phen_shifts_mediterranean]]; [[grabska_2024_tree_species_map]]) but not directly tested in SeCo
+
+## Contrastive SSL Variants for Multispectral RS
+
+Beyond SeCo's temporal positive pairs, several extensions address RS-specific pretraining challenges:
+
+### Cross-Modal Contrastive SSL (Scheibenreif et al. 2022) [[scheibenreif_2022_contrastive]]
+**Key idea**: S1/S2 co-registered image pairs = **natural augmentation-free positive pairs** for contrastive SSL.
+- Standard augmentations (colour jitter, hue) are semantically destructive for multispectral data — modal contrast avoids this entirely
+- **D-SimCLR**: dual encoders (one per modality), SimCLR loss across sensor pair; concatenate embeddings for downstream
+- **MMA**: spatial correlation map similarity (retains 2D structure; intended for dense tasks)
+- With only **10% of labels**, D-SimCLR matches or outperforms supervised fusion trained on 100% of labels
+- Linear probe from frozen D-SimCLR embeddings exceeds supervised training — representations are linearly separable without fine-tuning
+- **RS implication**: whenever S1 and S2 are co-available (standard for forest mapping workflows), cross-modal pretraining is a strong, augmentation-free alternative to temporal or synthetic pairs
+
+### Semantic-Aware Contrastive SSL / SACo+ (Stival et al. 2025) [[stival_2025_contrastive_msi]]
+**Key idea**: spectral band combinations encode physically meaningful ground properties — use known band groups (vegetation, urban, water) as categorical contrastive anchors.
+- **Three positive pair sources simultaneously**: augmentation (MoCo-style) + temporal (SeCo-style) + categorical/semantic (band group means)
+- **LBP texture** features added per band group — encodes local contrast patterns
+- **Band-aware augmentation policy**: colour jitter excluded (preserves spectral semantics); only geometric augmentations applied
+- EuroSAT: SACo+ (ResNet-18) 94.72% vs SeCo 90.05% (+4.67pp); SACo+ ResNet-50 95.77% vs SpectralGPT 99.15% (ViT, 10× larger)
+- **RS implication**: for SITS forest mapping, vegetation band groups (NIR/Red/RedEdge) are ecologically motivated contrastive anchors; including temporal + semantic levels outperforms pure temporal SeCo
+
+### Pixel-wise Recurrence Plot Contrastive SSL / PIMC (Stival et al. 2026) [[stival_2026_pixel_contrastive]]
+**Key idea**: transform 1D pixel time series (NDVI/EVI/SAVI) into **2D recurrence plots (RPs)** capturing temporal autocorrelation; use RP + RSI patch as two contrastive modalities at pixel level.
+- **Recurrence plot**: R_{ij} = Θ(ε − ‖x_i − x_j‖) — binary matrix encoding when a time series revisits similar states; T×T matrix for T timestamps
+- Two independent encoders trained via PIMC; after training each works standalone (no cross-modal requirement at inference)
+- PASTIS forecasting: PIMC (2D) RMSE 0.4849 NDVI vs MOMENT 0.5829, 1D-CNN 0.6808 — 2D representations consistently beat 1D
+- **RS implication**: for dense SITS (Landsat annual 30-step, S2 biweekly), recurrence plots make phenological cycle structure explicit to CNNs; pixel-level design directly suits per-pixel cover regression
+- **Caution**: preprint only; not yet compared to TST/SITS-BERT/PRESTO baselines
+
+### Comparison of RS Contrastive Paradigms
+
+| Method | Positive pair source | Augmentation needed | Task scale | Key strength |
+|--------|---------------------|---------------------|------------|--------------|
+| SimCLR / MVP | Synthetic augmentations | Yes (strong) | Patch | General baseline |
+| SeCo | Temporal (same loc, diff season) | Minimal | Patch | Seasonal invariance for LC mapping |
+| D-SimCLR (Scheibenreif) | Cross-modal S1/S2 | None | Patch | Augmentation-free; implicit fusion |
+| SACo+ (Stival 2025) | Temporal + semantic band groups + augmentation | Minimal (geometric only) | Patch | Spectral semantics; multi-level |
+| PIMC (Stival 2026) | RSI patch vs RP of pixel VI time series | None | Pixel | Temporal autocorrelation; pixel-level |
+| SSKD / I-SSKD (Kang 2026) | Teacher→student distillation | N/A | Patch | Compact deployment |
 
 ## Epistemic vs Aleatoric Uncertainty
 
@@ -142,6 +182,23 @@ A parallel line of work has developed **Transformer-based self-supervised pretra
 - **TST** (Zerveas et al. 2020): first MTS Transformer + masked-value prediction; outperforms supervised SOTA without extra data (source: [[zerveas_2020_framework_transformer]])
 - **SITS-BERT** (Yuan & Lin 2022): pixel-based, sinusoidal DOY positional encoding, denoising proxy task; +1.91–6.69% accuracy gains (source: [[yuan_2023_pretraining]])
 - **SITS-Former** (Yuan et al. 2022): patch-based extension with 3D-CNN embedding; +2.64–3.30% accuracy (source: [[yuan_2022_sitsformer]])
+
+## Knowledge Distillation for Compact Model Deployment
+
+Self-supervised knowledge distillation (SSKD) transfers representations from a large SSL-pretrained teacher to a smaller student model — without any labels. This is directly relevant to RS deployment scenarios where inference must run on edge hardware or at scale (source: [[kang_2025_contrastive_vs_mae]]).
+
+**Key finding**: despite MAE outperforming contrastive learning (CL) in standalone SSL pretraining benchmarks, **CL-pretrained teachers produce better students in SSKD**. Reason: CL representations are semantically denser (class-clustered in feature space) and thus harder, more informative distillation targets; MAE features are spatially detailed but low in high-level semantic content, making them easy for a shallow student to mimic without building useful representations.
+
+**Attention collapse**: students distilled from CL teachers exhibit *attention collapse* — attention heads converge to similar patterns (low NMI, low inter-head KL-divergence), under-utilising model capacity. MAE attention patterns are richer and more diverse across heads.
+
+**I-SSKD fix**: combine CL feature alignment with MAE attention score matching as an auxiliary loss (λ = 0.1):
+
+$$\mathcal{L}_{I\text{-}SSKD} = \mathcal{L}_{SSKD\,\text{(CL)}} + \lambda \cdot \mathcal{L}_{attn\,\text{(MAE)}}$$
+
+**RS implications**:
+- SeCo / DINO-style CL pretraining is preferred over MAE-style masking when the goal is to distil a compact deployable SITS model
+- This is the *opposite* of the current trend toward MAE-based RS foundation models (PRESTO, TESSERA use masking) when those models are used as teachers
+- The finding is empirically validated on ImageNet/ADE20K/COCO only; RS-domain validation is an open gap — but the semantic density argument generalises
 
 ## Pseudo-labeling for Mixed-Stand Extension
 
