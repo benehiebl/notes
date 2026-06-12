@@ -73,6 +73,13 @@ In persistently cloudy regions (subtropical / tropical monsoon zones, mountainou
 
 For southern China (annual probability of valid Landsat-8 observation often 0–10%), DL reconstruction + RF classification produced annual 30 m forest cover maps with OA 0.904 (source: [[qin_2026_forest_cover]]).
 
+### Multi-Temporal Cloud Removal (Image Reconstruction)
+
+A related but distinct task from gap-filling time-series *metrics* (e.g. NDVI) is reconstructing full cloud-free *images* from short multi-temporal sequences (3 dates):
+- **TSSMamba** (source: [[zhang_2026_statespacemodel]]): dual-branch state space model (Mamba) jointly modelling temporal-spectral and temporal-spatial dependencies across three cloud-contaminated Sentinel-2 acquisitions; outperforms CNN/Transformer/GAN baselines (PSNR up to 30.9 dB, SAM down to 4.98°) on three benchmarks (STGAN, Sen2_MTC, SEN12MS-CR-TS) with <1M parameters
+- State space models (Mamba) offer linear-complexity sequence modelling vs. quadratic-cost Transformer self-attention — see [[transformers_time_series]] for architectural context
+- Not yet validated for downstream forest/vegetation tasks (e.g. whether reconstructed pixels preserve phenological signal needed for SITS classification)
+
 ## Cloud-Independent Alternatives
 
 Where optical sensors fail, **Sentinel-1 SAR** ([[sentinel_1_sar]]) provides cloud-independent imagery:

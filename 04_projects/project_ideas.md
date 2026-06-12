@@ -22,6 +22,8 @@ Brainstorming general ideas for research projects
 > - How do temperature anomaly and cumulative VPD deficit jointly determine the spatial pattern and severity of forest die-back across Central European forest landscapes?
 > - Can near-real-time Sentinel-2 SITS-based anomaly detection provide operationally useful early warning of acute stress events prior to ground-detectable mortality?
 
+### Methods
+- Bayesian inference for stress likelihood
 
 # Dying trees in Tyrolean forests: climatic triggers and spatio-temporal die-back dynamics
 

@@ -161,3 +161,5 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[01_notes/stival_2026_pixel_contrastive]] | Stival et al. 2026 — PIMC: recurrence plots of pixel VI time series as contrastive modality with RSI; 2D beats 1D for forecasting; pixel-wise SSL for SITS (preprint) |
 | [[01_notes/li_2026_contrastive]] | Li et al. 2026 — HSSCL: hierarchical multi-level contrastive + GNN geometric consistency for SAR-optical matching; F1 85.8% claimed (+20% vs prior); treat with caution |
 | [[01_notes/li_2023_land_cover_map]] | Li et al. 2023 — SinoLC-1: first 1 m national land-cover map of China via weakly+self-supervised L2HNet; OA=73.6%; no manual annotation; resolution mismatch resolved via L2H loss |
+| [[01_notes/zhang_2026_statespacemodel]] | Zhang et al. 2026 — TSSMamba: dual-branch state space model (Mamba) for multi-temporal Sentinel-2 cloud removal; SOTA PSNR/SSIM/CC/SAM on 3 benchmarks with <1M params |
+| [[01_notes/senf_2021_disturbance]] | Senf & Seidl 2021 — First continental map of Europe's forest disturbance regimes (1986–2016, 35 countries); frequency ↑ in 74%, severity ↓ in 88% of forest area; predecessor to EFDA |

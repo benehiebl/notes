@@ -12,9 +12,9 @@ tags:
 
 **Summary**: The Transformer architecture — based entirely on self-attention mechanisms — has become the dominant approach for sequence modelling, with growing applications to satellite image time series (SITS) classification and forecasting in remote sensing.
 
-**Sources**: [[vaswani_2023_attention_is_all]], [[wen_2023_transformers_time_series]], [[hiebl_2025_pretraining]], [[hiebl_2026_alphaearth]], [[yuan_2025_sits_augmentation]], [[zerveas_2020_framework_transformer]], [[yuan_2022_sitsformer]], [[yuan_2023_pretraining]], [[tseng_2024_presto]], [[tan_2021_tser]]
+**Sources**: [[vaswani_2023_attention_is_all]], [[wen_2023_transformers_time_series]], [[hiebl_2025_pretraining]], [[hiebl_2026_alphaearth]], [[yuan_2025_sits_augmentation]], [[zerveas_2020_framework_transformer]], [[yuan_2022_sitsformer]], [[yuan_2023_pretraining]], [[tseng_2024_presto]], [[tan_2021_tser]], [[zhang_2026_statespacemodel]]
 
-**Last updated**: 2026-05-14
+**Last updated**: 2026-06-12
 
 **Note**: For SITS-specific pretrained Transformer lineage (TST, SITS-BERT, SITS-Former, PRESTO), see the dedicated concept page [[transformer_sits]].
 
@@ -63,6 +63,14 @@ Standard Transformer requires modifications for time series (source: [[wen_2023_
 ### Architecture-Level Modifications
 - **Decomposition:** Explicit seasonal-trend decomposition before attention (Autoformer); particularly useful for vegetation SITS with strong annual phenological cycles
 - **Patch-based tokenisation (PatchTST):** Divides time series into fixed-length patches treated as tokens; reduces effective sequence length and introduces local temporal context
+
+## State Space Models (Mamba) as an Alternative to Attention
+
+**Structured State Space Models (SSMs)**, in particular the Mamba architecture, are an emerging alternative to self-attention for long-sequence modelling:
+- Linear-complexity sequence modelling (vs. O(n²) for self-attention) via selective state updates
+- Vision Mamba extensions (bidirectional scanning, cross-scan modules) adapt SSMs to 2D spatial data
+- In remote sensing, applied to multi-temporal **cloud removal**: TSSMamba uses a dual-branch SSM design (separate temporal-spectral and temporal-spatial branches + fusion module) to reconstruct cloud-free Sentinel-2 imagery from 3-date sequences, achieving SOTA accuracy with <1M parameters (source: [[zhang_2026_statespacemodel]]; see also [[cloud_detection]])
+- Not yet applied to SITS classification/regression tasks in this wiki's literature, but the linear-complexity/long-sequence advantages are directly relevant to dense SITS where Transformer attention cost scales poorly
 
 ## SITS-Specific Challenges and Solutions
 

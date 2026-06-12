@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Forest disturbances are discrete, punctuated events that cause mortality of trees, alter forest structure, and reset successional trajectories — they are among the most climate-sensitive processes in forest ecosystems and are expected to intensify under climate change.
 
-**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]], [[thom_2026_disturbance_suitability]], [[wegler_2026_canopy_cover_loss]], [[torres_2021_forest_health_remote_sensing]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]], [[schuldt_2020_drought_forest]], [[zhao_2022_forest_harvesting]], [[grantham_2020_anthropogenic_modification]], [[soto_2025_disturbance]], [[wessely_2023_tree_species_bottleneck]]
+**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]], [[thom_2026_disturbance_suitability]], [[wegler_2026_canopy_cover_loss]], [[torres_2021_forest_health_remote_sensing]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]], [[schuldt_2020_drought_forest]], [[zhao_2022_forest_harvesting]], [[grantham_2020_anthropogenic_modification]], [[soto_2025_disturbance]], [[senf_2021_disturbance]], [[wessely_2023_tree_species_bottleneck]]
 
-**Last updated**: 2026-05-31
+**Last updated**: 2026-06-12
 
 ---
 
@@ -66,12 +66,22 @@ Forest disturbances are detectable at continental scale from Landsat time series
 - Used as calibration targets for process-based and AI disturbance models (source: [[grünig_2026_climate_change_disturbances_forest]])
 - Remote sensing captures high-severity (stand-replacing) disturbances well; low-severity disturbances are often below detection thresholds
 
+### Senf & Seidl 2021: First Continental Disturbance Regime Map
+
+The first spatially/temporally consistent, continental disturbance map for Europe (source: [[senf_2021_disturbance]]):
+- **Coverage:** 35 countries, 210 million ha forest, 1986–2016, 30 m resolution, >30,000 Landsat 4/5/7/8 images via Google Earth Engine
+- **Method:** LandTrendr time-series segmentation on SWIR1/SWIR2 + NBR/Tasseled-Cap-Wetness → greatest-change-segment metrics → Random Forest classification (no-forest/undisturbed/disturbed), calibrated on ~61,000 manually-interpreted reference pixels
+- **Severity proxy:** continuous 0–1 measure (probability of stand-replacing disturbance) from logistic regression on spectral change magnitude
+- **Accuracy:** overall 92.5%; commission 14.6%, omission 32.8% (mostly low-severity events); disturbance year MAE = 3 yr
+- **Results:** 17% of European forest area disturbed (39M ha, 36M patches, mean 1.09 ha); disturbance **frequency** increased in 74% of forest area while **severity** decreased in 88% — frequency changes explain 71% of the trend in disturbance rate vs. 24% for size changes
+- **Key limitation (addressed by EFDA below):** each pixel reduced to its single greatest-change segment — multiple sequential disturbances on the same pixel within the 30-yr window are not captured; no agent attribution
+
 ### European Forest Disturbance Atlas (EFDA)
 
-The most comprehensive Landsat-based disturbance product for continental Europe (source: [[soto_2025_disturbance]]):
+The most comprehensive Landsat-based disturbance product for continental Europe, extending [[senf_2021_disturbance]] (source: [[soto_2025_disturbance]]):
 - **Coverage:** 35 European countries, 1985–2023, 30 m resolution, annually updatable
 - **Method:** Random Forest classifier on spectral change features (NDVI, NBR, tasseled-cap components, Disturbance Index) between target year (t₀) and prior year (t₋₁); SMOTE balancing; best-available-pixel Landsat composites from FORCE pipeline
-- **Key advantage over prior products:** captures **multiple disturbance events per pixel** — predecessor (Senf & Seidl 2021) was limited to the single greatest-change event
+- **Key advantage over prior products:** captures **multiple disturbance events per pixel** — predecessor [[senf_2021_disturbance]] was limited to the single greatest-change event
 - **Agent attribution:** patch-level RF classifying wind/bark beetle, fire, and harvest; wind and bark beetle merged (disturbance complex, sparse pre-2017 bark beetle reference data)
 - **Accuracy:** F1 = 0.89 overall (disturbed class: commission 17.3%, omission 22.5%); errors decrease after 2000 (commission drops to 10.6%)
 - **Disturbance totals:** 439,000 km² disturbed (22% of EU forest); harvest dominant (79.2%), wind/bark beetle (12%), fire (8.8%)

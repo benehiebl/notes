@@ -724,3 +724,15 @@ Append-only record of all wiki operations.
 - `02_concepts/transfer_learning_remote_sensing.md` — added "Pseudo-labeling for Mixed-Stand Extension" section (Tan 2025); added to Sources
 - `02_concepts/tree_species_mapping.md` — expanded Mixed Forest section with DL pseudo-labeling paragraph (Tan 2025); added to Sources
 - `index.md` — added 3 new notes
+
+## 2026-06-12 — Ingest: zhang_2026_statespacemodel, senf_2021_disturbance
+
+**Created**:
+- `01_notes/zhang_2026_statespacemodel.md` — Zhang et al. 2026 (Int. J. Appl. Earth Obs. Geoinf.); TSSMamba, a dual-branch state space model (Mamba) for multi-temporal Sentinel-2 cloud removal; SATM (temporal-spectral) + SPTM (temporal-spatial) branches + TSSF fusion; SOTA PSNR/SSIM/CC/SAM on STGAN, Sen2_MTC, SEN12MS-CR-TS with <1M params
+- `01_notes/senf_2021_disturbance.md` — Senf & Seidl 2021 (Nat. Sustain.); first continental, 30-yr (1986-2016), 30m forest disturbance regime map for Europe (35 countries, LandTrendr + RF, OA 92.5%); 17% forest area disturbed; disturbance rate increase driven by frequency (74% of area, 71% of variance) not size; severity decreased in 88% of area
+
+**Updated**:
+- `02_concepts/cloud_detection.md` — added "Multi-Temporal Cloud Removal (Image Reconstruction)" subsection (TSSMamba)
+- `02_concepts/transformers_time_series.md` — added "State Space Models (Mamba) as an Alternative to Attention" section; added to Sources
+- `02_concepts/forest_disturbances.md` — added "Senf & Seidl 2021" subsection as predecessor to EFDA; linked from EFDA section; added to Sources
+- `index.md` — added 2 new notes
