@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_klima_tirol.md",
+                "file": "04_projects/01_klima_tirol.md",
                 "mode": "source",
                 "source": false
               },
@@ -198,6 +198,7 @@
   },
   "active": "0f9958368c7d01ef",
   "lastOpenFiles": [
+    "04_projects/lu338266au8bf.tmp",
     "01_klima_tirol.md",
     "03_papers/00_ideas.md",
     "07_forest_stress_trajectory.md",
@@ -233,7 +234,6 @@
     "03_papers/03_tree_species_cover_landsat.md",
     "03_papers/05_landsat_timeseries_mapping.md",
     "02_concepts/tree_species_mapping.md",
-    "02_concepts/transformers_time_series.md",
     "04_projects/Untitled.canvas"
   ]
 }
