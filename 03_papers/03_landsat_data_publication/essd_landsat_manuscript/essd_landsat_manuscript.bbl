@@ -1,0 +1,34 @@
+\begin{thebibliography}{3}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{https://doi.org/\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Hiebl et~al.(2025)Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari,
+  Dorigo, Zerbe, and Rutzinger}]{hiebl_advancing_2025}
+Hiebl, B., Alessi, N., Calvia, G., Bricca, A., Bonari, G., Zangari, G., Dorigo,
+  W., Zerbe, S., and Rutzinger, M.: Advancing forest mapping: {Pretraining}
+  strategies and deep-ensemble based uncertainty for predicting evergreen
+  broad-leaved cover from {Sentinel}-2 time series, International Journal of
+  Applied Earth Observation and Geoinformation, 142, 104\,734,
+  \doi{10.1016/j.jag.2025.104734}, 2025.
+
+\bibitem[{Sylvain et~al.(2024)Sylvain, Drolet, Thiffault, and
+  Anctil}]{sylvain_high-resolution_2024}
+Sylvain, J.-D., Drolet, G., Thiffault, {\'E}., and Anctil, F.: High-resolution
+  mapping of tree species and associated uncertainty by combining aerial remote
+  sensing data and convolutional neural networks ensemble, International
+  Journal of Applied Earth Observation and Geoinformation, 131, 103\,960,
+  \doi{10.1016/j.jag.2024.103960}, 2024.
+
+\bibitem[{Yuan et~al.(2025)Yuan, Lin, Xin, Zhou, and Liu}]{yuan_empirical_2025}
+Yuan, Y., Lin, L., Xin, Q., Zhou, Z.-G., and Liu, Q.: An {Empirical} {Study} on
+  {Data} {Augmentation} for {Pixelwise} {Satellite} {Image} {Time}-{Series}
+  {Classification} and {Cross}-{Year} {Adaptation}, IEEE Journal of Selected
+  Topics in Applied Earth Observations and Remote Sensing, 18, 5172--5188,
+  \doi{10.1109/JSTARS.2025.3527017}, 2025.
+
+\end{thebibliography}
