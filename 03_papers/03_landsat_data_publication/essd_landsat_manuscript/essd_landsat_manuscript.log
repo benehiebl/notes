@@ -1,0 +1,72 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.2.8)  9 JUL 2026 18:12
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/bene/Desktop/repos/notes/03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.tex
+(/home/bene/Desktop/repos/notes/03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21> (./copernicus.cls
+Document Class: copernicus 2026/02/03 10.1.31 Copernicus papers
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count185
+) (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+Additional configuration file copernicus.cfg used
+(./copernicus.cfg) (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/fleqn.clo
+File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
+\mathindent=\skip47
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen138
+)
+\bleed=\dimen139
+\longtwo@top=\skip50
+\longtwo@bottom=\skip51
+\longtwo@box=\box50
+
+
+! LaTeX Error: File `ulem.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+./copernicus.cls:1325: Emergency stop.
+<read *> 
+         
+l.1325 \RequirePackage
+                      [T5,T3,T1]{fontenc}^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 1157 strings out of 480171
+ 13998 string characters out of 5894490
+ 327623 words of memory out of 5000000
+ 19182 multiletter control sequences out of 15000+600000
+ 469259 words of font info for 28 fonts, out of 8000000 for 9000
+ 59 hyphenation exceptions out of 8191
+ 51i,0n,64p,431b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
+./copernicus.cls:1325:  ==> Fatal error occurred, no output PDF file produced!
