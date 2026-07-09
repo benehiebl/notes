@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Todos.md",
+                "file": "01_notes/grünig_2026_climate_change_disturbances_forest.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Todos"
+              "title": "grünig_2026_climate_change_disturbances_forest"
             }
           }
         ],
@@ -198,12 +198,13 @@
   },
   "active": "0f9958368c7d01ef",
   "lastOpenFiles": [
+    "01_notes/senf_2021_disturbance.md",
+    "Todos.md",
     "04_projects/01_klima_tirol.md",
     "04_projects/lu338266au8bf.tmp",
     "01_klima_tirol.md",
     "03_papers/00_ideas.md",
     "07_forest_stress_trajectory.md",
-    "Todos.md",
     "03_papers/06_spatial_autocorrelation.md",
     "log.md.tmp.57601.cca2ebc3136b",
     "index.md.tmp.57601.086c5c38c50a",
@@ -233,7 +234,6 @@
     "templates/paper_template.md",
     "03_papers/03_tree_species_cover_landsat.md",
     "03_papers/05_landsat_timeseries_mapping.md",
-    "02_concepts/tree_species_mapping.md",
     "04_projects/Untitled.canvas"
   ]
 }
