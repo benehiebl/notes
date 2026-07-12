@@ -196,6 +196,8 @@
   },
   "active": "0f9958368c7d01ef",
   "lastOpenFiles": [
+    "01_notes/sentinel_2.md",
+    "03_papers/pflugmacher_2019_lulc_landsat.md",
     "03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.synctex(busy)",
     "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1381236.fls",
     "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1381159.fls",
@@ -206,7 +208,6 @@
     "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1378072.fls",
     "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1375913.fls",
     "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1375820.fls",
-    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.blg",
     "01_notes/mattioli_2025_carta_forestale.md",
     "01_notes/ball_2026_foundation_models.md",
     "01_notes/grünig_2026_climate_change_disturbances_forest.md",
@@ -231,7 +232,6 @@
     "02_concepts/european_ground_truth_databases.md",
     "01_notes/sabatini_2021_splot.md",
     "01_notes/calvia_2022_pines.md",
-    "03_papers/03_landsat_data_publication.md",
     "04_projects/Untitled.canvas"
   ]
 }

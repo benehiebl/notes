@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex essd_landsat_manuscript"] 1783629934 "essd_landsat_manuscript.aux" "essd_landsat_manuscript.bbl" "essd_landsat_manuscript" 1783629936
+["bibtex essd_landsat_manuscript"] 1783699517 "essd_landsat_manuscript.aux" "essd_landsat_manuscript.bbl" "essd_landsat_manuscript" 1783787671
   "./copernicus.bst" 1742894642 37856 9e987008ca65a770fa9b383cd7555108 ""
-  "essd_landsat_manuscript.aux" 1783629935 8978 628044aa06ae194070cf82ab2f9552da "pdflatex"
-  "essd_landsat_manuscript.bib" 1783629161 147763 92437fd51edc7486f918e29be365dedb ""
+  "essd_landsat_manuscript.aux" 1783787670 10207 8942f1daf90fdffa93042ae5f3ddbaa7 "pdflatex"
+  "essd_landsat_manuscript.bib" 1783698777 156657 3953effe6938ff70387fe34cdcf1489f ""
   (generated)
   "essd_landsat_manuscript.bbl"
   "essd_landsat_manuscript.blg"
-["pdflatex"] 1783629934 "/home/bene/Desktop/repos/notes/03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.tex" "essd_landsat_manuscript.pdf" "essd_landsat_manuscript" 1783629936
+["pdflatex"] 1783787669 "/home/bene/Desktop/repos/notes/03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.tex" "essd_landsat_manuscript.pdf" "essd_landsat_manuscript" 1783787671
   "/etc/texmf/web2c/texmf.cnf" 1699174499 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/bene/Desktop/repos/notes/03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.tex" 1783629931 43629 21c4553fe47cef3c0a914eeb8d21652d ""
+  "/home/bene/Desktop/repos/notes/03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.tex" 1783787669 44294 2e1ec26e7ea9b8be3ef334189edc5797 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm" 1136768653 4712 9ef4d7d106579d4b136e1529e1a4533c ""
@@ -24,6 +24,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm" 1136768653 3584 adb004a0c8e7c46ee66cad73671f37b4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1246382020 996 a18840b13b499c08ac2de96a99eda4bc ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
@@ -35,14 +36,17 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm" 1136768653 1524 d89e2d087a9828407a196f428428ef4a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1136768653 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm" 1136768653 1508 efecb4a315fe0975509670a272d75ef5 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss10.tfm" 1136768653 1316 b636689f1933f24d1294acdf6041daaa ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm" 1136768653 1116 25a7bf822c58caf309a702ef79f4afbb ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136768653 520 4889cce2180234b97cad636b6039c722 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -233,9 +237,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1783619991 2800200 16d0a1c1e16602b254bf0e14469722cb ""
   "copernicus.cfg" 1769069056 56189 9da2d1cf4b990bc03fc3292a704cc108 ""
   "copernicus.cls" 1771481436 120493 2471b92d8a7cf9699dffcd5b01ba606e ""
-  "essd_landsat_manuscript.aux" 1783629935 8978 628044aa06ae194070cf82ab2f9552da "pdflatex"
-  "essd_landsat_manuscript.bbl" 1783629934 13742 1e820a40d894316b7c6a42a53a5bb0de "bibtex essd_landsat_manuscript"
-  "essd_landsat_manuscript.tex" 1783629931 43629 21c4553fe47cef3c0a914eeb8d21652d ""
+  "essd_landsat_manuscript.aux" 1783787670 10207 8942f1daf90fdffa93042ae5f3ddbaa7 "pdflatex"
+  "essd_landsat_manuscript.bbl" 1783699517 17251 3bdeb5d06524cfe36326ccd68db9d209 "bibtex essd_landsat_manuscript"
+  "essd_landsat_manuscript.tex" 1783787669 44294 2e1ec26e7ea9b8be3ef334189edc5797 ""
   (generated)
   "essd_landsat_manuscript.aux"
   "essd_landsat_manuscript.log"

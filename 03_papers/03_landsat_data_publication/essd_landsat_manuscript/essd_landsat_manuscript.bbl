@@ -1,4 +1,4 @@
-\begin{thebibliography}{29}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -40,11 +40,24 @@ Brown, C.~F., Kazmierski, M.~R., Pasquarella, V.~J., Rucklidge, W.~J.,
   sparse label data, \doi{10.48550/arXiv.2507.22291}, arXiv:2507.22291 [cs],
   2025.
 
+\bibitem[{Chelli et~al.(2017)Chelli, Wellstein, Campetella, Canullo, Tonin,
+  Zerbe, and Gerdol}]{chelli_climate_2017}
+Chelli, S., Wellstein, C., Campetella, G., Canullo, R., Tonin, R., Zerbe, S.,
+  and Gerdol, R.: Climate change response of vegetation across climatic zones
+  in {Italy}, Climate Research, 71, 249--262, \doi{10.3354/cr01443}, 2017.
+
 \bibitem[{Chen et~al.(2020)Chen, Kornblith, Norouzi, and
   Hinton}]{chen_simple_2020}
 Chen, T., Kornblith, S., Norouzi, M., and Hinton, G.: A {Simple} {Framework}
   for {Contrastive} {Learning} of {Visual} {Representations},
   \doi{10.48550/arXiv.2002.05709}, arXiv:2002.05709 [cs], 2020.
+
+\bibitem[{Conedera et~al.(2018)Conedera, Wohlgemuth, Tanadini, and
+  Pezzatti}]{conedera_drivers_2018}
+Conedera, M., Wohlgemuth, T., Tanadini, M., and Pezzatti, G.~B.: Drivers of
+  broadleaved evergreen species spread into deciduous forests in the southern
+  {Swiss} {Alps}, Reg Environ Change, 18, 425--436,
+  \doi{10.1007/s10113-017-1212-7}, 2018.
 
 \bibitem[{Feng et~al.(2026)Feng, Atzberger, Jaffer, Knezevic, Sormunen, Young,
   Lisaius, Immitzer, Jackson, Ball, Coomes, Madhavapeddy, Blake, and
@@ -71,11 +84,42 @@ Grabska-Szwagrzyk, E., Tiede, D., Sudmanns, M., and Kozak, J.: Map of forest
   tree species for {Poland} based on {Sentinel}-2 data, Earth System Science
   Data, 16, 2877--2891, \doi{10.5194/essd-16-2877-2024}, 2024.
 
+\bibitem[{Gr{\"u}nig et~al.(2026)Gr{\"u}nig, Rammer, Senf, Albrich, Andr{\'e},
+  Augustynczik, Baumann, Bohn, Bouwman, Bugmann, Collalti, Cristal, Dalmonech,
+  De~Coligny, Dobor, Dollinger, Espelta, Forrester, Garcia-Gonzalo,
+  Gonz{\'a}lez-Olabarria, Hiltner, Hl{\'a}sny, Honkaniemi, Huber, Jonard,
+  J{\"o}nsson, Kunstler, Lagergren, Lindner, Mina, Moos, Morin, Muys, Nabuurs,
+  Nieberg, Patacca, Peltoniemi, Reyer, Schelhaas, Storms, Thom, To{\"i}go, and
+  Seidl}]{grunig_climate_2026}
+Gr{\"u}nig, M., Rammer, W., Senf, C., Albrich, K., Andr{\'e}, F., Augustynczik,
+  A. L.~D., Baumann, M., Bohn, F.~J., Bouwman, M., Bugmann, H., Collalti, A.,
+  Cristal, I., Dalmonech, D., De~Coligny, F., Dobor, L., Dollinger, C.,
+  Espelta, J.~M., Forrester, D.~I., Garcia-Gonzalo, J., Gonz{\'a}lez-Olabarria,
+  J.~R., Hiltner, U., Hl{\'a}sny, T., Honkaniemi, J., Huber, N., Jonard, M.,
+  J{\"o}nsson, A.~M., Kunstler, G., Lagergren, F., Lindner, M., Mina, M., Moos,
+  C., Morin, X., Muys, B., Nabuurs, G.-J., Nieberg, M., Patacca, M.,
+  Peltoniemi, M., Reyer, C. P.~O., Schelhaas, M.-J., Storms, I., Thom, D.,
+  To{\"i}go, M., and Seidl, R.: Climate change will increase forest
+  disturbances in {Europe} throughout the 21st century, Science, 391, eadx6329,
+  \doi{10.1126/science.adx6329}, 2026.
+
 \bibitem[{Hemmerling et~al.(2021)Hemmerling, Pflugmacher, and
   Hostert}]{hemmerling_mapping_2021}
 Hemmerling, J., Pflugmacher, D., and Hostert, P.: Mapping temperate forest tree
   species using dense {Sentinel}-2 time series, Remote Sensing of Environment,
   267, 112\,743, \doi{10.1016/j.rse.2021.112743}, 2021.
+
+\bibitem[{Hendrycks and Gimpel(2016)}]{hendrycks_gaussian_2016}
+Hendrycks, D. and Gimpel, K.: Gaussian {Error} {Linear} {Units} ({GELUs}),
+  \urlprefix\url{https://arxiv.org/abs/1606.08415v5}, 2016.
+
+\bibitem[{Herraiz et~al.(2025)Herraiz, Salazar-Zarzosa, Acosta-Mu{\~n}oz,
+  Hern{\'a}ndez-Clemente, and Villar}]{herraiz_aridity-induced_2025}
+Herraiz, A.~D., Salazar-Zarzosa, P., Acosta-Mu{\~n}oz, C.,
+  Hern{\'a}ndez-Clemente, R., and Villar, R.: Aridity-induced phenological
+  shifts and greening trends in {Mediterranean} forest species: {Insights} from
+  28 years of {Landsat} data in southern {Spain}, Ecological Indicators, 171,
+  113\,115, \doi{10.1016/j.ecolind.2025.113115}, 2025.
 
 \bibitem[{Hiebl et~al.(2025)Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari,
   Dorigo, Zerbe, and Rutzinger}]{hiebl_advancing_2025}
@@ -208,6 +252,18 @@ Wang, M., Zheng, Y., Huang, C., Meng, R., Pang, Y., Jia, W., Zhou, J., Huang,
   spectral-temporal features for mapping tree species of northern plantation
   forests in {Heilongjiang} {Province}, {China}, Forest Ecosystems, 9,
   100\,032, \doi{10.1016/j.fecs.2022.100032}, 2022.
+
+\bibitem[{Wulder et~al.(2022)Wulder, Roy, Radeloff, Loveland, Anderson,
+  Johnson, Healey, Zhu, Scambos, Pahlevan, Hansen, Gorelick, Crawford, Masek,
+  Hermosilla, White, Belward, Schaaf, Woodcock, Huntington, Lymburner, Hostert,
+  Gao, Lyapustin, Pekel, Strobl, and Cook}]{wulder_fifty_2022}
+Wulder, M.~A., Roy, D.~P., Radeloff, V.~C., Loveland, T.~R., Anderson, M.~C.,
+  Johnson, D.~M., Healey, S., Zhu, Z., Scambos, T.~A., Pahlevan, N., Hansen,
+  M., Gorelick, N., Crawford, C.~J., Masek, J.~G., Hermosilla, T., White,
+  J.~C., Belward, A.~S., Schaaf, C., Woodcock, C.~E., Huntington, J.~L.,
+  Lymburner, L., Hostert, P., Gao, F., Lyapustin, A., Pekel, J.-F., Strobl, P.,
+  and Cook, B.~D.: Fifty years of {Landsat} science and impacts, Remote Sensing
+  of Environment, 280, 113\,195, \doi{10.1016/j.rse.2022.113195}, 2022.
 
 \bibitem[{Yuan et~al.(2022)Yuan, Lin, Liu, Hang, and
   Zhou}]{yuan_sits-former_2022}
