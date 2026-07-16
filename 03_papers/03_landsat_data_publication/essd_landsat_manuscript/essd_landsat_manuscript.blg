@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: essd_landsat_manuscript.aux
+The style file: copernicus.bst
+Database file #1: essd_landsat_manuscript.bib
+Warning--empty journal in yuan_yuan_self-supervised_2020
+You've used 37 entries,
+            2932 wiz_defined-function locations,
+            1306 strings with 24924 characters,
+and the built_in function-call counts, 45801 in all, are:
+= -- 4278
+> -- 3073
+< -- 4
++ -- 1187
+- -- 988
+* -- 3517
+:= -- 5237
+add.period$ -- 37
+call.type$ -- 37
+change.case$ -- 412
+chr.to.int$ -- 38
+cite$ -- 112
+duplicate$ -- 3754
+empty$ -- 2022
+format.name$ -- 1104
+if$ -- 8849
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 577
+newline$ -- 120
+num.names$ -- 149
+pop$ -- 1951
+preamble$ -- 1
+purify$ -- 403
+quote$ -- 0
+skip$ -- 2350
+stack$ -- 0
+substring$ -- 1418
+swap$ -- 3223
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 330
+warning$ -- 1
+while$ -- 178
+width$ -- 0
+write$ -- 448
+(There was 1 warning)

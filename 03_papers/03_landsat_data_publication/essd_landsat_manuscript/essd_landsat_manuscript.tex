@@ -1,0 +1,499 @@
+%% Copernicus Publications Manuscript Preparation Template for LaTeX Submissions
+%% ---------------------------------
+%% This template should be used for copernicus.cls
+%% The class file and some style files are bundled in the Copernicus Latex Package, which can be downloaded from the different journal webpages.
+%% For further assistance please contact Copernicus Publications at: production@copernicus.org
+%% https://publications.copernicus.org/for_authors/manuscript_preparation.html
+
+
+%% Please use the following documentclass and journal abbreviations for preprints and final revised papers.
+
+%% 2-column papers and preprints
+%%\documentclass[journal abbreviation, manuscript]{copernicus}
+\documentclass[essd]{copernicus}
+%%\documentclass[essd, manuscript]{copernicus}
+
+
+
+%% Journal abbreviations (please use the same for preprints and final revised papers)
+
+
+% Advances in Geosciences (adgeo)
+% Advances in Radio Science (ars)
+% Advances in Science and Research (asr)
+% Advances in Statistical Climatology, Meteorology and Oceanography (ascmo)
+% Aerosol Research (ar)
+% Annales Geophysicae (angeo)
+% Archives Animal Breeding (aab)
+% Atmospheric Chemistry and Physics (acp)
+% Atmospheric Measurement Techniques (amt)
+% Biogeosciences (bg)
+% Climate of the Past (cp)
+% DEUQUA Special Publications (deuquasp)
+% Earth Surface Dynamics (esurf)
+% Earth System Dynamics (esd)
+% Earth System Science Data (essd)
+% E&G Quaternary Science Journal (egqsj)
+% EGUsphere (egusphere) | This is only for EGUsphere preprints submitted without relation to an EGU journal.
+% Earth Observation (eo)
+% European Journal of Mineralogy (ejm)
+% Geochronology (gchron)
+% Geographica Helvetica (gh)
+% Geoscience Communication (gc)
+% Geoscientific Instrumentation, Methods and Data Systems (gi)
+% Geoscientific Model Development (gmd)
+% History of Geo- and Space Sciences (hgss)
+% Hydrology and Earth System Sciences (hess)
+% Journal of Bone and Joint Infection (jbji)
+% Journal of Environmentally Compatible Air Transport System (jecats)
+% Journal of Micropalaeontology (jm)
+% Journal of Sensors and Sensor Systems (jsss)
+% Magnetic Resonance (mr)
+% Mechanical Sciences (ms)
+% Natural Hazards and Earth System Sciences (nhess)
+% Nonlinear Processes in Geophysics (npg)
+% Ocean Science (os)
+% Polarforschung - Journal of the German Society for Polar Research (polf)
+% Proceedings of the International Association of Hydrological Sciences (piahs)
+% Proceedings of the International Ocean Drilling Programme (piodp)
+% Safety of Nuclear Waste Disposal (sand)
+% Scientific Drilling (sd)
+% SOIL (soil)
+% Solid Earth (se)
+% State of the Planet (sp)
+% The Cryosphere (tc)
+% Weather and Climate Dynamics (wcd)
+% Web Ecology (we)
+% Wind Energy Science (wes)
+
+
+%% \usepackage commands included in the copernicus.cls:
+%\usepackage[german, english]{babel}
+%\usepackage{tabularx}
+%\usepackage{cancel}
+%\usepackage{multirow}
+%\usepackage{supertabular}
+%\usepackage{algorithmic}
+%\usepackage{algorithm}
+%\usepackage{amsthm}
+%\usepackage{float}
+%\usepackage{subfig}
+%\usepackage{rotating}
+
+
+\begin{document}
+
+\title{A 40-year annual time series of forest type and leaf type cover for Italy derived from Landsat using deep learning}
+
+
+% \Author[affil]{given_name}{surname}
+
+\Author[1][Benedikt.Hiebl@uibk.ac.at]{Benedikt}{Hiebl} %% correspondence author
+\Author[2]{Nicola}{Alessi}
+\Author[3]{Gianmaria}{Bonari}
+\Author[4]{Giacomo}{Calvia}
+\Author[5]{Alessandro}{Bricca}
+\Author[4]{Giulio}{Zangari}
+\Author[6,7]{Stefan}{Zerbe}
+\Author[1]{Martin}{Rutzinger}
+
+\affil[1]{Department of Geography, University of Innsbruck, Innsbruck, Austria}
+\affil[2]{Italian National Institute for Environmental Protection and Research ISPRA, Rome, Italy}
+\affil[3]{Department of Life Sciences, University of Siena, Italy}
+\affil[4]{Faculty of Agricultural, Environmental and Food Sciences, Free University of Bozen-Bolzano, Italy}
+\affil[5]{School of Biosciences and Veterinary Medicine, University of Camerino, Italy}
+\affil[6]{University of Applied Sciences and Arts (HAWK), Faculty of Resource Management, Göttingen, Germany}
+\affil[7]{University of Hildesheim, Institute of Geography, Hildesheim, Germany}
+
+%% The [] brackets identify the author with the corresponding affiliation. 1, 2, 3, etc. should be inserted.
+
+%% If an author is deceased, please add \deceased[$Deceased date if applicable$]{$Author number$} (e.g. \deceased[13 November 2015]{2}) at the end of the affiliations. The author number depends on the placement of the author in the author list, e.g. the third author has number 3.
+
+
+%% If authors contributed equally, please add \equalcontrib{$Author numbers$} (e.g. \equalcontrib{1,3}) at the end of the affiliations. The author number depends on the placement of the author in the author list, e.g. the third author has number 3.
+
+
+
+
+\runningtitle{TEXT}
+
+\runningauthor{TEXT}
+
+
+
+
+
+\received{}
+\pubdiscuss{} %% only important for two-stage journals
+\revised{}
+\accepted{}
+\published{}
+
+%% These dates will be inserted by Copernicus Publications during the typesetting process.
+
+
+\firstpage{1}
+
+\maketitle
+
+
+
+\begin{abstract}
+Consistent long-term maps of forest functional type and dominant tree species cover at high spatial resolution are currently unavailable for Italy. The study presents annual 30 m resolution maps of continous evergeen broad-leaved, deciduous, and coniferous leaf type cover fractions and dominant tree species class probabilities for all forested pixels in Italy spanning 1987–2025, derived from the Landsat Collection-2 Level-2 archive (Landsat 4/5/7/8/9). Two Time Series Transformer models are trained via a three-stage workflow combining contrastive pretraining with supervised fine-tuning on Italian forest plot observations, forest inventories, and a synthetically generated training dataset to predict both tasks. Pixel-level uncertainty estimates are provided as the standard deviation of a five-seed deep ensemble for both models. A three-year observation pooling strategy is applied to increase cloud-free observation density and mitigate inter-annual variability. Evaluation of the time series maps are based on hold-out areas and a comparison with historical orthophotos. The 39-year time series enables historical reconstruction of forest composition dynamics and long-term ecological change detection at national scale and relevant time scales for climate-driven species range shifts.
+\end{abstract}
+
+
+\copyrightstatement{TEXT} %% This section is optional and can be used for copyright transfers.
+
+%% \introduction[modified heading if necessary]
+\section{Introduction}  
+
+\textbf{Landsat for long term forest monitoring:}
+With nearly 40 years of continuous acquisitions, the Landsat archive constitutes the longest consistent Earth observation record available for global vegetation monitoring \citep{wulder_fifty_2022}. Its multi-decadal continuity makes it uniquely suited for change detection, and hindcasting of environmental variables including forest habitat characteristics \cite{bell_hindcasting_2024,turubanova_tree_2023}. The archive has been applied to discriminate forest types and quantify forest variables such as canopy height at all scales from regional to continental scales \citep{pflugmacher_mapping_2019,turubanova_tree_2023}. In monitoring long-term changes and disturbances in forest vegetation under climate change, the Landsat afchive provides a valuable modelling base \citep{viana-soto_european_2025, grunig_climate_2026}. The relatively slow change and succession dynamics of forest vegetation, which is unfolding over decades, make this multi-decadal temporal availability particularly valuable. Shorter observation windows would fail to capture natural stand-level transitions such as species shifts or forest densification, which happen gradually over long time periods \citep{tong_reforestation_2023, midolo_sixty_2026}. The medium spectral, spatial, and temporal resolution of Landsat — 6 reflectance bands, 30 m ground sampling distance, and an 8–16 day revisit time — is adequate for capturing annual phenological dynamics at stand level, which demonstrated to be critical for distinguishing tree species and functional leaf types \citep{kollert_exploring_2021,hemmerling_mapping_2021,wang_assessing_2022}. 
+
+\textbf{Challenges:}
+Despite these strengths, the use of multi-decadal Landsat data for vegetation mapping raises several methodological challenges. The number of usable cloud-free observations per pixel has increased substantially since the early archive period, driven by the successive addition of new Landsat satellites, the adoption of the Landsat open data policy in 2008, and improved cloud detection algorithms. This systematic increase in observation density has been shown to cause spurious apparent trends in annual maximum NDVI (NDVImax), with up to 50\% of observed Landsat-based greening in alpine environments attributable to observational sampling bias rather than true vegetation change \citep{bayle_landsat-based_2024}. A second challenge arises from the failure of the Scan Line Corrector (SLC-off) on Landsat 7 ETM+, which introduces systematic data gaps. Finally, spectral radiometric differences between sensors — arising from different detectors, band widths, and calibration procedures across Landsat 4, 5, 7, 8, and 9 — introduce inter-sensor discontinuities that may produce spurious apparent changes in modelled biophysical variables across the 40-year record if not explicitly addressed.
+
+\textbf{ML/DL for dominant tree species and leaf type cover mapping:}
+Multitemporal satellite data consistently outperform single-date or mosaic-based approaches for tree species and leaf type mapping. Phenologically informative seasons — particularly leaf-off periods and autumn senescence — contribute disproportionately to species discrimination \citep{kollert_exploring_2021,tan_leveraging_2025}. When sufficient temporal coverage is available, dense time series exploiting the full phenological cycle can outperform the inclusion of additional environmental predictor variables such as topography or climate indices \citep{hemmerling_mapping_2021}. These findings highlight temporal resolution and coverage as primary levers for improving species-level classification accuracy.
+
+Deep learning, and in particular Transformer-based architectures, provides a natural framework for integrating irregular, multi-band satellite image time series (SITS). Transformers process sequences of observations without requiring interpolation to a regular grid, an essential property for long Landsat archives with strongly varying observation density across decades and sensor platforms \citep{zerveas_transformer-based_2020, yuan_sits-former_2022}. Self-supervised pretraining on large unlabelled SITS datasets has been shown to improve representation quality and downstream task performance, particularly in data-scarce settings \citep{yuan_yuan_self-supervised_2020, hiebl_advancing_2025}. Contrastive learning approaches exploit temporal and seasonal variability as a self-supervisory signal by training representations to be invariant across different observation windows of the same location — a property directly suited to stable land cover types such as forest stands \citep{manas_seasonal_2021, chen_simple_2020}. Providing calibrated uncertainty estimates alongside predictions has emerged as an important requirement for ecological mapping applications; deep ensembles of independently trained networks deliver well-calibrated epistemic uncertainty that reliably identifies out-of-distribution inputs and unreliable predictions in novel environmental contexts \citep{sylvain_high-resolution_2024, hiebl_advancing_2025}.
+
+\textbf{Relevance for Italys forests:}
+Italian forests are undergoing rapid and spatially complex changes. The Italian National Forest Inventory (INFC2015) documents a continuing expansion of forested area — from approximately 10.46 million ha in INFC2005 to 10.98 million ha in INFC2015 — driven primarily by land abandonment in mountain and hill zones and targeted reforestation programmes \citep{gasparini_italian_2022}. At the same time, land abandonment in combination with climate change alters phenological characteristics and forest composition in favor of species with higher drought resilience \citep{herraiz_aridity-induced_2025, chelli_climate_2017}, while vergeen broad-leaved species are spreading in deciduous forest areas \citep{conedera_drivers_2018}. These  processes are spatially heterogeneous, reflecting regional variety in land use changes, climate change, and historical species composition. Despite these dynamics, spatially explicit maps of forest composition and variables in Italy remain restricted to static maps with no continuous temporal resolution. The most recent national reference product, the Carta Forestale d'Italia 2020 (CFI), provides a single-epoch wall-to-wall forest map at 1:10,000 scale based on photo-interpretation of aerial orthophotos, but does not capture interannual dynamics or historical trajectories of change \citep{mattioli_carta_2025}.
+
+\textbf{What will be done?}
+Our study will fill this gap by providing data-driven, spatio-temporal continuous maps of leaf type cover fractions and dominant tree species probabilities for all forested areas in Italy - annually and at Landsat-native $30m$ resolution. We assemble and harmonize 40-years of Landsat Collection-2 Level-2 time series from 1985 to 2025 (Landsat-4/5/7/8/9) and train a multi-task Time Series Transformer model (TSTpad) via contrastive pretraining and a fine-tuning workflow. The final product are annual $30m$ maps of 11 dominant tree species classes and cover fractions for evergreen broad-leaved, deciduous broad-leaved and coniferous functional leaf type. Additional ensemble-based uncertainty estimations will be provided per-pixel and target variable.
+
+The core methodological choices in this work — contrastive pretraining, three-year observation pooling, sensor platform embedding, and deep ensemble uncertainty — are each motivated by specific characteristics of the problem.
+
+The observation-density drift in the Landsat archive \citep{bayle_landsat-based_2024} poses a fundamental risk for temporal stability of predictions: a supervised-only model may learn features that are confounded by observation frequency, producing apparent trends that reflect data availability rather than ecological change. Contrastive pretraining, applied to pairs of observations from two independently sampled three-year windows of the same forest plot, forces the backbone to learn representations that are invariant to the year of observation \citep{chen_simple_2020,manas_seasonal_2021}. This temporal invariance is justified by the assumption that mature forest stands are ecologically stable over multi-year periods — an assumption supported by the slow-change dynamics documented in the literature \citep{hemmerling_mapping_2021,pflugmacher_mapping_2019,grabska-szwagrzyk_map_2024}. The contrastive backbone is subsequently fine-tuned on a combination of pseudo-labels derived from AlphaEarth embeddings \citep{brown_alphaearth_2025, hiebl_combining_2026} and on historical and recent Italian forest plot observations, following the pretraining-then-fine-tuning paradigm demonstrated to be effective under limited label availability \citep{hiebl_advancing_2025,safonova_ten_2023}.
+
+The three-year observation pooling strategy — concatenating observations from the target year and the two preceding years — directly addresses the sparse observation problem in the pre-1999 single-sensor (Landsat 5 only) archive period and in cloud-prone mountain areas. By pooling three years of acquisitions, the number of cloud-free observations per effective time series is substantially increased, while future-leakage is avoided by restricting the window to years at or before the target year. Multi-year pooling has been shown to stabilise spectral-temporal metrics for stable land cover types and to reduce the influence of individual anomalous years \citep{pflugmacher_mapping_2019, grabska-szwagrzyk_map_2024}, with particular benefit for pre-1999 archive periods that are most severely affected by the observation-density bias identified by \citet{bayle_landsat-based_2024}.
+
+A learned sensor platform embedding (encoding which Landsat satellites contributed each observation) is incorporated into the Transformer's positional encoding to make the model explicitly aware of inter-sensor radiometric differences. This addresses the radiometric discontinuities between Landsat 4/5 TM, Landsat 7 ETM+, Landsat 8 OLI/TIRS, and Landsat 9 OLI-2/TIRS-2 without requiring the complete removal of any sensor generation from the analysis. Finally, the seven-seed deep ensemble provides pixel-level uncertainty estimates that enable users to identify and discard unreliable predictions in regions of low observation density or unusual spectral composition, following the approach usedfor Sentinel-2-based forest mapping by \citet{sylvain_high-resolution_2024} and \citet{hiebl_advancing_2025}.
+
+\section{Materials and Methods}
+
+\subsection{Study Area}
+
+The study covers all forested areas of peninsular and insular Italy, spanning several biogeographical, climatic, and latitudinal regions and an altitudinal range from sea level to approximately $2500\,m.s.l.$\footnote{needs citation} in the Alps. Italian forests fall within alpine, temperate, sub-Mediterranean, and Mediterranean climate zones \citep{chelli_climate_2017}, and are dominated by four forest habitat types: broadleaved-deciduous and temperate coniferous forests concentrated in the Alps and Apennines, and broadleaved-evergreen and Mediterranean coniferous forests concentrated along the coasts and in the south \citep{bricca_topography_2026}. This climatic and ecological heterogeneity is a central challenge for wall-to-wall mapping, as models trained predominantly on well-sampled regions risk out-of-domain predictions in climatically and ecologically different areas with sparser reference data.
+Forests cover 37\% of Italy's territory (10.98 million ha) \citep{gasparini_italian_2022}. Italy's position as a transition zone between the Mediterranean and the temperate climate of Central Europe makes its forests especially vulnerable to climate change: warming and increasing drought frequency are already documented to shift phenology and favour more drought-resilient and evergreen broad-leaved species at the cost of deciduous ones \citep{chelli_climate_2017, herraiz_aridity-induced_2025, conedera_drivers_2018}. These climate-driven shifts compound ongoing changes in forest management and land use, jointly reshaping tree species distribution and biodiversity across the country \citep{bricca_topography_2026}.
+
+\begin{figure}[t]
+\includegraphics[width=8.3cm]{figures/study_area_overview.png}
+\caption{Study Area Italy with high forest covered areas in the Alps and mountainous areas of Central Italy.}
+\end{figure}
+
+\subsection{Modelling Data}
+figure: next to each other plot data images VPO, VDBI synthetic dataset and CFI polygonized data
+
+
+\subsubsection{CFI Forest Inventory Data}
+The Carta Forestale d'Italia 2020 (CFI2020) is the first national forest map of Italy produced at operational scale (1:10,000), based on photointerpretation of AGEA aerial orthophotos from 2018 to 2020 against three simultaneously applied forest definitions (Mattioli et al., 2025). The CFI2020 delineates forested areas across all 21 Italian regions and provides stand-level attributes including forest category, silvicultural system, and dominant tree species group. In this study, the CFI2020 polygon layer serves two roles: (i) as the primary forest extent mask defining the spatial domain within which annual predictions are made, and (ii) as a source of decision rules for cleaning the artificial leaf type cover training dataset (see Section 2.1.4). Specifically, CFI2020 species attribution is used to impose ecologically plausible constraints on predicted cover fractions — for example, requiring that pixels mapped as *Pinus*-dominated stands contain at least 60\% coniferous cover and fewer than 30\% broad-leaved evergreen cover.
+
+\subsubsection{Italian forest vegetation plot databases}
+The Forest Vegetation Database Italy (VDBI) is a compilation of over 16,000 phytosociological and vegetation relevé plot observations collected across Italy from the 1970s to the present. Each plot record contains species composition data, structural attributes, and cover estimates by vertical layer for both the tree and shrub strata. The VDBI covers the full range of Italian forest types from Mediterranean macchia to subalpine conifer belts and provides temporal depth extending back to approximately 1972, enabling historical training data for pre-2000 Landsat time steps. After annual splitting to account for repeat observations at the same site, the VDBI provides approximately 33,000 data points for model training and validation. Plot records include leaf type cover estimates (evergreen, deciduous, coniferous) and forest vegetation type classifications according to the EUNIS habitat scheme, allowing joint training of the regression (cover fraction) and classification (forest type) heads of the TSTpad model. A stratified 20\% validation split, stratified by polygon identifier to reduce spatial autocorrelation between training and validation sets, is applied throughout all training stages \citep{safonova_ten_2023}.
+
+
+\subsubsection{Field plot observations}
+The Vegetation Plot Observations (VPO) dataset consists of recent field campaigns conducted within Italian National Parks and protected areas. Each site comprises four systematic 100 m² vegetation plots arranged on a regular grid, within which evergreen broad-leaved cover is estimated for three vertical layers (0–1 m, 1–10 m, and above 10 m). The VPO data used in this study consists of observations from the 2024 field season, covering five National Parks (Sila, Gran Sasso, Gennargentu, Cilento, and Nebrodi) and yielding a total of 1440 individual plot observations. The VPO dataset provides high-quality, spatially clustered reference data for the most recent Landsat time steps (post-2020) and serves as the primary validation reference for model performance in the recent high-density observation period. The spatial clustering of VPO plots into national parks is explicitly accounted for in model evaluation by applying a cluster-based spatial cross-validation scheme, preventing over-optimistic accuracy estimates due to spatial autocorrelation \citep{safonova_ten_2023}.
+
+
+\subsubsection{Synthetic leaf type cover data}
+Spatially explicit wall-to-wall leaf type cover data for model training are not available for Italy. Following the approach of \citet{kang_data-driven_2021} and \citet{tan_leveraging_2025} — who demonstrate the use of coarser or indirectly derived data sources as proxy training targets where direct measurements are absent — an artificial leaf type cover dataset was created from the VDBI and VPO plot observations. A Random Forest regression model was trained on the combined VDBI and VPO training split, with EVE, DEC, and CON cover fractions as prediction targets. As input features, AlphaEarth embeddings \citep{brown_alphaearth_2025,hiebl_combining_2026} — dense spectral-spatial-temporal representations derived from a globally pretrained geospatial foundation model — were extracted for all training plot locations. AlphaEarth embeddings were shown to achieve near-asymptotic species classification accuracy with very limited training data in Italian mountain forests \citep{ball_geospatial_2026}, making them particularly suited as inputs for the pseudo-label generation step. Tessera embeddings \citep{feng_tessera_2026} provide a fully open-source alternative with comparable performance characteristics.
+
+The trained Random Forest model was then applied to the full CFI2020 forest extent to generate a nation-wide pixel-level pseudo-label layer for each cover fraction. This pseudo-label layer constitutes the primary continuous-cover target during the contrastive pretraining and early fine-tuning stages. To reduce label noise introduced by model prediction errors, the CFI2020 species attribution was used to apply ecologically motivated cleaning rules: pixels within pine-dominated forest polygons were required to have at least 60\% coniferous cover and fewer than 30\% broad-leaved evergreen cover; analogous rules were applied to pure-stand classes of beech, oak, and Mediterranean macchia. These cleaning rules remove the most egregious pseudo-label errors while preserving the spatial completeness of the training dataset.
+
+
+\subsubsection{Landsat time series}
+figure: landsat time series plot over all years for 2 different dominant tree species, include modelling approach with 3 year window aggregation
+
+Annual Landsat time series were assembled for the full Italian national territory from the Google Earth Engine planetary-scale analysis environment using Landsat Collection 2 surface reflectance products from Landsat 4 TM (1982–1993), Landsat 5 TM (1984–2013), Landsat 7 ETM+ (1999–2023), Landsat 8 OLI/TIRS (2013–present), and Landsat 9 OLI-2/TIRS-2 (2021–present). Per-pixel cloud, cloud shadow, cirrus, and snow masking was performed using the Landsat Collection 2 QA PIXEL bitfield, decoded and applied via the `sattstools` preprocessing library (Hiebl, 2025a). Per-observation quality flags derived from QAPIXEL are propagated through the entire modelling pipeline as a key-padding mask, ensuring that cloud-contaminated or padded time steps are ignored by all attention layers of the TSTpad model. For each forested pixel, 14 spectral features are computed at each valid observation: six surface reflectance bands (blue, green, red, near-infrared, SWIR1, SWIR2) and eight derived spectral indices (NDVI, NIRv, NDMI, EVI, WDRVI, NBR, NDWI, GNDVI), computed using the `sattstools` index calculation routines (Hiebl, 2025a). The resulting multi-annual time series are stored as Zarr-compressed arrays to enable efficient random-access loading during model training.
+
+
+\subsubsection{Additional data sources}
+
+The ESA WorldCover product is used as an initial broad-scale delineation of forested areas across Italy. Only pixels labelled as tree cover are forwarded for prediction in the final maps. We are aware that the ESA WorldCover product does not provide a sufficient forest mask for detailed analysis of the datasets, as many mixed pixels and edge cases are remaining. But by applying a conservative masking during mapping we leave room for stricter forest delineation through other products without loosing regional accuracy.
+
+
+\subsection{Time Series Transformer Architecture}
+figure: model architecture and training scheme (including the contrastive pretraining and fine-tuning stages)
+
+The backbone model is TSTpad, an encoder-only Time Series Transformer extended to support irregular, sparse, annual satellite image time series. The architecture employs multi-head self-attention across the temporal dimension, enabling the model to learn both short-range phenological features and long-range inter-seasonal dependencies within the aggregated 3-year observation window \citep{ruswurm_self-attention_2020,zerveas_transformer-based_2020}.
+
+For each target year, three consecutive years of Landsat observations are concatenated— encompassing the target year and the two immediately preceding years (year−2, year−1, year) — and aggregated into a single annual cycle  to densify the sparse annual time series. After aggregation, observations are chronologically sorted and padded to a fixed sequence length of 100 time steps. Positions corresponding to cloud-masked or padded time steps receive a key-padding mask that prevents these positions from contributing to attention score computations \citep{vaswani_attention_2023}. The actual acquisition day-of-year for each observation is encoded as a sinusoidal positional encoding, enabling the model to correctly represent the irregular temporal spacing of Landsat acquisitions and to distinguish phenological phases across the observation window without requiring interpolation to a regular grid \citep{yuan_yuan_self-supervised_2020}. Input features are normalised per band using a robust standardisation based on the median and interquartile range (quantiles q=0.1 and q=0.9) — with transform parameters fitted on the training data and frozen at inference time to prevent data leakage. A sensor platform embedding with $sensordim=5$ encodes a multi-hot vector per year indicating which Landsat satellites (L4, L5, L7, L8, L9) contributed to the observations. This embedding is added to the pre-attention temporal encoding via a learned linear projection and makes the Transformer aware of inter-sensor radiometric differences over the 40-year archive. A post-attention pooling layer using a learned query vector collapses the temporal dimension into one single summary vector per output target, letting each targets learned query decide, which valid timesteps matter most for its prediction. In a setting with target classes from a wide range of phenological and spectral characteristics, this pooling strategy allows the model to learn class-specific temporal patterns across the observation window. The model heads are two-layer Multi-Layer-Perceptrons including Dropout and GeLU activation functions \citep{hendrycks_gaussian_2016}.
+The classification model heads map the Transformer's output to class probabilities over eleven dominant tree species and three functional leaf type classes trained with two separate Cross Entropy Loss (CELoss) computations summed into a single loss value (dominant species and functional leaf type). With the dual loss the model learns to simultaneously capture species identity without losing the ability to capture the distinction between EVE and CON leaf types. The regression heads trained with Mean Squared Error Loss (MSELoss) maps the output to continuous EVE, DEC, and CON cover fractions.
+During contrastive 
+
+
+\subsection{Training procedure}
+The model is trained via a three-stage progressive workflow designed to maximise temporal stability and to accommodate the heterogeneous quality and temporal coverage of available reference data.
+
+Stage 1 — Contrastive pretraining. The backbone is trained using a joint loss that simultaneously optimises a supervised classification objective (DTS or ) and an unsupervised NT-Xent contrastive loss \citep{chen_simple_2020}: L = λ·NT-Xent + CE. For the contrastive term, positive pairs are formed from the same forest plot observed in two independently sampled three-year windows ($year_0$ and $year_1$ drawn at random), representing different but ecologically equivalent observation contexts for the same location. NT-Xent (normalised temperature-scaled cross-entropy; temperature $τ=0.1$) pushes the backbone representations of these positive pairs toward each other in embedding space while repelling representations of observations from different plots. This objective forces the backbone to learn year-invariant spectral-temporal features that are not confounded by observation density or inter-annual radiometric variability \citep{manas_seasonal_2021}. Positive pairs are further diversified by time series augmentation, which applies three independent stochastic perturbations to each view: random temporal masking (20\% of valid time steps zeroed), spectral noise injection (additive Gaussian noise with $σ=0.01$), and band masking (10\% of spectral bands zeroed per sample) \citep{yuan_empirical_2025}. The contrastive and classification signals are routed through separate heads attached to the shared backbone: a two-layer MLP projection head (embedding dimension → 128) for NT-Xent, and the classification/regression head for CELoss or MSELoss, respectively. The model is optimised using AdamW with a cosine learning rate schedule preceded by a 10\% warm-up phase; training runs for 60 epochs with a batch size of 128. Reference data consist of Italian forest vegetation plots from the VDBI and VPO datasets stored as Zarr-compressed arrays. Class imbalance is addressed jointly by class-weighted CrossEntropyLoss and by sample weights set to the square root of the inverse class frequency, following the approach of \citet{grabska-szwagrzyk_map_2024}. A stratified 20\% validation hold-out, stratified by plot polygon identifier, is maintained across all training stages to prevent spatial autocorrelation between training and validation sets.
+
+Stage 2 — Fine-tuning on labelled data. The contrastive backbone from Stage 1 is loaded and fine-tuned under a purely supervised objective (CrossEntropyLoss + MSELoss; NT-Xent dropped). The embedding layer is kept frozen in this stage to preserve the contrastive representations, while the task heads are retrained using a reduced learning rate to prevent catastrophic forgetting \citep{hiebl_advancing_2025}. This stage runs for 10 epochs on the full 1985–2025 Landsat time series, allowing the model to adapt the task heads to the full historical archive without disturbing the temporally invariant representations established during contrastive pretraining.
+
+Stage 3 — Further fine-tuning on high-quality observations. Additional fine-tuning passes are applied from the Stage 2 checkpoint with progressively reduced and quality-filtered training subsets, giving priority to recent high-quality VPO field observations that provide the most accurate ground reference data for the present-day forest state. This stage is particularly intended to anchor the model's predictions of recent (post-2020) cover fractions to field-validated reference values, while the contrastive representations established in earlier stages ensure that this anchoring remains consistent with historical predictions.
+
+Five independent model instances, differing in random seed (0–4), architecture micro-choices within TSTpad, and random subsets of training and validation data, are trained per stage. The five-seed ensemble delivers two outputs per pixel per year: the ensemble mean prediction (used as the primary data product) and the inter-seed standard deviation (used as the pixel-level uncertainty estimate). High inter-seed uncertainty identifies pixels where the model predictions are unstable, typically in regions of low observation density, unusual spectral composition, or high class confusion.
+
+
+\subsection{Mapping scheme}
+The forest prediction domain is defined by the intersection of the CFI2020 forest extent mask, the 5 m minimum canopy height layer, and the Copernicus HRL Forest Type product, with persistent snow-cover areas excluded. For each target year from 1985 to 2025, the corresponding three-year Landsat observation window (year−2 to year, inclusive) is assembled from the harmonised Landsat Collection 2 archive, cloud-masked, and processed to the 14 spectral features described in Section 2.1.5. Features are normalised with the fixed training-time `TSRobustStandardize` parameters and padded to 100 time steps. The seven trained ensemble models are applied independently to each forested pixel, and the resulting class probability distributions and cover fraction predictions are aggregated across seeds to produce the mean prediction and inter-seed uncertainty layers.
+
+Observation density varies substantially across the archive. Before 1999, when only Landsat 5 TM was operational, the three-year window typically yields fewer cloud-free observations than the post-2013 period when Landsat 8 and 9 operate simultaneously. This density gradient is an analogue of the observational sampling bias documented for NDVI trend analyses by \citet{bayle_landsat-based_2024}: predictions in the early archive period carry higher uncertainty due to sparse temporal sampling, which may cause the model to have lower confidence in phenological-season attribution. This effect is explicitly quantified in the Technical Validation section (Section 4) and is flagged via the inter-seed uncertainty layer. Pixels with inter-seed uncertainty above a conservative threshold in the pre-1999 period should be interpreted with caution in trend analyses.
+
+
+\subsection{Evaluation}
+The validation strategy is designed to assess both the accuracy of the map product at individual time steps and the temporal consistency of predictions across the full 40-year archive. Three independent validation datasets are employed.
+
+The VDBI hold-out split provides the primary historical validation reference, with plot observations dating back to approximately 1995. This split allows accuracy assessment at historical time steps (1995–2012) where field data are available, spanning the Landsat 5-only and Landsat 7/5 overlap periods. The VPO hold-out split — collected during the 2024 field season — provides the primary validation reference for recent predictions (post-2020) from the high-density Landsat 8/9 period. These two validation datasets provide complementary temporal coverage: the VDBI split quantifies historical accuracy under lower observation density, while the VPO split quantifies accuracy under the best available observation conditions.
+
+A third validation source consists of a set of pure-stand forest polygons manually interpreted from high-resolution Google Earth Pro imagery at recent time steps. These polygons, selected to represent spectrally unambiguous mono-specific stands, enable validation of the classification output under conditions where the expected dominant species label is highly reliable, providing an upper bound on classification accuracy unconstrained by label uncertainty in mixed stands.
+
+Accuracy metrics are reported separately for three observation-density periods: the historical Landsat 5-only period (pre-1999), the Landsat 7/8 transition period (1999–2013), and the recent high-density period (post-2013). For the classification head, overall accuracy (OA) and per-class F1 score are computed for each period. For the regression heads, root mean squared error (RMSE) and mean absolute error (MAE) are reported for each of the three cover fractions (EVE, DEC, CON). 
+
+To account for uncertainties in plot observations coming from (i) label noise, (ii) spatial mismatch between plot location and Landsat pixel, and (iii) temporal uncertainty and variations between plot observation year and Landsat acquisition year, additional sparse, probabilistic evaluation metrics are computed. Based on the plot location and reported year, a MonteCarlo approach is used to sample from the spatio-temporal uncertainty distribution and the best performance metrics uncluding uncertainty are reported for the sampling distribution. This approach reduces sensitivity to small misalignments and provides a more robust and uncertainty aware estimate of model performance at the stand level, while measuring the metric directly at the plot location and date might underestimate the model performance for each plot.
+
+\conclusions  %% \conclusions[modified heading if necessary]
+TEXT
+
+%% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
+%% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
+
+
+
+\codedataavailability{TEXT} %% use this section when having data sets and software code available
+
+
+\sampleavailability{TEXT} %% use this section when having geoscientific samples available
+
+
+
+\appendix
+\section{}    %% Appendix A
+
+\subsection{}     %% Appendix A1, A2, etc.
+
+
+\noappendix       %% use this to mark the end of the appendix section. Otherwise the figures might be numbered incorrectly (e.g. 10 instead of 1).
+
+%% Regarding figures and tables in appendices, the following two options are possible depending on your general handling of figures and tables in the manuscript environment:
+
+%% Option 1: If you sorted all figures and tables into the sections of the text, please also sort the appendix figures and appendix tables into the respective appendix sections.
+%% They will be correctly named automatically.
+
+%% Option 2: If you put all figures after the reference list, please insert appendix tables and figures after the normal tables and figures.
+%% To rename them correctly to A1, A2, etc., please add the following commands in front of them:
+
+\appendixfigures  %% needs to be added in front of appendix figures
+
+\appendixtables   %% needs to be added in front of appendix tables
+
+%% Please add \clearpage between each table and/or figure. Further guidelines on figures and tables can be found below.
+
+
+
+\authorcontribution{TEXT} %% this section is mandatory
+
+\competinginterests{TEXT} %% this section is mandatory even if you declare that no competing interests are present
+
+\disclaimer{TEXT} %% optional section
+
+\begin{acknowledgements}
+TEXT
+\end{acknowledgements}
+
+
+
+
+%% REFERENCES
+
+%% The reference list is compiled as follows:
+
+%%\begin{thebibliography}{}
+
+%%\bibitem[AUTHOR(YEAR)]{LABEL1}
+%%REFERENCE 1
+
+%%\bibitem[AUTHOR(YEAR)]{LABEL2}
+%%REFERENCE 2
+
+%%\end{thebibliography}
+
+%% Since the Copernicus LaTeX package includes the BibTeX style file copernicus.bst,
+%% authors experienced with BibTeX only have to include the following two lines:
+%%
+\bibliographystyle{copernicus}
+\bibliography{essd_landsat_manuscript.bib}
+%%
+%% URLs and DOIs can be entered in your BibTeX file as:
+%%
+%% URL = {http://www.xyz.org/~jones/idx_g.htm}
+%% DOI = {10.5194/xyz}
+
+
+%% LITERATURE CITATIONS
+%%
+%% command                        & example result
+%% \citet{jones90}|               & Jones et al. (1990)
+%% \citep{jones90}|               & (Jones et al., 1990)
+%% \citep{jones90,jones93}|       & (Jones et al., 1990, 1993)
+%% \citep[p.~32]{jones90}|        & (Jones et al., 1990, p.~32)
+%% \citep[e.g.,][]{jones90}|      & (e.g., Jones et al., 1990)
+%% \citep[e.g.,][p.~32]{jones90}| & (e.g., Jones et al., 1990, p.~32)
+%% \citeauthor{jones90}|          & Jones et al.
+%% \citeyear{jones90}|            & 1990
+
+
+
+%% FIGURES
+
+%% When figures and tables are placed at the end of the MS (article in one-column style), please add \clearpage
+%% between bibliography and first table and/or figure as well as between each table and/or figure.
+
+% The figure files should be labelled correctly with Arabic numerals (e.g. fig01.jpg, fig02.png).
+
+
+%% ONE-COLUMN FIGURES
+
+%%f
+%\begin{figure}[t]
+%\includegraphics[width=8.3cm]{FILE NAME}
+%\caption{TEXT}
+%\end{figure}
+%
+%%% TWO-COLUMN FIGURES
+%
+%%f
+%\begin{figure*}[t]
+%\includegraphics[width=12cm]{FILE NAME}
+%\caption{TEXT}
+%\end{figure*}
+%
+%
+%%% TABLES
+%%%
+%%% The different columns must be seperated with a & command and should
+%%% end with \\ to identify the column brake.
+%
+%%% ONE-COLUMN TABLE
+%
+%%t
+%\begin{table}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table}
+%
+%%% TWO-COLUMN TABLE
+%
+%%t
+%\begin{table*}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{table*}
+%
+%%% LANDSCAPE TABLE
+%
+%%t
+%\begin{sidewaystable*}[t]
+%\caption{TEXT}
+%\begin{tabular}{column = lcr}
+%\tophline
+%
+%\middlehline
+%
+%\bottomhline
+%\end{tabular}
+%\belowtable{} % Table Footnotes
+%\end{sidewaystable*}
+%
+%
+%%% MATHEMATICAL EXPRESSIONS
+%
+%%% All papers typeset by Copernicus Publications follow the math typesetting regulations
+%%% given by the IUPAC Green Book (IUPAC: Quantities, Units and Symbols in Physical Chemistry,
+%%% 2nd Edn., Blackwell Science, available at: http://old.iupac.org/publications/books/gbook/green_book_2ed.pdf, 1993).
+%%%
+%%% Physical quantities/variables are typeset in italic font (t for time, T for Temperature)
+%%% Indices which are not defined are typeset in italic font (x, y, z, a, b, c)
+%%% Items/objects which are defined are typeset in roman font (Car A, Car B)
+%%% Descriptions/specifications which are defined by itself are typeset in roman font (abs, rel, ref, tot, net, ice)
+%%% Abbreviations from 2 letters are typeset in roman font (RH, LAI)
+%%% Vectors are identified in bold italic font using \vec{x}
+%%% Matrices are identified in bold roman font
+%%% Multiplication signs are typeset using the LaTeX commands \times (for vector products, grids, and exponential notations) or \cdot
+%%% The character * should not be applied as mutliplication sign
+%
+%
+%%% EQUATIONS
+%
+%%% Single-row equation
+%
+%\begin{equation}
+%
+%\end{equation}
+%
+%%% Multiline equation
+%
+%\begin{align}
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8\\
+%& 3 + 5 = 8
+%\end{align}
+%
+%
+%%% MATRICES
+%
+%\begin{matrix}
+%x & y & z\\
+%x & y & z\\
+%x & y & z\\
+%\end{matrix}
+%
+%
+%%% ALGORITHM
+%
+%\begin{algorithm}
+%\caption{...}
+%\label{a1}
+%\begin{algorithmic}
+%...
+%\end{algorithmic}
+%\end{algorithm}
+%
+%
+%%% CHEMICAL FORMULAS AND REACTIONS
+%
+%%% For formulas embedded in the text, please use \chem{}
+%
+%%% The reaction environment creates labels including the letter R, i.e. (R1), (R2), etc.
+%
+%\begin{reaction}
+%%% \rightarrow should be used for normal (one-way) chemical reactions
+%%% \rightleftharpoons should be used for equilibria
+%%% \leftrightarrow should be used for resonance structures
+%\end{reaction}
+%
+%
+%%% PHYSICAL UNITS
+%%%
+%%% Please use \unit{} and apply the exponential notation (e.g. 20\,\unit{W\,m^{-2}})
+
+
+\end{document}

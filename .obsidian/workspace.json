@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "69ac5bf0aef40d8e",
+        "id": "c48892564bf965d1",
         "type": "tabs",
         "children": [
           {
-            "id": "a4c6288b8418ca97",
+            "id": "0f9958368c7d01ef",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "01_notes/senf_2021_disturbance.md",
-                "mode": "source",
-                "source": false
+                "file": "03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.pdf"
               },
-              "icon": "lucide-file",
-              "title": "senf_2021_disturbance"
+              "icon": "lucide-file-text",
+              "title": "essd_landsat_manuscript"
             }
           }
         ],
@@ -79,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 303.5
+    "width": 437.5
   },
   "right": {
     "id": "b62de5cc65d08ef0",
@@ -196,24 +194,32 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a4c6288b8418ca97",
+  "active": "0f9958368c7d01ef",
   "lastOpenFiles": [
+    "01_notes/sentinel_2.md",
+    "03_papers/pflugmacher_2019_lulc_landsat.md",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.synctex(busy)",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1381236.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1381159.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1379596.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1379523.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1379425.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1378153.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1378072.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1375913.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1375820.fls",
+    "01_notes/mattioli_2025_carta_forestale.md",
+    "01_notes/ball_2026_foundation_models.md",
+    "01_notes/grünig_2026_climate_change_disturbances_forest.md",
+    "01_notes/senf_2021_disturbance.md",
+    "Todos.md",
+    "04_projects/01_klima_tirol.md",
+    "01_klima_tirol.md",
     "03_papers/00_ideas.md",
     "07_forest_stress_trajectory.md",
-    "Todos.md",
     "03_papers/06_spatial_autocorrelation.md",
-    "log.md.tmp.57601.cca2ebc3136b",
-    "index.md.tmp.57601.086c5c38c50a",
-    "03_papers/06_spatial_autocorrelation.md.tmp.57601.8a033ac89c72",
-    "log.md.tmp.57601.9b269cd7505d",
-    "index.md.tmp.57601.54fbde3ecc5f",
-    "03_papers/06_spatial_autocorrelation.md.tmp.57601.545ea404c896",
     "02_concepts/transfer_learning_remote_sensing.md",
     "02_concepts/lai_estimation.md",
-    "log.md.tmp.57601.cdc293f72d72",
-    "index.md.tmp.57601.9224644e1a62",
-    "02_concepts/transfer_learning_remote_sensing.md.tmp.57601.2905254df8b8",
-    "02_concepts/transfer_learning_remote_sensing.md.tmp.57601.aa89f53cf262",
     "01_notes/li_2026_contrastive.md",
     "01_notes/stival_2026_pixel_contrastive.md",
     "01_notes/stival_2025_contrastive_msi.md",
@@ -226,14 +232,6 @@
     "02_concepts/european_ground_truth_databases.md",
     "01_notes/sabatini_2021_splot.md",
     "01_notes/calvia_2022_pines.md",
-    "03_papers/03_landsat_data_publication.md",
-    "03_papers/Todos.md",
-    "templates/paper_template.md",
-    "03_papers/03_tree_species_cover_landsat.md",
-    "03_papers/05_landsat_timeseries_mapping.md",
-    "02_concepts/tree_species_mapping.md",
-    "02_concepts/transformers_time_series.md",
-    "02_concepts/transformer_sits.md",
     "04_projects/Untitled.canvas"
   ]
 }
