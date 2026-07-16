@@ -10,8 +10,8 @@
 
 %% 2-column papers and preprints
 %%\documentclass[journal abbreviation, manuscript]{copernicus}
-%%\documentclass[essd]{copernicus}
-\documentclass[essd, manuscript]{copernicus}
+\documentclass[essd]{copernicus}
+%%\documentclass[essd, manuscript]{copernicus}
 
 
 
@@ -145,8 +145,8 @@ Consistent long-term maps of forest functional type and dominant tree species co
 
 \copyrightstatement{TEXT} %% This section is optional and can be used for copyright transfers.
 
-
-\introduction  %% \introduction[modified heading if necessary]
+%% \introduction[modified heading if necessary]
+\section{Introduction}  
 
 \textbf{Landsat for long term forest monitoring:}
 With nearly 40 years of continuous acquisitions, the Landsat archive constitutes the longest consistent Earth observation record available for global vegetation monitoring \citep{wulder_fifty_2022}. Its multi-decadal continuity makes it uniquely suited for change detection, and hindcasting of environmental variables including forest habitat characteristics \cite{bell_hindcasting_2024,turubanova_tree_2023}. The archive has been applied to discriminate forest types and quantify forest variables such as canopy height at all scales from regional to continental scales \citep{pflugmacher_mapping_2019,turubanova_tree_2023}. In monitoring long-term changes and disturbances in forest vegetation under climate change, the Landsat afchive provides a valuable modelling base \citep{viana-soto_european_2025, grunig_climate_2026}. The relatively slow change and succession dynamics of forest vegetation, which is unfolding over decades, make this multi-decadal temporal availability particularly valuable. Shorter observation windows would fail to capture natural stand-level transitions such as species shifts or forest densification, which happen gradually over long time periods \citep{tong_reforestation_2023, midolo_sixty_2026}. The medium spectral, spatial, and temporal resolution of Landsat — 6 reflectance bands, 30 m ground sampling distance, and an 8–16 day revisit time — is adequate for capturing annual phenological dynamics at stand level, which demonstrated to be critical for distinguishing tree species and functional leaf types \citep{kollert_exploring_2021,hemmerling_mapping_2021,wang_assessing_2022}. 
@@ -173,12 +173,17 @@ The three-year observation pooling strategy — concatenating observations from 
 
 A learned sensor platform embedding (encoding which Landsat satellites contributed each observation) is incorporated into the Transformer's positional encoding to make the model explicitly aware of inter-sensor radiometric differences. This addresses the radiometric discontinuities between Landsat 4/5 TM, Landsat 7 ETM+, Landsat 8 OLI/TIRS, and Landsat 9 OLI-2/TIRS-2 without requiring the complete removal of any sensor generation from the analysis. Finally, the seven-seed deep ensemble provides pixel-level uncertainty estimates that enable users to identify and discard unreliable predictions in regions of low observation density or unusual spectral composition, following the approach usedfor Sentinel-2-based forest mapping by \citet{sylvain_high-resolution_2024} and \citet{hiebl_advancing_2025}.
 
-\section{Methods}
-TEXT
+\section{Materials and Methods}
 
 \subsection{Study Area}
-figure: italy hillshade with forested areas
-- 
+
+The study covers all forested areas of peninsular and insular Italy, spanning several biogeographical, climatic, and latitudinal regions and an altitudinal range from sea level to approximately $2500\,m.s.l.$\footnote{needs citation} in the Alps. Italian forests fall within alpine, temperate, sub-Mediterranean, and Mediterranean climate zones \citep{chelli_climate_2017}, and are dominated by four forest habitat types: broadleaved-deciduous and temperate coniferous forests concentrated in the Alps and Apennines, and broadleaved-evergreen and Mediterranean coniferous forests concentrated along the coasts and in the south \citep{bricca_topography_2026}. This climatic and ecological heterogeneity is a central challenge for wall-to-wall mapping, as models trained predominantly on well-sampled regions risk out-of-domain predictions in climatically and ecologically different areas with sparser reference data.
+Forests cover 37\% of Italy's territory (10.98 million ha) \citep{gasparini_italian_2022}. Italy's position as a transition zone between the Mediterranean and the temperate climate of Central Europe makes its forests especially vulnerable to climate change: warming and increasing drought frequency are already documented to shift phenology and favour more drought-resilient and evergreen broad-leaved species at the cost of deciduous ones \citep{chelli_climate_2017, herraiz_aridity-induced_2025, conedera_drivers_2018}. These climate-driven shifts compound ongoing changes in forest management and land use, jointly reshaping tree species distribution and biodiversity across the country \citep{bricca_topography_2026}.
+
+\begin{figure}[t]
+\includegraphics[width=8.3cm]{figures/study_area_overview.png}
+\caption{Study Area Italy with high forest covered areas in the Alps and mountainous areas of Central Italy.}
+\end{figure}
 
 \subsection{Modelling Data}
 figure: next to each other plot data images VPO, VDBI synthetic dataset and CFI polygonized data
@@ -215,7 +220,7 @@ The ESA WorldCover product is used as an initial broad-scale delineation of fore
 \subsection{Time Series Transformer Architecture}
 figure: model architecture and training scheme (including the contrastive pretraining and fine-tuning stages)
 
-The backbone model is TSTpad, an encoder-only Time Series Transformer extended to support irregular, sparse, annual satellite image time series. TSTpad is based on the general multivariate time series representation learning framework of \citet{zerveas_transformer-based_2020}. The architecture employs multi-head self-attention across the temporal dimension, enabling the model to learn both short-range phenological features and long-range inter-seasonal dependencies within the aggregated 3-year observation window.
+The backbone model is TSTpad, an encoder-only Time Series Transformer extended to support irregular, sparse, annual satellite image time series. The architecture employs multi-head self-attention across the temporal dimension, enabling the model to learn both short-range phenological features and long-range inter-seasonal dependencies within the aggregated 3-year observation window \citep{ruswurm_self-attention_2020,zerveas_transformer-based_2020}.
 
 For each target year, three consecutive years of Landsat observations are concatenated— encompassing the target year and the two immediately preceding years (year−2, year−1, year) — and aggregated into a single annual cycle  to densify the sparse annual time series. After aggregation, observations are chronologically sorted and padded to a fixed sequence length of 100 time steps. Positions corresponding to cloud-masked or padded time steps receive a key-padding mask that prevents these positions from contributing to attention score computations \citep{vaswani_attention_2023}. The actual acquisition day-of-year for each observation is encoded as a sinusoidal positional encoding, enabling the model to correctly represent the irregular temporal spacing of Landsat acquisitions and to distinguish phenological phases across the observation window without requiring interpolation to a regular grid \citep{yuan_yuan_self-supervised_2020}. Input features are normalised per band using a robust standardisation based on the median and interquartile range (quantiles q=0.1 and q=0.9) — with transform parameters fitted on the training data and frozen at inference time to prevent data leakage. A sensor platform embedding with $sensordim=5$ encodes a multi-hot vector per year indicating which Landsat satellites (L4, L5, L7, L8, L9) contributed to the observations. This embedding is added to the pre-attention temporal encoding via a learned linear projection and makes the Transformer aware of inter-sensor radiometric differences over the 40-year archive. A post-attention pooling layer using a learned query vector collapses the temporal dimension into one single summary vector per output target, letting each targets learned query decide, which valid timesteps matter most for its prediction. In a setting with target classes from a wide range of phenological and spectral characteristics, this pooling strategy allows the model to learn class-specific temporal patterns across the observation window. The model heads are two-layer Multi-Layer-Perceptrons including Dropout and GeLU activation functions \citep{hendrycks_gaussian_2016}.
 The classification model heads map the Transformer's output to class probabilities over eleven dominant tree species and three functional leaf type classes trained with two separate Cross Entropy Loss (CELoss) computations summed into a single loss value (dominant species and functional leaf type). With the dual loss the model learns to simultaneously capture species identity without losing the ability to capture the distinction between EVE and CON leaf types. The regression heads trained with Mean Squared Error Loss (MSELoss) maps the output to continuous EVE, DEC, and CON cover fractions.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.7.9)  11 JUL 2026 18:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.7.9)  12 JUL 2026 22:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3110,7 +3110,20 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
-) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
+)
+\c@mv@sans=\count338
+\c@mv@sansbold=\count339
+LaTeX Font Info:    Overwriting symbol font `operators' in version `sansbold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 2238.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `sansbold'
+(Font)                  OML/cmm/m/it --> OML/cmm/b/it on input line 2239.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `sansbold'
+(Font)                  OMS/cmsy/m/n --> OMS/cmsy/b/n on input line 2240.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `sansbold'
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 2241.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `sansbold'
+(Font)                  OT1/cmr/m/it --> OT1/cmr/bx/it on input line 2242.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/pifont.sty
 Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
 LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/upzd.fd
@@ -3147,8 +3160,8 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen298
-\Hy@linkcounter=\count338
-\Hy@pagecounter=\count339
+\Hy@linkcounter=\count340
+\Hy@pagecounter=\count341
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -3160,7 +3173,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count340
+\Hy@SavedSpaceFactor=\count342
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -3174,7 +3187,7 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks OFF on input line 4451.
-\c@Hy@tempcnt=\count341
+\c@Hy@tempcnt=\count343
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen299
  (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
@@ -3182,7 +3195,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count342
+\Fld@menulength=\count344
 \Field@Width=\dimen300
 \Fld@charsize=\dimen301
 Package hyperref Info: Hyper figures OFF on input line 6076.
@@ -3198,9 +3211,9 @@ LaTeX Info: Redefining \pageref on input line 6150.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count343
-\c@Item=\count344
-\c@Hfootnote=\count345
+\Hy@abspage=\count345
+\c@Item=\count346
+\c@Hfootnote=\count347
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -3209,8 +3222,8 @@ File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count346
-\c@bookmark@seq@number=\count347
+\Fld@listcount=\count348
+\c@bookmark@seq@number=\count349
  (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -3220,7 +3233,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip74
 )
-\c@reaction=\count348
+\c@reaction=\count350
 \tabularwidth=\dimen302
 Package hyperref Info: Option `unicode' set `true' on input line 3137.
  (/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
@@ -3265,16 +3278,16 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
 LaTeX Font Info:    ... okay on input line 84.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count349
+\scratchcounter=\count351
 \scratchdimen=\dimen303
 \scratchbox=\box77
-\nofMPsegments=\count350
-\nofMParguments=\count351
+\nofMPsegments=\count352
+\nofMParguments=\count353
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count352
+\MPscratchCnt=\count354
 \MPscratchDim=\dimen304
-\MPnumerator=\count353
-\makeMPintoPDFobject=\count354
+\MPnumerator=\count355
+\makeMPintoPDFobject=\count356
 \everyMPtoPDFconversion=\toks53
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -3287,7 +3300,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count355
+\c@lstlisting=\count357
 Package hyperref Info: Link coloring OFF on input line 84.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -3296,7 +3309,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count356
+\c@section@level=\count358
 )
 LaTeX Info: Redefining \ref on input line 84.
 LaTeX Info: Redefining \pageref on input line 84.
@@ -3304,6 +3317,12 @@ LaTeX Info: Redefining \nameref on input line 84.
  (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 138.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 16.41594pt on input line 138.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 138.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -3312,51 +3331,492 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 138.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 144.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
-File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
-)
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 9.49997pt on input line 138.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 144.
- [1
+(Font)              scaled to size 9.49997pt on input line 138.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 146.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.54997pt on input line 146.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 4.74998pt on input line 146.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5] [6] [7] [8] [9] (./essd_landsat_manuscript.bbl [10pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+Underfull \hbox (badness 1152) in paragraph at lines 157--159
+\T1/ptm/m/n/10 and leaf type map-ping. Phe-no-log-i-cally in-for-ma-tive sea-
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 170--171
+[]\T1/ptm/m/n/10 The observation-density drift in the Land-sat archive
+ []
+
+[2]
+Underfull \hbox (badness 2165) in paragraph at lines 174--175
+\T1/ptm/m/n/10 tween Land-sat 4/5 TM, Land-sat 7 ETM+, Land-sat 8
+ []
+
+<figures/study_area_overview.png, id=161, 338.2236pt x 452.4102pt>
+File: figures/study_area_overview.png Graphic file (type png)
+<use figures/study_area_overview.png>
+Package pdftex.def Info: figures/study_area_overview.png  used on input line 184.
+(pdftex.def)             Requested size: 236.15796pt x 315.8842pt.
+[3 <./figures/study_area_overview.png>]
+Underfull \hbox (badness 1009) in paragraph at lines 212--213
+\T1/ptm/m/n/10 Ital-ian na-tional ter-ri-tory from the Google Earth En-gine
+ []
+
+
+Underfull \hbox (badness 1874) in paragraph at lines 212--213
+\T1/ptm/m/n/10 (1999^^U2023), Land-sat 8 OLI/TIRS (2013^^Upresent), and
+ []
+
+
+Underfull \hbox (badness 1168) in paragraph at lines 212--213
+\T1/ptm/m/n/10 coded and ap-plied via the `sattstools` pre-pro-cess-ing li-
+ []
+
+[4]
+Underfull \hbox (badness 1270) in paragraph at lines 233--234
+[]\T1/ptm/m/n/10 Stage 1 ^^V Con-trastive pre-train-ing. The back-bone is
+ []
+
+[5]
+Underfull \hbox (badness 1331) in paragraph at lines 237--238
+\T1/ptm/m/n/10 filtered train-ing sub-sets, giv-ing pri-or-ity to re-cent high-
+ []
+
+[6]
+Underfull \hbox (badness 4291) in paragraph at lines 255--256
+[]\T1/ptm/m/n/10 Accuracy met-rics are re-ported sep-a-rately for three
+ []
+
+
+Underfull \hbox (badness 5817) in paragraph at lines 255--256
+\T1/ptm/m/n/10 observation-density pe-ri-ods: the his-tor-i-cal Land-sat 5-
+ []
+
+(./essd_landsat_manuscript.bbl
+Underfull \hbox (badness 3942) in paragraph at lines 12--17
+[]\T1/ptm/m/n/9 Ball, J. G., Wick-lein, J. A., Feng, Z., Kneze-vic, J., Jaf-
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 12--17
+\T1/ptm/m/n/9 fer, S., Mad-havapeddy, A., Atzberger, C., Dalponte, M.,
+ []
+
+
+Underfull \hbox (badness 8019) in paragraph at lines 20--24
+\T1/ptm/m/n/9 mul-ti-decadal in-creases in sum-mer ob-ser-va-tions, Ecog-ra-
+ []
+
+
+Overfull \hbox (28.84074pt too wide) in paragraph at lines 20--24
+\T1/ptm/m/n/9 https://nsojournals.onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.07394,
+ []
+
+
+Underfull \hbox (badness 5331) in paragraph at lines 26--30
+[]\T1/ptm/m/n/9 Bell, D. M., Gre-gory, M. J., and Yang, Z.: Hind-cast-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--30
+\T1/ptm/m/n/9 and up-dat-ing Landsat-based for-est struc-ture map-ping
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--30
+\T1/ptm/m/n/9 across years to sup-port for-est man-age-ment and plan-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--30
+\T1/ptm/m/n/9 ning, For-est Ecol-ogy and Man-age-ment, 572, 122239,
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 34--40
+[]\T1/ptm/m/n/9 Bricca, A., Zerbe, S., Saba-tini, F. M., Hiebl, B., Rutzinger,
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 34--40
+\T1/ptm/m/n/9 M., di Mus-ciano, M., Calvia, G., Chiarucci, A., Poschlod,
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 34--40
+\T1/ptm/m/n/9 P., Rossi, C., Alessi, N., and Bonari, G.: To-pog-ra-phy and
+ []
+
+
+Underfull \hbox (badness 5217) in paragraph at lines 34--40
+\T1/ptm/m/n/9 Soil Mois-ture Reg-u-late the Temperature-Biodiversity Re-
+ []
+
+
+Underfull \hbox (badness 3746) in paragraph at lines 34--40
+\T1/ptm/m/n/9 la-tion-ship of Forests, Global Ecol-ogy and Bio-geog-ra-phy,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--40
+\T1/ptm/m/n/9 35, e70186, [][]10.1111/geb.70186[], _eprint:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--40
+\T1/ptm/m/n/9 https://onlinelibrary.wiley.com/doi/pdf/10.1111/geb.70186,
+ []
+
+
+Underfull \hbox (badness 2334) in paragraph at lines 45--52
+\T1/ptm/m/n/9 sparse la-bel data, [][]10.48550/arXiv.2507.22291[],
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
+[][]\T1/ptm/m/n/9 10.48550/arXiv.2002.05709[], arXiv:2002.05709
+ []
+
+
+Underfull \hbox (badness 2245) in paragraph at lines 75--80
+[]\T1/ptm/m/n/9 Feng, Z., Atzberger, C., Jaf-fer, S., Kneze-vic, J., Sor-munen,
+ []
+
+
+Underfull \hbox (badness 5446) in paragraph at lines 75--80
+\T1/ptm/m/n/9 S., Young, R., Li-saius, M. C., Im-mitzer, M., Jack-son,
+ []
+
+
+Underfull \hbox (badness 3965) in paragraph at lines 75--80
+\T1/ptm/m/n/9 T., Ball, J., Coomes, D. A., Mad-havapeddy, A., Blake,
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 75--80
+\T1/ptm/m/n/9 A., and Ke-shav, S.: TESSERA: Tem-po-ral Em-bed-dings of
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 75--80
+\T1/ptm/m/n/9 Sur-face Spec-tra for Earth Rep-re-sen-ta-tion and Anal-y-sis,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--80
+[][]\T1/ptm/m/n/9 10.48550/arXiv.2506.20380[], arXiv:2506.20380
+ []
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1 \begin{thebibliography}{35}
-                               pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
+l.80 
+     pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1 \begin{thebibliography}{35}
-                               ]
-Underfull \hbox (badness 5036) in paragraph at lines 20--24
-[]\T1/ptm/m/n/9 Bayle, A., Gas-coin, S., Berner, L. T., and Choler, P.: Landsat-based green-ing trends in alpine ecosys-tems are in-flated
+l.80 
+     ]
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+[]\T1/ptm/m/n/9 Grabska-Szwagrzyk, E., Tiede, D., Sud-manns, M., and
  []
 
 
-Underfull \hbox (badness 5431) in paragraph at lines 20--24
-\T1/ptm/m/n/9 by mul-ti-decadal in-creases in sum-mer ob-ser-va-tions, Ecog-ra-phy, 2024, e07394, [][]10.1111/ecog.07394[], _eprint:
+Underfull \hbox (badness 2875) in paragraph at lines 118--121
+[]\T1/ptm/m/n/9 Hemmerling, J., Pflug-macher, D., and Hostert, P.: Map-ping
  []
 
-[11]
-Underfull \hbox (badness 1275) in paragraph at lines 199--203
-[]\T1/ptm/m/n/9 Safonova, A., Ghaz-aryan, G., Stiller, S., Main-Knorn, M., Nen-del, C., and Ryo, M.: Ten deep learn-ing tech-niques to ad-dress
+
+Underfull \hbox (badness 2495) in paragraph at lines 118--121
+\T1/ptm/m/n/9 tem-per-ate for-est tree species us-ing dense Sentinel-2 time
  []
 
-[12]) [13] (./essd_landsat_manuscript.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 118--121
+\T1/ptm/m/n/9 se-ries, Re-mote Sens-ing of En-vi-ron-ment, 267, 112743,
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 123--125
+[]\T1/ptm/m/n/9 Hendrycks, D. and Gim-pel, K.: Gaus-sian Er-ror Lin-ear Units
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 128--133
+[]\T1/ptm/m/n/9 Herraiz, A. D., Salazar-Zarzosa, P., Acosta-Muñoz, C.,
+ []
+
+
+Underfull \hbox (badness 6961) in paragraph at lines 128--133
+\T1/ptm/m/n/9 Hernández-Clemente, R., and Vil-lar, R.: Aridity-induced
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 128--133
+\T1/ptm/m/n/9 phe-no-log-i-cal shifts and green-ing trends in Mediter-ranean
+ []
+
+
+Underfull \hbox (badness 5036) in paragraph at lines 128--133
+\T1/ptm/m/n/9 for-est species: In-sights from 28 years of Land-sat data
+ []
+
+
+Underfull \hbox (badness 7631) in paragraph at lines 128--133
+\T1/ptm/m/n/9 in south-ern Spain, Eco-log-i-cal In-di-ca-tors, 171, 113115,
+ []
+
+
+Underfull \hbox (badness 2846) in paragraph at lines 136--142
+\T1/ptm/m/n/9 from Sentinel-2 time se-ries, In-ter-na-tional Jour-nal of Ap-
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 136--142
+\T1/ptm/m/n/9 plied Earth Ob-ser-va-tion and Geoin-for-ma-tion, 142, 104734,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 170--175
+[]\T1/ptm/m/n/9 Mañas, O., La-coste, A., Giró-i Ni-eto, X., Vazquez, D.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--175
+\T1/ptm/m/n/9 and Ro-dríguez, P.: Sea-sonal Con-trast: Un-su-per-vised
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 170--175
+\T1/ptm/m/n/9 Pre-Training from Un-cu-rated Re-mote Sens-ing Data,
+ []
+
+
+Underfull \hbox (badness 7631) in paragraph at lines 170--175
+\T1/ptm/m/n/9 in: 2021 IEEE/CVF In-ter-na-tional Con-fer-ence on Com-
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 170--175
+\T1/ptm/m/n/9 puter Vi-sion (ICCV), pp. 9394--9403, ISSN 2380-7504,
+ []
+
+
+Underfull \hbox (badness 3386) in paragraph at lines 170--175
+[][]\T1/ptm/m/n/9 10.1109/ICCV48922.2021.00928[], iSSN: 2380-
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 189--199
+\T1/ptm/m/n/9 S. B., Sven-ning, J.-C., Swacha, G., Tatarenko, I., Ve£e°a,
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 189--199
+\T1/ptm/m/n/9 mu-nity change in Eu-rope in-di-cate a shift to-ward nutrient-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--206
+[]\T1/ptm/m/n/9 Pflugmacher, D., Rabe, A., Pe-ters, M., and Hostert,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--206
+\T1/ptm/m/n/9 P.: Map-ping pan-European land cover us-ing Land-sat
+ []
+
+
+Underfull \hbox (badness 3724) in paragraph at lines 202--206
+\T1/ptm/m/n/9 spectral-temporal met-rics and the Eu-ro-pean LU-CAS sur-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--206
+\T1/ptm/m/n/9 vey, Re-mote Sens-ing of En-vi-ron-ment, 221, 583--595,
+ []
+
+
+Underfull \hbox (badness 4132) in paragraph at lines 208--211
+[]\T1/ptm/m/n/9 Ruÿwurm, M. and Körner, M.: Self-attention for raw op-
+ []
+
+
+Underfull \hbox (badness 5548) in paragraph at lines 208--211
+\T1/ptm/m/n/9 ti-cal Satel-lite Time Se-ries Clas-si-fi-ca-tion, IS-PRS Jour-nal
+ []
+
+
+Underfull \hbox (badness 4634) in paragraph at lines 208--211
+\T1/ptm/m/n/9 of Pho-togram-me-try and Re-mote Sens-ing, 169, 421--435,
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 221--226
+\T1/ptm/m/n/9 resolution map-ping of tree species and as-so-ci-ated un-cer-
+ []
+
+
+Underfull \hbox (badness 1067) in paragraph at lines 221--226
+\T1/ptm/m/n/9 plied Earth Ob-ser-va-tion and Geoin-for-ma-tion, 131, 103960,
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 228--231
+\T1/ptm/m/n/9 1/2 time se-ries and deep learn-ing for ac-cu-rate for-est tree
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+Underfull \hbox (badness 1062) in paragraph at lines 244--251
+[]\T1/ptm/m/n/9 Turubanova, S., Potapov, P., Hansen, M. C., Li, X., Tyukav-
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 244--251
+\T1/ptm/m/n/9 Guerra-Hernandez, J., Senf, C., Häme, T., Val-buena, R.,
+ []
+
+
+Underfull \hbox (badness 3312) in paragraph at lines 244--251
+\T1/ptm/m/n/9 Ek-lundh, L., Brovk-ina, O., Navrátilová, B., Novotný, J.,
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 244--251
+\T1/ptm/m/n/9 Har-ris, N., and Stolle, F.: Tree canopy ex-tent and height
+ []
+
+
+Underfull \hbox (badness 5374) in paragraph at lines 244--251
+\T1/ptm/m/n/9 archive, Re-mote Sens-ing of En-vi-ron-ment, 298, 113797,
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 254--257
+[]\T1/ptm/m/n/9 Vaswani, A., Shazeer, N., Par-mar, N., Uszko-r-eit, J., Jones,
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 254--257
+\T1/ptm/m/n/9 Is All You Need, [][]10.48550/arXiv.1706.03762[],
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 259--262
+[]\T1/ptm/m/n/9 Viana-Soto, A. and Senf, C.: The Eu-ro-pean For-est Dis-tur-
+ []
+
+
+Underfull \hbox (badness 1902) in paragraph at lines 265--270
+[]\T1/ptm/m/n/9 Wang, M., Zheng, Y., Huang, C., Meng, R., Pang, Y., Jia,
+ []
+
+
+Underfull \hbox (badness 1242) in paragraph at lines 265--270
+\T1/ptm/m/n/9 W., Zhou, J., Huang, Z., Fang, L., and Zhao, F.: As-sess-
+ []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 265--270
+\T1/ptm/m/n/9 ing Landsat-8 and Sentinel-2 spectral-temporal fea-tures for
+ []
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 265--270
+\T1/ptm/m/n/9 longjiang Province, China, For-est Ecosys-tems, 9, 100032,
+ []
+
+
+Underfull \hbox (badness 6859) in paragraph at lines 292--297
+[]\T1/ptm/m/n/9 Yuan, Y., Lin, L., Xin, Q., Zhou, Z.-G., and Liu, Q.:
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 292--297
+\T1/ptm/m/n/9 An Em-pir-i-cal Study on Data Aug-men-ta-tion for Pix-el-wise
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 292--297
+\T1/ptm/m/n/9 Satel-lite Im-age Time-Series Clas-si-fi-ca-tion and Cross-Year
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 292--297
+\T1/ptm/m/n/9 Adap-ta-tion, IEEE Jour-nal of Se-lected Top-ics in Ap-plied
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 292--297
+\T1/ptm/m/n/9 Earth Ob-ser-va-tions and Re-mote Sens-ing, 18, 5172--5188,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--303
+[]\T1/ptm/m/n/9 Yuan Yuan, Yuan, Y., Lin, L., and Lei Lin: Self-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--303
+\T1/ptm/m/n/9 Supervised Pre-train-ing of Trans-form-ers for Satel-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--303
+\T1/ptm/m/n/9 lite Im-age Time Se-ries Clas-si-fi-ca-tion, 14, 474--487,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--309
+[]\T1/ptm/m/n/9 Zerveas, G., Ja-yara-man, S., Pa-tel, D., Bhamidi-paty, A.,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--309
+\T1/ptm/m/n/9 and Eick-hoff, C.: A Transformer-based Frame-work
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--309
+\T1/ptm/m/n/9 for Mul-ti-vari-ate Time Se-ries Rep-re-sen-ta-tion Learn-ing,
+ []
+
+) [9
+
+] (./essd_landsat_manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 34414 strings out of 478287
- 598578 string characters out of 5849290
- 887045 words of memory out of 5000000
- 51996 multiletter control sequences out of 15000+600000
- 506617 words of font info for 87 fonts, out of 8000000 for 9000
+ 34461 strings out of 478287
+ 599376 string characters out of 5849290
+ 910505 words of memory out of 5000000
+ 52046 multiletter control sequences out of 15000+600000
+ 514704 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,103p,2419b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on essd_landsat_manuscript.pdf (13 pages, 139358 bytes).
+ 99i,8n,103p,2419b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on essd_landsat_manuscript.pdf (9 pages, 1311875 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
- 328 compressed objects within 4 object streams
+ 385 PDF objects out of 1000 (max. 8388607)
+ 352 compressed objects within 4 object streams
  76 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
