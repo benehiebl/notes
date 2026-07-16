@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_papers/00_ideas.md",
+                "file": "01_notes/senf_2021_disturbance.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_ideas"
+              "title": "senf_2021_disturbance"
             }
           }
         ],
@@ -198,8 +198,8 @@
   },
   "active": "a4c6288b8418ca97",
   "lastOpenFiles": [
-    "07_forest_stress_trajectory.md",
     "03_papers/00_ideas.md",
+    "07_forest_stress_trajectory.md",
     "Todos.md",
     "03_papers/06_spatial_autocorrelation.md",
     "log.md.tmp.57601.cca2ebc3136b",
