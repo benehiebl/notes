@@ -4,307 +4,117 @@
 \providecommand{\urlprefix}{}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{https://doi.org/\discretionary{}{}{}#1}\else
-  \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup
-  \urlstyle{rm}\Url}\fi
+  \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[{Ball et~al.(2026)Ball, Wicklein, Feng, Knezevic, Jaffer,
-  Madhavapeddy, Atzberger, Dalponte, and Coomes}]{ball_geospatial_2026}
-Ball, J.~G., Wicklein, J.~A., Feng, Z., Knezevic, J., Jaffer, S., Madhavapeddy,
-  A., Atzberger, C., Dalponte, M., and Coomes, D.: Geospatial foundation models
-  enable data-efficient tree species mapping in temperate mountain forests,
-  \doi{10.64898/2026.02.23.707022}, iSSN: 2692-8205 Pages: 2026.02.23.707022
-  Section: New Results, 2026.
+\bibitem[{Ball et~al.(2026)Ball, Wicklein, Feng, Knezevic, Jaffer, Madhavapeddy, Atzberger, Dalponte, and Coomes}]{ball_geospatial_2026}
+Ball, J.~G., Wicklein, J.~A., Feng, Z., Knezevic, J., Jaffer, S., Madhavapeddy, A., Atzberger, C., Dalponte, M., and Coomes, D.: Geospatial foundation models enable data-efficient tree species mapping in temperate mountain forests, \doi{10.64898/2026.02.23.707022}, iSSN: 2692-8205 Pages: 2026.02.23.707022 Section: New Results, 2026.
 
-\bibitem[{Bayle et~al.(2024)Bayle, Gascoin, Berner, and
-  Choler}]{bayle_landsat-based_2024}
-Bayle, A., Gascoin, S., Berner, L.~T., and Choler, P.: Landsat-based greening
-  trends in alpine ecosystems are inflated by multidecadal increases in summer
-  observations, Ecography, 2024, e07\,394, \doi{10.1111/ecog.07394}, \_eprint:
-  https://nsojournals.onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.07394, 2024.
+\bibitem[{Bayle et~al.(2024)Bayle, Gascoin, Berner, and Choler}]{bayle_landsat-based_2024}
+Bayle, A., Gascoin, S., Berner, L.~T., and Choler, P.: Landsat-based greening trends in alpine ecosystems are inflated by multidecadal increases in summer observations, Ecography, 2024, e07\,394, \doi{10.1111/ecog.07394}, \_eprint: https://nsojournals.onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.07394, 2024.
 
 \bibitem[{Bell et~al.(2024)Bell, Gregory, and Yang}]{bell_hindcasting_2024}
-Bell, D.~M., Gregory, M.~J., and Yang, Z.: Hindcasting and updating
-  {Landsat}-based forest structure mapping across years to support forest
-  management and planning, Forest Ecology and Management, 572, 122\,239,
-  \doi{10.1016/j.foreco.2024.122239}, 2024.
+Bell, D.~M., Gregory, M.~J., and Yang, Z.: Hindcasting and updating {Landsat}-based forest structure mapping across years to support forest management and planning, Forest Ecology and Management, 572, 122\,239, \doi{10.1016/j.foreco.2024.122239}, 2024.
 
-\bibitem[{Bricca et~al.(2026)Bricca, Zerbe, Sabatini, Hiebl, Rutzinger,
-  di~Musciano, Calvia, Chiarucci, Poschlod, Rossi, Alessi, and
-  Bonari}]{bricca_topography_2026}
-Bricca, A., Zerbe, S., Sabatini, F.~M., Hiebl, B., Rutzinger, M., di~Musciano,
-  M., Calvia, G., Chiarucci, A., Poschlod, P., Rossi, C., Alessi, N., and
-  Bonari, G.: Topography and {Soil} {Moisture} {Regulate} the
-  {Temperature}-{Biodiversity} {Relationship} of {Forests}, Global Ecology and
-  Biogeography, 35, e70\,186, \doi{10.1111/geb.70186}, \_eprint:
-  https://onlinelibrary.wiley.com/doi/pdf/10.1111/geb.70186, 2026.
+\bibitem[{Bricca et~al.(2026)Bricca, Zerbe, Sabatini, Hiebl, Rutzinger, di~Musciano, Calvia, Chiarucci, Poschlod, Rossi, Alessi, and Bonari}]{bricca_topography_2026}
+Bricca, A., Zerbe, S., Sabatini, F.~M., Hiebl, B., Rutzinger, M., di~Musciano, M., Calvia, G., Chiarucci, A., Poschlod, P., Rossi, C., Alessi, N., and Bonari, G.: Topography and {Soil} {Moisture} {Regulate} the {Temperature}-{Biodiversity} {Relationship} of {Forests}, Global Ecology and Biogeography, 35, e70\,186, \doi{10.1111/geb.70186}, \_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1111/geb.70186, 2026.
 
-\bibitem[{Brown et~al.(2025)Brown, Kazmierski, Pasquarella, Rucklidge,
-  Samsikova, Zhang, Shelhamer, Lahera, Wiles, Ilyushchenko, Gorelick, Zhang,
-  Alj, Schechter, Askay, Guinan, Moore, Boukouvalas, and
-  Kohli}]{brown_alphaearth_2025}
-Brown, C.~F., Kazmierski, M.~R., Pasquarella, V.~J., Rucklidge, W.~J.,
-  Samsikova, M., Zhang, C., Shelhamer, E., Lahera, E., Wiles, O., Ilyushchenko,
-  S., Gorelick, N., Zhang, L.~L., Alj, S., Schechter, E., Askay, S., Guinan,
-  O., Moore, R., Boukouvalas, A., and Kohli, P.: {AlphaEarth} {Foundations}:
-  {An} embedding field model for accurate and efficient global mapping from
-  sparse label data, \doi{10.48550/arXiv.2507.22291}, arXiv:2507.22291 [cs],
-  2025.
+\bibitem[{Brown et~al.(2025)Brown, Kazmierski, Pasquarella, Rucklidge, Samsikova, Zhang, Shelhamer, Lahera, Wiles, Ilyushchenko, Gorelick, Zhang, Alj, Schechter, Askay, Guinan, Moore, Boukouvalas, and Kohli}]{brown_alphaearth_2025}
+Brown, C.~F., Kazmierski, M.~R., Pasquarella, V.~J., Rucklidge, W.~J., Samsikova, M., Zhang, C., Shelhamer, E., Lahera, E., Wiles, O., Ilyushchenko, S., Gorelick, N., Zhang, L.~L., Alj, S., Schechter, E., Askay, S., Guinan, O., Moore, R., Boukouvalas, A., and Kohli, P.: {AlphaEarth} {Foundations}: {An} embedding field model for accurate and efficient global mapping from sparse label data, \doi{10.48550/arXiv.2507.22291}, arXiv:2507.22291 [cs], 2025.
 
-\bibitem[{Chelli et~al.(2017)Chelli, Wellstein, Campetella, Canullo, Tonin,
-  Zerbe, and Gerdol}]{chelli_climate_2017}
-Chelli, S., Wellstein, C., Campetella, G., Canullo, R., Tonin, R., Zerbe, S.,
-  and Gerdol, R.: Climate change response of vegetation across climatic zones
-  in {Italy}, Climate Research, 71, 249--262, \doi{10.3354/cr01443}, 2017.
+\bibitem[{Chelli et~al.(2017)Chelli, Wellstein, Campetella, Canullo, Tonin, Zerbe, and Gerdol}]{chelli_climate_2017}
+Chelli, S., Wellstein, C., Campetella, G., Canullo, R., Tonin, R., Zerbe, S., and Gerdol, R.: Climate change response of vegetation across climatic zones in {Italy}, Climate Research, 71, 249--262, \doi{10.3354/cr01443}, 2017.
 
-\bibitem[{Chen et~al.(2020)Chen, Kornblith, Norouzi, and
-  Hinton}]{chen_simple_2020}
-Chen, T., Kornblith, S., Norouzi, M., and Hinton, G.: A {Simple} {Framework}
-  for {Contrastive} {Learning} of {Visual} {Representations},
-  \doi{10.48550/arXiv.2002.05709}, arXiv:2002.05709 [cs], 2020.
+\bibitem[{Chen et~al.(2020)Chen, Kornblith, Norouzi, and Hinton}]{chen_simple_2020}
+Chen, T., Kornblith, S., Norouzi, M., and Hinton, G.: A {Simple} {Framework} for {Contrastive} {Learning} of {Visual} {Representations}, \doi{10.48550/arXiv.2002.05709}, arXiv:2002.05709 [cs], 2020.
 
-\bibitem[{Conedera et~al.(2018)Conedera, Wohlgemuth, Tanadini, and
-  Pezzatti}]{conedera_drivers_2018}
-Conedera, M., Wohlgemuth, T., Tanadini, M., and Pezzatti, G.~B.: Drivers of
-  broadleaved evergreen species spread into deciduous forests in the southern
-  {Swiss} {Alps}, Reg Environ Change, 18, 425--436,
-  \doi{10.1007/s10113-017-1212-7}, 2018.
+\bibitem[{Conedera et~al.(2018)Conedera, Wohlgemuth, Tanadini, and Pezzatti}]{conedera_drivers_2018}
+Conedera, M., Wohlgemuth, T., Tanadini, M., and Pezzatti, G.~B.: Drivers of broadleaved evergreen species spread into deciduous forests in the southern {Swiss} {Alps}, Reg Environ Change, 18, 425--436, \doi{10.1007/s10113-017-1212-7}, 2018.
 
-\bibitem[{Feng et~al.(2026)Feng, Atzberger, Jaffer, Knezevic, Sormunen, Young,
-  Lisaius, Immitzer, Jackson, Ball, Coomes, Madhavapeddy, Blake, and
-  Keshav}]{feng_tessera_2026}
-Feng, Z., Atzberger, C., Jaffer, S., Knezevic, J., Sormunen, S., Young, R.,
-  Lisaius, M.~C., Immitzer, M., Jackson, T., Ball, J., Coomes, D.~A.,
-  Madhavapeddy, A., Blake, A., and Keshav, S.: {TESSERA}: {Temporal}
-  {Embeddings} of {Surface} {Spectra} for {Earth} {Representation} and
-  {Analysis}, \doi{10.48550/arXiv.2506.20380}, arXiv:2506.20380 [cs.LG], 2026.
+\bibitem[{Feng et~al.(2026)Feng, Atzberger, Jaffer, Knezevic, Sormunen, Young, Lisaius, Immitzer, Jackson, Ball, Coomes, Madhavapeddy, Blake, and Keshav}]{feng_tessera_2026}
+Feng, Z., Atzberger, C., Jaffer, S., Knezevic, J., Sormunen, S., Young, R., Lisaius, M.~C., Immitzer, M., Jackson, T., Ball, J., Coomes, D.~A., Madhavapeddy, A., Blake, A., and Keshav, S.: {TESSERA}: {Temporal} {Embeddings} of {Surface} {Spectra} for {Earth} {Representation} and {Analysis}, \doi{10.48550/arXiv.2506.20380}, arXiv:2506.20380 [cs.LG], 2026.
 
-\bibitem[{Gasparini et~al.(2022)Gasparini, Di~Cosmo, Floris, and
-  De~Laurentis}]{gasparini_italian_2022}
-Gasparini, P., Di~Cosmo, L., Floris, A., and De~Laurentis, D., eds.: Italian
-  {National} {Forest} {Inventory}---{Methods} and {Results} of the {Third}
-  {Survey}: {Inventario} {Nazionale} delle {Foreste} e dei {Serbatoi}
-  {Forestali} di {Carbonio}---{Metodi} e {Risultati} della {Terza} {Indagine},
-  Springer {Tracts} in {Civil} {Engineering}, Springer International
-  Publishing, Cham, ISBN 978-3-030-98677-3 978-3-030-98678-0,
-  \doi{10.1007/978-3-030-98678-0}, 2022.
+\bibitem[{Gasparini et~al.(2022)Gasparini, Di~Cosmo, Floris, and De~Laurentis}]{gasparini_italian_2022}
+Gasparini, P., Di~Cosmo, L., Floris, A., and De~Laurentis, D., eds.: Italian {National} {Forest} {Inventory}---{Methods} and {Results} of the {Third} {Survey}: {Inventario} {Nazionale} delle {Foreste} e dei {Serbatoi} {Forestali} di {Carbonio}---{Metodi} e {Risultati} della {Terza} {Indagine}, Springer {Tracts} in {Civil} {Engineering}, Springer International Publishing, Cham, ISBN 978-3-030-98677-3 978-3-030-98678-0, \doi{10.1007/978-3-030-98678-0}, 2022.
 
-\bibitem[{Grabska-Szwagrzyk et~al.(2024)Grabska-Szwagrzyk, Tiede, Sudmanns, and
-  Kozak}]{grabska-szwagrzyk_map_2024}
-Grabska-Szwagrzyk, E., Tiede, D., Sudmanns, M., and Kozak, J.: Map of forest
-  tree species for {Poland} based on {Sentinel}-2 data, Earth System Science
-  Data, 16, 2877--2891, \doi{10.5194/essd-16-2877-2024}, 2024.
+\bibitem[{Grabska-Szwagrzyk et~al.(2024)Grabska-Szwagrzyk, Tiede, Sudmanns, and Kozak}]{grabska-szwagrzyk_map_2024}
+Grabska-Szwagrzyk, E., Tiede, D., Sudmanns, M., and Kozak, J.: Map of forest tree species for {Poland} based on {Sentinel}-2 data, Earth System Science Data, 16, 2877--2891, \doi{10.5194/essd-16-2877-2024}, 2024.
 
-\bibitem[{Gr{\"u}nig et~al.(2026)Gr{\"u}nig, Rammer, Senf, Albrich, Andr{\'e},
-  Augustynczik, Baumann, Bohn, Bouwman, Bugmann, Collalti, Cristal, Dalmonech,
-  De~Coligny, Dobor, Dollinger, Espelta, Forrester, Garcia-Gonzalo,
-  Gonz{\'a}lez-Olabarria, Hiltner, Hl{\'a}sny, Honkaniemi, Huber, Jonard,
-  J{\"o}nsson, Kunstler, Lagergren, Lindner, Mina, Moos, Morin, Muys, Nabuurs,
-  Nieberg, Patacca, Peltoniemi, Reyer, Schelhaas, Storms, Thom, To{\"i}go, and
-  Seidl}]{grunig_climate_2026}
-Gr{\"u}nig, M., Rammer, W., Senf, C., Albrich, K., Andr{\'e}, F., Augustynczik,
-  A. L.~D., Baumann, M., Bohn, F.~J., Bouwman, M., Bugmann, H., Collalti, A.,
-  Cristal, I., Dalmonech, D., De~Coligny, F., Dobor, L., Dollinger, C.,
-  Espelta, J.~M., Forrester, D.~I., Garcia-Gonzalo, J., Gonz{\'a}lez-Olabarria,
-  J.~R., Hiltner, U., Hl{\'a}sny, T., Honkaniemi, J., Huber, N., Jonard, M.,
-  J{\"o}nsson, A.~M., Kunstler, G., Lagergren, F., Lindner, M., Mina, M., Moos,
-  C., Morin, X., Muys, B., Nabuurs, G.-J., Nieberg, M., Patacca, M.,
-  Peltoniemi, M., Reyer, C. P.~O., Schelhaas, M.-J., Storms, I., Thom, D.,
-  To{\"i}go, M., and Seidl, R.: Climate change will increase forest
-  disturbances in {Europe} throughout the 21st century, Science, 391, eadx6329,
-  \doi{10.1126/science.adx6329}, 2026.
+\bibitem[{Gr{\"u}nig et~al.(2026)Gr{\"u}nig, Rammer, Senf, Albrich, Andr{\'e}, Augustynczik, Baumann, Bohn, Bouwman, Bugmann, Collalti, Cristal, Dalmonech, De~Coligny, Dobor, Dollinger, Espelta, Forrester, Garcia-Gonzalo, Gonz{\'a}lez-Olabarria, Hiltner, Hl{\'a}sny, Honkaniemi, Huber, Jonard, J{\"o}nsson, Kunstler, Lagergren, Lindner, Mina, Moos, Morin, Muys, Nabuurs, Nieberg, Patacca, Peltoniemi, Reyer, Schelhaas, Storms, Thom, To{\"i}go, and Seidl}]{grunig_climate_2026}
+Gr{\"u}nig, M., Rammer, W., Senf, C., Albrich, K., Andr{\'e}, F., Augustynczik, A. L.~D., Baumann, M., Bohn, F.~J., Bouwman, M., Bugmann, H., Collalti, A., Cristal, I., Dalmonech, D., De~Coligny, F., Dobor, L., Dollinger, C., Espelta, J.~M., Forrester, D.~I., Garcia-Gonzalo, J., Gonz{\'a}lez-Olabarria, J.~R., Hiltner, U., Hl{\'a}sny, T., Honkaniemi, J., Huber, N., Jonard, M., J{\"o}nsson, A.~M., Kunstler, G., Lagergren, F., Lindner, M., Mina, M., Moos, C., Morin, X., Muys, B., Nabuurs, G.-J., Nieberg, M., Patacca, M., Peltoniemi, M., Reyer, C. P.~O., Schelhaas, M.-J., Storms, I., Thom, D., To{\"i}go, M., and Seidl, R.: Climate change will increase forest disturbances in {Europe} throughout the 21st century, Science, 391, eadx6329, \doi{10.1126/science.adx6329}, 2026.
 
-\bibitem[{Hemmerling et~al.(2021)Hemmerling, Pflugmacher, and
-  Hostert}]{hemmerling_mapping_2021}
-Hemmerling, J., Pflugmacher, D., and Hostert, P.: Mapping temperate forest tree
-  species using dense {Sentinel}-2 time series, Remote Sensing of Environment,
-  267, 112\,743, \doi{10.1016/j.rse.2021.112743}, 2021.
+\bibitem[{Hemmerling et~al.(2021)Hemmerling, Pflugmacher, and Hostert}]{hemmerling_mapping_2021}
+Hemmerling, J., Pflugmacher, D., and Hostert, P.: Mapping temperate forest tree species using dense {Sentinel}-2 time series, Remote Sensing of Environment, 267, 112\,743, \doi{10.1016/j.rse.2021.112743}, 2021.
 
 \bibitem[{Hendrycks and Gimpel(2016)}]{hendrycks_gaussian_2016}
-Hendrycks, D. and Gimpel, K.: Gaussian {Error} {Linear} {Units} ({GELUs}),
-  \urlprefix\url{https://arxiv.org/abs/1606.08415v5}, 2016.
+Hendrycks, D. and Gimpel, K.: Gaussian {Error} {Linear} {Units} ({GELUs}), \urlprefix\url{https://arxiv.org/abs/1606.08415v5}, 2016.
 
-\bibitem[{Herraiz et~al.(2025)Herraiz, Salazar-Zarzosa, Acosta-Mu{\~n}oz,
-  Hern{\'a}ndez-Clemente, and Villar}]{herraiz_aridity-induced_2025}
-Herraiz, A.~D., Salazar-Zarzosa, P., Acosta-Mu{\~n}oz, C.,
-  Hern{\'a}ndez-Clemente, R., and Villar, R.: Aridity-induced phenological
-  shifts and greening trends in {Mediterranean} forest species: {Insights} from
-  28 years of {Landsat} data in southern {Spain}, Ecological Indicators, 171,
-  113\,115, \doi{10.1016/j.ecolind.2025.113115}, 2025.
+\bibitem[{Herraiz et~al.(2025)Herraiz, Salazar-Zarzosa, Acosta-Mu{\~n}oz, Hern{\'a}ndez-Clemente, and Villar}]{herraiz_aridity-induced_2025}
+Herraiz, A.~D., Salazar-Zarzosa, P., Acosta-Mu{\~n}oz, C., Hern{\'a}ndez-Clemente, R., and Villar, R.: Aridity-induced phenological shifts and greening trends in {Mediterranean} forest species: {Insights} from 28 years of {Landsat} data in southern {Spain}, Ecological Indicators, 171, 113\,115, \doi{10.1016/j.ecolind.2025.113115}, 2025.
 
-\bibitem[{Hiebl et~al.(2025)Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari,
-  Dorigo, Zerbe, and Rutzinger}]{hiebl_advancing_2025}
-Hiebl, B., Alessi, N., Calvia, G., Bricca, A., Bonari, G., Zangari, G., Dorigo,
-  W., Zerbe, S., and Rutzinger, M.: Advancing forest mapping: {Pretraining}
-  strategies and deep-ensemble based uncertainty for predicting evergreen
-  broad-leaved cover from {Sentinel}-2 time series, International Journal of
-  Applied Earth Observation and Geoinformation, 142, 104\,734,
-  \doi{10.1016/j.jag.2025.104734}, 2025.
+\bibitem[{Hiebl et~al.(2025)Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari, Dorigo, Zerbe, and Rutzinger}]{hiebl_advancing_2025}
+Hiebl, B., Alessi, N., Calvia, G., Bricca, A., Bonari, G., Zangari, G., Dorigo, W., Zerbe, S., and Rutzinger, M.: Advancing forest mapping: {Pretraining} strategies and deep-ensemble based uncertainty for predicting evergreen broad-leaved cover from {Sentinel}-2 time series, International Journal of Applied Earth Observation and Geoinformation, 142, 104\,734, \doi{10.1016/j.jag.2025.104734}, 2025.
 
-\bibitem[{Hiebl et~al.(2026)Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari,
-  Zerbe, and Rutzinger}]{hiebl_combining_2026}
-Hiebl, B., Alessi, N., Calvia, G., Bricca, A., Bonari, G., Zangari, G., Zerbe,
-  S., and Rutzinger, M.: Combining specialized {Sentinel}-2 time series
-  features with {AlphaEarth} {Foundations} for forest type mapping, ISPRS
-  Annals of the Photogrammetry, Remote Sensing and Spatial Information
-  Sciences, XI-3-2026, 117--124, \doi{10.5194/isprs-annals-XI-3-2026-117-2026},
-  conference Name: XXV ISPRS Congress 2026 ``From Imagery to Understanding'',
-  Commission III - 4--11 July 2026, Toronto, Canada, 2026.
+\bibitem[{Hiebl et~al.(2026)Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari, Zerbe, and Rutzinger}]{hiebl_combining_2026}
+Hiebl, B., Alessi, N., Calvia, G., Bricca, A., Bonari, G., Zangari, G., Zerbe, S., and Rutzinger, M.: Combining specialized {Sentinel}-2 time series features with {AlphaEarth} {Foundations} for forest type mapping, ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XI-3-2026, 117--124, \doi{10.5194/isprs-annals-XI-3-2026-117-2026}, conference Name: XXV ISPRS Congress 2026 ``From Imagery to Understanding'', Commission III - 4--11 July 2026, Toronto, Canada, 2026.
 
-\bibitem[{Kang et~al.(2021)Kang, Ozdogan, Gao, Anderson, White, Yang, Yang, and
-  Erickson}]{kang_data-driven_2021}
-Kang, Y., Ozdogan, M., Gao, F., Anderson, M.~C., White, W.~A., Yang, Y., Yang,
-  Y., and Erickson, T.~A.: A data-driven approach to estimate leaf area index
-  for {Landsat} images over the contiguous {US}, Remote Sensing of Environment,
-  258, 112\,383, \doi{10.1016/j.rse.2021.112383}, 2021.
+\bibitem[{Kang et~al.(2021)Kang, Ozdogan, Gao, Anderson, White, Yang, Yang, and Erickson}]{kang_data-driven_2021}
+Kang, Y., Ozdogan, M., Gao, F., Anderson, M.~C., White, W.~A., Yang, Y., Yang, Y., and Erickson, T.~A.: A data-driven approach to estimate leaf area index for {Landsat} images over the contiguous {US}, Remote Sensing of Environment, 258, 112\,383, \doi{10.1016/j.rse.2021.112383}, 2021.
 
-\bibitem[{Kollert et~al.(2021)Kollert, Bremer, L{\"o}w, and
-  Rutzinger}]{kollert_exploring_2021}
-Kollert, A., Bremer, M., L{\"o}w, M., and Rutzinger, M.: Exploring the
-  potential of land surface phenology and seasonal cloud free composites of one
-  year of {Sentinel}-2 imagery for tree species mapping in a mountainous
-  region, International Journal of Applied Earth Observation and
-  Geoinformation, 94, 102\,208, \doi{10.1016/j.jag.2020.102208}, 2021.
+\bibitem[{Kollert et~al.(2021)Kollert, Bremer, L{\"o}w, and Rutzinger}]{kollert_exploring_2021}
+Kollert, A., Bremer, M., L{\"o}w, M., and Rutzinger, M.: Exploring the potential of land surface phenology and seasonal cloud free composites of one year of {Sentinel}-2 imagery for tree species mapping in a mountainous region, International Journal of Applied Earth Observation and Geoinformation, 94, 102\,208, \doi{10.1016/j.jag.2020.102208}, 2021.
 
-\bibitem[{Ma{\~n}as et~al.(2021)Ma{\~n}as, Lacoste, Gir{\'o}-i Nieto, Vazquez,
-  and Rodr{\'i}guez}]{manas_seasonal_2021}
-Ma{\~n}as, O., Lacoste, A., Gir{\'o}-i Nieto, X., Vazquez, D., and
-  Rodr{\'i}guez, P.: Seasonal {Contrast}: {Unsupervised} {Pre}-{Training} from
-  {Uncurated} {Remote} {Sensing} {Data}, in: 2021 {IEEE}/{CVF} {International}
-  {Conference} on {Computer} {Vision} ({ICCV}), pp. 9394--9403, ISSN 2380-7504,
-  \doi{10.1109/ICCV48922.2021.00928}, iSSN: 2380-7504, 2021.
+\bibitem[{Ma{\~n}as et~al.(2021)Ma{\~n}as, Lacoste, Gir{\'o}-i Nieto, Vazquez, and Rodr{\'i}guez}]{manas_seasonal_2021}
+Ma{\~n}as, O., Lacoste, A., Gir{\'o}-i Nieto, X., Vazquez, D., and Rodr{\'i}guez, P.: Seasonal {Contrast}: {Unsupervised} {Pre}-{Training} from {Uncurated} {Remote} {Sensing} {Data}, in: 2021 {IEEE}/{CVF} {International} {Conference} on {Computer} {Vision} ({ICCV}), pp. 9394--9403, ISSN 2380-7504, \doi{10.1109/ICCV48922.2021.00928}, iSSN: 2380-7504, 2021.
 
-\bibitem[{Mattioli et~al.(2025)Mattioli, R, D, G, G, D, M, and
-  P}]{mattioli_carta_2025}
-Mattioli, W., R, R., D, B., G, C., G, D., D, G., M, P., and P, C.: La {Carta}
-  {Forestale} d'{Italia} ({CFI2020}): un ritratto aggiornato dei boschi
-  italiani, Forest@ - Journal of Silviculture and Forest Ecology, 22, 39,
-  \doi{10.3832/efor4836-022}, 2025.
+\bibitem[{Mattioli et~al.(2025)Mattioli, R, D, G, G, D, M, and P}]{mattioli_carta_2025}
+Mattioli, W., R, R., D, B., G, C., G, D., D, G., M, P., and P, C.: La {Carta} {Forestale} d'{Italia} ({CFI2020}): un ritratto aggiornato dei boschi italiani, Forest@ - Journal of Silviculture and Forest Ecology, 22, 39, \doi{10.3832/efor4836-022}, 2025.
 
-\bibitem[{Midolo et~al.(2026)Midolo, Clark, Chytr{\'y}, Essl, Dullinger, Jandt,
-  Bruelheide, Dengler, Axmanov{\'a}, A{\'c}i{\'c}, Argagnon, Biurrun, Bonari,
-  Chiarucci, {\'C}u{\v s}terevska, De~Frenne, De~Sanctis, Div{\'i}{\v s}ek,
-  Dole{\v z}al, Dziuba, Ejrn{\ae}s, Garbolino, Jentsch, Jim{\'e}nez-Alfaro,
-  Lenoir, Moeslund, Napoleone, Rumpf, Svenning, Swacha, Tatarenko, Ve{\v c}e{\v
-  r}a, Vynokurov, and Keil}]{midolo_sixty_2026}
-Midolo, G., Clark, A.~T., Chytr{\'y}, M., Essl, F., Dullinger, S., Jandt, U.,
-  Bruelheide, H., Dengler, J., Axmanov{\'a}, I., A{\'c}i{\'c}, S., Argagnon,
-  O., Biurrun, I., Bonari, G., Chiarucci, A., {\'C}u{\v s}terevska, R.,
-  De~Frenne, P., De~Sanctis, M., Div{\'i}{\v s}ek, J., Dole{\v z}al, J.,
-  Dziuba, T., Ejrn{\ae}s, R., Garbolino, E., Jentsch, A., Jim{\'e}nez-Alfaro,
-  B., Lenoir, J., Moeslund, J.~E., Napoleone, F., Rumpf, S.~B., Svenning,
-  J.-C., Swacha, G., Tatarenko, I., Ve{\v c}e{\v r}a, M., Vynokurov, D., and
-  Keil, P.: Sixty years of plant community change in {Europe} indicate a shift
-  toward nutrient-richer and denser vegetation, Science Advances, 12, eaeb2493,
-  \doi{10.1126/sciadv.aeb2493}, 2026.
+\bibitem[{Midolo et~al.(2026)Midolo, Clark, Chytr{\'y}, Essl, Dullinger, Jandt, Bruelheide, Dengler, Axmanov{\'a}, A{\'c}i{\'c}, Argagnon, Biurrun, Bonari, Chiarucci, {\'C}u{\v s}terevska, De~Frenne, De~Sanctis, Div{\'i}{\v s}ek, Dole{\v z}al, Dziuba, Ejrn{\ae}s, Garbolino, Jentsch, Jim{\'e}nez-Alfaro, Lenoir, Moeslund, Napoleone, Rumpf, Svenning, Swacha, Tatarenko, Ve{\v c}e{\v r}a, Vynokurov, and Keil}]{midolo_sixty_2026}
+Midolo, G., Clark, A.~T., Chytr{\'y}, M., Essl, F., Dullinger, S., Jandt, U., Bruelheide, H., Dengler, J., Axmanov{\'a}, I., A{\'c}i{\'c}, S., Argagnon, O., Biurrun, I., Bonari, G., Chiarucci, A., {\'C}u{\v s}terevska, R., De~Frenne, P., De~Sanctis, M., Div{\'i}{\v s}ek, J., Dole{\v z}al, J., Dziuba, T., Ejrn{\ae}s, R., Garbolino, E., Jentsch, A., Jim{\'e}nez-Alfaro, B., Lenoir, J., Moeslund, J.~E., Napoleone, F., Rumpf, S.~B., Svenning, J.-C., Swacha, G., Tatarenko, I., Ve{\v c}e{\v r}a, M., Vynokurov, D., and Keil, P.: Sixty years of plant community change in {Europe} indicate a shift toward nutrient-richer and denser vegetation, Science Advances, 12, eaeb2493, \doi{10.1126/sciadv.aeb2493}, 2026.
 
-\bibitem[{Pflugmacher et~al.(2019)Pflugmacher, Rabe, Peters, and
-  Hostert}]{pflugmacher_mapping_2019}
-Pflugmacher, D., Rabe, A., Peters, M., and Hostert, P.: Mapping pan-{European}
-  land cover using {Landsat} spectral-temporal metrics and the {European}
-  {LUCAS} survey, Remote Sensing of Environment, 221, 583--595,
-  \doi{10.1016/j.rse.2018.12.001}, 2019.
+\bibitem[{Pflugmacher et~al.(2019)Pflugmacher, Rabe, Peters, and Hostert}]{pflugmacher_mapping_2019}
+Pflugmacher, D., Rabe, A., Peters, M., and Hostert, P.: Mapping pan-{European} land cover using {Landsat} spectral-temporal metrics and the {European} {LUCAS} survey, Remote Sensing of Environment, 221, 583--595, \doi{10.1016/j.rse.2018.12.001}, 2019.
 
 \bibitem[{Rußwurm and Körner(2020)}]{ruswurm_self-attention_2020}
-Rußwurm, M. and Körner, M.: Self-attention for raw optical {Satellite} {Time}
-  {Series} {Classification}, ISPRS Journal of Photogrammetry and Remote
-  Sensing, 169, 421--435, \doi{10.1016/j.isprsjprs.2020.06.006}, 2020.
+Rußwurm, M. and Körner, M.: Self-attention for raw optical {Satellite} {Time} {Series} {Classification}, ISPRS Journal of Photogrammetry and Remote Sensing, 169, 421--435, \doi{10.1016/j.isprsjprs.2020.06.006}, 2020.
 
-\bibitem[{Safonova et~al.(2023)Safonova, Ghazaryan, Stiller, Main-Knorn,
-  Nendel, and Ryo}]{safonova_ten_2023}
-Safonova, A., Ghazaryan, G., Stiller, S., Main-Knorn, M., Nendel, C., and Ryo,
-  M.: Ten deep learning techniques to address small data problems with remote
-  sensing, International Journal of Applied Earth Observation and
-  Geoinformation, 125, 103\,569, \doi{10.1016/j.jag.2023.103569}, 2023.
+\bibitem[{Safonova et~al.(2023)Safonova, Ghazaryan, Stiller, Main-Knorn, Nendel, and Ryo}]{safonova_ten_2023}
+Safonova, A., Ghazaryan, G., Stiller, S., Main-Knorn, M., Nendel, C., and Ryo, M.: Ten deep learning techniques to address small data problems with remote sensing, International Journal of Applied Earth Observation and Geoinformation, 125, 103\,569, \doi{10.1016/j.jag.2023.103569}, 2023.
 
-\bibitem[{Sylvain et~al.(2024)Sylvain, Drolet, Thiffault, and
-  Anctil}]{sylvain_high-resolution_2024}
-Sylvain, J.-D., Drolet, G., Thiffault, {\'E}., and Anctil, F.: High-resolution
-  mapping of tree species and associated uncertainty by combining aerial remote
-  sensing data and convolutional neural networks ensemble, International
-  Journal of Applied Earth Observation and Geoinformation, 131, 103\,960,
-  \doi{10.1016/j.jag.2024.103960}, 2024.
+\bibitem[{Sylvain et~al.(2024)Sylvain, Drolet, Thiffault, and Anctil}]{sylvain_high-resolution_2024}
+Sylvain, J.-D., Drolet, G., Thiffault, {\'E}., and Anctil, F.: High-resolution mapping of tree species and associated uncertainty by combining aerial remote sensing data and convolutional neural networks ensemble, International Journal of Applied Earth Observation and Geoinformation, 131, 103\,960, \doi{10.1016/j.jag.2024.103960}, 2024.
 
 \bibitem[{Tan et~al.(2025)Tan, Li, Ma, Yan, and Huo}]{tan_leveraging_2025}
-Tan, J., Li, J., Ma, T., Yan, X., and Huo, Z.: Leveraging {Sentinel}-1/2 time
-  series and deep learning for accurate forest tree species mapping, Frontiers
-  in Forests and Global Change, 8, \doi{10.3389/ffgc.2025.1599510}, 2025.
+Tan, J., Li, J., Ma, T., Yan, X., and Huo, Z.: Leveraging {Sentinel}-1/2 time series and deep learning for accurate forest tree species mapping, Frontiers in Forests and Global Change, 8, \doi{10.3389/ffgc.2025.1599510}, 2025.
 
-\bibitem[{Tong et~al.(2023)Tong, Brandt, Yue, Zhang, Fensholt, Ciais, Wang,
-  Liu, Zhang, Mao, and Jepsen}]{tong_reforestation_2023}
-Tong, X., Brandt, M., Yue, Y., Zhang, X., Fensholt, R., Ciais, P., Wang, K.,
-  Liu, S., Zhang, W., Mao, C., and Jepsen, M.~R.: Reforestation policies around
-  2000 in southern {China} led to forest densification and expansion in the
-  2010s, Communications Earth \& Environment, 4, 260,
-  \doi{10.1038/s43247-023-00923-1}, 2023.
+\bibitem[{Tong et~al.(2023)Tong, Brandt, Yue, Zhang, Fensholt, Ciais, Wang, Liu, Zhang, Mao, and Jepsen}]{tong_reforestation_2023}
+Tong, X., Brandt, M., Yue, Y., Zhang, X., Fensholt, R., Ciais, P., Wang, K., Liu, S., Zhang, W., Mao, C., and Jepsen, M.~R.: Reforestation policies around 2000 in southern {China} led to forest densification and expansion in the 2010s, Communications Earth \& Environment, 4, 260, \doi{10.1038/s43247-023-00923-1}, 2023.
 
-\bibitem[{Turubanova et~al.(2023)Turubanova, Potapov, Hansen, Li, Tyukavina,
-  Pickens, Hernandez-Serna, Arranz, Guerra-Hernandez, Senf, H{\"a}me, Valbuena,
-  Eklundh, Brovkina, Navr{\'a}tilov{\'a}, Novotn{\'y}, Harris, and
-  Stolle}]{turubanova_tree_2023}
-Turubanova, S., Potapov, P., Hansen, M.~C., Li, X., Tyukavina, A., Pickens,
-  A.~H., Hernandez-Serna, A., Arranz, A.~P., Guerra-Hernandez, J., Senf, C.,
-  H{\"a}me, T., Valbuena, R., Eklundh, L., Brovkina, O., Navr{\'a}tilov{\'a},
-  B., Novotn{\'y}, J., Harris, N., and Stolle, F.: Tree canopy extent and
-  height change in {Europe}, 2001--2021, quantified using {Landsat} data
-  archive, Remote Sensing of Environment, 298, 113\,797,
-  \doi{10.1016/j.rse.2023.113797}, 2023.
+\bibitem[{Turubanova et~al.(2023)Turubanova, Potapov, Hansen, Li, Tyukavina, Pickens, Hernandez-Serna, Arranz, Guerra-Hernandez, Senf, H{\"a}me, Valbuena, Eklundh, Brovkina, Navr{\'a}tilov{\'a}, Novotn{\'y}, Harris, and Stolle}]{turubanova_tree_2023}
+Turubanova, S., Potapov, P., Hansen, M.~C., Li, X., Tyukavina, A., Pickens, A.~H., Hernandez-Serna, A., Arranz, A.~P., Guerra-Hernandez, J., Senf, C., H{\"a}me, T., Valbuena, R., Eklundh, L., Brovkina, O., Navr{\'a}tilov{\'a}, B., Novotn{\'y}, J., Harris, N., and Stolle, F.: Tree canopy extent and height change in {Europe}, 2001--2021, quantified using {Landsat} data archive, Remote Sensing of Environment, 298, 113\,797, \doi{10.1016/j.rse.2023.113797}, 2023.
 
-\bibitem[{Vaswani et~al.(2023)Vaswani, Shazeer, Parmar, Uszkoreit, Jones,
-  Gomez, Kaiser, and Polosukhin}]{vaswani_attention_2023}
-Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N.,
-  Kaiser, L., and Polosukhin, I.: Attention {Is} {All} {You} {Need},
-  \doi{10.48550/arXiv.1706.03762}, arXiv:1706.03762 [cs], 2023.
+\bibitem[{Vaswani et~al.(2023)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin}]{vaswani_attention_2023}
+Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.~N., Kaiser, L., and Polosukhin, I.: Attention {Is} {All} {You} {Need}, \doi{10.48550/arXiv.1706.03762}, arXiv:1706.03762 [cs], 2023.
 
 \bibitem[{Viana-Soto and Senf(2025)}]{viana-soto_european_2025}
-Viana-Soto, A. and Senf, C.: The {European} {Forest} {Disturbance} {Atlas}: a
-  forest disturbance monitoring system using the {Landsat} archive, Earth
-  System Science Data, 17, 2373--2404, \doi{10.5194/essd-17-2373-2025}, 2025.
+Viana-Soto, A. and Senf, C.: The {European} {Forest} {Disturbance} {Atlas}: a forest disturbance monitoring system using the {Landsat} archive, Earth System Science Data, 17, 2373--2404, \doi{10.5194/essd-17-2373-2025}, 2025.
 
-\bibitem[{Wang et~al.(2022)Wang, Zheng, Huang, Meng, Pang, Jia, Zhou, Huang,
-  Fang, and Zhao}]{wang_assessing_2022}
-Wang, M., Zheng, Y., Huang, C., Meng, R., Pang, Y., Jia, W., Zhou, J., Huang,
-  Z., Fang, L., and Zhao, F.: Assessing {Landsat}-8 and {Sentinel}-2
-  spectral-temporal features for mapping tree species of northern plantation
-  forests in {Heilongjiang} {Province}, {China}, Forest Ecosystems, 9,
-  100\,032, \doi{10.1016/j.fecs.2022.100032}, 2022.
+\bibitem[{Wang et~al.(2022)Wang, Zheng, Huang, Meng, Pang, Jia, Zhou, Huang, Fang, and Zhao}]{wang_assessing_2022}
+Wang, M., Zheng, Y., Huang, C., Meng, R., Pang, Y., Jia, W., Zhou, J., Huang, Z., Fang, L., and Zhao, F.: Assessing {Landsat}-8 and {Sentinel}-2 spectral-temporal features for mapping tree species of northern plantation forests in {Heilongjiang} {Province}, {China}, Forest Ecosystems, 9, 100\,032, \doi{10.1016/j.fecs.2022.100032}, 2022.
 
-\bibitem[{Wulder et~al.(2022)Wulder, Roy, Radeloff, Loveland, Anderson,
-  Johnson, Healey, Zhu, Scambos, Pahlevan, Hansen, Gorelick, Crawford, Masek,
-  Hermosilla, White, Belward, Schaaf, Woodcock, Huntington, Lymburner, Hostert,
-  Gao, Lyapustin, Pekel, Strobl, and Cook}]{wulder_fifty_2022}
-Wulder, M.~A., Roy, D.~P., Radeloff, V.~C., Loveland, T.~R., Anderson, M.~C.,
-  Johnson, D.~M., Healey, S., Zhu, Z., Scambos, T.~A., Pahlevan, N., Hansen,
-  M., Gorelick, N., Crawford, C.~J., Masek, J.~G., Hermosilla, T., White,
-  J.~C., Belward, A.~S., Schaaf, C., Woodcock, C.~E., Huntington, J.~L.,
-  Lymburner, L., Hostert, P., Gao, F., Lyapustin, A., Pekel, J.-F., Strobl, P.,
-  and Cook, B.~D.: Fifty years of {Landsat} science and impacts, Remote Sensing
-  of Environment, 280, 113\,195, \doi{10.1016/j.rse.2022.113195}, 2022.
+\bibitem[{Wulder et~al.(2022)Wulder, Roy, Radeloff, Loveland, Anderson, Johnson, Healey, Zhu, Scambos, Pahlevan, Hansen, Gorelick, Crawford, Masek, Hermosilla, White, Belward, Schaaf, Woodcock, Huntington, Lymburner, Hostert, Gao, Lyapustin, Pekel, Strobl, and Cook}]{wulder_fifty_2022}
+Wulder, M.~A., Roy, D.~P., Radeloff, V.~C., Loveland, T.~R., Anderson, M.~C., Johnson, D.~M., Healey, S., Zhu, Z., Scambos, T.~A., Pahlevan, N., Hansen, M., Gorelick, N., Crawford, C.~J., Masek, J.~G., Hermosilla, T., White, J.~C., Belward, A.~S., Schaaf, C., Woodcock, C.~E., Huntington, J.~L., Lymburner, L., Hostert, P., Gao, F., Lyapustin, A., Pekel, J.-F., Strobl, P., and Cook, B.~D.: Fifty years of {Landsat} science and impacts, Remote Sensing of Environment, 280, 113\,195, \doi{10.1016/j.rse.2022.113195}, 2022.
 
-\bibitem[{Yuan et~al.(2022)Yuan, Lin, Liu, Hang, and
-  Zhou}]{yuan_sits-former_2022}
-Yuan, Y., Lin, L., Liu, Q., Hang, R., and Zhou, Z.-G.: {SITS}-{Former}: {A}
-  pre-trained spatio-spectral-temporal representation model for {Sentinel}-2
-  time series classification, International Journal of Applied Earth
-  Observation and Geoinformation, 106, 102\,651,
-  \doi{10.1016/j.jag.2021.102651}, 2022.
+\bibitem[{Yuan et~al.(2022)Yuan, Lin, Liu, Hang, and Zhou}]{yuan_sits-former_2022}
+Yuan, Y., Lin, L., Liu, Q., Hang, R., and Zhou, Z.-G.: {SITS}-{Former}: {A} pre-trained spatio-spectral-temporal representation model for {Sentinel}-2 time series classification, International Journal of Applied Earth Observation and Geoinformation, 106, 102\,651, \doi{10.1016/j.jag.2021.102651}, 2022.
 
 \bibitem[{Yuan et~al.(2025)Yuan, Lin, Xin, Zhou, and Liu}]{yuan_empirical_2025}
-Yuan, Y., Lin, L., Xin, Q., Zhou, Z.-G., and Liu, Q.: An {Empirical} {Study} on
-  {Data} {Augmentation} for {Pixelwise} {Satellite} {Image} {Time}-{Series}
-  {Classification} and {Cross}-{Year} {Adaptation}, IEEE Journal of Selected
-  Topics in Applied Earth Observations and Remote Sensing, 18, 5172--5188,
-  \doi{10.1109/JSTARS.2025.3527017}, 2025.
+Yuan, Y., Lin, L., Xin, Q., Zhou, Z.-G., and Liu, Q.: An {Empirical} {Study} on {Data} {Augmentation} for {Pixelwise} {Satellite} {Image} {Time}-{Series} {Classification} and {Cross}-{Year} {Adaptation}, IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 18, 5172--5188, \doi{10.1109/JSTARS.2025.3527017}, 2025.
 
-\bibitem[{{Yuan Yuan} et~al.(2020){Yuan Yuan}, Yuan, Lin, and {Lei
-  Lin}}]{yuan_yuan_self-supervised_2020}
-{Yuan Yuan}, Yuan, Y., Lin, L., and {Lei Lin}: Self-{Supervised} {Pretraining}
-  of {Transformers} for {Satellite} {Image} {Time} {Series} {Classification},
-  14, 474--487, \doi{10.36227/techrxiv.13025039.v2}, 2020.
+\bibitem[{{Yuan Yuan} et~al.(2020){Yuan Yuan}, Yuan, Lin, and {Lei Lin}}]{yuan_yuan_self-supervised_2020}
+{Yuan Yuan}, Yuan, Y., Lin, L., and {Lei Lin}: Self-{Supervised} {Pretraining} of {Transformers} for {Satellite} {Image} {Time} {Series} {Classification}, 14, 474--487, \doi{10.36227/techrxiv.13025039.v2}, 2020.
 
-\bibitem[{Zerveas et~al.(2020)Zerveas, Jayaraman, Patel, Bhamidipaty, and
-  Eickhoff}]{zerveas_transformer-based_2020}
-Zerveas, G., Jayaraman, S., Patel, D., Bhamidipaty, A., and Eickhoff, C.: A
-  {Transformer}-based {Framework} for {Multivariate} {Time} {Series}
-  {Representation} {Learning}, \doi{10.48550/arXiv.2010.02803}, 2020.
+\bibitem[{Zerveas et~al.(2020)Zerveas, Jayaraman, Patel, Bhamidipaty, and Eickhoff}]{zerveas_transformer-based_2020}
+Zerveas, G., Jayaraman, S., Patel, D., Bhamidipaty, A., and Eickhoff, C.: A {Transformer}-based {Framework} for {Multivariate} {Time} {Series} {Representation} {Learning}, \doi{10.48550/arXiv.2010.02803}, 2020.
 
 \end{thebibliography}
