@@ -4,6 +4,20 @@ Append-only record of all wiki operations.
 
 ---
 
+## 2026-07-20
+
+**Updated** `04_projects/project_ideas.md`
+- Filled in Motivation, Research gap, and Research questions/Hypotheses callouts for "Alpine forest tree line under stress" entry
+- Dual-stressor framework: summer drought (VPD stress differential between open ecotone and closed forest) + winter snow cover deficit (soil frost → seedling recruitment failure)
+- Focus species: *Pinus cembra* in the Tyrolean Alps; methods include drone-SIF, juvenile dendrochronology, phenocam, satellite SITS, individual crown segmentation
+- Incorporated 6 new web sources (Charra-Vaskou 2026 New Phytologist, Baglioni 2025 Biogeosciences, Camarero 2025 Nature Reviews Earth & Env., Grünig 2023, Bringing SAM to New Heights 2025, VHR aerial treeline 2025)
+
+**Updated** `04_projects/02_tree_line_stress.md`
+- Filled in full project description: Motivation, Zielsetzung, Work packages (WP1: SIF/dendro, WP2: satellite RS), Outcome (5 planned papers), Zeitrahmen (3-year timeline 2026–2029)
+- Key references section with 15+ scientifically verified publications
+
+---
+
 ## 2026-06-01
 
 **Revised** `03_papers/06_spatial_autocorrelation.md`
