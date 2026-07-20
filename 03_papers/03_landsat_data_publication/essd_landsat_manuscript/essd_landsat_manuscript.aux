@@ -1,15 +1,29 @@
 \relax 
+\providecommand\hyper@newdestlabel[2]{}
 \catcode`\'=\active
 \providecommand\babel@aux[2]{}
 \@nameuse{bbl@beforestart}
-\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \gdef\abstractexists{true}
 \gdef\@abstr{\parindent 1em\relax  Consistent long-term maps of forest functional type and dominant tree species cover at high spatial resolution are currently unavailable for Italy. The study presents annual 30 m resolution maps of continous evergeen broad-leaved, deciduous, and coniferous leaf type cover fractions and dominant tree species class probabilities for all forested pixels in Italy spanning 1987–2025, derived from the Landsat Collection-2 Level-2 archive (Landsat 4/5/7/8/9). Two Time Series Transformer models are trained via a three-stage workflow combining contrastive pretraining with supervised fine-tuning on Italian forest plot observations, forest inventories, and a synthetically generated training dataset to predict both tasks. Pixel-level uncertainty estimates are provided as the standard deviation of a five-seed deep ensemble for both models. A three-year observation pooling strategy is applied to increase cloud-free observation density and mitigate inter-annual variability. Evaluation of the time series maps are based on hold-out areas and a comparison with historical orthophotos. The 39-year time series enables historical reconstruction of forest composition dynamics and long-term ecological change detection at national scale and relevant time scales for climate-driven species range shifts. }
 \citation{wulder_fifty_2022}
 \citation{bell_hindcasting_2024,turubanova_tree_2023}
-\citation{pflugmacher_mapping_2019,turubanova_tree_2023}
+\citation{pflugmacher_mapping_2019,turubanova_tree_2023,yel_2026_greening}
 \citation{viana-soto_european_2025,grunig_climate_2026}
 \citation{tong_reforestation_2023,midolo_sixty_2026}
 \citation{kollert_exploring_2021,hemmerling_mapping_2021,wang_assessing_2022}
@@ -58,11 +72,11 @@
 \citation{herraiz_aridity-induced_2025,chelli_climate_2017}
 \citation{conedera_drivers_2018}
 \citation{mattioli_carta_2025}
-\citation{bayle_landsat-based_2024}
-\citation{chen_simple_2020,manas_seasonal_2021}
-\citation{hemmerling_mapping_2021,pflugmacher_mapping_2019,grabska-szwagrzyk_map_2024}
-\citation{brown_alphaearth_2025,hiebl_combining_2026}
-\citation{hiebl_advancing_2025,safonova_ten_2023}
+\citation{chelli_climate_2017}
+\citation{bricca_topography_2026}
+\citation{gasparini_italian_2022}
+\citation{chelli_climate_2017,herraiz_aridity-induced_2025,conedera_drivers_2018}
+\citation{bricca_topography_2026}
 \@LN@col{1}
 \@LN{30}{1}
 \@LN{31}{1}
@@ -118,8 +132,8 @@
 \@LN{81}{1}
 \@LN{82}{1}
 \@LN{83}{1}
-\@LN{84}{1}
 \@LN@col{2}
+\@LN{84}{1}
 \@LN{85}{1}
 \@LN{86}{1}
 \@LN{87}{1}
@@ -159,7 +173,9 @@
 \@LN{121}{1}
 \@LN{122}{1}
 \@LN{123}{1}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Materials and Methods}{2}{section.2}\protected@file@percent }
 \@LN{124}{1}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Study Area}{2}{subsection.2.1}\protected@file@percent }
 \@LN{125}{1}
 \@LN{126}{1}
 \@LN{127}{1}
@@ -169,22 +185,18 @@
 \@LN{131}{1}
 \@LN{132}{1}
 \@LN{133}{1}
-\@LN{134}{1}
-\@LN{135}{1}
-\@LN{136}{1}
-\@LN{137}{1}
-\@LN{138}{1}
-\@LN{139}{1}
-\citation{pflugmacher_mapping_2019,grabska-szwagrzyk_map_2024}
-\citation{bayle_landsat-based_2024}
-\citation{sylvain_high-resolution_2024}
-\citation{hiebl_advancing_2025}
-\citation{chelli_climate_2017}
-\citation{bricca_topography_2026}
-\citation{gasparini_italian_2022}
-\citation{chelli_climate_2017,herraiz_aridity-induced_2025,conedera_drivers_2018}
-\citation{bricca_topography_2026}
+\citation{alessi_ancient_2019}
+\citation{safonova_ten_2023}
+\citation{safonova_ten_2023}
+\citation{mattioli_carta_2025}
 \@LN@col{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Study Area Italy with high forest cover in the Alps and mountainous areas of Central Italy.\relax }}{3}{figure.caption.1}\protected@file@percent }
+\@LN{134}{2}
+\@LN{135}{2}
+\@LN{136}{2}
+\@LN{137}{2}
+\@LN{138}{2}
+\@LN{139}{2}
 \@LN{140}{2}
 \@LN{141}{2}
 \@LN{142}{2}
@@ -198,9 +210,12 @@
 \@LN{150}{2}
 \@LN{151}{2}
 \@LN{152}{2}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Modelling Data}{3}{subsection.2.2}\protected@file@percent }
 \@LN{153}{2}
 \@LN{154}{2}
+\@LN@col{2}
 \@LN{155}{2}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Italian forest vegetation plot databases}{3}{subsubsection.2.2.1}\protected@file@percent }
 \@LN{156}{2}
 \@LN{157}{2}
 \@LN{158}{2}
@@ -226,9 +241,8 @@
 \@LN{178}{2}
 \@LN{179}{2}
 \@LN{180}{2}
-\@writefile{toc}{\contentsline {section}{\numberline {2}Materials and Methods}{3}{section.2}\protected@file@percent }
 \@LN{181}{2}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Study Area}{3}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Field plot observations}{3}{subsubsection.2.2.2}\protected@file@percent }
 \@LN{182}{2}
 \@LN{183}{2}
 \@LN{184}{2}
@@ -237,8 +251,6 @@
 \@LN{187}{2}
 \@LN{188}{2}
 \@LN{189}{2}
-\@LN@col{2}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Study Area Italy with high forest covered areas in the Alps and mountainous areas of Central Italy.}}{3}{figure.caption.1}\protected@file@percent }
 \@LN{190}{2}
 \@LN{191}{2}
 \@LN{192}{2}
@@ -251,28 +263,25 @@
 \@LN{199}{2}
 \@LN{200}{2}
 \@LN{201}{2}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}CFI Forest Inventory Data}{3}{subsubsection.2.2.3}\protected@file@percent }
 \@LN{202}{2}
 \@LN{203}{2}
 \@LN{204}{2}
 \@LN{205}{2}
-\@LN{206}{2}
-\@LN{207}{2}
-\@LN{208}{2}
-\@LN{209}{2}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Modelling Data}{3}{subsection.2.2}\protected@file@percent }
-\@LN{210}{2}
-\@LN{211}{2}
-\citation{mattioli_carta_2025}
-\citation{safonova_ten_2023}
-\citation{safonova_ten_2023}
 \citation{kang_data-driven_2021}
 \citation{tan_leveraging_2025}
 \citation{brown_alphaearth_2025,hiebl_combining_2026}
 \citation{ball_geospatial_2026}
 \citation{feng_tessera_2026}
+\citation{ruswurm_self-attention_2020,zerveas_transformer-based_2020}
 \@LN@col{1}
+\@LN{206}{3}
+\@LN{207}{3}
+\@LN{208}{3}
+\@LN{209}{3}
+\@LN{210}{3}
+\@LN{211}{3}
 \@LN{212}{3}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}CFI Forest Inventory Data}{4}{subsubsection.2.2.1}\protected@file@percent }
 \@LN{213}{3}
 \@LN{214}{3}
 \@LN{215}{3}
@@ -286,13 +295,13 @@
 \@LN{223}{3}
 \@LN{224}{3}
 \@LN{225}{3}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}Synthetic leaf type cover data}{4}{subsubsection.2.2.4}\protected@file@percent }
 \@LN{226}{3}
 \@LN{227}{3}
 \@LN{228}{3}
 \@LN{229}{3}
 \@LN{230}{3}
 \@LN{231}{3}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Italian forest vegetation plot databases}{4}{subsubsection.2.2.2}\protected@file@percent }
 \@LN{232}{3}
 \@LN{233}{3}
 \@LN{234}{3}
@@ -315,17 +324,17 @@
 \@LN{251}{3}
 \@LN{252}{3}
 \@LN{253}{3}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Field plot observations}{4}{subsubsection.2.2.3}\protected@file@percent }
 \@LN{254}{3}
 \@LN{255}{3}
 \@LN{256}{3}
 \@LN{257}{3}
+\@LN@col{2}
 \@LN{258}{3}
 \@LN{259}{3}
 \@LN{260}{3}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.5}Landsat time series}{4}{subsubsection.2.2.5}\protected@file@percent }
 \@LN{261}{3}
 \@LN{262}{3}
-\@LN@col{2}
 \@LN{263}{3}
 \@LN{264}{3}
 \@LN{265}{3}
@@ -336,7 +345,6 @@
 \@LN{270}{3}
 \@LN{271}{3}
 \@LN{272}{3}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}Synthetic leaf type cover data}{4}{subsubsection.2.2.4}\protected@file@percent }
 \@LN{273}{3}
 \@LN{274}{3}
 \@LN{275}{3}
@@ -352,6 +360,7 @@
 \@LN{285}{3}
 \@LN{286}{3}
 \@LN{287}{3}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.6}Additional data sources}{4}{subsubsection.2.2.6}\protected@file@percent }
 \@LN{288}{3}
 \@LN{289}{3}
 \@LN{290}{3}
@@ -362,6 +371,7 @@
 \@LN{295}{3}
 \@LN{296}{3}
 \@LN{297}{3}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Time Series Transformer Architecture}{4}{subsection.2.3}\protected@file@percent }
 \@LN{298}{3}
 \@LN{299}{3}
 \@LN{300}{3}
@@ -370,16 +380,6 @@
 \@LN{303}{3}
 \@LN{304}{3}
 \@LN{305}{3}
-\@LN{306}{3}
-\@LN{307}{3}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.5}Landsat time series}{4}{subsubsection.2.2.5}\protected@file@percent }
-\@LN{308}{3}
-\@LN{309}{3}
-\@LN{310}{3}
-\@LN{311}{3}
-\@LN{312}{3}
-\@LN{313}{3}
-\citation{ruswurm_self-attention_2020,zerveas_transformer-based_2020}
 \citation{vaswani_attention_2023}
 \citation{yuan_yuan_self-supervised_2020}
 \citation{hendrycks_gaussian_2016}
@@ -387,7 +387,16 @@
 \citation{manas_seasonal_2021}
 \citation{yuan_empirical_2025}
 \citation{grabska-szwagrzyk_map_2024}
+\citation{hiebl_advancing_2025}
 \@LN@col{1}
+\@LN{306}{4}
+\@LN{307}{4}
+\@LN{308}{4}
+\@LN{309}{4}
+\@LN{310}{4}
+\@LN{311}{4}
+\@LN{312}{4}
+\@LN{313}{4}
 \@LN{314}{4}
 \@LN{315}{4}
 \@LN{316}{4}
@@ -409,7 +418,6 @@
 \@LN{332}{4}
 \@LN{333}{4}
 \@LN{334}{4}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.6}Additional data sources}{5}{subsubsection.2.2.6}\protected@file@percent }
 \@LN{335}{4}
 \@LN{336}{4}
 \@LN{337}{4}
@@ -420,7 +428,6 @@
 \@LN{342}{4}
 \@LN{343}{4}
 \@LN{344}{4}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Time Series Transformer Architecture}{5}{subsection.2.3}\protected@file@percent }
 \@LN{345}{4}
 \@LN{346}{4}
 \@LN{347}{4}
@@ -432,8 +439,10 @@
 \@LN{353}{4}
 \@LN{354}{4}
 \@LN{355}{4}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Training procedure}{5}{subsection.2.4}\protected@file@percent }
 \@LN{356}{4}
 \@LN{357}{4}
+\@LN@col{2}
 \@LN{358}{4}
 \@LN{359}{4}
 \@LN{360}{4}
@@ -441,7 +450,6 @@
 \@LN{362}{4}
 \@LN{363}{4}
 \@LN{364}{4}
-\@LN@col{2}
 \@LN{365}{4}
 \@LN{366}{4}
 \@LN{367}{4}
@@ -480,7 +488,6 @@
 \@LN{400}{4}
 \@LN{401}{4}
 \@LN{402}{4}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Training procedure}{5}{subsection.2.4}\protected@file@percent }
 \@LN{403}{4}
 \@LN{404}{4}
 \@LN{405}{4}
@@ -491,14 +498,13 @@
 \@LN{410}{4}
 \@LN{411}{4}
 \@LN{412}{4}
-\@LN{413}{4}
-\@LN{414}{4}
-\@LN{415}{4}
-\@LN{416}{4}
-\@LN{417}{4}
-\citation{hiebl_advancing_2025}
 \citation{bayle_landsat-based_2024}
 \@LN@col{1}
+\@LN{413}{5}
+\@LN{414}{5}
+\@LN{415}{5}
+\@LN{416}{5}
+\@LN{417}{5}
 \@LN{418}{5}
 \@LN{419}{5}
 \@LN{420}{5}
@@ -512,6 +518,7 @@
 \@LN{428}{5}
 \@LN{429}{5}
 \@LN{430}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Mapping scheme}{6}{subsection.2.5}\protected@file@percent }
 \@LN{431}{5}
 \@LN{432}{5}
 \@LN{433}{5}
@@ -543,8 +550,10 @@
 \@LN{459}{5}
 \@LN{460}{5}
 \@LN{461}{5}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Evaluation}{6}{subsection.2.6}\protected@file@percent }
 \@LN{462}{5}
 \@LN{463}{5}
+\@LN@col{2}
 \@LN{464}{5}
 \@LN{465}{5}
 \@LN{466}{5}
@@ -554,13 +563,11 @@
 \@LN{470}{5}
 \@LN{471}{5}
 \@LN{472}{5}
-\@LN@col{2}
 \@LN{473}{5}
 \@LN{474}{5}
 \@LN{475}{5}
 \@LN{476}{5}
 \@LN{477}{5}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Mapping scheme}{6}{subsection.2.5}\protected@file@percent }
 \@LN{478}{5}
 \@LN{479}{5}
 \@LN{480}{5}
@@ -592,35 +599,45 @@
 \@LN{506}{5}
 \@LN{507}{5}
 \@LN{508}{5}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Evaluation}{6}{subsection.2.6}\protected@file@percent }
 \@LN{509}{5}
 \@LN{510}{5}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Conclusions}{6}{section.3}\protected@file@percent }
 \@LN{511}{5}
 \@LN{512}{5}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Code and data availability}{6}{section.4}\protected@file@percent }
 \@LN{513}{5}
-\@LN{514}{5}
-\@LN{515}{5}
-\@LN{516}{5}
-\@LN{517}{5}
-\@LN{518}{5}
-\@LN{519}{5}
-\@LN{520}{5}
-\@LN{521}{5}
-\@LN{522}{5}
-\@LN{523}{5}
 \bibstyle{copernicus}
 \bibdata{essd_landsat_manuscript.bib}
-\bibcite{ball_geospatial_2026}{{1}{2026}{{Ball et~al.}}{{Ball, Wicklein, Feng, Knezevic, Jaffer, Madhavapeddy, Atzberger, Dalponte, and Coomes}}}
-\bibcite{bayle_landsat-based_2024}{{2}{2024}{{Bayle et~al.}}{{Bayle, Gascoin, Berner, and Choler}}}
-\bibcite{bell_hindcasting_2024}{{3}{2024}{{Bell et~al.}}{{Bell, Gregory, and Yang}}}
-\bibcite{bricca_topography_2026}{{4}{2026}{{Bricca et~al.}}{{Bricca, Zerbe, Sabatini, Hiebl, Rutzinger, di~Musciano, Calvia, Chiarucci, Poschlod, Rossi, Alessi, and Bonari}}}
-\bibcite{brown_alphaearth_2025}{{5}{2025}{{Brown et~al.}}{{Brown, Kazmierski, Pasquarella, Rucklidge, Samsikova, Zhang, Shelhamer, Lahera, Wiles, Ilyushchenko, Gorelick, Zhang, Alj, Schechter, Askay, Guinan, Moore, Boukouvalas, and Kohli}}}
-\bibcite{chelli_climate_2017}{{6}{2017}{{Chelli et~al.}}{{Chelli, Wellstein, Campetella, Canullo, Tonin, Zerbe, and Gerdol}}}
-\bibcite{chen_simple_2020}{{7}{2020}{{Chen et~al.}}{{Chen, Kornblith, Norouzi, and Hinton}}}
-\bibcite{conedera_drivers_2018}{{8}{2018}{{Conedera et~al.}}{{Conedera, Wohlgemuth, Tanadini, and Pezzatti}}}
-\bibcite{feng_tessera_2026}{{9}{2026}{{Feng et~al.}}{{Feng, Atzberger, Jaffer, Knezevic, Sormunen, Young, Lisaius, Immitzer, Jackson, Ball, Coomes, Madhavapeddy, Blake, and Keshav}}}
-\bibcite{gasparini_italian_2022}{{10}{2022}{{Gasparini et~al.}}{{Gasparini, Di~Cosmo, Floris, and De~Laurentis}}}
+\bibcite{alessi_ancient_2019}{{1}{2019}{{Alessi et~al.}}{{Alessi, Těšitel, Zerbe, Spada, Agrillo, and Wellstein}}}
+\bibcite{ball_geospatial_2026}{{2}{2026}{{Ball et~al.}}{{Ball, Wicklein, Feng, Knezevic, Jaffer, Madhavapeddy, Atzberger, Dalponte, and Coomes}}}
+\bibcite{bayle_landsat-based_2024}{{3}{2024}{{Bayle et~al.}}{{Bayle, Gascoin, Berner, and Choler}}}
+\bibcite{bell_hindcasting_2024}{{4}{2024}{{Bell et~al.}}{{Bell, Gregory, and Yang}}}
+\bibcite{bricca_topography_2026}{{5}{2026}{{Bricca et~al.}}{{Bricca, Zerbe, Sabatini, Hiebl, Rutzinger, di~Musciano, Calvia, Chiarucci, Poschlod, Rossi, Alessi, and Bonari}}}
+\bibcite{brown_alphaearth_2025}{{6}{2025}{{Brown et~al.}}{{Brown, Kazmierski, Pasquarella, Rucklidge, Samsikova, Zhang, Shelhamer, Lahera, Wiles, Ilyushchenko, Gorelick, Zhang, Alj, Schechter, Askay, Guinan, Moore, Boukouvalas, and Kohli}}}
+\bibcite{chelli_climate_2017}{{7}{2017}{{Chelli et~al.}}{{Chelli, Wellstein, Campetella, Canullo, Tonin, Zerbe, and Gerdol}}}
+\bibcite{chen_simple_2020}{{8}{2020}{{Chen et~al.}}{{Chen, Kornblith, Norouzi, and Hinton}}}
+\bibcite{conedera_drivers_2018}{{9}{2018}{{Conedera et~al.}}{{Conedera, Wohlgemuth, Tanadini, and Pezzatti}}}
+\bibcite{feng_tessera_2026}{{10}{2026}{{Feng et~al.}}{{Feng, Atzberger, Jaffer, Knezevic, Sormunen, Young, Lisaius, Immitzer, Jackson, Ball, Coomes, Madhavapeddy, Blake, and Keshav}}}
+\bibcite{gasparini_italian_2022}{{11}{2022}{{Gasparini et~al.}}{{Gasparini, Di~Cosmo, Floris, and De~Laurentis}}}
+\bibcite{grabska-szwagrzyk_map_2024}{{12}{2024}{{Grabska-Szwagrzyk et~al.}}{{Grabska-Szwagrzyk, Tiede, Sudmanns, and Kozak}}}
+\bibcite{grunig_climate_2026}{{13}{2026}{{Gr{\"u}nig et~al.}}{{Gr{\"u}nig, Rammer, Senf, Albrich, Andr{\'e}, Augustynczik, Baumann, Bohn, Bouwman, Bugmann, Collalti, Cristal, Dalmonech, De~Coligny, Dobor, Dollinger, Espelta, Forrester, Garcia-Gonzalo, Gonz{\'a}lez-Olabarria, Hiltner, Hl{\'a}sny, Honkaniemi, Huber, Jonard, J{\"o}nsson, Kunstler, Lagergren, Lindner, Mina, Moos, Morin, Muys, Nabuurs, Nieberg, Patacca, Peltoniemi, Reyer, Schelhaas, Storms, Thom, To{\"i}go, and Seidl}}}
+\bibcite{hemmerling_mapping_2021}{{14}{2021}{{Hemmerling et~al.}}{{Hemmerling, Pflugmacher, and Hostert}}}
+\bibcite{hendrycks_gaussian_2016}{{15}{2016}{{Hendrycks and Gimpel}}{{}}}
+\bibcite{herraiz_aridity-induced_2025}{{16}{2025}{{Herraiz et~al.}}{{Herraiz, Salazar-Zarzosa, Acosta-Mu{\~n}oz, Hern{\'a}ndez-Clemente, and Villar}}}
+\bibcite{hiebl_advancing_2025}{{17}{2025}{{Hiebl et~al.}}{{Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari, Dorigo, Zerbe, and Rutzinger}}}
 \@LN@col{1}
+\@LN{514}{6}
+\@LN{515}{6}
+\@writefile{toc}{\contentsline {section}{Appendix A}{7}{appendix.A}\protected@file@percent }
+\@LN{516}{6}
+\@writefile{toc}{\contentsline {subsection}{Appendix A1}{7}{subsection.A.1}\protected@file@percent }
+\@LN{517}{6}
+\@LN{518}{6}
+\@LN{519}{6}
+\@LN{520}{6}
+\@LN{521}{6}
+\@LN{522}{6}
+\@LN{523}{6}
 \@LN{524}{6}
 \@LN{525}{6}
 \@LN{526}{6}
@@ -655,19 +672,15 @@
 \@LN{555}{6}
 \@LN{556}{6}
 \@LN{557}{6}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Conclusions}{7}{section.3}\protected@file@percent }
 \@LN{558}{6}
+\@LN@col{2}
 \@LN{559}{6}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Code and data availability}{7}{section.4}\protected@file@percent }
 \@LN{560}{6}
 \@LN{561}{6}
 \@LN{562}{6}
-\@writefile{toc}{\contentsline {section}{Appendix A}{7}{appendix.A}\protected@file@percent }
 \@LN{563}{6}
-\@writefile{toc}{\contentsline {subsection}{Appendix A1}{7}{subsection.A.1}\protected@file@percent }
 \@LN{564}{6}
 \@LN{565}{6}
-\@LN@col{2}
 \@LN{566}{6}
 \@LN{567}{6}
 \@LN{568}{6}
@@ -720,29 +733,30 @@
 \@LN{615}{6}
 \@LN{616}{6}
 \@LN{617}{6}
-\@LN{618}{6}
-\@LN{619}{6}
-\@LN{620}{6}
-\bibcite{grabska-szwagrzyk_map_2024}{{11}{2024}{{Grabska-Szwagrzyk et~al.}}{{Grabska-Szwagrzyk, Tiede, Sudmanns, and Kozak}}}
-\bibcite{grunig_climate_2026}{{12}{2026}{{Gr{\"u}nig et~al.}}{{Gr{\"u}nig, Rammer, Senf, Albrich, Andr{\'e}, Augustynczik, Baumann, Bohn, Bouwman, Bugmann, Collalti, Cristal, Dalmonech, De~Coligny, Dobor, Dollinger, Espelta, Forrester, Garcia-Gonzalo, Gonz{\'a}lez-Olabarria, Hiltner, Hl{\'a}sny, Honkaniemi, Huber, Jonard, J{\"o}nsson, Kunstler, Lagergren, Lindner, Mina, Moos, Morin, Muys, Nabuurs, Nieberg, Patacca, Peltoniemi, Reyer, Schelhaas, Storms, Thom, To{\"i}go, and Seidl}}}
-\bibcite{hemmerling_mapping_2021}{{13}{2021}{{Hemmerling et~al.}}{{Hemmerling, Pflugmacher, and Hostert}}}
-\bibcite{hendrycks_gaussian_2016}{{14}{2016}{{Hendrycks and Gimpel}}{{}}}
-\bibcite{herraiz_aridity-induced_2025}{{15}{2025}{{Herraiz et~al.}}{{Herraiz, Salazar-Zarzosa, Acosta-Mu{\~n}oz, Hern{\'a}ndez-Clemente, and Villar}}}
-\bibcite{hiebl_advancing_2025}{{16}{2025}{{Hiebl et~al.}}{{Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari, Dorigo, Zerbe, and Rutzinger}}}
-\bibcite{hiebl_combining_2026}{{17}{2026}{{Hiebl et~al.}}{{Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari, Zerbe, and Rutzinger}}}
-\bibcite{kang_data-driven_2021}{{18}{2021}{{Kang et~al.}}{{Kang, Ozdogan, Gao, Anderson, White, Yang, Yang, and Erickson}}}
-\bibcite{kollert_exploring_2021}{{19}{2021}{{Kollert et~al.}}{{Kollert, Bremer, L{\"o}w, and Rutzinger}}}
-\bibcite{manas_seasonal_2021}{{20}{2021}{{Ma{\~n}as et~al.}}{{Ma{\~n}as, Lacoste, Gir{\'o}-i Nieto, Vazquez, and Rodr{\'i}guez}}}
-\bibcite{mattioli_carta_2025}{{21}{2025}{{Mattioli et~al.}}{{Mattioli, R, D, G, G, D, M, and P}}}
-\bibcite{midolo_sixty_2026}{{22}{2026}{{Midolo et~al.}}{{Midolo, Clark, Chytr{\'y}, Essl, Dullinger, Jandt, Bruelheide, Dengler, Axmanov{\'a}, A{\'c}i{\'c}, Argagnon, Biurrun, Bonari, Chiarucci, {\'C}u{\v s}terevska, De~Frenne, De~Sanctis, Div{\'i}{\v s}ek, Dole{\v z}al, Dziuba, Ejrn{\ae }s, Garbolino, Jentsch, Jim{\'e}nez-Alfaro, Lenoir, Moeslund, Napoleone, Rumpf, Svenning, Swacha, Tatarenko, Ve{\v c}e{\v r}a, Vynokurov, and Keil}}}
-\bibcite{pflugmacher_mapping_2019}{{23}{2019}{{Pflugmacher et~al.}}{{Pflugmacher, Rabe, Peters, and Hostert}}}
-\bibcite{ruswurm_self-attention_2020}{{24}{2020}{{Rußwurm and Körner}}{{}}}
-\bibcite{safonova_ten_2023}{{25}{2023}{{Safonova et~al.}}{{Safonova, Ghazaryan, Stiller, Main-Knorn, Nendel, and Ryo}}}
-\bibcite{sylvain_high-resolution_2024}{{26}{2024}{{Sylvain et~al.}}{{Sylvain, Drolet, Thiffault, and Anctil}}}
-\bibcite{tan_leveraging_2025}{{27}{2025}{{Tan et~al.}}{{Tan, Li, Ma, Yan, and Huo}}}
-\bibcite{tong_reforestation_2023}{{28}{2023}{{Tong et~al.}}{{Tong, Brandt, Yue, Zhang, Fensholt, Ciais, Wang, Liu, Zhang, Mao, and Jepsen}}}
-\bibcite{turubanova_tree_2023}{{29}{2023}{{Turubanova et~al.}}{{Turubanova, Potapov, Hansen, Li, Tyukavina, Pickens, Hernandez-Serna, Arranz, Guerra-Hernandez, Senf, H{\"a}me, Valbuena, Eklundh, Brovkina, Navr{\'a}tilov{\'a}, Novotn{\'y}, Harris, and Stolle}}}
+\bibcite{hiebl_combining_2026}{{18}{2026}{{Hiebl et~al.}}{{Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari, Zerbe, and Rutzinger}}}
+\bibcite{kang_data-driven_2021}{{19}{2021}{{Kang et~al.}}{{Kang, Ozdogan, Gao, Anderson, White, Yang, Yang, and Erickson}}}
+\bibcite{kollert_exploring_2021}{{20}{2021}{{Kollert et~al.}}{{Kollert, Bremer, L{\"o}w, and Rutzinger}}}
+\bibcite{manas_seasonal_2021}{{21}{2021}{{Ma{\~n}as et~al.}}{{Ma{\~n}as, Lacoste, Gir{\'o}-i Nieto, Vazquez, and Rodr{\'i}guez}}}
+\bibcite{mattioli_carta_2025}{{22}{2025}{{Mattioli et~al.}}{{Mattioli, R, D, G, G, D, M, and P}}}
+\bibcite{midolo_sixty_2026}{{23}{2026}{{Midolo et~al.}}{{Midolo, Clark, Chytr{\'y}, Essl, Dullinger, Jandt, Bruelheide, Dengler, Axmanov{\'a}, A{\'c}i{\'c}, Argagnon, Biurrun, Bonari, Chiarucci, {\'C}u{\v s}terevska, De~Frenne, De~Sanctis, Div{\'i}{\v s}ek, Dole{\v z}al, Dziuba, Ejrn{\ae }s, Garbolino, Jentsch, Jim{\'e}nez-Alfaro, Lenoir, Moeslund, Napoleone, Rumpf, Svenning, Swacha, Tatarenko, Ve{\v c}e{\v r}a, Vynokurov, and Keil}}}
+\bibcite{pflugmacher_mapping_2019}{{24}{2019}{{Pflugmacher et~al.}}{{Pflugmacher, Rabe, Peters, and Hostert}}}
+\bibcite{ruswurm_self-attention_2020}{{25}{2020}{{Rußwurm and Körner}}{{}}}
+\bibcite{safonova_ten_2023}{{26}{2023}{{Safonova et~al.}}{{Safonova, Ghazaryan, Stiller, Main-Knorn, Nendel, and Ryo}}}
+\bibcite{sylvain_high-resolution_2024}{{27}{2024}{{Sylvain et~al.}}{{Sylvain, Drolet, Thiffault, and Anctil}}}
+\bibcite{tan_leveraging_2025}{{28}{2025}{{Tan et~al.}}{{Tan, Li, Ma, Yan, and Huo}}}
+\bibcite{tong_reforestation_2023}{{29}{2023}{{Tong et~al.}}{{Tong, Brandt, Yue, Zhang, Fensholt, Ciais, Wang, Liu, Zhang, Mao, and Jepsen}}}
+\bibcite{turubanova_tree_2023}{{30}{2023}{{Turubanova et~al.}}{{Turubanova, Potapov, Hansen, Li, Tyukavina, Pickens, Hernandez-Serna, Arranz, Guerra-Hernandez, Senf, H{\"a}me, Valbuena, Eklundh, Brovkina, Navr{\'a}tilov{\'a}, Novotn{\'y}, Harris, and Stolle}}}
+\bibcite{vaswani_attention_2023}{{31}{2023}{{Vaswani et~al.}}{{Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin}}}
+\bibcite{viana-soto_european_2025}{{32}{2025}{{Viana-Soto and Senf}}{{}}}
+\bibcite{wang_assessing_2022}{{33}{2022}{{Wang et~al.}}{{Wang, Zheng, Huang, Meng, Pang, Jia, Zhou, Huang, Fang, and Zhao}}}
+\bibcite{wulder_fifty_2022}{{34}{2022}{{Wulder et~al.}}{{Wulder, Roy, Radeloff, Loveland, Anderson, Johnson, Healey, Zhu, Scambos, Pahlevan, Hansen, Gorelick, Crawford, Masek, Hermosilla, White, Belward, Schaaf, Woodcock, Huntington, Lymburner, Hostert, Gao, Lyapustin, Pekel, Strobl, and Cook}}}
+\bibcite{yuan_sits-former_2022}{{35}{2022}{{Yuan et~al.}}{{Yuan, Lin, Liu, Hang, and Zhou}}}
+\bibcite{yuan_empirical_2025}{{36}{2025}{{Yuan et~al.}}{{Yuan, Lin, Xin, Zhou, and Liu}}}
+\bibcite{yuan_yuan_self-supervised_2020}{{37}{2020}{{{Yuan Yuan} et~al.}}{{{Yuan Yuan}, Yuan, Lin, and {Lei Lin}}}}
 \@LN@col{1}
+\@LN{618}{7}
+\@LN{619}{7}
+\@LN{620}{7}
 \@LN{621}{7}
 \@LN{622}{7}
 \@LN{623}{7}
@@ -799,10 +813,10 @@
 \@LN{674}{7}
 \@LN{675}{7}
 \@LN{676}{7}
+\@LN@col{2}
 \@LN{677}{7}
 \@LN{678}{7}
 \@LN{679}{7}
-\@LN@col{2}
 \@LN{680}{7}
 \@LN{681}{7}
 \@LN{682}{7}
@@ -858,66 +872,16 @@
 \@LN{732}{7}
 \@LN{733}{7}
 \@LN{734}{7}
-\@LN{735}{7}
-\@LN{736}{7}
-\@LN{737}{7}
-\@LN{738}{7}
-\bibcite{vaswani_attention_2023}{{30}{2023}{{Vaswani et~al.}}{{Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin}}}
-\bibcite{viana-soto_european_2025}{{31}{2025}{{Viana-Soto and Senf}}{{}}}
-\bibcite{wang_assessing_2022}{{32}{2022}{{Wang et~al.}}{{Wang, Zheng, Huang, Meng, Pang, Jia, Zhou, Huang, Fang, and Zhao}}}
-\bibcite{wulder_fifty_2022}{{33}{2022}{{Wulder et~al.}}{{Wulder, Roy, Radeloff, Loveland, Anderson, Johnson, Healey, Zhu, Scambos, Pahlevan, Hansen, Gorelick, Crawford, Masek, Hermosilla, White, Belward, Schaaf, Woodcock, Huntington, Lymburner, Hostert, Gao, Lyapustin, Pekel, Strobl, and Cook}}}
-\bibcite{yuan_sits-former_2022}{{34}{2022}{{Yuan et~al.}}{{Yuan, Lin, Liu, Hang, and Zhou}}}
-\bibcite{yuan_empirical_2025}{{35}{2025}{{Yuan et~al.}}{{Yuan, Lin, Xin, Zhou, and Liu}}}
-\bibcite{yuan_yuan_self-supervised_2020}{{36}{2020}{{{Yuan Yuan} et~al.}}{{{Yuan Yuan}, Yuan, Lin, and {Lei Lin}}}}
-\bibcite{zerveas_transformer-based_2020}{{37}{2020}{{Zerveas et~al.}}{{Zerveas, Jayaraman, Patel, Bhamidipaty, and Eickhoff}}}
+\bibcite{zerveas_transformer-based_2020}{{38}{2020}{{Zerveas et~al.}}{{Zerveas, Jayaraman, Patel, Bhamidipaty, and Eickhoff}}}
 \@LN@col{1}
+\@LN{735}{8}
+\@LN{736}{8}
+\@LN{737}{8}
+\@LN{738}{8}
 \@LN{739}{8}
 \@LN{740}{8}
 \@LN{741}{8}
 \@LN{742}{8}
-\@LN{743}{8}
-\@LN{744}{8}
-\@LN{745}{8}
-\@LN{746}{8}
-\@LN{747}{8}
-\@LN{748}{8}
-\@LN{749}{8}
-\@LN{750}{8}
-\@LN{751}{8}
-\@LN{752}{8}
-\@LN{753}{8}
-\@LN{754}{8}
-\@LN{755}{8}
-\@LN{756}{8}
-\@LN{757}{8}
-\@LN{758}{8}
-\@LN{759}{8}
-\@LN{760}{8}
-\@LN{761}{8}
-\@LN{762}{8}
-\@LN{763}{8}
-\@LN{764}{8}
-\@LN{765}{8}
-\@LN{766}{8}
-\@LN{767}{8}
-\@LN{768}{8}
-\@LN{769}{8}
-\@LN{770}{8}
-\@LN{771}{8}
-\@LN{772}{8}
-\@LN{773}{8}
-\@LN{774}{8}
-\@LN{775}{8}
-\@LN{776}{8}
-\@LN{777}{8}
-\@LN{778}{8}
-\@LN{779}{8}
-\@LN{780}{8}
-\@LN{781}{8}
-\@LN{782}{8}
-\@LN{783}{8}
-\@LN{784}{8}
-\@LN{785}{8}
 \@LN@col{2}
 \newlabel{LastPage}{{}{9}{}{}{}}
 \gdef \@abspage@last{9}

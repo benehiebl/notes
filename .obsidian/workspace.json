@@ -11,12 +11,14 @@
             "id": "0f9958368c7d01ef",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.pdf"
+                "file": "03_papers/03_landsat_data_publication/03_landsat_data_publication.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "essd_landsat_manuscript"
+              "icon": "lucide-file",
+              "title": "03_landsat_data_publication"
             }
           }
         ],
@@ -52,7 +54,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "greening trends",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -196,18 +198,23 @@
   },
   "active": "0f9958368c7d01ef",
   "lastOpenFiles": [
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.synctex(busy)",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex62002.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex61165.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex60862.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex59588.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex58342.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex58313.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex53644.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex53613.fls",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.blg",
+    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.log",
+    "01_notes/kempf_2023_greening.md",
+    "02_concepts/landsat.md",
+    "01_notes/yel_2026_deciduous_forests.md",
+    "02_concepts/vegetation_greenness_trends.md",
     "01_notes/sentinel_2.md",
     "03_papers/pflugmacher_2019_lulc_landsat.md",
-    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.synctex(busy)",
-    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1381236.fls",
-    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1381159.fls",
-    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1379596.fls",
-    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1379523.fls",
-    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1379425.fls",
-    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1378153.fls",
-    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1378072.fls",
-    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1375913.fls",
-    "03_papers/03_landsat_data_publication/essd_landsat_manuscript/pdflatex1375820.fls",
     "01_notes/mattioli_2025_carta_forestale.md",
     "01_notes/ball_2026_foundation_models.md",
     "01_notes/grünig_2026_climate_change_disturbances_forest.md",
@@ -227,11 +234,6 @@
     "02_concepts/geospatial_foundation_models.md",
     "02_concepts/area_of_applicability.md",
     "01_notes/mauri_2017_EU_tree_data.md",
-    "01_notes/kang_2025_contrastive_vs_mae.md",
-    "01_notes/wessely_2023_tree_species_bottleneck.md",
-    "02_concepts/european_ground_truth_databases.md",
-    "01_notes/sabatini_2021_splot.md",
-    "01_notes/calvia_2022_pines.md",
     "04_projects/Untitled.canvas"
   ]
 }
