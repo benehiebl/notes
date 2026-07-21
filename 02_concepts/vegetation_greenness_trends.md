@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Vegetation greening (or browning) refers to long-term directional changes in satellite-derived vegetation indices, used as proxies for changes in plant productivity, biomass, and ecosystem functioning in response to climate and land use.
 
-**Sources**: [[bayle_2024_landsat_greening_inflated]], [[herraiz_2025_phen_shifts_mediterranean]], [[midolo_2026_denser_vegetation]], [[kempf_2023_greening]], [[yel_2026_deciduous_forests]], [[babst_2019_redistribution]]
+**Sources**: [[bayle_2024_landsat_greening_inflated]], [[herraiz_2025_phen_shifts_mediterranean]], [[midolo_2026_denser_vegetation]], [[kempf_2023_greening]], [[yel_2026_deciduous_forests]], [[babst_2019_redistribution]], [[obuchowicz_2024_greening_switzerland]]
 
-**Last updated**: 2026-05-14
+**Last updated**: 2026-07-21
 
 ---
 
@@ -88,6 +88,12 @@ Systematic review of RS methods for deciduous forests under climate change (sour
 - NDVI/EVI/LAI dominate; multi-sensor fusion (MODIS + Landsat + Sentinel-2 + PhenoCam) standard
 - Greenness can decouple from true photosynthesis under stress → SIF needed
 - Persistent gaps: biological interpretation of spectral indices, fine-scale resilience metrics
+
+## National-Scale High-Resolution Landsat Greening (Switzerland)
+
+A 35-year (1984–2018), 30 m-resolution national NDVI trend assessment for Switzerland (Landsat-5/8 via the Swiss Data Cube, all NOLC04 land cover classes, not forest-specific) found a statistically significant greening trend (61% of pixels significant, 97% of those positive; national R²=0.43) with a marked acceleration around 2010–2011, driven more by temperature (national r=0.52) than by precipitation (mostly negative/non-significant, and only available 2005–2018), with closed and open forest among the most NDVI-responsive land cover classes (source: [[obuchowicz_2024_greening_switzerland]]).
+
+**Critical caveat**: this study does not test for or discuss observation-density sampling bias at all, despite (a) being Landsat-based over the Alps, (b) excluding 23% of pixels nationally — concentrated in the Alps — for insufficient clear observations, and (c) reporting a trend acceleration around 2010–2011 that coincides with the kind of archive-density changes (added sensors, improved processing) [[bayle_2024_landsat_greening_inflated]] identifies as a bias driver. It is a plausible, untested candidate for the same artifact — see [[sampling_bias_remote_sensing]].
 
 ## Related pages
 

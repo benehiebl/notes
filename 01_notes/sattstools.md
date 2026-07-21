@@ -136,3 +136,4 @@ sattstools is the invisible foundation under all TRACEVE deep learning experimen
 - [[sentinel_2]]
 - [[landsat]]
 - [[cloud_detection]]
+- [[stewart_2022_torchgeo]]

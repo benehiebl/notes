@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Species distribution models statistically relate species occurrence records to environmental predictor variables to estimate the spatial distribution of suitable habitat — a fundamental tool for biogeography, conservation planning, and forecasting range shifts under climate change.
 
-**Sources**: [[he_2015_remote_sensing_sdm]], [[noce_2023_altitude_shift_tree_italy]], [[fady_2025_native_trees_mediterranean]], [[dyderski_2025_species_shift]], [[wessely_2023_tree_species_bottleneck]], [[mauri_2017_EU_tree_data]]
+**Sources**: [[he_2015_remote_sensing_sdm]], [[noce_2023_altitude_shift_tree_italy]], [[fady_2025_native_trees_mediterranean]], [[dyderski_2025_species_shift]], [[wessely_2023_tree_species_bottleneck]], [[mauri_2017_EU_tree_data]], [[li_2026_climate_treeline]]
 
-**Last updated**: 2026-05-31
+**Last updated**: 2026-07-21
 
 ---
 
@@ -153,6 +153,19 @@ Combining MaxEnt SDMs for 20 European tree species under CMIP6/SSP scenarios wit
 - Range contraction increases with tree height
 - Counterintuitively, "fast" traits associate with climate robustness here — competitive broadleaves outperform tall slow boreal conifers
 
+## SHAP Explainability for Ensemble SDMs
+
+(source: [[li_2026_climate_treeline]])
+
+SHAP (SHapley Additive exPlanations) can be layered on top of standard ensemble SDMs (here: GLM/RF/MAXNET/XGBoost via BIOMOD2) to move beyond simple variable-importance rankings toward interpretable, non-linear response curves:
+
+- Applied to a *Larix chinensis* treeline habitat suitability model (Mount Taibai, China), SHAP dependence plots identified concrete inflection thresholds — e.g. max temperature of warmest month (Bio5) inflection at ~13.6–13.7 °C, growing degree-day facilitation onset at 52.7 °C·day (plateauing ~102.4 °C·day)
+- Reframes elevation's dominant statistical importance as a proxy for an embedded temperature signal, not a causal driver in itself — a useful caution against over-interpreting topographic predictors in SDMs generally
+- Combined with **uncertainty-aware treeline-shift detection**: HSI values sampled in a fixed buffer around the current treeline, with bootstrapped (1000-resample) confidence intervals classifying locations as stable-increasing / stable-decreasing / unstable, rather than relying on a single deterministic suitability threshold
+- Critical caveat (explicitly acknowledged by the source paper): HSI is a proxy for potential suitability, not the physical treeline position — equating HSI change with treeline migration "may lead to biases"
+
+See [[treeline_ecotone_theory]] for the broader ecological interpretation of this treeline case study.
+
 ## Related pages
 
 - [[ndvi]]
@@ -167,3 +180,4 @@ Combining MaxEnt SDMs for 20 European tree species under CMIP6/SSP scenarios wit
 - [[european_ground_truth_databases]]
 - [[wessely_2023_tree_species_bottleneck]]
 - [[mauri_2017_EU_tree_data]]
+- [[treeline_ecotone_theory]]

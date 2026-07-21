@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Sampling bias in remote sensing arises when the number of usable observations changes systematically over a multi-year record, causing spurious trends in annual composited products even when the underlying environmental signal is stable.
 
-**Sources**: [[bayle_2024_landsat_greening_inflated]], [[mila_2024_spatial_proxies]]
+**Sources**: [[bayle_2024_landsat_greening_inflated]], [[mila_2024_spatial_proxies]], [[obuchowicz_2024_greening_switzerland]]
 
-**Last updated**: 2026-05-13
+**Last updated**: 2026-07-21
 
 ---
 
@@ -49,6 +49,7 @@ Short GSL combined with low ΣOBS_GS produces the largest false trends.
 - Arctic, subarctic, and mountain ecosystems worldwide face the same bias
 - Studies interpreting Landsat-based greening at high elevations as evidence of thermophilisation (upslope migration) may be overstating real ecological change
 - Papers reporting NDVImax trends without reporting observation counts per year should be interpreted with caution
+- Example of an at-risk, unaudited study: a 35-year national Landsat NDVI greening trend for Switzerland (source: [[obuchowicz_2024_greening_switzerland]]) excludes 23% of pixels nationally (concentrated in the Alps) for insufficient clear observations, but never tests whether the observation-density mechanism itself could explain the reported greening acceleration around 2010–2011 — a textbook case of the exact gap this bias mechanism warns about
 
 ## Correction Strategies
 

@@ -750,3 +750,61 @@ Append-only record of all wiki operations.
 - `02_concepts/transformers_time_series.md` — added "State Space Models (Mamba) as an Alternative to Attention" section; added to Sources
 - `02_concepts/forest_disturbances.md` — added "Senf & Seidl 2021" subsection as predecessor to EFDA; linked from EFDA section; added to Sources
 - `index.md` — added 2 new notes
+
+## 2026-07-21 — Ingest: 9 treeline ecotone sources (batch)
+
+**Ingested**: `maerker_2025_drought_spruce.pdf`, `vazques_2023_drought_treeline.pdf`, `klinge_2018_climate_treeline.pdf`, `charra_2025_snow_treeline.pdf`, `dietrich_2026_treeline_della.pdf`, `li_2026_climate_treeline.pdf`, `nguyen_2022_treeline_mapping.pdf`, `nguyen_2024_treeline_monitoring.pdf`, `melser_2024_freeze_constraints.pdf`
+
+**Note**: `nguyen_2022_treeline_mapping.pdf` was identified as a duplicate of the already-ingested `nguyen_2022_forest_mapping_explainable.pdf` (identical title/authors/DOI: Nguyen, Kellenberger & Tuia 2022, RSE, doi:10.1016/j.rse.2022.113217) — no new note was written for it; no changes made to `00_literature/`.
+
+**Created**:
+- `01_notes/maerker_2025_drought_spruce.md` — Märker et al. 2025 (Trees); Norway spruce at High Tatras treeline: emerging, size-dependent drought sensitivity (largest trees) despite nominal temperature limitation; size-class isolation (SCI) method
+- `01_notes/vazques_2023_drought_treeline.md` — Vázquez-Ramírez & Venn 2023 (Ann. Bot.); factorial snow/fire/drought greenhouse experiment on alpine/treeline soil seed banks (Kosciuszko NP); drought dominant stressor (44–72% germinant reduction)
+- `01_notes/klinge_2018_climate_treeline.md` — Klinge et al. 2018 (Biogeosciences); Landsat + CHELSA analysis of Mongolian boreal treelines; upper treeline thermally limited (~6–9°C MGST), lower treeline moisture limited (230–290 mm yr⁻¹ MAP)
+- `01_notes/charra_2025_snow_treeline.md` — Charra-Vaskou et al. 2026 (New Phytol.); two-winter snow-removal experiment, Tyrolean Alps; reduced snow cover increases hydraulic/cell damage and mortality in saplings; species-specific resistance vs recovery strategies
+- `01_notes/dietrich_2026_treeline_della.md` — Dietrich & Zeidler 2026 (New Phytol., Viewpoint); proposes cold-induced GA/DELLA hormonal signalling as alternative to carbon-limitation hypothesis for treeline formation; conceptual, untested in trees
+- `01_notes/li_2026_climate_treeline.md` — Li et al. 2026 (J. Environ. Manage.); ensemble SDM + SHAP for *Larix chinensis* treeline (Qinling Mountains); aspect-dependent (south gains, north loses) projected shifts under CMIP6
+- `01_notes/nguyen_2024_treeline_monitoring.md` — Nguyen et al. 2024 (RSE); U-Net + IrregConvGRU with knowledge-guided temporal loss (tCA) monitors 1946–2020 Swiss Alps treeline forest cover from a single labelled year (F1c 66.7%→80.9%)
+- `01_notes/melser_2024_freeze_constraints.md` — Melser et al. 2024 (RSE); SMAP/SMOS L-band freeze-thaw clustering maps growing-season constraints on boreal productivity (Canada); GSL-GPP sensitivity ~5.3–5.6 gC m⁻² yr⁻¹/day
+- `02_concepts/treeline_ecotone_theory.md` — new hub concept: thermal vs moisture limitation, carbon-limitation hypothesis vs DELLA hormonal hypothesis, emerging drought sensitivity, aspect-dependent shifts, regeneration bottlenecks
+- `02_concepts/snow_cover_treeline.md` — new concept: snow as winter protection for saplings, seed-bank cold stratification, secondary control on boreal treeline
+- `02_concepts/treeline_remote_sensing_monitoring.md` — new concept: rule-informed CNN mapping, knowledge-guided multi-temporal segmentation, freeze/thaw RS, SHAP-explained SDMs for treeline
+
+**Updated**:
+- `02_concepts/drought_mortality.md` — added "Emerging Drought Sensitivity at Treeline (Size-Dependent)" (Märker 2025) and "Regeneration-Stage Drought Impacts (Seed Banks)" (Vázquez-Ramírez 2023) sections; added both to Sources
+- `02_concepts/topographic_microclimate.md` — added "Aspect-Dependent Treeline Response" (Li 2026) and "Snow Cover Duration as Topographic Microclimate at Treeline" sections; added Li 2026 to Sources
+- `02_concepts/species_distribution_models.md` — added "SHAP Explainability for Ensemble SDMs" section (Li 2026); added to Sources
+- `01_notes/nguyen_2022_forest_mapping_explainable.md` — added links to nguyen_2024_treeline_monitoring and the two new treeline concepts
+- `index.md` — added 8 new notes, 3 new concept pages
+
+## 2026-07-21 — Ingest: stewart_2022_torchgeo
+
+**Ingested**: `stewart_2022_torchgeo.pdf`
+
+**Created**:
+- `01_notes/stewart_2022_torchgeo.md` — Stewart et al. 2022 (arXiv:2111.08872); TorchGeo: PyTorch library for geospatial deep learning; spatiotemporal-coordinate-indexed GeoDatasets with on-the-fly reprojection/resampling, composable union/intersection datasets, geospatial samplers (Random/RandomBatch/Grid), multispectral transforms, pretrained Sentinel-2 models; close-to-SOTA results on 8 benchmark datasets; ImageNet pretraining improves out-of-domain spatial generalization (Chesapeake Land Cover cross-state splits) without improving in-domain accuracy
+
+**Updated**:
+- `01_notes/sattstools.md` — added cross-reference link to stewart_2022_torchgeo (tool-adjacent infrastructure literature, not a direct dependency)
+- `index.md` — added 1 new note
+
+## 2026-07-21 — Revised 04_projects/02_tree_line_stress.md with treeline batch findings
+
+**Updated**:
+- `04_projects/02_tree_line_stress.md` — integrated the 8 newly-ingested treeline papers throughout:
+  - Motivation: added Klinge 2018 (upper-thermal/lower-moisture treeline dichotomy) as a caveat to the temperature-driven-advance framing; added Märker 2025 (emerging size-dependent drought sensitivity, High Tatras spruce) reinforcing the drought-stressor case; **corrected** a factual error in the snow-stressor paragraph — the draft previously claimed snow removal drives treeline seed-bank mortality, but Vázquez-Ramírez & Venn 2023 actually found the treeline seed bank was comparatively robust to snow loss (only the herbfield seed bank was harmed) and most sensitive to drought instead; rewrote the snow paragraph with Charra-Vaskou et al. 2026's actual mechanism (freeze-thaw cycling, not sustained freezing; species-specific resistance vs. recovery strategies) and correct seed-bank findings; added a new "open mechanistic question" paragraph on the carbon-limitation vs. DELLA-hormonal-signalling debate (Dietrich & Zeidler 2026)
+  - WP1: added SCI method + moving-window correlation recommendation (Märker 2025) to the dendrochronology subsection; added freeze-thaw-cycle-frequency monitoring rationale and SMAP regional cross-check (Melser 2024) to microclimate instrumentation
+  - WP2: added knowledge-guided multi-temporal DL (Nguyen 2024) and rule-informed CNN (Nguyen 2022) as methodological upgrades over the planned threshold/Mann-Kendall Landsat pipeline; added upper-vs-lower limiting-factor SDM split (Klinge 2018), SHAP explainability, aspect-resolved projection, and bootstrapped-CI shift detection (Li 2026) to the SDM subsection
+  - Key references: added proper wikilinks for all 8 sources, replacing informal citations for Charra-Vaskou and the seed-bank paper; added new synthesis-page cross-references to [[treeline_ecotone_theory]], [[snow_cover_treeline]], [[treeline_remote_sensing_monitoring]]
+
+## 2026-07-21 — Ingest: obuchowicz_2024_greening_switzerland
+
+**Ingested**: `obuchowicz_2024_greening_switzerland.pdf`
+
+**Created**:
+- `01_notes/obuchowicz_2024_greening_switzerland.md` — Obuchowicz, Poussin & Giuliani 2024 (Big Earth Data); national-scale 35-year (1984–2018) 30m NDVI greening trend for Switzerland from Landsat-5/8 via the Swiss Data Cube, all NOLC04 land cover classes (not forest-specific); 61% of pixels significant (97% positive), national R²=0.43, acceleration ~2010–2011, temperature more influential than precipitation; closed/open forest among most responsive classes; **critically**, the paper never tests for observation-density sampling bias despite excluding 23% of pixels (concentrated in the Alps) for insufficient clear observations and reporting a trend break coinciding with likely archive-density changes — flagged as a plausible, unaudited vulnerability to the exact artifact [[bayle_2024_landsat_greening_inflated]] demonstrates
+
+**Updated**:
+- `02_concepts/vegetation_greenness_trends.md` — added "National-Scale High-Resolution Landsat Greening (Switzerland)" section with critical caveat; added to Sources
+- `02_concepts/sampling_bias_remote_sensing.md` — added Obuchowicz et al. 2024 as a worked example of an at-risk, unaudited study; added to Sources
+- `index.md` — added 1 new note

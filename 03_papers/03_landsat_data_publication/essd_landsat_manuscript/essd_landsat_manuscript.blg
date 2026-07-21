@@ -1,49 +1,48 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: essd_landsat_manuscript.aux
 The style file: copernicus.bst
 Database file #1: essd_landsat_manuscript.bib
-Warning--I didn't find a database entry for "yel_2026_greening"
 Warning--empty journal in yuan_yuan_self-supervised_2020
-You've used 38 entries,
+You've used 40 entries,
             2932 wiz_defined-function locations,
-            1314 strings with 25219 characters,
-and the built_in function-call counts, 47051 in all, are:
-= -- 4419
-> -- 3130
+            1332 strings with 26019 characters,
+and the built_in function-call counts, 49010 in all, are:
+= -- 4631
+> -- 3208
 < -- 4
-+ -- 1212
-- -- 1006
-* -- 3599
-:= -- 5361
-add.period$ -- 38
-call.type$ -- 38
-change.case$ -- 420
-chr.to.int$ -- 39
-cite$ -- 115
-duplicate$ -- 3875
-empty$ -- 2079
-format.name$ -- 1125
-if$ -- 9094
++ -- 1247
+- -- 1030
+* -- 3735
+:= -- 5561
+add.period$ -- 40
+call.type$ -- 40
+change.case$ -- 433
+chr.to.int$ -- 41
+cite$ -- 121
+duplicate$ -- 4068
+empty$ -- 2183
+format.name$ -- 1155
+if$ -- 9479
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 590
-newline$ -- 123
-num.names$ -- 153
-pop$ -- 2009
+missing$ -- 613
+newline$ -- 129
+num.names$ -- 161
+pop$ -- 2068
 preamble$ -- 1
-purify$ -- 411
+purify$ -- 423
 quote$ -- 0
-skip$ -- 2421
+skip$ -- 2549
 stack$ -- 0
-substring$ -- 1470
-swap$ -- 3332
+substring$ -- 1553
+swap$ -- 3496
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 339
+type$ -- 357
 warning$ -- 1
-while$ -- 184
+while$ -- 195
 width$ -- 0
-write$ -- 460
-(There were 2 warnings)
+write$ -- 485
+(There was 1 warning)

@@ -11,9 +11,9 @@ tags:
 
 **Summary**: "Hotter droughts" — droughts at temperatures elevated above historical norms — drive widespread tree mortality through xylem hydraulic failure and carbon starvation, with strong drought-legacy effects (delayed mortality and secondary pest/pathogen vulnerability). The 20th century has redistributed the climatic drivers of global tree growth from energy- to water-limitation, and the 2018 Central European drought set new severity records.
 
-**Sources**: [[schuldt_2020_drought_forest]], [[babst_2019_redistribution]], [[chelli_2017_climate]], [[dyderski_2025_species_shift]], [[grünig_2026_climate_change_disturbances_forest]]
+**Sources**: [[schuldt_2020_drought_forest]], [[babst_2019_redistribution]], [[chelli_2017_climate]], [[dyderski_2025_species_shift]], [[grünig_2026_climate_change_disturbances_forest]], [[maerker_2025_drought_spruce]], [[vazques_2023_drought_treeline]]
 
-**Last updated**: 2026-05-14
+**Last updated**: 2026-07-21
 
 ---
 
@@ -111,6 +111,28 @@ These secondary stressors drive much of the actual mortality after the initial p
 - **Pan-European ground monitoring + RS** as advocated by Schuldt et al. — bridge gap between ICP Forests sparse plot network and continuous RS
 - **Integrate climate, species, and disturbance** in projections (cf. [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]])
 
+## Emerging Drought Sensitivity at Treeline (Size-Dependent)
+
+(source: [[maerker_2025_drought_spruce]])
+
+Even nominally temperature-limited alpine treelines are not immune to the energy→water-limitation shift described above:
+
+- 31-year moving-window climate-growth correlations of Norway spruce at the High Tatras treeline (Slovakia) show growth remains generally temperature-limited (June/July growing-season temperature), but an increasing, significant sensitivity to **previous-year late-summer drought** (August/September SPEI3) has emerged since the 1970s–2000s
+- This drought sensitivity is most pronounced in the **largest trees** ("Big" size class, via size-class-isolation method) — not a static size effect, but one that developed over time
+- Proposed (untested) mechanisms: non-structural carbohydrate (NSC) depletion from lagged drought stress, or increased atmospheric/hydraulic coupling in larger/taller trees
+- Directly consistent with the global energy- to water-limitation redistribution (Babst et al. 2019, above), but demonstrates the shift reaching even classically thermal-limited treeline systems
+
+## Regeneration-Stage Drought Impacts (Seed Banks)
+
+(source: [[vazques_2023_drought_treeline]])
+
+Drought effects on regeneration are mechanistically distinct from adult-tree mortality and act earlier in the life cycle:
+
+- In a factorial climate-manipulation experiment on alpine/treeline soil seed banks (Australian Alps), **drought was the single strongest stressor** tested (vs. snow reduction, fire), reducing germinant numbers by 44% at the *Eucalyptus pauciflora* treeline and 72% in adjacent alpine herbfield relative to control
+- Drought also delayed germination timing (most germinants emerged only after the drought period ended) and statistically overrode other stressors in factorial combinations
+- Seed banks are already strongly compositionally dissimilar from standing vegetation, and drought/climate stress further increases this dissimilarity — meaning drought threatens not just current mortality but the recruitment pool for future community composition
+- See [[treeline_ecotone_theory]] for the broader regeneration-bottleneck framing
+
 ## Related concepts
 - [[forest_disturbances]]
 - [[vegetation_greenness_trends]]
@@ -118,3 +140,4 @@ These secondary stressors drive much of the actual mortality after the initial p
 - [[phenology]]
 - [[ndvi]]
 - [[sampling_bias_remote_sensing]]
+- [[treeline_ecotone_theory]]

@@ -36,6 +36,9 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[sentinel_1_sar]] | Sentinel-1 C-band SAR; dual polarisation VV/VH; cloud-independent companion to Sentinel-2 for forest mapping and disturbance detection |
 | [[geospatial_foundation_models]] | AlphaEarth, PRESTO, Prithvi paradigm; pretrained Earth-observation embeddings for downstream mapping tasks with minimal labels |
 | [[european_ground_truth_databases]] | EU-Forest, sPlotOpen, ICP Forest, NFIs — pan-European tree occurrence and vegetation plot databases for SDMs and RS calibration |
+| [[treeline_ecotone_theory]] | Climatic/hormonal controls on treeline position: thermal vs moisture limitation, carbon-limitation hypothesis, emerging drought sensitivity, regeneration bottlenecks |
+| [[snow_cover_treeline]] | Snow cover as protective winter microclimate at treeline: sapling freeze-thaw insulation, seed-bank cold stratification, boreal treeline snow control |
+| [[treeline_remote_sensing_monitoring]] | DL/RS methods for treeline mapping: rule-informed CNNs, knowledge-guided multi-temporal segmentation (tCA loss), freeze/thaw RS, SHAP-explained SDMs |
 
 ## Paper Pages (`03_papers/`)
 
@@ -163,3 +166,13 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[01_notes/li_2023_land_cover_map]] | Li et al. 2023 — SinoLC-1: first 1 m national land-cover map of China via weakly+self-supervised L2HNet; OA=73.6%; no manual annotation; resolution mismatch resolved via L2H loss |
 | [[01_notes/zhang_2026_statespacemodel]] | Zhang et al. 2026 — TSSMamba: dual-branch state space model (Mamba) for multi-temporal Sentinel-2 cloud removal; SOTA PSNR/SSIM/CC/SAM on 3 benchmarks with <1M params |
 | [[01_notes/senf_2021_disturbance]] | Senf & Seidl 2021 — First continental map of Europe's forest disturbance regimes (1986–2016, 35 countries); frequency ↑ in 74%, severity ↓ in 88% of forest area; predecessor to EFDA |
+| [[01_notes/maerker_2025_drought_spruce]] | Märker et al. 2025 — Norway spruce at High Tatras treeline show emerging, size-dependent drought sensitivity (largest trees) despite nominal temperature limitation |
+| [[01_notes/vazques_2023_drought_treeline]] | Vázquez-Ramírez & Venn 2023 — Factorial snow/fire/drought experiment: drought most strongly suppresses alpine and treeline soil seed bank germination, Australian Alps |
+| [[01_notes/klinge_2018_climate_treeline]] | Klinge et al. 2018 — Mongolian boreal treelines: upper treeline thermally limited (~6–9°C MGST), lower treeline moisture limited (230–290 mm yr⁻¹ MAP) |
+| [[01_notes/charra_2025_snow_treeline]] | Charra-Vaskou et al. 2026 — Snow-removal experiment: reduced snow cover increases hydraulic/cell damage and mortality in alpine treeline saplings; species-specific resistance vs recovery |
+| [[01_notes/dietrich_2026_treeline_della]] | Dietrich & Zeidler 2026 — Viewpoint proposing cold-induced GA/DELLA hormonal signalling (not carbon limitation) as a mechanistic driver of treeline formation; untested in trees |
+| [[01_notes/li_2026_climate_treeline]] | Li et al. 2026 — Ensemble SDM + SHAP projects aspect-dependent (south gains, north loses) treeline shifts for Larix chinensis under CMIP6, Qinling Mountains |
+| [[01_notes/nguyen_2024_treeline_monitoring]] | Nguyen et al. 2024 — U-Net + IrregConvGRU with knowledge-guided temporal loss (tCA) monitors 1946–2020 Swiss Alps treeline forest cover from a single labelled year |
+| [[01_notes/melser_2024_freeze_constraints]] | Melser et al. 2024 — SMAP/SMOS L-band freeze-thaw clustering maps growing-season constraints on boreal productivity, Canada-wide |
+| [[01_notes/stewart_2022_torchgeo]] | Stewart et al. 2022 — TorchGeo: PyTorch library for geospatial deep learning; on-the-fly reprojection/resampling, geospatial samplers, multispectral pretrained models; ImageNet pretraining boosts spatial generalization |
+| [[01_notes/obuchowicz_2024_greening_switzerland]] | Obuchowicz, Poussin & Giuliani 2024 — National-scale 35-yr Landsat NDVI greening trend for Switzerland (all land cover types); significant acceleration post-2010, temperature-driven; sampling-bias risk unaudited |

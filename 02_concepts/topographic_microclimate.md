@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Topographic microclimate describes how local terrain features (slope, aspect, elevation, curvature) modify temperature, radiation, and moisture at scales of meters to kilometres, creating locally heterogeneous conditions that regulate how plants experience regional climate.
 
-**Sources**: [[bricca_2026_topo_diversity]], [[bayle_2024_landsat_greening_inflated]], [[jin_2023_drivers_differentiation_evergreen]]
+**Sources**: [[bricca_2026_topo_diversity]], [[bayle_2024_landsat_greening_inflated]], [[jin_2023_drivers_differentiation_evergreen]], [[li_2026_climate_treeline]]
 
-**Last updated**: 2026-05-05
+**Last updated**: 2026-07-21
 
 ---
 
@@ -66,9 +66,25 @@ Forest canopy acts as an additional microclimate filter, analogous to topographi
 - In alpine environments, topographic variation in snow cover duration directly controls the growing season length (GSL) and the number of usable satellite observations per year — a key driver of the [[sampling_bias_remote_sensing]] described by Bayle et al. (2024)
 - High-resolution DEMs (25 m EU-DEM, 30 m SRTM) are standard inputs for topographic analysis in vegetation remote sensing studies
 
+## Aspect-Dependent Treeline Response
+
+(source: [[li_2026_climate_treeline]])
+
+Aspect (north- vs. south-facing slope) is a strong topographic modulator of projected treeline shifts under climate change:
+
+- Ensemble SDM projections for *Larix chinensis* (Mount Taibai, Qinling Mountains) show consistent habitat-suitability **gains on south-facing slopes** and consistent **losses on north-facing slopes** across all CMIP6 SSP scenarios by 2100
+- Attributed to differential solar radiation, growing-season length, and snow persistence between aspects — the same mechanisms (DNI, snow redistribution) already described above for diversity-temperature relationships
+- Growing-season thermal variables (not elevation itself) are the dominant statistical drivers; elevation's importance is a proxy for an embedded temperature gradient (SHAP-based attribution)
+
+## Snow Cover Duration as Topographic Microclimate at Treeline
+
+Snow cover — already noted above as topographically redistributed — acts as a direct microclimate buffer at the treeline ecotone specifically; see [[snow_cover_treeline]] for the mechanisms (winter insulation of saplings, seed-bank cold stratification, secondary control on boreal treeline position).
+
 ## Related pages
 
 - [[phenology]]
 - [[sampling_bias_remote_sensing]]
 - [[functional_diversity]]
 - [[leaf_habit_latitudinal_gradient]]
+- [[treeline_ecotone_theory]]
+- [[snow_cover_treeline]]

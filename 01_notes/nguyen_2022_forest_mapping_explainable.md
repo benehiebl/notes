@@ -58,3 +58,6 @@ Explainable deep learning that encodes domain-specific forest definition rules c
 - [[neural_network_training]]
 - [[topographic_microclimate]]
 - [[national_forest_inventory]]
+- [[nguyen_2024_treeline_monitoring]]
+- [[treeline_remote_sensing_monitoring]]
+- [[treeline_ecotone_theory]]
