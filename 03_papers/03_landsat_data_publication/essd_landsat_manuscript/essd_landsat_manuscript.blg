@@ -1,48 +1,49 @@
-This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: essd_landsat_manuscript.aux
 The style file: copernicus.bst
 Database file #1: essd_landsat_manuscript.bib
 Warning--empty journal in yuan_yuan_self-supervised_2020
-You've used 40 entries,
+Warning--empty journal in zanaga_esa_2022
+You've used 41 entries,
             2932 wiz_defined-function locations,
-            1332 strings with 26019 characters,
-and the built_in function-call counts, 49010 in all, are:
-= -- 4631
-> -- 3208
+            1338 strings with 26457 characters,
+and the built_in function-call counts, 50268 in all, are:
+= -- 4701
+> -- 3355
 < -- 4
-+ -- 1247
-- -- 1030
-* -- 3735
-:= -- 5561
-add.period$ -- 40
-call.type$ -- 40
-change.case$ -- 433
-chr.to.int$ -- 41
-cite$ -- 121
-duplicate$ -- 4068
-empty$ -- 2183
-format.name$ -- 1155
-if$ -- 9479
++ -- 1296
+- -- 1078
+* -- 3860
+:= -- 5746
+add.period$ -- 41
+call.type$ -- 41
+change.case$ -- 451
+chr.to.int$ -- 42
+cite$ -- 125
+duplicate$ -- 4131
+empty$ -- 2229
+format.name$ -- 1206
+if$ -- 9712
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 613
-newline$ -- 129
-num.names$ -- 161
-pop$ -- 2068
+missing$ -- 634
+newline$ -- 132
+num.names$ -- 165
+pop$ -- 2128
 preamble$ -- 1
-purify$ -- 423
+purify$ -- 441
 quote$ -- 0
-skip$ -- 2549
+skip$ -- 2591
 stack$ -- 0
-substring$ -- 1553
-swap$ -- 3496
+substring$ -- 1556
+swap$ -- 3538
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 357
-warning$ -- 1
-while$ -- 195
+type$ -- 366
+warning$ -- 2
+while$ -- 198
 width$ -- 0
-write$ -- 485
-(There was 1 warning)
+write$ -- 495
+(There were 2 warnings)
