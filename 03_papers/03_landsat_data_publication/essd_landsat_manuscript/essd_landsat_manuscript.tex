@@ -79,6 +79,7 @@
 %\usepackage{float}
 %\usepackage{subfig}
 %\usepackage{rotating}
+\usepackage{rotfloat}
 
 
 \begin{document}
@@ -116,12 +117,7 @@
 
 
 \runningtitle{Annual dominant tree species and leaf type cover mapping using Landsat}
-
 \runningauthor{Hiebl et al.}
-
-
-
-
 
 \received{}
 \pubdiscuss{} %% only important for two-stage journals
@@ -177,35 +173,66 @@ Our study will fill this gap by providing data-driven, spatio-temporal continuou
 
 \subsection{Study Area}
 
-The study covers all forested areas of peninsular and insular Italy, spanning several biogeographical, climatic, and latitudinal regions and an altitudinal range from sea level to approximately $2500\,m.s.l.$\footnote{needs citation} in the Alps. Italian forests fall within alpine, temperate, sub-Mediterranean, and Mediterranean climate zones \citep{chelli_climate_2017}, and are dominated by four forest habitat types: broadleaved-deciduous and temperate coniferous forests concentrated in the Alps and Apennines, and broadleaved-evergreen and Mediterranean coniferous forests concentrated along the coasts and in the south \citep{bricca_topography_2026}. This climatic and ecological heterogeneity is a central challenge for wall-to-wall mapping, as models trained predominantly on well-sampled regions risk out-of-domain predictions in climatically and ecologically different areas with sparser reference data.
+The study covers all forested areas of peninsular and insular Italy, spanning several biogeographical, climatic, and latitudinal regions and an altitudinal range from sea level to approximately $2500\,m.s.l.$ \citep{needs_cite} in the Alps (Fig.\ref{fig:study_area}). Italian forests fall within alpine, temperate, sub-Mediterranean, and Mediterranean climate zones \citep{chelli_climate_2017}, and are dominated by four forest habitat types: broadleaved-deciduous and temperate coniferous forests concentrated in the Alps and Apennines, and evergreen broad-leaved and Mediterranean coniferous forests concentrated along the coasts and in the south \citep{bricca_topography_2026}. This climatic and ecological heterogeneity is a central challenge for wall-to-wall mapping, as models trained predominantly on well-sampled regions risk out-of-domain predictions in climatically and ecologically different areas with sparser reference data.
 Forests cover 37\% of Italy's territory (10.98 million ha) \citep{gasparini_italian_2022}. Italy's position as a transition zone between the Mediterranean and the temperate climate of Central Europe makes its forests especially vulnerable to climate change: warming and increasing drought frequency are already documented to shift phenology and favour more drought-resilient and evergreen broad-leaved species at the cost of deciduous ones \citep{chelli_climate_2017, herraiz_aridity-induced_2025, conedera_drivers_2018}. These climate-driven shifts compound ongoing changes in forest management and land use, jointly reshaping tree species distribution and biodiversity across the country \citep{bricca_topography_2026}.
 
 \begin{figure}[t]
 \includegraphics[width=8.3cm]{figures/study_area_overview.png}
 \caption{Study Area Italy with high forest cover in the Alps and mountainous areas of Central Italy.}
+\label{fig:study_area}
 \end{figure}
 
 \subsection{Modelling Data}
-figure: next to each other plot data images VPO, VDBI synthetic dataset and CFI polygonized data
+
+An overview of the used datasets during training are provided in Tab.\ref{tab:datasets} and Fig.\ref{fig:datasets}.
+
+
+\begin{figure*}[t]
+\includegraphics[width=14cm]{figures/training_data_overview.png}
+\caption{Overview of training datasets used in the study.}
+\label{fig:datasets}
+\end{figure*}
+
+\begin{table*}[t]
+\caption{Overview of datasets used for model training and validation.}
+\label{tab:datasets}
+\begin{tabular}{l l l l l}
+%\begin{tabularx}{\textwidth}{l *{4}{>{\raggedright\arraybackslash}X}}
+    \tophline
+    & n samples & LTC & DTS &  \\
+    \middlehline
+    VPO          & 2016 & yes & yes & conducted in the field 2023-2025, standardized $10\times10\,\text{m}$ plots (see Sec.\,\ref{sec:vpo}) \\
+    VDBI         & 2998 & yes & yes & observations with varying size, acquisition time, and location accuracy ($0.01-10\,\text{km}$) (see Sec.\,\ref{sec:vdbi}) \\
+    rsCFI        & 131095 & - & yes & randomly sampled across CFI dominant tree species (see Sec.\,\ref{sec:cfi}) \\
+    csCFI        & 30380 & - & yes & pure stand polygons sampled from CFI (see Sec.\,\ref{sec:cfi})  \\
+    rsCOVER      & 131095 & yes & - & same locations as rsCFI, synthetically created using AlphaEarth embeddings (see Sec.\,\ref{sec:synthetic_ltc}) \\
+    csCOVER      & 30380 & yes & - & same locations as csCFI, synthetically created using AlphaEarth  embeddings (see Sec.\,\ref{sec:synthetic_ltc}) \\
+    \bottomhline
+\end{tabular}
+\belowtable{} % Table Footnotes
+\end{table*}
 
 \subsubsection{Italian forest vegetation plot databases}
+\label{sec:vdbi}
 The Forest Vegetation Database Italy (VDBI) is a compilation of over 16,000 phytosociological and vegetation relevé plot observations collected across Italy from the 1970s to the present. Each plot record contains species composition data, structural attributes, and cover estimates for the tree strata \citep{alessi_ancient_2019}. The VDBI covers the full range of Italian forest types from Mediterranean macchia to subalpine conifer belts. It provides temporal depth extending back to approximately 1972, enabling historical training data for pre-2000 Landsat time steps. The location accuracy of single plot observations in the dataset varies across observation year and source dataset. To avoid non-forest pixels leak into the training and test datasets, VDBI was cleaned manually based on orthophoto imagery. The final dataset after the cleaning process provides 9837 plot observations. Plot records include LTC estimates (EVE, DEC, CON) and tree species cover fractions, which were used to retrieve dominant DTS classification labels, allowing joint training of the regression ($VDBI_{DTS}$) and classification ($VDBI_{DTS}$) TSTpad model. A $10 \times 10\,\text{km}$ regular polygon grid was created for the train/validation/test split to reduce spatial autocorrelation between training and validation sets. A 20\% validation split, stratified by polygon identifier  is applied throughout all training stages \citep{safonova_ten_2023}.
 
 \subsubsection{Field plot observations}
+\label{sec:vpo}
 The Vegetation Plot Observations (VPO) dataset consists of recent field campaigns conducted within 7 Italian National Parks or protected areas (see: \citet{hiebl_advancing_2025,hiebl_combining_2026}). Each site comprises four systematic 100 m² vegetation plots arranged on a regular grid, within which species-wise cover is estimated for three vertical layers (0–1 m, 1–10 m, and above 10 m). LTC is extracted as sum of EVE, DEC, and CON species cover fractions, while DTS is - similar to VDBI - retrieved from species cover by selecting the tree species with highest cover fraction. The VPO data used in this study consists of observations from 2023 to 2025 field season, yielding a total of 2016 individual plot observations from 504 sites. The VPO dataset provides high-quality, spatially clustered reference data for the most recent Landsat time steps (post-2020) and serves as the primary validation reference for model performance in the recent high-density observation period. The VPO dataset is further split into a training set (80\%) and a validation set (20\%) to evaluate model performance. The split was performed spatially after clustering the sites by their coordinates into 10 clusters per region. The spatial clustering was done to stabilize training and prevent over-optimistic accuracy estimates due to spatial autocorrelation \citep{safonova_ten_2023, hiebl_advancing_2025}.
 
 
 \subsubsection{CFI Forest Inventory Data}
-The CFI2020 is the first national forest map of Italy produced at operational scale (1:10,000), based on photointerpretation of aerial orthophotos from 2018 to 2020 against three simultaneously applied forest definitions \citep{mattioli_carta_2025}. The CFI2020 delineates forested areas across all 21 Italian regions and provides stand-level attributes including forest category, silvicultural system, and DTS group. In this study, the CFI2020 polygon layer serves two roles: i) as an additional training/validation data source for the DTS classification task, and ii) as a source of decision rules for cleaning the synthetic LTC training dataset (see \ref{sec:synthetic_ltc}). In the first case two different datasets are created by i) randomly sampling a set of evenly distributed points over all classes, and ii) by sampling points from manually delineated pure stand polygons that are evenly distributed across classes. In the second case, CFI2020 species attribution (DTS) is used to impose ecologically plausible constraints on predicted cover fractions of the synthetic dataset (see \ref{sec:synthetic_ltc}). 
+\label{sec:cfi}
+The CFI2020 is the first national forest map of Italy produced at operational scale (1:10,000), based on photointerpretation of aerial orthophotos from 2018 to 2020 against three simultaneously applied forest definitions \citep{mattioli_carta_2025}. The CFI2020 delineates forested areas across all 21 Italian regions and provides stand-level attributes including forest category, silvicultural system, and DTS group. The initial 43 unique classes in the dataset were collapsed into 11 dominant tree species classes: silver fir, spruce, pine, deciduous oak, chestnut, beech, manna ash - hornbeam, evergreen oak, coniferous others, deciduous others, evergreen others. In this study, the CFI2020 polygon layer serves two roles: i) as an additional training/validation data source for the DTS classification task, and ii) as a source of decision rules for cleaning the synthetic LTC training dataset (see \ref{sec:synthetic_ltc}). In the first case two different datasets are created by i) randomly sampling a set of evenly distributed points over all classes (rsCFI), and ii) by sampling points from manually delineated pure stand polygons that are evenly distributed across classes (csCFI). In the second case, CFI2020 species attribution (DTS) is used to impose ecologically plausible constraints on predicted cover fractions of the synthetic dataset (see \ref{sec:synthetic_ltc}). 
 
 
 
 \subsubsection{Synthetic leaf type cover data}
 \label{sec:synthetic_ltc}
 
-Spatially explicit wall-to-wall leaf type cover data for model training are not available for Italy. Following the approach of \citet{kang_data-driven_2021} and \citet{tan_leveraging_2025} — who demonstrate the use of coarser or indirectly derived data sources as proxy training targets where direct measurements are absent — an artificial leaf type cover dataset was created from the VDBI and VPO plot observations. A Random Forest regression model was trained on the combined VDBI and VPO training split, with EVE, DEC, and CON cover fractions as prediction targets. As input features, AlphaEarth embeddings \citep{brown_alphaearth_2025,hiebl_combining_2026} — multi-modal spectral-spatial-temporal feature representations derived from a globally pretrained geospatial foundation model — were extracted for all training plot locations. AlphaEarth embeddings were shown to achieve high species classification accuracy with very limited training data in Italian mountain forests \citep{ball_geospatial_2026}, making them particularly suited as inputs for the pseudo-label generation step. %Tessera embeddings \citep{feng_tessera_2026} provide a fully open-source alternative with comparable performance characteristics.
+Spatially explicit wall-to-wall leaf type cover data for model training are not available for Italy. Following the approach of \citet{kang_data-driven_2021} and \citet{tan_leveraging_2025} — who demonstrate the use of coarser or indirectly derived data sources as proxy training targets where direct measurements are absent — an artificial leaf type cover dataset was created from the VDBI and VPO plot observations. A Random Forest regression model was trained on the combined VDBI and VPO training split, with EVE, DEC, and CON cover fractions as prediction targets. As input features, AlphaEarth embeddings \citep{brown_alphaearth_2025,hiebl_combining_2026} — multi-modal spectral-spatial-temporal feature representations derived from a globally pretrained geospatial foundation model — were extracted for all training plot locations. AlphaEarth embeddings were shown to achieve high species classification accuracy with very limited training data in Italian mountain forests \citep{ball_geospatial_2026}, making them particularly suited as inputs for the pseudo-label generation step.
 
-The trained Random Forest model was then applied to the full CFI2020 forest extent to generate a nation-wide pixel-level pseudo-label layer for each cover fraction. This pseudo-label layer constitutes the primary continuous-cover target during the contrastive pretraining and early fine-tuning stages. To reduce label noise introduced by model prediction errors, the CFI2020 species attribution was used to apply ecologically motivated cleaning rules: e.g. pixels within pine-dominated forest polygons were required to have at least 60\% CON cover and fewer than 30\% EVE cover; analogous rules were applied to pure-stand classes of beech, oak, and dominant tree species. These cleaning rules remove the most  pseudo-label errors while preserving the spatial completeness of the training dataset. If a sampled synthetic plot does not meet the criteria the sample is dropped. This way we prevent ecologically non-feasible labels being forwarded into the final training loop.
+The trained Random Forest model was then applied to the full CFI2020 forest extent to generate a nation-wide pixel-level pseudo-label layer for each cover fraction. The labels were extracted at the same locations as rsCFI (rsCOVER)and csCFI (csCOVER). This pseudo-label layer constitutes the primary continuous-cover target during the contrastive pretraining and early fine-tuning stages. To reduce label noise introduced by model prediction errors, the CFI2020 species attribution was used to apply ecologically motivated cleaning rules: e.g. pixels within pine-dominated forest polygons were required to have at least 60\% CON cover and fewer than 30\% EVE cover; analogous rules were applied to classes of beech, oak, and dominant tree species. These cleaning rules remove the most  pseudo-label errors while preserving the spatial completeness of the training dataset. If a sampled synthetic plot does not meet the criteria the sample is dropped. This way we prevent ecologically non-feasible labels being forwarded into the final training loop. 
 
 
 \subsubsection{Landsat time series}
@@ -257,17 +284,15 @@ We did not process the resulting annual time series using outlier detection or t
 
 \subsection{Evaluation}
 
-\textcolor{red}{TODO.}
+%\textcolor{red}{TODO.}
 
-The validation strategy is designed to assess both the accuracy of the map product at individual time steps and the temporal consistency of predictions across the full 40-year archive. Three independent validation datasets are employed.
+The validation strategy is designed to assess both the accuracy of the map product at recent time steps and the temporal consistency of predictions across the full 40-year archive. Three independent validation datasets are employed.
+The VDBI hold-out test split provides the primary historical validation reference, with plot observations dating back to approximately 1995. This split allows accuracy assessment at historical time steps (1995–2025) where field data are available, spanning the Landsat 5-only and Landsat 5/7 overlap periods. The VPO hold-out split — collected during the 2023 to 2025 field work — provides the primary validation reference for recent predictions (post-2020) from the high-density Landsat 8/9 period. This dataset contains data from many mixed forest stands with hard-to-predict labels. The two validation datasets provide complementary temporal coverage: the VDBI split quantifies historical accuracy under lower observation density, while the VPO split quantifies accuracy under the best available observation conditions.
+A third validation source consists of a set of pure-stand forest polygons manually interpreted from high-resolution Google Earth Pro imagery in combination with the CFI dataset at recent time steps. These polygons, selected to represent spectrally unambiguous mono-specific stands, enable validation of the classification output under conditions where the expected dominant species label is highly reliable, providing an upper bound on classification accuracy unconstrained by label uncertainty in mixed stands or uncertain plot observation coordinates.
 
-The VDBI hold-out split provides the primary historical validation reference, with plot observations dating back to approximately 1995. This split allows accuracy assessment at historical time steps (1995–2012) where field data are available, spanning the Landsat 5-only and Landsat 7/5 overlap periods. The VPO hold-out split — collected during the 2024 field season — provides the primary validation reference for recent predictions (post-2020) from the high-density Landsat 8/9 period. These two validation datasets provide complementary temporal coverage: the VDBI split quantifies historical accuracy under lower observation density, while the VPO split quantifies accuracy under the best available observation conditions.
+Accuracy metrics are reported on average over all time periods, but also separately for three observation-density periods: the historical Landsat 5-only period (pre-1999), the Landsat 7/8 transition period (1999–2013), and the recent high-density period (post-2013). For the classification head, overall accuracy (OA) and per-class F1 score are computed for each period. For the regression heads, root mean squared error (RMSE) and mean absolute error (MAE) are reported for each of the three cover fractions (EVE, DEC, CON). The VPO dataset is finally used to assess in detail the model's ability to predict DTS and LTC in mixed stands, where the prediction of a single label is inherently more difficult and uncertain.
 
-A third validation source consists of a set of pure-stand forest polygons manually interpreted from high-resolution Google Earth Pro imagery at recent time steps. These polygons, selected to represent spectrally unambiguous mono-specific stands, enable validation of the classification output under conditions where the expected dominant species label is highly reliable, providing an upper bound on classification accuracy unconstrained by label uncertainty in mixed stands.
-
-Accuracy metrics are reported separately for three observation-density periods: the historical Landsat 5-only period (pre-1999), the Landsat 7/8 transition period (1999–2013), and the recent high-density period (post-2013). For the classification head, overall accuracy (OA) and per-class F1 score are computed for each period. For the regression heads, root mean squared error (RMSE) and mean absolute error (MAE) are reported for each of the three cover fractions (EVE, DEC, CON). 
-
-To account for uncertainties in plot observations coming from (i) label noise, (ii) spatial mismatch between plot location and Landsat pixel, and (iii) temporal uncertainty and variations between plot observation year and Landsat acquisition year, additional probabilistic evaluation metrics are computed. Based on the plot location and reported year, a MonteCarlo approach is used to sample from the spatio-temporal uncertainty distribution and the best performance metrics including uncertainty are reported for the sampling distribution (see \ref{sec:appendix_metrics}). This approach reduces sensitivity to small misalignments and provides a more robust and uncertainty aware estimate of model performance at the stand level, while measuring the metric directly at the plot location and date might underestimate the model performance for each plot.
+To account for uncertainties in plot observations coming from (i) label noise, (ii) spatial mismatch between plot location and Landsat pixel, and (iii) temporal uncertainty and variations between plot observation year and Landsat acquisition year, additional probabilistic evaluation metrics are computed. Based on the plot location and reported year, a MonteCarlo approach is used to sample from the spatio-temporal uncertainty distribution and the best performance metrics including uncertainty are reported for the sampling distribution (see Appendix\,\ref{sec:appendix_metrics}). This approach reduces sensitivity to misalignments and provides a more robust and uncertainty aware estimate of model performance at the stand level, while measuring the metric directly at the plot location and date might underestimate the model performance for each plot under the given data related error sources.
 
 \section{Results and Discussion}
 
@@ -280,7 +305,59 @@ The final maps provide following variables per pixel and per year (1987 to 2025)
 \subsection{Performance metrics on test datasets}
 \textcolor{red}{TODO.}
 
+- conventional metrics for all datasets \newline
+- probabilistic metrics for all datasets \newline
+- comparing pure and mixed stands
 
+\begin{table*}[t]
+\caption{Classification performance (precision, recall, f1-score) for the dominant tree species classification task, evaluated on three test datasets.}
+\label{tab:classification_report}
+\begin{tabular}{l cccc cccc cccc}
+\tophline
+ & \multicolumn{4}{c}{VPO test split} & \multicolumn{4}{c}{VDBI test split} & \multicolumn{4}{c}{CFI test dataset} \\
+\cline{2-5} \cline{6-9} \cline{10-13}
+class & prec. & recall & f1-score & support & prec. & recall & f1-score & support & pre. & recall & f1-score & support \\
+\middlehline
+silver fir   & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+other dec.   & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+dec. oak     & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+chestnut     & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+other con.   & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+beech        & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+eve. oak     & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+other eve.   & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+pine         & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+ornus-ostr.  & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+spruce       & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\middlehline
+accuracy     &      &      &      & 504 &      &      &      & 837 &      &      &      & 30985 \\
+macro avg    & 0.00 & 0.00 & 0.00 &  & 0.00 & 0.00 & 0.00 &  & 0.00 & 0.00 & 0.00 &  \\
+weighted avg & 0.00 & 0.00 & 0.00 &  & 0.00 & 0.00 & 0.00 &  & 0.00 & 0.00 & 0.00 &  \\
+\bottomhline
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\caption{Regression performance (MAE, RMSE, R\textsuperscript{2}) for leaf type cover (LTC) prediction, evaluated on two test datasets.}
+\label{tab:regression_report}
+\begin{tabular}{l ccc ccc}
+\tophline
+ & \multicolumn{3}{c}{VPO test split} & \multicolumn{3}{c}{VDBI test split} \\
+\cline{2-4} \cline{5-7}
+target & MAE & RMSE & R\textsuperscript{2} & MAE & RMSE & R\textsuperscript{2} \\
+\middlehline
+EVE & TODO & TODO & TODO & TODO & TODO & TODO \\
+DEC & TODO & TODO & TODO & TODO & TODO & TODO \\
+CON & TODO & TODO & TODO & TODO & TODO & TODO \\
+\bottomhline
+\end{tabular}
+\end{table*}
+
+\subsection{Dominant tree species dynamics}
+\textcolor{red}{TODO.}
+
+\subsection{Leaf type cover dynamics}
+\textcolor{red}{TODO.}
 
 \conclusions  %% \conclusions[modified heading if necessary]
 TEXT
@@ -301,9 +378,11 @@ All python code that was used during data processing, training and mapping is av
 \appendix
 \section{Probabilistic Evaluation metrics}    %% Appendix A
 \label{sec:appendix_metrics}
+\textcolor{red}{TODO.}
 %\subsection{}     %% Appendix A1, A2, etc.
 
 \section{Comparison to historical orthophoto imagery} 
+\textcolor{red}{TODO.}
 \appendixfigures
 
 \noappendix       %% use this to mark the end of the appendix section. Otherwise the figures might be numbered incorrectly (e.g. 10 instead of 1).
@@ -324,12 +403,14 @@ All python code that was used during data processing, training and mapping is av
 
 
 
-\authorcontribution{TEXT} %% this section is mandatory
+\authorcontribution{} %% this section is mandatory
+\textcolor{red}{TODO.}
 
-\competinginterests{TEXT} %% this section is mandatory even if you declare that no competing interests are present
+\competinginterests{} %% this section is mandatory even if you declare that no competing interests are present
 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
 
-\disclaimer{TEXT} %% optional section
+\disclaimer{} %% optional section
+\textcolor{red}{TODO.}
 
 \begin{acknowledgements}
 This research has been conducted within the project “TRACEVE - Tracing the evergreen broad-leaved species and their spread” (I 6452-B) funded by the Austrian Science Fund (FWF). GB was funded under the National Recovery and Resilience Plan (NRRP), Mission 4 Component 2 Investment 1.4—Call for tender No. 3138 of 16 December 2021, rectified by Decree n. 3175 of 18 December 2021 of Italian Ministry of University and Research funded by the European Union – NextGenerationEU. Project code CN\_00000033, Concession Decree No. 1034 of 17 June 2022 adopted by the Italian Ministry of University and Research, CUP B63C22000650007“, Project title “National Biodiversity Future Center—NBFC”. 

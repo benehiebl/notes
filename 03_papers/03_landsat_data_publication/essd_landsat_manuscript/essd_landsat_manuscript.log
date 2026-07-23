@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.7.9)  22 JUL 2026 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.7.9)  23 JUL 2026 20:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3240,42 +3240,46 @@ Package hyperref Info: Option `unicode' set `true' on input line 3137.
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 ))
 LaTeX Info: Redefining \vec on input line 15.
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 84.
+ (/usr/share/texlive/texmf-dist/tex/latex/rotfloat/rotfloat.sty
+Package: rotfloat 2004/01/04 v1.2 Combining float+rotating package (AS)
+Package rotfloat Info: float package v1.3 detected on input line 74.
+)
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (./essd_landsat_manuscript.aux)
 \openout1 = `essd_landsat_manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 84.
-LaTeX Font Info:    Trying to load font information for T5+cmr on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 85.
+LaTeX Font Info:    Trying to load font information for T5+cmr on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/vntex/t5cmr.fd
 File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 84.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 84.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 85.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 85.
  (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count351
@@ -3301,7 +3305,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count357
-Package hyperref Info: Link coloring OFF on input line 84.
+Package hyperref Info: Link coloring OFF on input line 85.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -3311,36 +3315,36 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count358
 )
-LaTeX Info: Redefining \ref on input line 84.
-LaTeX Info: Redefining \pageref on input line 84.
-LaTeX Info: Redefining \nameref on input line 84.
+LaTeX Info: Redefining \ref on input line 85.
+LaTeX Info: Redefining \pageref on input line 85.
+LaTeX Info: Redefining \nameref on input line 85.
  (/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 138.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 134.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 138.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 138.
+(Font)              scaled to size 16.41594pt on input line 134.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 134.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 138.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 134.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.49997pt on input line 138.
+(Font)              scaled to size 9.49997pt on input line 134.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 138.
+(Font)              scaled to size 9.49997pt on input line 134.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 146.
+(Font)              scaled to size 8.54997pt on input line 142.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.54997pt on input line 146.
+(Font)              scaled to size 8.54997pt on input line 142.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 146.
+(Font)              scaled to size 4.74998pt on input line 142.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -3353,63 +3357,78 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 
 ]
-Underfull \hbox (badness 1152) in paragraph at lines 157--159
+Underfull \hbox (badness 1152) in paragraph at lines 153--155
 \T1/ptm/m/n/10 and leaf type map-ping. Phe-no-log-i-cally in-for-ma-tive sea-
  []
+
+
+Package natbib Warning: Citation `needs_cite' on page 2 undefined on input line 176.
 
 [2]
 <figures/study_area_overview.png, id=141, 338.2236pt x 452.4102pt>
 File: figures/study_area_overview.png Graphic file (type png)
 <use figures/study_area_overview.png>
-Package pdftex.def Info: figures/study_area_overview.png  used on input line 184.
+Package pdftex.def Info: figures/study_area_overview.png  used on input line 180.
 (pdftex.def)             Requested size: 236.15796pt x 315.8842pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3 <./figures/study_area_overview.png>]
-Underfull \hbox (badness 2799) in paragraph at lines 215--216
+<figures/training_data_overview.png, id=145, 789.9111pt x 383.2719pt>
+File: figures/training_data_overview.png Graphic file (type png)
+<use figures/training_data_overview.png>
+Package pdftex.def Info: figures/training_data_overview.png  used on input line 191.
+(pdftex.def)             Requested size: 398.33858pt x 193.27298pt.
+
+Overfull \hbox (30.70679pt too wide) in paragraph at lines 199--212
+ []$[]$ 
+ []
+
+[3 <./figures/study_area_overview.png>] [4 <./figures/training_data_overview.png>]
+Underfull \hbox (badness 2799) in paragraph at lines 242--243
 \T1/ptm/m/n/10 Land-sat 8 OLI (2013^^Upresent), and Land-sat 9 OLI-2
  []
 
-[4]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5]
-Underfull \hbox (badness 4291) in paragraph at lines 268--269
-[]\T1/ptm/m/n/10 Accuracy met-rics are re-ported sep-a-rately for three
- []
-
-
-Underfull \hbox (badness 5817) in paragraph at lines 268--269
-\T1/ptm/m/n/10 observation-density pe-ri-ods: the his-tor-i-cal Land-sat 5-
- []
-
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+ [5] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 \T1/ptm/m/n/10 All python code that was used dur-ing data pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 \T1/ptm/m/n/10 cess-ing, train-ing and map-ping is avail-able un-der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 []\T1/ptm/m/n/10 https://git.uibk.ac.at/c7161037/ls_mapping[] (train-ing) and
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 294--295
+Underfull \hbox (badness 2318) in paragraph at lines 371--372
 []\T1/ptm/m/n/10 https://git.uibk.ac.at/rslab/sattstools[] (beta ver-sion, re-mote
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 335--336
+Underfull \hbox (badness 1205) in paragraph at lines 416--417
 \T1/ptm/m/n/9 the project ^^PTRACEVE - Trac-ing the ev-er-green broad-leaved
  []
 
-(./essd_landsat_manuscript.bbl
+[8pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.417 \end{acknowledgements}
+                            pdfTeX warning (ext4): destination with the same identifier (name{appendix.B}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.417 \end{acknowledgements}
+                            pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.417 \end{acknowledgements}
+                            ] (./essd_landsat_manuscript.bbl
 Underfull \hbox (badness 3942) in paragraph at lines 19--24
 []\T1/ptm/m/n/9 Ball, J. G., Wick-lein, J. A., Feng, Z., Kneze-vic, J., Jaf-
  []
@@ -3495,21 +3514,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--71
  []
 
 
-Underfull \vbox (badness 2547) has occurred while \output is active []
-
- [7pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.71 
-     pdfTeX warning (ext4): destination with the same identifier (name{appendix.B}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.71 
-     pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.71 
-     ]
 Underfull \hbox (badness 2245) in paragraph at lines 82--87
 []\T1/ptm/m/n/9 Feng, Z., Atzberger, C., Jaf-fer, S., Kneze-vic, J., Sor-munen,
  []
@@ -3602,7 +3606,7 @@ Underfull \hbox (badness 1067) in paragraph at lines 143--149
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [9]
 Underfull \hbox (badness 7907) in paragraph at lines 177--182
 []\T1/ptm/m/n/9 Mañas, O., La-coste, A., Giró-i Ni-eto, X., Vazquez, D.,
  []
@@ -3698,12 +3702,12 @@ Underfull \hbox (badness 1067) in paragraph at lines 236--241
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8]
 Underfull \hbox (badness 1454) in paragraph at lines 243--246
 \T1/ptm/m/n/9 1/2 time se-ries and deep learn-ing for ac-cu-rate for-est tree
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 1062) in paragraph at lines 259--266
@@ -3791,9 +3795,6 @@ Underfull \hbox (badness 3240) in paragraph at lines 314--319
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 322--325
 []\T1/ptm/m/n/9 Yuan Yuan, Yuan, Y., Lin, L., and Lei Lin: Self-
  []
@@ -3809,6 +3810,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 322--325
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
 Underfull \hbox (badness 10000) in paragraph at lines 336--339
 []\T1/ptm/m/n/9 Zerveas, G., Ja-yara-man, S., Pa-tel, D., Bhamidi-paty, A.,
  []
@@ -3823,26 +3827,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 336--339
 \T1/ptm/m/n/9 for Mul-ti-vari-ate Time Se-ries Rep-re-sen-ta-tion Learn-ing,
  []
 
-) [9] (./essd_landsat_manuscript.aux) ) 
+) [11
+
+]
+
+Package natbib Warning: There were undefined citations.
+
+(./essd_landsat_manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 34486 strings out of 478287
- 599952 string characters out of 5849290
- 911165 words of memory out of 5000000
- 52063 multiletter control sequences out of 15000+600000
- 514704 words of font info for 82 fonts, out of 8000000 for 9000
+ 34563 strings out of 478287
+ 601521 string characters out of 5849290
+ 916356 words of memory out of 5000000
+ 52120 multiletter control sequences out of 15000+600000
+ 517153 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,8n,103p,2444b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,12n,103p,2444b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{target\040name} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{https://git.uibk.ac.at/rslab/sattstools} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{https://git.uibk.ac.at/c7161037/ls_mapping} has been referenced but does not exist, replaced by a fixed one
 
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on essd_landsat_manuscript.pdf (9 pages, 1323449 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on essd_landsat_manuscript.pdf (11 pages, 2626802 bytes).
 PDF statistics:
- 383 PDF objects out of 1000 (max. 8388607)
- 348 compressed objects within 4 object streams
- 84 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 421 PDF objects out of 1000 (max. 8388607)
+ 376 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

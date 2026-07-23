@@ -3,11 +3,12 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: essd_landsat_manuscript.aux
 The style file: copernicus.bst
 Database file #1: essd_landsat_manuscript.bib
+Warning--I didn't find a database entry for "needs_cite"
 Warning--empty journal in yuan_yuan_self-supervised_2020
 Warning--empty journal in zanaga_esa_2022
 You've used 41 entries,
             2932 wiz_defined-function locations,
-            1338 strings with 26457 characters,
+            1339 strings with 26467 characters,
 and the built_in function-call counts, 50268 in all, are:
 = -- 4701
 > -- 3355
@@ -46,4 +47,4 @@ warning$ -- 2
 while$ -- 198
 width$ -- 0
 write$ -- 495
-(There were 2 warnings)
+(There were 3 warnings)
