@@ -1,4 +1,4 @@
-\begin{thebibliography}{41}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -230,6 +230,13 @@ Safonova, A., Ghazaryan, G., Stiller, S., Main-Knorn, M., Nendel, C., and Ryo,
   M.: Ten deep learning techniques to address small data problems with remote
   sensing, International Journal of Applied Earth Observation and
   Geoinformation, 125, 103\,569, \doi{10.1016/j.jag.2023.103569}, 2023.
+
+\bibitem[{Strunk et~al.(2025)Strunk, Reutebuch, McGaughey, and
+  Andersen}]{strunk_examination_2025}
+Strunk, J.~L., Reutebuch, S.~E., McGaughey, R.~J., and Andersen, H.-E.: An
+  examination of {GNSS} positioning under dense conifer forest canopy in the
+  {Pacific} {Northwest}, {USA}, Remote Sensing Applications: Society and
+  Environment, 37, 101\,428, \doi{10.1016/j.rsase.2024.101428}, 2025.
 
 \bibitem[{Sylvain et~al.(2024)Sylvain, Drolet, Thiffault, and
   Anctil}]{sylvain_high-resolution_2024}
