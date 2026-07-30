@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.7.24)  29 JUL 2026 20:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.7.24)  30 JUL 2026 16:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3405,32 +3405,42 @@ Underfull \hbox (badness 1515) in paragraph at lines 267--268
 Underfull \vbox (badness 1983) has occurred while \output is active []
 
  [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 368--373
+Underfull \hbox (badness 1325) in paragraph at lines 370--375
+\T1/ptm/m/n/10 the test time per-for-mance re-port-ing. Ap-ply-ing dif-fer-ent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 370--375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
 \T1/ptm/m/n/10 All python code that was used dur-ing data pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
 \T1/ptm/m/n/10 cess-ing, train-ing and map-ping is avail-able un-der
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--384
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
 []\T1/ptm/m/n/10 https://git.uibk.ac.at/c7161037/ls_mapping[] (train-ing) and
  []
 
 
-Underfull \hbox (badness 2318) in paragraph at lines 383--384
+Underfull \hbox (badness 2318) in paragraph at lines 385--386
 []\T1/ptm/m/n/10 https://git.uibk.ac.at/rslab/sattstools[] (beta ver-sion, re-mote
  []
 
 [8]
-Underfull \hbox (badness 1205) in paragraph at lines 428--429
+Underfull \hbox (badness 10000) in paragraph at lines 398--401
+
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 434--435
 \T1/ptm/m/n/9 the project ^^PTRACEVE - Trac-ing the ev-er-green broad-leaved
  []
 
@@ -3560,15 +3570,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [9pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.122 
+l.103 
       pdfTeX warning (ext4): destination with the same identifier (name{appendix.B}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.122 
+l.103 
       pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.122 
+l.103 
       ]
 Underfull \hbox (badness 2875) in paragraph at lines 125--128
 []\T1/ptm/m/n/9 Hemmerling, J., Pflug-macher, D., and Hostert, P.: Map-ping
@@ -3625,32 +3635,32 @@ Underfull \hbox (badness 1067) in paragraph at lines 143--149
  []
 
 
-Underfull \hbox (badness 7907) in paragraph at lines 177--182
+Underfull \hbox (badness 7907) in paragraph at lines 182--187
 []\T1/ptm/m/n/9 Mañas, O., La-coste, A., Giró-i Ni-eto, X., Vazquez, D.,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--182
+Underfull \hbox (badness 10000) in paragraph at lines 182--187
 \T1/ptm/m/n/9 and Ro-dríguez, P.: Sea-sonal Con-trast: Un-su-per-vised
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--182
+Underfull \hbox (badness 10000) in paragraph at lines 182--187
 \T1/ptm/m/n/9 Pre-Training from Un-cu-rated Re-mote Sens-ing Data,
  []
 
 
-Underfull \hbox (badness 7631) in paragraph at lines 177--182
+Underfull \hbox (badness 7631) in paragraph at lines 182--187
 \T1/ptm/m/n/9 in: 2021 IEEE/CVF In-ter-na-tional Con-fer-ence on Com-
  []
 
 
-Underfull \hbox (badness 6094) in paragraph at lines 177--182
+Underfull \hbox (badness 6094) in paragraph at lines 182--187
 \T1/ptm/m/n/9 puter Vi-sion (ICCV), pp. 9394--9403, ISSN 2380-7504,
  []
 
 
-Underfull \hbox (badness 3386) in paragraph at lines 177--182
+Underfull \hbox (badness 3386) in paragraph at lines 182--187
 [][]\T1/ptm/m/n/9 10.1109/ICCV48922.2021.00928[], iSSN: 2380-
  []
 
@@ -3658,205 +3668,236 @@ Underfull \hbox (badness 3386) in paragraph at lines 177--182
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 196--206
+Underfull \hbox (badness 1635) in paragraph at lines 201--211
 \T1/ptm/m/n/9 S. B., Sven-ning, J.-C., Swacha, G., Tatarenko, I., Ve£e°a,
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 196--206
+Underfull \hbox (badness 1342) in paragraph at lines 201--211
 \T1/ptm/m/n/9 mu-nity change in Eu-rope in-di-cate a shift to-ward nutrient-
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 209--214
+Underfull \hbox (badness 3407) in paragraph at lines 214--219
 \T1/ptm/m/n/9 served long-term green-ing across Switzer-land ^^U ev-i-dence
  []
 
 
-Underfull \hbox (badness 2538) in paragraph at lines 209--214
+Underfull \hbox (badness 2538) in paragraph at lines 214--219
 \T1/ptm/m/n/9 with cli-mate and land cover fac-tors, Big Earth Data, 8,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--221
+Underfull \hbox (badness 3396) in paragraph at lines 222--225
+[]\T1/ptm/m/n/9 Persson, H. J., Ek-ström, M., and Ståhl, G.: Quan-tify and
+ []
+
+
+Underfull \hbox (badness 3088) in paragraph at lines 222--225
+\T1/ptm/m/n/9 ac-count for field ref-er-ence er-rors in for-est re-mote sens-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 228--232
 []\T1/ptm/m/n/9 Pflugmacher, D., Rabe, A., Pe-ters, M., and Hostert,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--221
+Underfull \hbox (badness 10000) in paragraph at lines 228--232
 \T1/ptm/m/n/9 P.: Map-ping pan-European land cover us-ing Land-sat
  []
 
 
-Underfull \hbox (badness 3724) in paragraph at lines 217--221
+Underfull \hbox (badness 3724) in paragraph at lines 228--232
 \T1/ptm/m/n/9 spectral-temporal met-rics and the Eu-ro-pean LU-CAS sur-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--221
+Underfull \hbox (badness 10000) in paragraph at lines 228--232
 \T1/ptm/m/n/9 vey, Re-mote Sens-ing of En-vi-ron-ment, 221, 583--595,
  []
 
 
-Underfull \hbox (badness 4132) in paragraph at lines 223--226
+Underfull \hbox (badness 4132) in paragraph at lines 234--237
 []\T1/ptm/m/n/9 Ruÿwurm, M. and Körner, M.: Self-attention for raw op-
  []
 
 
-Underfull \hbox (badness 5548) in paragraph at lines 223--226
+Underfull \hbox (badness 5548) in paragraph at lines 234--237
 \T1/ptm/m/n/9 ti-cal Satel-lite Time Se-ries Clas-si-fi-ca-tion, IS-PRS Jour-nal
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 223--226
+Underfull \hbox (badness 4634) in paragraph at lines 234--237
 \T1/ptm/m/n/9 of Pho-togram-me-try and Re-mote Sens-ing, 169, 421--435,
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 243--248
+Underfull \hbox (badness 1968) in paragraph at lines 247--253
+\T1/ptm/m/n/9 Weiskit-tel, A. R., Cook, B. D., and Bab-cock, C.: Quan-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--253
+\T1/ptm/m/n/9 ti-fy-ing and cor-rect-ing ge-olo-ca-tion er-ror in space-borne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--253
+\T1/ptm/m/n/9 Li-DAR for-est canopy ob-ser-va-tions us-ing high spa-tial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--253
+\T1/ptm/m/n/9 ac-cu-racy data: A Bayesian model ap-proach, En-vi-ron-
+ []
+
+
+Underfull \hbox (badness 2837) in paragraph at lines 263--268
 \T1/ptm/m/n/9 resolution map-ping of tree species and as-so-ci-ated un-cer-
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 243--248
+Underfull \hbox (badness 1067) in paragraph at lines 263--268
 \T1/ptm/m/n/9 plied Earth Ob-ser-va-tion and Geoin-for-ma-tion, 131, 103960,
- []
-
-
-Underfull \hbox (badness 1454) in paragraph at lines 250--253
-\T1/ptm/m/n/9 1/2 time se-ries and deep learn-ing for ac-cu-rate for-est tree
- []
-
-
-Underfull \hbox (badness 1062) in paragraph at lines 266--273
-[]\T1/ptm/m/n/9 Turubanova, S., Potapov, P., Hansen, M. C., Li, X., Tyukav-
- []
-
-
-Underfull \hbox (badness 3354) in paragraph at lines 266--273
-\T1/ptm/m/n/9 Guerra-Hernandez, J., Senf, C., Häme, T., Val-buena, R.,
- []
-
-
-Underfull \hbox (badness 3312) in paragraph at lines 266--273
-\T1/ptm/m/n/9 Ek-lundh, L., Brovk-ina, O., Navrátilová, B., Novotný, J.,
- []
-
-
-Underfull \hbox (badness 1681) in paragraph at lines 266--273
-\T1/ptm/m/n/9 Har-ris, N., and Stolle, F.: Tree canopy ex-tent and height
- []
-
-
-Underfull \hbox (badness 5374) in paragraph at lines 266--273
-\T1/ptm/m/n/9 archive, Re-mote Sens-ing of En-vi-ron-ment, 298, 113797,
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [10]
-Underfull \hbox (badness 2762) in paragraph at lines 276--279
+Underfull \hbox (badness 1454) in paragraph at lines 270--273
+\T1/ptm/m/n/9 1/2 time se-ries and deep learn-ing for ac-cu-rate for-est tree
+ []
+
+
+Underfull \hbox (badness 1062) in paragraph at lines 286--293
+[]\T1/ptm/m/n/9 Turubanova, S., Potapov, P., Hansen, M. C., Li, X., Tyukav-
+ []
+
+
+Underfull \hbox (badness 3354) in paragraph at lines 286--293
+\T1/ptm/m/n/9 Guerra-Hernandez, J., Senf, C., Häme, T., Val-buena, R.,
+ []
+
+
+Underfull \hbox (badness 3312) in paragraph at lines 286--293
+\T1/ptm/m/n/9 Ek-lundh, L., Brovk-ina, O., Navrátilová, B., Novotný, J.,
+ []
+
+
+Underfull \hbox (badness 1681) in paragraph at lines 286--293
+\T1/ptm/m/n/9 Har-ris, N., and Stolle, F.: Tree canopy ex-tent and height
+ []
+
+
+Underfull \hbox (badness 5374) in paragraph at lines 286--293
+\T1/ptm/m/n/9 archive, Re-mote Sens-ing of En-vi-ron-ment, 298, 113797,
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 296--299
 []\T1/ptm/m/n/9 Vaswani, A., Shazeer, N., Par-mar, N., Uszko-r-eit, J., Jones,
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 276--279
+Underfull \hbox (badness 1337) in paragraph at lines 296--299
 \T1/ptm/m/n/9 Is All You Need, [][]10.48550/arXiv.1706.03762[],
  []
 
 
-Underfull \hbox (badness 3039) in paragraph at lines 281--284
+Underfull \hbox (badness 3039) in paragraph at lines 301--304
 []\T1/ptm/m/n/9 Viana-Soto, A. and Senf, C.: The Eu-ro-pean For-est Dis-tur-
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 287--292
+Underfull \hbox (badness 1902) in paragraph at lines 307--312
 []\T1/ptm/m/n/9 Wang, M., Zheng, Y., Huang, C., Meng, R., Pang, Y., Jia,
  []
 
 
-Underfull \hbox (badness 1242) in paragraph at lines 287--292
+Underfull \hbox (badness 1242) in paragraph at lines 307--312
 \T1/ptm/m/n/9 W., Zhou, J., Huang, Z., Fang, L., and Zhao, F.: As-sess-
  []
 
 
-Underfull \hbox (badness 1270) in paragraph at lines 287--292
+Underfull \hbox (badness 1270) in paragraph at lines 307--312
 \T1/ptm/m/n/9 ing Landsat-8 and Sentinel-2 spectral-temporal fea-tures for
  []
 
 
-Underfull \hbox (badness 1968) in paragraph at lines 287--292
+Underfull \hbox (badness 1968) in paragraph at lines 307--312
 \T1/ptm/m/n/9 longjiang Province, China, For-est Ecosys-tems, 9, 100032,
  []
 
 
-Underfull \hbox (badness 6859) in paragraph at lines 321--326
+Underfull \hbox (badness 6859) in paragraph at lines 341--346
 []\T1/ptm/m/n/9 Yuan, Y., Lin, L., Xin, Q., Zhou, Z.-G., and Liu, Q.:
  []
 
 
-Underfull \hbox (badness 2042) in paragraph at lines 321--326
+Underfull \hbox (badness 2042) in paragraph at lines 341--346
 \T1/ptm/m/n/9 An Em-pir-i-cal Study on Data Aug-men-ta-tion for Pix-el-wise
  []
 
 
-Underfull \hbox (badness 3872) in paragraph at lines 321--326
+Underfull \hbox (badness 3872) in paragraph at lines 341--346
 \T1/ptm/m/n/9 Satel-lite Im-age Time-Series Clas-si-fi-ca-tion and Cross-Year
  []
 
 
-Underfull \hbox (badness 3229) in paragraph at lines 321--326
+Underfull \hbox (badness 3229) in paragraph at lines 341--346
 \T1/ptm/m/n/9 Adap-ta-tion, IEEE Jour-nal of Se-lected Top-ics in Ap-plied
  []
 
 
-Underfull \hbox (badness 3240) in paragraph at lines 321--326
+Underfull \hbox (badness 3240) in paragraph at lines 341--346
 \T1/ptm/m/n/9 Earth Ob-ser-va-tions and Re-mote Sens-ing, 18, 5172--5188,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--332
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--352
 []\T1/ptm/m/n/9 Yuan Yuan, Yuan, Y., Lin, L., and Lei Lin: Self-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--332
+Underfull \hbox (badness 10000) in paragraph at lines 349--352
 \T1/ptm/m/n/9 Supervised Pre-train-ing of Trans-form-ers for Satel-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--332
+Underfull \hbox (badness 10000) in paragraph at lines 349--352
 \T1/ptm/m/n/9 lite Im-age Time Se-ries Clas-si-fi-ca-tion, 14, 474--487,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--346
+Underfull \hbox (badness 10000) in paragraph at lines 363--366
 []\T1/ptm/m/n/9 Zerveas, G., Ja-yara-man, S., Pa-tel, D., Bhamidi-paty, A.,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--346
+Underfull \hbox (badness 10000) in paragraph at lines 363--366
 \T1/ptm/m/n/9 and Eick-hoff, C.: A Transformer-based Frame-work
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--346
+Underfull \hbox (badness 10000) in paragraph at lines 363--366
 \T1/ptm/m/n/9 for Mul-ti-vari-ate Time Se-ries Rep-re-sen-ta-tion Learn-ing,
  []
 
-) [11
-
-]
+) [11]
 
 Package natbib Warning: There were undefined citations.
 
 (./essd_landsat_manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 34552 strings out of 478287
- 601494 string characters out of 5849289
- 917434 words of memory out of 5000000
- 52115 multiletter control sequences out of 15000+600000
+ 34566 strings out of 478287
+ 601857 string characters out of 5849289
+ 917915 words of memory out of 5000000
+ 52126 multiletter control sequences out of 15000+600000
  514704 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,103p,2479b,573s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3867,10 +3908,10 @@ pdfTeX warning (dest): name{https://git.uibk.ac.at/rslab/sattstools} has been re
 pdfTeX warning (dest): name{https://git.uibk.ac.at/c7161037/ls_mapping} has been referenced but does not exist, replaced by a fixed one
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on essd_landsat_manuscript.pdf (11 pages, 2628534 bytes).
+Output written on essd_landsat_manuscript.pdf (11 pages, 2630690 bytes).
 PDF statistics:
- 424 PDF objects out of 1000 (max. 8388607)
- 379 compressed objects within 4 object streams
- 93 named destinations out of 1000 (max. 500000)
+ 438 PDF objects out of 1000 (max. 8388607)
+ 393 compressed objects within 4 object streams
+ 96 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

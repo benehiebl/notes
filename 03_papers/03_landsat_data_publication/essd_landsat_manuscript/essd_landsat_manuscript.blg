@@ -6,45 +6,45 @@ Database file #1: essd_landsat_manuscript.bib
 Warning--I didn't find a database entry for "needs_cite"
 Warning--empty journal in yuan_yuan_self-supervised_2020
 Warning--empty journal in zanaga_esa_2022
-You've used 42 entries,
+You've used 45 entries,
             2932 wiz_defined-function locations,
-            1348 strings with 26850 characters,
-and the built_in function-call counts, 51282 in all, are:
-= -- 4811
-> -- 3394
+            1372 strings with 27871 characters,
+and the built_in function-call counts, 54312 in all, are:
+= -- 5133
+> -- 3520
 < -- 4
-+ -- 1315
-- -- 1090
-* -- 3930
-:= -- 5848
-add.period$ -- 42
-call.type$ -- 42
-change.case$ -- 457
-chr.to.int$ -- 43
-cite$ -- 128
-duplicate$ -- 4231
-empty$ -- 2283
-format.name$ -- 1221
-if$ -- 9911
++ -- 1373
+- -- 1129
+* -- 4142
+:= -- 6159
+add.period$ -- 45
+call.type$ -- 45
+change.case$ -- 477
+chr.to.int$ -- 46
+cite$ -- 137
+duplicate$ -- 4526
+empty$ -- 2443
+format.name$ -- 1269
+if$ -- 10506
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 645
-newline$ -- 135
-num.names$ -- 169
-pop$ -- 2165
+missing$ -- 680
+newline$ -- 144
+num.names$ -- 181
+pop$ -- 2272
 preamble$ -- 1
-purify$ -- 447
+purify$ -- 466
 quote$ -- 0
-skip$ -- 2652
+skip$ -- 2835
 stack$ -- 0
-substring$ -- 1603
-swap$ -- 3625
+substring$ -- 1732
+swap$ -- 3878
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 375
+type$ -- 402
 warning$ -- 2
-while$ -- 203
+while$ -- 218
 width$ -- 0
-write$ -- 507
+write$ -- 544
 (There were 3 warnings)

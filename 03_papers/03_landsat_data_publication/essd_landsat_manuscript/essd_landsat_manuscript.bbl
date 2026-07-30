@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{45}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -172,6 +172,11 @@ Kollert, A., Bremer, M., L{\"o}w, M., and Rutzinger, M.: Exploring the
   region, International Journal of Applied Earth Observation and
   Geoinformation, 94, 102\,208, \doi{10.1016/j.jag.2020.102208}, 2021.
 
+\bibitem[{Lobo et~al.(2020)Lobo, Fonseca, and Moura}]{lobo_bayesian_2020}
+Lobo, V. G.~R., Fonseca, T. C.~O., and Moura, F. A.~S.: Bayesian
+  cross-validation of geostatistical models, Spatial Statistics, 35, 100\,394,
+  \doi{10.1016/j.spasta.2019.100394}, 2020.
+
 \bibitem[{Ma{\~n}as et~al.(2021)Ma{\~n}as, Lacoste, Gir{\'o}-i Nieto, Vazquez,
   and Rodr{\'i}guez}]{manas_seasonal_2021}
 Ma{\~n}as, O., Lacoste, A., Gir{\'o}-i Nieto, X., Vazquez, D., and
@@ -212,6 +217,12 @@ Obuchowicz, C., Poussin, C., and Giuliani, G.: Change in observed long-term
   Earth Data, 8, 1--32, \doi{10.1080/20964471.2023.2268322}, \_eprint:
   https://doi.org/10.1080/20964471.2023.2268322, 2024.
 
+\bibitem[{Persson et~al.(2022)Persson, Ekström, and
+  Ståhl}]{persson_quantify_2022}
+Persson, H.~J., Ekström, M., and Ståhl, G.: Quantify and account for field
+  reference errors in forest remote sensing studies, Remote Sensing of
+  Environment, 283, 113\,302, \doi{10.1016/j.rse.2022.113302}, 2022.
+
 \bibitem[{Pflugmacher et~al.(2019)Pflugmacher, Rabe, Peters, and
   Hostert}]{pflugmacher_mapping_2019}
 Pflugmacher, D., Rabe, A., Peters, M., and Hostert, P.: Mapping pan-{European}
@@ -230,6 +241,15 @@ Safonova, A., Ghazaryan, G., Stiller, S., Main-Knorn, M., Nendel, C., and Ryo,
   M.: Ten deep learning techniques to address small data problems with remote
   sensing, International Journal of Applied Earth Observation and
   Geoinformation, 125, 103\,569, \doi{10.1016/j.jag.2023.103569}, 2023.
+
+\bibitem[{Shannon et~al.(2024)Shannon, Finley, Hayes, Noralez, Weiskittel,
+  Cook, and Babcock}]{shannon_quantifying_2024}
+Shannon, E.~S., Finley, A.~O., Hayes, D.~J., Noralez, S.~N., Weiskittel, A.~R.,
+  Cook, B.~D., and Babcock, C.: Quantifying and correcting geolocation error in
+  spaceborne {LiDAR} forest canopy observations using high spatial accuracy
+  data: {A} {Bayesian} model approach, Environmetrics, 35, e2840,
+  \doi{10.1002/env.2840}, \_eprint:
+  https://onlinelibrary.wiley.com/doi/pdf/10.1002/env.2840, 2024.
 
 \bibitem[{Strunk et~al.(2025)Strunk, Reutebuch, McGaughey, and
   Andersen}]{strunk_examination_2025}

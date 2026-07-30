@@ -279,16 +279,18 @@ Observation density varies substantially across the archive. Before 1999, when o
 We did not process the resulting annual time series using outlier detection or temporal smoothing, before storing the published LTC and DTS prediction maps. This was a design choice so downstream users can - and are encouraged to - apply temporal smoothing or outlier detection methods specifically appropriate to their application context. This is a necessary step for downstream tasks, as the time series contain both true ecological change, but also spurious noise from observation gaps, cloud contamination, and inter-annual radiometric variability. 
 
 \subsection{Evaluation}
+\label{sec:evaluation}
 
-\textcolor{red}{TODO. change to bayesian posterior computation.}
+%\textcolor{red}{TODO. importance weighting}
 
 The validation strategy is designed to assess both the accuracy of the map product at recent time steps and the temporal consistency of predictions across the full 40-year archive. Three independent validation datasets are employed.
 The VDBI hold-out test split provides the primary historical validation reference, with plot observations dating back to approximately 1995. This split allows accuracy assessment at historical time steps (1995–2025) where field data are available, spanning the Landsat 5-only and Landsat 5/7 overlap periods. The VPO hold-out split — collected during the 2023 to 2025 field work — provides the primary validation reference for recent predictions (post-2020) from the high-density Landsat 8/9 period. This dataset contains data from many mixed forest stands with hard-to-predict labels. The two validation datasets provide complementary temporal coverage: the VDBI split quantifies historical accuracy under lower observation density, while the VPO split quantifies accuracy under the best available observation conditions.
 A third validation source consists of a set of pure-stand forest polygons manually interpreted from high-resolution Google Earth Pro imagery in combination with the CFI dataset at recent time steps. These polygons, selected to represent spectrally unambiguous mono-specific stands, enable validation of the classification output under conditions where the expected dominant species label is highly reliable, providing an upper bound on classification accuracy unconstrained by label uncertainty in mixed stands or uncertain plot observation coordinates.
 
-Accuracy metrics are reported on average over all time periods, but also separately for three observation-density periods: the historical Landsat 5-only period (pre-1999), the Landsat 7/8 transition period (1999–2013), and the recent high-density period (post-2013). For the classification head, overall accuracy (OA) and per-class F1 score are computed for each period. For the regression heads, root mean squared error (RMSE) and mean absolute error (MAE) are reported for each of the three cover fractions (EVE, DEC, CON). The VPO dataset is finally used to assess in detail the model's ability to predict DTS and LTC in mixed stands, where the prediction of a single label is inherently more difficult and uncertain.
+%Accuracy metrics are reported on average over all time periods, but also separately for three observation-density periods: the historical Landsat 5-only period (pre-1999), the Landsat 7/8 transition period (1999–2013), and the recent high-density period (post-2013). 
+For the classification head, overall accuracy (OA) and per-class F1 score are computed for each period. For the regression heads, root mean squared error (RMSE) and mean absolute error (MAE) are reported for each of the three cover fractions (EVE, DEC, CON). The VPO dataset is finally used to assess in detail the model's ability to predict DTS and LTC in mixed stands, where the prediction of a single label is inherently more difficult and uncertain.
 
-To account for uncertainties in plot observations coming from (i) label noise, (ii) spatial mismatch between plot location and Landsat pixel, and (iii) temporal uncertainty and variations between plot observation year and Landsat acquisition year, additional evaluation metrics are computed. Based on the plot location uncertainty and a 3-year window, a spatio-temporal bayesian posterior-weighted neighborhood is used to calculate a performance metric that is aligned with the plots location uncertainty and inter-annual sensor variations. Secondly the best match within the location accuracy and a 3 year window range is reported as the most optimistic metric possible (see Appendix\,\ref{sec:appendix_metrics}). Combining the three metrics - standard point estimates, bayesian posterior-weighted estimates, and best-match estimates - reduces sensitivity to misalignments and provides a more robust and uncertainty aware estimate of model performance at the stand level, while only measuring the metrics directly at the plot location and date might underestimate the model performance for each plot under the given data related error sources.
+To account for uncertainties in plot observations coming from (i) a spatial mismatch between plot location and Landsat pixel, and (ii) temporal uncertainty and variations between plot observation year and Landsat acquisition year, we complement the direct accuracy metric with a true-label-conditioned \citep{lobo_bayesian_2020}. Predictions are evaluated over a space-time neighborhood around each plots reported coordinates and year, weighting candidate locations by a Gaussian space-time prior (location and temporal uncertainty) combined with a Gaussian likelihood that downweights candidates whose predicted value strongly disagrees with the plots true label, following the logic of likelihood-based geolocation correction \citep{shannon_quantifying_2024}. This estimator is bracketed by two limiting cases obtained by varying the likelihood bandwidth: a pure prior-weighted neighborhood mean that ignores the label entirely, and a best-match estimate that selects the single most consistent candidate location. We report accuracy metrics (RMSE, MAE and R²) computed under all three methods to characterize how sensitive model accuracy is to possible location and temporal errors (see Appendix\,\ref{sec:appendix_metrics}). 
 
 \section{Results and Discussion}
 
@@ -336,7 +338,7 @@ weighted avg & 0.00 & 0.00 & 0.00 &  & 0.00 & 0.00 & 0.00 &  & 0.00 & 0.00 & 0.0
 \end{table*}
 
 \begin{table*}[t]
-\caption{Regression performance (MAE, RMSE, R\textsuperscript{2}) for leaf type cover (LTC) prediction, evaluated on two test datasets.}
+\caption{Regression performance (MAE, RMSE, R\textsuperscript{2}) for leaf type cover (LTC) prediction, evaluated on two test datasets. X/X/X refers to the computation of the evaluation metrics, being directly from plot location, importance-weighting, and best-match (see Sec. \ref{sec:evaluation} and Appendix \ref{sec:appendix_metrics}).}
 \label{tab:regression_report}
 \begin{tabular}{l ccc ccc}
 \tophline
@@ -344,9 +346,9 @@ weighted avg & 0.00 & 0.00 & 0.00 &  & 0.00 & 0.00 & 0.00 &  & 0.00 & 0.00 & 0.0
 \cline{2-4} \cline{5-7}
 target & MAE & RMSE & R\textsuperscript{2} & MAE & RMSE & R\textsuperscript{2} \\
 \middlehline
-EVE & 12.8 & 19.5 & 0.42 & TODO & TODO & TODO \\
-DEC & 9.6 & 12.6 & 0.74 & TODO & TODO & TODO \\
-CON & 9.0 & 4.96 & -3.15 & TODO & TODO & TODO \\
+EVE & 12.5 / 11.6 / 8.5 & 19.1/17.5/14.9 & 0.66/0.72/0.79 & TODO & TODO & TODO \\
+DEC & 9.7 / 8.7 / 8.4 & 12.4/10.6/7.9 & 0.86/0.85/0.92 & TODO & TODO & TODO \\
+CON & 5.0 / 4.4 / 3.0 & 9.1/7.4/6.1 & -0.05/0.31/0.54 & TODO & TODO & TODO \\
 \bottomhline
 \end{tabular}
 \end{table*}
@@ -365,7 +367,7 @@ CON & 9.0 & 4.96 & -3.15 & TODO & TODO & TODO \\
 \subsection{Limitations and future work}
 \textcolor{red}{TODO.}
 
-- label noise and location accuracy issues \citep{strunk_examination_2025} in recent and historical plot observations. This affects the training massively, but also the test time performance reporting. Applying different computation techniques for metrics tries to tackle that but it does not compensate for reliable location measurements of independent test plots. \newline
+- label noise and location accuracy issues \citep{persson_quantify_2022, strunk_examination_2025} in recent and historical plot observations. This affects the training massively, but also the test time performance reporting. Applying different computation techniques for metrics tries to tackle that but it does not compensate for reliable location measurements of independent test plots. \newline
 - inter-annual spectral noise that leads to inconsistencies in per-pixel time series, assumption is a stable state or a single disturbance/gradual succession change of states. Random fluctuations can be considered noise. A Hidden Markov model + Vertibri smoother could help in smoothing the per-year argmax predictions and stabilize the probability transition vectors of each classes. \newline
 - need for a harmonized full scale Landsat archive as analysis ready product (sensor calibration, sensor merge, density differences etc.) \newline
 - processing is huge limitation, time series into deep learning models (several weeks of mapping) \newline
@@ -391,6 +393,10 @@ All python code that was used during data processing, training and mapping is av
 \section{Probabilistic Evaluation metrics}    %% Appendix A
 \label{sec:appendix_metrics}
 \textcolor{red}{TODO.}
+
+
+- figure: sensitivity study for sigmaobs in the posterior method. lower bound direct, upper bound best match, line in between with sigma \newline
+- figure of posterior landsacape for 2 example plots. prior (gaussian) * likelihood => posterior \newline
 %\subsection{}     %% Appendix A1, A2, etc.
 
 \section{Comparison to historical orthophoto imagery} 
