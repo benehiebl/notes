@@ -290,7 +290,7 @@ A third validation source consists of a set of pure-stand forest polygons manual
 %Accuracy metrics are reported on average over all time periods, but also separately for three observation-density periods: the historical Landsat 5-only period (pre-1999), the Landsat 7/8 transition period (1999–2013), and the recent high-density period (post-2013). 
 For the classification head, overall accuracy (OA) and per-class F1 score are computed for each period. For the regression heads, root mean squared error (RMSE) and mean absolute error (MAE) are reported for each of the three cover fractions (EVE, DEC, CON). The VPO dataset is finally used to assess in detail the model's ability to predict DTS and LTC in mixed stands, where the prediction of a single label is inherently more difficult and uncertain.
 
-To account for uncertainties in plot observations coming from (i) a spatial mismatch between plot location and Landsat pixel, and (ii) temporal uncertainty and variations between plot observation year and Landsat acquisition year, we complement the direct accuracy metric with a true-label-conditioned \citep{lobo_bayesian_2020}. Predictions are evaluated over a space-time neighborhood around each plots reported coordinates and year, weighting candidate locations by a Gaussian space-time prior (location and temporal uncertainty) combined with a Gaussian likelihood that downweights candidates whose predicted value strongly disagrees with the plots true label, following the logic of likelihood-based geolocation correction \citep{shannon_quantifying_2024}. This estimator is bracketed by two limiting cases obtained by varying the likelihood bandwidth: a pure prior-weighted neighborhood mean that ignores the label entirely, and a best-match estimate that selects the single most consistent candidate location. We report accuracy metrics (RMSE, MAE and R²) computed under all three methods to characterize how sensitive model accuracy is to possible location and temporal errors (see Appendix\,\ref{sec:appendix_metrics}). 
+To account for uncertainties in plot observations coming from (i) a spatial mismatch between plot location and Landsat pixel, and (ii) temporal uncertainty and variations between plot observation year and Landsat acquisition year, we complement the direct accuracy metric with a true-label-conditioned metric \citep{lobo_bayesian_2020}. Predictions are evaluated over a space-time neighborhood around each plots reported coordinates and year, weighting candidate locations by a Gaussian space-time prior (location and temporal uncertainty) combined with a Gaussian likelihood that downweights candidates whose predicted value strongly disagrees with the plots true label, following the logic of likelihood-based geolocation correction \citep{shannon_quantifying_2024}. This estimator is bracketed by two limiting cases obtained by varying the likelihood bandwidth: a pure prior-weighted neighborhood mean that ignores the label entirely, and a best-match estimate that selects the single most consistent candidate location. We report accuracy metrics (RMSE, MAE and R²) computed under all three methods to characterize how sensitive model accuracy is to possible location and temporal errors (see Appendix\,\ref{sec:appendix_metrics}). 
 
 \section{Results and Discussion}
 
@@ -310,7 +310,7 @@ The final maps provide following variables per pixel and per year (1987 to 2025)
 - confusion matrix for interpretation very important (confusing classes that are often mixed forest stands)
 
 \begin{table*}[t]
-\caption{Classification performance (precision, recall, f1-score) for the dominant tree species classification task, evaluated on three test datasets.}
+\caption{Classification performance (precision, recall, f1-score) for the dominant tree species classification task, evaluated on three test datasets. Reported is the likelihood-based importance-weighted performance result based on the location accuracy of the plots (see Sec.\,\ref{sec:evaluation}).}
 \label{tab:classification_report}
 \begin{tabular}{l cccc cccc cccc}
 \tophline
@@ -318,21 +318,21 @@ The final maps provide following variables per pixel and per year (1987 to 2025)
 \cline{2-5} \cline{6-9} \cline{10-13}
 class & prec. & recall & f1-score & support & prec. & recall & f1-score & support & pre. & recall & f1-score & support \\
 \middlehline
-silver fir   & - & - & - & - & - & - & - & - & 0.00 & 0.00 & 0.00 & 0.00 \\
-other dec.   & 0.47 & 0.38 & 0.42 & 112 & 0.21 & 0.53 & 0.30 & 45 & 0.00 & 0.00 & 0.00 & 0.00 \\
-dec. oak     & 0.70 & 0.38 & 0.49 & 127 & 0.57 & 0.30 & 0.39 & 153 & 0.00 & 0.00 & 0.00 & 0.00 \\
-chestnut     & 0.70 & 0.88 & 0.78 & 26 & 0.49 & 0.55 & 0.52 & 38 & 0.00 & 0.00 & 0.00 & 0.00 \\
-other con.   & - & - & - & - & - & - & - & - & 0.00 & 0.00 & 0.00 & 0.00 \\
-beech        & 0.53 & 0.94 & 0.68 & 108 & 0.80 & 0.78 & 0.79 & 227 & 0.00 & 0.00 & 0.00 & 0.00 \\
-eve. oak     & 0.70 & 0.83 & 0.76 & 53 & 0.54 & 0.48 & 0.51 & 118 & 0.00 & 0.00 & 0.00 & 0.00 \\
-other eve.   & 0.31 & 0.25 & 0.28 & 16 & 0.12 & 0.15 & 0.13 & 20 & 0.00 & 0.00 & 0.00 & 0.00 \\
-pine         & - & - & - & - & 0.76 & 0.37 & 0.50 & 100 & 0.00 & 0.00 & 0.00 & 0.00 \\
-ornus-ostr.  & 0.59 & 0.39 & 0.47 & 51 & 0.32 & 0.38 & 0.35 & 73 & 0.00 & 0.00 & 0.00 & 0.00 \\
-spruce       & - & - & - & - & 0.12 & 0.33 & 0.17 & 15 & 0.00 & 0.00 & 0.00 & 0.00 \\
+silver fir   & - & - & - & - & - & - & - & - & 0.86 & 0.85 & 0.86 & 518 \\
+other dec.   & 0.52 & 0.55 & 0.53 & 112 & 0.23 & 0.81 & 0.36 & 27 & 0.37 & 0.85 & 0.52 & 240 \\
+dec. oak     & 0.88 & 0.46 & 0.60 & 127 & 0.70 & 0.40 & 0.51 & 123 & 0.67 & 0.61 & 0.64 & 1137 \\
+chestnut     & 0.96 & 0.88 & 0.92 & 26 & 0.89 & 0.53 & 0.67 & 30 & 0.67 & 0.74 & 0.70 & 817 \\
+other con.   & - & - & - & - & - & - & - & - & 0.49 & 0.50 & 0.49 & 220 \\
+beech        & 0.57 & 0.91 & 0.68 & 108 & 0.89 & 0.78 & 0.83 & 120 & 0.83 & 0.65 & 0.73 & 594 \\
+eve. oak     & 0.65 & 0.64 & 0.65 & 53 & 0.69 & 0.70 & 0.70 & 110 & 0.86 & 0.79 & 0.82 & 1141 \\
+other eve.   & - & - & - & - & - & - & - & - & 0.89 & 0.81 & 0.85 & 503 \\
+pine         & - & - & - & - & 0.83 & 0.78 & 0.81 & 51 & 0.74 & 0.72 & 0.73 & 410 \\
+ornus-ostr.  & 0.69 & 0.43 & 0.53 & 51 & 0.38 & 0.49 & 0.43 & 60 & 0.61 & 0.65 & 0.63 & 695 \\
+spruce       & - & - & - & - & 0.75 & 0.4 & 0.52 & 15 & 0.95 & 0.72 & 0.82 & 367 \\
 \middlehline
-accuracy     &      &      &      & 493 &      &      &      & 800 &      &      &      & 30985 \\
-macro avg    & 0.00 & 0.00 & 0.00 &  & 0.00 & 0.00 & 0.00 &  & 0.00 & 0.00 & 0.00 &  \\
-weighted avg & 0.00 & 0.00 & 0.00 &  & 0.00 & 0.00 & 0.00 &  & 0.00 & 0.00 & 0.00 &  \\
+accuracy     &      &      &      & 493 &      &      &      & 536 &      &      &      & 30985 \\
+macro avg    & 0.71 & 0.65 & 0.65 & 493 & 0.67 & 0.61 & 0.60 & 536 & 0.72 & 0.72 & 0.71 & 30985 \\
+weighted avg & 0.68 & 0.62 & 0.62 & 493 & 0.71 & 0.62 & 0.64 & 536 & 0.75 & 0.72 & 0.72 & 30985 \\
 \bottomhline
 \end{tabular}
 \end{table*}

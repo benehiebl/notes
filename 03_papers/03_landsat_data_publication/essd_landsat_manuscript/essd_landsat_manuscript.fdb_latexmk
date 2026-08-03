@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex essd_landsat_manuscript"] 1785422341 "essd_landsat_manuscript.aux" "essd_landsat_manuscript.bbl" "essd_landsat_manuscript" 1785741153
+["bibtex essd_landsat_manuscript"] 1785757153 "essd_landsat_manuscript.aux" "essd_landsat_manuscript.bbl" "essd_landsat_manuscript" 1785759279
   "./copernicus.bst" 1784551238 37856 9e987008ca65a770fa9b383cd7555108 ""
-  "essd_landsat_manuscript.aux" 1785741153 28331 5b6e5c908ba5531d78cef06ec64e16b5 "pdflatex"
+  "essd_landsat_manuscript.aux" 1785759278 28634 d4fe50f0b9ed3b83303acdee361ae3ed "pdflatex"
   "essd_landsat_manuscript.bib" 1785741151 183242 6ae738f0cf6de672a9e857ffc0c2b257 ""
   (generated)
   "essd_landsat_manuscript.bbl"
   "essd_landsat_manuscript.blg"
-["pdflatex"] 1785741151 "/home/c7161037/Desktop/repos/notes/03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.tex" "essd_landsat_manuscript.pdf" "essd_landsat_manuscript" 1785741153
+["pdflatex"] 1785759277 "/home/c7161037/Desktop/repos/notes/03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.tex" "essd_landsat_manuscript.pdf" "essd_landsat_manuscript" 1785759279
   "/etc/texmf/web2c/texmf.cnf" 1681737864 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/c7161037/Desktop/repos/notes/03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.tex" 1785741151 57078 dc7516e9e41d68d2e2b6f087529b67b2 ""
+  "/home/c7161037/Desktop/repos/notes/03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.tex" 1785759277 57226 0f8bf82a3954680493b29e24d6ae1323 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1136768653 4484 b828043cbd581d289d955903c1339981 ""
@@ -236,9 +236,9 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1784900476 1980222 cd51518ce268b1e29d07ac15d84b7880 ""
   "copernicus.cfg" 1784551238 56189 9da2d1cf4b990bc03fc3292a704cc108 ""
   "copernicus.cls" 1784551238 120493 2471b92d8a7cf9699dffcd5b01ba606e ""
-  "essd_landsat_manuscript.aux" 1785741153 28331 5b6e5c908ba5531d78cef06ec64e16b5 "pdflatex"
-  "essd_landsat_manuscript.bbl" 1785741151 21343 50d50c3afc5b978888d6905a4d32ce28 "bibtex essd_landsat_manuscript"
-  "essd_landsat_manuscript.tex" 1785741151 57078 dc7516e9e41d68d2e2b6f087529b67b2 ""
+  "essd_landsat_manuscript.aux" 1785759278 28634 d4fe50f0b9ed3b83303acdee361ae3ed "pdflatex"
+  "essd_landsat_manuscript.bbl" 1785757153 21343 50d50c3afc5b978888d6905a4d32ce28 "bibtex essd_landsat_manuscript"
+  "essd_landsat_manuscript.tex" 1785759277 57226 0f8bf82a3954680493b29e24d6ae1323 ""
   "figures/study_area_overview.png" 1784551238 1753278 1f272672caad9f8726a406a91e69a218 ""
   "figures/training_data_overview.png" 1784899676 1850498 16c2e8392aa254bb6d94f82aa146506a ""
   (generated)
