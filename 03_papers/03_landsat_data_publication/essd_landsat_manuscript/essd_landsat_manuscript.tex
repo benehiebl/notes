@@ -304,9 +304,17 @@ The final maps provide following variables per pixel and per year (1987 to 2025)
 \textcolor{red}{TODO.}
 
 - conventional metrics for all datasets \newline
+The test split of the recently conducted, homogenuos VPO dataset and the test split of the multi-temporal VDBI collection dataset are used to assess the error of the produced multi-temporal LTC maps (Tab.\,\ref{tab:regression_report}). The VPO plot observations have high location accuracy compared to the $30\,\unit{m}$ Landsat resolution and we assume that the direct plot location is a fair metric here. The maps show an MAE of $12.5\%_{cover}$, $9.7\%_{cover}$ with an $R_2$ of 0.66 and 0.86 for EVE and CON on the VPO test dataset. The absence of plots with coniferous tree species in the VPO dataset makes interpretation of performance metrics of CON cover obsolete. 
+
+The error increases significantly with the VDBI dataset and historical plot observations. Interpreting results in the context of historical plot observations with low accuracy or no GNSS measurement is difficult. Nonetheless we think reporting the error despite the high spatial bias is valuable.
+
+In pure stands with one of EVE, DEC or CON cover converging towards $100\,\%_{cover}$, the error drops significantly compared to mixed forest stands with e.g. equal amounts of EVE and DEC cover. Other studies report similar difficulties in predicting mixed forest stands for differing target variables \textcolor{red}{source missing}. However, despite the high amount of mixed forest stands contained in the VPO dataset reasonable MAE and RMSE, in line with other studies, were achieved by the model. Regarding the error estimation on the VDBI dataset a more cautious approach is necessary. Directly measuring the error at plot locations that might be several hundred meters off its true location inflates error metrics significantly. But with higher amounts of plots in coniferous stands with comparatively low error rates - also in regard to the best-match and importance-weighted error estimation - and good performance on the recently conducted VPO dataset 
+
 - metrics for leaf type classes in classification task \newline
+
 - probabilistic metrics for all datasets \newline
 - comparing pure and mixed stands \newline
+
 - confusion matrix for interpretation very important (confusing classes that are often mixed forest stands)
 
 \begin{table*}[t]
@@ -338,7 +346,7 @@ weighted avg & 0.68 & 0.62 & 0.62 & 493 & 0.71 & 0.62 & 0.64 & 536 & 0.75 & 0.72
 \end{table*}
 
 \begin{table*}[t]
-\caption{Regression performance (MAE, RMSE, R\textsuperscript{2}) for leaf type cover (LTC) prediction, evaluated on two test datasets. X/X/X refers to the computation of the evaluation metrics, being directly from plot location, importance-weighting, and best-match (see Sec. \ref{sec:evaluation} and Appendix \ref{sec:appendix_metrics}).}
+\caption{Regression performance (MAE, RMSE, R\textsuperscript{2}) for leaf type cover (LTC) prediction, evaluated on two test datasets. X/X/X refers to the computation of the evaluation metrics, being directly from plot location, importance-weighting, and best-match (see Sec. \ref{sec:evaluation} and Appendix \ref{sec:appendix_metrics}). MAE and RMSE are reported as $\%_{cover}$.}
 \label{tab:regression_report}
 \begin{tabular}{l ccc ccc}
 \tophline
@@ -374,7 +382,8 @@ CON & 5.0 / 4.4 / 3.0 & 9.1/7.4/6.1 & -0.05/0.31/0.54 & TODO & TODO & TODO \\
 - foundation models for landsat time series (torchgeo) or/and embeddings -> easy/fast to use for processing long time series on large areas \newline
 
 \conclusions  %% \conclusions[modified heading if necessary]
-TEXT
+
+The Landsat collections provide an unprecedented archive of satellite imagery for reconstructing and hindcasting environemntal variables across large regions. Few studies exist, that exploit the full 40 years of available Collection-2 imagery to map forest related variables and provide time series datasets, that can be used to investigate forest dynamics and changes under climate and landuse change conditions. This study predicts annual maps of dominant leaf type and leaf type cover from Landsat time series, forest plot observations and forest inventories.     
 
 %% The following commands are for the statements about the availability of data sets and/or software code corresponding to the manuscript.
 %% It is strongly recommended to make use of these sections in case data sets and/or software code have been part of your research the article is based on.
