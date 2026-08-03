@@ -1,4 +1,4 @@
-\begin{thebibliography}{45}
+\begin{thebibliography}{51}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -35,6 +35,20 @@ Bell, D.~M., Gregory, M.~J., and Yang, Z.: Hindcasting and updating
   management and planning, Forest Ecology and Management, 572, 122\,239,
   \doi{10.1016/j.foreco.2024.122239}, 2024.
 
+\bibitem[{Blickensd{\"o}rfer et~al.(2024)Blickensd{\"o}rfer, Oehmichen,
+  Pflugmacher, Kleinschmit, and Hostert}]{blickensdorfer_national_2024}
+Blickensd{\"o}rfer, L., Oehmichen, K., Pflugmacher, D., Kleinschmit, B., and
+  Hostert, P.: National tree species mapping using {Sentinel}-1/2 time series
+  and {German} {National} {Forest} {Inventory} data, Remote Sensing of
+  Environment, 304, 114\,069, \doi{10.1016/j.rse.2024.114069}, 2024.
+
+\bibitem[{Bolyn et~al.(2022)Bolyn, Lejeune, Michez, and
+  Latte}]{bolyn_mapping_2022}
+Bolyn, C., Lejeune, P., Michez, A., and Latte, N.: Mapping tree species
+  proportions from satellite imagery using spectral--spatial deep learning,
+  Remote Sensing of Environment, 280, 113\,205,
+  \doi{10.1016/j.rse.2022.113205}, 2022.
+
 \bibitem[{Bricca et~al.(2026)Bricca, Zerbe, Sabatini, Hiebl, Rutzinger,
   di~Musciano, Calvia, Chiarucci, Poschlod, Rossi, Alessi, and
   Bonari}]{bricca_topography_2026}
@@ -56,6 +70,12 @@ Brown, C.~F., Kazmierski, M.~R., Pasquarella, V.~J., Rucklidge, W.~J.,
   {An} embedding field model for accurate and efficient global mapping from
   sparse label data, \doi{10.48550/arXiv.2507.22291}, arXiv:2507.22291 [cs],
   2025.
+
+\bibitem[{Chastain and Townsend(2007)}]{chastain_use_2007}
+Chastain, R.~A. and Townsend, P.~A.: Use of {Landsat} {ETM} and topographic
+  data to characterize evergreen understory communities in {Appalachian}
+  deciduous forests, Photogrammetric Engineering \& Remote Sensing, 73,
+  563--575, 2007.
 
 \bibitem[{Chelli et~al.(2017)Chelli, Wellstein, Campetella, Canullo, Tonin,
   Zerbe, and Gerdol}]{chelli_climate_2017}
@@ -172,6 +192,13 @@ Kollert, A., Bremer, M., L{\"o}w, M., and Rutzinger, M.: Exploring the
   region, International Journal of Applied Earth Observation and
   Geoinformation, 94, 102\,208, \doi{10.1016/j.jag.2020.102208}, 2021.
 
+\bibitem[{Leonelli et~al.(2011)Leonelli, Pelfini, Morra~di Cella, and
+  Garavaglia}]{leonelli_climate_2011}
+Leonelli, G., Pelfini, M., Morra~di Cella, U., and Garavaglia, V.: Climate
+  {Warming} and the {Recent} {Treeline} {Shift} in the {European} {Alps}: the
+  {Role} of {Geomorphological} {Factors} in {High}-{Altitude} {Sites}, AMBIO,
+  40, 264--273, \doi{10.1007/s13280-010-0096-2}, 2011.
+
 \bibitem[{Lobo et~al.(2020)Lobo, Fonseca, and Moura}]{lobo_bayesian_2020}
 Lobo, V. G.~R., Fonseca, T. C.~O., and Moura, F. A.~S.: Bayesian
   cross-validation of geostatistical models, Spatial Statistics, 35, 100\,394,
@@ -209,6 +236,25 @@ Midolo, G., Clark, A.~T., Chytr{\'y}, M., Essl, F., Dullinger, S., Jandt, U.,
   toward nutrient-richer and denser vegetation, Science Advances, 12, eaeb2493,
   \doi{10.1126/sciadv.aeb2493}, 2026.
 
+\bibitem[{Miettinen et~al.(2025)Miettinen, Breidenbach, Adame, Adolt, Alberdi,
+  Antropov, Arnarsson, Astrup, Berger, Bogason, Chirici, Corona, D'Amico,
+  Fejfar, Fischer, Gohon, Gschwantner, Hertzler, Koma, Korhonen, Krajnc, Latte,
+  Lejeune, McCullagh, Mionskowski, Moreno-Fern{\'a}ndez, Myllym{\"a}ki,
+  Nilsson, Perin, Pitk{\"a}nen, Redmond, Riedel, Schumacher, Seitsonen, Sirro,
+  Skudnik, Snorrason, Sroga, Traub, Traustason, Westerlund, and
+  Wurpillot}]{miettinen_pan-european_2025}
+Miettinen, J., Breidenbach, J., Adame, P., Adolt, R., Alberdi, I., Antropov,
+  O., Arnarsson, {\'O}., Astrup, R., Berger, A., Bogason, J., Chirici, G.,
+  Corona, P., D'Amico, G., Fejfar, J., Fischer, C., Gohon, F., Gschwantner, T.,
+  Hertzler, J., Koma, Z., Korhonen, K.~T., Krajnc, L., Latte, N., Lejeune, P.,
+  McCullagh, A., Mionskowski, M., Moreno-Fern{\'a}ndez, D., Myllym{\"a}ki, M.,
+  Nilsson, M., Perin, J., Pitk{\"a}nen, J., Redmond, J., Riedel, T.,
+  Schumacher, J., Seitsonen, L., Sirro, L., Skudnik, M., Snorrason, A., Sroga,
+  R., Traub, B., Traustason, B., Westerlund, B., and Wurpillot, S.:
+  Pan-{European} forest maps produced with a combination of earth observation
+  data and national forest inventory plots, Data in Brief, 60, 111\,613,
+  \doi{10.1016/j.dib.2025.111613}, 2025.
+
 \bibitem[{Obuchowicz et~al.(2024)Obuchowicz, Poussin, and
   Giuliani}]{obuchowicz_change_2024}
 Obuchowicz, C., Poussin, C., and Giuliani, G.: Change in observed long-term
@@ -216,6 +262,13 @@ Obuchowicz, C., Poussin, C., and Giuliani, G.: Change in observed long-term
   time-series and its relationship with climate and land cover factors, Big
   Earth Data, 8, 1--32, \doi{10.1080/20964471.2023.2268322}, \_eprint:
   https://doi.org/10.1080/20964471.2023.2268322, 2024.
+
+\bibitem[{Olofsson et~al.(2014)Olofsson, Foody, Herold, Stehman, Woodcock, and
+  Wulder}]{olofsson_good_2014}
+Olofsson, P., Foody, G.~M., Herold, M., Stehman, S.~V., Woodcock, C.~E., and
+  Wulder, M.~A.: Good practices for estimating area and assessing accuracy of
+  land change, Remote Sensing of Environment, 148, 42--57,
+  \doi{10.1016/j.rse.2014.02.015}, 2014.
 
 \bibitem[{Persson et~al.(2022)Persson, Ekström, and
   Ståhl}]{persson_quantify_2022}
