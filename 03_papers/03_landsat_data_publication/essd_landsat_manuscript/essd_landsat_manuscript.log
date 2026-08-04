@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.7.24)  3 AUG 2026 21:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2026.7.24)  4 AUG 2026 23:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3439,13 +3439,41 @@ Underfull \hbox (badness 2318) in paragraph at lines 415--416
 []\T1/ptm/m/n/10 https://git.uibk.ac.at/rslab/sattstools[] (beta ver-sion, re-mote
  []
 
+<figures/sigma_obs_sensitivity_examples.png, id=364, 504.4446pt x 285.2256pt>
+File: figures/sigma_obs_sensitivity_examples.png Graphic file (type png)
+<use figures/sigma_obs_sensitivity_examples.png>
+Package pdftex.def Info: figures/sigma_obs_sensitivity_examples.png  used on input line 452.
+(pdftex.def)             Requested size: 256.0748pt x 144.78853pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--431
-
+Overfull \hbox (14.22638pt too wide) in paragraph at lines 452--453
+ [][] 
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 464--465
+Underfull \hbox (badness 1303) in paragraph at lines 453--453
+\T1/ptm/m/n/9 that con-trols the reference-based like-li-hood land-scape for the
+ []
+
+<figures/posterior_landscape_examples_3d.png, id=365, 1018.2843pt x 570.2103pt>
+File: figures/posterior_landscape_examples_3d.png Graphic file (type png)
+<use figures/posterior_landscape_examples_3d.png>
+Package pdftex.def Info: figures/posterior_landscape_examples_3d.png  used on input line 458.
+(pdftex.def)             Requested size: 455.24408pt x 254.92172pt.
+[11 <./figures/sigma_obs_sensitivity_examples.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 472--475
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.478 \appendixfigures
+                      pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.492 \appendixtables
+                        %% needs to be added in front of appendix tables
+Underfull \hbox (badness 1205) in paragraph at lines 508--509
 \T1/ptm/m/n/9 the project ^^PTRACEVE - Trac-ing the ev-er-green broad-leaved
  []
 
@@ -3459,7 +3487,11 @@ Underfull \hbox (badness 3525) in paragraph at lines 19--24
 \T1/ptm/m/n/9 fer, S., Mad-havapeddy, A., Atzberger, C., Dalponte, M.,
  []
 
-
+[12pdfTeX warning (ext4): destination with the same identifier (name{appendix.B}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.24 
+      <./figures/posterior_landscape_examples_3d.png>]
 Underfull \hbox (badness 8019) in paragraph at lines 27--31
 \T1/ptm/m/n/9 mul-ti-decadal in-creases in sum-mer ob-ser-va-tions, Ecog-ra-
  []
@@ -3545,21 +3577,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--91
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.91 
-     pdfTeX warning (ext4): destination with the same identifier (name{appendix.B}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.91 
-     pdfTeX warning (ext4): destination with the same identifier (name{appendix.A}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.91 
-     ]
 Underfull \hbox (badness 2245) in paragraph at lines 102--107
 []\T1/ptm/m/n/9 Feng, Z., Atzberger, C., Jaf-fer, S., Kneze-vic, J., Sor-munen,
  []
@@ -3588,6 +3605,9 @@ Underfull \hbox (badness 6893) in paragraph at lines 102--107
 Underfull \hbox (badness 10000) in paragraph at lines 102--107
 [][]\T1/ptm/m/n/9 10.48550/arXiv.2506.20380[], arXiv:2506.20380
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 120--123
@@ -3652,7 +3672,7 @@ Underfull \hbox (badness 1067) in paragraph at lines 163--169
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [13]
 Underfull \hbox (badness 1097) in paragraph at lines 197--201
 \T1/ptm/m/n/9 Sites, AM-BIO, 40, 264--273, [][]10.1007/s13280-
  []
@@ -3710,7 +3730,7 @@ Underfull \hbox (badness 2538) in paragraph at lines 260--265
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12]
+
 Underfull \hbox (badness 3396) in paragraph at lines 275--278
 []\T1/ptm/m/n/9 Persson, H. J., Ek-ström, M., and Ståhl, G.: Quan-tify and
  []
@@ -3816,9 +3836,6 @@ Underfull \hbox (badness 5374) in paragraph at lines 339--346
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 Underfull \hbox (badness 2762) in paragraph at lines 349--352
 []\T1/ptm/m/n/9 Vaswani, A., Shazeer, N., Par-mar, N., Uszko-r-eit, J., Jones,
  []
@@ -3829,6 +3846,9 @@ Underfull \hbox (badness 1337) in paragraph at lines 349--352
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
 Underfull \hbox (badness 3039) in paragraph at lines 354--357
 []\T1/ptm/m/n/9 Viana-Soto, A. and Senf, C.: The Eu-ro-pean For-est Dis-tur-
  []
@@ -3908,26 +3928,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 416--419
 \T1/ptm/m/n/9 for Mul-ti-vari-ate Time Se-ries Rep-re-sen-ta-tion Learn-ing,
  []
 
-) [13] (./essd_landsat_manuscript.aux) ) 
+) [15
+
+] (./essd_landsat_manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 34622 strings out of 478287
- 602890 string characters out of 5849289
- 920144 words of memory out of 5000000
- 52160 multiletter control sequences out of 15000+600000
- 520001 words of font info for 92 fonts, out of 8000000 for 9000
+ 34659 strings out of 478287
+ 603825 string characters out of 5849289
+ 920719 words of memory out of 5000000
+ 52183 multiletter control sequences out of 15000+600000
+ 520621 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,103p,2479b,569s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,12n,103p,2479b,593s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{target\040name} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{https://git.uibk.ac.at/rslab/sattstools} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{https://git.uibk.ac.at/c7161037/ls_mapping} has been referenced but does not exist, replaced by a fixed one
 
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on essd_landsat_manuscript.pdf (13 pages, 2669688 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on essd_landsat_manuscript.pdf (15 pages, 3974766 bytes).
 PDF statistics:
- 523 PDF objects out of 1000 (max. 8388607)
- 471 compressed objects within 5 object streams
- 108 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 583 PDF objects out of 1000 (max. 8388607)
+ 512 compressed objects within 6 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -952,19 +952,7 @@
 \@LN{805}{9}
 \@LN{806}{9}
 \@LN{807}{9}
-\bibstyle{copernicus}
-\bibdata{essd_landsat_manuscript.bib}
-\bibcite{alessi_ancient_2019}{{1}{2019}{{Alessi et~al.}}{{Alessi, Těšitel, Zerbe, Spada, Agrillo, and Wellstein}}}
-\bibcite{ball_geospatial_2026}{{2}{2026}{{Ball et~al.}}{{Ball, Wicklein, Feng, Knezevic, Jaffer, Madhavapeddy, Atzberger, Dalponte, and Coomes}}}
-\bibcite{bayle_landsat-based_2024}{{3}{2024}{{Bayle et~al.}}{{Bayle, Gascoin, Berner, and Choler}}}
-\bibcite{bell_hindcasting_2024}{{4}{2024}{{Bell et~al.}}{{Bell, Gregory, and Yang}}}
-\bibcite{blickensdorfer_national_2024}{{5}{2024}{{Blickensd{\"o}rfer et~al.}}{{Blickensd{\"o}rfer, Oehmichen, Pflugmacher, Kleinschmit, and Hostert}}}
-\bibcite{bolyn_mapping_2022}{{6}{2022}{{Bolyn et~al.}}{{Bolyn, Lejeune, Michez, and Latte}}}
-\bibcite{bricca_topography_2026}{{7}{2026}{{Bricca et~al.}}{{Bricca, Zerbe, Sabatini, Hiebl, Rutzinger, di~Musciano, Calvia, Chiarucci, Poschlod, Rossi, Alessi, and Bonari}}}
-\bibcite{brown_alphaearth_2025}{{8}{2025}{{Brown et~al.}}{{Brown, Kazmierski, Pasquarella, Rucklidge, Samsikova, Zhang, Shelhamer, Lahera, Wiles, Ilyushchenko, Gorelick, Zhang, Alj, Schechter, Askay, Guinan, Moore, Boukouvalas, and Kohli}}}
-\bibcite{chastain_use_2007}{{9}{2007}{{Chastain and Townsend}}{{}}}
-\bibcite{chelli_climate_2017}{{10}{2017}{{Chelli et~al.}}{{Chelli, Wellstein, Campetella, Canullo, Tonin, Zerbe, and Gerdol}}}
-\bibcite{chen_simple_2020}{{11}{2020}{{Chen et~al.}}{{Chen, Kornblith, Norouzi, and Hinton}}}
+\citation{lobo_bayesian_2020}
 \@LN@col{1}
 \@LN{808}{10}
 \@writefile{toc}{\contentsline {section}{\numberline {5}Code and data availability}{11}{section.5}\protected@file@percent }
@@ -977,7 +965,7 @@
 \@LN{815}{10}
 \@LN{816}{10}
 \@LN{817}{10}
-\@writefile{toc}{\contentsline {section}{Appendix A: Probabilistic Evaluation metrics}{11}{appendix.A}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{Appendix A: Computation of evaluation metrics}{11}{appendix.A}\protected@file@percent }
 \newlabel{sec:appendix_metrics}{{A}{11}{\codedataavailabilityname }{appendix.A}{}}
 \@LN{818}{10}
 \@LN{819}{10}
@@ -988,7 +976,6 @@
 \@LN{824}{10}
 \@LN{825}{10}
 \@LN{826}{10}
-\@writefile{toc}{\contentsline {section}{Appendix B: Comparison to historical orthophoto imagery}{11}{appendix.B}\protected@file@percent }
 \@LN{827}{10}
 \@LN{828}{10}
 \@LN{829}{10}
@@ -997,6 +984,8 @@
 \@LN{832}{10}
 \@LN{833}{10}
 \@LN{834}{10}
+\@writefile{toc}{\contentsline {subsection}{Appendix A1: Posterior-weighted estimator}{11}{subsection.A.1}\protected@file@percent }
+\newlabel{sec:appendix_posterior}{{A1}{11}{\codedataavailabilityname }{subsection.A.1}{}}
 \@LN{835}{10}
 \@LN{836}{10}
 \@LN{837}{10}
@@ -1010,10 +999,12 @@
 \@LN{845}{10}
 \@LN{846}{10}
 \@LN{847}{10}
-\@LN@col{2}
 \@LN{848}{10}
 \@LN{849}{10}
 \@LN{850}{10}
+\@LN@col{2}
+\@writefile{lof}{\contentsline {figure}{\numberline {A1}{\ignorespaces Sensitivity study of the observation bandwidth $\sigma _{\mathrm  {obs},k}$ that controls the reference-based likelihood landscape for the posterior-weighted estimator.\relax }}{11}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:sigma_sensitivity}{{A1}{11}{Sensitivity study of the observation bandwidth $\sigma _{\mathrm {obs},k}$ that controls the reference-based likelihood landscape for the posterior-weighted estimator.\relax }{figure.caption.6}{}}
 \@LN{851}{10}
 \@LN{852}{10}
 \@LN{853}{10}
@@ -1037,6 +1028,8 @@
 \@LN{871}{10}
 \@LN{872}{10}
 \@LN{873}{10}
+\@writefile{toc}{\contentsline {subsection}{Appendix A2: Best-match estimator}{11}{subsection.A.2}\protected@file@percent }
+\newlabel{sec:appendix_bestmatch}{{A2}{11}{\codedataavailabilityname }{subsection.A.2}{}}
 \@LN{874}{10}
 \@LN{875}{10}
 \@LN{876}{10}
@@ -1046,48 +1039,37 @@
 \@LN{880}{10}
 \@LN{881}{10}
 \@LN{882}{10}
-\@LN{883}{10}
-\@LN{884}{10}
-\@LN{885}{10}
-\@LN{886}{10}
-\@LN{887}{10}
-\@LN{888}{10}
-\@LN{889}{10}
-\@LN{890}{10}
-\@LN{891}{10}
-\@LN{892}{10}
-\@LN{893}{10}
-\@LN{894}{10}
-\@LN{895}{10}
-\@LN{896}{10}
-\@LN{897}{10}
-\@LN{898}{10}
-\@LN{899}{10}
-\@LN{900}{10}
-\@LN{901}{10}
-\@LN{902}{10}
-\@LN{903}{10}
-\@LN{904}{10}
-\bibcite{conedera_drivers_2018}{{12}{2018}{{Conedera et~al.}}{{Conedera, Wohlgemuth, Tanadini, and Pezzatti}}}
-\bibcite{feng_tessera_2026}{{13}{2026}{{Feng et~al.}}{{Feng, Atzberger, Jaffer, Knezevic, Sormunen, Young, Lisaius, Immitzer, Jackson, Ball, Coomes, Madhavapeddy, Blake, and Keshav}}}
-\bibcite{gasparini_italian_2022}{{14}{2022}{{Gasparini et~al.}}{{Gasparini, Di~Cosmo, Floris, and De~Laurentis}}}
-\bibcite{grabska-szwagrzyk_map_2024}{{15}{2024}{{Grabska-Szwagrzyk et~al.}}{{Grabska-Szwagrzyk, Tiede, Sudmanns, and Kozak}}}
-\bibcite{grunig_climate_2026}{{16}{2026}{{Gr{\"u}nig et~al.}}{{Gr{\"u}nig, Rammer, Senf, Albrich, Andr{\'e}, Augustynczik, Baumann, Bohn, Bouwman, Bugmann, Collalti, Cristal, Dalmonech, De~Coligny, Dobor, Dollinger, Espelta, Forrester, Garcia-Gonzalo, Gonz{\'a}lez-Olabarria, Hiltner, Hl{\'a}sny, Honkaniemi, Huber, Jonard, J{\"o}nsson, Kunstler, Lagergren, Lindner, Mina, Moos, Morin, Muys, Nabuurs, Nieberg, Patacca, Peltoniemi, Reyer, Schelhaas, Storms, Thom, To{\"i}go, and Seidl}}}
-\bibcite{hemmerling_mapping_2021}{{17}{2021}{{Hemmerling et~al.}}{{Hemmerling, Pflugmacher, and Hostert}}}
-\bibcite{hendrycks_gaussian_2016}{{18}{2016}{{Hendrycks and Gimpel}}{{}}}
-\bibcite{herraiz_aridity-induced_2025}{{19}{2025}{{Herraiz et~al.}}{{Herraiz, Salazar-Zarzosa, Acosta-Mu{\~n}oz, Hern{\'a}ndez-Clemente, and Villar}}}
-\bibcite{hiebl_advancing_2025}{{20}{2025}{{Hiebl et~al.}}{{Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari, Dorigo, Zerbe, and Rutzinger}}}
-\bibcite{hiebl_combining_2026}{{21}{2026}{{Hiebl et~al.}}{{Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari, Zerbe, and Rutzinger}}}
-\bibcite{kang_data-driven_2021}{{22}{2021}{{Kang et~al.}}{{Kang, Ozdogan, Gao, Anderson, White, Yang, Yang, and Erickson}}}
-\bibcite{kollert_exploring_2021}{{23}{2021}{{Kollert et~al.}}{{Kollert, Bremer, L{\"o}w, and Rutzinger}}}
-\bibcite{leonelli_climate_2011}{{24}{2011}{{Leonelli et~al.}}{{Leonelli, Pelfini, Morra~di Cella, and Garavaglia}}}
-\bibcite{lobo_bayesian_2020}{{25}{2020}{{Lobo et~al.}}{{Lobo, Fonseca, and Moura}}}
-\bibcite{manas_seasonal_2021}{{26}{2021}{{Ma{\~n}as et~al.}}{{Ma{\~n}as, Lacoste, Gir{\'o}-i Nieto, Vazquez, and Rodr{\'i}guez}}}
-\bibcite{mattioli_carta_2025}{{27}{2025}{{Mattioli et~al.}}{{Mattioli, R, D, G, G, D, M, and P}}}
-\bibcite{midolo_sixty_2026}{{28}{2026}{{Midolo et~al.}}{{Midolo, Clark, Chytr{\'y}, Essl, Dullinger, Jandt, Bruelheide, Dengler, Axmanov{\'a}, A{\'c}i{\'c}, Argagnon, Biurrun, Bonari, Chiarucci, {\'C}u{\v s}terevska, De~Frenne, De~Sanctis, Div{\'i}{\v s}ek, Dole{\v z}al, Dziuba, Ejrn{\ae }s, Garbolino, Jentsch, Jim{\'e}nez-Alfaro, Lenoir, Moeslund, Napoleone, Rumpf, Svenning, Swacha, Tatarenko, Ve{\v c}e{\v r}a, Vynokurov, and Keil}}}
-\bibcite{miettinen_pan-european_2025}{{29}{2025}{{Miettinen et~al.}}{{Miettinen, Breidenbach, Adame, Adolt, Alberdi, Antropov, Arnarsson, Astrup, Berger, Bogason, Chirici, Corona, D'Amico, Fejfar, Fischer, Gohon, Gschwantner, Hertzler, Koma, Korhonen, Krajnc, Latte, Lejeune, McCullagh, Mionskowski, Moreno-Fern{\'a}ndez, Myllym{\"a}ki, Nilsson, Perin, Pitk{\"a}nen, Redmond, Riedel, Schumacher, Seitsonen, Sirro, Skudnik, Snorrason, Sroga, Traub, Traustason, Westerlund, and Wurpillot}}}
-\bibcite{obuchowicz_change_2024}{{30}{2024}{{Obuchowicz et~al.}}{{Obuchowicz, Poussin, and Giuliani}}}
+\bibstyle{copernicus}
+\bibdata{essd_landsat_manuscript.bib}
+\bibcite{alessi_ancient_2019}{{1}{2019}{{Alessi et~al.}}{{Alessi, Těšitel, Zerbe, Spada, Agrillo, and Wellstein}}}
+\bibcite{ball_geospatial_2026}{{2}{2026}{{Ball et~al.}}{{Ball, Wicklein, Feng, Knezevic, Jaffer, Madhavapeddy, Atzberger, Dalponte, and Coomes}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A2}{\ignorespaces Posterior weight landscape for an example plot with highly heterogenous EVE cover within the neighbourhood computed from the gaussian prior and likelihood for the posterior-weighted estimator.\relax }}{12}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:posterior_landscape}{{A2}{12}{Posterior weight landscape for an example plot with highly heterogenous EVE cover within the neighbourhood computed from the gaussian prior and likelihood for the posterior-weighted estimator.\relax }{figure.caption.7}{}}
 \@LN@col{1}
+\@LN{883}{11}
+\@LN{884}{11}
+\@LN{885}{11}
+\@LN{886}{11}
+\@LN{887}{11}
+\@LN{888}{11}
+\@LN{889}{11}
+\@LN{890}{11}
+\@LN{891}{11}
+\@LN{892}{11}
+\@LN{893}{11}
+\@LN{894}{11}
+\@LN{895}{11}
+\@LN{896}{11}
+\@LN{897}{11}
+\@LN{898}{11}
+\@LN{899}{11}
+\@writefile{toc}{\contentsline {section}{Appendix B: Comparison to historical orthophoto imagery}{12}{appendix.B}\protected@file@percent }
+\@LN{900}{11}
+\@LN{901}{11}
+\@LN{902}{11}
+\@LN{903}{11}
+\@LN@col{2}
+\@LN{904}{11}
 \@LN{905}{11}
 \@LN{906}{11}
 \@LN{907}{11}
@@ -1111,124 +1093,123 @@
 \@LN{925}{11}
 \@LN{926}{11}
 \@LN{927}{11}
-\@LN{928}{11}
-\@LN{929}{11}
-\@LN{930}{11}
-\@LN{931}{11}
-\@LN{932}{11}
-\@LN{933}{11}
-\@LN{934}{11}
-\@LN{935}{11}
-\@LN{936}{11}
-\@LN{937}{11}
-\@LN{938}{11}
-\@LN{939}{11}
-\@LN{940}{11}
-\@LN{941}{11}
-\@LN{942}{11}
-\@LN{943}{11}
-\@LN{944}{11}
-\@LN{945}{11}
-\@LN{946}{11}
-\@LN{947}{11}
-\@LN{948}{11}
-\@LN{949}{11}
-\@LN{950}{11}
-\@LN{951}{11}
-\@LN{952}{11}
-\@LN{953}{11}
-\@LN{954}{11}
-\@LN{955}{11}
-\@LN{956}{11}
-\@LN{957}{11}
-\@LN{958}{11}
-\@LN{959}{11}
-\@LN{960}{11}
-\@LN{961}{11}
-\@LN{962}{11}
-\@LN{963}{11}
-\@LN@col{2}
-\@LN{964}{11}
-\@LN{965}{11}
-\@LN{966}{11}
-\@LN{967}{11}
-\@LN{968}{11}
-\@LN{969}{11}
-\@LN{970}{11}
-\@LN{971}{11}
-\@LN{972}{11}
-\@LN{973}{11}
-\@LN{974}{11}
-\@LN{975}{11}
-\@LN{976}{11}
-\@LN{977}{11}
-\@LN{978}{11}
-\@LN{979}{11}
-\@LN{980}{11}
-\@LN{981}{11}
-\@LN{982}{11}
-\@LN{983}{11}
-\@LN{984}{11}
-\@LN{985}{11}
-\@LN{986}{11}
-\@LN{987}{11}
-\@LN{988}{11}
-\@LN{989}{11}
-\@LN{990}{11}
-\@LN{991}{11}
-\@LN{992}{11}
-\@LN{993}{11}
-\@LN{994}{11}
-\@LN{995}{11}
-\@LN{996}{11}
-\@LN{997}{11}
-\@LN{998}{11}
-\@LN{999}{11}
-\@LN{1000}{11}
-\@LN{1001}{11}
-\@LN{1002}{11}
-\@LN{1003}{11}
-\@LN{1004}{11}
-\@LN{1005}{11}
-\@LN{1006}{11}
-\@LN{1007}{11}
-\@LN{1008}{11}
-\@LN{1009}{11}
-\@LN{1010}{11}
-\@LN{1011}{11}
-\@LN{1012}{11}
-\@LN{1013}{11}
-\@LN{1014}{11}
-\@LN{1015}{11}
-\@LN{1016}{11}
-\@LN{1017}{11}
-\@LN{1018}{11}
-\@LN{1019}{11}
-\@LN{1020}{11}
-\@LN{1021}{11}
-\@LN{1022}{11}
-\bibcite{olofsson_good_2014}{{31}{2014}{{Olofsson et~al.}}{{Olofsson, Foody, Herold, Stehman, Woodcock, and Wulder}}}
-\bibcite{persson_quantify_2022}{{32}{2022}{{Persson et~al.}}{{Persson, Ekström, and Ståhl}}}
-\bibcite{pflugmacher_mapping_2019}{{33}{2019}{{Pflugmacher et~al.}}{{Pflugmacher, Rabe, Peters, and Hostert}}}
-\bibcite{ruswurm_self-attention_2020}{{34}{2020}{{Rußwurm and Körner}}{{}}}
-\bibcite{safonova_ten_2023}{{35}{2023}{{Safonova et~al.}}{{Safonova, Ghazaryan, Stiller, Main-Knorn, Nendel, and Ryo}}}
-\bibcite{shannon_quantifying_2024}{{36}{2024}{{Shannon et~al.}}{{Shannon, Finley, Hayes, Noralez, Weiskittel, Cook, and Babcock}}}
-\bibcite{strunk_examination_2025}{{37}{2025}{{Strunk et~al.}}{{Strunk, Reutebuch, McGaughey, and Andersen}}}
-\bibcite{sylvain_high-resolution_2024}{{38}{2024}{{Sylvain et~al.}}{{Sylvain, Drolet, Thiffault, and Anctil}}}
-\bibcite{tan_leveraging_2025}{{39}{2025}{{Tan et~al.}}{{Tan, Li, Ma, Yan, and Huo}}}
-\bibcite{tong_reforestation_2023}{{40}{2023}{{Tong et~al.}}{{Tong, Brandt, Yue, Zhang, Fensholt, Ciais, Wang, Liu, Zhang, Mao, and Jepsen}}}
-\bibcite{turubanova_tree_2023}{{41}{2023}{{Turubanova et~al.}}{{Turubanova, Potapov, Hansen, Li, Tyukavina, Pickens, Hernandez-Serna, Arranz, Guerra-Hernandez, Senf, H{\"a}me, Valbuena, Eklundh, Brovkina, Navr{\'a}tilov{\'a}, Novotn{\'y}, Harris, and Stolle}}}
-\bibcite{vaswani_attention_2023}{{42}{2023}{{Vaswani et~al.}}{{Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin}}}
-\bibcite{viana-soto_european_2025}{{43}{2025}{{Viana-Soto and Senf}}{{}}}
-\bibcite{wang_assessing_2022}{{44}{2022}{{Wang et~al.}}{{Wang, Zheng, Huang, Meng, Pang, Jia, Zhou, Huang, Fang, and Zhao}}}
-\bibcite{wulder_fifty_2022}{{45}{2022}{{Wulder et~al.}}{{Wulder, Roy, Radeloff, Loveland, Anderson, Johnson, Healey, Zhu, Scambos, Pahlevan, Hansen, Gorelick, Crawford, Masek, Hermosilla, White, Belward, Schaaf, Woodcock, Huntington, Lymburner, Hostert, Gao, Lyapustin, Pekel, Strobl, and Cook}}}
-\bibcite{yel_remote_2026}{{46}{2026}{{Yel et~al.}}{{Yel, Özmen, Öney Birol, Tunç~Görmüş, and Kaplan}}}
-\bibcite{yuan_sits-former_2022}{{47}{2022}{{Yuan et~al.}}{{Yuan, Lin, Liu, Hang, and Zhou}}}
-\bibcite{yuan_empirical_2025}{{48}{2025}{{Yuan et~al.}}{{Yuan, Lin, Xin, Zhou, and Liu}}}
-\bibcite{yuan_yuan_self-supervised_2020}{{49}{2020}{{{Yuan Yuan} et~al.}}{{{Yuan Yuan}, Yuan, Lin, and {Lei Lin}}}}
-\bibcite{zanaga_esa_2022}{{50}{2022}{{Zanaga et~al.}}{{Zanaga, Van De~Kerchove, Daems, De~Keersmaecker, Brockmann, Kirches, Wevers, Cartus, Santoro, Fritz, Lesiv, Herold, Tsendbazar, Xu, Ramoino, and Arino}}}
-\bibcite{zerveas_transformer-based_2020}{{51}{2020}{{Zerveas et~al.}}{{Zerveas, Jayaraman, Patel, Bhamidipaty, and Eickhoff}}}
+\bibcite{bayle_landsat-based_2024}{{3}{2024}{{Bayle et~al.}}{{Bayle, Gascoin, Berner, and Choler}}}
+\bibcite{bell_hindcasting_2024}{{4}{2024}{{Bell et~al.}}{{Bell, Gregory, and Yang}}}
+\bibcite{blickensdorfer_national_2024}{{5}{2024}{{Blickensd{\"o}rfer et~al.}}{{Blickensd{\"o}rfer, Oehmichen, Pflugmacher, Kleinschmit, and Hostert}}}
+\bibcite{bolyn_mapping_2022}{{6}{2022}{{Bolyn et~al.}}{{Bolyn, Lejeune, Michez, and Latte}}}
+\bibcite{bricca_topography_2026}{{7}{2026}{{Bricca et~al.}}{{Bricca, Zerbe, Sabatini, Hiebl, Rutzinger, di~Musciano, Calvia, Chiarucci, Poschlod, Rossi, Alessi, and Bonari}}}
+\bibcite{brown_alphaearth_2025}{{8}{2025}{{Brown et~al.}}{{Brown, Kazmierski, Pasquarella, Rucklidge, Samsikova, Zhang, Shelhamer, Lahera, Wiles, Ilyushchenko, Gorelick, Zhang, Alj, Schechter, Askay, Guinan, Moore, Boukouvalas, and Kohli}}}
+\bibcite{chastain_use_2007}{{9}{2007}{{Chastain and Townsend}}{{}}}
+\bibcite{chelli_climate_2017}{{10}{2017}{{Chelli et~al.}}{{Chelli, Wellstein, Campetella, Canullo, Tonin, Zerbe, and Gerdol}}}
+\bibcite{chen_simple_2020}{{11}{2020}{{Chen et~al.}}{{Chen, Kornblith, Norouzi, and Hinton}}}
+\bibcite{conedera_drivers_2018}{{12}{2018}{{Conedera et~al.}}{{Conedera, Wohlgemuth, Tanadini, and Pezzatti}}}
+\bibcite{feng_tessera_2026}{{13}{2026}{{Feng et~al.}}{{Feng, Atzberger, Jaffer, Knezevic, Sormunen, Young, Lisaius, Immitzer, Jackson, Ball, Coomes, Madhavapeddy, Blake, and Keshav}}}
+\bibcite{gasparini_italian_2022}{{14}{2022}{{Gasparini et~al.}}{{Gasparini, Di~Cosmo, Floris, and De~Laurentis}}}
+\bibcite{grabska-szwagrzyk_map_2024}{{15}{2024}{{Grabska-Szwagrzyk et~al.}}{{Grabska-Szwagrzyk, Tiede, Sudmanns, and Kozak}}}
+\bibcite{grunig_climate_2026}{{16}{2026}{{Gr{\"u}nig et~al.}}{{Gr{\"u}nig, Rammer, Senf, Albrich, Andr{\'e}, Augustynczik, Baumann, Bohn, Bouwman, Bugmann, Collalti, Cristal, Dalmonech, De~Coligny, Dobor, Dollinger, Espelta, Forrester, Garcia-Gonzalo, Gonz{\'a}lez-Olabarria, Hiltner, Hl{\'a}sny, Honkaniemi, Huber, Jonard, J{\"o}nsson, Kunstler, Lagergren, Lindner, Mina, Moos, Morin, Muys, Nabuurs, Nieberg, Patacca, Peltoniemi, Reyer, Schelhaas, Storms, Thom, To{\"i}go, and Seidl}}}
+\bibcite{hemmerling_mapping_2021}{{17}{2021}{{Hemmerling et~al.}}{{Hemmerling, Pflugmacher, and Hostert}}}
+\bibcite{hendrycks_gaussian_2016}{{18}{2016}{{Hendrycks and Gimpel}}{{}}}
+\bibcite{herraiz_aridity-induced_2025}{{19}{2025}{{Herraiz et~al.}}{{Herraiz, Salazar-Zarzosa, Acosta-Mu{\~n}oz, Hern{\'a}ndez-Clemente, and Villar}}}
+\bibcite{hiebl_advancing_2025}{{20}{2025}{{Hiebl et~al.}}{{Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari, Dorigo, Zerbe, and Rutzinger}}}
+\bibcite{hiebl_combining_2026}{{21}{2026}{{Hiebl et~al.}}{{Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari, Zerbe, and Rutzinger}}}
+\bibcite{kang_data-driven_2021}{{22}{2021}{{Kang et~al.}}{{Kang, Ozdogan, Gao, Anderson, White, Yang, Yang, and Erickson}}}
 \@LN@col{1}
+\@LN{928}{12}
+\@LN{929}{12}
+\@LN{930}{12}
+\@LN{931}{12}
+\@LN{932}{12}
+\@LN{933}{12}
+\@LN{934}{12}
+\@LN{935}{12}
+\@LN{936}{12}
+\@LN{937}{12}
+\@LN{938}{12}
+\@LN{939}{12}
+\@LN{940}{12}
+\@LN{941}{12}
+\@LN{942}{12}
+\@LN{943}{12}
+\@LN{944}{12}
+\@LN{945}{12}
+\@LN{946}{12}
+\@LN{947}{12}
+\@LN{948}{12}
+\@LN{949}{12}
+\@LN{950}{12}
+\@LN{951}{12}
+\@LN{952}{12}
+\@LN{953}{12}
+\@LN{954}{12}
+\@LN{955}{12}
+\@LN{956}{12}
+\@LN{957}{12}
+\@LN{958}{12}
+\@LN{959}{12}
+\@LN{960}{12}
+\@LN{961}{12}
+\@LN{962}{12}
+\@LN{963}{12}
+\@LN{964}{12}
+\@LN{965}{12}
+\@LN{966}{12}
+\@LN{967}{12}
+\@LN{968}{12}
+\@LN{969}{12}
+\@LN{970}{12}
+\@LN{971}{12}
+\@LN{972}{12}
+\@LN{973}{12}
+\@LN{974}{12}
+\@LN{975}{12}
+\@LN{976}{12}
+\@LN{977}{12}
+\@LN{978}{12}
+\@LN{979}{12}
+\@LN{980}{12}
+\@LN{981}{12}
+\@LN{982}{12}
+\@LN{983}{12}
+\@LN{984}{12}
+\@LN{985}{12}
+\@LN{986}{12}
+\@LN@col{2}
+\@LN{987}{12}
+\@LN{988}{12}
+\@LN{989}{12}
+\@LN{990}{12}
+\@LN{991}{12}
+\@LN{992}{12}
+\@LN{993}{12}
+\@LN{994}{12}
+\@LN{995}{12}
+\@LN{996}{12}
+\@LN{997}{12}
+\@LN{998}{12}
+\@LN{999}{12}
+\@LN{1000}{12}
+\@LN{1001}{12}
+\@LN{1002}{12}
+\@LN{1003}{12}
+\@LN{1004}{12}
+\@LN{1005}{12}
+\@LN{1006}{12}
+\@LN{1007}{12}
+\@LN{1008}{12}
+\@LN{1009}{12}
+\@LN{1010}{12}
+\@LN{1011}{12}
+\@LN{1012}{12}
+\@LN{1013}{12}
+\@LN{1014}{12}
+\@LN{1015}{12}
+\@LN{1016}{12}
+\@LN{1017}{12}
+\@LN{1018}{12}
+\@LN{1019}{12}
+\@LN{1020}{12}
+\@LN{1021}{12}
+\@LN{1022}{12}
 \@LN{1023}{12}
 \@LN{1024}{12}
 \@LN{1025}{12}
@@ -1252,100 +1233,205 @@
 \@LN{1043}{12}
 \@LN{1044}{12}
 \@LN{1045}{12}
-\@LN{1046}{12}
-\@LN{1047}{12}
-\@LN{1048}{12}
-\@LN{1049}{12}
-\@LN{1050}{12}
-\@LN{1051}{12}
-\@LN{1052}{12}
-\@LN{1053}{12}
-\@LN{1054}{12}
-\@LN{1055}{12}
-\@LN{1056}{12}
-\@LN{1057}{12}
-\@LN{1058}{12}
-\@LN{1059}{12}
-\@LN{1060}{12}
-\@LN{1061}{12}
-\@LN{1062}{12}
-\@LN{1063}{12}
-\@LN{1064}{12}
-\@LN{1065}{12}
-\@LN{1066}{12}
-\@LN{1067}{12}
-\@LN{1068}{12}
-\@LN{1069}{12}
-\@LN{1070}{12}
-\@LN{1071}{12}
-\@LN{1072}{12}
-\@LN{1073}{12}
-\@LN{1074}{12}
-\@LN{1075}{12}
-\@LN{1076}{12}
-\@LN{1077}{12}
-\@LN{1078}{12}
-\@LN{1079}{12}
-\@LN{1080}{12}
-\@LN{1081}{12}
+\bibcite{kollert_exploring_2021}{{23}{2021}{{Kollert et~al.}}{{Kollert, Bremer, L{\"o}w, and Rutzinger}}}
+\bibcite{leonelli_climate_2011}{{24}{2011}{{Leonelli et~al.}}{{Leonelli, Pelfini, Morra~di Cella, and Garavaglia}}}
+\bibcite{lobo_bayesian_2020}{{25}{2020}{{Lobo et~al.}}{{Lobo, Fonseca, and Moura}}}
+\bibcite{manas_seasonal_2021}{{26}{2021}{{Ma{\~n}as et~al.}}{{Ma{\~n}as, Lacoste, Gir{\'o}-i Nieto, Vazquez, and Rodr{\'i}guez}}}
+\bibcite{mattioli_carta_2025}{{27}{2025}{{Mattioli et~al.}}{{Mattioli, R, D, G, G, D, M, and P}}}
+\bibcite{midolo_sixty_2026}{{28}{2026}{{Midolo et~al.}}{{Midolo, Clark, Chytr{\'y}, Essl, Dullinger, Jandt, Bruelheide, Dengler, Axmanov{\'a}, A{\'c}i{\'c}, Argagnon, Biurrun, Bonari, Chiarucci, {\'C}u{\v s}terevska, De~Frenne, De~Sanctis, Div{\'i}{\v s}ek, Dole{\v z}al, Dziuba, Ejrn{\ae }s, Garbolino, Jentsch, Jim{\'e}nez-Alfaro, Lenoir, Moeslund, Napoleone, Rumpf, Svenning, Swacha, Tatarenko, Ve{\v c}e{\v r}a, Vynokurov, and Keil}}}
+\bibcite{miettinen_pan-european_2025}{{29}{2025}{{Miettinen et~al.}}{{Miettinen, Breidenbach, Adame, Adolt, Alberdi, Antropov, Arnarsson, Astrup, Berger, Bogason, Chirici, Corona, D'Amico, Fejfar, Fischer, Gohon, Gschwantner, Hertzler, Koma, Korhonen, Krajnc, Latte, Lejeune, McCullagh, Mionskowski, Moreno-Fern{\'a}ndez, Myllym{\"a}ki, Nilsson, Perin, Pitk{\"a}nen, Redmond, Riedel, Schumacher, Seitsonen, Sirro, Skudnik, Snorrason, Sroga, Traub, Traustason, Westerlund, and Wurpillot}}}
+\bibcite{obuchowicz_change_2024}{{30}{2024}{{Obuchowicz et~al.}}{{Obuchowicz, Poussin, and Giuliani}}}
+\bibcite{olofsson_good_2014}{{31}{2014}{{Olofsson et~al.}}{{Olofsson, Foody, Herold, Stehman, Woodcock, and Wulder}}}
+\bibcite{persson_quantify_2022}{{32}{2022}{{Persson et~al.}}{{Persson, Ekström, and Ståhl}}}
+\bibcite{pflugmacher_mapping_2019}{{33}{2019}{{Pflugmacher et~al.}}{{Pflugmacher, Rabe, Peters, and Hostert}}}
+\bibcite{ruswurm_self-attention_2020}{{34}{2020}{{Rußwurm and Körner}}{{}}}
+\bibcite{safonova_ten_2023}{{35}{2023}{{Safonova et~al.}}{{Safonova, Ghazaryan, Stiller, Main-Knorn, Nendel, and Ryo}}}
+\bibcite{shannon_quantifying_2024}{{36}{2024}{{Shannon et~al.}}{{Shannon, Finley, Hayes, Noralez, Weiskittel, Cook, and Babcock}}}
+\bibcite{strunk_examination_2025}{{37}{2025}{{Strunk et~al.}}{{Strunk, Reutebuch, McGaughey, and Andersen}}}
+\bibcite{sylvain_high-resolution_2024}{{38}{2024}{{Sylvain et~al.}}{{Sylvain, Drolet, Thiffault, and Anctil}}}
+\bibcite{tan_leveraging_2025}{{39}{2025}{{Tan et~al.}}{{Tan, Li, Ma, Yan, and Huo}}}
+\bibcite{tong_reforestation_2023}{{40}{2023}{{Tong et~al.}}{{Tong, Brandt, Yue, Zhang, Fensholt, Ciais, Wang, Liu, Zhang, Mao, and Jepsen}}}
+\bibcite{turubanova_tree_2023}{{41}{2023}{{Turubanova et~al.}}{{Turubanova, Potapov, Hansen, Li, Tyukavina, Pickens, Hernandez-Serna, Arranz, Guerra-Hernandez, Senf, H{\"a}me, Valbuena, Eklundh, Brovkina, Navr{\'a}tilov{\'a}, Novotn{\'y}, Harris, and Stolle}}}
+\bibcite{vaswani_attention_2023}{{42}{2023}{{Vaswani et~al.}}{{Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser, and Polosukhin}}}
+\@LN@col{1}
+\@LN{1046}{13}
+\@LN{1047}{13}
+\@LN{1048}{13}
+\@LN{1049}{13}
+\@LN{1050}{13}
+\@LN{1051}{13}
+\@LN{1052}{13}
+\@LN{1053}{13}
+\@LN{1054}{13}
+\@LN{1055}{13}
+\@LN{1056}{13}
+\@LN{1057}{13}
+\@LN{1058}{13}
+\@LN{1059}{13}
+\@LN{1060}{13}
+\@LN{1061}{13}
+\@LN{1062}{13}
+\@LN{1063}{13}
+\@LN{1064}{13}
+\@LN{1065}{13}
+\@LN{1066}{13}
+\@LN{1067}{13}
+\@LN{1068}{13}
+\@LN{1069}{13}
+\@LN{1070}{13}
+\@LN{1071}{13}
+\@LN{1072}{13}
+\@LN{1073}{13}
+\@LN{1074}{13}
+\@LN{1075}{13}
+\@LN{1076}{13}
+\@LN{1077}{13}
+\@LN{1078}{13}
+\@LN{1079}{13}
+\@LN{1080}{13}
+\@LN{1081}{13}
+\@LN{1082}{13}
+\@LN{1083}{13}
+\@LN{1084}{13}
+\@LN{1085}{13}
+\@LN{1086}{13}
+\@LN{1087}{13}
+\@LN{1088}{13}
+\@LN{1089}{13}
+\@LN{1090}{13}
+\@LN{1091}{13}
+\@LN{1092}{13}
+\@LN{1093}{13}
+\@LN{1094}{13}
+\@LN{1095}{13}
+\@LN{1096}{13}
+\@LN{1097}{13}
+\@LN{1098}{13}
+\@LN{1099}{13}
+\@LN{1100}{13}
+\@LN{1101}{13}
+\@LN{1102}{13}
+\@LN{1103}{13}
+\@LN{1104}{13}
 \@LN@col{2}
-\@LN{1082}{12}
-\@LN{1083}{12}
-\@LN{1084}{12}
-\@LN{1085}{12}
-\@LN{1086}{12}
-\@LN{1087}{12}
-\@LN{1088}{12}
-\@LN{1089}{12}
-\@LN{1090}{12}
-\@LN{1091}{12}
-\@LN{1092}{12}
-\@LN{1093}{12}
-\@LN{1094}{12}
-\@LN{1095}{12}
-\@LN{1096}{12}
-\@LN{1097}{12}
-\@LN{1098}{12}
-\@LN{1099}{12}
-\@LN{1100}{12}
-\@LN{1101}{12}
-\@LN{1102}{12}
-\@LN{1103}{12}
-\@LN{1104}{12}
-\@LN{1105}{12}
-\@LN{1106}{12}
-\@LN{1107}{12}
-\@LN{1108}{12}
-\@LN{1109}{12}
-\@LN{1110}{12}
-\@LN{1111}{12}
-\@LN{1112}{12}
-\@LN{1113}{12}
-\@LN{1114}{12}
-\@LN{1115}{12}
-\@LN{1116}{12}
-\@LN{1117}{12}
-\@LN{1118}{12}
-\@LN{1119}{12}
-\@LN{1120}{12}
-\@LN{1121}{12}
-\@LN{1122}{12}
-\@LN{1123}{12}
-\@LN{1124}{12}
-\@LN{1125}{12}
-\@LN{1126}{12}
-\@LN{1127}{12}
-\@LN{1128}{12}
-\@LN{1129}{12}
-\@LN{1130}{12}
-\@LN{1131}{12}
-\@LN{1132}{12}
-\@LN{1133}{12}
-\@LN{1134}{12}
-\@LN{1135}{12}
-\@LN{1136}{12}
-\@LN{1137}{12}
-\@LN{1138}{12}
-\@LN{1139}{12}
-\newlabel{LastPage}{{}{13}{}{}{}}
-\gdef \@abspage@last{13}
+\@LN{1105}{13}
+\@LN{1106}{13}
+\@LN{1107}{13}
+\@LN{1108}{13}
+\@LN{1109}{13}
+\@LN{1110}{13}
+\@LN{1111}{13}
+\@LN{1112}{13}
+\@LN{1113}{13}
+\@LN{1114}{13}
+\@LN{1115}{13}
+\@LN{1116}{13}
+\@LN{1117}{13}
+\@LN{1118}{13}
+\@LN{1119}{13}
+\@LN{1120}{13}
+\@LN{1121}{13}
+\@LN{1122}{13}
+\@LN{1123}{13}
+\@LN{1124}{13}
+\@LN{1125}{13}
+\@LN{1126}{13}
+\@LN{1127}{13}
+\@LN{1128}{13}
+\@LN{1129}{13}
+\@LN{1130}{13}
+\@LN{1131}{13}
+\@LN{1132}{13}
+\@LN{1133}{13}
+\@LN{1134}{13}
+\@LN{1135}{13}
+\@LN{1136}{13}
+\@LN{1137}{13}
+\@LN{1138}{13}
+\@LN{1139}{13}
+\@LN{1140}{13}
+\@LN{1141}{13}
+\@LN{1142}{13}
+\@LN{1143}{13}
+\@LN{1144}{13}
+\@LN{1145}{13}
+\@LN{1146}{13}
+\@LN{1147}{13}
+\@LN{1148}{13}
+\@LN{1149}{13}
+\@LN{1150}{13}
+\@LN{1151}{13}
+\@LN{1152}{13}
+\@LN{1153}{13}
+\@LN{1154}{13}
+\@LN{1155}{13}
+\@LN{1156}{13}
+\@LN{1157}{13}
+\@LN{1158}{13}
+\@LN{1159}{13}
+\@LN{1160}{13}
+\@LN{1161}{13}
+\@LN{1162}{13}
+\bibcite{viana-soto_european_2025}{{43}{2025}{{Viana-Soto and Senf}}{{}}}
+\bibcite{wang_assessing_2022}{{44}{2022}{{Wang et~al.}}{{Wang, Zheng, Huang, Meng, Pang, Jia, Zhou, Huang, Fang, and Zhao}}}
+\bibcite{wulder_fifty_2022}{{45}{2022}{{Wulder et~al.}}{{Wulder, Roy, Radeloff, Loveland, Anderson, Johnson, Healey, Zhu, Scambos, Pahlevan, Hansen, Gorelick, Crawford, Masek, Hermosilla, White, Belward, Schaaf, Woodcock, Huntington, Lymburner, Hostert, Gao, Lyapustin, Pekel, Strobl, and Cook}}}
+\bibcite{yel_remote_2026}{{46}{2026}{{Yel et~al.}}{{Yel, Özmen, Öney Birol, Tunç~Görmüş, and Kaplan}}}
+\bibcite{yuan_sits-former_2022}{{47}{2022}{{Yuan et~al.}}{{Yuan, Lin, Liu, Hang, and Zhou}}}
+\bibcite{yuan_empirical_2025}{{48}{2025}{{Yuan et~al.}}{{Yuan, Lin, Xin, Zhou, and Liu}}}
+\bibcite{yuan_yuan_self-supervised_2020}{{49}{2020}{{{Yuan Yuan} et~al.}}{{{Yuan Yuan}, Yuan, Lin, and {Lei Lin}}}}
+\bibcite{zanaga_esa_2022}{{50}{2022}{{Zanaga et~al.}}{{Zanaga, Van De~Kerchove, Daems, De~Keersmaecker, Brockmann, Kirches, Wevers, Cartus, Santoro, Fritz, Lesiv, Herold, Tsendbazar, Xu, Ramoino, and Arino}}}
+\bibcite{zerveas_transformer-based_2020}{{51}{2020}{{Zerveas et~al.}}{{Zerveas, Jayaraman, Patel, Bhamidipaty, and Eickhoff}}}
+\@LN@col{1}
+\@LN{1163}{14}
+\@LN{1164}{14}
+\@LN{1165}{14}
+\@LN{1166}{14}
+\@LN{1167}{14}
+\@LN{1168}{14}
+\@LN{1169}{14}
+\@LN{1170}{14}
+\@LN{1171}{14}
+\@LN{1172}{14}
+\@LN{1173}{14}
+\@LN{1174}{14}
+\@LN{1175}{14}
+\@LN{1176}{14}
+\@LN{1177}{14}
+\@LN{1178}{14}
+\@LN{1179}{14}
+\@LN{1180}{14}
+\@LN{1181}{14}
+\@LN{1182}{14}
+\@LN{1183}{14}
+\@LN{1184}{14}
+\@LN{1185}{14}
+\@LN{1186}{14}
+\@LN{1187}{14}
+\@LN{1188}{14}
+\@LN{1189}{14}
+\@LN{1190}{14}
+\@LN{1191}{14}
+\@LN{1192}{14}
+\@LN{1193}{14}
+\@LN{1194}{14}
+\@LN{1195}{14}
+\@LN{1196}{14}
+\@LN{1197}{14}
+\@LN{1198}{14}
+\@LN{1199}{14}
+\@LN{1200}{14}
+\@LN{1201}{14}
+\@LN{1202}{14}
+\@LN{1203}{14}
+\@LN{1204}{14}
+\@LN{1205}{14}
+\@LN{1206}{14}
+\@LN{1207}{14}
+\@LN{1208}{14}
+\@LN{1209}{14}
+\@LN{1210}{14}
+\@LN{1211}{14}
+\@LN{1212}{14}
+\@LN@col{2}
+\newlabel{LastPage}{{}{15}{}{}{}}
+\gdef \@abspage@last{15}

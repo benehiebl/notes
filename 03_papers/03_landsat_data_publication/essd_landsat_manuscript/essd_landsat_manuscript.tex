@@ -348,15 +348,15 @@ class & prec. & recall & f1-score & support & prec. & recall & f1-score & suppor
 \middlehline
 silver fir   & - & - & - & - & - & - & - & - & 0.86 & 0.85 & 0.86 & 518 \\
 other dec.   & 0.52 & 0.55 & 0.53 & 112 & 0.23 & 0.81 & 0.36 & 27 & 0.37 & 0.85 & 0.52 & 240 \\
-dec. oak     & 0.88 & 0.46 & 0.60 & 127 & 0.70 & 0.40 & 0.51 & 123 & 0.67 & 0.61 & 0.64 & 1137 \\
-chestnut     & 0.96 & 0.88 & 0.92 & 26 & 0.89 & 0.53 & 0.67 & 30 & 0.67 & 0.74 & 0.70 & 817 \\
+dec. oak     & 0.88 & 0.46 & 0.60 & 127 & 0.71 & 0.40 & 0.51 & 123 & 0.67 & 0.61 & 0.64 & 1137 \\
+chestnut     & 0.96 & 0.88 & 0.92 & 26 & 0.89 & 0.62 & 0.73 & 30 & 0.67 & 0.74 & 0.70 & 817 \\
 other con.   & - & - & - & - & - & - & - & - & 0.49 & 0.50 & 0.49 & 220 \\
-beech        & 0.57 & 0.91 & 0.68 & 108 & 0.89 & 0.78 & 0.83 & 120 & 0.83 & 0.65 & 0.73 & 594 \\
-eve. oak     & 0.65 & 0.64 & 0.65 & 53 & 0.69 & 0.70 & 0.70 & 110 & 0.86 & 0.79 & 0.82 & 1141 \\
+beech        & 0.57 & 0.91 & 0.68 & 108 & 0.88 & 0.71 & 0.84 & 120 & 0.83 & 0.65 & 0.73 & 594 \\
+eve. oak     & 0.65 & 0.64 & 0.65 & 53 & 0.69 & 0.71 & 0.70 & 110 & 0.86 & 0.79 & 0.82 & 1141 \\
 other eve.   & - & - & - & - & - & - & - & - & 0.89 & 0.81 & 0.85 & 503 \\
-pine         & - & - & - & - & 0.83 & 0.78 & 0.81 & 51 & 0.74 & 0.72 & 0.73 & 410 \\
-ornus-ostr.  & 0.69 & 0.43 & 0.53 & 51 & 0.38 & 0.49 & 0.43 & 60 & 0.61 & 0.65 & 0.63 & 695 \\
-spruce       & - & - & - & - & 0.75 & 0.4 & 0.52 & 15 & 0.95 & 0.72 & 0.82 & 367 \\
+pine         & - & - & - & - & 0.90 & 0.82 & 0.86 & 51 & 0.74 & 0.72 & 0.73 & 410 \\
+ornus-ostr.  & 0.69 & 0.43 & 0.53 & 51 & 0.40 & 0.50 & 0.45 & 60 & 0.61 & 0.65 & 0.63 & 695 \\
+spruce       & - & - & - & - & 0.78 & 0.47 & 0.58 & 15 & 0.95 & 0.72 & 0.82 & 367 \\
 \middlehline
 accuracy     &      &      &      & 493 &      &      &      & 536 &      &      &      & 30985 \\
 macro avg    & 0.71 & 0.65 & 0.65 & 493 & 0.67 & 0.61 & 0.60 & 536 & 0.72 & 0.72 & 0.71 & 30985 \\
@@ -374,9 +374,9 @@ weighted avg & 0.68 & 0.62 & 0.62 & 493 & 0.71 & 0.62 & 0.64 & 536 & 0.75 & 0.72
 \cline{2-4} \cline{5-7}
 target & MAE & RMSE & R\textsuperscript{2} & MAE & RMSE & R\textsuperscript{2} \\
 \middlehline
-EVE & 12.5 / 11.6 / 8.5 & 19.1/17.5/14.9 & 0.66/0.72/0.79 & TODO & TODO & TODO \\
-DEC & 9.7 / 8.7 / 8.4 & 12.4/10.6/7.9 & 0.86/0.85/0.92 & TODO & TODO & TODO \\
-CON & 5.0 / 4.4 / 3.0 & 9.1/7.4/6.1 & -0.05/0.31/0.54 & TODO & TODO & TODO \\
+EVE & 12.5 / 11.6 / 8.5 & 19.1 / 17.5 / 14.9 & 0.66 / 0.72 / 0.79 & 22.8 / 18.2 /10.9 & 32.2 / 26.3 / 21.3 & 0.29 / 0.52 / 0.69 \\
+DEC & 9.7 / 8.7 / 8.4 & 12.4 / 10.6 / 7.9 & 0.86 / 0.85 / 0.92 & 20.7 / 12.6 / 6.6 & 27.2 / 16.1 / 11.9 & 0.50 / 0.82 / 0.90 \\
+CON & 5.0 / 4.4 / 3.0 & 9.1 / 7.4 / 6.1 & -0.05 / 0.31 / 0.54 & 9.8 / 6.4 / 3.2 & 18.0 / 11.1 / 8.7 & 0.66 / 0.88 / 0.92 \\
 \bottomhline
 \end{tabular}
 \end{table*}
@@ -420,10 +420,54 @@ All python code that was used during data processing, training and mapping is av
 
 
 \appendix
-\section{Probabilistic Evaluation metrics}    %% Appendix A
+\section{Computation of evaluation metrics}    %% Appendix A
 \label{sec:appendix_metrics}
-\textcolor{red}{TODO.}
 
+All accuracy figures reported in Sect.\,\ref{sec:evaluation} are computed from the published maps, this means the estimators below are applied to the same spatio-temporal product that is published, and not to model outputs held in memory. For a plot $p$ with reported coordinates $\mathbf{s}_p$ and observation year $t_p$, let $\mathcal{N}_p$ denote the set of candidate map pixels $(\mathbf{s},t)$ with $\lVert \mathbf{s}-\mathbf{s}_p \rVert_\infty \le 2\sigma_s$ and $|t-t_p| \le 2 \sigma_t$, clipped to the temporal extent of the product. This creates a squared box of half-width $2/sigma_s$ around the plot coordinates. The \emph{direct} estimator is the special case $\mathcal{N}_p=\{(\mathbf{s}_p,t_p)\}$, i.e. the nearest pixel of the reported year. The two estimators described below are conditioned on the reference plots label and are therefore validation diagnostics only, as they cannot be applied where the reference value is unknown. Pixels without a valid prediction receive zero weight and are excluded, and plot--prediction pairs containing a missing value are dropped before metrics are computed.
+
+\subsection{Posterior-weighted estimator}
+\label{sec:appendix_posterior}
+
+Every candidate cell in $\mathcal{N}_p$ is treated as a hypothesis for the true plot location and observation date. The prior expresses the reported position and year and their uncertainty as a separable Gaussian kernel,
+\begin{equation}
+w^\mathrm{prior}(\mathbf{s},t) = \exp\!\left(-\frac{\lVert \mathbf{s}-\mathbf{s}_p \rVert^2}{2\sigma_s^2}\right) \exp\!\left(-\frac{(t-t_p)^2}{2\sigma_t^2}\right),
+\end{equation}
+with position uncertainty $\sigma_s = \text{plot location accuracy in }\unit{m}$ and temporal uncertainty $\sigma_t = 1\,\unit{a}$, clamped at $2\sigma_s \text{ and } 2\sigma_t$. For the LTC task the likelihood of a hypothesis is the agreement between the mapped cover fraction $\hat{y}_k(\mathbf{s},t)$ of leaf type $k \in \{\mathrm{EVE},\mathrm{DEC},\mathrm{CON}\}$ and the plot reference cover $y_{p,k}$,
+\begin{equation}
+w^\mathrm{lik}_k(\mathbf{s},t) = \exp\!\left(-\frac{\bigl(\hat{y}_k(\mathbf{s},t)-y_{p,k}\bigr)^2}{2\sigma_{\mathrm{obs},k}^2}\right),
+\end{equation}
+and the estimate is the posterior-weighted mean over the neighbourhood,
+\begin{equation}
+\hat{y}^{\,\mathrm{PW}}_{p,k} = \frac{\sum_{(\mathbf{s},t)\in\mathcal{N}_p} w^\mathrm{prior} w^\mathrm{lik}_k \,\hat{y}_k(\mathbf{s},t)}{\sum_{(\mathbf{s},t)\in\mathcal{N}_p} w^\mathrm{prior} w^\mathrm{lik}_k}.
+\end{equation}
+The observation bandwidth $\sigma_{\mathrm{obs},k}$ is set per leaf type to the standard deviation of the residuals of the direct estimator on the VPO split, i.e. on the dataset with the lowest location uncertainty, so that the likelihood is not sharper than the residual scatter that is already explained by model error alone. It acts as a single dial between the two limiting cases: $\sigma_{\mathrm{obs},k}\!\to\!\infty$ removes the label from the weighting and recovers a purely prior-weighted neighbourhood mean, whereas $\sigma_{\mathrm{obs},k}\!\to\!0$ recovers the best-match estimator of Sect.\,\ref{sec:appendix_bestmatch}. This is similar to a sampling-importance-resampling implementation that draws $n$ candidates directly from the prior and weights them by the likelihood alone \citep{lobo_bayesian_2020}. 
+
+For the DTS task the same weights are applied to the predicted class-probability vector $\hat{\mathbf{p}}(\mathbf{s},t)$. The likelihood of a hypothesis is the probability that the candidate cell assigns to the reference class.
+
+Spatial uncertainty $\sigma_s$ is set for each plot individually, depicting the reported accuracy of the plot coordinates based on GNSS measurements or data curator expert knowledge. $\sigma_s$ ranges between $1\,\unit{m}$ and $1000\,\unit{m}$ in the VDBI dataset. The sensitivity of the posterior-weighted estimator to the choice of $\sigma_{\mathrm{obs},k}$ is illustrated in Fig.\,\ref{fig:sigma_sensitivity}, and example posterior landscapes are shown in Fig.\,\ref{fig:posterior_landscape}.   
+
+\textcolor{red}{add section to explain the two figures}
+
+\begin{figure}[t]
+\includegraphics[width=9cm]{figures/sigma_obs_sensitivity_examples.png}
+\caption{Sensitivity study of the observation bandwidth $\sigma_{\mathrm{obs},k}$ that controls the reference-based likelihood landscape for the posterior-weighted estimator.}
+\label{fig:sigma_sensitivity}
+\end{figure}
+
+\begin{figure*}[t]
+\includegraphics[width=16cm]{figures/posterior_landscape_examples_3d.png}
+\caption{Posterior weight landscape for an example plot with highly heterogenous EVE cover within the neighbourhood computed from the gaussian prior and likelihood for the posterior-weighted estimator.}
+\label{fig:posterior_landscape}
+\end{figure*}
+
+\subsection{Best-match estimator}
+\label{sec:appendix_bestmatch}
+
+The best-match estimator replaces the weighted mean by a hard selection over a  neighbourhood ($2\sigma_s$, plot location accuracy in $\unit{m}$, and a fixed window of $t_p \pm 1\,\unit{a}$). For the LTC task it returns, per leaf type, the value of the single candidate cell that agrees most closely with the reference,
+\begin{equation}
+\hat{y}^{\,\mathrm{BM}}_{p,k} = \hat{y}_k\!\left(\operatorname*{arg\,min}_{(\mathbf{s},t)\in\mathcal{N}_p} \bigl| \hat{y}_k(\mathbf{s},t)-y_{p,k} \bigr|\right),
+\end{equation}
+and for the DTS task the label of the candidate cell that assigns the highest probability to the reference class. Because the selection is made using the reference value itself, this estimator is optimistically biased by construction: any leaf-type value present anywhere in the neighbourhood can be matched, and a plot is counted as correctly classified whenever at least one candidate cell within the plot location accuracy reported by the data providers and $\pm 1\,\unit{a}$ carries the reference class. The resulting metrics are therefore not corrected accuracies but an upper optimistic bound on what could be attributed to spatial(-temporal) reference mismatch rather than to model error.
 
 - figure: sensitivity study for sigmaobs in the posterior method. lower bound direct, upper bound best match, line in between with sigma \newline
 - figure of posterior landsacape for 2 example plots. prior (gaussian) * likelihood => posterior \newline
