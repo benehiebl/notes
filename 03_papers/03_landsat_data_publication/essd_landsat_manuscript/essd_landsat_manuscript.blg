@@ -5,45 +5,45 @@ The style file: copernicus.bst
 Database file #1: essd_landsat_manuscript.bib
 Warning--empty journal in yuan_yuan_self-supervised_2020
 Warning--empty journal in zanaga_esa_2022
-You've used 51 entries,
+You've used 70 entries,
             2932 wiz_defined-function locations,
-            1419 strings with 30629 characters,
-and the built_in function-call counts, 62941 in all, are:
-= -- 5961
-> -- 4105
-< -- 5
-+ -- 1602
-- -- 1318
-* -- 4785
-:= -- 7127
-add.period$ -- 51
-call.type$ -- 51
-change.case$ -- 552
-chr.to.int$ -- 52
-cite$ -- 155
-duplicate$ -- 5235
-empty$ -- 2804
-format.name$ -- 1478
-if$ -- 12173
+            1546 strings with 36838 characters,
+and the built_in function-call counts, 86409 in all, are:
+= -- 8314
+> -- 5516
+< -- 8
++ -- 2165
+- -- 1771
+* -- 6462
+:= -- 9715
+add.period$ -- 70
+call.type$ -- 70
+change.case$ -- 742
+chr.to.int$ -- 71
+cite$ -- 212
+duplicate$ -- 7282
+empty$ -- 3849
+format.name$ -- 1990
+if$ -- 16731
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 785
-newline$ -- 162
-num.names$ -- 205
-pop$ -- 2636
+missing$ -- 1067
+newline$ -- 219
+num.names$ -- 281
+pop$ -- 3577
 preamble$ -- 1
-purify$ -- 541
+purify$ -- 730
 quote$ -- 0
-skip$ -- 3302
+skip$ -- 4639
 stack$ -- 0
-substring$ -- 2017
-swap$ -- 4511
+substring$ -- 2799
+swap$ -- 6297
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 456
+type$ -- 627
 warning$ -- 2
-while$ -- 251
+while$ -- 357
 width$ -- 0
-write$ -- 615
+write$ -- 842
 (There were 2 warnings)
