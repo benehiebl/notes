@@ -24,15 +24,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="0.71280488"
-     inkscape:cx="820"
-     inkscape:cy="455.2438"
+     inkscape:zoom="0.50402918"
+     inkscape:cx="710.27634"
+     inkscape:cy="328.35401"
      inkscape:window-width="1850"
      inkscape:window-height="1016"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer-col1" />
+     inkscape:current-layer="layer-col4" />
   <defs
      id="defs4">
     <marker
@@ -96,7 +96,10 @@
        width="1618.7225"
        height="821.76221"
        fill="#ffffff"
-       style="stroke-width:0.982649" />
+       style="stroke-width:0.982649"
+       inkscape:export-filename="graphical_abstract.png"
+       inkscape:export-xdpi="150"
+       inkscape:export-ydpi="150" />
   </g>
   <!-- ============================== 01 TITLE =============================== -->
   <g
@@ -106,7 +109,7 @@
     <g
        inkscape:label="title-block"
        id="title-block"
-       inkscape:export-filename="title-block.png"
+       inkscape:export-filename="graphical_abstract.png"
        inkscape:export-xdpi="150"
        inkscape:export-ydpi="150">
       <text
@@ -114,7 +117,7 @@
          y="66"
          text-anchor="middle"
          style="font-size:20px;fill:#5A6B78"
-         id="text5">Landsat 4/5/7/8/9 Collection-2 · Time Series Transformer with contrastive pretraining · 30 m · 1987–2025 · Dominant Tree Species DTS · Leaf Type Cover LTC</text>
+         id="text5">Landsat 4/5/7/8/9 Collection-2 Level-2 · Pretrained Time Series Transformer · 30 m · 1987–2025 · Dominant Tree Species DTS · Leaf Type Cover LTC</text>
     </g>
   </g>
   <!-- ========================== 02 COLUMN 1 : DATA ========================= -->
@@ -178,9 +181,9 @@
          inkscape:label="c1-sensor-timeline"
          id="c1-sensor-timeline">
         <text
-           x="40"
+           x="44.999355"
            y="203"
-           style="font-size:10px;fill:#5A6B78"
+           style="font-size:10px;fill:#5a6b78"
            id="text10">L4</text>
         <rect
            x="64"
@@ -192,9 +195,9 @@
            fill-opacity=".45"
            id="rect10" />
         <text
-           x="40"
+           x="45.416439"
            y="215"
-           style="font-size:10px;fill:#5A6B78"
+           style="font-size:10px;fill:#5a6b78"
            id="text11">L5</text>
         <rect
            x="64"
@@ -206,9 +209,9 @@
            fill-opacity=".6"
            id="rect11" />
         <text
-           x="40"
+           x="45.416439"
            y="227"
-           style="font-size:10px;fill:#5A6B78"
+           style="font-size:10px;fill:#5a6b78"
            id="text12">L7</text>
         <rect
            x="166"
@@ -220,9 +223,9 @@
            fill-opacity=".75"
            id="rect12" />
         <text
-           x="40"
+           x="45.416439"
            y="239"
-           style="font-size:10px;fill:#5A6B78"
+           style="font-size:10px;fill:#5a6b78"
            id="text13">L8</text>
         <rect
            x="269"
@@ -234,9 +237,9 @@
            fill-opacity=".9"
            id="rect13" />
         <text
-           x="40"
+           x="45.416439"
            y="251"
-           style="font-size:10px;fill:#5A6B78"
+           style="font-size:10px;fill:#5a6b78"
            id="text14">L9</text>
         <rect
            x="327"
@@ -323,22 +326,22 @@
          x="56"
          y="290"
          style="font-size:11.5px;fill:#263845"
-         id="text24">6 SR bands + 8 spectral indices (NDVI, NIRv, NDMI,</text>
+         id="text24"> · 6 SR bands + 8 spectral indices (NDVI, NIRv, NDMI,</text>
       <text
-         x="56"
-         y="304"
+         x="62.44804"
+         y="301.85065"
          style="font-size:11.5px;fill:#263845"
          id="text25">EVI, WDRVI, NBR, NDWI, GNDVI) per observation</text>
       <text
          x="56"
          y="318"
          style="font-size:11.5px;fill:#263845"
-         id="text26">QA-Pixel cloud / shadow / snow mask → padding mask</text>
+         id="text26">· QA-Pixel cloud / shadow / snow mask → padding mask</text>
       <text
          x="56"
          y="332"
          style="font-size:11.5px;fill:#263845"
-         id="text27">3-year pooling: t−2, t−1, t · ~80–120 scenes per year</text>
+         id="text27">· 3-year pooling: t−2, t−1, t · ~80–120 scenes per year</text>
     </g>
     <g
        inkscape:label="c1-box-reference-data"
@@ -631,7 +634,7 @@
          x="449"
          y="142"
          width="333"
-         height="110"
+         height="130"
          rx="7"
          fill="#FFFFFF"
          stroke="#6B4E9B"
@@ -828,27 +831,28 @@
     </g>
     <g
        inkscape:label="c2-box-input-encoding"
-       id="c2-box-input-encoding">
+       id="c2-box-input-encoding"
+       transform="translate(0,10.746733)">
       <rect
          x="449"
          y="278"
          width="333"
          height="84"
          rx="7"
-         fill="#FFFFFF"
-         stroke="#6B4E9B"
-         stroke-opacity=".3"
+         fill="#ffffff"
+         stroke="#6b4e9b"
+         stroke-opacity="0.3"
          id="rect79" />
       <text
          x="465"
          y="300"
-         style="font-size:13.5px;font-weight:700;fill:#14212B"
+         style="font-weight:700;font-size:13.5px;fill:#14212b"
          id="text80">Input encoding</text>
       <text
          x="465"
          y="322"
          style="font-size:11.5px;fill:#263845"
-         id="text81">robust standardisation (q0.1 / q0.9), frozen at inference</text>
+         id="text81">robust standardisation (q0.1 / q0.9), frozen at training time</text>
       <text
          x="465"
          y="338"
@@ -862,21 +866,22 @@
     </g>
     <g
        inkscape:label="c2-box-encoder"
-       id="c2-box-encoder">
+       id="c2-box-encoder"
+       transform="translate(-0.53733663,18.806782)">
       <rect
          x="449"
          y="388"
          width="333"
          height="116"
          rx="7"
-         fill="#FFFFFF"
-         stroke="#6B4E9B"
-         stroke-opacity=".3"
+         fill="#ffffff"
+         stroke="#6b4e9b"
+         stroke-opacity="0.3"
          id="rect83" />
       <text
          x="465"
          y="410"
-         style="font-size:13.5px;font-weight:700;fill:#14212B"
+         style="font-weight:700;font-size:13.5px;fill:#14212b"
          id="text84">Transformer encoder</text>
       <g
          inkscape:label="c2-encoder-block-attn"
@@ -887,10 +892,10 @@
            width="309"
            height="24"
            rx="5"
-           fill="#6B4E9B"
-           fill-opacity=".12"
-           stroke="#6B4E9B"
-           stroke-opacity=".35"
+           fill="#6b4e9b"
+           fill-opacity="0.12"
+           stroke="#6b4e9b"
+           stroke-opacity="0.35"
            id="rect84" />
         <text
            x="615"
@@ -908,10 +913,10 @@
            width="309"
            height="24"
            rx="5"
-           fill="#6B4E9B"
-           fill-opacity=".12"
-           stroke="#6B4E9B"
-           stroke-opacity=".35"
+           fill="#6b4e9b"
+           fill-opacity="0.12"
+           stroke="#6b4e9b"
+           stroke-opacity="0.35"
            id="rect85" />
         <text
            x="615"
@@ -924,26 +929,27 @@
          x="615"
          y="490"
          text-anchor="middle"
-         style="font-size:10px;fill:#5A6B78"
+         style="font-size:10px;fill:#5a6b78"
          id="text87">× N blocks — no interpolation to a regular time grid</text>
     </g>
     <g
        inkscape:label="c2-box-pooling"
-       id="c2-box-pooling">
+       id="c2-box-pooling"
+       transform="translate(0,9.1347227)">
       <rect
          x="449"
          y="530"
          width="333"
          height="64"
          rx="7"
-         fill="#FFFFFF"
-         stroke="#6B4E9B"
-         stroke-opacity=".3"
+         fill="#ffffff"
+         stroke="#6b4e9b"
+         stroke-opacity="0.3"
          id="rect87" />
       <text
          x="465"
          y="552"
-         style="font-size:13.5px;font-weight:700;fill:#14212B"
+         style="font-weight:700;font-size:13.5px;fill:#14212b"
          id="text88">Learned-query attention pooling</text>
       <text
          x="465"
@@ -1008,10 +1014,10 @@
            id="text94">11 dominant tree species</text>
         <text
            x="536"
-           y="732"
+           y="737.91071"
            text-anchor="middle"
-           style="font-size:10px;fill:#5A6B78"
-           id="text95">+ 3 leaf types</text>
+           style="font-size:10px;fill:#5a6b78"
+           id="text95">Dual loss: DTS + 3 leaf types</text>
         <text
            x="536"
            y="752"
@@ -1047,15 +1053,15 @@
            id="text98">2-layer MLP, GeLU, dropout</text>
         <text
            x="695"
-           y="714"
+           y="717.224"
            text-anchor="middle"
-           style="font-size:10px;fill:#5A6B78"
+           style="font-size:10px;fill:#5a6b78"
            id="text99">EVE · DEC · CON</text>
         <text
            x="695"
-           y="732"
+           y="729.31329"
            text-anchor="middle"
-           style="font-size:10px;fill:#5A6B78"
+           style="font-size:10px;fill:#5a6b78"
            id="text100">cover fractions</text>
         <text
            x="695"
@@ -1069,13 +1075,174 @@
          y="790"
          text-anchor="middle"
          style="font-size:10px;fill:#5A6B78"
-         id="text102">per pixel and year: p(DTS) ∈ ℝ¹¹ and cover fractions ∈ [0,1]³</text>
+         id="text102">per pixel and year: <tspan
+   style="font-weight:bold"
+   id="tspan1">p(DTS) ∈ [0,1]¹¹</tspan> and <tspan
+   style="font-weight:bold"
+   id="tspan2">LTC ∈ [0,1]³</tspan></text>
       <text
          x="615"
          y="808"
          text-anchor="middle"
          style="font-size:10px;fill:#5A6B78"
          id="text103">trained separately for the DTS and the LTC task</text>
+    </g>
+    <g
+       inkscape:label="c2-token-strip"
+       id="g78-6"
+       style="font-family:Arial, Helvetica, sans-serif"
+       transform="translate(-0.69682135,54.282432)">
+      <line
+         x1="464"
+         y1="205"
+         x2="670"
+         y2="205"
+         stroke="#c9d3db"
+         id="line50-7" />
+      <g
+         fill="#6b4e9b"
+         id="g67-5">
+        <circle
+           cx="465"
+           cy="205"
+           r="3.5999999"
+           id="circle50-3" />
+        <circle
+           cx="473"
+           cy="205"
+           r="3.5999999"
+           id="circle51-5" />
+        <circle
+           cx="481"
+           cy="205"
+           r="3.5999999"
+           id="circle52-6" />
+        <circle
+           cx="489"
+           cy="205"
+           r="3.5999999"
+           id="circle53-2" />
+        <circle
+           cx="498"
+           cy="205"
+           r="3.5999999"
+           id="circle54-9" />
+        <circle
+           cx="506"
+           cy="205"
+           r="3.5999999"
+           id="circle55-1" />
+        <circle
+           cx="514"
+           cy="205"
+           r="3.5999999"
+           id="circle56-2" />
+        <circle
+           cx="522"
+           cy="205"
+           r="3.5999999"
+           id="circle57-7" />
+        <circle
+           cx="530"
+           cy="205"
+           r="3.5999999"
+           id="circle58-0" />
+        <circle
+           cx="538"
+           cy="205"
+           r="3.5999999"
+           id="circle59-9" />
+        <circle
+           cx="546"
+           cy="205"
+           r="3.5999999"
+           id="circle60-3" />
+        <circle
+           cx="554"
+           cy="205"
+           r="3.5999999"
+           id="circle61-6" />
+        <circle
+           cx="562"
+           cy="205"
+           r="3.5999999"
+           id="circle62-0" />
+        <circle
+           cx="570"
+           cy="205"
+           r="3.5999999"
+           id="circle63-6" />
+        <circle
+           cx="578"
+           cy="205"
+           r="3.5999999"
+           id="circle64-2" />
+        <circle
+           cx="586"
+           cy="205"
+           r="3.5999999"
+           id="circle65-6" />
+        <circle
+           cx="594"
+           cy="205"
+           r="3.5999999"
+           id="circle66-1" />
+        <circle
+           cx="602"
+           cy="205"
+           r="3.5999999"
+           id="circle67-8" />
+      </g>
+      <g
+         fill="#ffffff"
+         stroke="#b9c4ce"
+         id="g76-7">
+        <circle
+           cx="610"
+           cy="205"
+           r="3.5999999"
+           id="circle68-9" />
+        <circle
+           cx="618"
+           cy="205"
+           r="3.5999999"
+           id="circle69-2" />
+        <circle
+           cx="626"
+           cy="205"
+           r="3.5999999"
+           id="circle70-0" />
+        <circle
+           cx="634"
+           cy="205"
+           r="3.5999999"
+           id="circle71-2" />
+        <circle
+           cx="642"
+           cy="205"
+           r="3.5999999"
+           id="circle72-3" />
+        <circle
+           cx="650"
+           cy="205"
+           r="3.5999999"
+           id="circle73-7" />
+        <circle
+           cx="658"
+           cy="205"
+           r="3.5999999"
+           id="circle74-5" />
+        <circle
+           cx="666"
+           cy="205"
+           r="3.5999999"
+           id="circle75-9" />
+        <circle
+           cx="674"
+           cy="205"
+           r="3.5999999"
+           id="circle76-2" />
+      </g>
     </g>
   </g>
   <!-- ======================= 04 COLUMN 3 : TRAINING ======================== -->
@@ -1129,7 +1296,7 @@
          x="874"
          y="164"
          style="font-size:13.5px;font-weight:700;fill:#14212B"
-         id="text106">Stage 1 · Contrastive pretraining</text>
+         id="text106">Stage 1 · Contrastive + supervised pretraining</text>
       <text
          x="874"
          y="182"
@@ -1282,27 +1449,27 @@
          y="284"
          text-anchor="middle"
          style="font-family:Georgia, serif;font-size:13px;font-weight:700;fill:#14212B"
-         id="text115">L = λ · NT-Xent + CE / MSE</text>
+         id="text115">Loss = λ · NT-Xent + CE / MSE</text>
       <text
          x="874"
          y="306"
          style="font-size:11.5px;fill:#263845"
-         id="text116">positive pair = same plot, two random 3-year windows</text>
+         id="text116">· positive pair = same plot, two random 3-year windows</text>
       <text
          x="874"
          y="322"
          style="font-size:10px;fill:#5A6B78"
-         id="text117">augment: temporal mask ≤ 20 % · noise σ = 0.01 · band mask 10 %</text>
+         id="text117">· augment: temporal mask ≤ 20 % · noise σ = 0.01 · band mask 10 %</text>
       <text
          x="874"
          y="338"
          style="font-size:11.5px;fill:#263845"
-         id="text118">60 epochs · batch 128 · AdamW · cosine LR + 10 % warm-up</text>
+         id="text118">· 60 epochs · AdamW · cosine LR + 10 % warm-up</text>
       <text
          x="874"
          y="354"
          style="font-size:10px;fill:#5A6B78"
-         id="text119">class-weighted CE + √(inverse frequency) sample weights</text>
+         id="text119">· class-weighted CE + √(inverse frequency) sample weights</text>
       <text
          x="874"
          y="376"
@@ -1346,17 +1513,17 @@
          x="874"
          y="474"
          style="font-size:11.5px;fill:#263845"
-         id="text123">embedding layer frozen → contrastive features preserved</text>
+         id="text123">· embedding layer frozen → contrastive features preserved</text>
       <text
          x="874"
          y="490"
          style="font-size:11.5px;fill:#263845"
-         id="text124">task heads retrained at reduced learning rate, 10 epochs</text>
+         id="text124">· task heads retrained at reduced learning rate, 10 epochs</text>
       <text
          x="874"
          y="506"
          style="font-size:11.5px;fill:#263845"
-         id="text125">adapts the model to the full 40-year archive</text>
+         id="text125">· adapts the model to the full 40-year archive</text>
       <text
          x="874"
          y="528"
@@ -1400,12 +1567,12 @@
          x="874"
          y="628"
          style="font-size:10px;fill:#5A6B78"
-         id="text129">additional fine-tuning passes from the Stage-2 checkpoint</text>
+         id="text129">· additional fine-tuning passes from the Stage-2 checkpoint</text>
       <text
          x="874"
          y="646"
          style="font-size:11.5px;fill:#263845"
-         id="text130">prioritises recent, field-validated reference data</text>
+         id="text130">· priority on recent, field-validated reference data</text>
       <text
          x="874"
          y="666"
@@ -1759,7 +1926,7 @@
          x="1283"
          y="576"
          style="font-size:10px;font-style:italic;fill:#5A6B78"
-         id="text160">no temporal smoothing applied — left to the data user</text>
+         id="text160">no temporal smoothing or postprocessing applied</text>
     </g>
     <g
        inkscape:label="c4-box-trajectories"

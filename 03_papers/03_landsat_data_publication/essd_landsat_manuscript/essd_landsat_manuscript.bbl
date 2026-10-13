@@ -1,4 +1,4 @@
-\begin{thebibliography}{70}
+\begin{thebibliography}{79}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -32,8 +32,7 @@ Ball, J.~G., Wicklein, J.~A., Feng, Z., Knezevic, J., Jaffer, S., Madhavapeddy,
   Choler}]{bayle_landsat-based_2024}
 Bayle, A., Gascoin, S., Berner, L.~T., and Choler, P.: Landsat-based greening
   trends in alpine ecosystems are inflated by multidecadal increases in summer
-  observations, Ecography, 2024, e07\,394, \doi{10.1111/ecog.07394}, \_eprint:
-  https://nsojournals.onlinelibrary.wiley.com/doi/pdf/10.1111/ecog.07394, 2024.
+  observations, Ecography, 2024, e07\,394, \doi{10.1111/ecog.07394}, 2024.
 
 \bibitem[{Bell et~al.(2024)Bell, Gregory, and Yang}]{bell_hindcasting_2024}
 Bell, D.~M., Gregory, M.~J., and Yang, Z.: Hindcasting and updating
@@ -54,6 +53,11 @@ Bolyn, C., Lejeune, P., Michez, A., and Latte, N.: Mapping tree species
   proportions from satellite imagery using spectral--spatial deep learning,
   Remote Sensing of Environment, 280, 113\,205,
   \doi{10.1016/j.rse.2022.113205}, 2022.
+
+\bibitem[{Bradley et~al.(2000)Bradley, Bennett, and
+  Demiriz}]{bradley2000constrained}
+Bradley, P.~S., Bennett, K.~P., and Demiriz, A.: Constrained k-means
+  clustering, Microsoft Research, Redmond, 20, 0, 2000.
 
 \bibitem[{Bricca et~al.(2026)Bricca, Zerbe, Sabatini, Hiebl, Rutzinger,
   di~Musciano, Calvia, Chiarucci, Poschlod, Rossi, Alessi, and
@@ -81,7 +85,7 @@ Brown, C.~F., Kazmierski, M.~R., Pasquarella, V.~J., Rucklidge, W.~J.,
 Chastain, R.~A. and Townsend, P.~A.: Use of {Landsat} {ETM} and topographic
   data to characterize evergreen understory communities in {Appalachian}
   deciduous forests, Photogrammetric Engineering \& Remote Sensing, 73,
-  563--575, 2007.
+  563--575, \doi{10.14358/PERS.73.5.563}, 2007.
 
 \bibitem[{Chelli et~al.(2017)Chelli, Wellstein, Campetella, Canullo, Tonin,
   Zerbe, and Gerdol}]{chelli_climate_2017}
@@ -136,6 +140,24 @@ Dwyer, J.~L., Roy, D.~P., Sauer, B., Jenkerson, C.~B., Zhang, H.~K., and
   Lymburner, L.: Analysis {Ready} {Data}: {Enabling} {Analysis} of the
   {Landsat} {Archive}, Remote Sensing, 10, 1363, \doi{10.3390/rs10091363},
   2018.
+
+\bibitem[{{Earth Resources Observation and Science (EROS)
+  Center}(2022{\natexlab{a}})}]{noauthor_usgs_2022}
+{Earth Resources Observation and Science (EROS) Center}: Landsat 8-9
+  Operational Land Imager / Thermal Infrared Sensor Level-2, Collection 2
+  [dataset], \doi{10.5066/P9OGBGM6}, 2022{\natexlab{a}}.
+
+\bibitem[{{Earth Resources Observation and Science (EROS)
+  Center}(2022{\natexlab{b}})}]{noauthor_usgs_2022-1}
+{Earth Resources Observation and Science (EROS) Center}: Landsat 7 Enhanced
+  Thematic Mapper Plus Level-2, Collection 2 [dataset], \doi{10.5066/P9C7I13B},
+  2022{\natexlab{b}}.
+
+\bibitem[{{Earth Resources Observation and Science (EROS)
+  Center}(2022{\natexlab{c}})}]{noauthor_usgs_2022-2}
+{Earth Resources Observation and Science (EROS) Center}: Landsat 4-5 Thematic
+  Mapper Level-2, Collection 2 [dataset], \doi{10.5066/P9IAXOVV},
+  2022{\natexlab{c}}.
 
 \bibitem[{Elmes et~al.(2020)Elmes, Alemohammad, Avery, Caylor, Eastman,
   Fishgold, Friedl, Jain, Kohli, Laso~Bayas, Lunga, McCarty, Pontius, Reinmann,
@@ -210,7 +232,7 @@ Hemmerling, J., Pflugmacher, D., and Hostert, P.: Mapping temperate forest tree
 
 \bibitem[{Hendrycks and Gimpel(2016)}]{hendrycks_gaussian_2016}
 Hendrycks, D. and Gimpel, K.: Gaussian {Error} {Linear} {Units} ({GELUs}),
-  \urlprefix\url{https://arxiv.org/abs/1606.08415v5}, 2016.
+  \doi{10.48550/arXiv.1606.08415}, 2016.
 
 \bibitem[{Hermosilla et~al.(2018)Hermosilla, Wulder, White, Coops, and
   Hobart}]{hermosilla_disturbance-informed_2018}
@@ -237,15 +259,22 @@ Hiebl, B., Alessi, N., Calvia, G., Bricca, A., Bonari, G., Zangari, G., Dorigo,
   Applied Earth Observation and Geoinformation, 142, 104\,734,
   \doi{10.1016/j.jag.2025.104734}, 2025.
 
-\bibitem[{Hiebl et~al.(2026)Hiebl, Alessi, Calvia, Bricca, Bonari, Zangari,
-  Zerbe, and Rutzinger}]{hiebl_combining_2026}
+\bibitem[{Hiebl et~al.(2026{\natexlab{a}})Hiebl, Alessi, Bonari, Calvia,
+  Bricca, Zangari, Zerbe, and Rutzinger}]{hiebl_data_2026}
+Hiebl, B., Alessi, N., Bonari, G., Calvia, G., Bricca, A., Zangari, G., Zerbe,
+  S., and Rutzinger, M.: 39-year annual time series of dominant tree species
+  and leaf type cover for Italy derived from Landsat, University of Innsbruck,
+  \doi{10.48323/4v6da-v5k69}, 2026{\natexlab{a}}.
+
+\bibitem[{Hiebl et~al.(2026{\natexlab{b}})Hiebl, Alessi, Calvia, Bricca,
+  Bonari, Zangari, Zerbe, and Rutzinger}]{hiebl_combining_2026}
 Hiebl, B., Alessi, N., Calvia, G., Bricca, A., Bonari, G., Zangari, G., Zerbe,
   S., and Rutzinger, M.: Combining specialized {Sentinel}-2 time series
   features with {AlphaEarth} {Foundations} for forest type mapping, ISPRS
   Annals of the Photogrammetry, Remote Sensing and Spatial Information
   Sciences, XI-3-2026, 117--124, \doi{10.5194/isprs-annals-XI-3-2026-117-2026},
   conference Name: XXV ISPRS Congress 2026 ``From Imagery to Understanding'',
-  Commission III - 4--11 July 2026, Toronto, Canada, 2026.
+  Commission III - 4--11 July 2026, Toronto, Canada, 2026{\natexlab{b}}.
 
 \bibitem[{Kang et~al.(2021)Kang, Ozdogan, Gao, Anderson, White, Yang, Yang, and
   Erickson}]{kang_data-driven_2021}
@@ -339,6 +368,20 @@ Miettinen, J., Breidenbach, J., Adame, P., Adolt, R., Alberdi, I., Antropov,
   data and national forest inventory plots, Data in Brief, 60, 111\,613,
   \doi{10.1016/j.dib.2025.111613}, 2025.
 
+\bibitem[{Montero et~al.(2023)Montero, Aybar, Mahecha, Martinuzzi, Söchting,
+  and Wieneke}]{montero_standardized_2023}
+Montero, D., Aybar, C., Mahecha, M.~D., Martinuzzi, F., Söchting, M., and
+  Wieneke, S.: A standardized catalogue of spectral indices to advance the use
+  of remote sensing in {Earth} system research, Sci Data, 10, 197,
+  \doi{10.1038/s41597-023-02096-0}, 2023.
+
+\bibitem[{Nicoletti et~al.(2024)Nicoletti, De~Masi, Migliozzi, and
+  Calandrelli}]{nicoletti_analysis_2024}
+Nicoletti, R., De~Masi, L., Migliozzi, A., and Calandrelli, M.~M.: Analysis of
+  {Dieback} in a {Coastal} {Pinewood} in {Campania}, {Southern} {Italy},
+  through {High}-{Resolution} {Remote} {Sensing}, Plants, 13, 182,
+  \doi{10.3390/plants13020182}, 2024.
+
 \bibitem[{Obuchowicz et~al.(2024)Obuchowicz, Poussin, and
   Giuliani}]{obuchowicz_change_2024}
 Obuchowicz, C., Poussin, C., and Giuliani, G.: Change in observed long-term
@@ -394,6 +437,15 @@ Safonova, A., Ghazaryan, G., Stiller, S., Main-Knorn, M., Nendel, C., and Ryo,
   M.: Ten deep learning techniques to address small data problems with remote
   sensing, International Journal of Applied Earth Observation and
   Geoinformation, 125, 103\,569, \doi{10.1016/j.jag.2023.103569}, 2023.
+
+\bibitem[{Seddaiu et~al.(2025)Seddaiu, Ruiu, Piras, Scanu, Satta, Lentini,
+  La~Mela~Veca, Sidoti, Castellaneta, Colangelo
+  et~al.}]{seddaiu2025vulnerability}
+Seddaiu, S., Ruiu, P., Piras, G., Scanu, B., Satta, G., Lentini, A.,
+  La~Mela~Veca, D., Sidoti, A., Castellaneta, M., Colangelo, M., et~al.: The
+  vulnerability of Mediterranean forests to extreme heat and drought events:
+  the case of Holm oak (Quercus ilex L.) dieback in Italy, Forest@, 22, 56--65,
+  \doi{10.3832/efor4934-022}, 2025.
 
 \bibitem[{Shannon et~al.(2024)Shannon, Finley, Hayes, Noralez, Weiskittel,
   Cook, and Babcock}]{shannon_quantifying_2024}
@@ -476,6 +528,21 @@ Verheyen, K., De~Frenne, P., Baeten, L., Waller, D.~M., H{\'e}dl, R., Perring,
 Viana-Soto, A. and Senf, C.: The {European} {Forest} {Disturbance} {Atlas}: a
   forest disturbance monitoring system using the {Landsat} archive, Earth
   System Science Data, 17, 2373--2404, \doi{10.5194/essd-17-2373-2025}, 2025.
+
+\bibitem[{Virtanen et~al.(2020)Virtanen, Gommers, Oliphant, Haberland, Reddy,
+  Cournapeau, Burovski, Peterson, Weckesser, Bright, van~der Walt, Brett,
+  Wilson, Millman, Mayorov, Nelson, Jones, Kern, Larson, Carey, Polat, Feng,
+  Moore, VanderPlas, Laxalde, Perktold, Cimrman, Henriksen, Quintero, Harris,
+  Archibald, Ribeiro, Pedregosa, and van Mulbregt}]{virtanen_scipy_2020}
+Virtanen, P., Gommers, R., Oliphant, T.~E., Haberland, M., Reddy, T.,
+  Cournapeau, D., Burovski, E., Peterson, P., Weckesser, W., Bright, J.,
+  van~der Walt, S.~J., Brett, M., Wilson, J., Millman, K.~J., Mayorov, N.,
+  Nelson, A. R.~J., Jones, E., Kern, R., Larson, E., Carey, C.~J., Polat, I.,
+  Feng, Y., Moore, E.~W., VanderPlas, J., Laxalde, D., Perktold, J., Cimrman,
+  R., Henriksen, I., Quintero, E.~A., Harris, C.~R., Archibald, A.~M., Ribeiro,
+  A.~H., Pedregosa, F., and van Mulbregt, P.: {SciPy} 1.0: fundamental
+  algorithms for scientific computing in {Python}, Nat Methods, 17, 261--272,
+  \doi{10.1038/s41592-019-0686-2}, 2020.
 
 \bibitem[{Wang et~al.(2022)Wang, Zheng, Huang, Meng, Pang, Jia, Zhou, Huang,
   Fang, and Zhao}]{wang_assessing_2022}
