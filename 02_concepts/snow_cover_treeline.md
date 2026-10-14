@@ -13,7 +13,7 @@ tags:
 
 **Sources**: [[charra_2025_snow_treeline]], [[vazques_2023_drought_treeline]], [[klinge_2018_climate_treeline]]
 
-**Last updated**: 2026-07-21
+**Last updated**: 2026-10-14
 
 ---
 
@@ -38,8 +38,9 @@ tags:
 
 ## Critical Notes
 
-- All direct (manipulative) evidence for snow's protective role comes from a single field experiment, one winter, one elevation, one site (source: [[charra_2025_snow_treeline]]) — cumulative effects across successive snow-poor winters are not tested and may matter more than a single-winter manipulation.
+- All direct (manipulative) evidence for snow's protective role comes from a single field experiment, one elevation (1700 m, at or below the usual Tyrolean timberline, so not strictly ecotone), one site (the experiment ran two winters per the note above; the earlier "one winter" wording was inconsistent — check against the source) (source: [[charra_2025_snow_treeline]]) — cumulative effects across successive snow-poor winters are not tested and may matter more than a single-winter manipulation.
 - The seed-bank snow effect (source: [[vazques_2023_drought_treeline]]) is from a single Southern Hemisphere alpine system (*Eucalyptus pauciflora* treeline) with a single tree species — not directly comparable to Northern Hemisphere conifer treelines.
+- *Pinus cembra* was not among the species tested, so these results cannot be transferred to it directly. Winter frost-drought/freeze-thaw embolism is documented in the Alps mainly for *Picea abies* (Mayr et al. 2002; Mayr & Charra-Vaskou 2007), and *too much* snow is also harmful (snow-fungus mortality of *P. cembra* at the treeline, Barbeito et al. 2013) — none of these is yet ingested in 01_notes.
 - Together these sources point to snow loss functioning through more than one distinct mechanism (freeze-thaw/hydraulic damage in established saplings; disrupted cold-stratification in seeds) rather than a single unified "snow stress" pathway — mechanisms should not be conflated when generalising across studies.
 
 ## Related pages

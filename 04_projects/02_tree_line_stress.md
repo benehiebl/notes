@@ -1,202 +1,229 @@
 # Alpine forest tree line under stress
 
+> **Revision note (2026-10-13):** Revised after a critical literature and design check (report: `reports/Alpine treeline project revision.md`; notes: `research_notes/Alpine treeline project revision/`). Main changes: corrected misattributed citations; removed unsupported claims (0.4 m/yr, drought premise, "synergistic" stressors); reframed drought and snow loss as hypotheses; added land-use legacy as competing explanation; rewrote aims as testable; resized remote-sensing methods to pixel-size limits; fixed timeline/funding. Items marked **[verify]** could not be confirmed and must be checked before submission. Verdicts rest mostly on abstracts (publisher full texts were blocked).
+
 ---
 
 ### Motivation
 
-Alpine treeline ecotones — the transition zone between closed subalpine forest and open alpine grassland — are among Earth's most climate-sensitive biome boundaries and constitute early-warning ecosystems for detecting climate change impacts on mountain ecosystems (Körner 2012; Camarero et al. 2025, *Nature Reviews Earth & Environment*). In the Eastern Alps, this boundary is primarily defined by *Pinus cembra* (Swiss stone pine) and *Larix decidua* (European larch), with *Pinus cembra* forming the slow-advancing tree island clusters characteristic of the Tyrolean high-altitude landscape above approximately 1900–2400 m a.s.l.
+Alpine treeline ecotones — the transition between closed subalpine forest and open alpine grassland — are climate-sensitive biome boundaries and are widely used as indicators of climate-change impacts on mountain ecosystems (Körner 2012; Lu et al. 2025, *Nature Reviews Earth & Environment*, global review). In the Eastern Alps the boundary is formed mainly by *Pinus cembra* (Swiss stone pine) and *Larix decidua* (European larch). The elevation of the Tyrolean forest line and treeline is **not yet sourced** here **[verify: take from a Tyrolean forest inventory]**; the uppermost tree-sized *P. cembra* in Eastern Tyrol reach ~2500 m but lag the isotherm shift (Körner 2024, conference abstract only), and these isolated individuals are not the forest line. The project must state which line it means (forestline, timberline, tree species line; Körner & Hoch 2023).
 
-For much of the 20th century, treeline advance was primarily temperature-driven: warming growing seasons expanded the thermal energy budget for tree establishment above former climatic limits. Evidence from tree-ring networks, aerial photography, and satellite time series confirms average upward shifts of ~0.4 m/year in the Alps over the last century (Evidence for 40 Years of Treeline Shift, *Forests* 14(2), 2023), with recent remote sensing work demonstrating systematic forestline advance in Italian mountains using 40-year Landsat time series (Baglioni et al. 2025, *Biogeosciences* 22:4349–4366). However, treeline advance is spatially variable and strongly constrained by local conditions — many treelines have not shifted position despite decades of warming. The classical assumption that treeline is uniformly temperature-limited (Körner 2012) also does not hold everywhere: comparative evidence from Mongolian boreal treelines shows that while the *upper* treeline is thermally limited (mean growing-season temperature minimum ~6 °C), the *lower* treeline boundary of the same forest–steppe system is instead set by mean annual precipitation, with snow cover and humidity acting as distinct secondary controls by forest type (source: [[klinge_2018_climate_treeline]]) — a reminder that "the treeline" can be governed by different limiting factors at its different margins, a distinction this project's SDM work (WP2) should test explicitly rather than assume away.
+**What the Alpine evidence says about treeline change.** Reported upward shifts in the Alps vary widely with site, definition and method: about 1 m/yr (10 m/decade, max. 42 m/decade) in a Central Swiss valley 1972/73–2012 (Frei et al. 2023, *Forests* 14:412), and a mean advance of 32 m (Landsat) to 45 m (orthophoto) over ~38 years in South Tyrol (Menegaldo et al. 2025, *Vegetation Ecology and Diversity* **[verify journal/volume]**). Earlier drafts' "~0.4 m/yr in the Alps over the last century" has **no verified source and was removed**. Treeline advance is spatially variable; globally about half of 166 treelines advanced and 1% receded (Harsch et al. 2009).
 
-Two compounding climate stressors are now challenging the assumption of temperature-driven unimpeded upward expansion:
+**Climate versus land use.** The assumption that 20th-century advance was primarily temperature-driven is overstated for the Alps. In Switzerland, above 1650 m only 10% of new forest was true upward shift and 90% was ingrowth into former pasture; only 4% rose above the potential treeline (Gehrig-Fasel et al. 2007). Tyrolean and Alpine treelines were historically depressed by grazing, burning and logging (Motta et al. 2006; Tasser & Tappeiner 2002), and simulations indicate the current Eastern Alpine ecotone is mainly land-use constrained, with rapid expansion after abandonment regardless of warming (Marzini et al. 2025, *Landscape Ecology* 40:55). Counter-evidence exists: recent larch acceleration in the southern French Alps was attributed to climate rather than land use (Nicoud et al. 2025). Climate, land-use legacy, browsing and avalanches therefore all need to be treated as competing explanations in this project; none can be assumed away. Thermal limitation remains the dominant global control (Körner 2012; Körner & Paulsen 2004).
 
-**1. Summer drought intensification.** The 20th-century redistribution of tree growth limitation from energy- to water-limitation [[babst_2019_redistribution]] now reaches subalpine elevations. *Pinus cembra* growth is drought-limited at rear-edge and low-elevation populations (Lévesque et al. 2014), and radial growth of *Pinus cembra* responds negatively to low summer precipitation and high VPD (Nikolova et al. 2022, *Science of the Total Environment*). Critically, isolated trees in open ecotone positions lack the canopy facilitation buffering that closed subalpine forest stands provide: they are exposed to higher radiation, higher VPD, and lower soil moisture, making them physiologically more vulnerable than trees in closed stands [[topographic_microclimate]]. This is consistent with the broader finding that facilitation drives tree seedling survival at alpine treelines (Camarero et al. 2024, *Journal of Plant Ecology*). The pattern is not unique to *Pinus cembra*: 31-year moving-window dendrochronology at the High Tatras Norway spruce treeline (Slovakia) shows an *emerging*, size-dependent drought sensitivity — the largest trees developed a significant sensitivity to previous-year late-summer drought (SPEI3) that was absent earlier in the 1950–2019 record, even though the site remains generally temperature-limited overall (source: [[maerker_2025_drought_spruce]]). This directly supports WP1's planned juvenile-vs-adult dendrochronological comparison and implies that tree size/age class should be treated as an explicit, time-varying covariate — not just a fixed grouping variable — in the response-function analysis (see WP1 methodological note below).
+**Working hypotheses on additional stress (not established premises).** Two climate exposures might constrain the thermally favoured advance of *P. cembra*:
 
-**2. Winter snow cover reduction.** Climate change is progressively reducing snow cover duration and depth in Alpine winters. A two-winter snow-removal field experiment at the alpine treeline (1700 m a.s.l., Tyrolean Central Alps) found that snow-free soils do not simply freeze solid — they instead cycle through far more freeze–thaw events (53 cycles vs. 0 over one winter) at temperatures fluctuating between −3.6 and 4.2 °C at 10 cm depth (vs. −0.2 to 0.8 °C under snow) — and that this significantly increases spring hydraulic conductivity loss (77.8% vs. 31.3%), living-cell mortality, and summer mortality, and reduces growth, in saplings of five treeline-relevant species (*Acer pseudoplatanus*, *Sorbus aucuparia*, *Juniperus communis*, *Larix decidua*, *Picea abies*) (source: [[charra_2025_snow_treeline]]). Species diverged sharply between **resistance** (avoiding damage — e.g. *Picea abies*, via embolism refilling) and **recovery** strategies (restoring function afterward — e.g. resprouting in *Sorbus* and *Acer*); *Larix decidua* showed high mortality with no apparent recovery mechanism. *Pinus cembra* was not among the species tested, so where it falls on this resistance–recovery spectrum is an open, directly testable question for WP1's microclimate and dendrochronology design. This sapling-stage mechanism should not be conflated with regeneration-stage (seed bank) sensitivity: a factorial snow/fire/drought experiment on alpine and treeline soil seed banks (Kosciuszko National Park, Australia — a *Eucalyptus pauciflora* treeline system, ecologically and taxonomically distinct from *Pinus cembra*) found that simulated snow reduction significantly harmed germination only in the *alpine herbfield* seed bank; the *treeline* seed bank was comparatively robust to snow loss and instead most strongly affected by drought (44% germinant reduction vs. control) (source: [[vazques_2023_drought_treeline]]) — this **corrects** an earlier draft's claim that snow removal drives treeline seed-bank mortality, and instead suggests that at the regeneration stage, drought — not snow-cover loss — may be the dominant seed-bank stressor, with snow loss acting primarily through the sapling-stage hydraulic-damage mechanism identified by Charra-Vaskou et al. above. Both findings are, however, consistent with — and add mechanistic detail to — the broader finding that seasonal snow cover explains treeline elevation better than temperature at regional scale (Grünig et al. 2023, *Science of the Total Environment*).
+**1. Summer drought.** Globally, tree growth limitation has been redistributed from energy to water limitation during the 20th century [[babst_2019_redistribution]] (global dataset; not specific to treelines). For *P. cembra* in the Alps, however, the verified evidence points the other way at the upper treeline: ring width at Patscherkofel is controlled mainly by July temperature, with a post-1980s divergence only tentatively linked to extreme events or drought (Oberhuber 2004); a Tyrolean treeline experiment found no effect of soil warming on *P. cembra* growth, increased growth after nitrogen addition and understory removal, and no soil-water shortage under 33% rain exclusion (Gruber et al. 2018); three years of rain exclusion did not reduce sap flow in *Picea* and *Larix* saplings at the treeline (Wieser et al. 2019). Drought signals in *P. cembra* are documented at the lowest stands of dry inner-Alpine sites (Vittoz et al. 2008; Obojes et al. 2024). The project therefore tests **whether drought has become co-limiting at the upper treeline**; it does not assume it. The earlier citation of Lévesque et al. as evidence for rear-edge *P. cembra* drought limitation was incorrect (the papers concern low-elevation conifers other than *P. cembra*) and was removed. The earlier claim that isolated open-ecotone trees are more drought-stressed than closed-stand trees has **no Alpine support**; understory/neighbour competition can reduce *P. cembra* growth (Gruber et al. 2018), so predictions for open vs. closed positions are two-directional (see O1). The Tibetan facilitation study (Chen et al. 2024, *Abies georgei*) cannot support claims about *P. cembra*.
 
-These two stressors interact synergistically: drought-stressed trees have impaired root systems and reduced non-structural carbohydrate reserves; snow-frost-damaged saplings are more vulnerable to summer desiccation. The combined effect may progressively slow — or in some years reverse — the upward advance of the *Pinus cembra* treeline ecotone, even as warming continues to favour it thermally. Simulation modelling for the Eastern Alps demonstrates irreversible critical transitions in mountain forest composition at just +2°C of mean annual warming [[albrich_2019_climate_change_mountain_forests]], suggesting that the window for treeline expansion may be narrowing faster than warming trends alone would predict.
+**2. Reduced winter snow cover.** A two-winter snow-removal experiment at the alpine treeline (1700 m, Tyrolean Central Alps) found that snow-free soils cycled through 53 freeze–thaw events (vs. 0), with temperatures between −3.6 and 4.2 °C at 10 cm depth (vs. −0.2 to 0.8 °C under snow), increasing spring hydraulic conductivity loss (77.8% vs. 31.3%), living-cell mortality, summer mortality and growth reduction in saplings of five species (*Acer pseudoplatanus*, *Sorbus aucuparia*, *Juniperus communis*, *Larix decidua*, *Picea abies*) (Charra-Vaskou et al. 2026, *New Phytologist* 250:1492; [[charra_2025_snow_treeline]]). Species differed between resistance (e.g. *Picea*) and recovery (resprouting in *Sorbus*, *Acer*); *Larix* showed high mortality without recovery. Caveats: *P. cembra* was **not tested**; 1700 m is at or below the usual Tyrolean timberline, so it is not strictly ecotone; and the mechanism (winter dehydration and freeze-thaw embolism) is documented in the Alps mainly for *Picea abies* (Mayr et al. 2002; Mayr & Charra-Vaskou 2007). Deep, long-lasting snow is not simply protective: snow-fungus mortality of *P. cembra* at the treeline is documented (Barbeito et al. 2013). The Australian seed-bank experiment (a *Eucalyptus pauciflora* treeline, taxonomically and ecologically distinct) found that snow reduction harmed germination only in alpine herbfield seed banks, while the treeline seed bank was mainly affected by drought ([[vazques_2023_drought_treeline]]; **[verify year/volume]**); it is an analogue, not Alpine evidence. The earlier statement that Grünig et al. 2023 shows snow cover explaining treeline better than temperature was **a misattribution**: that title belongs to a study of ~11,800 eastern Himalayan treeline locations (Huang et al. 2023, *Forest Ecosystems* 10:100106) and can only be cited as a Himalayan finding.
 
-**A further open mechanistic question.** Why treeline growth ultimately arrests is itself debated. The classical carbon-limitation hypothesis (insufficient photosynthate for growth) is increasingly challenged by observations that photosynthesis and non-structural carbohydrate reserves often remain adequate at treeline even as meristem growth declines sharply — motivating a competing hypothesis that chronic cold suppresses growth through hormonal/regulatory signalling (cold-induced gibberellin suppression and DELLA growth-repressor stabilisation via the CBF pathway) rather than carbon supply (source: [[dietrich_2026_treeline_della]]). This is a conceptual synthesis with essentially no direct evidence yet in treeline-forming conifers — WP1's planned combination of SIF/gas-exchange (photosynthetic capacity) with ring-width growth data is well positioned to contribute empirical evidence to this debate in *Pinus cembra*, though this was not an original project aim and would require targeted meristem-level sampling beyond the current WP1 design to test the hormonal mechanism directly rather than just detect the carbon-growth mismatch.
+**Interaction of the two exposures.** An interaction (earlier text: "synergistic") is **untested** for *P. cembra*. The only indirect support is sequential carry-over in saplings, where spring hydraulic damage correlated with summer mortality (Charra-Vaskou et al. 2026). The project treats the exposures as potentially sequential and tests for interaction explicitly; it does not assume it. Claims that the window for expansion is "narrowing faster than warming alone" are not supported: Albrich et al. (2020, *Global Change Biology* 26:4013) simulate one Eastern Alpine mountain forest landscape and find a tipping point above ~+2 °C from conifer-dominated to smaller, broadleaf-dominated forest (buffered by topographic complexity) — a statement on montane/subalpine composition, not on treeline position [[albrich_2019_climate_change_mountain_forests]].
 
-This project proposes the first integrated monitoring and modelling framework for the dual-stressor regime at the *Pinus cembra* treeline in Tyrol, combining drone-based solar-induced fluorescence (SIF), dendrochronology of juvenile trees, phenological webcam monitoring, and multi-resolution satellite time series (Planet, Sentinel-2, Landsat) to quantify physiological stress at individual tree and stand level, and to model the long-term trajectory of the treeline ecotone under CMIP6 climate projections.
+**Why growth stops at the treeline.** Carbon limitation has been tested directly in *P. cembra* and **not supported**: mobile carbon pools increase with altitude at the Swiss treeline (Hoch et al. 2002), and non-structural carbohydrates were not depleted across 13 treeline regions (Hoch & Körner 2012). The hormonal/DELLA-signalling alternative (Dietrich & Zeidler 2026, *New Phytologist* 251:2337, viewpoint; [[dietrich_2026_treeline_della]]) remains untested in conifers. Testing it needs meristem-level work beyond this project and is **not an aim** here; SIF/ring-width data could at most show a photosynthesis–growth mismatch. An NSC effect after drought is untested rather than refuted.
+
+**Project idea.** This project proposes an integrated monitoring and modelling study at the *P. cembra* treeline in Tyrol that combines drone-based physiological indices, dendrochronology, phenological webcams, soil microclimate loggers, a recruitment census, and satellite/orthophoto archives, to test whether drought and winter snow deficit act as additional constraints on the thermally permitted advance, in a landscape where land-use legacy is a major competing driver. Novelty: to our knowledge no study has combined these data streams along a canopy-position gradient at the Tyrolean *P. cembra* treeline **[verify with a documented Scopus/Web of Science search; the Innsbruck Patscherkofel group (Oberhuber, Gruber, Wieser, Mayr) has long-running integrated treeline work and must be cited and ideally involved]**. The earlier "first" claims were removed.
 
 ---
 
 ### Zielsetzung
 
-**O1:** Quantify photosynthetic stress responses of *Pinus cembra* to summer drought and spring frost across the open-ecotone–closed-forest gradient using drone-based SIF, ground gas exchange, and juvenile dendrochronology; test whether canopy facilitation buffers drought stress in closed-forest positions.
+Hypotheses are stated with nulls; event years are chosen a priori from site SPEI-3/soil-moisture thresholds (e.g. SPEI-3 < −1), not named in advance.
 
-**O2:** Characterise the role of winter snow cover deficit and soil frost as constraints on *Pinus cembra* seedling recruitment and ecotone advance at Tyrolean study sites, combining in situ sensor monitoring, phenological webcam imagery, and GLORIA plot reference data.
+**O1 – Physiological drought response across the canopy-position gradient.** Test whether *P. cembra* at the Tyrolean treeline shows stronger drought responses (predawn leaf water potential, gas exchange, UAV-derived stress indices, ring width) in open than in closed positions, after controlling for elevation, aspect, canopy structure and soil, across at least six paired sites (or, if replication is not feasible, an explicitly labelled case-study design without inference beyond the sites).
+- H1a: drought sensitivity is higher in open positions (competition-free but exposed); H1b: higher in closed positions (root competition); H0: no difference. Spring-frost damage is assessed only if shoot/needle frost-damage scoring is added.
 
-**O3:** Map and model the 40-year trajectory of the *Pinus cembra* treeline ecotone in the Tyrolean Alps using multi-resolution satellite time series, individual tree crown segmentation via deep learning, and species distribution modelling under CMIP6 scenarios.
+**O2 – Microsite conditions and recruitment.** Quantify snow-cover duration, soil freeze–thaw frequency and soil moisture in relation to *P. cembra* seedling/sapling presence, survival and growth in permanent census plots across the ecotone (requires the recruitment module in WP1; otherwise drop the word "recruitment").
+- H2: seedling/sapling survival is lower at microsites with more freeze–thaw cycles and shorter snow cover (and may also be lower under very long snow cover because of snow fungi).
+
+**O3 – Historical treeline change and climatic suitability.** Reconstruct 1984–present change of the upper forest line in Tyrol from Landsat greening/densification trends and aerial orthophoto archives, test their association with climate indices and land-use/browsing covariates, and then (secondary) project climatic suitability under CMIP6 scenarios to 2050.
+- H3: forest-line change is explained better by land-use legacy than by climate indices alone.
 
 ---
 
 ### Work packages
 
-#### WP1 — Photosynthetic stress monitoring across the treeline ecotone gradient (Year 1–3)
+#### WP1 — Physiological monitoring and recruitment across the ecotone gradient (Year 1–3)
 
-**Objective:** Quantify intra-seasonal and inter-annual variation in photosynthetic activity and physiological stress of *Pinus cembra* across the open ecotone–closed forest gradient, and relate SIF and ring-width anomalies to climatic drivers.
+**Objective:** Quantify intra-seasonal and inter-annual variation in physiological stress indicators of *P. cembra* across the open ecotone–closed forest gradient, relate them and ring-width anomalies to climate, and quantify recruitment microsites.
+
+**Design:** at least six paired open/closed sites spread over at least two valleys/aspects (replace the earlier 3 transects, where canopy position, elevation and aspect were confounded and site-level n = 1). Elevation and aspect are matched within pairs. Exact treeline elevation to be sourced **[verify]**.
 
 **Methods:**
 
-*Drone-based SIF and hyperspectral imaging*
-- Monthly UAV flights (April–October) over 3 permanent study transects in the Tyrolean Alps: (a) open ecotone with isolated tree islands, (b) ecotone–forest transition, (c) closed subalpine forest at ~1800 m a.s.l.
-- Hyperspectral UAV payload capturing the Fraunhofer oxygen absorption bands (O2-A at 760 nm, O2-B at 687 nm) for SIF retrieval; PRI (531/570 nm) as a complementary xanthophyll-cycle proxy for photosynthetic efficiency; campaigns timed to capture spring snowmelt, peak growing season, drought peak (August), and post-drought recovery
-- Ground validation: simultaneous manual SIF spot measurements at flagged sample trees; LI-COR leaf gas exchange (A/Ci curves, stomatal conductance); pre-dawn leaf water potential with pressure bomb during drought events; leaf chlorophyll content (SPAD)
-- Note: UAV-SIF has been demonstrated at boreal sites (Springer chapter 2024) but remains methodologically demanding; PRI will serve as primary proxy if SIF signal-to-noise is insufficient in initial campaigns
+*Drone remote sensing*
+- Multispectral/red-edge and thermal UAV imagery as primary stress indicators; 3–5 successful campaigns per year, scheduled from snow-free conditions (April–May flights typically see snow, not trees). Time campaigns to peak growing season and, where occurring, SPEI-defined dry periods.
+- SIF only as a pilot or via a fixed-point field spectrometer: retrieval needs sub-nm spectral resolution (expert judgement, 0.3–1 nm FWHM), sensor etaloning and platform motion are known problems (Bendig et al. 2020), and no UAV-SIF study on small conifers or in mountain terrain was found. Instrument must be named in the proposal. PRI is not a safe fallback in evergreen conifers (Gamon & Bond 2013). SIF depends on canopy structure, so crown structure (LAI, shadow, background) must be normalised before comparing sparse and closed canopies.
+- Ground truth: predawn leaf water potential (pressure bomb), leaf gas exchange, chlorophyll (SPAD).
+- Permits: drone registration and insurance, Tiroler Naturschutzgesetz, landowner and Natura 2000 consent, wildlife disturbance; alpine two-person safety protocols **[verify protected-area drone rules]**.
 
-*Dendrochronology of juvenile *Pinus cembra**
-- Non-destructive increment core sampling of adult trees (DBH > 15 cm; target 50 per transect) and cross-section sampling of juvenile sacrificial trees (DBH < 10 cm, naturally fallen or thinned; target 30 per transect)
-- Ring widths measured to 0.01 mm precision, crossdated using COFECHA; standardisation via negative exponential or cubic spline (ARSTAN); pointer year analysis to identify negative (stress) years in the 20th–21st century record
-- Response function analysis against gridded climate data (CHELSA, ERA5): temperature, precipitation, SPEI, snow depth, VPD — to isolate drought and frost signal years; run as 31-year moving-window correlations, not only a single whole-period correlation, since climate-growth sensitivity can be *non-stationary* and drought sensitivity can emerge only in recent decades even when a static correlation shows no size-ranked pattern (source: [[maerker_2025_drought_spruce]])
-- Age-dependent sensitivity comparison between juvenile and adult trees (following Koch et al. 2025 [[01_notes/koch_2025_intraspecies_variation_s2]] for intraspecific variation context); consider the size-class-isolation (SCI) method — building chronologies with constant stem diameter over time rather than splitting by final DBH — to decouple tree size from age when comparing climate sensitivity across size classes (source: [[maerker_2025_drought_spruce]]); note the High Tatras spruce study needed ≥10 trees per size-class-year (with >500 recommended for robustness) — WP1's target sample sizes (50 adult, 30 juvenile per transect) should be checked against this benchmark before committing to fine size-class splits
+*Dendrochronology*
+- Non-destructive increment cores from adult trees (DBH > 15 cm; target 50 per site group) and from larger saplings; sacrificial juvenile sampling only where trees are naturally fallen or thinned and permits allow (such material is rare). Juvenile series (20–40 years, narrow rings, possible false/missing rings) are too short for COFECHA crossdating and century-scale pointer-year analysis; use them only for climate sensitivity over their short span, and consider wood anatomy (Lopez-Saez et al. 2023).
+- Response functions against gridded climate: use observation-based Austrian data (SPARTACUS: Hiebl & Frei 2016; SNOWGRID: Olefs et al. 2020) and ERA5-Land rather than 1 km CHELSA alone, plus SPEI and VPD. Age/size-dependent sensitivity is documented in *P. cembra* and larch (Carrer & Urbinati 2004); use 31-year moving-window correlations because sensitivity can be non-stationary (Märker et al. 2025, *Trees* 39:7, [[maerker_2025_drought_spruce]]; **[verify DOI]**) and the size-class-isolation method; that study needed ≥10 trees per size-class-year (>500 recommended), so check sample sizes before fine size-class splits. Chronology quality: EPS ≥ 0.85 (Wigley et al. 1984); adults against ITRDB/regional chronologies.
+- Drought years: documented Alpine events are 2003, 2015, 2018 and 2022 (Schuldt et al. 2020). 2017 and 2019, named earlier, have no verified support and were removed. Retrospective ring analysis can cover these years only for trees old enough.
+
+*Recruitment module (new; needed for O2)*
+- Permanent belt transects or 2 × 2 m plots at each site; annual census of *P. cembra* seedlings/saplings (position, height, damage, survival); microsite classification. Note *P. cembra* is dispersed almost exclusively by spotted nutcrackers, so recruitment is patchy and cache sites may not match establishment microsites; seed-source distance is recorded.
 
 *Webcam / phenocam monitoring*
-- Year-round camera installations at each transect (near-infrared-capable, 15-min intervals); automated GCC (green chromatic coordinate) time series computation for phenological tracking (budburst, senescence)
-- Snow depth estimation from image-based calibration with physical gauges; snow cover presence/absence day-of-year extraction
-- Time-lapse analysis of browning events coinciding with drought/frost episodes
+- Year-round cameras per site area; GCC time series for phenology; snow cover presence/absence and melt-out day (Portenier et al. 2020; Filippa et al. 2016); snow depth only with calibrated markers.
 
-*Microclimate instrumentation*
-- Continuous temperature, soil moisture, and soil frost sensors at 3 cm and 10 cm depth in open vs. closed-canopy positions at each transect
-- VPD loggers (coupled T/RH sensors); soil temperature dataloggers recording freeze–thaw cycle frequency, duration, and intensity — not just binary frozen/unfrozen state, since freeze-thaw *cycling* (rather than sustained freezing) is the more physiologically damaging exposure at snow-free treeline sites (source: [[charra_2025_snow_treeline]])
-- Link sensor records to webcam snow cover data and drone SIF campaign dates
-- Cross-check point-sensor freeze/thaw records against satellite L-band passive microwave freeze/thaw retrievals (SMAP, 9 km) to place the 3 transect sites within the broader regional freeze/thaw regime and growing-season length, following the metric framework of [[melser_2024_freeze_constraints]]; SMAP's finer resolution resolves topographically complex terrain better than SMOS (25 km) and is therefore the preferred product for Alpine deployment — though at 9 km it can only provide regional context, not site-level validation, given the sub-km scale of the transects
+*Microclimate*
+- Temperature, soil moisture and soil frost loggers at 5–10 cm in open and closed positions; coupled T/RH sensors for VPD; freeze–thaw cycle frequency, duration and intensity (rather than frozen/unfrozen state), following [[charra_2025_snow_treeline]].
+- Satellite freeze/thaw (SMAP, 9 km; [[melser_2024_freeze_constraints]]) is regional context only and **cannot validate** site-scale loggers; no Alpine SMAP validation was found.
 
 **Key uncertainties and mitigation:**
-- SIF retrieval from UAV is sensitive to viewing geometry and atmospheric conditions → standardise flight conditions (10:00–14:00, clear sky); compute SIF from both O2-A and O2-B bands as cross-check
-- Juvenile tree ring series are short and may lack pointer-year replication → pool juvenile chronologies per transect to increase signal; validate against established adult chronologies from the International Tree Ring Data Bank (ITRDB)
+- A drought event may not occur in three seasons → design must work in a normal year; frame as monitoring baseline plus event-based analysis if an event occurs.
+- SIF may fail → multispectral/thermal indices are primary.
+- Juvenile series lack replication → use juveniles only for short-span sensitivity; do not run pointer-year analysis on them.
+- Confounding of position with site → paired design and mixed models (site as random effect).
 
-**Expected outputs:**
-- SIF and PRI time series across ecotone gradient for ≥3 growing seasons (novel dataset for Alps)
-- Adult and juvenile *Pinus cembra* ring-width chronologies per transect
-- Continuous microclimate and soil frost records; phenocam time series
-- Quantified drought stress differential between open and closed-forest positions
+**Expected outputs:** physiological index time series (≥3 seasons); adult (and where possible juvenile) chronologies; microclimate/soil-frost records; recruitment census; quantified open vs. closed differential with uncertainty.
 
 ---
 
-#### WP2 — Individual tree mapping and treeline ecotone shift detection from satellite time series (Year 1–3)
+#### WP2 — Treeline change from satellite and archive time series; projections (Year 1–3)
 
-**Objective:** Quantify decadal treeline ecotone dynamics in the Tyrolean Alps using multi-resolution satellite time series and individual tree crown segmentation; project future trajectories under CMIP6 scenarios.
+**Objective:** Quantify decadal forest-line dynamics in Tyrol with archives matched to their resolution limits, and assess climatic suitability under CMIP6.
 
 **Methods:**
 
-*40-year historical treeline mapping with Landsat*
-- Annual seasonal composites (summer, June–September) from Landsat 5/7/8/9 archive (1984–2025) over the Tyrolean Alps; spectral indices: NDVI, NBR, TCW (Tasseled Cap Wetness) as proxy for canopy water content
-- Contextual Mann-Kendall trend test for monotonicity of spectral time series in the elevation band 1700–2300 m a.s.l. (following Baglioni et al. 2025 methodology for Italian mountains)
-- Forest line position extraction from annual composites: upper forest boundary delineation using automated threshold approach; inter-annual tracking of treeline elevation
-- GLORIA summit plots in Tyrol as ground reference for validation (surveyed every 5–10 years; species cover and tree density from GLORIA Austria network)
-- Methodological upgrade to consider over a purely threshold/Mann-Kendall pipeline: a Swiss Alps treeline study trained a U-Net + temporal-GRU segmentation model with a **domain-knowledge loss** (encoding the prior that forest boundaries change slowly except under abrupt disturbance) that substantially improved boundary accuracy (F1c 66.7%→80.9%) on a heterogeneous, multi-decadal (1946–2020) aerial-photo archive using segmentation labels from only a single year (source: [[nguyen_2024_treeline_monitoring]]) — directly transferable in spirit to this WP's 40-year Landsat archive, though the loss term and network would need redesigning for Landsat's coarser (30 m), spectrally different input; their companion rule-informed CNN, which explicitly predicts tree height + canopy density and applies the forest-definition rule mechanistically rather than learning a black-box mapping (source: [[nguyen_2022_forest_mapping_explainable]]), is also relevant for making the automated threshold-based forest-line delineation step interpretable — the same study shows that different forest definitions (height/density thresholds) can produce substantially different treeline boundary locations, a real risk for this WP's single-threshold approach
+*Historical forest-line change*
+- Landsat (1984–last full year at analysis time) cannot measure line displacement: at 0.2–0.5 m/yr, 40 years gives 8–20 m, less than one 30 m pixel; even at 1–1.6 m/yr (44–64 m) the shift is near the detection limit given ~10–15 m geolocation error and mixed pixels. Use Landsat for greening/densification trends near a mapped forest line (contextual Mann-Kendall, following Baglioni et al. 2025, *Biogeosciences* 22:4349, which detected trend hotspots, **did not measure displacement in m/yr**, used the 10 m Copernicus tree-cover layer as forestline and had no independent accuracy assessment). Landsat 7 SLC-off handling, topographic correction and snow masking must be specified; cloud/shadow masking [[01_notes/li_2022_cloud_detection]]. Spectral indices NDVI/NBR/TCW mostly capture greening.
+- Measure displacement with historical aerial orthophotos (1950s onward) and deep learning (Nguyen et al. 2022; rule-informed CNN: [[nguyen_2022_forest_mapping_explainable]]; temporal/knowledge-guided approach: [[nguyen_2024_treeline_monitoring]] **[verify: no peer-reviewed 2024 follow-up found; only a 2023 EGU abstract]**). Forest definitions (height/density thresholds) change boundary location substantially, so the definition is fixed and a sensitivity analysis run. Multi-scale, multi-sensor design follows Garbarino et al. (2023). Tyrol-adjacent precedent: Menegaldo et al. (2025).
+- Add land-use, grazing and browsing layers as covariates (O3/H3).
+- GLORIA does **not** record tree density (1 m² vascular-plant cover on summits) and cannot validate tree data; Austrian resurvey intervals are unconfirmed. Use it as regional context only; validate with the Austrian Forest Inventory, Tyrolean orthophotos or own plots.
 
-*Sentinel-2 SITS anomaly detection*
-- Dense Sentinel-2 time series (2017–2025) at pixel level; Whittaker-smoothed seasonal phenology curves as baseline; anomaly magnitude relative to baseline per pixel (methodology from sattstools [[01_notes/sattstools]])
-- Detection of acute stress events in known drought years (2017, 2019, 2022) for open ecotone vs. closed forest pixel classes; anomaly maps linked to WP1 SIF campaign results
-- Classification of ecotone pixels into open / transitional / closed-forest using canopy cover maps derived from Planet imagery
+*Sentinel-2 anomaly detection*
+- At 10 m, treeline tree islands are mixed pixels dominated by grass, rock and snow. Restrict to pixels with ≥50% tree cover (suggested threshold, not literature-derived), use red-edge indices with a modelled seasonal baseline (Whittaker; [[01_notes/sattstools]]), and treat impacts of 2018 and 2022 (Sentinel-2 period) as hypotheses. No verified Austrian subalpine Sentinel-2 drought-anomaly paper exists.
 
-*High-resolution individual tree crown segmentation*
-- Planet SuperDove (3 m, monthly) time series over study transects; SAM (Segment Anything Model) adapted for tree crown delineation using drone-derived CHM (Canopy Height Model) as elevation prior (following "Bringing SAM to New Heights", arxiv 2025, DOI:10.48550/arXiv.2506.04970)
-- Alternatively: VHR aerial or drone orthomosaics (0.1–0.5 m) at biennial intervals for precise crown area and per-crown NDVI/SIF time series
-- Per-tree tracking of crown area change (expansion = healthy establishment; shrinkage/gap = mortality or dieback) across 3-year observation window
-- Species classification at treeline ecotone following Identifying Alpine Treeline Species with WorldView-3 + CNNs (EGUsphere preprint 2025)
-- Very-high-resolution aerial imagery deep learning approach for fine-scale ecotone pattern characterisation (Biogeosciences 2025, DOI:10.5194/bg-22-6393-2025)
+*Crown-level mapping*
+- Planet SuperDove (3 m) cannot resolve juvenile crowns <1 m; the earlier "≥0.5 m" mitigation contradicted itself. Even 5 cm UAV imagery detected only 52% of trees up to 130 cm at Italian Alpine treelines (Carrieri et al. 2025, *Biogeosciences* 22:6393; F1 0.76, 0.68 under spatial cross-validation). Use drone orthomosaics at ≤5 cm for crown work; Planet only as stand-level context. Species mapping with WorldView-3 reached 44–47% accuracy for multi-class problems in the Rocky Mountains (Sindewald et al. 2025; not Alpine). SAM (Teng et al. 2025) is not a treeline paper and does not beat a trained Mask R-CNN off the shelf.
 
-*SDM and future projections*
-- MaxEnt / BIOMOD2 ensemble SDMs for *Pinus cembra* regeneration suitability under current conditions; predictors: summer temperature, SPEI, VPD, winter snow water equivalent (SWE), topographic microclimate indices (DNI, TWI, RSP)
-- Project under CMIP6 SSP2-4.5 and SSP5-8.5 scenarios (2050, 2100); explicitly separate the warming effect (expanding suitable zone) from drought/snow deficit effect (contracting regeneration potential)
-- Include snow water equivalent (SWE) projections from EURO-CORDEX as an explicit predictor, since snow cover explains treeline better than temperature alone
-- Given regional evidence that lower treeline boundaries can be primarily moisture- rather than temperature-limited while upper treeline remains thermally limited (source: [[klinge_2018_climate_treeline]]), fit and compare separate limiting-factor models for the upper vs. lower margin of the Tyrolean ecotone rather than assuming one (thermal) limiting factor throughout
-- Layer SHAP-based explainability on the ensemble SDM output (beyond standard variable-importance rankings) to extract non-linear climate response thresholds, and resolve projections by aspect (north- vs. south-facing slopes) in addition to elevation band: a *Larix chinensis* treeline SDM found consistent, scenario-robust aspect asymmetry (habitat gains on south slopes, losses on north slopes under all CMIP6 SSPs) driven by differential solar radiation, growing-season length, and snow persistence (source: [[li_2026_climate_treeline]]); their bootstrapped-CI method for classifying habitat-suitability trajectories as stable-increasing/stable-decreasing/unstable is a more defensible treeline-shift detection approach than a single deterministic suitability threshold — though their own paper cautions that HSI change is only a *proxy* for treeline migration, which is exactly the gap this WP's independent satellite-based historical treeline tracking (above) is positioned to close by validating projected against observed shift
-- Connect to broader Eastern Alps forest transition simulations [[albrich_2019_climate_change_mountain_forests]] and European species vulnerability ranking [[01_notes/dyderski_2025_species_shift]]
+*Suitability modelling and projections*
+- Correlative SDM (MaxEnt/BIOMOD2 ensemble) of climatic suitability, **not** realised treeline position: habitat suitability is a proxy for potential, not realised, treeline (Elith et al. 2010; Li et al. 2026, *J Environ Manage* 411:130173, **[verify]**), and land-use legacy and dispersal limitation violate the equilibrium assumption (Dullinger et al. 2004). Presence data source must be named (Austrian Forest Inventory/Tyrolean inventory); the transects supply none.
+- Predictors: observation-based snow (SNOWGRID, SPARTACUS) rather than 1 km CHELSA (Karger et al. 2017) alone, microclimate-aware terms because topography creates 1–2 K local variation (Scherrer & Körner 2011; Randin et al. 2009), seed-source distance and land-use legacy; EURO-CORDEX snow with its evaluation (Frei et al. 2018).
+- Scenarios SSP2-4.5 and SSP5-8.5, **to 2050 only**; report extrapolation with the area of applicability (Meyer & Pebesma 2021); SHAP explainability and aspect-resolved projections optional (cf. Li et al. 2026 on *Larix chinensis*). Separate lower/upper margin models only if lower-margin data exist (the Mongolian forest–steppe example, Klinge et al. 2018 [[klinge_2018_climate_treeline]], is non-Alpine and not re-verified).
+- Context: [[albrich_2019_climate_change_mountain_forests]] and [[01_notes/dyderski_2025_species_shift]] concern forest composition, not treeline position.
 
 **Key uncertainties and mitigation:**
-- Planet 3 m resolution may not reliably delineate individual *Pinus cembra* crowns < 1 m diameter → focus crown analysis on juvenile trees ≥ 0.5 m; use CHM from drone to filter detections by height class
-- Mann-Kendall treeline analysis sensitive to cloud contamination in Alpine terrain → mask with cloud/shadow algorithm [[01_notes/li_2022_cloud_detection]]; use seasonal composites not single scenes
+- Landsat pixel size → reframe as trend detection; displacement from orthophotos.
+- Forest-line circularity (Copernicus layer as reference) → independent validation data.
+- Cloud/snow/shadow contamination → masking, seasonal composites.
 
-**Expected outputs:**
-- 40-year annual treeline position map for the Tyrolean Alps (published open-access)
-- Sentinel-2 anomaly maps for drought/frost events 2017–2025; open vs. closed-forest stress differential quantified
-- Individual tree crown segmentation dataset (Planet + drone) for study transects across 3 years
-- SDM projections for *Pinus cembra* ecotone under SSP2-4.5 and SSP5-8.5 to 2100
+**Expected outputs:** forest-line change maps from archives (open access); trend maps; Sentinel-2 anomaly maps for SPEI-selected events; drone crown dataset for sites; suitability projections to 2050 with uncertainty.
 
 ---
 
 ### Outcome
 
-**Scientific publications (planned):**
+**Scientific publications (planned; consolidated, relative to project start):**
 
 | Paper | Focus | Target journal |
 |-------|-------|---------------|
-| Paper 1 (Y2) | Drone-based SIF and PRI stress dynamics across the *Pinus cembra* open–closed ecotone gradient | *Agricultural and Forest Meteorology* / *Remote Sensing of Environment* |
-| Paper 2 (Y2–3) | Juvenile *Pinus cembra* dendrochronology — drought-frost signal and open vs. closed position differential | *Dendrochronologia* / *Global Change Biology* |
-| Paper 3 (Y2–3) | 40-year Landsat-based treeline ecotone dynamics in the Tyrolean Alps — satellite evidence for stagnation under drought | *Biogeosciences* / *Remote Sensing of Environment* |
-| Paper 4 (Y3) | Individual crown tracking and stress monitoring at the Alpine treeline with Planet SuperDove and deep learning | *Remote Sensing* |
-| Paper 5 (Y3) | Future *Pinus cembra* treeline trajectory in the Eastern Alps under CMIP6: dual-stressor SDM integrating drought and snow deficit | *Global Change Biology* / *Nature Climate Change* |
+| Paper 1 (Y2–3) | Physiological stress indicators and ring-width responses of *P. cembra* across the open–closed ecotone gradient | *Agricultural and Forest Meteorology* / *Tree Physiology* |
+| Paper 2 (Y2–3) | Forty years of treeline ecotone change in the Tyrolean Alps from Landsat and orthophotos: patterns and climatic and land-use correlates | *Biogeosciences* / *Remote Sensing of Environment* |
+| Paper 3 (Y3) | Climate- and snow-driven scenarios of *P. cembra* treeline suitability in the Eastern Alps | *Global Change Biology* |
+| Paper 4 (optional/data) | Data/methods paper: microclimate, recruitment and crown datasets | *Earth System Science Data* / *Remote Sensing* |
 
-**Data outputs:**
-- Annual Tyrolean treeline position maps 1984–2025 (Landsat-based, open-access)
-- Drone SIF/PRI dataset for the Alpine *Pinus cembra* treeline (first for the Eastern Alps)
-- Juvenile *Pinus cembra* dendrochronology dataset for Tyrolean ecotone sites
-- Individual tree crown segmentation and per-crown spectral time series (Planet + drone)
-- Continuous microclimate and soil frost sensor records for 3 sites
+(Earlier plan of five papers in three years and titles presupposing "stagnation under drought" were removed.)
 
-**Policy and stakeholder relevance:**
-- Direct input for Austrian forest management adaptation strategies (Bundesforste, Land Tirol)
-- Reference contribution to the GLORIA monitoring network through RS integration
-- Data for Natura 2000 habitat reporting (*Pinus cembra* forests, EU Habitats Directive Annex I: 9420)
-- Methodological framework transferable to treeline monitoring across the entire European Alps
+**Data outputs:** forest-line change maps (open access); drone and microclimate datasets; ring-width chronologies; recruitment census.
+
+**Policy and stakeholder relevance (to be confirmed):**
+- Contributes structure/function and pressure information relevant to Natura 2000 habitat 9420 (Alpine *Larix decidua* and/or *Pinus cembra* forests, Annex I, non-priority; a forest type, not the whole ecotone). A small-site study cannot feed Article 17 reporting, which operates at national/biogeographic level.
+- Possible users: Land Tirol, forest owners (ÖBf, Agrargemeinschaften), GLORIA coordinators (as regional context). **No data agreements or support letters exist yet; roles unverified.**
 
 ---
 
 ### Zeitrahmen
 
-| Phase | Year 1 (2026–2027) | Year 2 (2027–2028) | Year 3 (2028–2029) |
-|-------|-------------------|-------------------|-------------------|
-| **Field setup** | Site selection and characterisation; webcam/sensor/logger installation; first dendro sampling (adults); Landsat historical analysis | Full monitoring: monthly drone SIF campaigns, continuous sensors; juvenile dendro sampling; Sentinel-2 anomaly detection | Repeat drone SIF and dendro coring; sensor data consolidation; final GLORIA reference survey |
-| **RS analysis** | Landsat trend analysis (1984–2025); Planet crown segmentation baseline; Sentinel-2 preprocessing | Sentinel-2 stress event detection; Planet crown area time series; VHR aerial campaign | SDM projections; synthesis of multi-scale RS findings |
-| **Outputs** | Study site characterisation publication; first SIF campaign results; Landsat treeline position map | Paper 1 (SIF); Paper 3 (Landsat); crown segmentation dataset | Paper 2 (dendro); Paper 4 (crown tracking); Paper 5 (SDM synthesis) |
+Today is 2026-10-13; the original "Year 1 = 2026–2027" is under way without funding. Years are relative to project start (earliest realistic 2027, depending on funding).
 
-**Total duration:** 3 years (2026–2029)
-**Target funding:** FWF (Austrian Science Fund) — Stand-Alone or 1000Ideas call; EU Horizon Europe (Forest4Climate; BiodivClima); BMBWF (OeAD bilateral Alps cooperation)
+| Phase | Year 1 | Year 2 | Year 3 |
+|-------|--------|--------|--------|
+| **Field setup** | Site selection and replication design; permits; loggers/cameras; adult coring; recruitment plots established | Full monitoring; drone campaigns; census | Repeat campaigns and census; final sampling |
+| **RS analysis** | Archive acquisition; orthophoto and Landsat analysis | Sentinel-2 anomaly detection; crown mapping | Suitability projections; synthesis |
+| **Outputs** | Site characterisation; forest-line data | Paper 2 | Papers 1, 3 (and 4) |
+
+**Funding:** FWF 1000 Ideas (~€50–175k, 6–24 months, no doctoral positions) cannot fund this design **[confirm on call text]**; the realistic fit is FWF Stand-Alone Project **[verify terms]**. "Forest4Climate" and an "OeAD bilateral Alps cooperation" scheme could not be found **[verify or delete]**; "BiodivClima" is probably the closed BiodivClim call (2019–2024) **[check current Biodiversa+ calls]**. Euregio Science Fund and Interreg Alpine Space are unverified options. Planet access is commercial (check licensing). No budget or staffing plan is yet included.
 
 ---
 
 ### Key references
 
-**Foundational ecology:**
-- Körner, C. (2012). *Alpine Treelines*. Springer, Basel. — foundational reference on treeline thermal limitation and ecotone structure
-- Körner, C. (2021). *Alpine Plant Life* (3rd ed.). Springer. — chapter on snow cover and treeline regulation
-- Camarero, J.J. et al. (2025). Patterns, dynamics and drivers of alpine treelines and shrublines. *Nature Reviews Earth & Environment*. https://www.nature.com/articles/s43017-025-00703-9
+Only references whose metadata were checked against Crossref are given a DOI; **[verify]** marks unchecked ones.
 
-**Stress physiology and snow:**
-- Charra-Vaskou, K. et al. (2026). Reduced snow cover at the alpine treeline: resistance and recovery of saplings. *New Phytologist*. DOI:10.1111/nph.70926. [[charra_2025_snow_treeline]]
-- Vázquez-Ramírez, J. & Venn, S.E. (2023/2025). Snow, fire and drought: how alpine and treeline soil seed banks are affected by simulated climate change. *Annals of Botany* 135:223–238. [[vazques_2023_drought_treeline]]
-- Camarero, J.J. et al. (2024). Facilitation drives tree seedling survival at alpine treelines. *Journal of Plant Ecology* 17(3). https://academic.oup.com/jpe/article/17/3/rtae033/7659250
-- Grünig, M. et al. (2023). Seasonal snow cover patterns explain alpine treeline elevation better than temperature at regional scale. *Science of the Total Environment*. https://www.sciencedirect.com/science/article/pii/S2197562023000210
-- Barbeito, I. et al. (2019). Microsites and climate zones: seedling regeneration in the alpine treeline ecotone worldwide. *Forests* 10(10). https://doi.org/10.3390/f10100864
-- Lévesque, M. et al. (2014). Drought response of five conifers in mountain forests: growth reaction and climatic drivers. *Ecological Monographs* — growth limitation of *Pinus cembra* at drought margins
-- Dietrich, L. & Zeidler, M. (2026). A potential role for DELLA signaling in global treeline formation. *New Phytologist* (Viewpoint). [[dietrich_2026_treeline_della]] — conceptual hormonal-signalling alternative to the carbon-limitation hypothesis; untested in treeline conifers
+**Foundational ecology**
+- Körner, C. (2012). *Alpine Treelines*. Springer, Basel. (book-level DOI not confirmed)
+- Körner, C. & Hoch, G. (2023). Treeline definitions. *J Biogeogr* 50:838–845. doi:10.1111/jbi.14593
+- Körner, C. & Paulsen, J. (2004). A world-wide study of high altitude treeline temperatures. *J Biogeogr*. doi:10.1111/j.1365-2699.2003.01043.x
+- Lu, X. et al. (2025). Patterns, dynamics and drivers of alpine treelines and shrublines. *Nat Rev Earth Environ* 6:489–502. doi:10.1038/s43017-025-00703-9
+- Harsch, M.A. et al. (2009). Are treelines advancing? *Ecol Lett* 12:1040–1049. doi:10.1111/j.1461-0248.2009.01355.x
 
-**Treeline dynamics and dendrochronology:**
-- Mdt, F. et al. (2023). Evidence for 40 years of treeline shift in a Central Alpine Valley. *Forests* 14(2). https://www.mdpi.com/1999-4907/14/2/412
-- Frank, D. et al. (2022). Tree-ring anatomy of *Pinus cembra* opens new avenues for climate reconstructions in the European Alps. *Science of the Total Environment*. https://www.sciencedirect.com/science/article/pii/S0048969722057047
-- Nikolova, P.S. et al. (2023). Tree rings as ecological indicators of *Pinus cembra* reaction to climate change and disturbance in cliff forests. *Ecological Indicators*. https://www.sciencedirect.com/science/article/pii/S1470160X23002443
-- Märker, F. et al. (2025). Emerging drought sensitivity for large Norway spruce trees at high elevation in the High Tatras, Slovakia. *Trees* 39:7. [[maerker_2025_drought_spruce]] — size-class isolation (SCI) method; direct methodological precedent for WP1's juvenile-vs-adult comparison
-- Klinge, M. et al. (2018). Climate effects on vegetation vitality at the treeline of boreal forests of Mongolia. *Biogeosciences* 15:1319–1333. [[klinge_2018_climate_treeline]] — upper treeline thermally limited, lower treeline moisture limited
-- Babst, F. et al. (2019). Twentieth century redistribution in climatic drivers of global tree growth. *Science Advances* 5:eaat4313. [[01_notes/babst_2019_redistribution]]
-- Albrich, K. et al. (2019). Climate change causes critical transitions and irreversible alterations of mountain forests. *Global Change Biology*. [[01_notes/albrich_2019_climate_change_mountain_forests]]
-- Dyderski, M.K. et al. (2025). Species distribution shifts of 20 European tree species under CMIP6 SSPs. [[01_notes/dyderski_2025_species_shift]]
+**Alpine treeline dynamics and land use**
+- Gehrig-Fasel, J., Guisan, A. & Zimmermann, N.E. (2007). Tree line shifts in the Swiss Alps. *J Veg Sci* 18:571–582. doi:10.1111/j.1654-1103.2007.tb02571.x
+- Frei, E.R., Barbeito, I., Erdle, L.M., Leibold, E. & Bebi, P. (2023). Evidence for 40 years of treeline shift in a Central Alpine valley. *Forests* 14:412. doi:10.3390/f14020412
+- Menegaldo, et al. (2025). South Tyrol forest-line shift (Landsat + random forest). *Vegetation Ecology and Diversity* 62. doi:10.3897/ved.177152
+- Marzini, S., Tasser, E., Wellstein, C., Albrich, K., Rammer, W. & Mina, M. (2025). Future expansion of upper forest-grassland ecotone under land-use and climate change in the Eastern Alps. *Landscape Ecol* 40:55. doi:10.1007/s10980-025-02070-8
+- Nicoud, et al. (2025). *Sci Total Environ* 959:178326. doi:10.1016/j.scitotenv.2024.178326
+- Cudlín, P. et al. (2017). *Clim Res* 73:135–150. doi:10.3354/cr01465
+- Motta, R., Morales, M. & Nola, P. (2006). *Ann For Sci* 63:739–747. doi:10.1051/forest:2006055
+- Tasser, E. & Tappeiner, U. (2002). *Appl Veg Sci* 5:173–184. doi:10.1111/j.1654-109x.2002.tb00547.x
+- Dirnböck, T., Dullinger, S. & Grabherr, G. (2003). *J Biogeogr* 30:401–417. doi:10.1046/j.1365-2699.2003.00839.x
+- Dullinger, S. et al. (2004). *J Ecol*. doi:10.1111/j.0022-0477.2004.00872.x
+- Huang, M. et al. (2023). *Forest Ecosystems* 10:100106 (Himalaya, non-Alpine). doi:10.1016/j.fecs.2023.100106
+- Körner (2024), EGU conference abstract (uppermost *P. cembra* in Eastern Tyrol). doi:10.5194/egusphere-egu24-20484
 
-**Remote sensing of treeline and forest stress:**
-- Baglioni, L. et al. (2025). Forestlines in Italian mountains are shifting upward: detection and monitoring using satellite time series. *Biogeosciences* 22:4349–4366. https://bg.copernicus.org/articles/22/4349/2025/
-- Very-high resolution aerial imagery and deep learning uncover fine-scale patterns of elevational treelines. *Biogeosciences* 22:6393 (2025). https://bg.copernicus.org/articles/22/6393/2025/
-- Identifying alpine treeline species using WorldView-3 multispectral imagery and CNNs. *EGUsphere* preprint (2025). https://egusphere.copernicus.org/preprints/2025/egusphere-2025-970/
-- Bringing SAM to New Heights: Leveraging elevation data for tree crown segmentation from drone imagery. *arXiv* (2025). https://arxiv.org/html/2506.04970
-- UAV-Borne Measurements of Solar-Induced Chlorophyll Fluorescence (SIF) at a Boreal Site. *Springer* (2024). https://link.springer.com/chapter/10.1007/978-3-031-44607-8_8
-- Nguyen, T.-A. et al. (2022). Mapping forest in the Swiss Alps treeline ecotone with explainable deep learning. *Remote Sensing of Environment*. [[nguyen_2022_forest_mapping_explainable]] — rule-informed CNN; forest-definition sensitivity of treeline boundary
-- Nguyen, T.-A. et al. (2024). Multi-temporal forest monitoring in the Swiss Alps with knowledge-guided deep learning. *Remote Sensing of Environment* 305:114109. [[nguyen_2024_treeline_monitoring]] — knowledge-guided temporal loss for sparsely-labelled, multi-decadal treeline monitoring
-- Li, L. et al. (2026). Assessing climate-driven treeline dynamics via the habitat suitability index. *Journal of Environmental Management* 411:130173. [[li_2026_climate_treeline]] — SHAP-explained ensemble SDM, aspect-resolved, bootstrapped-CI shift detection
-- Melser, R. et al. (2024). Characterizing satellite-derived freeze/thaw regimes through spatial and temporal clustering for the identification of growing season constraints on vegetation productivity. *Remote Sensing of Environment* 309:114210. [[melser_2024_freeze_constraints]] — SMAP/SMOS freeze/thaw regionalisation, boreal Canada (methodological precedent, not directly Alpine)
-- Torres, M. et al. (2021). Remote sensing for forest health monitoring — systematic review [[01_notes/torres_2021_forest_health_remote_sensing]]
-- Landscape Ecology (2025). Future expansion of upper forest-grassland ecotone under land-use and climate change in the Eastern Alps. https://link.springer.com/article/10.1007/s10980-025-02070-8
+**Stress physiology, growth and snow (Alps)**
+- Charra-Vaskou, K. et al. (2026). Reduced snow cover at the alpine treeline. *New Phytol* 250:1492–1509. doi:10.1111/nph.70926 [[charra_2025_snow_treeline]]
+- Oberhuber, W. (2004). *Tree Physiol* 24:291–301. doi:10.1093/treephys/24.3.291
+- Gruber, A., Oberhuber, W. & Wieser, G. (2018). *Front Plant Sci* 9:711. doi:10.3389/fpls.2018.00711
+- Wieser, G. et al. (2019). *Forests* 10:777. doi:10.3390/f10090777
+- Wieser, G. et al. (2009). *Ann For Sci* 66:402. doi:10.1051/forest/2009023
+- Vittoz, P. et al. (2008). *Arct Antarct Alp Res* 40:225–232. doi:10.1657/1523-0430(06-010)[VITTOZ]2.0.CO;2
+- Obojes, N. et al. (2024). *Front For Glob Change* 7. doi:10.3389/ffgc.2024.1332941
+- Mayr, S., Wolfschwenger, M. & Bauer, H. (2002). *Physiol Plant* 115:74–80. doi:10.1034/j.1399-3054.2002.1150108.x
+- Mayr, S. & Charra-Vaskou, K. (2007). *Physiol Plant* 131:131–139. doi:10.1111/j.1399-3054.2007.00942.x
+- Barbeito, I. et al. (2013). *Arct Antarct Alp Res* 45:455–470. doi:10.1657/1938-4246-45.4.455
+- Hoch, G., Popp, M. & Körner, C. (2002). *Oikos* 98:361–374. doi:10.1034/j.1600-0706.2002.980301.x
+- Hoch, G. & Körner, C. (2012). *Glob Ecol Biogeogr* 21:861–871. doi:10.1111/j.1466-8238.2011.00731.x
+- Dietrich, L. & Zeidler, M. (2026). A potential role for DELLA signaling in global treeline formation. *New Phytol* 251:2337–2343. doi:10.1111/nph.71385 [[dietrich_2026_treeline_della]]
+- Lopez-Saez, J. et al. (2023). *Sci Total Environ* 855:158605 (*P. cembra* wood anatomy). doi:10.1016/j.scitotenv.2022.158605
+- Carrer, M. & Urbinati, C. (2004). *Ecology* 85:730–740. doi:10.1890/02-0478
+- Schuldt, B. et al. (2020). *Basic Appl Ecol* 45:86–103. doi:10.1016/j.baae.2020.04.003
+- Albrich, K., Rammer, W. & Seidl, R. (2020). *Glob Change Biol* 26:4013–4027. doi:10.1111/gcb.15118 [[albrich_2019_climate_change_mountain_forests]]
+- Babst, F. et al. (2019). *Sci Adv* 5:eaat4313 [[01_notes/babst_2019_redistribution]] (global)
+- Märker, F. et al. (2025). *Trees* 39:7 [[maerker_2025_drought_spruce]] (High Tatras spruce; **[verify DOI]**)
+- Vázquez-Ramírez, J. & Venn, S.E. *Ann Bot* 135:223–238 [[vazques_2023_drought_treeline]] (Australia; **[verify year]**)
+- Dyderski, M.K. et al. (2025) [[01_notes/dyderski_2025_species_shift]]
 
-**Wiki synthesis pages:** [[treeline_ecotone_theory]] · [[snow_cover_treeline]] · [[treeline_remote_sensing_monitoring]]
+**Remote sensing, climate data and modelling**
+- Baglioni, L. et al. (2025). *Biogeosciences* 22:4349–4366. doi:10.5194/bg-22-4349-2025
+- Carrieri, et al. (2025). *Biogeosciences* 22:6393–6409. doi:10.5194/bg-22-6393-2025
+- Garbarino, M. et al. (2023). *Remote Sens Ecol Conserv* 9:729–742. doi:10.1002/rse2.351
+- Nguyen, T.-A., Kellenberger, B. & Tuia, D. (2022). *Remote Sens Environ* 281:113217. doi:10.1016/j.rse.2022.113217 [[nguyen_2022_forest_mapping_explainable]]
+- Nguyen et al. (2024) [[nguyen_2024_treeline_monitoring]] **[verify]**
+- Sindewald, L. et al. (2025). *Biogeosciences* 22:6509–6543 (Rocky Mountains). doi:10.5194/bg-22-6509-2025
+- Teng, M. et al. (2025). Bringing SAM to new heights. *NeurIPS* 38:9481–9513. doi:10.52202/085713-0290
+- Bendig, J. et al. (2020). *IEEE TGRS* 58:3437–3444. doi:10.1109/TGRS.2019.2956194
+- Vargas, J.Q. et al. (2020). *Remote Sens* 12:1624. doi:10.3390/rs12101624
+- Honkanen, M. et al. (2024). UAV-borne SIF at a boreal site, pp. 115–135. doi:10.1007/978-3-031-44607-8_8 (content not read)
+- Gamon, J. & Bond, B. (2013). *Remote Sens Environ*. doi:10.1016/j.rse.2013.03.032
+- Portenier, C. et al. (2020). *Cryosphere* 14:1409. doi:10.5194/tc-14-1409-2020
+- Hiebl, J. & Frei, C. (2016). *Theor Appl Climatol* 124:161–178. doi:10.1007/s00704-015-1411-4
+- Olefs, M. et al. (2020). *Atmosphere* 11:1330. doi:10.3390/atmos11121330
+- Frei, C. et al. (2018). *Cryosphere* 12:1–24. doi:10.5194/tc-12-1-2018
+- Karger, D.N. et al. (2017). *Sci Data* 4:170122. doi:10.1038/sdata.2017.122
+- Scherrer, D. & Körner, C. (2011). *J Biogeogr* 38:406–416. doi:10.1111/j.1365-2699.2010.02407.x
+- Randin, C.F. et al. (2009). *Glob Change Biol* 15:2144-. doi:10.1111/j.1365-2486.2008.01766.x
+- Elith, J. et al. (2010). *Methods Ecol Evol* 1:330-. doi:10.1111/j.2041-210x.2010.00036.x
+- Meyer, H. & Pebesma, E. (2021). *Methods Ecol Evol* 12:1620–1633. doi:10.1111/2041-210x.13650
+- Melser, R. et al. (2024). *Remote Sens Environ* 309:114210 [[melser_2024_freeze_constraints]] (boreal Canada; methodological precedent only)
+- Li, L. et al. (2026). *J Environ Manage* 411:130173 [[li_2026_climate_treeline]] (*Larix chinensis*; **[verify]**)
+- Klinge, M. et al. (2018). *Biogeosciences* 15:1319–1333 [[klinge_2018_climate_treeline]] (Mongolia; **[verify]**)
+- Torres, M. et al. (2021) [[01_notes/torres_2021_forest_health_remote_sensing]]
+
+**Removed from the earlier draft (misattributed, not found, or unsupported):** "Camarero 2024 J Plant Ecol" as Alpine facilitation (Tibetan; Chen et al. 2024); "Grünig 2023" (Himalayan Huang et al. 2023); "Nikolova 2022/2023" (not found / Izworska et al. 2023, cliff forests); "Frank 2022" (Lopez-Saez et al. 2023); "Barbeito 2019" (DOI resolves to Johnson & Yeakley); "Lévesque 2014" as *P. cembra* drought evidence; Vitasse et al. 2021 as a treeline rate (measures species optimum shifts); Springer, EGUsphere and arXiv entries replaced by their published versions above.
+
+**Wiki synthesis pages:** [[treeline_ecotone_theory]] · [[snow_cover_treeline]] · [[treeline_remote_sensing_monitoring]] (these pages may repeat the corrected claims and should be re-checked)

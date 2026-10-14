@@ -14,7 +14,7 @@ tags:
 
 **Sources**: [[nguyen_2022_forest_mapping_explainable]], [[nguyen_2024_treeline_monitoring]], [[melser_2024_freeze_constraints]], [[li_2026_climate_treeline]]
 
-**Last updated**: 2026-07-21
+**Last updated**: 2026-10-14
 
 ---
 
@@ -47,6 +47,10 @@ tags:
 - Both Nguyen et al. studies are single-region (Swiss Alps, Vaud/Valais), single research group, with the 2024 study explicitly building on and reusing the 2022 study's study area and forest definition — cross-regional generalisation of either the rule-encoding or the temporal-loss approach is untested.
 - The 2024 study's evaluation labels for historical years come from manual, monocular photo-interpretation by the authors themselves, with no independent/blind annotation reported — a real limitation for a paper whose central contribution is about model accuracy on historical imagery (source: [[nguyen_2024_treeline_monitoring]]).
 - None of these DL/RS studies directly validate treeline *position* shift against independent ground survey data over the full time span studied; the 2024 paper's headline "forest expansion at treeline" finding is explicitly qualitative only.
+
+- Resolution limits: Landsat (30 m) cannot resolve treeline displacement of ~0.2–1.6 m/yr over 40 years (8–64 m); Landsat studies detect greening/densification trends near a forestline rather than displacement (e.g. Baglioni et al. 2025 used the 10 m Copernicus tree-cover layer as forestline and had no independent accuracy assessment; not yet ingested). Even 5 cm UAV imagery detects only ~52% of trees up to 130 cm at Italian Alpine treelines (Carrieri et al. 2025; not yet ingested), so 3 m Planet cannot map juveniles.
+- The "Nguyen 2024" follow-up could not be matched to a peer-reviewed paper in an external check (only a 2023 EGU abstract found) — verify the citation before reuse.
+- SMAP (9 km) freeze/thaw is regional context only in complex Alpine terrain; no Alpine validation was found.
 
 ## Related pages
 

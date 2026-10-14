@@ -13,7 +13,7 @@ tags:
 
 **Sources**: [[klinge_2018_climate_treeline]], [[maerker_2025_drought_spruce]], [[dietrich_2026_treeline_della]], [[li_2026_climate_treeline]], [[charra_2025_snow_treeline]], [[vazques_2023_drought_treeline]], [[melser_2024_freeze_constraints]], [[albrich_2019_climate_change_mountain_forests]], [[noce_2023_altitude_shift_tree_italy]]
 
-**Last updated**: 2026-07-21
+**Last updated**: 2026-10-14
 
 ---
 
@@ -23,14 +23,14 @@ tags:
 - Confirmed regionally: Mongolian boreal upper treeline sits at a mean growing-season temperature of 7.9–8.9 °C (minimum ~6 °C), consistent with the global thermal threshold (source: [[klinge_2018_climate_treeline]]).
 - But treeline position is not universally thermal-limited — the *lower* treeline of the same Mongolian boreal system (the forest–steppe transition) is set instead by mean annual precipitation (minimum 230–290 mm yr⁻¹), with a further precipitation-defined "subtaiga" transition zone (~300 mm yr⁻¹) largely independent of temperature (source: [[klinge_2018_climate_treeline]]).
 - Secondary limiting factors differ regionally: relative humidity in forest–steppe, snow cover distribution in taiga (source: [[klinge_2018_climate_treeline]]) — see [[snow_cover_treeline]].
-- This upper-thermal/lower-moisture dichotomy directly parallels the global energy- vs water-limitation redistribution of tree growth documented by [[babst_2019_redistribution]] (see [[drought_mortality]]) — treelines are a spatially concentrated expression of the same climatic-limitation continuum.
+- This upper-thermal/lower-moisture dichotomy directly parallels the global energy- vs water-limitation redistribution of tree growth documented by [[babst_2019_redistribution]] (see [[drought_mortality]]) — an analogy drawn on this page, not a finding of either source. Caution: for *Pinus cembra* at the upper Tyrolean treeline, field evidence (not yet ingested into 01_notes) points to temperature/nutrient rather than water limitation, and drought signals appear mainly at low-elevation, dry inner-Alpine stands (needs ingest of Oberhuber 2004, Gruber 2018, Vittoz 2008 before citing).
 
 ## Emerging Drought Sensitivity at Nominally Temperature-Limited Treelines
 
 - Norway spruce at the High Tatras alpine treeline (Slovakia) remains generally temperature-limited (June/July growing-season temperature), but 31-year moving-window climate-growth correlations reveal an *emerging* — not static — sensitivity to previous-year late-summer drought (SPEI3) that has strengthened since the 1970s–2000s, and is most pronounced in the largest trees (source: [[maerker_2025_drought_spruce]]).
 - This is interpreted as a size-dependent onset of moisture limitation layered on top of a persistently thermal-limited system, consistent with the broader energy→water-limitation redistribution (source: [[maerker_2025_drought_spruce]], citing [[babst_2019_redistribution]]).
 - Mechanism remains unresolved: proposed but untested explanations include non-structural carbohydrate (NSC) depletion from lagged drought stress and increased atmospheric/hydraulic coupling in larger/taller trees (source: [[maerker_2025_drought_spruce]]).
-- Practical implication: even "temperature-limited" treelines cannot be assumed drought-insensitive as climate change proceeds — treeline advance driven by warming may be partly offset or complicated by concurrent drought stress.
+- Practical implication: even "temperature-limited" treelines cannot be assumed drought-insensitive as climate change proceeds — treeline advance driven by warming may be partly offset or complicated by concurrent drought stress. This is a hypothesis from one *Picea abies* site (Slovakia); it is not established for *Pinus cembra* or Alpine treelines in general.
 
 ## Carbon-Limitation Hypothesis and a Competing Hormonal Mechanism
 
@@ -44,7 +44,7 @@ tags:
 
 - Ensemble species distribution modelling (SHAP-explained) of *Larix chinensis* at Mount Taibai (Qinling Mountains, China) projects net treeline habitat expansion under all CMIP6 SSP scenarios by 2100, but with a strongly aspect-dependent pattern: consistent gains on south-facing slopes, consistent losses on north-facing slopes, attributed to differential solar radiation, growing-season length, and snow persistence (source: [[li_2026_climate_treeline]]).
 - Growing-season thermal variables (max temperature of warmest month, growing degree-days) are the dominant SHAP-identified drivers; elevation's apparent importance is a proxy for this embedded temperature signal rather than a causal driver itself (source: [[li_2026_climate_treeline]]).
-- This is consistent with, and extends, the general finding that topographic complexity buffers and delays (but does not prevent) climate-driven vegetation transitions in mountain forests (source: [[albrich_2019_climate_change_mountain_forests]]) — see [[topographic_microclimate]].
+- This is consistent with, and extends, the general finding that topographic complexity buffers and delays (but does not prevent) climate-driven vegetation transitions in mountain forests (source: [[albrich_2019_climate_change_mountain_forests]]; note the paper is Albrich et al. 2020, simulates one Eastern Alpine forest landscape, and concerns montane/subalpine composition (conifer → broadleaf above ~+2 °C), not treeline position) — see [[topographic_microclimate]].
 - Caveat: habitat suitability index (HSI) is an explicitly acknowledged proxy for potential range, not the physical treeline itself — the source paper itself warns that equating HSI change with treeline migration "may lead to biases" (source: [[li_2026_climate_treeline]]).
 
 ## Regeneration and Recruitment Bottlenecks
@@ -61,6 +61,10 @@ Treeline advance requires successful regeneration, which faces its own, partly s
 - This is a latitudinal (boreal–tundra), not elevational, ecotone study, but it operationalises the same underlying mechanism — frost/thermal bounding of the active growth period — that elevational treeline thermal-limitation theory invokes; it is included here as cross-biome mechanistic support, not as direct treeline evidence (source: [[melser_2024_freeze_constraints]]).
 
 ## Critical Synthesis
+
+- **Land use is missing from this page's sources.** In the Alps, treeline position and recent forest advance are strongly shaped by grazing/abandonment history (e.g. Swiss Alps: ~90% of new forest above 1650 m was ingrowth, Gehrig-Fasel 2007; Eastern Alps ecotone mainly land-use constrained, Marzini 2025) — neither is yet ingested in 01_notes. Climate-only explanations on this page should not be read as complete.
+- The carbon-limitation hypothesis has been tested directly in *Pinus cembra* at the Swiss treeline and not supported (Hoch et al. 2002; Hoch & Körner 2012; not yet ingested), so "carbon limitation" above is the classical hypothesis, not a live explanation for this species.
+- Interactions between drought and snow-loss stress have not been tested for any treeline conifer in the sources here.
 
 - No single mechanism (thermal limitation, moisture limitation, carbon limitation, hormonal/regulatory limitation, snow protection, regeneration bottleneck) fully explains treeline position or its response to warming across all systems studied here — the sources in this batch span at least four distinct, only partially reconciled explanatory frameworks.
 - Nearly all quantitative treeline-shift claims in this batch are **correlative** (climate–vegetation statistical association) or **projective** (SDM/HSI under future climate scenarios), not experimental or causal, with the partial exception of the snow-removal (source: [[charra_2025_snow_treeline]]) and seed-bank (source: [[vazques_2023_drought_treeline]]) manipulative field experiments.

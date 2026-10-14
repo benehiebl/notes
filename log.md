@@ -824,3 +824,13 @@ Append-only record of all wiki operations.
 - `03_papers/03_landsat_data_publication/essd_landsat_manuscript/essd_landsat_manuscript.bib` — added `leonelli_climate_2011` (Leonelli, Pelfini, Morra di Cella & Garavaglia 2011, AMBIO 40(3):264–273, doi:10.1007/s13280-010-0096-2); metadata verified via Crossref, abstract and study region verified via BioOne
 
 **Note**: INFC's top altitude class is open-ended (">2000 m") and therefore cannot support a 2500 m upper bound on its own — the treeline reference carries that part of the claim. Leonelli et al. report the treeline of three valleys in the *western* Italian Alps at a nearly undisturbed site, not a national maximum; the manuscript wording was made specific to match.
+
+## 2026-10-13 — Revised 04_projects/02_tree_line_stress.md
+- Critical literature/design check (report: reports/Alpine treeline project revision.md). Corrected misattributed citations, removed unsupported claims (0.4 m/yr, drought premise, synergy), added land-use legacy, rewrote aims as testable hypotheses, resized RS methods, fixed timeline/funding. Unverified items marked [verify].
+- Wiki pages treeline_ecotone_theory, snow_cover_treeline, treeline_remote_sensing_monitoring may repeat corrected claims; not yet re-checked.
+
+## 2026-10-14 — Checked wiki synthesis pages against corrected claims
+- Edited treeline_ecotone_theory, snow_cover_treeline, treeline_remote_sensing_monitoring: added caveats (P. cembra drought evidence, land-use gap, carbon-limitation already tested, Albrich scope, Charra-Vaskou scope, RS resolution limits, unverified Nguyen 2024). Pages did not contain the misattributed citations (0.4 m/yr, Grünig, Camarero, Nikolova, Lévesque). New papers cited as "not yet ingested".
+
+## 2026-10-14 — Literature review (Alpine treeline)
+- Created reports/Alpine treeline literature review.md (standalone, for later joint integration into 04_projects/02_tree_line_stress.md; proposal not modified). Notes in research_notes/Alpine treeline literature review/. Papers are not yet ingested into 01_notes.
