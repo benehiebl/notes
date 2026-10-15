@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Vegetation phenology describes the seasonal timing of plant life-cycle events (green-up, peak greenness, senescence, dormancy), which can be tracked remotely using time series of vegetation indices or surface reflectance.
 
-**Sources**: [[bayle_2024_landsat_greening_inflated]], [[grabska_2024_tree_species_map]], [[he_2015_remote_sensing_sdm]], [[yel_2026_deciduous_forests]], [[schuldt_2020_drought_forest]], [[kempf_2023_greening]], [[yang_2020_modis_evergreen]], [[kollert_2021_tree_species]], [[herraiz_2025_phen_shifts_mediterranean]]
+**Sources**: [[bayle_2024_landsat_greening_inflated]], [[grabska_2024_tree_species_map]], [[he_2015_remote_sensing_sdm]], [[yel_2026_deciduous_forests]], [[schuldt_2020_drought_forest]], [[kempf_2023_greening]], [[yang_2020_modis_evergreen]], [[kollert_2021_tree_species]], [[herraiz_2025_phen_shifts_mediterranean]], [[löw_2020_phenology_austria_forest]], [[vitasse_2021_shifts_plants_alps]]
 
-**Last updated**: 2026-05-14
+**Last updated**: 2026-10-15
 
 ---
 
@@ -97,6 +97,15 @@ Vegetation phenological metrics are valuable predictor variables in [[species_di
 - Multi-year MODIS phenology metrics reduce predictor collinearity and improve model transferability
 - Early green-up / late senescence timing used to detect invasive annual grasses and discriminate native from non-native species
 - Phenology timing from Sentinel-2 STMs is the primary discriminator between tree species in temperate forests — early spring and autumn windows are most informative (source: [[grabska_2024_tree_species_map]])
+
+## Sentinel-2 Phenology Models for Austrian Forests
+
+- Dense Sentinel-2 time series (10 m, 2017–2019) with a dynamic Savitzky–Golay filter gave per-pixel reference phenology (percentile courses PC10/PC90, mean as baseline) and metrics start/end of vegetation period and maximum index value; RGVI performed best for detecting negative deviations; TOA data were used because Sen2Cor BOA products were judged too error-prone (source: [[löw_2020_phenology_austria_forest]]).
+- Model period only two years; topographic shadow and snow in the Alps remain challenging and are not specifically evaluated (source: [[löw_2020_phenology_austria_forest]]).
+
+## Observed Spring Phenology Shifts in the Alps
+
+- Review of Alpine data: leaf-out of woody plants advanced −2.4 days per decade and flowering of herbaceous plants −2.8 days per decade, with −5.1 ± 3.9 days per °C for woody plants; animals show mixed trends (source: [[vitasse_2021_shifts_plants_alps]]). Ground-observation based, so it is a plausible but untested benchmark for satellite-derived phenology trends.
 
 ## Related pages
 

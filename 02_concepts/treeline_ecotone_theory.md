@@ -11,9 +11,9 @@ tags:
 
 **Summary**: The treeline — the elevational or latitudinal limit of upright tree growth — is classically explained as a thermal/energy limit on meristem growth (~6 °C mean growing-season temperature globally), distinct from the survival limit of the species. Newer evidence complicates this simple picture: treelines can be locally moisture-limited rather than thermal-limited, temperature-limited treelines are developing drought sensitivity as climate warms, the classical carbon-limitation mechanism is contested, and regeneration (seed banks, saplings) faces its own, partly independent, climate constraints.
 
-**Sources**: [[klinge_2018_climate_treeline]], [[maerker_2025_drought_spruce]], [[dietrich_2026_treeline_della]], [[li_2026_climate_treeline]], [[charra_2025_snow_treeline]], [[vazques_2023_drought_treeline]], [[melser_2024_freeze_constraints]], [[albrich_2019_climate_change_mountain_forests]], [[noce_2023_altitude_shift_tree_italy]]
+**Sources**: [[klinge_2018_climate_treeline]], [[maerker_2025_drought_spruce]], [[dietrich_2026_treeline_della]], [[li_2026_climate_treeline]], [[charra_2025_snow_treeline]], [[vazques_2023_drought_treeline]], [[melser_2024_freeze_constraints]], [[albrich_2019_climate_change_mountain_forests]], [[noce_2023_altitude_shift_tree_italy]], [[cudlin_2017_drivers_treeline_shift]], [[dullinger_2004_climate_treeline_shifts]], [[frei_2023_treeline_shift]], [[nicoud_2025_landuse_larch_expansion]], [[marzini_2025_expansion_forest]], [[nicolussi_2005_holocene_treeline_variability]], [[wieser_2019_effects_climate_treeline]], [[neuner_2014_frost_resistance]], [[vitasse_2021_shifts_plants_alps]], [[albrich_2020_transitions_mountain_forests]]
 
-**Last updated**: 2026-10-14
+**Last updated**: 2026-10-15
 
 ---
 
@@ -55,6 +55,31 @@ Treeline advance requires successful regeneration, which faces its own, partly s
 - **Saplings**: a snow-removal field experiment at the Alpine treeline (Tyrolean Central Alps) shows reduced winter snow cover significantly increases hydraulic conductivity loss, living-cell mortality, and summer mortality in saplings of five species, with strong species-specific divergence between resistance (avoiding damage, e.g. *Picea*) and recovery (restoring function afterward, e.g. resprouting in *Sorbus*/*Acer*) strategies; *Larix* showed high mortality with no apparent recovery mechanism (source: [[charra_2025_snow_treeline]]). See [[snow_cover_treeline]].
 - Both findings imply that treeline advance under warming is not simply a matter of adult trees surviving further upslope — recruitment through the seed/sapling stage carries independent, and possibly rate-limiting, climate vulnerabilities.
 
+## Observed Treeline Shift Rates and Their Drivers
+
+- Resurvey of all treeline trees (>0.5 m) in the Dischma valley (Swiss Alps) over 40 years found an average advance of ~10 m per decade (maximum local 42 m per decade), but 79 % of newly established cells were infilling below the old treeline and only 21 % true advance (source: [[frei_2023_treeline_shift]]).
+- Across 15 European mountain units, reported treeline shift rates ranged 0.43–1.9 m yr⁻¹ and correlated only with latitude, not with the climate parameters analysed (expert-compiled, exploratory) (source: [[cudlin_2017_drivers_treeline_shift]]).
+- Landsat-based forest/non-forest classification in one South Tyrolean valley gave +32 m mean elevational advance (1985–2022), versus +45 m from orthophotos (source: [[menegaldo_2025_landsat_treeline_dynamics]]) — see [[treeline_remote_sensing_monitoring]].
+- Alpine woody plants as a group shifted their optimum elevation +32.7 m per decade, but isotherms moved about +62 to +71 m per decade since 1970, so shifts lag climate (source: [[vitasse_2021_shifts_plants_alps]]).
+- Note: these rates come from different methods, periods and definitions and are not directly comparable; the proposal-level claim of a single "typical" rate should be avoided.
+
+## Land-Use Legacy, Dispersal and Establishment Windows
+
+- Treeline advance is strongly conditioned by historic land use, see [[treeline_land_use_legacy]] for the detailed synthesis ([[frei_2023_treeline_shift]], [[nicoud_2025_landuse_larch_expansion]], [[marzini_2025_expansion_forest]], [[cudlin_2017_drivers_treeline_shift]]).
+- A spatially explicit spread model of *Pinus mugo* predicts slow expansion (10 % → 24–59 % cover in 1000 years); the dispersal-kernel shape and the spatial pattern of resistance by non-woody vegetation mattered at least as much as 0–2 °C warming (source: [[dullinger_2004_climate_treeline_shifts]]).
+
+## Ecophysiology of Treeline Trees: Carbon, Soil Temperature and Frost
+
+- In *Pinus cembra* along 1750–2175 m (Central Austrian Alps), whole-tree non-structural carbohydrate pools increase with elevation, consistent with sink (growth) rather than source (carbon) limitation; the authors conclude treeline trees are not carbon limited (source: [[wieser_2019_effects_climate_treeline]]). This is a narrative review largely of the authors' own work, one species.
+- Soil temperature manipulation gave mixed results: several years of soil warming did not change stem increment of 25-year-old *P. cembra* at 2150 m, whereas root-zone cooling/warming changed radial increment at the krummholz limit (source: [[wieser_2019_effects_climate_treeline]]).
+- Frost risk is mainly a spring and summer problem: winter frost resistance of mature leaves is very high (about −26 to −58 °C), but developing shoots are damaged at about −3.4 to −6.3 °C depending on species; premature deacclimation of *P. cembra* and weak reacclimation of shrubs after snow loss are flagged as climate-change risks (source: [[neuner_2014_frost_resistance]]) — see [[snow_cover_treeline]].
+- The authors of [[wieser_2019_effects_climate_treeline]] expect future treeline population dynamics to be controlled by extreme events (late frost, summer soil drought) rather than by gradual mean warming; this is an inference, not tested.
+
+## Long-Term and Simulation Context
+
+- A Holocene dendrochronological record from the Kauner Valley shows the treeline (*P. cembra*) rose ~65 m after ~1860 to 2245 m in 1980, but stood above its 1980 level for most of 7100–2100 b.c. (logs up to 2410 m) (source: [[nicolussi_2005_holocene_treeline_variability]]). The present treeline is therefore not unprecedented, but late-Holocene gaps cannot be separated into climate and human impact.
+- Simulations (iLand) project that an Alpine forest landscape crosses a tipping point near +2 °C, and that *P. cembra*, the current timber-line species of the simulated valley, disappears above +2 °C (source: [[albrich_2020_transitions_mountain_forests]]); and that the upper forest-grassland ecotone rises mostly because of land-use abandonment (source: [[marzini_2025_expansion_forest]]). Both are model results without empirical validation of the shift itself — see [[forest_landscape_models_iland]].
+
 ## Growing-Season Length as a Cross-Biome Productivity Constraint
 
 - The mechanistic link between a frost/thermal-bounded active growing season and vegetation productivity — central to treeline theory — is directly quantifiable via satellite freeze/thaw (F/T) retrieval: in the Canadian boreal, F/T-derived growing season length correlates with gross primary productivity at ~5.3–5.6 gC m⁻² yr⁻¹ per additional day, matching independent process-based and flux-tower estimates (source: [[melser_2024_freeze_constraints]]).
@@ -62,8 +87,8 @@ Treeline advance requires successful regeneration, which faces its own, partly s
 
 ## Critical Synthesis
 
-- **Land use is missing from this page's sources.** In the Alps, treeline position and recent forest advance are strongly shaped by grazing/abandonment history (e.g. Swiss Alps: ~90% of new forest above 1650 m was ingrowth, Gehrig-Fasel 2007; Eastern Alps ecotone mainly land-use constrained, Marzini 2025) — neither is yet ingested in 01_notes. Climate-only explanations on this page should not be read as complete.
-- The carbon-limitation hypothesis has been tested directly in *Pinus cembra* at the Swiss treeline and not supported (Hoch et al. 2002; Hoch & Körner 2012; not yet ingested), so "carbon limitation" above is the classical hypothesis, not a live explanation for this species.
+- **Land use is now covered but unresolved in attribution.** Several Alpine studies attribute much of recent advance or infilling to abandonment (source: [[frei_2023_treeline_shift]], [[marzini_2025_expansion_forest]], [[cudlin_2017_drivers_treeline_shift]]) while another finds a climate-driven establishment wave on top of a land-use precondition (source: [[nicoud_2025_landuse_larch_expansion]]); the sources disagree on emphasis (Frei et al. argue warming is the more important driver for the uppermost trees, Wieser et al. and Cudlín et al. emphasise land use). See [[treeline_land_use_legacy]].
+- The carbon-limitation hypothesis appears unsupported for *Pinus cembra* (NSC increases with elevation; source: [[wieser_2019_effects_climate_treeline]]); the direct tests by Hoch et al. are cited there and are not ingested.
 - Interactions between drought and snow-loss stress have not been tested for any treeline conifer in the sources here.
 
 - No single mechanism (thermal limitation, moisture limitation, carbon limitation, hormonal/regulatory limitation, snow protection, regeneration bottleneck) fully explains treeline position or its response to warming across all systems studied here — the sources in this batch span at least four distinct, only partially reconciled explanatory frameworks.
@@ -78,6 +103,9 @@ Treeline advance requires successful regeneration, which faces its own, partly s
 - [[topographic_microclimate]]
 - [[species_distribution_models]]
 - [[forest_disturbances]]
+- [[treeline_land_use_legacy]]
+- [[larch_growth_climate]]
+- [[forest_landscape_models_iland]]
 - [[babst_2019_redistribution]]
 - [[chelli_2017_climate]]
 - [[dyderski_2025_species_shift]]

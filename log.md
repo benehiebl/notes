@@ -834,3 +834,23 @@ Append-only record of all wiki operations.
 
 ## 2026-10-14 — Literature review (Alpine treeline)
 - Created reports/Alpine treeline literature review.md (standalone, for later joint integration into 04_projects/02_tree_line_stress.md; proposal not modified). Notes in research_notes/Alpine treeline literature review/. Papers are not yet ingested into 01_notes.
+
+## 2026-10-15 — Ingest: 20 treeline/snow/forest-disturbance papers (summaries only)
+
+**Ingested** (new in `00_literature/`, text extracted with `pdftotext` because `markitdown` is not installed): albrich_2020_transitions_mountain_forests, carrieri_2025_hr_imagery_treeline, cudlin_2017_drivers_treeline_shift, dullinger_2004_climate_treeline_shifts, frank_2026_larch_growth_temperature_density, frei_2023_treeline_shift, garbarino_2023_treeline_remote_sensing, löw_2020_phenology_austria_forest, marzini_2025_expansion_forest, matiu_2021_snow_depth_trends, menegaldo_2025_landsat_treeline_dynamics, neuner_2014_frost_resistance, nicolussi_2005_holocene_treeline_variability, nicoud_2025_landuse_larch_expansion, obojes_2018_water_stress_growth_larch, obojes_2024_growth_limits_elevational, olefs_2020_snow_depth_changes, senf_2021_impacts_2018_forests, vitasse_2021_shifts_plants_alps, wieser_2019_effects_climate_treeline
+
+**Created**: 20 pages in `01_notes/` (one per paper, same names as the PDFs).
+
+**Updated**: `index.md` (20 new rows).
+
+**Not done**: concept pages in `02_concepts/` were not updated (treeline_ecotone_theory, snow_cover_treeline, treeline_remote_sensing_monitoring should absorb these notes; no discussion round held before writing). Skipped as non-papers: `disskonzept.pdf`, `traceve_antrag.pdf`. PDFs with existing notes under different filenames (Sze_2017, kattenborn_2021, xu_2022, yuan_2025) were not re-summarised.
+
+**Caveats**: summaries were built from the extracted text (abstract, methods, results, discussion); figures/tables and supplements were not inspected; a few details (e.g. Matiu author count, Vitasse page numbers) are incomplete and should be checked against the PDFs before citing.
+
+## 2026-10-15 — Concept pages updated for the 20 new treeline/snow/disturbance notes
+
+**Created** (`02_concepts/`): `treeline_land_use_legacy.md`, `larch_growth_climate.md`, `forest_landscape_models_iland.md`.
+
+**Updated**: `treeline_ecotone_theory.md` (new sections: observed shift rates, land-use/dispersal, ecophysiology incl. frost and carbon, Holocene/simulation context; critical-synthesis bullet on land use and carbon limitation rewritten), `snow_cover_treeline.md` (frost-resistance basis, observed Alpine snow trends with elevation caveat), `treeline_remote_sensing_monitoring.md` (systematic review, UAV Mask R-CNN, Landsat+RF; removed the "not yet ingested" tags for Carrieri), `forest_disturbances.md` (2018 drought, Sentinel-2 Austria), `drought_mortality.md` (inner-Alpine water limitation), `phenology.md` (Sentinel-2 phenology models, Alpine phenology shifts), `index.md` (3 new rows).
+
+**Still open**: Garbarino-cited Baglioni 2025 and other "not yet ingested" papers remain flagged as such; the earlier flag that "Nguyen 2024" could not be matched to a peer-reviewed paper is unchanged.

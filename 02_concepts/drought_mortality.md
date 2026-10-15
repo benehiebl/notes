@@ -11,9 +11,9 @@ tags:
 
 **Summary**: "Hotter droughts" — droughts at temperatures elevated above historical norms — drive widespread tree mortality through xylem hydraulic failure and carbon starvation, with strong drought-legacy effects (delayed mortality and secondary pest/pathogen vulnerability). The 20th century has redistributed the climatic drivers of global tree growth from energy- to water-limitation, and the 2018 Central European drought set new severity records.
 
-**Sources**: [[schuldt_2020_drought_forest]], [[babst_2019_redistribution]], [[chelli_2017_climate]], [[dyderski_2025_species_shift]], [[grünig_2026_climate_change_disturbances_forest]], [[maerker_2025_drought_spruce]], [[vazques_2023_drought_treeline]]
+**Sources**: [[schuldt_2020_drought_forest]], [[babst_2019_redistribution]], [[chelli_2017_climate]], [[dyderski_2025_species_shift]], [[grünig_2026_climate_change_disturbances_forest]], [[maerker_2025_drought_spruce]], [[vazques_2023_drought_treeline]], [[senf_2021_impacts_2018_forests]], [[obojes_2018_water_stress_growth_larch]], [[obojes_2024_growth_limits_elevational]], [[frank_2026_larch_growth_temperature_density]]
 
-**Last updated**: 2026-07-21
+**Last updated**: 2026-10-15
 
 ---
 
@@ -133,6 +133,16 @@ Drought effects on regeneration are mechanistically distinct from adult-tree mor
 - Seed banks are already strongly compositionally dissimilar from standing vegetation, and drought/climate stress further increases this dissimilarity — meaning drought threatens not just current mortality but the recruitment pool for future community composition
 - See [[treeline_ecotone_theory]] for the broader regeneration-bottleneck framing
 
+## Water Limitation of Growth in Dry Inner-Alpine Valleys
+
+- Larch sap flow and growth were limited by soil water up to ~1715 m in a South Tyrolean dry valley; growth correlated with precipitation at low sites and temperature only above ~2000 m (source: [[obojes_2018_water_stress_growth_larch]]).
+- Five conifers at 24 sites (1000–2320 m) responded to water availability at low elevation (incl. previous autumn), spruce most strongly at mid elevation; a dry period since 2003 coincided with growth decline (source: [[obojes_2024_growth_limits_elevational]]).
+- Larch growth decoupled from warming after 2000 in dense stands, with a positive summer temperature × July precipitation interaction (source: [[frank_2026_larch_growth_temperature_density]]). These are growth, not mortality, results; see [[larch_growth_climate]].
+
+## Continental Disturbance Response to the 2018 Drought
+
+- Forest disturbance (canopy loss from any cause) in 2018–2020 reached unprecedented levels in central and eastern Europe and was related to 2018 soil moisture deficit and 2018–2020 VPD (source: [[senf_2021_impacts_2018_forests]]); see [[forest_disturbances]].
+
 ## Related concepts
 - [[forest_disturbances]]
 - [[vegetation_greenness_trends]]
@@ -141,3 +151,4 @@ Drought effects on regeneration are mechanistically distinct from adult-tree mor
 - [[ndvi]]
 - [[sampling_bias_remote_sensing]]
 - [[treeline_ecotone_theory]]
+- [[larch_growth_climate]]

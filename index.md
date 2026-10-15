@@ -39,6 +39,9 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[treeline_ecotone_theory]] | Climatic/hormonal controls on treeline position: thermal vs moisture limitation, carbon-limitation hypothesis, emerging drought sensitivity, regeneration bottlenecks |
 | [[snow_cover_treeline]] | Snow cover as protective winter microclimate at treeline: sapling freeze-thaw insulation, seed-bank cold stratification, boreal treeline snow control |
 | [[treeline_remote_sensing_monitoring]] | DL/RS methods for treeline mapping: rule-informed CNNs, knowledge-guided multi-temporal segmentation (tCA loss), freeze/thaw RS, SHAP-explained SDMs |
+| [[treeline_land_use_legacy]] | Land-use legacy vs climate as drivers of Alpine treeline advance and infilling; sources disagree on emphasis |
+| [[larch_growth_climate]] | Larch and conifer growth along dry inner-Alpine elevation gradients: water limitation low, temperature high, stand-density decoupling after 2000 |
+| [[forest_landscape_models_iland]] | iLand simulations (Stubai Valley): tipping point ~+2 °C, hysteresis, land-use-driven ecotone expansion; unvalidated |
 
 ## Paper Pages (`03_papers/`)
 
@@ -176,3 +179,23 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[01_notes/melser_2024_freeze_constraints]] | Melser et al. 2024 — SMAP/SMOS L-band freeze-thaw clustering maps growing-season constraints on boreal productivity, Canada-wide |
 | [[01_notes/stewart_2022_torchgeo]] | Stewart et al. 2022 — TorchGeo: PyTorch library for geospatial deep learning; on-the-fly reprojection/resampling, geospatial samplers, multispectral pretrained models; ImageNet pretraining boosts spatial generalization |
 | [[01_notes/obuchowicz_2024_greening_switzerland]] | Obuchowicz, Poussin & Giuliani 2024 — National-scale 35-yr Landsat NDVI greening trend for Switzerland (all land cover types); significant acceleration post-2010, temperature-driven; sampling-bias risk unaudited |
+| [[01_notes/albrich_2020_transitions_mountain_forests]] | Albrich, Rammer & Seidl 2020 — iLand simulations (Stubai Valley) show a tipping point above ~+2 °C from spruce/large-tree to small broadleaved forest, with hysteresis; topography buffers but increases irreversibility |
+| [[01_notes/carrieri_2025_hr_imagery_treeline]] | Carrieri et al. 2025 — UAV RGB + Mask R-CNN maps individual conifers at 10 Italian treelines; 70 % detection (>50 cm), 86 % (>2 m), leave-one-site-out recall only 0.56; small trees remain a gap |
+| [[01_notes/cudlin_2017_drivers_treeline_shift]] | Cudlín et al. 2017 — Pan-European comparison of 15 mountain units: temperature alone does not explain treeline shift; land-use history, geomorphology and soils dominate (expert-based, RDA) |
+| [[01_notes/dullinger_2004_climate_treeline_shifts]] | Dullinger et al. 2004 — Spread model of *Pinus mugo* (Northern Calcareous Alps): dispersal kernel and invasibility matter as much as 0–2 °C warming; slow expansion over 1000 years |
+| [[01_notes/frank_2026_larch_growth_temperature_density]] | Frank et al. 2026 — Larch BAI in paired open/closed subalpine stands decouples from warming after 2000; stand density (land-use legacy) modulates the divergence |
+| [[01_notes/frei_2023_treeline_shift]] | Frei et al. 2023 — 40-year resurvey of the Dischma treeline: ~10 m/decade advance, 79 % of new cells are infilling; microsite and 1900 land use control advance |
+| [[01_notes/garbarino_2023_treeline_remote_sensing]] | Garbarino et al. 2023 — Systematic review of 372 treeline remote-sensing papers; pixel-based satellite and photointerpretation dominate; argues for multiscale, UAV/LiDAR-supported monitoring |
+| [[01_notes/löw_2020_phenology_austria_forest]] | Löw & Koukal 2020 — Savitzky–Golay phenology models from Sentinel-2 (Austria) and disturbance mapping; 83.4 % of field-recorded disturbances detected |
+| [[01_notes/marzini_2025_expansion_forest]] | Marzini et al. 2025 — iLand projections 2020–2200: forest-grassland ecotone rises mainly through abandonment (land-use legacy), climate shapes composition; no empirical validation |
+| [[01_notes/matiu_2021_snow_depth_trends]] | Matiu et al. 2021 — Alpine-wide station snow depth 1971–2019: −8.4 %/decade seasonal mean; strongest in spring and at low elevation; few stations above 2000 m, not homogenised |
+| [[01_notes/menegaldo_2025_landsat_treeline_dynamics]] | Menegaldo et al. 2025 — Landsat + Random Forest vs manual orthophoto treelines in the Senales Valley: +32 m (Landsat) vs +45 m (orthophoto), forest cover +44 %; 16 areas, one valley |
+| [[01_notes/neuner_2014_frost_resistance]] | Neuner 2014 — Review of frost resistance in alpine woody plants; low winter risk but spring frost, premature deacclimation (*P. cembra*) and snow loss are critical |
+| [[01_notes/nicolussi_2005_holocene_treeline_variability]] | Nicolussi et al. 2005 — Dendrochronological Holocene treeline record (Kauner Valley): 20th-century rise of ~65 m; treeline above 1980 level for most of 7100–2100 b.c. |
+| [[01_notes/nicoud_2025_landuse_larch_expansion]] | Nicoud et al. 2025 — Larch establishment wave ~2003 in the southern French Alps tied to a climate window, with 19th-century abandonment as precondition; 628 trees, one region |
+| [[01_notes/obojes_2018_water_stress_growth_larch]] | Obojes et al. 2018 — Larch sap flow and growth along a dry-valley transect: water-limited up to ~1715 m, temperature-limited only above ~2000 m |
+| [[01_notes/obojes_2024_growth_limits_elevational]] | Obojes et al. 2024 — Five conifers at 24 sites (1000–2320 m, Vinschgau): water limits growth at low and mid elevation; weak temperature signal at the forest line |
+| [[01_notes/olefs_2020_snow_depth_changes]] | Olefs et al. 2020 — SNOWGRID-CL 1 km model for Austria 1961–2020: −0.15 m snow depth, −42 days snow cover; significant below ~2000 m |
+| [[01_notes/senf_2021_impacts_2018_forests]] | Senf & Seidl 2021 — 2018 drought drove unprecedented, multi-year forest disturbance in Europe (Landsat disturbance maps), mostly central and eastern Europe |
+| [[01_notes/vitasse_2021_shifts_plants_alps]] | Vitasse et al. 2021 — Review of phenological and elevational shifts of 2133 species in the Alps: +18–25 m/decade optimum shift, woody plants +32.7 m/decade, slower than isotherms (+62–71 m/decade) |
+| [[01_notes/wieser_2019_effects_climate_treeline]] | Wieser et al. 2019 — Review of treeline ecophysiology in the Central Austrian Alps: trees not carbon-limited, seedling re-establishment attributed to reduced grazing |

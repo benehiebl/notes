@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Snow cover is not simply a byproduct of cold climate at treeline — it actively protects plants from winter stress by insulating against freeze-thaw cycles and desiccation. Climate change is expected to shorten and thin snow cover even as mean temperatures rise, paradoxically increasing frost/drought exposure for regenerating and established plants at treeline.
 
-**Sources**: [[charra_2025_snow_treeline]], [[vazques_2023_drought_treeline]], [[klinge_2018_climate_treeline]]
+**Sources**: [[charra_2025_snow_treeline]], [[vazques_2023_drought_treeline]], [[klinge_2018_climate_treeline]], [[neuner_2014_frost_resistance]], [[matiu_2021_snow_depth_trends]], [[olefs_2020_snow_depth_changes]]
 
-**Last updated**: 2026-10-14
+**Last updated**: 2026-10-15
 
 ---
 
@@ -36,11 +36,24 @@ tags:
 - In Mongolia's boreal forest, snow cover distribution is identified as a secondary limiting factor for the **taiga** forest type specifically (distinct from the forest–steppe, where relative humidity plays the analogous secondary role) — inferred from a temperature–precipitation correlation sign-flip between forest types, not measured directly (source: [[klinge_2018_climate_treeline]]).
 - This is a correlative, indirect inference (the study does not measure snow cover directly), but is consistent with the general principle that snow acts as a distinct climatic driver at treeline, separate from temperature and precipitation totals.
 
+## Physiological Basis: Frost Resistance and Snow
+
+- Snow-covered woody shrubs experience temperatures near or slightly below 0 °C and harden less than exposed plants; in mild winters with early snow melt they do not frost-harden fully and then lose their insulation, making spring frost the key risk (source: [[neuner_2014_frost_resistance]]).
+- Winter frost damage risk of alpine woody plants is low (leaf frost resistance about −26 to −58 °C), but developing shoots are damaged at about −3.4 °C (*Rhododendron ferrugineum*) to −6.3 °C (*Larix decidua*), and premature deacclimation of *Pinus cembra* in late winter was shown experimentally (source: [[neuner_2014_frost_resistance]]).
+- This gives the mechanistic background for the snow-removal damage in [[charra_2025_snow_treeline]]; the review is narrative, relies partly on the author's own and unpublished data, and the climate-change implications are projections.
+
+## Observed Snow Trends in the Alps
+
+- Station data (>800 stations, 1971–2019): mean seasonal snow depth −8.4 % per decade, maximum depth −5.6 % per decade and snow cover duration −5.6 % per decade; 85 % of station-month trends negative (26 % significant); strongest in spring and at low elevations; regional differences at the same elevation (source: [[matiu_2021_snow_depth_trends]]).
+- Austrian 1 km model reconstruction 1961–2020: −0.15 m snow depth and −42 days snow cover on average, significant mainly below ~2000 m, with step-like shifts in the 1970s and late 1980s; no change in snow cover duration above 2000 m (source: [[olefs_2020_snow_depth_changes]]).
+- Both sources show weak or uncertain evidence exactly at the treeline elevation (~1800–2300 m): stations are sparse above 2000 m ([[matiu_2021_snow_depth_trends]]) and model trends are not significant there ([[olefs_2020_snow_depth_changes]]). Snow loss at the treeline itself is therefore not established by these sources; the experiment of [[charra_2025_snow_treeline]] tests the consequence, not the occurrence.
+- The two datasets differ in approach (stations, not homogenised, vs. model with gridded driving data), so agreement between them is partial support, not independent proof.
+
 ## Critical Notes
 
 - All direct (manipulative) evidence for snow's protective role comes from a single field experiment, one elevation (1700 m, at or below the usual Tyrolean timberline, so not strictly ecotone), one site (the experiment ran two winters per the note above; the earlier "one winter" wording was inconsistent — check against the source) (source: [[charra_2025_snow_treeline]]) — cumulative effects across successive snow-poor winters are not tested and may matter more than a single-winter manipulation.
 - The seed-bank snow effect (source: [[vazques_2023_drought_treeline]]) is from a single Southern Hemisphere alpine system (*Eucalyptus pauciflora* treeline) with a single tree species — not directly comparable to Northern Hemisphere conifer treelines.
-- *Pinus cembra* was not among the species tested, so these results cannot be transferred to it directly. Winter frost-drought/freeze-thaw embolism is documented in the Alps mainly for *Picea abies* (Mayr et al. 2002; Mayr & Charra-Vaskou 2007), and *too much* snow is also harmful (snow-fungus mortality of *P. cembra* at the treeline, Barbeito et al. 2013) — none of these is yet ingested in 01_notes.
+- *Pinus cembra* was not among the species tested, so these results cannot be transferred to it directly. Winter frost-drought/freeze-thaw embolism is documented in the Alps mainly for *Picea abies* (Mayr et al. 2002; Mayr & Charra-Vaskou 2007), and *too much* snow is also harmful (snow-fungus mortality of *P. cembra* at the treeline, Barbeito et al. 2013) — only the *P. cembra* deacclimation evidence is covered by [[neuner_2014_frost_resistance]]; the others are not ingested in 01_notes.
 - Together these sources point to snow loss functioning through more than one distinct mechanism (freeze-thaw/hydraulic damage in established saplings; disrupted cold-stratification in seeds) rather than a single unified "snow stress" pathway — mechanisms should not be conflated when generalising across studies.
 
 ## Related pages
@@ -48,3 +61,4 @@ tags:
 - [[treeline_ecotone_theory]]
 - [[topographic_microclimate]]
 - [[drought_mortality]]
+- [[treeline_land_use_legacy]]

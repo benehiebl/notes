@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Forest disturbances are discrete, punctuated events that cause mortality of trees, alter forest structure, and reset successional trajectories — they are among the most climate-sensitive processes in forest ecosystems and are expected to intensify under climate change.
 
-**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]], [[thom_2026_disturbance_suitability]], [[wegler_2026_canopy_cover_loss]], [[torres_2021_forest_health_remote_sensing]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]], [[schuldt_2020_drought_forest]], [[zhao_2022_forest_harvesting]], [[grantham_2020_anthropogenic_modification]], [[soto_2025_disturbance]], [[senf_2021_disturbance]], [[wessely_2023_tree_species_bottleneck]]
+**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]], [[thom_2026_disturbance_suitability]], [[wegler_2026_canopy_cover_loss]], [[torres_2021_forest_health_remote_sensing]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]], [[schuldt_2020_drought_forest]], [[zhao_2022_forest_harvesting]], [[grantham_2020_anthropogenic_modification]], [[soto_2025_disturbance]], [[senf_2021_disturbance]], [[wessely_2023_tree_species_bottleneck]], [[senf_2021_impacts_2018_forests]], [[löw_2020_phenology_austria_forest]], [[albrich_2020_transitions_mountain_forests]], [[marzini_2025_expansion_forest]]
 
-**Last updated**: 2026-06-12
+**Last updated**: 2026-10-15
 
 ---
 
@@ -187,6 +187,21 @@ Continuous global forest integrity index based on observed + inferred human pres
 - Only **56%** of protected forest is high-integrity
 - Concentrations: Canada, Russia, Amazon, Central Africa, New Guinea
 
+## The 2018 Drought and Persistent Disturbance in Europe
+
+- Landsat-based canopy disturbance maps (30 m, 1986–2020) aggregated to 0.1° show ~4.74 million ha disturbed in 2018–2020, an annual surplus of ~360,000 ha over the 1986–2015 mean, strongest in central (Germany, Czechia, Austria) and eastern Europe; elevated rates persisted up to two years after 2018 and were associated with low 2018 soil moisture and high VPD in 2018–2020 (source: [[senf_2021_impacts_2018_forests]]).
+- Disturbance frequency, patch size and spatiotemporal aggregation all increased beyond the 1986–2015 range (source: [[senf_2021_impacts_2018_forests]]).
+- Caveats: the map records any canopy decline (harvest and salvage logging included), the underlying map has ~37 % omission error and soil moisture/VPD explain only 11.5 % of variance, so drought attribution is indirect (source: [[senf_2021_impacts_2018_forests]]).
+
+## Sentinel-2 Disturbance Mapping in Austria
+
+- A per-pixel Savitzky–Golay phenology model on Sentinel-2 time series flagged deviations as disturbance: 83.4 % of ~1500 field-recorded disturbances (mostly bark beetle) were detected in northern Austria, with 95.2 % agreement on 271 undisturbed points; 23,400 ha (2.8 % of forest) disturbed 2018–2019 in the case-study region (source: [[löw_2020_phenology_austria_forest]]).
+- Validation covers one region and mostly bark beetle; no area-adjusted accuracy or disturbance-type separation (source: [[löw_2020_phenology_austria_forest]]).
+
+## Modelled Long-Term Responses (Alpine Landscape)
+
+- iLand simulations indicate that without disturbance a warming above ~+2 °C shifts Alpine forests to another stable state, and including wind/bark beetle in ecotone simulations did not remove the land-use-driven expansion; see [[forest_landscape_models_iland]] (source: [[albrich_2020_transitions_mountain_forests]], [[marzini_2025_expansion_forest]]).
+
 ## Related pages
 
 - [[vegetation_greenness_trends]]
@@ -198,3 +213,4 @@ Continuous global forest integrity index based on observed + inferred human pres
 - [[drought_mortality]]
 - [[species_distribution_models]]
 - [[wessely_2023_tree_species_bottleneck]]
+- [[forest_landscape_models_iland]]
