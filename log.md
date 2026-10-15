@@ -854,3 +854,10 @@ Append-only record of all wiki operations.
 **Updated**: `treeline_ecotone_theory.md` (new sections: observed shift rates, land-use/dispersal, ecophysiology incl. frost and carbon, Holocene/simulation context; critical-synthesis bullet on land use and carbon limitation rewritten), `snow_cover_treeline.md` (frost-resistance basis, observed Alpine snow trends with elevation caveat), `treeline_remote_sensing_monitoring.md` (systematic review, UAV Mask R-CNN, Landsat+RF; removed the "not yet ingested" tags for Carrieri), `forest_disturbances.md` (2018 drought, Sentinel-2 Austria), `drought_mortality.md` (inner-Alpine water limitation), `phenology.md` (Sentinel-2 phenology models, Alpine phenology shifts), `index.md` (3 new rows).
 
 **Still open**: Garbarino-cited Baglioni 2025 and other "not yet ingested" papers remain flagged as such; the earlier flag that "Nguyen 2024" could not be matched to a peer-reviewed paper is unchanged.
+
+## 2026-10-15 — New project proposal: Tyrol forest-line change, stress and drivers
+- Created `04_projects/04_treeline_change_stress_tyrol.md` (3 WPs: forest-line change from Landsat plus ALS/WorldView 3D change; stressors via Sentinel-2, dendrochronology, climate/snow data; driver attribution with spatial CV, area of applicability and deep ensembles). Built from `reports/Tyrol treeline proposal gaps.md`, `research_notes/Tyrol treeline proposal gaps/` and wiki notes; unverified items marked [verify].
+- Updated `index.md` (new "Project Pages" section with one row). `02_tree_line_stress.md`, `00_literature/` and `reports/` untouched.
+
+## 2026-10-15 — Condensed proposal
+- Created `04_projects/04_treeline_change_stress_tyrol_short.md` (≈2 A4 pages) from the full Tyrol proposal; added to `index.md`.

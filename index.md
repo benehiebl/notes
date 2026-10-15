@@ -43,6 +43,13 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[larch_growth_climate]] | Larch and conifer growth along dry inner-Alpine elevation gradients: water limitation low, temperature high, stand-density decoupling after 2000 |
 | [[forest_landscape_models_iland]] | iLand simulations (Stubai Valley): tipping point ~+2 °C, hysteresis, land-use-driven ecotone expansion; unvalidated |
 
+## Project Pages (`04_projects/`)
+
+| Page | Description |
+|------|-------------|
+| [[04_projects/04_treeline_change_stress_tyrol]] | Proposal: Tyrolean forest-line change (Landsat 1984-2025, ALS/WorldView 3D change), stressor detection (Sentinel-2, tree rings, snow) and driver attribution with uncertainty; 3 WPs, null results acceptable |
+| [[04_projects/04_treeline_change_stress_tyrol_short]] | Two-page condensed version of the Tyrol forest-line proposal |
+
 ## Paper Pages (`03_papers/`)
 
 | Page | Description |
