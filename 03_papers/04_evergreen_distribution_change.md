@@ -17,13 +17,14 @@ Distribution changes of evergreen broad-leaved species in Italy
 > [!info] What will be done?
 > - statistical analysis of 40 years of annual LTC and DTS maps regarding the trajectories of evergreens
 > - correlation analysis of changes towards environmental (temperature, drought frequency) and anthropogenic (land-use) factors
-> - future prediction of patterns (Hidden Markov?) using trajectories and climate(/land-use) drivers
+> - future prediction of patterns ([[Hidden Markov models]]?) using trajectories and climate(/land-use) drivers
+> - Landsat trend analysis with [[time series decomposition]] for plot observations.
 
 > [!success] What are the expected results?
 > A comprehensive understanding of change patterns in evergreen broad-leaved vegetation:
 > - future maps of distribution
 > - gain and dieback zones
-> - understanding main drivers of forest change
+> - understanding main [[drivers of forest change]]
 
 
 ## Introduction

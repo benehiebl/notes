@@ -16,11 +16,12 @@
 {% bq %}
 [!important] Page {{ annot.pageLabel }}
 
-{{ annot.imgLink | embed }}{{ annot.text }}
-{% if annot.comment %}
+{% if annot.comment %}{{ annot.comment }}
 
-{{ annot.comment }}
-{% endif %}
+{% endif %}{% bq %}
+[!quote]- Quote
+{{ annot.imgLink | embed }}{{ annot.text }}
+{% endbq %}
 {% endbq %}
 {% endif %}{% endfor %}
 
@@ -30,11 +31,12 @@
 {% bq %}
 [!question] Page {{ annot.pageLabel }}
 
-{{ annot.imgLink | embed }}{{ annot.text }}
-{% if annot.comment %}
+{% if annot.comment %}{{ annot.comment }}
 
-{{ annot.comment }}
-{% endif %}
+{% endif %}{% bq %}
+[!quote]- Quote
+{{ annot.imgLink | embed }}{{ annot.text }}
+{% endbq %}
 {% endbq %}
 {% endif %}{% endfor %}
 
@@ -44,11 +46,12 @@
 {% bq %}
 [!note] Page {{ annot.pageLabel }}
 
-{{ annot.imgLink | embed }}{{ annot.text }}
-{% if annot.comment %}
+{% if annot.comment %}{{ annot.comment }}
 
-{{ annot.comment }}
-{% endif %}
+{% endif %}{% bq %}
+[!quote]- Quote
+{{ annot.imgLink | embed }}{{ annot.text }}
+{% endbq %}
 {% endbq %}
 {% endif %}{% endfor %}
 
@@ -58,10 +61,11 @@
 {% bq %}
 [!quote] Page {{ annot.pageLabel }} ({{ annot.colorName | default: "no color" }})
 
-{{ annot.imgLink | embed }}{{ annot.text }}
-{% if annot.comment %}
+{% if annot.comment %}{{ annot.comment }}
 
-{{ annot.comment }}
-{% endif %}
+{% endif %}{% bq %}
+[!quote]- Quote
+{{ annot.imgLink | embed }}{{ annot.text }}
+{% endbq %}
 {% endbq %}
 {% endunless %}{% endfor %}
