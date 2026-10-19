@@ -1,0 +1,56 @@
+{
+  "__VERSION__": 9,
+  "release.previous-version": "2.1.4",
+  "note.literature-folder": "01_notes",
+  "zotero.read-mode": "copy",
+  "note.frontmatter-fields": [
+    {
+      "key": "title",
+      "expr": "zt.title",
+      "merge": "replace",
+      "language": "liquid"
+    },
+    {
+      "key": "authors",
+      "expr": "zt.authors | map: \"fullName\"",
+      "merge": "replace",
+      "language": "liquid"
+    },
+    {
+      "key": "year",
+      "expr": "zt.date | append: \"\" | slice: 0, 4",
+      "merge": "replace",
+      "language": "liquid"
+    },
+    {
+      "key": "citekey",
+      "expr": "zt.citationKey",
+      "merge": "replace",
+      "language": "liquid"
+    },
+    {
+      "key": "zotero-key",
+      "expr": "zt.key",
+      "merge": "replace",
+      "language": "liquid"
+    },
+    {
+      "key": "collections",
+      "expr": "zt.collections | collection_paths",
+      "merge": "replace",
+      "language": "liquid"
+    },
+    {
+      "key": "related",
+      "expr": "zt.relatedItems | note_links",
+      "merge": "replace",
+      "language": "liquid"
+    },
+    {
+      "key": "status",
+      "expr": "\"unread\"",
+      "merge": "keep",
+      "language": "liquid"
+    }
+  ]
+}
