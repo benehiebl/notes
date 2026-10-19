@@ -861,3 +861,41 @@ Append-only record of all wiki operations.
 
 ## 2026-10-15 — Condensed proposal
 - Created `04_projects/04_treeline_change_stress_tyrol_short.md` (≈2 A4 pages) from the full Tyrol proposal; added to `index.md`.
+
+## 2026-10-16 — Ingest: 3 dieback papers + TRACEVE proposal, concepts updated
+
+**Ingested** (new in `00_literature/`): puletti_2019_drought_forest_health, seddaiu_2025_quercus_dieback, seddaiu_2025_mediterranean_dieback (SSRN preprint by Satta et al., not peer reviewed), traceve_antrag. Text for the three papers extracted with `pdftotext`; `traceve_antrag.pdf` is a scanned print-to-PDF (no text layer, no OCR installed), so pages 3–20 were read from page images; pages 21–26 (probably references/annexes) were not inspected. No discussion round held before writing (user asked for direct summarisation).
+
+**Created**: 4 notes in `01_notes/`; concept page `02_concepts/mediterranean_holm_oak_dieback.md`.
+
+**Updated**: `drought_mortality.md`, `forest_disturbances.md`, `sentinel_2.md`, `ndvi.md`, `evergreen_broadleaved_expansion.md` (new sections incl. holm oak dieback as counter-trend and TRACEVE design caveats), `index.md` (1 concept row, 4 note rows).
+
+**Caveats**: Several numbers in the Satta preprint were garbled in text extraction (F1 of the best model, spatial block size, number of reference points) and should be checked in the PDF; Seddaiu et al. contains apparent date inconsistencies (Tuscany 2022/2017; ICP Forests peak "2025"); Puletti et al. gives inconsistent p-value statements for beech. TRACEVE is a proposal and must not be cited as evidence. The existing index row for `traceve_pretraining` (line ~121) was already merged into the previous row and was left as found.
+
+## 2026-10-16 — Literature review for 04_evergreen_distribution_change
+
+- Created `03_papers/04_evergreen_distribution_change_litreview.md` (copy of `reports/Evergreen distribution change literature review.md`; notes in `research_notes/Evergreen distribution change literature review/`). Sources: wiki notes, TRACEVE reference list (pages 22-26 read from scan), and web (CrossRef-verified metadata).
+- **Verification limit**: researchers verified bibliographic metadata (DOIs) but mostly did not read abstracts or full texts; content statements are tagged [W] wiki / [A] abstract-snippet / [M] memory and must be checked before citing. Only Conedera 2018 and Alessi 2019 of the 8 must-reads are in the wiki; the other PDFs still need to be added to `00_literature/`.
+- `03_papers/04_evergreen_distribution_change.md` itself was not modified. Wiki inconsistencies found are listed in section 6 of the review; none were fixed.
+- Updated `index.md` (1 row).
+
+## 2026-10-16 — Literature review v2 for 04_evergreen_distribution_change
+
+- Replaced `03_papers/04_evergreen_distribution_change_litreview.md` with version 2 (copy of `reports/Evergreen distribution review abstracts verified.md`; notes in `research_notes/Evergreen distribution review abstracts verified/`). Round 2 read abstracts (OpenAlex, Semantic Scholar, search summaries; no Springer/Wiley/ScienceDirect full texts) and checked wiki PDFs locally. Google Scholar returned snippets for a few query batches, then 429/captcha, so Italian-language coverage is weak and the novelty claim is worded 'to our knowledge'.
+- Must-read list changed (Garbarino, Hermosilla 2018, Atkins, Olofsson, Pollastrini moved to short reads; Delzon 2013, Padial-Iglesias 2022, Hermosilla 2024, Thapa 2020 added). Tags per paper show verification level; abstract-less items remain [still unverified].
+- Verified errors in wiki notes and citations in `03_papers/03_tree_species_cover_landsat.md` are listed in section 6; **none were fixed** (notes, `03_papers/03_*` and `04_evergreen_distribution_change.md` untouched). `index.md` row updated.
+
+## 2026-10-16 — Scoping review v3 for 04_evergreen_distribution_change
+
+- Replaced `03_papers/04_evergreen_distribution_change_litreview.md` with a scoping review (copy of `reports/Evergreen distribution scoping review.md`; round-3 notes in `research_notes/Evergreen distribution scoping review/`). v2 remains in `reports/Evergreen distribution review abstracts verified.md`.
+- Structure: protocol (PCC, sources, limits, PRISMA-ScR item mapping), concept map, evidence map, synthesis for the Introduction, charted studies, tiered reading list, gaps, wiki housekeeping, references. No PRISMA flow counts were logged and none were invented; no protocol was registered.
+- Round 3 had OpenAlex/Semantic Scholar rate limits and blocked publishers, so many new items are abstract- or snippet-level; tags show this. No wiki notes or concept pages were changed (known errors, including the untraceable 48 %/17 % Marques claim, are listed in section 8).
+
+## 2026-10-17 — Scoping review for 04_treeline_change_stress
+
+- Created `04_projects/04_treeline_change_stress_litreview.md` (copy of `reports/Treeline change stress scoping review.md`; notes in `research_notes/Treeline change stress scoping review/`) on direct request. The requested input file `04_treeline_change_stress.md` does not exist; the full proposal `04_treeline_change_stress_tyrol.md` was used.
+- Single-reviewer, AI-assisted scoping review built on the three earlier treeline reports plus a new round (OpenAlex 429, Semantic Scholar limits, Google Scholar largely unused, publisher full texts blocked; tags show verification level). No PRISMA numbers invented, no 'first study' claim endorsed without a Scopus/Web of Science search (draft strings in section 7.3).
+- No wiki notes, concept pages or proposal files were changed; wiki labelling issues (South Tyrol vs Tyrol) are listed in section 8.
+
+## 2026-10-18 — DOIs added to scoping review tables
+- `03_papers/04_evergreen_distribution_change_litreview.md`: DOI column added to table 6.1; section 6.2 lists converted to tables (paper, DOI) per storyline. DOIs copied from the section 9 reference list, not re-verified.

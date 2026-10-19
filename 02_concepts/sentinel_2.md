@@ -12,9 +12,9 @@ tags:
 
 **Summary**: Sentinel-2 is a twin-satellite ESA mission providing multispectral imagery at 10–20 m resolution with ~5-day revisit time, enabling high-resolution vegetation monitoring at spatial and temporal scales not achievable with Landsat alone.
 
-**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[deluca_2022_s1_s2_lulc_mapping]], [[koch_2025_intraspecies_variation_s2]], [[liu_2023_spectral_spatial_resolution_effect]], [[miettinen_2025_forest_maps_europe]], [[fischer_2025_glocal_canopy_atlas]], [[blickensdörfer_2024_tree_species]], [[kollert_2021_tree_species]], [[klehr_2025_synthetic_data]], [[qin_2026_forest_cover]], [[yuan_2022_sitsformer]], [[yuan_2023_pretraining]], [[tseng_2024_presto]], [[yan_2025_population]], [[lang_2024_canopy_height]]
+**Sources**: [[grabska_2024_tree_species_map]], [[chabalala_2023_dl_s2_mediterranean_fruit_trees]], [[deluca_2022_s1_s2_lulc_mapping]], [[koch_2025_intraspecies_variation_s2]], [[liu_2023_spectral_spatial_resolution_effect]], [[miettinen_2025_forest_maps_europe]], [[fischer_2025_glocal_canopy_atlas]], [[blickensdörfer_2024_tree_species]], [[kollert_2021_tree_species]], [[klehr_2025_synthetic_data]], [[qin_2026_forest_cover]], [[yuan_2022_sitsformer]], [[yuan_2023_pretraining]], [[tseng_2024_presto]], [[yan_2025_population]], [[lang_2024_canopy_height]], [[puletti_2019_drought_forest_health]], [[seddaiu_2025_mediterranean_dieback]]
 
-**Last updated**: 2026-05-14
+**Last updated**: 2026-10-16
 
 ---
 
@@ -120,7 +120,15 @@ Like Landsat, the number of cloud-free Sentinel-2 observations varies spatially:
 - **TST/PRESTO**: lightweight multivariate Transformer with masked-value pretraining ([[transformer_sits]])
 - **LSP + composites**: in mountain regions with limited cloud-free dates, three-monthly composites + Land Surface Phenology metrics outperform multitemporal classification (source: [[kollert_2021_tree_species]])
 
+## Drought Dieback Detection with Sentinel-2
+
+- Early test (Tuscany 2017): NDVI, red-edge NDVI and simple ratio from 10 m bands separated healthy from damaged crowns in August 2017 (p < 0.01) in 118 plots (source: [[puletti_2019_drought_forest_health]]).
+- Sardinia 2024 (preprint): August 2023 vs August 2024 composites in Google Earth Engine, ΔIndex < −0.1 and patches > 1 ha; NGRDI (green/red only) beat NDVI, EVI, NBR, NDWI and GNDVI for sudden browning; NIR/SWIR indices were more sensitive but over-predicted (source: [[seddaiu_2025_mediterranean_dieback]]).
+- Caveat: both studies are single events with limited independent validation; Sentinel-2's short archive (since 2015) limits baselines (source: [[puletti_2019_drought_forest_health]]). See [[mediterranean_holm_oak_dieback]].
+
 ## Related pages
+
+- [[mediterranean_holm_oak_dieback]]
 
 - [[landsat]]
 - [[ndvi]]

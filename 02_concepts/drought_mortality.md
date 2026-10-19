@@ -11,9 +11,9 @@ tags:
 
 **Summary**: "Hotter droughts" — droughts at temperatures elevated above historical norms — drive widespread tree mortality through xylem hydraulic failure and carbon starvation, with strong drought-legacy effects (delayed mortality and secondary pest/pathogen vulnerability). The 20th century has redistributed the climatic drivers of global tree growth from energy- to water-limitation, and the 2018 Central European drought set new severity records.
 
-**Sources**: [[schuldt_2020_drought_forest]], [[babst_2019_redistribution]], [[chelli_2017_climate]], [[dyderski_2025_species_shift]], [[grünig_2026_climate_change_disturbances_forest]], [[maerker_2025_drought_spruce]], [[vazques_2023_drought_treeline]], [[senf_2021_impacts_2018_forests]], [[obojes_2018_water_stress_growth_larch]], [[obojes_2024_growth_limits_elevational]], [[frank_2026_larch_growth_temperature_density]]
+**Sources**: [[schuldt_2020_drought_forest]], [[babst_2019_redistribution]], [[chelli_2017_climate]], [[dyderski_2025_species_shift]], [[grünig_2026_climate_change_disturbances_forest]], [[maerker_2025_drought_spruce]], [[vazques_2023_drought_treeline]], [[senf_2021_impacts_2018_forests]], [[obojes_2018_water_stress_growth_larch]], [[obojes_2024_growth_limits_elevational]], [[frank_2026_larch_growth_temperature_density]], [[puletti_2019_drought_forest_health]], [[seddaiu_2025_quercus_dieback]], [[seddaiu_2025_mediterranean_dieback]]
 
-**Last updated**: 2026-10-15
+**Last updated**: 2026-10-16
 
 ---
 
@@ -143,7 +143,15 @@ Drought effects on regeneration are mechanistically distinct from adult-tree mor
 
 - Forest disturbance (canopy loss from any cause) in 2018–2020 reached unprecedented levels in central and eastern Europe and was related to 2018 soil moisture deficit and 2018–2020 VPD (source: [[senf_2021_impacts_2018_forests]]); see [[forest_disturbances]].
 
+## Mediterranean Evergreen Dieback (Holm Oak)
+
+- Nominally drought-tolerant evergreen holm oak suffered crown dieback after the 2017 and 2024 hot droughts in Italy, often with *Phytophthora* and other opportunistic pathogens; high VPD-induced cavitation is proposed as mechanism (source: [[seddaiu_2025_quercus_dieback]]).
+- In Tuscany 2017, deciduous beech recovered NDVI in 2018 while unhealthy holm oak plots showed a lasting reduction (source: [[puletti_2019_drought_forest_health]]).
+- In Sardinia 2024, long-term precipitation deficit (SPI-12) was the strongest predictor of Sentinel-2-mapped dieback (source: [[seddaiu_2025_mediterranean_dieback]], preprint).
+- Evidence is regional and partly unreviewed; see [[mediterranean_holm_oak_dieback]] for details and caveats.
+
 ## Related concepts
+- [[mediterranean_holm_oak_dieback]]
 - [[forest_disturbances]]
 - [[vegetation_greenness_trends]]
 - [[species_distribution_models]]

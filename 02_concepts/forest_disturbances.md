@@ -11,9 +11,9 @@ tags:
 
 **Summary**: Forest disturbances are discrete, punctuated events that cause mortality of trees, alter forest structure, and reset successional trajectories — they are among the most climate-sensitive processes in forest ecosystems and are expected to intensify under climate change.
 
-**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]], [[thom_2026_disturbance_suitability]], [[wegler_2026_canopy_cover_loss]], [[torres_2021_forest_health_remote_sensing]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]], [[schuldt_2020_drought_forest]], [[zhao_2022_forest_harvesting]], [[grantham_2020_anthropogenic_modification]], [[soto_2025_disturbance]], [[senf_2021_disturbance]], [[wessely_2023_tree_species_bottleneck]], [[senf_2021_impacts_2018_forests]], [[löw_2020_phenology_austria_forest]], [[albrich_2020_transitions_mountain_forests]], [[marzini_2025_expansion_forest]]
+**Sources**: [[grünig_2026_climate_change_disturbances_forest]], [[albrich_2019_climate_change_mountain_forests]], [[francioni_2026_canopy_closure]], [[thom_2026_disturbance_suitability]], [[wegler_2026_canopy_cover_loss]], [[torres_2021_forest_health_remote_sensing]], [[turubanove_2023_canopy_landsat]], [[tong_2023_forest_densification_china]], [[schuldt_2020_drought_forest]], [[zhao_2022_forest_harvesting]], [[grantham_2020_anthropogenic_modification]], [[soto_2025_disturbance]], [[senf_2021_disturbance]], [[wessely_2023_tree_species_bottleneck]], [[senf_2021_impacts_2018_forests]], [[löw_2020_phenology_austria_forest]], [[albrich_2020_transitions_mountain_forests]], [[marzini_2025_expansion_forest]], [[puletti_2019_drought_forest_health]], [[seddaiu_2025_quercus_dieback]], [[seddaiu_2025_mediterranean_dieback]]
 
-**Last updated**: 2026-10-15
+**Last updated**: 2026-10-16
 
 ---
 
@@ -201,6 +201,13 @@ Continuous global forest integrity index based on observed + inferred human pres
 ## Modelled Long-Term Responses (Alpine Landscape)
 
 - iLand simulations indicate that without disturbance a warming above ~+2 °C shifts Alpine forests to another stable state, and including wind/bark beetle in ecotone simulations did not remove the land-use-driven expansion; see [[forest_landscape_models_iland]] (source: [[albrich_2020_transitions_mountain_forests]], [[marzini_2025_expansion_forest]]).
+
+## Drought-Induced Crown Dieback in Mediterranean Forests
+
+- Sentinel-2 vegetation-index change separated drought-damaged from healthy crowns in the August 2017 peak in Tuscany (118 plots, t-tests) (source: [[puletti_2019_drought_forest_health]]).
+- A 2023–2024 August-to-August ΔIndex (< −0.1) comparison of six indices flagged ~110,400 ha of dieback in Sardinia; NGRDI was most reliable against photo-interpreted reference points (source: [[seddaiu_2025_mediterranean_dieback]], preprint).
+- Regional reports for 2024 (Basilicata, Apulia, Sardinia, Sicily, Tuscany) describe holm oak and cork oak dieback with site-dependent severity and pathogen involvement (source: [[seddaiu_2025_quercus_dieback]]).
+- Caveats: mapped "dieback" is a spectral change that cannot distinguish pathogens from drought, and labels are not field-verified at scale; see [[mediterranean_holm_oak_dieback]].
 
 ## Related pages
 

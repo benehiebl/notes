@@ -11,9 +11,9 @@ tags:
 
 **Summary**: The Normalised Difference Vegetation Index (NDVI) is the most widely used spectral index for quantifying vegetation greenness from red and near-infrared reflectance, serving as a proxy for photosynthetic activity, vegetation density, and plant biomass.
 
-**Sources**: [[bayle_2024_landsat_greening_inflated]], [[chastain_2007_eve_landsat_understory]], [[he_2015_remote_sensing_sdm]], [[yel_2026_deciduous_forests]], [[yang_2020_modis_evergreen]], [[kempf_2023_greening]], [[schuldt_2020_drought_forest]]
+**Sources**: [[bayle_2024_landsat_greening_inflated]], [[chastain_2007_eve_landsat_understory]], [[he_2015_remote_sensing_sdm]], [[yel_2026_deciduous_forests]], [[yang_2020_modis_evergreen]], [[kempf_2023_greening]], [[schuldt_2020_drought_forest]], [[puletti_2019_drought_forest_health]], [[seddaiu_2025_mediterranean_dieback]]
 
-**Last updated**: 2026-05-14
+**Last updated**: 2026-10-16
 
 ---
 
@@ -68,6 +68,13 @@ Stacking long-term NDVI series and ranking each year against the empirical distr
 
 Pan-European pairing of MODIS NDVI 2001–2021 with GLDAS climate variables reveals **trends in mean** can coexist with **growing anomaly intensity**, both of which signal vegetation vulnerability (source: [[kempf_2023_greening]]).
 
+## Index Choice for Drought Dieback Detection
+
+- In Sardinia 2024, NGRDI (green–red) had the best overall agreement (Acc 0.95, κ 0.71, F1 0.74), NDVI and EVI were close (κ 0.68), NBR and NDWI were most sensitive (0.83) but over-predicted, and GNDVI failed (sensitivity 0.12) (source: [[seddaiu_2025_mediterranean_dieback]], preprint, ~12 % dieback prevalence in reference points).
+- NDVI, red-edge NDVI and simple ratio performed similarly for Tuscany 2017 holm oak, beech and downy oak (source: [[puletti_2019_drought_forest_health]]).
+- NGRDI detects visible browning and probably misses early-stage physiological stress, which NIR-based indices may detect earlier (source: [[seddaiu_2025_mediterranean_dieback]]).
+- The ΔIndex < −0.1 threshold is borrowed between studies rather than calibrated (source: [[seddaiu_2025_mediterranean_dieback]]).
+
 ## Use in Species Distribution Models
 
 NDVI is among the most widely used biotic predictor variables in SDMs:
@@ -78,6 +85,7 @@ NDVI is among the most widely used biotic predictor variables in SDMs:
 
 ## Related pages
 
+- [[mediterranean_holm_oak_dieback]]
 - [[landsat]]
 - [[phenology]]
 - [[sampling_bias_remote_sensing]]

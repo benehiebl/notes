@@ -11,9 +11,9 @@ tags:
 
 **Summary**: The naturalisation and spread of evergreen broad-leaved (laurophyllous) species — both native (e.g. *Hedera helix*, *Ilex aquifolium*, *Laurus nobilis*) and exotic (e.g. *Prunus laurocerasus*, *Trachycarpus fortunei*) — into deciduous lowland forests of southern and Mediterranean Europe. The expansion is enabled by rising winter temperatures since the 1970s but driven proximally by propagule pressure and land-use change (abandoned coppices, ornamental gardens), not climate warming alone. Mapping EVE cover from satellite time series is the wiki's primary research target.
 
-**Sources**: [[berger_2006_distribution_eve]], [[conedera_2018_drivers_evergreen]], [[chelli_2017_climate]], [[fady_2025_native_trees_mediterranean]], [[yang_2020_modis_evergreen]], [[hiebl_2025_pretraining]], [[hiebl_2026_alphaearth]], [[alessi_2019_refugia]], [[fang_2016_eve_mosaics]]
+**Sources**: [[berger_2006_distribution_eve]], [[conedera_2018_drivers_evergreen]], [[chelli_2017_climate]], [[fady_2025_native_trees_mediterranean]], [[yang_2020_modis_evergreen]], [[hiebl_2025_pretraining]], [[hiebl_2026_alphaearth]], [[alessi_2019_refugia]], [[fang_2016_eve_mosaics]], [[traceve_antrag]], [[seddaiu_2025_quercus_dieback]], [[puletti_2019_drought_forest_health]]
 
-**Last updated**: 2026-05-16
+**Last updated**: 2026-10-16
 
 ---
 
@@ -97,7 +97,19 @@ Any Italian forest type / EVE cover mapping product must contend with:
 - **EVE expansion is non-stationary**: training samples from the 2010s may not reflect the future distribution (cf. [[dyderski_2025_species_shift]], [[alessi_2019_refugia]])
 - **Edaphic and microtopographic signals** at sub-stand scale complement spectral-temporal predictors (source: [[fang_2016_eve_mosaics]])
 
+## Counter-Trend: Holm Oak Dieback
+
+- *Quercus ilex*, the main evergreen broad-leaved canopy species of the Mediterranean, shows repeated hot-drought dieback in Italy (2012, 2017, 2022, 2024), with partial resprouting and structural conversion towards shrub forms (source: [[seddaiu_2025_quercus_dieback]]).
+- Unhealthy holm oak plots kept a reduced NDVI after 2017 (source: [[puletti_2019_drought_forest_health]]).
+- Consequence: warming-driven expansion narratives need the drying side; expansion at the northern edge and dieback in the Mediterranean core can occur simultaneously (inference, needs testing). See [[mediterranean_holm_oak_dieback]].
+
+## TRACEVE Project Design (Proposal, Not Evidence)
+
+- Plans to map EVE cover/diversity in Italian protected areas with Sentinel-2/Landsat and plot data (about 500–600 sites, four 10 × 10 m plots each), back-cast with Landsat to ~1990, and transfer the model to Austria and South Tyrol (source: [[traceve_antrag]]).
+- Key assumptions to scrutinise: space-for-time substitution, detectability of understory EVEs, and the Italy-to-Austria domain shift (source: [[traceve_antrag]]).
+
 ## Related concepts
+- [[mediterranean_holm_oak_dieback]]
 - [[tree_species_mapping]]
 - [[leaf_habit_latitudinal_gradient]]
 - [[species_distribution_models]]
