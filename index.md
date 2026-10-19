@@ -42,6 +42,7 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[treeline_land_use_legacy]] | Land-use legacy vs climate as drivers of Alpine treeline advance and infilling; sources disagree on emphasis |
 | [[larch_growth_climate]] | Larch and conifer growth along dry inner-Alpine elevation gradients: water limitation low, temperature high, stand-density decoupling after 2000 |
 | [[forest_landscape_models_iland]] | iLand simulations (Stubai Valley): tipping point ~+2 °C, hysteresis, land-use-driven ecotone expansion; unvalidated |
+| [[mediterranean_holm_oak_dieback]] | Hot-drought dieback of holm oak and Mediterranean evergreens in Italy (2012–2024): symptoms, biotic interactions, Sentinel-2 detection, SPI-12/terrain drivers; mostly regional/preprint evidence |
 
 ## Project Pages (`04_projects/`)
 
@@ -49,6 +50,7 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 |------|-------------|
 | [[04_projects/04_treeline_change_stress_tyrol]] | Proposal: Tyrolean forest-line change (Landsat 1984-2025, ALS/WorldView 3D change), stressor detection (Sentinel-2, tree rings, snow) and driver attribution with uncertainty; 3 WPs, null results acceptable |
 | [[04_projects/04_treeline_change_stress_tyrol_short]] | Two-page condensed version of the Tyrol forest-line proposal |
+| [[04_projects/04_treeline_change_stress_litreview]] | Scoping review (single reviewer, no registered protocol) for the Tyrol forest-line proposal: PCC protocol, concept map, evidence map (151 charted rows), synthesis on position change, stress detection and attribution methods, gap-statement check of the proposal, [verify] register, tiered reading list, Scopus/WoS search plan; tags show verification level |
 
 ## Paper Pages (`03_papers/`)
 
@@ -57,6 +59,7 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[03_papers/03_tree_species_cover_landsat]] | Mapping 40 years of dominant tree species and leaf type cover for Italy — ecological change detection paper (EVE expansion, climate drivers, latitudinal/altitudinal shifts) |
 | [[03_papers/03_landsat_data_publication]] | Data publication: 40-year annual 30 m Landsat forest type and leaf type cover time series for Italy — methodology, validation, and dataset description |
 | [[03_papers/06_spatial_autocorrelation]] | GEDI canopy height + alpine S2 tile — predictor SA range controls CV inflation; variogram → kNNDM buffer distance framework for spectral/topo/climate combinations |
+| [[03_papers/04_evergreen_distribution_change_litreview]] | Scoping review v3 (single reviewer, no registered protocol) for the evergreen distribution change paper: PCC protocol, concept map, evidence map, synthesis along the four Introduction storylines with citation-ready statements, 113 charted entries, tiered reading list, gaps, uibk to-do list; tags show verification level. v2 ranked review kept in reports/ |
 
 ## Notes Pages (`01_notes/`)
 
@@ -206,3 +209,7 @@ Table of contents for the LLM Wiki knowledge base covering remote sensing, machi
 | [[01_notes/senf_2021_impacts_2018_forests]] | Senf & Seidl 2021 — 2018 drought drove unprecedented, multi-year forest disturbance in Europe (Landsat disturbance maps), mostly central and eastern Europe |
 | [[01_notes/vitasse_2021_shifts_plants_alps]] | Vitasse et al. 2021 — Review of phenological and elevational shifts of 2133 species in the Alps: +18–25 m/decade optimum shift, woody plants +32.7 m/decade, slower than isotherms (+62–71 m/decade) |
 | [[01_notes/wieser_2019_effects_climate_treeline]] | Wieser et al. 2019 — Review of treeline ecophysiology in the Central Austrian Alps: trees not carbon-limited, seedling re-establishment attributed to reduced grazing |
+| [[01_notes/puletti_2019_drought_forest_health]] | Puletti et al. 2019 — Sentinel-2 NDVI/RENDVI/SR separate healthy vs drought-damaged beech, downy oak and holm oak plots in Tuscany (2017 drought); beech recovers, holm oak does not |
+| [[01_notes/seddaiu_2025_quercus_dieback]] | Seddaiu et al. 2025 — Overview of holm oak dieback in Italy 2017/2024 (ICP Forests, regional reports, SilvaCuore citizen app); regional, non-systematic evidence |
+| [[01_notes/seddaiu_2025_mediterranean_dieback]] | Satta et al. 2025 (SSRN preprint) — Sardinia 2024: ΔNGRDI dieback map (~110,400 ha), LogitBoost/RF with spatial CV, SPI-12 most important predictor |
+| [[01_notes/traceve_antrag]] | Rutzinger & Zerbe (2023) — TRACEVE FWF proposal: track evergreen broad-leaved species with VPOs + Landsat/Sentinel-2 across Italy → Austria/South Tyrol (proposal, not evidence) |
